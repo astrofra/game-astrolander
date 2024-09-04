@@ -39,6 +39,12 @@ void	main()
 
 			// Light diffuse contribution.
 			float	idiff = max(-dot(u_lvd, normal), 0.0);
+			float	idiff_original = idiff;
+			if (idiff < 0.30) idiff = 0.0;
+			if (idiff >= 0.35) idiff = 1.0;
+			if (idiff >= 0.30 && idiff < 0.35)
+				idiff = (idiff - 0.30) * 20.0;
+			idiff = idiff * 0.75 + idiff_original * 0.25;
 
 			// Light specular contribution.
 			vec4	spec_glos = texture2D(gbuffer2, UV);

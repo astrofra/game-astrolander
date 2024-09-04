@@ -37,6 +37,9 @@ class Rect
 	function	GetHeight()
 	{	return ey - sy;		}
 
+	function	GetSize()
+	{	return Vector2(GetWidth(), GetHeight());	}
+
 	function	Contract(s)
 	{	return Rect(sx + s, sy + s, ex - s, ey - s);	}
 	function	Expand(s)

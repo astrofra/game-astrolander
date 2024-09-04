@@ -1,5 +1,15 @@
 <NML=1.0>
 <Scene=
+	<ScriptedObject=
+		<ScriptUnit=
+			<Script="scripts/level_handler.nut">
+			<Class="LevelHandler">
+		>
+	>
+	<ScriptUnit=
+		<Script="scripts/level_handler.nut">
+		<Class="LevelHandler">
+	>
 	<Items=
 		<MCamera=
 			<MItem=
@@ -22,48 +32,9 @@
 			<Camera=
 				<Item=
 					<Position=
-						<X=71.986000>
-						<Y=-17.634001>
-						<Z=-450.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=80.458984>
-						<Y=-17.147449>
-						<Z=-1.338854>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<ZFar=50000.000000>
-				<ZoomFactor=11.430051>
-				<AspectRatioRefYAxis=True>
-			>
-		>
-		<MCamera=
-			<MItem=
-				<Id="game_close_camera">
-				<UId=1>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="None">
-				>
-			>
-			<Camera=
-				<Item=
-					<Position=
-						<X=54.397999>
-						<Y=17.962999>
-						<Z=-45.000000>
+						<X=73.445564>
+						<Y=14.195814>
+						<Z=-20.000000>
 					>
 					<Target=
 						<X=80.458984>
@@ -81,7 +52,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=2>
+				<UId=1>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -167,8 +138,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -224,7 +195,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=3>
+				<UId=2>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -310,8 +281,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -367,7 +338,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=4>
+				<UId=3>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -453,8 +424,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -510,7 +481,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x4">
-				<UId=5>
+				<UId=4>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -596,8 +567,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -653,7 +624,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=6>
+				<UId=5>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -739,8 +710,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -796,7 +767,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=7>
+				<UId=6>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -882,8 +853,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -939,7 +910,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=8>
+				<UId=7>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1025,8 +996,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -1087,7 +1058,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=9>
+				<UId=8>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1173,8 +1144,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -1231,7 +1202,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=10>
+				<UId=9>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1317,8 +1288,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -1375,7 +1346,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=11>
+				<UId=10>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1461,8 +1432,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -1519,7 +1490,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=12>
+				<UId=11>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1605,8 +1576,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -1663,7 +1634,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x16">
-				<UId=13>
+				<UId=12>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1749,8 +1720,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -1806,7 +1777,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=14>
+				<UId=13>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1892,8 +1863,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -1949,7 +1920,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=15>
+				<UId=14>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2035,8 +2006,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -2073,7 +2044,7 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=16.000000>
+						<X=32.000000>
 						<Y=8.000000>
 						<Z=0.000000>
 					>
@@ -2091,6 +2062,154 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_8x16.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_tr_8x16">
+				<UId=15>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****ŒÜ½ì+**ªiŒÜ½ì>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=3>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Mesh">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Mesh="graphics/g_block_tr_8x16.nmg">
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=44.000000>
+						<Y=-4.000000>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=-3.141593>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_tr_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -2182,8 +2301,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -2221,7 +2340,7 @@
 				<Item=
 					<Position=
 						<X=32.000000>
-						<Y=8.000000>
+						<Y=0.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -2242,7 +2361,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_tr_8x16">
+				<Id="g_block_8x16">
 				<UId=17>
 				<Active>
 				<Priority=0.500000>
@@ -2270,7 +2389,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****ŒÜ½ì+**ªiŒÜ½ì>
++****Ö*Oì+**ªiÖ*Oì>
 									>
 								>
 								<Id="PositionX">
@@ -2280,7 +2399,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+********+**ªi****>
++*******k+**ªi***k>
 									>
 								>
 								<Id="PositionY">
@@ -2329,14 +2448,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Box">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -2353,11 +2472,10 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
 							>
-							<Mesh="graphics/g_block_tr_8x16.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -2368,14 +2486,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=44.000000>
-						<Y=-4.000000>
+						<X=16.000000>
+						<Y=0.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
-						<Y=-3.141593>
-						<Z=0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
 					>
 					<Target=
 						<X=0.000000>
@@ -2385,7 +2503,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_tr_8x16.nmg">
+				<Geometry="graphics/g_block_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -2477,8 +2595,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -2514,16 +2632,12 @@
 			>
 			<Object=
 				<Item=
-					<Position=
-						<X=32.000000>
-						<Y=0.000000>
-						<Z=0.000000>
-					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2537,7 +2651,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_8x16">
+				<Id="g_block_tr_8x16">
 				<UId=19>
 				<Active>
 				<Priority=0.500000>
@@ -2565,7 +2679,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
++****ŒÜ½ì+**ªiŒÜ½ì>
 									>
 								>
 								<Id="PositionX">
@@ -2575,7 +2689,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+*******k+**ªi***k>
++********+**ªi****>
 									>
 								>
 								<Id="PositionY">
@@ -2624,14 +2738,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Box">
+							<Type="Mesh">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -2648,10 +2762,11 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
 							>
+							<Mesh="graphics/g_block_tr_8x16.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -2662,14 +2777,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=16.000000>
-						<Y=0.000000>
+						<X=64.000000>
+						<Y=-4.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
 					>
 					<Target=
 						<X=0.000000>
@@ -2679,7 +2789,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_8x16.nmg">
+				<Geometry="graphics/g_block_tr_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -2771,8 +2881,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -2808,6 +2918,11 @@
 			>
 			<Object=
 				<Item=
+					<Position=
+						<X=76.000008>
+						<Y=8.000000>
+						<Z=0.000000>
+					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
@@ -2826,7 +2941,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_tr_8x16">
+				<Id="g_block_8x16">
 				<UId=21>
 				<Active>
 				<Priority=0.500000>
@@ -2854,7 +2969,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****ŒÜ½ì+**ªiŒÜ½ì>
++****Ö*Oì+**ªiÖ*Oì>
 									>
 								>
 								<Id="PositionX">
@@ -2864,7 +2979,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+********+**ªi****>
++*******k+**ªi***k>
 									>
 								>
 								<Id="PositionY">
@@ -2913,14 +3028,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Box">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -2937,11 +3052,10 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
 							>
-							<Mesh="graphics/g_block_tr_8x16.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -2952,9 +3066,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=64.000000>
-						<Y=-4.000000>
+						<X=76.000008>
+						<Y=0.000000>
 						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
 					>
 					<Target=
 						<X=0.000000>
@@ -2964,7 +3083,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_tr_8x16.nmg">
+				<Geometry="graphics/g_block_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -3056,8 +3175,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -3094,14 +3213,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=76.000008>
-						<Y=8.000000>
+						<X=44.000000>
+						<Y=-12.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
 					>
 					<Target=
 						<X=0.000000>
@@ -3203,8 +3317,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -3241,14 +3355,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=76.000008>
-						<Y=0.000000>
+						<X=64.000000>
+						<Y=-12.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
 					>
 					<Target=
 						<X=0.000000>
@@ -3263,7 +3372,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_8x16">
+				<Id="g_block_tr_8x16">
 				<UId=24>
 				<Active>
 				<Priority=0.500000>
@@ -3291,7 +3400,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
++****ŒÜ½ì+**ªiŒÜ½ì>
 									>
 								>
 								<Id="PositionX">
@@ -3301,7 +3410,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+*******k+**ªi***k>
++********+**ªi****>
 									>
 								>
 								<Id="PositionY">
@@ -3350,14 +3459,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Box">
+							<Type="Mesh">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -3374,10 +3483,11 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
 							>
+							<Mesh="graphics/g_block_tr_8x16.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -3388,8 +3498,13 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=44.000000>
-						<Y=-12.000000>
+						<X=52.099998>
+						<Y=-36.000000>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=3.141592>
 						<Z=0.000000>
 					>
 					<Target=
@@ -3400,7 +3515,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_8x16.nmg">
+				<Geometry="graphics/g_block_tr_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -3492,8 +3607,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -3530,10 +3645,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=64.000000>
-						<Y=-12.000000>
+						<X=44.000000>
+						<Y=-28.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3634,8 +3750,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -3673,16 +3789,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=52.099998>
-						<Y=-36.000000>
+						<X=64.000000>
+						<Y=-20.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
-						<Y=3.141592>
-						<Z=0.000000>
+						<Y=-3.141593>
+						<Z=-3.141593>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3783,8 +3898,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -3821,11 +3936,10 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=44.000000>
-						<Y=-28.000000>
+						<X=72.000000>
+						<Y=-12.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3839,7 +3953,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_tr_8x16">
+				<Id="g_block_8x16">
 				<UId=28>
 				<Active>
 				<Priority=0.500000>
@@ -3867,7 +3981,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****ŒÜ½ì+**ªiŒÜ½ì>
++****Ö*Oì+**ªiÖ*Oì>
 									>
 								>
 								<Id="PositionX">
@@ -3877,7 +3991,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+********+**ªi****>
++*******k+**ªi***k>
 									>
 								>
 								<Id="PositionY">
@@ -3926,14 +4040,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Box">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -3950,11 +4064,10 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
 							>
-							<Mesh="graphics/g_block_tr_8x16.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -3965,14 +4078,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=64.000000>
-						<Y=-20.000000>
+						<X=72.000000>
+						<Y=-28.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=-3.141593>
-						<Z=-3.141593>
 					>
 					<ItemFlag>
 					<Target=
@@ -3983,7 +4091,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_tr_8x16.nmg">
+				<Geometry="graphics/g_block_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -4075,8 +4183,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -4113,10 +4221,16 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=72.000000>
-						<Y=-12.000000>
+						<X=48.000000>
+						<Y=-40.000000>
 						<Z=0.000000>
 					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4217,8 +4331,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -4255,9 +4369,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=72.000000>
-						<Y=-28.000000>
+						<X=84.000000>
+						<Y=-32.000000>
 						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
 					>
 					<ItemFlag>
 					<Target=
@@ -4360,8 +4479,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -4399,7 +4518,7 @@
 				<Item=
 					<Position=
 						<X=48.000000>
-						<Y=-40.000000>
+						<Y=-48.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -4508,8 +4627,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -4546,8 +4665,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=84.000000>
-						<Y=-32.000000>
+						<X=32.000000>
+						<Y=-7.999999>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -4555,7 +4674,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4656,8 +4774,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -4694,8 +4812,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=48.000000>
-						<Y=-48.000000>
+						<X=64.000000>
+						<Y=-56.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -4717,7 +4835,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_8x16">
+				<Id="g_block_tr_4x4">
 				<UId=34>
 				<Active>
 				<Priority=0.500000>
@@ -4745,7 +4863,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
++****ú|ì+**ªiú|ì>
 									>
 								>
 								<Id="PositionX">
@@ -4755,7 +4873,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+*******k+**ªi***k>
++********+**ªi****>
 									>
 								>
 								<Id="PositionY">
@@ -4804,14 +4922,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Box">
+							<Type="Mesh">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -4828,10 +4946,11 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
 							>
+							<Mesh="graphics/g_block_tr_4x4.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -4842,15 +4961,16 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=32.000000>
-						<Y=-7.999999>
+						<X=55.976555>
+						<Y=-50.000004>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4859,7 +4979,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_8x16.nmg">
+				<Geometry="graphics/g_block_tr_4x4.nmg">
 			>
 		>
 		<MObject=
@@ -4951,8 +5071,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -4989,7 +5109,7 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=64.000000>
+						<X=48.000000>
 						<Y=-56.000000>
 						<Z=0.000000>
 					>
@@ -5012,7 +5132,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_tr_4x4">
+				<Id="g_block_8x16">
 				<UId=36>
 				<Active>
 				<Priority=0.500000>
@@ -5040,7 +5160,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****ú|ì+**ªiú|ì>
++****Ö*Oì+**ªiÖ*Oì>
 									>
 								>
 								<Id="PositionX">
@@ -5050,7 +5170,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+********+**ªi****>
++*******k+**ªi***k>
 									>
 								>
 								<Id="PositionY">
@@ -5099,14 +5219,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Box">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -5123,11 +5243,10 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
 							>
-							<Mesh="graphics/g_block_tr_4x4.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -5138,14 +5257,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=55.976555>
-						<Y=-50.000004>
+						<X=80.000000>
+						<Y=-56.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=-1.570796>
+						<Z=1.570796>
 					>
 					<ItemFlag>
 					<Target=
@@ -5156,7 +5275,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_tr_4x4.nmg">
+				<Geometry="graphics/g_block_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -5248,8 +5367,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -5286,7 +5405,7 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=48.000000>
+						<X=96.000000>
 						<Y=-56.000000>
 						<Z=0.000000>
 					>
@@ -5309,7 +5428,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_8x16">
+				<Id="g_block_tr_8x16">
 				<UId=38>
 				<Active>
 				<Priority=0.500000>
@@ -5337,7 +5456,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
++****ŒÜ½ì+**ªiŒÜ½ì>
 									>
 								>
 								<Id="PositionX">
@@ -5347,7 +5466,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+*******k+**ªi***k>
++********+**ªi****>
 									>
 								>
 								<Id="PositionY">
@@ -5396,14 +5515,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Box">
+							<Type="Mesh">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -5420,10 +5539,11 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
 							>
+							<Mesh="graphics/g_block_tr_8x16.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -5434,14 +5554,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=80.000000>
-						<Y=-56.000000>
+						<X=108.000000>
+						<Y=-52.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
 					>
 					<ItemFlag>
 					<Target=
@@ -5452,7 +5567,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_8x16.nmg">
+				<Geometry="graphics/g_block_tr_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -5544,8 +5659,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -5582,7 +5697,7 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=96.000000>
+						<X=112.000000>
 						<Y=-56.000000>
 						<Z=0.000000>
 					>
@@ -5605,7 +5720,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_tr_8x16">
+				<Id="g_block_8x16">
 				<UId=40>
 				<Active>
 				<Priority=0.500000>
@@ -5633,7 +5748,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****ŒÜ½ì+**ªiŒÜ½ì>
++****Ö*Oì+**ªiÖ*Oì>
 									>
 								>
 								<Id="PositionX">
@@ -5643,7 +5758,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+********+**ªi****>
++*******k+**ªi***k>
 									>
 								>
 								<Id="PositionY">
@@ -5692,14 +5807,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Box">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -5716,11 +5831,10 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
 							>
-							<Mesh="graphics/g_block_tr_8x16.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -5731,8 +5845,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=108.000000>
-						<Y=-52.000000>
+						<X=116.000000>
+						<Y=-44.000000>
 						<Z=0.000000>
 					>
 					<ItemFlag>
@@ -5744,7 +5858,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_tr_8x16.nmg">
+				<Geometry="graphics/g_block_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -5836,8 +5950,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -5874,14 +5988,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=112.000000>
-						<Y=-56.000000>
+						<X=116.000000>
+						<Y=-28.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
 					>
 					<ItemFlag>
 					<Target=
@@ -5984,294 +6093,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=116.000000>
-						<Y=-44.000000>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_8x16.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_8x16">
-				<UId=43>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******k+**ªi***k>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=116.000000>
-						<Y=-28.000000>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_8x16.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_8x16">
-				<UId=44>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******k+**ªi***k>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -6327,7 +6150,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=45>
+				<UId=43>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6413,8 +6236,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -6476,7 +6299,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x16">
-				<UId=46>
+				<UId=44>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6562,8 +6385,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -6624,7 +6447,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=47>
+				<UId=45>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6710,8 +6533,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -6768,6 +6591,295 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_tr_4x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_8x16">
+				<UId=46>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Ö*Oì+**ªiÖ*Oì>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++*******k+**ªi***k>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=3>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=88.000000>
+						<Y=4.000000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_8x16.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_8x16">
+				<UId=47>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Ö*Oì+**ªiÖ*Oì>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++*******k+**ªi***k>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=3>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=100.000008>
+						<Y=8.000000>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-1.570796>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -6859,8 +6971,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -6897,9 +7009,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=88.000000>
-						<Y=4.000000>
+						<X=100.000000>
+						<Y=0.000000>
 						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-1.570796>
 					>
 					<Target=
 						<X=0.000000>
@@ -7001,8 +7118,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -7039,15 +7156,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=100.000008>
-						<Y=8.000000>
+						<X=112.000000>
+						<Y=4.000000>
 						<Z=0.000000>
 					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=-1.570796>
-					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7148,8 +7261,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -7186,15 +7299,16 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=100.000000>
-						<Y=0.000000>
+						<X=124.000008>
+						<Y=8.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=-1.570796>
+						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7295,8 +7409,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -7333,9 +7447,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=112.000000>
-						<Y=4.000000>
+						<X=124.000008>
+						<Y=0.000000>
 						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
 					>
 					<ItemFlag>
 					<Target=
@@ -7351,7 +7470,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_8x16">
+				<Id="g_block_tr_4x4">
 				<UId=52>
 				<Active>
 				<Priority=0.500000>
@@ -7379,7 +7498,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
++****ú|ì+**ªiú|ì>
 									>
 								>
 								<Id="PositionX">
@@ -7389,7 +7508,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+*******k+**ªi***k>
++********+**ªi****>
 									>
 								>
 								<Id="PositionY">
@@ -7438,14 +7557,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Box">
+							<Type="Mesh">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7462,10 +7581,11 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
 							>
+							<Mesh="graphics/g_block_tr_4x4.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -7476,8 +7596,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=124.000008>
-						<Y=8.000000>
+						<X=112.000000>
+						<Y=-6.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -7494,7 +7614,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_8x16.nmg">
+				<Geometry="graphics/g_block_tr_4x4.nmg">
 			>
 		>
 		<MObject=
@@ -7586,8 +7706,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -7624,16 +7744,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=124.000008>
-						<Y=0.000000>
+						<X=32.000000>
+						<Y=-16.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7647,7 +7766,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_tr_4x4">
+				<Id="g_block_8x16">
 				<UId=54>
 				<Active>
 				<Priority=0.500000>
@@ -7675,7 +7794,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****ú|ì+**ªiú|ì>
++****Ö*Oì+**ªiÖ*Oì>
 									>
 								>
 								<Id="PositionX">
@@ -7685,7 +7804,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+********+**ªi****>
++*******k+**ªi***k>
 									>
 								>
 								<Id="PositionY">
@@ -7734,14 +7853,14 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Box">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7758,11 +7877,10 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
 							>
-							<Mesh="graphics/g_block_tr_4x4.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -7773,16 +7891,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=112.000000>
-						<Y=-6.000000>
+						<X=32.000000>
+						<Y=-24.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7791,7 +7908,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_tr_4x4.nmg">
+				<Geometry="graphics/g_block_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -7883,46 +8000,18 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
+					<Mode="None">
 				>
 			>
 			<Object=
 				<Item=
 					<Position=
-						<X=32.000000>
-						<Y=-16.000000>
+						<X=8.000000>
+						<Y=-12.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -7930,7 +8019,11 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
+					<Scale=
+						<X=2.000000>
+						<Y=2.000000>
+						<Z=1.000000>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8031,46 +8124,18 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
+					<Mode="None">
 				>
 			>
 			<Object=
 				<Item=
 					<Position=
-						<X=32.000000>
-						<Y=-24.000000>
+						<X=24.000002>
+						<Y=-36.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -8078,7 +8143,11 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
+					<Scale=
+						<X=2.000000>
+						<Y=2.000000>
+						<Z=1.000000>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8179,8 +8248,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -8189,20 +8258,16 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=8.000000>
-						<Y=-12.000000>
+						<X=32.000000>
+						<Y=-60.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=-1.570796>
 					>
 					<Scale=
 						<X=2.000000>
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8303,8 +8368,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -8313,14 +8378,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=24.000002>
+						<X=0.000000>
 						<Y=-36.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=-1.570796>
 					>
 					<Scale=
 						<X=2.000000>
@@ -8428,8 +8488,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -8438,7 +8498,7 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=32.000000>
+						<X=16.000000>
 						<Y=-60.000000>
 						<Z=0.000000>
 					>
@@ -8548,8 +8608,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -8558,9 +8618,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=0.000000>
-						<Y=-36.000000>
+						<X=136.000000>
+						<Y=-11.999999>
 						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-1.570796>
 					>
 					<Scale=
 						<X=2.000000>
@@ -8668,8 +8733,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -8678,8 +8743,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=16.000000>
-						<Y=-60.000000>
+						<X=128.000000>
+						<Y=-36.000000>
 						<Z=0.000000>
 					>
 					<Scale=
@@ -8788,8 +8853,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -8798,14 +8863,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=136.000000>
-						<Y=-11.999999>
+						<X=143.800003>
+						<Y=-36.000000>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=-1.570796>
 					>
 					<Scale=
 						<X=2.000000>
@@ -8913,8 +8973,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -8923,9 +8983,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=128.000000>
-						<Y=-36.000000>
+						<X=136.000000>
+						<Y=-59.900002>
 						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-1.570796>
 					>
 					<Scale=
 						<X=2.000000>
@@ -9033,8 +9098,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -9043,9 +9108,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=143.800003>
-						<Y=-36.000000>
+						<X=104.100006>
+						<Y=-68.000000>
 						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-1.570796>
 					>
 					<Scale=
 						<X=2.000000>
@@ -9153,8 +9223,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -9163,8 +9233,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=136.000000>
-						<Y=-59.900002>
+						<X=56.000008>
+						<Y=-68.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -9278,29 +9348,52 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="None">
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
 				>
 			>
 			<Object=
 				<Item=
 					<Position=
-						<X=104.100006>
-						<Y=-68.000000>
+						<X=140.000000>
+						<Y=8.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=-1.570796>
-					>
-					<Scale=
-						<X=2.000000>
-						<Y=2.000000>
-						<Z=1.000000>
+						<Z=1.570796>
 					>
 					<ItemFlag>
 					<Target=
@@ -9403,29 +9496,52 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="None">
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
 				>
 			>
 			<Object=
 				<Item=
 					<Position=
-						<X=56.000008>
-						<Y=-68.000000>
+						<X=140.000000>
+						<Y=0.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=-1.570796>
-					>
-					<Scale=
-						<X=2.000000>
-						<Y=2.000000>
-						<Z=1.000000>
+						<Z=1.570796>
 					>
 					<ItemFlag>
 					<Target=
@@ -9528,52 +9644,29 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
+					<Mode="None">
 				>
 			>
 			<Object=
 				<Item=
 					<Position=
-						<X=140.000000>
-						<Y=8.000000>
+						<X=163.900009>
+						<Y=4.000001>
 						<Z=0.000000>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=-1.570796>
+					>
+					<Scale=
+						<X=2.000000>
+						<Y=2.000000>
+						<Z=1.000000>
 					>
 					<ItemFlag>
 					<Target=
@@ -9589,7 +9682,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_8x16">
+				<Id="g_block_4x4">
 				<UId=69>
 				<Active>
 				<Priority=0.500000>
@@ -9617,7 +9710,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
++******ªê+**ªi**ªê>
 									>
 								>
 								<Id="PositionX">
@@ -9627,7 +9720,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+*******k+**ªi***k>
++*******j+**ªi***j>
 									>
 								>
 								<Id="PositionY">
@@ -9676,52 +9769,24 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
+					<Mode="None">
 				>
 			>
 			<Object=
 				<Item=
 					<Position=
-						<X=140.000000>
-						<Y=0.000000>
+						<X=80.035728>
+						<Y=-68.000008>
 						<Z=0.000000>
 					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
+					<Scale=
+						<X=4.000000>
+						<Y=4.000000>
+						<Z=1.000000>
 					>
 					<ItemFlag>
 					<Target=
@@ -9732,7 +9797,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_8x16.nmg">
+				<Geometry="graphics/g_block_4x4.nmg">
 			>
 		>
 		<MObject=
@@ -9824,8 +9889,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -9834,14 +9899,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=163.900009>
-						<Y=4.000001>
+						<X=-0.200001>
+						<Y=-67.900002>
 						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=-1.570796>
 					>
 					<Scale=
 						<X=2.000000>
@@ -9862,7 +9922,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_4x4">
+				<Id="g_block_8x16">
 				<UId=71>
 				<Active>
 				<Priority=0.500000>
@@ -9890,7 +9950,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+******ªê+**ªi**ªê>
++****Ö*Oì+**ªiÖ*Oì>
 									>
 								>
 								<Id="PositionX">
@@ -9900,7 +9960,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+*******j+**ªi***j>
++*******k+**ªi***k>
 									>
 								>
 								<Id="PositionY">
@@ -9949,8 +10009,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -9959,13 +10019,13 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=80.035728>
-						<Y=-68.000008>
+						<X=160.000000>
+						<Y=-20.000000>
 						<Z=0.000000>
 					>
 					<Scale=
-						<X=4.000000>
-						<Y=4.000000>
+						<X=2.000000>
+						<Y=2.000000>
 						<Z=1.000000>
 					>
 					<ItemFlag>
@@ -9977,7 +10037,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_4x4.nmg">
+				<Geometry="graphics/g_block_8x16.nmg">
 			>
 		>
 		<MObject=
@@ -10069,8 +10129,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="None">
@@ -10079,9 +10139,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-0.200001>
-						<Y=-67.900002>
+						<X=-24.000000>
+						<Y=4.000000>
 						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-1.570796>
 					>
 					<Scale=
 						<X=2.000000>
@@ -10189,24 +10254,47 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="None">
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=8.000000>
+								<Y=16.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
 				>
 			>
 			<Object=
 				<Item=
 					<Position=
-						<X=160.000000>
-						<Y=-20.000000>
+						<X=-12.000000>
+						<Y=20.000000>
 						<Z=0.000000>
-					>
-					<Scale=
-						<X=2.000000>
-						<Y=2.000000>
-						<Z=1.000000>
 					>
 					<ItemFlag>
 					<Target=
@@ -10222,7 +10310,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_8x16">
+				<Id="g_block_tr_4x8">
 				<UId=74>
 				<Active>
 				<Priority=0.500000>
@@ -10250,7 +10338,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
++****-Òì+**ªi-Òì>
 									>
 								>
 								<Id="PositionX">
@@ -10260,7 +10348,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+*******k+**ªi***k>
++********+**ªi****>
 									>
 								>
 								<Id="PositionY">
@@ -10309,29 +10397,260 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="None">
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Mesh">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Mesh="graphics/g_block_tr_4x8.nmg">
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
 				>
 			>
 			<Object=
 				<Item=
 					<Position=
-						<X=-24.000000>
+						<X=22.000000>
+						<Y=4.000000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_tr_4x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_tr_4x8">
+				<UId=75>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****-Òì+**ªi-Òì>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=3>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Mesh">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Mesh="graphics/g_block_tr_4x8.nmg">
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=10.000000>
 						<Y=4.000000>
 						<Z=0.000000>
 					>
 					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=-1.570796>
+						<X=0.000000>
+						<Y=3.141593>
+						<Z=0.000000>
 					>
-					<Scale=
-						<X=2.000000>
-						<Y=2.000000>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
 						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_tr_4x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Rocket Broken Body">
+				<UId=76>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=4.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=5.000000>
+								<Y=8.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-3.511765>
+						<Y=11.585562>
+						<Z=0.000000>
 					>
 					<ItemFlag>
 					<Target=
@@ -10342,13 +10661,517 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_8x16.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/rocket_broken_body.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_0">
+				<UId=77>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=73.749298>
+						<Y=13.717617>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_1">
+				<UId=78>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=16.857525>
+						<Y=15.329974>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_2">
+				<UId=79>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=16.857525>
+						<Y=5.698771>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_3">
+				<UId=80>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=16.857525>
+						<Y=15.329974>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_4">
+				<UId=81>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=54.086075>
+						<Y=15.627187>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_5">
+				<UId=82>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=63.939941>
+						<Y=-46.776157>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_6">
+				<UId=83>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=83.933075>
+						<Y=-49.259125>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_7">
+				<UId=84>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=105.287071>
+						<Y=-27.973129>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_8">
+				<UId=85>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=83.647903>
+						<Y=-17.421627>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_9">
+				<UId=86>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=104.141174>
+						<Y=-21.210480>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_10">
+				<UId=87>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=96.680954>
+						<Y=-46.639305>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_11">
+				<UId=88>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=62.751625>
+						<Y=-46.639305>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_12">
+				<UId=89>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=52.962021>
+						<Y=11.433481>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="path_13">
+				<UId=90>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=73.244904>
+						<Y=17.903122>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
 			>
 		>
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=75>
+				<UId=91>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10368,12 +11191,12 @@
 					<Position=
 						<X=54.200001>
 						<Y=0.000000>
-						<Z=0.000000>
+						<Z=48.872387>
 					>
 					<Rotation=
-						<X=1.137329>
-						<Y=-0.462432>
-						<Z=-1.995628>
+						<X=0.879756>
+						<Y=0.570737>
+						<Z=-2.165397>
 					>
 					<ItemFlag>
 					<Target=
@@ -10391,14 +11214,17 @@
 				<VolumetricSampleStep=0.500000>
 				<VolumetricThick=1.000000>
 				<VolumetricRange=8.000000>
-				<DiffuseIntensity=0.750000>
-				<SpecularIntensity=0.750000>
+				<Diffuse=
+					<X=0.400000>
+					<Y=0.400000>
+					<Z=0.400000>
+				>
 			>
 		>
 		<Instance=
 			<MItem=
-				<Id="Lander">
-				<UId=76>
+				<Id="lander">
+				<UId=92>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10415,8 +11241,8 @@
 			>
 			<Item=
 				<Position=
-					<X=54.428497>
-					<Y=15.799995>
+					<X=73.683998>
+					<Y=12.036132>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -10430,10 +11256,115 @@
 			>
 			<Template="graphics/lander.nms">
 		>
+		<Instance=
+			<MItem=
+				<Id="artefact_2">
+				<UId=93>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=84.266541>
+					<Y=-23.011940>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/prop_cube.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="artefact_1">
+				<UId=94>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=84.266541>
+					<Y=-51.098846>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/prop_cube.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="artefact_0">
+				<UId=95>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=16.323954>
+					<Y=4.991741>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/prop_cube.nms">
+		>
 		<MTerrain=
 			<MItem=
 				<Id="Terrain_0">
-				<UId=77>
+				<UId=96>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10521,9 +11452,9 @@
 			<Z=0.000000>
 		>
 		<AmbientColor=
-			<X=0.400000>
-			<Y=0.400000>
-			<Z=0.400000>
+			<X=0.592157>
+			<Y=0.407843>
+			<Z=0.345098>
 		>
 		<AmbientIntensity=1.000000>
 		<TargetExposure=0.250000>
@@ -10538,7 +11469,7 @@
 	<Physics=
 		<Frequency=59.999996>
 	>
-	<CurrentCamera="game_close_camera">
+	<CurrentCamera="game_camera">
 	<ViewMatrix=
 		<R0=
 			<X=1.000000>
@@ -10559,9 +11490,9 @@
 			<W=0.000000>
 		>
 		<R3=
-			<X=54.397999>
-			<Y=17.962999>
-			<Z=-45.000000>
+			<X=73.445564>
+			<Y=14.195814>
+			<Z=-20.000000>
 			<W=1.000000>
 		>
 	>
@@ -10571,7 +11502,7 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="game_close_camera">
+			<Camera="game_camera">
 			<Matrix=
 				<R0=
 					<X=1.000000>
@@ -10592,9 +11523,9 @@
 					<W=0.000000>
 				>
 				<R3=
-					<X=54.397999>
-					<Y=17.962999>
-					<Z=-45.000000>
+					<X=73.445564>
+					<Y=14.195814>
+					<Z=-20.000000>
 					<W=1.000000>
 				>
 			>

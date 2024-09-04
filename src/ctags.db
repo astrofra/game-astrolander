@@ -63,6 +63,7 @@ GetPixel	.\oo\picture.nut	/^	function		GetPixel(x,y)$/;"	f	class:Picture	file:
 GetPosition	.\oo\item_derived.nut	/^	function		GetPosition()$/;"	f	class:ItemDerived	file:
 GetRect	.\oo\picture.nut	/^	function		GetRect()$/;"	f	class:Picture	file:
 GetRootItem	.\oo\group.nut	/^	function	GetRootItem()$/;"	f	class:Group	file:
+GetSize	.\rect.nut	/^	function	GetSize()$/;"	f	class:Rect	file:
 GetUI	.\oo\scene.nut	/^	function		GetUI()$/;"	f	class:Scene	file:
 GetValues	.\helper.nut	/^	function	GetValues()$/;"	f	class:Historic	file:
 GetWidth	.\rect.nut	/^	function	GetWidth()$/;"	f	class:Rect	file:

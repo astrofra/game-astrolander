@@ -3,7 +3,7 @@
 	<Items=
 		<MObject=
 			<MItem=
-				<Id="lem">
+				<Id="player">
 				<UId=0>
 				<Active>
 				<Priority=0.500000>
@@ -109,9 +109,9 @@
 						<PhysicShape=
 							<Type="Box">
 							<Position=
-								<X=1.500000>
-								<Y=-1.350000>
-								<Z=-1.500000>
+								<X=0.550000>
+								<Y=-1.228000>
+								<Z=-0.550000>
 							>
 							<Rotation=
 								<X=-0.000000>
@@ -131,14 +131,14 @@
 							<Mass=100.000000>
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
+							<Restitution=0.000000>
 						>
 						<PhysicShape=
 							<Type="Box">
 							<Position=
-								<X=1.500000>
-								<Y=-1.350000>
-								<Z=1.500000>
+								<X=0.550000>
+								<Y=-1.228000>
+								<Z=0.550000>
 							>
 							<Rotation=
 								<X=-0.000000>
@@ -158,14 +158,14 @@
 							<Mass=100.000000>
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
+							<Restitution=0.000000>
 						>
 						<PhysicShape=
 							<Type="Box">
 							<Position=
-								<X=-1.500000>
-								<Y=-1.350000>
-								<Z=1.500000>
+								<X=-0.550000>
+								<Y=-1.228000>
+								<Z=0.550000>
 							>
 							<Rotation=
 								<X=-0.000000>
@@ -185,14 +185,14 @@
 							<Mass=100.000000>
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
+							<Restitution=0.000000>
 						>
 						<PhysicShape=
 							<Type="Box">
 							<Position=
-								<X=-1.500000>
-								<Y=-1.350000>
-								<Z=-1.500000>
+								<X=-0.550000>
+								<Y=-1.228000>
+								<Z=-0.550000>
 							>
 							<Rotation=
 								<X=-0.000000>
@@ -212,7 +212,7 @@
 							<Mass=100.000000>
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
+							<Restitution=0.000000>
 						>
 						<PhysicShape=
 							<Type="Box">
@@ -232,11 +232,63 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=3.000000>
+								<X=2.250000>
 								<Y=3.000000>
-								<Z=3.000000>
+								<Z=2.250000>
 							>
 							<Mass=100.000000>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+						<PhysicShape=
+							<Type="Sphere">
+							<Position=
+								<X=1.000000>
+								<Y=-1.015000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=0.500000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+						<PhysicShape=
+							<Type="Sphere">
+							<Position=
+								<X=-1.000000>
+								<Y=-1.015000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=0.500000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -251,6 +303,7 @@
 						<Y=1.829000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -259,13 +312,12 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/lem.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=2>
+				<UId=1>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -352,8 +404,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<Mode="Static">
@@ -399,7 +451,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -413,7 +464,48 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="thrust_item">
+				<Id="thrust_item_l">
+				<UId=2>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-1.225000>
+						<Y=-1.196672>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-3.054327>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="thrust_item_r">
 				<UId=3>
 				<Active>
 				<Priority=0.500000>
@@ -432,10 +524,666 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=0.000000>
-						<Y=-2.000000>
+						<X=1.225000>
+						<Y=-1.196672>
 						<Z=0.000000>
 					>
+					<Rotation=
+						<X=-0.000017>
+						<Y=3.141592>
+						<Z=-3.054327>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="pod_body">
+				<UId=4>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="pod_uvs">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****ðÌÝ+**ªiðÌÝ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/pod_body.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="pod_brain">
+				<UId=5>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="pod_uvs">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Çzi+**ªiÇzi>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******>ä+**ªi**>ä>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=0.000000>
+						<Y=0.996000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/pod_brain.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="pod_canopy">
+				<UId=6>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="pod_uvs">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/pod_canopy.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="pod_edge">
+				<UId=7>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="pod_uvs">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/pod_edge.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="flame_item_l">
+				<UId=8>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-1.361343>
+						<Y=-1.331343>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=-2.356195>
+					>
+					<Scale=
+						<X=1.250000>
+						<Y=0.499000>
+						<Z=1.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<CacheGeometry=False>
+				<Geometry="graphics/thrust_flame.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="flame_item_r">
+				<UId=9>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=1.320387>
+						<Y=-1.287117>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=-0.785398>
+					>
+					<Scale=
+						<X=1.250000>
+						<Y=0.499000>
+						<Z=1.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<CacheGeometry=False>
+				<Geometry="graphics/thrust_flame.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="flame_item_m">
+				<UId=10>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=-1.723288>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-1.570796>
+					>
+					<Scale=
+						<X=1.250000>
+						<Y=0.499000>
+						<Z=1.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<CacheGeometry=False>
+				<Geometry="graphics/thrust_flame.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="smoke_emitter">
+				<UId=11>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<ScriptedObject=
+					<ScriptUnit=
+						<Script="scripts/particle_emitter.nut">
+						<Class="ParticleEmitter">
+						<ParmList=
+							<Parm=
+								<Id="particle_mesh">
+								<Value="graphics/particle_smoke.nmg">
+							>
+							<Parm=
+								<Id="emit_freq">
+								<Value=0.010000>
+							>
+							<Parm=
+								<Id="particle_speed">
+								<Value=0.000000>
+							>
+						>
+					>
+				>
+				<ScriptUnit=
+					<Script="scripts/particle_emitter.nut">
+					<Class="ParticleEmitter">
+					<ParmList=
+						<Parm=
+							<Id="particle_mesh">
+							<Value="graphics/particle_smoke.nmg">
+						>
+						<Parm=
+							<Id="emit_freq">
+							<Value=0.010000>
+						>
+						<Parm=
+							<Id="particle_speed">
+							<Value=0.000000>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
 					<ItemFlag>
 					<Target=
 						<X=0.000000>
@@ -450,7 +1198,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=1>
+				<UId=12>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -474,9 +1222,9 @@
 						<Z=0.000000>
 					>
 					<Rotation=
-						<X=0.188496>
-						<Y=0.000000>
-						<Z=0.000000>
+						<X=0.254810>
+						<Y=1.040573>
+						<Z=0.112592>
 					>
 					<ItemFlag>
 					<Target=
@@ -499,7 +1247,39 @@
 	>
 	<Links=
 		<Link=
+			<Item=2>
+			<Link=0>
+		>
+		<Link=
 			<Item=3>
+			<Link=0>
+		>
+		<Link=
+			<Item=4>
+			<Link=0>
+		>
+		<Link=
+			<Item=5>
+			<Link=4>
+		>
+		<Link=
+			<Item=6>
+			<Link=4>
+		>
+		<Link=
+			<Item=7>
+			<Link=4>
+		>
+		<Link=
+			<Item=8>
+			<Link=0>
+		>
+		<Link=
+			<Item=9>
+			<Link=0>
+		>
+		<Link=
+			<Item=10>
 			<Link=0>
 		>
 	>
@@ -531,27 +1311,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.842956>
+			<X=0.993829>
 			<Y=0.000000>
-			<Z=-0.537983>
+			<Z=0.110921>
 			<W=0.000000>
 		>
 		<R1=
-			<X=0.164245>
-			<Y=0.952257>
-			<Z=0.257352>
+			<X=-0.027072>
+			<Y=0.969758>
+			<Z=0.242561>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.512298>
-			<Y=-0.305297>
-			<Z=0.802711>
+			<X=-0.107567>
+			<Y=-0.244067>
+			<Z=0.963774>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-10.334686>
-			<Y=6.386116>
-			<Z=-18.496801>
+			<X=3.279742>
+			<Y=8.040686>
+			<Z=-29.385748>
 			<W=1.000000>
 		>
 	>
@@ -564,27 +1344,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=0.842956>
+					<X=0.993829>
 					<Y=0.000000>
-					<Z=-0.537983>
+					<Z=0.110921>
 					<W=0.000000>
 				>
 				<R1=
-					<X=0.164245>
-					<Y=0.952257>
-					<Z=0.257352>
+					<X=-0.027072>
+					<Y=0.969758>
+					<Z=0.242561>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.512298>
-					<Y=-0.305297>
-					<Z=0.802711>
+					<X=-0.107567>
+					<Y=-0.244067>
+					<Z=0.963774>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-10.334686>
-					<Y=6.386116>
-					<Z=-18.496801>
+					<X=3.279742>
+					<Y=8.040686>
+					<Z=-29.385748>
 					<W=1.000000>
 				>
 			>

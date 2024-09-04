@@ -1,0 +1,9 @@
+<NML=1.0>
+<Environment=
+	<Name="Toy Items Library">
+	<Authors="François Gutherz">
+	<Description="New project">
+	<Copyright="Copyright 2010">
+	<Include>
+	<SearchPaths>
+>

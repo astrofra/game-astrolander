@@ -1,12 +1,6 @@
 <NML=1.0>
 <Material=
-	<Id="graphics/blocks.nmm">
-	<Diffuse=
-		<X=0.392157>
-		<Y=0.427451>
-		<Z=0.474510>
-		<W=1.000000>
-	>
+	<Id="graphics/pod_glass_inside.nmm">
 	<Specular=
 		<X=0.000000>
 		<Y=0.000000>
@@ -14,10 +8,11 @@
 	>
 	<Ambient=
 		<X=0.588235>
-		<Y=0.588235>
-		<Z=0.588235>
+		<Y=0.450980>
+		<Z=0.356863>
 	>
 	<Glossiness=0.031250>
+	<Opacity=0.500000>
 	<AlphaThreshold=0.100000>
 	<PhysicMaterial=
 		<StaticFriction=0.750000>
@@ -28,6 +23,7 @@
 		<Smoothing>
 		<NormalMapTangent>
 	>
+	<BlendOp="Alpha">
 	<ShaderMap=
 		<Pos=
 			<X=0.000000>
@@ -43,13 +39,34 @@
 				<Param>
 			>
 			<Entry=
-				<Type="Material Parameter">
+				<Type="Sampler 2D">
 				<Pos=
 					<X=0.000000>
 					<Y=0.000000>
 				>
 				<Param=
-					<Param=0>
+					<WrapU=True>
+					<WrapV=True>
+				>
+			>
+			<Entry=
+				<Type="Texture">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Texture="graphics/pod_body_color.jpg">
+				>
+			>
+			<Entry=
+				<Type="Geometry UV">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Channel=0>
 				>
 			>
 			<Entry=
@@ -111,32 +128,46 @@
 		<Diffuse=
 			<Block=
 				<Index=1>
+				<Input=
+					<Block=
+						<Index=2>
+					>
+					<Block=
+						<Index=3>
+					>
+				>
 			>
 		>
 		<Specular=
 			<Block=
-				<Index=2>
+				<Index=4>
 			>
 		>
 		<Glossiness=
 			<Block=
-				<Index=3>
+				<Index=5>
 			>
 		>
 		<Constant=
 			<Block=
-				<Index=4>
+				<Index=6>
 			>
 		>
 		<Opacity=
 			<Block=
-				<Index=5>
+				<Index=7>
 			>
 		>
 		<Reflection=
 			<Block=
-				<Index=6>
+				<Index=8>
 			>
 		>
+	>
+	<TextureStage=
+		<Index=0>
+		<Active>
+		<Texture="graphics/pod_body_color.jpg">
+		<UV=0>
 	>
 >
