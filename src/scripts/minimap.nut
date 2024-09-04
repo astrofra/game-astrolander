@@ -214,19 +214,19 @@ class	MiniMap
 		{
 			local	map_ui_pos_x, map_ui_pos_y
 
-			if	(g_is_touch_platform)
+			if	(IsTouchPlatform())
 			{
 				//	Touch
 				LoadCachedMapTexture()
-				map_ui_pos_x = 640.0 - (map_pixel_width * ui_scale * 0.5)
-				map_ui_pos_y = 960.0 - (map_pixel_height * ui_scale)
+				map_ui_pos_x = (g_screen_width * 0.5) - (map_pixel_width * ui_scale * 0.5)
+				map_ui_pos_y = g_screen_height - (map_pixel_height * ui_scale)
 			}
 			else
 			{
 				//	PC
 				TraceMapTexture()
-				map_ui_pos_x = 1280.0 - (map_pixel_width * ui_scale)
-				map_ui_pos_y = 960.0 - (map_pixel_height * ui_scale) - 64.0
+				map_ui_pos_x = g_screen_width - (map_pixel_width * ui_scale)
+				map_ui_pos_y = g_screen_height - (map_pixel_height * ui_scale) - 64.0
 			}
 
 			map_window = UIAddSprite(ui, -1, map_texture, 0.0, 0.0, map_pixel_width, map_pixel_height)

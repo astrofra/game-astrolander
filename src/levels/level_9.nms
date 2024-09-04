@@ -2,7 +2,7 @@
 <Scene=
 	<ScriptedObject=
 		<ScriptUnit=
-			<Script="scripts/level_handler.nut">
+			<Script="scripts/screen_game.nut">
 			<Class="LevelHandler">
 			<ParmList=
 				<Parm=
@@ -21,7 +21,7 @@
 		>
 	>
 	<ScriptUnit=
-		<Script="scripts/level_handler.nut">
+		<Script="scripts/screen_game.nut">
 		<Class="LevelHandler">
 		<ParmList=
 			<Parm=
@@ -10072,7 +10072,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10219,7 +10219,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10502,7 +10502,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10576,7 +10576,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10650,7 +10650,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11854,7 +11854,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11928,7 +11928,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12143,7 +12143,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12217,7 +12217,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12894,7 +12894,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12968,7 +12968,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13042,7 +13042,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13184,7 +13184,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13462,7 +13462,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13531,7 +13531,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -14136,7 +14136,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -14623,7 +14623,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -14697,7 +14697,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -14771,7 +14771,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -14845,7 +14845,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -15055,7 +15055,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -16894,7 +16894,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -16968,7 +16968,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>

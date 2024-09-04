@@ -101,7 +101,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 	function	UpdatePlayerIsAlive(item)
 	//------------------------------
 	{
-		if	(g_platform == "Android")
+		if	(IsTouchPlatform())
 		{
 			local	_left_pos	= Vector(0,0,0), 
 					_right_pos	= Vector(0,0,0)
@@ -244,7 +244,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 				ItemApplyLinearForce(item, ItemGetMatrix(item).GetUp().Scale(thrust * ItemGetMass(item) * low_dt_compensation))
 				ItemSetOpacity(flame_item[1], Clamp(ItemGetOpacity(flame_item[1]) + 0.35, 0.0, 1.0))
 				ItemSetOpacity(flame_item[0], Clamp(ItemGetOpacity(flame_item[0]) * 0.35, 0.0, 1.0))
-				ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[0]) * 0.35, 0.0, 1.0))
+				ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[2]) * 0.35, 0.0, 1.0))
 				SmokeFeedBack(flame_item[1])
 				thrusters_active = true
 			}

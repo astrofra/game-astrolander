@@ -26,6 +26,21 @@ function	SceneDeleteItemHierarchy(_scene, _item)
 	SceneDeleteItem(_scene, _item)
 }
 
+
+//--------------------------------
+function	AudioLoadSfx(_fname)
+//--------------------------------
+{
+	local	_filename = "audio/sfx/" + _fname
+	if (FileExists(_filename))
+		return	EngineLoadSound(g_engine, _filename)
+	else
+	{
+		print("AudioLoadSfx() Cannot find file '" + _filename + "'.")
+		return	0
+	}
+}
+
 //-----------------------------
 function	MakeTriangleWave(i)
 //-----------------------------

@@ -1,5 +1,5 @@
 /*
-	File: 04 - simple ball game with a title/title.nut
+	File: 04 - simple ball game with a title/screen_title.nut
 	Author: Emmanuel Julien
 */
 

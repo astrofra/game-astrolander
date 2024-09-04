@@ -32,7 +32,7 @@ function	CreateOpaqueScreen(ui)
 {
 		//ui = SceneGetUI(scene)
 		local	_black_screen
-		_black_screen = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "graphics/black.jpg"), 1280.0 / 2.0, 960.0 / 2.0, 16.0, 16.0)
+		_black_screen = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "graphics/black.jpg"), g_screen_width / 2.0, g_screen_height / 2.0, 16.0, 16.0)
 		WindowSetPivot(_black_screen, 8, 8)
 		WindowCentre(_black_screen)
 		WindowSetScale(_black_screen, 2048.0 / 16.0 * 1.5, 2048 / 16.0 * 1.5)
@@ -79,8 +79,10 @@ class	BaseUI
 
 	sfx_select		=	0
 	sfx_validate	=	0
+	sfx_error		=	0
 	sfx_page		=	0
 	sfx_pause		=	0
+	sfx_resume		=	0
 
 	//--------------
 	constructor(_ui)
@@ -88,9 +90,11 @@ class	BaseUI
 	{
 		ui = _ui
 
+		//UISetInternalResolution(ui, g_screen_width, g_screen_height)
+
 		local	_texture = EngineLoadTexture(g_engine, "ui/cursor.png")
 
-		if (!g_is_touch_platform)
+		if (!IsTouchPlatform())
 		{
 			cursor_sprite = UIAddSprite(ui, -1, _texture, 0, 0, TextureGetWidth(_texture),	TextureGetHeight(_texture))
 			WindowSetScale(cursor_sprite, 2.0, 2.0)
@@ -103,12 +107,35 @@ class	BaseUI
 		LoadSounds()
 	}
 
+	function	AddButtonRed(_x, _y, _center_pivot = false)
+	{
+		local	_button = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_validate_red.png"), _x, _y, 256, 128)
+		if (_center_pivot)
+			WindowSetPivot(_button, 128, 64)
+		return _button
+	}
+
+	function	AddButtonGreen(_x, _y, _center_pivot = false)
+	{
+		local	_button = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_validate_green.png"), _x, _y, 256, 128)
+		if (_center_pivot)
+			WindowSetPivot(_button, 128, 64)
+		return _button
+	}
+
+	function	ButtonFeedback(_window)
+	{
+		WindowSetCommandList(_window, "toalpha 0.05, 0.35; toalpha 0.1, 1.0;")
+	}
+
 	function	LoadSounds()
 	{
 		sfx_select = EngineLoadSound(g_engine, "audio/sfx/gui_up_down.wav")
 		sfx_validate = EngineLoadSound(g_engine, "audio/sfx/gui_validate.wav")
+		sfx_error = EngineLoadSound(g_engine, "audio/sfx/gui_error.wav")
 		sfx_page = EngineLoadSound(g_engine, "audio/sfx/gui_next_page.wav")
 		sfx_pause = EngineLoadSound(g_engine, "audio/sfx/gui_game_pause.wav")
+		sfx_resume = EngineLoadSound(g_engine, "audio/sfx/gui_game_resume.wav")
 	}
 
 	function	PlaySfxUISelect()
@@ -116,12 +143,18 @@ class	BaseUI
 
 	function	PlaySfxUIValidate()
 	{		local	_chan	= MixerSoundStart(g_mixer, sfx_validate)	}
+	
+	function	PlaySfxUIError()
+	{		local	_chan	= MixerSoundStart(g_mixer, sfx_error)	}
 
 	function	PlaySfxUINextPage()
 	{		local	_chan	= MixerSoundStart(g_mixer, sfx_page)	}
 
 	function	PlaySfxUIPause()
 	{		local	_chan	= MixerSoundStart(g_mixer, sfx_pause)	}
+
+	function	PlaySfxUIResume()
+	{		local	_chan	= MixerSoundStart(g_mixer, sfx_resume)	}
 
 	function	FadeTimeout()
 	{
@@ -150,20 +183,20 @@ class	BaseUI
 		cursor_prev_x = _x
 		cursor_prev_y = _y
 
-		if (!g_is_touch_platform)
+		if (!IsTouchPlatform())
 		{
 			//	Actual desktop cursor
 			local	dr = RendererGetViewport(g_render)
 
 			local	viewport_ar = dr.z / dr.w
-			local	reference_ar = 1280.0 / 960.0
+			local	reference_ar = g_screen_width / g_screen_height
 
 			local	kx = viewport_ar / reference_ar, ky = 1.0
 
 			_x = (_x - 0.5) * kx + 0.5
 			_y = (_y - 0.5) * ky + 0.5
 
-			WindowSetPosition(cursor_sprite, _x * 1280.0, _y * 960.0)
+			WindowSetPosition(cursor_sprite, _x * g_screen_width, _y * g_screen_height)
 
 			if ((_dx > 0.0) || (_dx > 0.0))
 				fade_timeout = g_clock

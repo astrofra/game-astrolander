@@ -2,19 +2,19 @@
 <Scene=
 	<ScriptedObject=
 		<ScriptUnit=
-			<Script="scripts/title.nut">
-			<Class="Title">
+			<Script="scripts/screen_game_over.nut">
+			<Class="GameOverScreen">
 		>
 	>
 	<ScriptUnit=
-		<Script="scripts/title.nut">
-		<Class="Title">
+		<Script="scripts/screen_game_over.nut">
+		<Class="GameOverScreen">
 	>
 	<Items=
 		<MCamera=
 			<MItem=
 				<Id="New Camera">
-				<UId=7>
+				<UId=4>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -34,7 +34,6 @@
 			>
 			<Camera=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>

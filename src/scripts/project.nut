@@ -12,7 +12,7 @@
 	Include("scripts/feedback_emitter.nut")
 	Include("scripts/inventory.nut")
 	Include("scripts/thread_handler.nut")
-	Include("scripts/level_handler.nut")
+	Include("scripts/screen_game.nut")
 	Include("scripts/level_generator.nut")
 	Include("scripts/bonus.nut")
 	Include("scripts/locale.nut")
@@ -21,10 +21,10 @@
 	Include("scripts/save.nut")
 	Include("scripts/stopwatch_handler.nut")
 	Include("scripts/ui.nut")
-	Include("scripts/title_ui.nut")
-	Include("scripts/title.nut")
-	Include("scripts/game_ui.nut")
-	Include("scripts/level_end_ui.nut")
+	Include("scripts/screen_title_ui.nut")
+	Include("scripts/screen_title.nut")
+	Include("scripts/screen_game_ui.nut")
+	Include("scripts/screen_level_end_ui.nut")
 	Include("scripts/utils.nut")
 	Include("scripts/vfx.nut")
 
@@ -35,15 +35,21 @@ function	GlobalSaveGame()
 	_game.save_game.SavePlayerData(_game.player_data)
 }
 
+function	GlobalLoadGame()
+{
+	local	_game = ProjectGetScriptInstance(g_project)
+	_game.player_data = _game.save_game.LoadPlayerData(_game.player_data)
+}
+
 //
 class	ProjectHandler	extends	ProjectHandlerBase
 {
 	save_game			=	0
 
 	player_data		=	{
-			current_level		=	0
-			score				=	0
-			latest_run			=	0
+			current_selected_level	=	0
+			current_level			=	0
+			latest_run				=	0
 	}
 
 	function	ProjectStartGame()
@@ -64,10 +70,12 @@ class	ProjectHandler	extends	ProjectHandlerBase
 	function	OnSetup(project)
 	{
 		base.OnSetup(project)
+		GlobalLoadGame()
 	}
 	
 	constructor()
 	{
 		base.constructor()
+		save_game = SaveGame()
 	}
 }

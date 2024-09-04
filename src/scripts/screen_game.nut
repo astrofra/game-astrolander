@@ -1,5 +1,5 @@
 /*
-	File: scripts/level_handler.nut
+	File: scripts/screen_game.nut
 	Author: Astrofra
 */
 
@@ -28,6 +28,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	game					=	0
 
 	state					=	0
+	paused					=	false
 
 	path					=	0
 	path_length				=	0.0
@@ -82,6 +83,36 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		timer_table.rawdelete(timer_name)
 	}
 
+	//---------------------
+	function	PauseGame()
+	//---------------------
+	{
+		if (paused)
+			return
+		paused	=	true
+		game_ui.ShowPauseWindow()
+	}
+
+	//---------------------
+	function	ResumeGame()
+	//---------------------
+	{
+		if (!paused)
+			return
+		paused	=	false
+		EngineSetClockScale(g_engine, g_clock_scale)
+		game_ui.HidePauseWindow()
+	}
+
+	//-----------------------
+	function	HandlePause()
+	//-----------------------
+	{
+		if (paused)
+			if (game_ui.IsCommandListDone())
+				EngineSetClockScale(g_engine, 0.0)
+	}
+
 	//-------------------------
 	function	OnUpdate(scene)
 	//-------------------------
@@ -89,6 +120,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		base.OnUpdate(scene)
 
 		game_ui.UpdateCursor()
+
+		HandlePause()
 
 		stopwatch_handler.Update()
 		feedback_emitter.Update()
@@ -257,10 +290,11 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		local	_level_key = "level_" + game.player_data.current_level.tostring()
 
 		local	_record	=	{	complete = false,//true,
-								stopwatch = 0.0, //stopwatch_handler.clock,
+								stopwatch = -1.0, //stopwatch_handler.clock,
 								fuel = 0.0, //player_script.fuel,
 								life = 0.0, //player_script.life,
-								wall_hits = 0	
+								wall_hits = 0,
+								score = -1.0,
 							}
 
 		if (!game.player_data.rawin(_level_key))
@@ -271,22 +305,33 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		game.player_data[_level_key].complete = true
 
-		if (game.player_data[_level_key].stopwatch < stopwatch_handler.clock)
+		if ((game.player_data[_level_key].stopwatch < 0.0) || (stopwatch_handler.clock < game.player_data[_level_key].stopwatch))
 		{
+			if (game.player_data[_level_key].stopwatch > -1.0)
+			{
+				game.player_data.latest_run.new_record_stopwatch = true
+				print("LevelHandler::RecordGameData() : stopwatch record!")
+				print("stopwatch_handler.clock                = " + stopwatch_handler.clock)
+				print("game.player_data[_level_key].stopwatch = " + game.player_data[_level_key].stopwatch)
+			}
+
 			game.player_data[_level_key].stopwatch = stopwatch_handler.clock
-			game.player_data.latest_run.new_record_stopwatch = true
 		}
 
-		if (game.player_data[_level_key].fuel < player_script.fuel)
+		if (player_script.fuel > game.player_data[_level_key].fuel)
 		{
 			game.player_data[_level_key].fuel = player_script.fuel
 			game.player_data.latest_run.new_record_fuel = true
+			print("LevelHandler::RecordGameData() : remaining fuel record!")
+
 		}
 
-		if (game.player_data[_level_key].life < player_script.life)
+		if (player_script.life > game.player_data[_level_key].life)
 		{
 			game.player_data[_level_key].life = player_script.life
 			game.player_data.latest_run.new_record_life = true
+			print("LevelHandler::RecordGameData() : remaining life record!")
+
 		}
 		
 	}
@@ -317,22 +362,31 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		camera_handler = CameraHandler(scene)
 		stopwatch_handler = StopwatchHandler()
 		feedback_emitter = FeedbackEmitter(scene)
+
+		//	UI		
 		ui		=	SceneGetUI(scene)
 		game_ui	=	InGameUI(scene)
 		level_name = "level_" + (ProjectGetScriptInstance(g_project).player_data.current_level).tostring()
 		local	level_name_str
 		try	{	level_name_str = g_locale.level_names[level_name]	}
 		catch(e)	{	level_name_str = level_name	}
-		game_ui.UpdateRoomName(level_name_str)
-		state = "Game"
+		game_ui.UpdateRoomName(level_name_str)		
+
 		print("LevelHandler::OnSetup() g_clock_scale = " + g_clock_scale)
+
 		EngineSetClockScale(g_engine, g_clock_scale)
-//		EngineSetFixedDeltaFrame(g_engine, 1.0 / 60.0)
-		EngineSetMaximumDeltaFrame(g_engine, 1.0 / 60.0)
-		if	(g_is_touch_platform)
+
+		if	(IsTouchPlatform())
 		{
-			ItemActivate(SceneFindItem(scene, "sun"), false)
+			print("LevelHandler::OnSetup() Deleting lights, mobile platform.")
+			//ItemActivate(SceneFindItem(scene, "sun"), false)
+			//SceneDeleteLight(scene, ItemCastToLight(SceneFindItem(scene, "sun")))
+			SceneDeleteItem(scene, SceneFindItem(scene, "sun"))
+			//SceneDeleteAllLights(scene)			
 			SceneSetAmbientIntensity(scene, 2.0)
+			local	_amb_color = SceneGetAmbientColor(scene)
+			_amb_color = _amb_color.Lerp(0.75, Vector(0.5, 0.5, 0.5, 1.0))
+			SceneSetAmbientColor(scene, _amb_color)
 		}
 	}
 
@@ -345,6 +399,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		camera_handler.SetMaxSneakSpeed(player_script.max_speed / 2.0)
 		camera_handler.StickToPlayerPosition(ItemGetWorldPosition(player))
 
+		//	Seek for various gameplay items
 		SceneFindPath(scene)
 		SceneFindArtefacts(scene)
 		SceneFindBonus(scene, "BonusFuel")
@@ -354,8 +409,11 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		SceneFindBonus(scene, "BonusSlowClock")
 		SceneFindBonus(scene, "BonusFastClock")
 		homebase_item = LegacySceneFindItem(scene, "homebase")
-		UpdateArtifactCounter()
+
+		//	Minimap
 		minimap = MiniMap(scene)
+	
+		UpdateArtifactCounter()
 
 		update_function = UpdateIntroScreen
 		player_script.update_function = player_script.UpdatePlayerIsDead
@@ -387,8 +445,9 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		StopLevelMusic()
 		RecordGameData()
+		GlobalSaveGame()
 		EngineSetClockScale(g_engine, 1.0)
-		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/level_end_screen.nms")
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_level_end.nms")
 	}
 
 	//------------------------
@@ -398,7 +457,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		print("LevelHandler::ExitGame()")
 		EngineSetClockScale(g_engine, 1.0)
 		StopLevelMusic()
-		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/game_over.nms")
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_game_over.nms")
 	}
 
 	//------------------------------------------

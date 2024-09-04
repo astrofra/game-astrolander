@@ -2097,7 +2097,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2172,7 +2172,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2247,7 +2247,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2322,7 +2322,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2397,7 +2397,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2467,7 +2467,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2542,7 +2542,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2617,7 +2617,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2687,7 +2687,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2761,7 +2761,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2835,7 +2835,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2909,7 +2909,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -2984,7 +2984,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3059,7 +3059,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3133,7 +3133,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3207,7 +3207,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3281,7 +3281,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3356,7 +3356,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3431,7 +3431,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3505,7 +3505,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3579,7 +3579,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3653,7 +3653,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3728,7 +3728,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3798,7 +3798,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3872,7 +3872,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -3946,7 +3946,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4020,7 +4020,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4094,7 +4094,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4168,7 +4168,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4242,7 +4242,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4316,7 +4316,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4390,7 +4390,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4460,7 +4460,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4535,7 +4535,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4610,7 +4610,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4685,7 +4685,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4760,7 +4760,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4834,7 +4834,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4908,7 +4908,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -4982,7 +4982,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5051,7 +5051,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5125,7 +5125,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5199,7 +5199,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5273,7 +5273,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5347,7 +5347,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5422,7 +5422,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5497,7 +5497,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5572,7 +5572,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5647,7 +5647,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5722,7 +5722,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5796,7 +5796,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5865,7 +5865,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -5939,7 +5939,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6014,7 +6014,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6089,7 +6089,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6164,7 +6164,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6239,7 +6239,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6314,7 +6314,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6389,7 +6389,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6464,7 +6464,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6539,7 +6539,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6613,7 +6613,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6687,7 +6687,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6761,7 +6761,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6835,7 +6835,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6910,7 +6910,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -6985,7 +6985,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7060,7 +7060,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7134,7 +7134,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7208,7 +7208,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7282,7 +7282,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7356,7 +7356,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7431,7 +7431,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7506,7 +7506,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7581,7 +7581,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7656,7 +7656,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -7731,7 +7731,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=

@@ -2,7 +2,7 @@
 <Scene=
 	<ScriptedObject=
 		<ScriptUnit=
-			<Script="scripts/level_handler.nut">
+			<Script="scripts/screen_game.nut">
 			<Class="LevelHandler">
 			<ParmList=
 				<Parm=
@@ -13,7 +13,7 @@
 		>
 	>
 	<ScriptUnit=
-		<Script="scripts/level_handler.nut">
+		<Script="scripts/screen_game.nut">
 		<Class="LevelHandler">
 		<ParmList=
 			<Parm=
@@ -1072,7 +1072,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1357,6 +1356,7 @@
 						<Y=7.395729>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1662,7 +1662,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -1730,7 +1730,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -1798,7 +1798,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -1866,7 +1866,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -2068,7 +2068,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -2397,6 +2397,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2768,27 +2769,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.969042>
+			<X=0.999938>
 			<Y=0.000000>
-			<Z=-0.246898>
+			<Z=0.011154>
 			<W=0.000000>
 		>
 		<R1=
-			<X=0.064709>
-			<Y=0.965044>
-			<Z=0.253976>
+			<X=0.000039>
+			<Y=0.999994>
+			<Z=-0.003474>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.238267>
-			<Y=-0.262089>
-			<Z=0.935167>
+			<X=-0.011154>
+			<Y=0.003474>
+			<Z=0.999932>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-218.072723>
-			<Y=66.706261>
-			<Z=-204.787064>
+			<X=-160.355576>
+			<Y=28.685810>
+			<Z=-158.357117>
 			<W=1.000000>
 		>
 	>
@@ -2801,27 +2802,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=0.969042>
+					<X=0.999938>
 					<Y=0.000000>
-					<Z=-0.246898>
+					<Z=0.011154>
 					<W=0.000000>
 				>
 				<R1=
-					<X=0.064709>
-					<Y=0.965044>
-					<Z=0.253976>
+					<X=0.000039>
+					<Y=0.999994>
+					<Z=-0.003474>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.238267>
-					<Y=-0.262089>
-					<Z=0.935167>
+					<X=-0.011154>
+					<Y=0.003474>
+					<Z=0.999932>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-218.072723>
-					<Y=66.706261>
-					<Z=-204.787064>
+					<X=-160.355576>
+					<Y=28.685810>
+					<Z=-158.357117>
 					<W=1.000000>
 				>
 			>

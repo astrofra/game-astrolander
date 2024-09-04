@@ -7,6 +7,7 @@ class	InGameUI extends	BaseUI
 	scene					=	0
 //	ui						=	0
 	
+	message_background		=	0
 	life_gauge				=	0
 	fuel_gauge				=	0
 	artifact_count			=	0
@@ -19,17 +20,26 @@ class	InGameUI extends	BaseUI
 	sprite_skip				=	0
 	button_skip				=	0
 
+	message_origin_y		=	g_screen_height / 2.0 + 250.0	//	Y coordinate of the ingame on screen messages
+
 	inventory_bitmaps		=	0
 
 	update_frequency		=	0
 
-	game_window			=	{
+	game_window				=	{
 		game_over_no_fuel	= { handler = 0, visible = false }
 		game_over_damage	= { handler = 0, visible = false }
 		game_over_time		= { handler = 0, visible = false }
 		get_ready			= { handler = 0, visible = false }
 		return_base			= { handler = 0, visible = false }
 		mission_complete	= { handler = 0, visible = false }
+	}
+
+	pause_window			=	{
+		global_handler	=	0
+		pause_resume	=	{	button = 0, text = 0},
+		pause_restart	=	{	button = 0, text = 0},
+		pause_quit		=	{	button = 0, text = 0}
 	}
 
 	touch_feedback			=	0
@@ -43,6 +53,8 @@ class	InGameUI extends	BaseUI
 		base.constructor(SceneGetUI(scene))
 		UICommonSetup(ui)
 		CreateHelpButtons()
+		CreateMessageBackground()
+		CreatePauseWindow()
 		life_gauge = CreateLifeGauge()
 		fuel_gauge = CreateFuelGauge()
 		stopwatch = CreateStopwatch()
@@ -59,10 +71,119 @@ class	InGameUI extends	BaseUI
 		game_window.return_base.handler			= CreateGameMessageWindow(g_locale.return_base)
 		game_window.mission_complete.handler	= CreateGameMessageWindow(g_locale.mission_complete)
 	}
+	
+	//-----------------------------
+	function	CreatePauseWindow()
+	//-----------------------------
+	{
+		pause_window.global_handler = UIAddWindow(ui, -1, 0, 0, 1, 1)
+		pause_window.pause_resume.button = AddButtonGreen(g_screen_width * 0.25, message_origin_y, true)
+		pause_window.pause_restart.button = AddButtonRed(g_screen_width * 0.5, message_origin_y, true)
+		pause_window.pause_quit.button = AddButtonRed(g_screen_width * 0.75, message_origin_y, true)
 
+		WindowSetZOrder(pause_window.pause_resume.button, -0.99)
+		WindowSetZOrder(pause_window.pause_restart.button, -0.99)
+		WindowSetZOrder(pause_window.pause_quit.button, -0.99)
+
+		WindowSetParent(pause_window.pause_resume.button,pause_window.global_handler)
+		WindowSetParent(pause_window.pause_restart.button,pause_window.global_handler)
+		WindowSetParent(pause_window.pause_quit.button,pause_window.global_handler)
+
+		pause_window.pause_resume.text = CreateLabel(ui, g_locale.pause_resume_game, 0, 0, 50, 256, 128 - 10, g_ui_color_white , g_main_font_name, TextAlignCenter)
+		pause_window.pause_restart.text = CreateLabel(ui, g_locale.pause_restart_level, 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		pause_window.pause_quit.text = CreateLabel(ui, g_locale.pause_quit_game, 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
+
+		WindowSetParent(pause_window.pause_resume.text[0], pause_window.pause_resume.button)
+		WindowSetParent(pause_window.pause_restart.text[0], pause_window.pause_restart.button)
+		WindowSetParent(pause_window.pause_quit.text[0], pause_window.pause_quit.button)
+
+		WindowSetZOrder(pause_window.pause_resume.text[0], -0.99)
+		WindowSetZOrder(pause_window.pause_restart.text[0], -0.99)
+		WindowSetZOrder(pause_window.pause_quit.text[0], -0.99)
+
+		WindowSetEventHandlerWithContext(pause_window.pause_resume.button, EventCursorDown, this, InGameUI.PauseResumeGame)
+		WidgetSetEventHandlerWithContext(pause_window.pause_resume.text[1], EventCursorDown, this, InGameUI.PauseResumeGame)
+
+		WindowShow(pause_window.global_handler, false)
+	}
+
+	//--------------------------------------
+	function	PauseResumeGame(event, table)
+	//--------------------------------------
+	{
+		print("InGameUI::PauseResumeGame()")
+		PlaySfxUIResume()
+		SceneGetScriptInstance(scene).ResumeGame()
+		ButtonFeedback(table.window)
+	}
+
+	//---------------------------
+	function	ShowPauseWindow()
+	//---------------------------
+	{
+		print("InGameUI::ShowPauseWindow()")
+		ShowMessageBackground()
+		WindowSetCommandList(pause_window.global_handler, "toalpha 0,0;show;nop 0.1;toalpha 0.1,1;")
+	}
+
+	//---------------------------
+	function	HidePauseWindow()
+	//---------------------------
+	{
+		print("InGameUI::HidePauseWindow()")
+		HideMessageBackground()
+		WindowSetCommandList(pause_window.global_handler, "toalpha 0,1;show;nop 0.1;toalpha 0.1,0;hide;")
+	}
+
+	//-----------------------------
+	function	IsCommandListDone()
+	//-----------------------------
+	{
+		if (!WindowIsCommandListDone(pause_window.global_handler))
+			return	false
+
+		return	true
+	}
+	
+	//-----------------------------------
+	function	CreateMessageBackground()
+	//-----------------------------------
+	{
+		local	_bg_handler	=	0
+		_bg_handler = UIAddWindow(ui, -1, 0, 0, 1, 1)
+		message_background = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/background_message.png"), g_screen_width / 2.0, message_origin_y, 512, 128)
+		WindowSetPivot(message_background, 256, 64)
+		WindowSetParent(message_background, _bg_handler)
+		WindowSetScale(message_background, 6.0, 3.0)
+		WindowSetOpacity(_bg_handler, 0.75)
+		WindowShow(message_background, false)
+		WindowSetZOrder(message_background, -0.9)
+	}
+
+	//------------------------
 	function	UpdateCursor()
+	//------------------------
 	{
 		base.UpdateCursor()
+	}
+
+	//---------------------------------	
+	function	ShowMessageBackground()
+	//---------------------------------	
+	{
+		WindowSetCommandList(message_background, "toalpha 0,0;toscale 0,6,0;show;toalpha 0.1, 1+toscale 0.2,6,3;")
+	}
+
+	//-------------------------------------
+	function	ShowMessageBackgroundOnce()
+	//-------------------------------------
+	{
+		WindowSetCommandList(message_background, "toalpha 0,0;toscale 0,6,0;show;toalpha 0.1, 1+toscale 0.2,6,3;nop " + (5.0 * g_clock_scale).tostring() + ";toalpha 0,1;toscale 0,6,3;toalpha 0.1, 0+toscale 0.1,6,0;hide;")
+	}
+
+	function	HideMessageBackground()
+	{
+		WindowSetCommandList(message_background, "nop 0.25;toalpha 0,1;toscale 0,6,3;toalpha 0.1, 0+toscale 0.1,6,0;hide;")
 	}
 	
 	//-----------------------------
@@ -75,9 +196,10 @@ class	InGameUI extends	BaseUI
 				WindowSetPivot(_button_sprite, 64, 64)
 				WindowSetScale(_button_sprite, 0.7, 0.7)
 				WindowSetPosition(_button_sprite, -60, 50)
-				button_help = CreateLabel(ui, g_locale.hud_help, 0, 0, 100, 128, 128, Vector(0, 0, 0, 255), g_main_font_name, TextAlignCenter)
+				button_help = CreateLabel(ui, g_locale.hud_help, 0, 0, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
 				WindowSetParent(button_help[0], _button_sprite)
-				WindowSetOpacity(_button_sprite, 0.35)
+				//WindowSetOpacity(_button_sprite, 0.35)
+				WindowSetEventHandlerWithContext(_button_sprite, EventCursorDown, this, InGameUI.OnGameUIHelp)
 				WidgetSetEventHandlerWithContext(button_help[1], EventCursorDown, this, InGameUI.OnGameUIHelp)
 
 
@@ -85,10 +207,11 @@ class	InGameUI extends	BaseUI
 				WindowSetPivot(_button_sprite, 64, 64)
 				WindowSetScale(_button_sprite, 0.7, 0.7)
 				WindowSetPosition(_button_sprite, -60 - (50 * 2.0), 50)
-				button_skip = CreateLabel(ui, g_locale.hud_skip, 0, -10, 100, 128, 128, Vector(0, 0, 0, 255), g_main_font_name, TextAlignCenter)
+				button_skip = CreateLabel(ui, g_locale.hud_skip, 0, -10, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
 				WindowSetParent(button_skip[0], _button_sprite)
-				WindowSetOpacity(_button_sprite, 0.35)
-				WidgetSetEventHandlerWithContext(button_skip[1], EventCursorDown, this, InGameUI.OnGameUISkipLevel)
+				//WindowSetOpacity(_button_sprite, 0.35)
+				WindowSetEventHandlerWithContext(_button_sprite, EventCursorDown, this, InGameUI.OnGameUISkipLevel)
+				WidgetSetEventHandlerWithContext(button_help[1], EventCursorDown, this, InGameUI.OnGameUIHelp)
 				WindowSetZOrder(button_skip[0], -0.9)
 	}
 
@@ -97,7 +220,9 @@ class	InGameUI extends	BaseUI
 	//-----------------------------------------
 	{
 		print("InGameUI::OnGameUIHelp()")
-		SceneGetScriptInstance(scene).ExitGame(scene)
+		PlaySfxUIPause()
+		ButtonFeedback(table.window)
+		SceneGetScriptInstance(scene).PauseGame() //ExitGame(scene)
 	}
 
 	//-----------------------------------------
@@ -105,6 +230,7 @@ class	InGameUI extends	BaseUI
 	//-----------------------------------------
 	{
 		print("InGameUI::OnGameUISkipLevel()")
+		ButtonFeedback(table.window)
 		SceneGetScriptInstance(scene).GoToLevelEndScreen(scene)
 	}
 
@@ -119,12 +245,12 @@ class	InGameUI extends	BaseUI
 		_texture = EngineLoadTexture(g_engine, "ui/touch_feedback.png")
 		_touch_feedback.left = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 256.0, 256.0)
 		WindowCenterPivot(_touch_feedback.left)
-		WindowSetPosition(_touch_feedback.left, 640.0 * 0.3, 480.0 + 256.0)
+		WindowSetPosition(_touch_feedback.left, (g_screen_width * 0.5) * 0.3, (g_screen_height * 0.5) + 256.0)
 		WindowSetScale(_touch_feedback.left, _touch_scale, _touch_scale)
 
 		_touch_feedback.right = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 256.0, 256.0)
 		WindowCenterPivot(_touch_feedback.right)
-		WindowSetPosition(_touch_feedback.right, 1280.0 - 640.0 * 0.3, 480.0 + 256.0)
+		WindowSetPosition(_touch_feedback.right, g_screen_width - (g_screen_width * 0.5) * 0.3, (g_screen_height * 0.5) + 256.0)
 		WindowSetScale(_touch_feedback.right, _touch_scale, _touch_scale)
 
 		WindowShow(_touch_feedback.left, false)
@@ -139,8 +265,8 @@ class	InGameUI extends	BaseUI
 	{
 		WindowShow(touch_feedback.left, left_enabled)
 		WindowShow(touch_feedback.right, right_enabled)
-		WindowSetPosition(touch_feedback.left, left_pos.x * 1280.0, left_pos.y * 960.0)
-		WindowSetPosition(touch_feedback.right, right_pos.x * 1280.0, right_pos.y * 960.0)
+		WindowSetPosition(touch_feedback.left, left_pos.x * g_screen_width, left_pos.y * g_screen_height)
+		WindowSetPosition(touch_feedback.right, right_pos.x * g_screen_width, right_pos.y * g_screen_height)
 	}
 
 	//-------------------------
@@ -176,7 +302,7 @@ class	InGameUI extends	BaseUI
 	{
 		local	_window, _widget
 		//	Start menu window
-		_window = UIAddWindow(ui, -1, 1280.0 / 2.0, 960.0 / 2.0 + 120.0, 800.0, 300.0)
+		_window = UIAddWindow(ui, -1, g_screen_width / 2.0, message_origin_y, 800.0, 300.0)
 //		WindowSetStyle(_window, StyleMovable)
 		WindowSetTitle(_window, "")
 		WindowCenterPivot(_window)		
@@ -188,8 +314,10 @@ class	InGameUI extends	BaseUI
 		
 		//local	_title_name = "Game Over"
 		_widget = UIAddStaticTextWidget(ui, -1, _text, g_main_font_name)
-		TextSetParameters(_widget, { size = 80, align = "center", color = 0xffffffff })
+		TextSetParameters(_widget, { size = 80, align = "center", color = 0x000000ff })
 		SizerAddWidget(hsizer, _widget)
+
+		WindowSetZOrder(_window, -1.0)
 
 		//	window_game_over = _window
 		return _window
@@ -209,13 +337,15 @@ class	InGameUI extends	BaseUI
 
 		if (flag)
 		{
+			ShowMessageBackground()
 			WindowResetCommandList(_win.handler)
-			WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.75 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + " ;")
+			WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.25 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + " ;")
 		}
 		else
 		{
+			HideMessageBackground()
 			WindowResetCommandList(_win.handler)
-			WindowSetCommandList(_win.handler, "toalpha 0,1;show;toalpha " + (0.75 / speed_scale * g_clock_scale).tostring() + ",0;hide;")
+			WindowSetCommandList(_win.handler, "toalpha 0,1;show;toalpha " + (0.25 / speed_scale * g_clock_scale).tostring() + ",0;hide;")
 		}
 
 		_win.visible = flag
@@ -229,7 +359,8 @@ class	InGameUI extends	BaseUI
 		if (_win.visible == true)
 			return
 
-		WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.75 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + ";nop " + (5 * g_clock_scale).tostring() + ";toalpha 1.5,0;")
+		ShowMessageBackgroundOnce()
+		WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.25 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + ";nop " + (5 * g_clock_scale).tostring() + ";toalpha 0.25,0;")
 
 		_win.visible = false
 	}
@@ -310,7 +441,7 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateLevelName()")
-		local	_name = CreateLabel(ui, "Level Name", 0, 960 - 64, 32, 1024)
+		local	_name = CreateLabel(ui, "Level Name", 0, g_screen_height - 64, 32, 1024)
 		return _name
 	}
 
@@ -319,8 +450,8 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateStopwatch()")
-		CreateLabel(ui, g_locale.hud_stopwatch, 1280 - 400, 0, 32, 400)
-		local	_stopwatch = CreateLabel(ui, TimeToString(0.0), 1280 - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
+		CreateLabel(ui, g_locale.hud_stopwatch, g_screen_width - 400, 0, 32, 400)
+		local	_stopwatch = CreateLabel(ui, TimeToString(0.0), g_screen_width - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
 		return _stopwatch
 	}
 
@@ -329,8 +460,8 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateArtifactCounter()")
-		CreateLabel(ui, g_locale.hud_artifacts, 1280 - 400, 40, 32, 380)// 960 - 64, 32, 380)
-		local	_counter = CreateLabel(ui, "0/0", 1280 - 400 + 280,  40) //960 - 64)
+		CreateLabel(ui, g_locale.hud_artifacts, g_screen_width - 400, 40, 32, 380)// g_screen_height - 64, 32, 380)
+		local	_counter = CreateLabel(ui, "0/0", g_screen_width - 400 + 280,  40) //g_screen_height - 64)
 		return _counter
 	}
 	//----------------------------------------

@@ -1024,7 +1024,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_8x8.nmg">
+				<Geometry="graphics/g_block_8x8.nmg">
 			>
 		>
 		<MObject=
@@ -1099,7 +1099,7 @@
 								<Y=1.000000>
 								<Z=1.000000>
 							>
-							<Mesh="graphics/frozen_g_block_tr_4x4.nmg">
+							<Mesh="graphics/g_block_tr_4x4.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -1122,7 +1122,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/frozen_g_block_tr_4x4.nmg">
+				<Geometry="graphics/g_block_tr_4x4.nmg">
 			>
 		>
 		<MObject=

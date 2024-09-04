@@ -79,7 +79,7 @@ class	ProjectHandlerBase
 	function	OnSetup(project)
 	{
 		print("ProjectHandler::OnSetup()")
-		ProjectGotoScene("levels/logo.nms")
+		ProjectGotoScene("levels/preloader.nms")
 	}
 	
 	constructor()

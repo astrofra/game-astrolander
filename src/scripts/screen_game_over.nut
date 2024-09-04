@@ -1,5 +1,5 @@
 /*
-	File: scripts/logo.nut
+	File: scripts/screen_game_over.nut
 	Author: Astrofra
 */
 
@@ -18,7 +18,7 @@ class	GameOverScreen
 	{
 		if ((g_clock - display_timer) > SecToTick(Sec(10.0)))
 		{
-			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/title.nms")
+			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_title.nms")
 			MixerChannelStopAll(g_mixer)
 		}
 	}
@@ -44,7 +44,7 @@ class	GameOverScreen
 			story_image = UIAddSprite(ui, -1, story_texture, 0, 0, TextureGetWidth(story_texture), TextureGetHeight(story_texture))
 			WindowShow(story_image, false)
 			WindowSetPivot(story_image, TextureGetWidth(story_texture) * 0.5, TextureGetHeight(story_texture) * 0.5)
-			WindowSetPosition(story_image, 1280.0 * 0.5, 960.0 * 0.5)
+			WindowSetPosition(story_image, g_screen_width * 0.5, g_screen_height * 0.5)
 			WindowSetOpacity(story_image, 0.0)
 			WindowSetCommandList(story_image, "nop 0.5; show; toalpha 2.0, 1.0+toscale 10.0,1.1,1.1;")
 		}

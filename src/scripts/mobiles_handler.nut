@@ -3,7 +3,49 @@
 	Author: Astrofra
 */
 
+//----------------
+class	MobileBase
+//----------------
+{
+	is_culled		=	false
+	prev_culled		=	false
+	culling_changed	=	true
+
+	scene			=	0
+	current_camera	=	0
+
+	function	OnSetup(item)
+	{
+		is_culled 		=	false
+		prev_culled		=	false
+		culling_changed	=	true
+	}
+
+	function	OnSetupDone(item)
+	{
+		scene = ItemGetScene(item)
+		current_camera = SceneGetCurrentCamera(scene)
+	}
+
+	function	OnUpdate(item)
+	{
+		if (CameraCullPosition(current_camera, ItemGetWorldPosition(item)) == VisibilityOutside)
+			is_culled = true
+		else
+			is_culled = false
+
+		if (prev_culled == is_culled)
+			culling_changed = false
+		else
+			culling_changed = true
+
+		prev_culled = is_culled
+	}
+}
+
+//-----------------------
 class	MobileDeadlySlime
+//-----------------------
 {
 	bubble_spawn_0_pos	=	0
 	bubble_spawn_1_pos	=	0
@@ -338,7 +380,7 @@ class	MobileElevator
 		}
 }
 
-class	MobileJawGate	//extends	SceneWithThreadHandler
+class	MobileJawGate	extends	MobileBase
 {
 /*<
 	<Parameter =
@@ -383,6 +425,8 @@ class	MobileJawGate	//extends	SceneWithThreadHandler
 	function	OnSetup(item)
 	//-----------------------
 	{
+		base.OnSetup(item)
+
 		print("MobileJawGate::OnSetup(" + ItemGetName(item) + ")")
 		scene = ItemGetScene(item)
 		timer_table = {}
@@ -401,14 +445,33 @@ class	MobileJawGate	//extends	SceneWithThreadHandler
 		ItemPhysicSetAngularFactor(item, Vector(0,0,0))
 	}
 
+	function	OnSetupDone(item)
+	{
+		base.OnSetupDone(item)
+	}
+
 	//-----------------------
 	function	OnUpdate(item)
 	//-----------------------
 	{
-		if (!WaitForTimer("JawGateOpen", Sec(4.0)))
+		base.OnUpdate(item)
+
+		if (is_culled)
 		{
-			ResetTimer("JawGateOpen")
-			open = !open
+			ItemSetPhysicMode(item, PhysicModeNone)
+//			ItemSetPosition(item, pos_closed)
+			ItemSleep(item)
+		}
+		else
+		{
+			ItemSetPhysicMode(item, PhysicModeDynamic)
+			ItemWake(item)
+
+			if (!WaitForTimer("JawGateOpen", Sec(4.0)))
+			{
+				ResetTimer("JawGateOpen")
+				open = !open
+			}
 		}
 	}
 
@@ -416,6 +479,9 @@ class	MobileJawGate	//extends	SceneWithThreadHandler
 	function	OnPhysicStep(item, dt)
 	//--------------------------------
 	{
+		if (is_culled)
+			return
+
 		ItemApplyLinearForce(item, dir.Scale((open?1.0:-1.0) * (is_gate_top?1.0:-1.0) * ItemGetMass(item) * strength))
 		ItemApplyLinearForce(item, g_gravity.Scale(-1.0 * ItemGetMass(item)))
 	}
@@ -426,7 +492,9 @@ class	MobileJawGate	//extends	SceneWithThreadHandler
 	@short	MobileRotary
 	@author	Astrofra
 */
-class	MobileRotary
+//------------------
+class	MobileRotary	extends MobileBase
+//------------------
 {
 /*<
 	<Parameter =
@@ -447,14 +515,48 @@ class	MobileRotary
 
 	function	OnUpdate(item)
 	{
+		base.OnUpdate(item)
+
 		if (is_physic)
 		{
-			ItemWake(item)
+
+			if (!culling_changed)
+			{
+				if (!is_culled)
+					ItemWake(item)		
+				return
+			}
+
+			if (is_culled)
+			{
+				ItemSetAngularDamping(item, 0.5)
+//				ItemSetPhysicMode(item, PhysicModeNone)
+//				ItemSleep(item)
+			}
+			else
+			{
+				ItemSetPhysicMode(item, PhysicModeDynamic)
+				ItemSetAngularDamping(item, 1.0)
+				ItemSetAngularVelocity(item, Vector(0,0,target_angular_vel).Scale(0.1))
+				ItemWake(item)
+			}
+
 			return
+		}
+		else
+		{
+
+			if (culling_changed)
+			{
+				if (is_culled)
+					ItemSetPhysicMode(item, PhysicModeNone)
+				else
+					ItemSetPhysicMode(item, PhysicModeKinematic)
+			}
 		}
 
 		local	_rot = ItemGetRotation(item)
-		_rot.z += target_RPM * g_dt_frame
+		_rot.z += target_RPM * g_dt_frame * 2 * PI
 		ItemSetRotation(item, _rot)
 	}
 
@@ -463,18 +565,29 @@ class	MobileRotary
 		if (!is_physic)
 			return
 
+		if (is_culled)
+			return
+
 		local	_angular_vel = ItemGetAngularVelocity(item).z
 		local	_torque	= Vector(0,0,target_angular_vel - _angular_vel)
 		_torque = _torque.Scale(strength * ItemGetMass(item))
 		ItemApplyTorque(item, _torque)
 	}
 
-	/*!
-		@short	OnSetup
-		Called when the item is about to be setup.
-	*/
+	function	OnSetupDone(item)
+	{
+		base.OnSetupDone(item)
+	}
+
 	function	OnSetup(item)
 	{
+		base.OnSetup(item)
+
+		if (is_physic)
+			ItemSetPhysicMode(item, PhysicModeDynamic)
+		else
+			ItemSetPhysicMode(item, PhysicModeKinematic)
+
 		ItemPhysicSetLinearFactor(item, Vector(0,0,0))
 		ItemPhysicSetAngularFactor(item, Vector(0,0,1))
 		target_angular_vel = DegreeToRadian(target_RPM * 360.0)

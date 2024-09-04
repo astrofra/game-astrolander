@@ -26,7 +26,7 @@ class	SaveGame
 	function	SavePlayerData(data_table)
 	//------------------------------------
 	{
-		if	(g_is_touch_platform)
+		if	(IsTouchPlatform())
 			return
 		print("SaveGame::SavePlayerData()")
 
@@ -74,7 +74,7 @@ class	SaveGame
 	function	LoadPlayerData(data_table)
 	//------------------------------------
 	{
-		if	(g_is_touch_platform)
+		if	(IsTouchPlatform())
 			return data_table
 
 		print("SaveGame::LoadPlayerData()")
@@ -123,6 +123,8 @@ class	SaveGame
 
 					data_table[MetatagGetName(_root)] = _val
 				}
+				
+				g_reversed_controls = data_table.reversed_controls
 			}
 		}
 
@@ -133,7 +135,7 @@ class	SaveGame
 	function	LoadPlayerDataObsolete(data_table)
 	//------------------------------------
 	{
-		if	(g_is_touch_platform)
+		if	(IsTouchPlatform())
 			return data_table
 		print("SaveGame::LoadPlayerData()")
 

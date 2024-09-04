@@ -30,31 +30,23 @@
 	>
 	<ShaderMap=
 		<Pos=
-			<X=-449.280060>
-			<Y=-10.368001>
+			<X=0.000000>
+			<Y=0.000000>
 		>
 		<Map=
 			<Entry=
 				<Type="Geometry Normal">
 				<Pos=
-					<X=320.000000>
-					<Y=-342.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Mix">
-				<Pos=
-					<X=-181.440018>
-					<Y=-255.744034>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param>
 			>
 			<Entry=
 				<Type="Sampler 2D">
 				<Pos=
-					<X=292.032043>
-					<Y=-508.032043>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param=
 					<WrapU=True>
@@ -64,202 +56,28 @@
 			<Entry=
 				<Type="Texture">
 				<Pos=
-					<X=666.792053>
-					<Y=-548.808044>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param=
-					<Texture="graphics/grass_diffuse.jpg">
+					<Texture="graphics/blocks_stone_diffuse.jpg">
 				>
 			>
 			<Entry=
-				<Type="Add">
+				<Type="Geometry UV">
 				<Pos=
-					<X=485.000000>
-					<Y=99.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Multiply">
-				<Pos=
-					<X=529.000000>
-					<Y=304.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Swizzle">
-				<Pos=
-					<X=723.000000>
-					<Y=201.000000>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param=
-					<Swizzle="xynn">
-				>
-			>
-			<Entry=
-				<Type="Multiply">
-				<Pos=
-					<X=724.000000>
-					<Y=91.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Model Matrix">
-				<Pos=
-					<X=925.000000>
-					<Y=47.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Constant">
-				<Pos=
-					<X=915.000000>
-					<Y=104.000000>
-				>
-				<Param=
-					<Type=32>
-					<Value=
-						<X=1.100000>
-						<Y=1.100000>
-						<Z=1.100000>
-						<W=1.000000>
-					>
-				>
-			>
-			<Entry=
-				<Type="Constant">
-				<Pos=
-					<X=755.000000>
-					<Y=360.000000>
-				>
-				<Param=
-					<Type=8>
-					<Value=
-						<X=1.535127>
-						<Y=1.535127>
-						<Z=0.000000>
-						<W=0.000000>
-					>
-				>
-			>
-			<Entry=
-				<Type="Multiply">
-				<Pos=
-					<X=480.000000>
-					<Y=-58.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Constant">
-				<Pos=
-					<X=640.000000>
-					<Y=-246.000000>
-				>
-				<Param=
-					<Type=8>
-					<Value=
-						<X=0.050000>
-						<Y=0.050000>
-						<Z=0.000000>
-						<W=0.000000>
-					>
-				>
-			>
-			<Entry=
-				<Type="Swizzle">
-				<Pos=
-					<X=640.000000>
-					<Y=-130.000000>
-				>
-				<Param=
-					<Swizzle="xynn">
-				>
-			>
-			<Entry=
-				<Type="Multiply">
-				<Pos=
-					<X=800.000000>
-					<Y=-147.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Model Matrix">
-				<Pos=
-					<X=960.000000>
-					<Y=-165.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Geometry Vertex">
-				<Pos=
-					<X=960.000000>
-					<Y=-115.000000>
-				>
-				<Param>
-			>
-			<Entry=
-				<Type="Sampler 2D">
-				<Pos=
-					<X=263.000000>
-					<Y=-141.000000>
-				>
-				<Param=
-					<WrapU=True>
-					<WrapV=True>
-				>
-			>
-			<Entry=
-				<Type="Texture">
-				<Pos=
-					<X=480.000000>
-					<Y=-236.000000>
-				>
-				<Param=
-					<Texture="graphics/dirt_color.png">
-				>
-			>
-			<Entry=
-				<Type="Swizzle">
-				<Pos=
-					<X=3.456000>
-					<Y=-551.232056>
-				>
-				<Param=
-					<Swizzle="xnnn">
-				>
-			>
-			<Entry=
-				<Type="Sampler 2D">
-				<Pos=
-					<X=196.992020>
-					<Y=-673.920044>
-				>
-				<Param=
-					<WrapU=True>
-					<WrapV=True>
-				>
-			>
-			<Entry=
-				<Type="Texture">
-				<Pos=
-					<X=547.776062>
-					<Y=-848.448120>
-				>
-				<Param=
-					<Texture="graphics/hard_dent.jpg">
+					<Channel=0>
 				>
 			>
 			<Entry=
 				<Type="Material Parameter">
 				<Pos=
-					<X=320.000000>
-					<Y=48.000000>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param=
 					<Param=1>
@@ -268,8 +86,8 @@
 			<Entry=
 				<Type="Material Parameter">
 				<Pos=
-					<X=320.000000>
-					<Y=144.000000>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param=
 					<Param=4>
@@ -278,8 +96,8 @@
 			<Entry=
 				<Type="Material Parameter">
 				<Pos=
-					<X=320.000000>
-					<Y=240.000000>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param=
 					<Param=2>
@@ -288,8 +106,8 @@
 			<Entry=
 				<Type="Material Parameter">
 				<Pos=
-					<X=320.000000>
-					<Y=336.000000>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param=
 					<Param=5>
@@ -298,8 +116,8 @@
 			<Entry=
 				<Type="Material Parameter">
 				<Pos=
-					<X=320.000000>
-					<Y=432.000000>
+					<X=0.000000>
+					<Y=0.000000>
 				>
 				<Param=
 					<Param=6>
@@ -317,225 +135,43 @@
 				<Input=
 					<Block=
 						<Index=2>
-						<Input=
-							<Block=
-								<Index=3>
-							>
-							<Block=
-								<Index=4>
-								<Input=
-									<Block=
-										<Index=5>
-										<Input=
-											<Block=
-												<Index=6>
-												<Input=
-													<Block=
-														<Index=7>
-														<Input=
-															<Block=
-																<Index=8>
-															>
-															<Block=
-																<Index=9>
-															>
-														>
-													>
-												>
-											>
-											<Block=
-												<Index=10>
-											>
-										>
-									>
-									<Block=
-										<Index=11>
-										<Input=
-											<Block=
-												<Index=12>
-											>
-											<Block=
-												<Index=13>
-												<Input=
-													<Block=
-														<Index=14>
-														<Input=
-															<Block=
-																<Index=15>
-															>
-															<Block=
-																<Index=16>
-															>
-														>
-													>
-												>
-											>
-										>
-									>
-								>
-							>
-						>
 					>
 					<Block=
-						<Index=17>
-						<Input=
-							<Block=
-								<Index=18>
-							>
-							<Block=
-								<Index=4>
-								<Input=
-									<Block=
-										<Index=5>
-										<Input=
-											<Block=
-												<Index=6>
-												<Input=
-													<Block=
-														<Index=7>
-														<Input=
-															<Block=
-																<Index=8>
-															>
-															<Block=
-																<Index=9>
-															>
-														>
-													>
-												>
-											>
-											<Block=
-												<Index=10>
-											>
-										>
-									>
-									<Block=
-										<Index=11>
-										<Input=
-											<Block=
-												<Index=12>
-											>
-											<Block=
-												<Index=13>
-												<Input=
-													<Block=
-														<Index=14>
-														<Input=
-															<Block=
-																<Index=15>
-															>
-															<Block=
-																<Index=16>
-															>
-														>
-													>
-												>
-											>
-										>
-									>
-								>
-							>
-						>
-					>
-					<Block=
-						<Index=19>
-						<Input=
-							<Block=
-								<Index=20>
-								<Input=
-									<Block=
-										<Index=21>
-									>
-									<Block=
-										<Index=4>
-										<Input=
-											<Block=
-												<Index=5>
-												<Input=
-													<Block=
-														<Index=6>
-														<Input=
-															<Block=
-																<Index=7>
-																<Input=
-																	<Block=
-																		<Index=8>
-																	>
-																	<Block=
-																		<Index=9>
-																	>
-																>
-															>
-														>
-													>
-													<Block=
-														<Index=10>
-													>
-												>
-											>
-											<Block=
-												<Index=11>
-												<Input=
-													<Block=
-														<Index=12>
-													>
-													<Block=
-														<Index=13>
-														<Input=
-															<Block=
-																<Index=14>
-																<Input=
-																	<Block=
-																		<Index=15>
-																	>
-																	<Block=
-																		<Index=16>
-																	>
-																>
-															>
-														>
-													>
-												>
-											>
-										>
-									>
-								>
-							>
-						>
+						<Index=3>
 					>
 				>
 			>
 		>
 		<Specular=
 			<Block=
-				<Index=22>
+				<Index=4>
 			>
 		>
 		<Glossiness=
 			<Block=
-				<Index=23>
+				<Index=5>
 			>
 		>
 		<Constant=
 			<Block=
-				<Index=24>
+				<Index=6>
 			>
 		>
 		<Opacity=
 			<Block=
-				<Index=25>
+				<Index=7>
 			>
 		>
 		<Reflection=
 			<Block=
-				<Index=26>
+				<Index=8>
 			>
 		>
 	>
 	<TextureStage=
 		<Index=0>
 		<Active>
-		<Texture="graphics/dirt_color.png">
+		<Texture="graphics/blocks_stone_diffuse.jpg">
 		<UV=0>
 	>
 >

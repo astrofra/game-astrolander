@@ -2,7 +2,7 @@
 <Scene=
 	<ScriptedObject=
 		<ScriptUnit=
-			<Script="scripts/level_handler.nut">
+			<Script="scripts/screen_game.nut">
 			<Class="LevelHandler">
 			<ParmList=
 				<Parm=
@@ -13,7 +13,7 @@
 		>
 	>
 	<ScriptUnit=
-		<Script="scripts/level_handler.nut">
+		<Script="scripts/screen_game.nut">
 		<Class="LevelHandler">
 		<ParmList=
 			<Parm=

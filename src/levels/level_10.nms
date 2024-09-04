@@ -2,7 +2,7 @@
 <Scene=
 	<ScriptedObject=
 		<ScriptUnit=
-			<Script="scripts/level_handler.nut">
+			<Script="scripts/screen_game.nut">
 			<Class="LevelHandler">
 			<ParmList=
 				<Parm=
@@ -21,7 +21,7 @@
 		>
 	>
 	<ScriptUnit=
-		<Script="scripts/level_handler.nut">
+		<Script="scripts/screen_game.nut">
 		<Class="LevelHandler">
 		<ParmList=
 			<Parm=
@@ -1087,7 +1087,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2936,7 +2935,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3005,7 +3003,6 @@
 						<Y=20.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3107,7 +3104,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -3176,7 +3173,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -3250,7 +3247,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -3324,7 +3321,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -3725,7 +3722,6 @@
 						<Y=17.999998>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3794,7 +3790,6 @@
 						<Y=21.999998>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3863,7 +3858,6 @@
 						<Y=13.999998>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3937,7 +3931,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4006,7 +3999,6 @@
 						<Y=17.999998>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4075,7 +4067,6 @@
 						<Y=17.999998>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4527,7 +4518,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -4601,7 +4592,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -4642,7 +4633,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4716,7 +4706,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4790,7 +4779,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4864,7 +4852,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6063,7 +6050,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6132,7 +6118,6 @@
 						<Y=-10.000002>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6201,7 +6186,6 @@
 						<Y=-10.000002>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6275,7 +6259,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6344,7 +6327,6 @@
 						<Y=-10.000002>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6413,7 +6395,6 @@
 						<Y=-10.000002>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6482,7 +6463,6 @@
 						<Y=-3.999999>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6551,7 +6531,6 @@
 						<Y=12.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6998,7 +6977,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7072,7 +7051,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7141,7 +7120,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7210,7 +7189,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7284,7 +7263,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7494,7 +7473,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7568,7 +7547,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -7710,7 +7689,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -8056,7 +8035,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -8276,7 +8255,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -8345,7 +8324,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -8419,7 +8398,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -8493,7 +8472,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -8708,7 +8687,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -8782,7 +8761,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -8856,7 +8835,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -9179,7 +9158,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -9248,7 +9227,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -9317,7 +9296,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -9532,7 +9511,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -9606,7 +9585,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -9753,7 +9732,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -9827,7 +9806,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -9974,7 +9953,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10048,7 +10027,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10303,7 +10282,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10377,7 +10356,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10451,7 +10430,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10666,7 +10645,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10813,7 +10792,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -10887,7 +10866,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11029,7 +11008,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11239,7 +11218,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11444,7 +11423,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11518,7 +11497,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11592,7 +11571,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11807,7 +11786,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11921,7 +11900,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11955,7 +11933,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -11996,7 +11974,6 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12030,7 +12007,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12071,7 +12048,6 @@
 						<Y=-3.141592>
 						<Z=-1.570814>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12105,7 +12081,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12146,7 +12122,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12180,7 +12155,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12221,7 +12196,6 @@
 						<Y=-3.141575>
 						<Z=-3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12295,7 +12269,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12369,7 +12342,6 @@
 						<Y=0.000000>
 						<Z=1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12403,7 +12375,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12444,7 +12416,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12478,7 +12449,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12519,7 +12490,6 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12553,7 +12523,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12594,7 +12564,6 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12628,7 +12597,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12669,7 +12638,6 @@
 						<Y=-3.141593>
 						<Z=-1.570814>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13019,7 +12987,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13093,7 +13061,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13197,7 +13165,6 @@
 						<Y=61.611465>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13231,7 +13198,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13272,7 +13239,6 @@
 						<Y=0.000000>
 						<Z=1.570779>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13409,7 +13375,6 @@
 						<Y=71.575211>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13478,7 +13443,6 @@
 						<Y=71.575211>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13552,7 +13516,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13586,7 +13549,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13627,7 +13590,6 @@
 						<Y=-3.141593>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13661,7 +13623,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13702,7 +13664,6 @@
 						<Y=3.141592>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13776,7 +13737,6 @@
 						<Y=0.000000>
 						<Z=0.785398>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13810,7 +13770,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13846,7 +13806,6 @@
 						<Y=46.066380>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13920,7 +13879,6 @@
 						<Y=0.000000>
 						<Z=1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13954,7 +13912,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -13990,7 +13948,6 @@
 						<Y=50.120930>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14024,7 +13981,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -14065,7 +14022,6 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14134,7 +14090,6 @@
 						<Y=28.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14272,7 +14227,6 @@
 						<Y=60.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14306,7 +14260,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -14347,7 +14301,6 @@
 						<Y=0.000000>
 						<Z=0.785398>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14557,7 +14510,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14631,7 +14583,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14705,7 +14656,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14958,7 +14908,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -15032,7 +14982,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -15106,7 +15056,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -15180,7 +15130,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -15254,7 +15204,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -15673,7 +15623,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -15714,7 +15664,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15748,7 +15697,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -15822,7 +15771,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -16168,7 +16117,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -16282,7 +16231,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16351,7 +16299,6 @@
 						<Y=59.987701>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16420,7 +16367,6 @@
 						<Y=43.945610>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16489,7 +16435,6 @@
 						<Y=27.958309>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16558,7 +16503,6 @@
 						<Y=12.030849>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16627,7 +16571,6 @@
 						<Y=-3.979367>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16661,7 +16604,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -16702,7 +16645,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16776,7 +16718,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16845,7 +16786,6 @@
 						<Y=41.165573>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16914,7 +16854,6 @@
 						<Y=41.165573>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16988,7 +16927,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17062,7 +17000,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17131,7 +17068,6 @@
 						<Y=9.218111>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17200,7 +17136,6 @@
 						<Y=9.218111>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17234,7 +17169,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -17275,7 +17210,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17348,7 +17282,6 @@
 						<Y=-3.141592>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17417,7 +17350,6 @@
 						<Y=59.987701>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17486,7 +17418,6 @@
 						<Y=44.056889>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17520,7 +17451,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -17561,7 +17492,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17766,7 +17696,6 @@
 						<Y=1.900976>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17800,7 +17729,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -17836,7 +17765,6 @@
 						<Y=-0.104140>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17944,7 +17872,6 @@
 						<Y=42.202782>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18013,7 +17940,6 @@
 						<Y=26.178902>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18082,7 +18008,6 @@
 						<Y=16.201485>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18151,7 +18076,6 @@
 						<Y=16.201485>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18185,7 +18109,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -18226,7 +18150,6 @@
 						<Y=0.000000>
 						<Z=-3.141593>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18295,7 +18218,6 @@
 						<Y=12.278074>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18329,7 +18251,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -18370,7 +18292,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18439,7 +18360,6 @@
 						<Y=30.315435>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18473,7 +18393,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -18514,7 +18434,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18583,7 +18502,6 @@
 						<Y=58.122833>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18617,7 +18535,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -18658,7 +18576,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18692,7 +18609,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -18733,7 +18650,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18807,7 +18723,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18841,7 +18756,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -18882,7 +18797,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18916,7 +18830,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -18952,7 +18866,6 @@
 						<Y=24.062822>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18986,7 +18899,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19027,7 +18940,6 @@
 						<Y=-3.141593>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19096,7 +19008,6 @@
 						<Y=22.109505>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19165,7 +19076,6 @@
 						<Y=18.187328>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19199,7 +19109,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19240,7 +19150,6 @@
 						<Y=-3.141593>
 						<Z=3.141575>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19274,7 +19183,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19315,7 +19224,6 @@
 						<Y=-3.141593>
 						<Z=1.570779>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19349,7 +19257,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19423,7 +19331,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19497,7 +19405,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19571,7 +19479,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19645,7 +19553,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19719,7 +19627,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19861,7 +19769,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -19902,7 +19810,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19971,7 +19878,6 @@
 						<Y=83.870613>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20005,7 +19911,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -20046,7 +19952,6 @@
 						<Y=0.000000>
 						<Z=-0.000018>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20080,7 +19985,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -20121,7 +20026,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20190,7 +20094,6 @@
 						<Y=76.076462>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20264,7 +20167,6 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20298,7 +20200,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -20339,7 +20241,6 @@
 						<Y=-3.141575>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20373,7 +20274,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -20414,7 +20315,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20483,7 +20383,6 @@
 						<Y=68.090561>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20552,7 +20451,6 @@
 						<Y=68.090561>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20621,7 +20519,6 @@
 						<Y=72.090561>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20690,7 +20587,6 @@
 						<Y=72.090561>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20759,7 +20655,6 @@
 						<Y=89.922508>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20828,7 +20723,6 @@
 						<Y=69.982742>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20897,7 +20791,6 @@
 						<Y=80.058525>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20931,7 +20824,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -20972,7 +20865,6 @@
 						<Y=3.141575>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21041,7 +20933,6 @@
 						<Y=73.949936>
 						<Z=0.272461>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21075,7 +20966,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -21116,7 +21007,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21150,7 +21040,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -21191,7 +21081,6 @@
 						<Y=-3.141575>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21225,7 +21114,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -21261,7 +21150,6 @@
 						<Y=85.759361>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21295,7 +21183,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -21331,7 +21219,6 @@
 						<Y=81.868881>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21365,7 +21252,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -21592,7 +21479,6 @@
 						<Y=21.999998>
 						<Z=4.148514>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21661,7 +21547,6 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21730,7 +21615,6 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21799,7 +21683,6 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21868,7 +21751,6 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21937,7 +21819,6 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22006,7 +21887,6 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22080,7 +21960,6 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22149,7 +22028,6 @@
 						<Y=61.541904>
 						<Z=-1.301588>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22218,7 +22096,6 @@
 						<Y=61.541904>
 						<Z=-1.301588>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22436,7 +22313,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileRotary0.nms">
+			<Template="graphics/MobileRotary0_pc.nms">
 		>
 		<Instance=
 			<MItem=
@@ -22512,7 +22389,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileRotary1.nms">
+			<Template="graphics/MobileRotary1_pc.nms">
 		>
 		<Instance=
 			<MItem=
@@ -22550,7 +22427,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileRotary0.nms">
+			<Template="graphics/MobileRotary0_pc.nms">
 		>
 		<Instance=
 			<MItem=
@@ -22588,7 +22465,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileRotary0.nms">
+			<Template="graphics/MobileRotary0_pc.nms">
 		>
 		<Instance=
 			<MItem=
@@ -22626,7 +22503,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileRotary0.nms">
+			<Template="graphics/MobileRotary0_pc.nms">
 		>
 		<Instance=
 			<MItem=
@@ -22664,7 +22541,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileRotary1.nms">
+			<Template="graphics/MobileRotary1_pc.nms">
 		>
 		<Instance=
 			<MItem=
@@ -22702,7 +22579,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileRotary1.nms">
+			<Template="graphics/MobileRotary1_pc.nms">
 		>
 		<Instance=
 			<MItem=

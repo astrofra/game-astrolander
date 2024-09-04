@@ -1,93 +1,60 @@
-<NML=1.0>
+<Version=1.0>
 <Scene=
 	<Items=
+		<MCamera=
+			<MItem=
+				<Id="New Camera">
+				<UId=0>
+				<Active>
+				<Helper>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Camera=
+				<Item=
+					<Position=
+						<X=-7.252758>
+						<Y=2.090369>
+						<Z=-152.981003>
+					>
+					<ItemFlag=
+						<HasTarget>
+					>
+					<Target=
+						<X=-1.013073>
+						<Y=2.791613>
+						<Z=-0.902735>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<ZFar=50000.000000>
+				<ZoomFactor=22.903767>
+				<AspectRatioRefYAxis=True>
+			>
+		>
 		<MObject=
 			<MItem=
 				<Id="tree_0">
-				<UId=0>
+				<UId=1>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="prop_tree_0">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -125,18 +92,18 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/tree_0.nmg">
+				<Geometry="graphics/tree_0_mobile.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="tree_col">
-				<UId=1>
+				<UId=2>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -276,13 +243,12 @@
 		<MLight=
 			<MItem=
 				<Id="New Light">
-				<UId=2>
-				<Active>
+				<UId=3>
 				<Helper>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -302,6 +268,7 @@
 						<Y=3.698614>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -318,6 +285,58 @@
 				<VolumetricRange=8.000000>
 			>
 		>
+		<MLight=
+			<MItem=
+				<Id="sun">
+				<UId=4>
+				<Active>
+				<Helper>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Light=
+				<Item=
+					<Rotation=
+						<X=0.879756>
+						<Y=1.138842>
+						<Z=-2.165397>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Type="Parallel">
+				<Shadow="Map">
+				<ShadowBias=0.010000>
+				<ShadowDistribution=0.100000>
+				<VolumetricSampleStep=0.500000>
+				<VolumetricThick=1.000000>
+				<VolumetricRange=8.000000>
+				<Diffuse=
+					<X=0.400000>
+					<Y=0.400000>
+					<Z=0.400000>
+				>
+			>
+		>
 	>
 	<Links>
 	<Skins>
@@ -329,9 +348,9 @@
 			<Z=0.000000>
 		>
 		<AmbientColor=
-			<X=0.400000>
-			<Y=0.400000>
-			<Z=0.400000>
+			<X=0.572549>
+			<Y=0.572549>
+			<Z=0.572549>
 		>
 		<AmbientIntensity=1.000000>
 		<TargetExposure=0.250000>
@@ -348,27 +367,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=-0.999948>
+			<X=0.996736>
 			<Y=-0.000000>
-			<Z=0.010205>
+			<Z=-0.080736>
 			<W=0.000000>
 		>
 		<R1=
-			<X=-0.000242>
-			<Y=0.999719>
-			<Z=-0.023700>
+			<X=0.017475>
+			<Y=0.976294>
+			<Z=0.215743>
 			<W=0.000000>
 		>
 		<R2=
-			<X=-0.010202>
-			<Y=-0.023701>
-			<Z=-0.999667>
+			<X=0.078822>
+			<Y=-0.216449>
+			<Z=0.973107>
 			<W=0.000000>
 		>
 		<R3=
-			<X=3.757857>
-			<Y=2.288514>
-			<Z=11.138837>
+			<X=-3.024199>
+			<Y=8.304578>
+			<Z=-38.510460>
 			<W=1.000000>
 		>
 	>
@@ -381,27 +400,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=-0.999948>
+					<X=0.996736>
 					<Y=-0.000000>
-					<Z=0.010205>
+					<Z=-0.080736>
 					<W=0.000000>
 				>
 				<R1=
-					<X=-0.000242>
-					<Y=0.999719>
-					<Z=-0.023700>
+					<X=0.017475>
+					<Y=0.976294>
+					<Z=0.215743>
 					<W=0.000000>
 				>
 				<R2=
-					<X=-0.010202>
-					<Y=-0.023701>
-					<Z=-0.999667>
+					<X=0.078822>
+					<Y=-0.216449>
+					<Z=0.973107>
 					<W=0.000000>
 				>
 				<R3=
-					<X=3.757857>
-					<Y=2.288514>
-					<Z=11.138837>
+					<X=-3.024199>
+					<Y=8.304578>
+					<Z=-38.510460>
 					<W=1.000000>
 				>
 			>

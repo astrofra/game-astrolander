@@ -7,6 +7,3 @@
 	@short	LanderAudio
 	@author	Astrofra
 */
-class	LanderAudio
-{
-}
