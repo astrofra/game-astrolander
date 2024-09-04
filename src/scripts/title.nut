@@ -17,19 +17,24 @@ class	Title
 
 	state			=	"running"
 
+	timeout			=	0
+
 	/*
 	*/
 	function	OnUpdate(scene)
 	{
-		KeyboardUpdate()
-		if	(KeyboardSeekFunction(DeviceKeyPress, KeySpace))
+		timeout -= g_dt_frame
+
+		if	((timeout < 0) || DeviceIsKeyDown(g_device, KeySpace))
 		{
-			MixerChannelStopAll(g_mixer)
-			MixerChannelUnlockAll(g_mixer)
+			MixerChannelUnlock(g_mixer, channel_music)
+			MixerChannelStop(g_mixer, channel_music)
+			//MixerChannelStopAll(g_mixer)
+			//MixerChannelUnlockAll(g_mixer)
 			state = "startgame"
 		}
 		else
-		if	(KeyboardSeekFunction(DeviceKeyPress, KeyF1))
+		if	(DeviceKeyPressed(g_device, KeyF1))
 		{
 			g_reversed_controls = !g_reversed_controls
 			TextSetText(w_cfg_control_reverse[1], CreateStringControlReverse())
@@ -65,9 +70,7 @@ class	Title
 
 		sfx_music = EngineLoadSound(g_engine, "audio/music/intro_riff.wav")
 
-		KeyboardSetKeyBounceFilter(KeyF1, true)
-		KeyboardSetKeyBounceFilter(KeySpace, true)
-		KeyboardUpdate()
+		timeout = Sec(4)
 	}
 
 	function	CreateStringControlReverse()
@@ -81,6 +84,5 @@ class	Title
 		channel_music = MixerSoundStart(g_mixer, sfx_music)
 		//MixerChannelSetGain(g_mixer, channel_music, 0.5)
 		MixerChannelSetLoopMode(g_mixer, channel_music, LoopRepeat)
-		KeyboardUpdate()
 	}
 }

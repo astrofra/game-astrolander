@@ -84,7 +84,6 @@
 						<Y=2.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -179,7 +178,6 @@
 						<Y=11.700041>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -274,7 +272,6 @@
 						<Y=7.395729>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -369,7 +366,6 @@
 						<Y=15.300000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -464,7 +460,6 @@
 						<Y=2.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -559,7 +554,6 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -659,7 +653,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -719,7 +712,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Mesh">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -740,7 +733,7 @@
 								<Y=1.000000>
 								<Z=1.000000>
 							>
-							<Mesh="graphics/g_block_tr_4x4.nmg">
+							<Mesh="graphics/frozen_g_block_tr_4x4.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -751,11 +744,10 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-134.336823>
+						<X=-14.331343>
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -764,7 +756,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_tr_4x4.nmg">
+				<Geometry="graphics/frozen_g_block_tr_4x4.nmg">
 			>
 		>
 		<MObject=
@@ -851,7 +843,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -947,7 +938,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1043,7 +1033,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1233,7 +1222,6 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1334,7 +1322,6 @@
 						<Y=3.141592>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1344,6 +1331,557 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_tr_4x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_8x32">
+				<UId=14>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=8.000000>
+								<Y=32.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-201.082458>
+						<Y=16.850353>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_8x32.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_16x16">
+				<UId=15>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=16.000000>
+								<Y=16.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-201.082458>
+						<Y=33.767052>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_16x16.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_16x32">
+				<UId=16>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=16.000000>
+								<Y=32.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-170.205444>
+						<Y=33.767040>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_16x32.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_32x32">
+				<UId=17>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=32.000000>
+								<Y=32.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-127.056023>
+						<Y=42.643311>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_32x32.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_8x8">
+				<UId=18>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=8.000000>
+								<Y=8.000000>
+								<Z=4.000000>
+							>
+							<Mass=0.000000>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-219.503052>
+						<Y=3.812958>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/frozen_g_block_8x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_tr_2x2">
+				<UId=19>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Convex">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Mesh="graphics/frozen_frozen_g_block_tr_4x4.nmg">
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/frozen_frozen_g_block_tr_4x4.nmg">
 			>
 		>
 	>
@@ -1376,27 +1914,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.951067>
-			<Y=-0.000000>
-			<Z=-0.308985>
+			<X=0.920539>
+			<Y=0.000000>
+			<Z=-0.390652>
 			<W=0.000000>
 		>
 		<R1=
-			<X=0.144497>
-			<Y=0.883913>
-			<Z=0.444768>
+			<X=0.077907>
+			<Y=0.979913>
+			<Z=0.183581>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.273116>
-			<Y=-0.467652>
-			<Z=0.840660>
+			<X=0.382805>
+			<Y=-0.199428>
+			<Z=0.902047>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-191.928314>
-			<Y=63.679012>
-			<Z=-110.564384>
+			<X=-196.609360>
+			<Y=48.144638>
+			<Z=-199.674286>
 			<W=1.000000>
 		>
 	>
@@ -1409,27 +1947,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=0.951067>
-					<Y=-0.000000>
-					<Z=-0.308985>
+					<X=0.920539>
+					<Y=0.000000>
+					<Z=-0.390652>
 					<W=0.000000>
 				>
 				<R1=
-					<X=0.144497>
-					<Y=0.883913>
-					<Z=0.444768>
+					<X=0.077907>
+					<Y=0.979913>
+					<Z=0.183581>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.273116>
-					<Y=-0.467652>
-					<Z=0.840660>
+					<X=0.382805>
+					<Y=-0.199428>
+					<Z=0.902047>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-191.928314>
-					<Y=63.679012>
-					<Z=-110.564384>
+					<X=-196.609360>
+					<Y=48.144638>
+					<Z=-199.674286>
 					<W=1.000000>
 				>
 			>

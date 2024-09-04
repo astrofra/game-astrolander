@@ -93,7 +93,7 @@ class	InGameUI
 		stopwatch = CreateStopwatch()
 		room_name = CreateLevelName()
 		artifact_count = CreateArtifactCounter()
-		beacon_window = CreateCompass()
+		//beacon_window = CreateCompass()
 
 		inventory_bitmaps = []
 		game_window.game_over_no_fuel.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_fuel)
@@ -111,16 +111,19 @@ class	InGameUI
 		print("InGameUI::CreateCompass()")
 		local	compass_window, beacon_window
 		local	_texture
+/*
 		_texture = EngineLoadTexture(g_engine, "ui/compass.png")
-		compass_window = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
+		compass_window = UIAddWindow(ui, CreateNewUIID(), 0.0, 0.0, 245.0, 245.0)
+//UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
 		WindowCenterPivot(compass_window)
-
+*/
 		_texture = EngineLoadTexture(g_engine, "ui/beacon_arrow.png")
 		beacon_window = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
 		WindowCenterPivot(beacon_window)
-		WindowSetParent(beacon_window, compass_window)
+//		WindowSetParent(beacon_window, compass_window)
 		WindowSetPosition(beacon_window, 245.0 / 2.0, 245.0 / 2.0)
-		
+		WindowSetScale(beacon_window, 0.85, 0.85)
+/*		
 		_texture = EngineLoadTexture(g_engine, "ui/compass_dot.png")
 		local _ship = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 80.0, 80.0)
 		WindowCenterPivot(_ship)
@@ -130,15 +133,15 @@ class	InGameUI
 		_texture = EngineLoadTexture(g_engine, "ui/compass_specular.png")
 		local _spec = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
 		WindowSetParent(_spec, compass_window)
-
-		WindowSetScale(compass_window, 0.65, 0.65)
-		WindowSetPosition(compass_window, 1280.0 - 100, 100.0 + 32.0)
+*/
+//		WindowSetScale(compass_window, 0.65, 0.65)
+//		WindowSetPosition(compass_window, 1280.0 - 100, 100.0 + 32.0)
 
 		return beacon_window
 	}
 
 	//-------------------------------
-	function	UpdateCompass(_angle)
+	function	UpdateCompass(_pos, _angle)
 	//-------------------------------
 	{
 /*
@@ -154,6 +157,7 @@ class	InGameUI
 
 		WindowSetRotation(beacon_window, beacon_angle)
 */
+		WindowSetPosition(beacon_window, _pos.x, _pos.y)
 		WindowSetRotation(beacon_window, _angle)
 	}
 
@@ -317,6 +321,7 @@ class	InGameUI
 		print("InGameUI::CreateDamageGauge()")
 
 		CreateLabel(ui, g_locale.hud_damage, 310 + 0, 0)
+		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100), 310 + 200, 0)
 		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 310 + 200, 0)
 		return _gauge
 	}
@@ -328,6 +333,7 @@ class	InGameUI
 		print("InGameUI::CreateFuelGauge()")
 
 		CreateLabel(ui, g_locale.hud_fuel, 0, 0)
+		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100),  150, 0, 32)
 		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 150, 0, 32)
 		return _gauge
 	}

@@ -7,6 +7,7 @@
 	@short	AlphaFlicker
 	@author	Astrofra
 */
+
 class	AlphaFlicker
 {
 
@@ -16,7 +17,7 @@ class	AlphaFlicker
 	{
 		alpha = alpha + g_dt_frame * 30.0 * Rand(-1.0, 1.0)
 		if (Rand(0,100) > 90)
-			alpha += 0.5
+			alpha += g_dt_frame * 60.0 * 0.5
 		alpha = Clamp(alpha, 0.0, 1.0)
 		ItemSetOpacity(item, alpha)
 	}

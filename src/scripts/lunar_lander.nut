@@ -21,9 +21,9 @@ class	LunarLander
 
 	consumption			=	2.5			//	Fuel unit per sec.
 	max_speed			=	Mtrs(25.0)	//	Max. speed of the ship.
-	speed_min_damage	=	Mtrs(5.0)
+	speed_min_damage	=	Mtrs(2.5)
 	speed_max_damage	=	Mtrs(25.0)
-	min_damage			=	5
+	min_damage			=	10
 	max_damage			=	20
 	shield_enabled		=	false
 
@@ -34,7 +34,7 @@ class	LunarLander
 	shield_item			=	0
 	shield_col_item		=	0
 
-	hit_emitter		=	0
+	hit_emitter			=	0
 	hit_emitter_script	=	0
 	weak_zone_item		=	0
 
@@ -93,18 +93,27 @@ class	LunarLander
 	function	UpdatePlayerIsAlive(item)
 	//------------------------------
 	{
-		KeyboardUpdate()
-
-		if (g_reversed_controls)
-		{	
-			_left = KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow)
-			_right = KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow)
+		if	(g_platform == "Android")
+		{
+			_left = _right = false
+			for	(local n = 0; n < 4; ++n)
+			{
+				local	touch_device =	GetInputDevice("touch" + n)
+				if	(DeviceIsKeyDown(touch_device, KeyButton0))
+					if	(DeviceInputValue(touch_device, DeviceAxisX) > 0.5)
+						_right = true
+					else
+						_left = true
+			}
 		}
 		else
 		{
-			_right = KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow)
-			_left = KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow)
+			_left = DeviceIsKeyDown(g_device, KeyLeftArrow)
+			_right = DeviceIsKeyDown(g_device, KeyRightArrow)
 		}
+
+		if (!g_reversed_controls)
+		{	local tmp = _right; _right = _left; _left = tmp;	}
 
 		if (_left || _right)
 		{
@@ -321,7 +330,11 @@ class	LunarLander
 		{
 			if (!shield_enabled)
 			{
+				print("Col. ->")
+				contact.n[0].Print("OnCollisionEx() n")
+				current_velocity.Print("current_velocity")
 				local	k_damage = Max(-contact.n[0].Dot(current_velocity), 0.0)
+				print("k_damage = " + k_damage)
 				TakeDamage(current_speed, k_damage)
 				foreach(_p in contact.p)
 					ImpactFeedBack(_p)
@@ -333,9 +346,12 @@ class	LunarLander
 	function	TakeDamage(impact_speed, angle_incidence = 1.0)
 	//-----------------------------------
 	{
+		print("LunarLander::TakeDamage() : hit_timeout           = " + hit_timeout)
+		print("LunarLander::TakeDamage() : g_clock - hit_timeout = " + TickToSec(g_clock - hit_timeout))
 		if (g_clock - hit_timeout < SecToTick(Sec(1.0)))
 			return
 
+		print("LunarLander::TakeDamage() : impact_speed = " + impact_speed)
 		local	damage_amount = Clamp(impact_speed.tofloat(), speed_min_damage, speed_max_damage)
 		damage_amount = RangeAdjust(damage_amount, speed_min_damage, speed_max_damage, min_damage, max_damage)
 		damage_amount = damage_amount * angle_incidence
@@ -387,6 +403,8 @@ class	LunarLander
 	function	OnSetup(item)
 	//-----------------------
 	{
+		print("LunarLander::OnSetup()")
+
 		scene = ItemGetScene(item)
 
 		SceneSetGravity(scene, g_gravity);
@@ -408,6 +426,7 @@ class	LunarLander
 	//---------------------------
 	{
 		print("LunarLander::OnSetupDone()")
+
 		try	{	game_ui = SceneGetScriptInstance(scene).game_ui	}
 		catch(e)	{	game_ui = 0	}
 
@@ -436,10 +455,10 @@ class	LunarLander
 		ItemSetOpacity(flame_item[1], 0.0)
 		ItemSetOpacity(flame_item[2], 0.0)
 
-		smoke_emitter = SceneFindItem(scene, "smoke_emitter")
+		smoke_emitter = LegacySceneFindItem(scene, "smoke_emitter")
 		smoke_emitter_script = ItemGetScriptInstance(smoke_emitter)
 
-		hit_emitter = SceneFindItem(scene, "hit_emitter")
+		hit_emitter = LegacySceneFindItem(scene, "hit_emitter")
 		hit_emitter_script = ItemGetScriptInstance(hit_emitter)
 
 		local	scene_root = SceneAddObject(scene, "scene_root")

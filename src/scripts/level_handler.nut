@@ -3,6 +3,7 @@
 	Author: Astrofra
 */
 
+		Include("scripts/utils.nut")
 		Include("scripts/ui.nut")
 		Include("scripts/thread_handler.nut")
 		Include("scripts/bonus.nut")
@@ -19,7 +20,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 {
 /*<
 	<Parameter =
-		<level_name = <Name = "Level Name"> <Type = "String"> <Default = "default">>
+		<level_name = <Name = "Level Name"> <Type = "String"> <Default = "default_name">>
 	>
 >*/
 
@@ -49,6 +50,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 	update_function			=	0
 	timer_table				=	0
+
+	sfx_got_item			=	0
 
 	//--------------------------------------------------
 	//	Timer generic routine
@@ -81,8 +84,29 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		base.OnUpdate(scene)
 		stopwatch_handler.Update()
 		feedback_emitter.Update()
+		minimap.Update({player = ItemGetWorldPosition(player), artifacts = GetArtifactsPositionList(), bonus = GetBonusPositionList(), homebase = GetHomebasePosition()})
 		if (update_function != 0)
 			update_function(scene)
+	}
+
+	function	GetArtifactsPositionList()
+	{
+		local	_list = []
+		foreach(_item in artefact)
+			_list.append(ItemGetWorldPosition(_item))
+
+		return _list
+	}
+
+	function	GetBonusPositionList()
+	{
+		local	_list = []
+		return _list
+	}
+
+	function	GetHomebasePosition()
+	{
+		return	ItemGetWorldPosition(homebase_item)
 	}
 
 	//----------------------------------
@@ -147,7 +171,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//------------------------------------
 	{
 		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
-		UpdateCompass()
+		//UpdateCompass()
 		CheckIfPlayerGetArtifacts(scene)
 		CheckIfPlayerGetBonus(scene, "BonusFuel")
 		CheckIfPlayerGetBonus(scene, "BonusFastClock")
@@ -163,7 +187,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//---------------------------------------
 	{
 		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
-		UpdateCompass()
+		//UpdateCompass()
 		CheckIfPlayerGetBonus(scene, "BonusFuel")
 		CheckIfPlayerGetBonus(scene, "BonusFastClock")
 		CheckIfPlayerGetBonus(scene, "BonusSlowClock")
@@ -178,6 +202,12 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	UpdateCompass()
 	//-------------------------
 	{
+		//	Compute compass position
+		local	_pos
+		_pos = CameraWorldToScene2d(camera_handler.camera , ItemGetWorldPosition(player), game_ui.ui)
+//		_pos.Print("2D Player position")
+
+		//	Compute compass orientation
 		local	_angle = 0.0
 		local	_beacon_pos, _dir 
 
@@ -200,7 +230,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		if ((_dir.x < 0.0) && (_dir.y >= 0.0))		//	Quadrant 3
 			_angle = -_dir.AngleWithVector(Vector(0,1,0))
 		
-		game_ui.UpdateCompass(_angle)
+		game_ui.UpdateCompass(_pos, _angle)
 	}
 
 	//-----------
@@ -224,6 +254,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//------------------------
 	{
 		base.OnSetup(scene)
+		LoadSounds()
 		camera_handler = CameraHandler(scene)
 		stopwatch_handler = StopwatchHandler()
 		feedback_emitter = FeedbackEmitter(scene)
@@ -239,6 +270,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		print("LevelHandler::OnSetupDone()")
 		SceneFindPlayer(scene)
 		camera_handler.SetMaxSneakSpeed(player_script.max_speed / 2.0)
+		camera_handler.StickToPlayerPosition(ItemGetWorldPosition(player))
 
 		SceneFindPath(scene)
 		SceneFindArtefacts(scene)
@@ -248,7 +280,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		SceneFindBonus(scene, "BonusShield")
 		SceneFindBonus(scene, "BonusSlowClock")
 		SceneFindBonus(scene, "BonusFastClock")
-		homebase_item = SceneFindItem(scene, "homebase")
+		homebase_item = LegacySceneFindItem(scene, "homebase")
 		UpdateArtifactCounter()
 		minimap = MiniMap(scene)
 
@@ -349,6 +381,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 				//	Remove it, from scene & from the bonus list
 				ItemActivateHierarchy(_item, false)
 				feedback_emitter.Emit(ItemGetWorldPosition(_item))
+				PlaySfxGotItem()
 
 				local	idx, val
 				foreach(idx,val in bonus[bonus_name])
@@ -404,6 +437,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			}
 
 		feedback_emitter.Emit(ItemGetWorldPosition(_item))
+		PlaySfxGotItem()
 
 		if (artefact.len() < 1)
 		{
@@ -416,18 +450,11 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	SceneFindArtefacts(scene)
 	//-----------------------------------
 	{
-		local	n = 0
-		
-		while(true)
-		{
-			local	_item = SceneFindItem(scene, "Artifact" + n.tostring())
-			if (ObjectIsValid(_item))
+		local	_list, _item
+		_list = SceneGetItemList(scene)
+		foreach(_item in _list)
+			if (ItemGetName(_item) == "Artifact")
 				artefact.append(_item)
-			else
-				break
-
-			n++
-		}
 
 		total_artifact_to_found = artefact.len()
 		print("LevelHandler::SceneFindArtefacts() found " + total_artifact_to_found.tostring() + " artefact(s).")	
@@ -464,7 +491,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		
 		while(true)
 		{
-			local	_item = SceneFindItem(scene, "path_" + n.tostring())
+			local	_item = LegacySceneFindItem(scene, "path_" + n.tostring())
 			if (ObjectIsValid(_item))
 				path.append(_item)
 			else
@@ -490,7 +517,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//	=======
 	function	SceneFindPlayer(scene)
 	{
-		player = SceneFindItem(scene, "player")
+		player = LegacySceneFindItem(scene, "player")
 		if (ObjectIsValid(player))
 		{
 			player_script = ItemGetScriptInstance(player)
@@ -498,5 +525,21 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		}
 		else
 			print("LevelHandler::SceneFindPlayers() player not found.")
+	}
+
+	//	=========
+	//	Sounds
+	//	=========
+
+	function	LoadSounds()
+	{
+		//	Feedbacks
+		sfx_got_item = EngineLoadSound(g_engine, "audio/sfx/sfx_got_item.wav")
+	}
+
+	function	PlaySfxGotItem()
+	{
+		local	_chan
+		_chan = MixerSoundStart(g_mixer, sfx_got_item)
 	}
 }

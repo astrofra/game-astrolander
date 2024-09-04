@@ -160,20 +160,20 @@ class	BuiltinItemSoapbox
 		}
 		else
 		{
-			KeyboardUpdate()
+			local	device = GetKeyboardDevice()
 	
-			if	(KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow))
+			if	(DeviceIsKeyDown(device, KeyLeftArrow))
 				ItemApplyTorque(item, Vector(0.0, -1.0 * k, 0.0))
-			if	(KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow))
+			if	(DeviceIsKeyDown(device, KeyRightArrow))
 				ItemApplyTorque(item, Vector(0.0, 1.0 * k, 0.0))
 	
 			local	matrix = ItemGetMatrix(item)
-			if	(KeyboardSeekFunction(DeviceKeyPress, KeyUpArrow))
+			if	(DeviceIsKeyDown(device, KeyUpArrow))
 			{
 				is_accel = true
 				ItemApplyForce(item, ItemGetWorldPosition(thrust_item), matrix.GetRow(2).MulReal(1.5 * k))
 			}
-			if	(KeyboardSeekFunction(DeviceKeyPress, KeyDownArrow))
+			if	(DeviceIsKeyDown(device, KeyDownArrow))
 				ItemApplyForce(item, ItemGetWorldPosition(thrust_item), matrix.GetRow(2).MulReal(-1.0 * k))
 		}
 	}

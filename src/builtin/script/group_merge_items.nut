@@ -26,6 +26,7 @@ class	BuiltinMergeGroup
 
 	function	MergeItemList(scene, items)
 	{
+		return
 		print("Merging " + items.len() + " items:")
 
 		// Might be an instance.
@@ -63,6 +64,7 @@ class	BuiltinMergeGroup
 
 	function	DoMerge(scene, group_name, item_name)
 	{
+		return
 		local	group
 		try
 		{	group = SceneFindGroup(scene, group_name)	}
@@ -141,6 +143,7 @@ class	BuiltinMergeGroup
 
 	function	OnSetup(scene)
 	{
+		return
 		DoMerge(scene, group_name_0, item_name_0)
 		DoMerge(scene, group_name_1, item_name_1)
 	}

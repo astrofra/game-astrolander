@@ -41,6 +41,7 @@ class	BuiltinLensFlare
 	>
 	<Parameter =
 		<strength = <Name = "Strength"> <Type = "Float"> <Default = 1.0>>
+		<flicker = <Name = "Flicker."> <Type = "Bool"> <Default = False>>
 		<draw_flare = <Name = "Draw flare && streaks."> <Type = "Bool"> <Default = True>>
 		<draw_reflection = <Name = "Draw lens reflections."> <Type = "Bool"> <Default = True>>
 		<test_occlusion = <Name = "Test occlusion."> <Type = "Bool"> <Default = True>>
@@ -61,6 +62,7 @@ class	BuiltinLensFlare
 	scale_lens_d	=	true
 
 	strength		=	1.0
+	flicker			=	false
 	draw_flare		=	true
 	draw_reflection	=	true
 	test_occlusion	=	true
@@ -124,7 +126,7 @@ class	BuiltinLensFlare
 		local	dt = item_m.GetPosition() - camera_m.GetPosition()
 		dt_len = dt.Len()
 
-		local	target_alpha = 1
+		local	target_alpha = flicker ? Rand(0.6, 1.0) : 1
 
 		if	(camera_m.GetFront().Dot(dt) < 0)
 			target_alpha = 0		// Flare is in camera back.

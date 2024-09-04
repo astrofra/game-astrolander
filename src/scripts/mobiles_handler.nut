@@ -5,6 +5,62 @@
 
 		Include("scripts/globals.nut")
 
+class	MobileElevator
+{
+/*<
+	<Parameter =
+		<speed = <Name = "Speed"> <Type = "float"> <Default = 1.0>>
+	>
+>*/
+		speed 			=	Mtrs(1.0)
+		course_height	=	Mtr(5.0)
+		pos_start		=	0
+		pos				=	0
+
+		going_up		=	true
+
+		function	OnSetup(item)
+		{
+			pos_start = ItemGetPosition(item) //ItemGetWorldPosition(item)
+
+			//	Get height course if possible
+			local	_parent = ItemGetParent(item)
+			if (ObjectIsValid(_parent))
+			{
+				_parent = ItemGetChild(_parent, "max_position")
+				if (ObjectIsValid(_parent))
+					course_height = ItemGetPosition(_parent).y - pos_start.y
+			}
+
+			pos = pos_start
+			going_up = true
+		}
+
+		function	OnUpdate(item)
+		{
+			local	_vel = Vector(0,1,0)
+			_vel = _vel.Scale(g_dt_frame * (going_up?1.0:-1.0) * speed)
+
+			pos += _vel
+
+			if ((pos.y - pos_start.y) >= course_height)
+			{
+				pos.y =  pos_start.y + course_height
+				going_up = false
+			}
+			else
+			{
+				if (pos.y < pos_start.y)
+				{
+					pos.y = pos_start.y
+					going_up = true
+				}
+			}
+
+			ItemSetPosition(item, pos)
+		}
+}
+
 class	MobileJawGate	//extends	SceneWithThreadHandler
 {
 /*<
@@ -99,11 +155,13 @@ class	MobileRotary
 	<Parameter =
 		<target_RPM = <Name = "Target RPM"> <Type = "float"> <Default = 1.0>>
 		<strength = <Name = "Strength"> <Type = "float"> <Default = 1.0>>
+		<is_physic = <Name = "Is Physic"> <Type = "bool"> <Default = 1>>
 	>
 >*/
 	target_RPM				=	1.0
 	target_angular_vel		=	0.0
 	strength				=	1.0
+	is_physic				=	true
 
 	/*!
 		@short	OnUpdate
@@ -112,11 +170,22 @@ class	MobileRotary
 
 	function	OnUpdate(item)
 	{
-		ItemWake(item)
+		if (is_physic)
+		{
+			ItemWake(item)
+			return
+		}
+
+		local	_rot = ItemGetRotation(item)
+		_rot.z += target_RPM * g_dt_frame
+		ItemSetRotation(item, _rot)
 	}
 
 	function	OnPhysicStep(item, dt)
 	{
+		if (!is_physic)
+			return
+
 		local	_angular_vel = ItemGetAngularVelocity(item).z
 		local	_torque	= Vector(0,0,target_angular_vel - _angular_vel)
 		_torque = _torque.Scale(strength * ItemGetMass(item))

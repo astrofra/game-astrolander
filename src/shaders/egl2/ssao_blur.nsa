@@ -4,8 +4,9 @@
 		<Attribute=<Name="a_position"><Semantic="Position">>
 
 		<Uniform=<Name="u_tex"><Semantic="NativeTexture">>
-		<Uniform=<Name="u_depth"><Semantic="DepthBuffer">>
+		<Uniform=<Name="u_normal_depth"><Semantic="NativeTexture">>
 		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+		<Uniform=<Name="u_ivs"><Semantic="InverseViewportSize">>
 		<Uniform=<Name="u_fx_scale"><Semantic="FxScale">>
 
 		<Uniform=<Name="u_znear"><Semantic="ZNear">>

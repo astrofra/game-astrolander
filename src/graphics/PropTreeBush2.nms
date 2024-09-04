@@ -1,0 +1,601 @@
+<NML=1.0>
+<Scene=
+	<Items=
+		<MObject=
+			<MItem=
+				<Id="PropBush2">
+				<UId=0>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="prop_tree_0">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****._é********._i÷övg._é********._i÷öög._é********._iÄÃCh
+._é********._i÷övh._é********._i**ªh._é********._iÄÃÃh._é
+********._i]]Ýh._é********._i÷ööh._é********._ih._é****
+****._i***i._é********._i÷ö6i._é********._iÄÃCi._é********
+._iPi._é********._i]]]i._é********._i**ji._é********._i
+÷övi._é********._iÄÃƒi._é********._ii._é********._i]]i
+._é********._i**ªi._é********._i>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****ãÅ=Je+**ªiãÅ=Je>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Ûê+**ªiÛê>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=-0.256829>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=-1.570796>
+						<Z=-3.141592>
+					>
+					<Scale=
+						<X=3.000000>
+						<Y=3.000000>
+						<Z=3.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/PropBush2.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="PropBush1">
+				<UId=1>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="prop_tree_0">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****._é********._i÷övg._é********._i÷öög._é********._iÄÃCh
+._é********._i÷övh._é********._i**ªh._é********._iÄÃÃh._é
+********._i]]Ýh._é********._i÷ööh._é********._ih._é****
+****._i***i._é********._i÷ö6i._é********._iÄÃCi._é********
+._iPi._é********._i]]]i._é********._i**ji._é********._i
+÷övi._é********._iÄÃƒi._é********._ii._é********._i]]i
+._é********._i**ªi._é********._i>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++*****û=Må+**ªi*û=Må>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****zÇhè+**ªizÇhè>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-1.533778>
+						<Y=0.947219>
+						<Z=0.582796>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=-1.570796>
+						<Z=-3.141592>
+					>
+					<Scale=
+						<X=1.750000>
+						<Y=1.750000>
+						<Z=1.750000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/PropBush1.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="tree_col">
+				<UId=2>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Sphere">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.500000>
+								<Y=1.500000>
+								<Z=1.500000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+						<PhysicShape=
+							<Type="Sphere">
+							<Position=
+								<X=0.653519>
+								<Y=1.358725>
+								<Z=-0.295937>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=0.550000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+						<PhysicShape=
+							<Type="Sphere">
+							<Position=
+								<X=-0.163573>
+								<Y=2.061996>
+								<Z=-0.295937>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=0.750000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=1.659719>
+						<Y=0.000000>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MLight=
+			<MItem=
+				<Id="New Light">
+				<UId=3>
+				<Active>
+				<Helper>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Light=
+				<Item=
+					<Position=
+						<X=1.640833>
+						<Y=3.698614>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Shadow="Map">
+				<ShadowBias=0.010000>
+				<ShadowDistribution=0.900000>
+				<VolumetricSampleStep=0.500000>
+				<VolumetricThick=1.000000>
+				<VolumetricRange=8.000000>
+			>
+		>
+	>
+	<Links>
+	<Skins>
+	<Constraints>
+	<Globals=
+		<BackgroundColor=
+			<X=0.000000>
+			<Y=0.000000>
+			<Z=0.000000>
+		>
+		<AmbientColor=
+			<X=0.400000>
+			<Y=0.400000>
+			<Z=0.400000>
+		>
+		<AmbientIntensity=1.000000>
+		<TargetExposure=0.250000>
+		<FogNear=0.000000>
+		<FogFar=0.000000>
+		<FogColor=
+			<X=1.000000>
+			<Y=1.000000>
+			<Z=1.000000>
+		>
+	>
+	<Physics=
+		<Frequency=59.999996>
+	>
+	<ViewMatrix=
+		<R0=
+			<X=0.998748>
+			<Y=0.000000>
+			<Z=-0.050029>
+			<W=0.000000>
+		>
+		<R1=
+			<X=0.007722>
+			<Y=0.988015>
+			<Z=0.154166>
+			<W=0.000000>
+		>
+		<R2=
+			<X=0.049429>
+			<Y=-0.154359>
+			<Z=0.986778>
+			<W=0.000000>
+		>
+		<R3=
+			<X=1.278513>
+			<Y=4.463276>
+			<Z=-24.401802>
+			<W=1.000000>
+		>
+	>
+>
+<Editor=
+	<View=
+		<Layout="Single">
+		<Viewport=
+			<Index=0>
+			<Camera="@Perspective">
+			<Matrix=
+				<R0=
+					<X=0.998748>
+					<Y=0.000000>
+					<Z=-0.050029>
+					<W=0.000000>
+				>
+				<R1=
+					<X=0.007722>
+					<Y=0.988015>
+					<Z=0.154166>
+					<W=0.000000>
+				>
+				<R2=
+					<X=0.049429>
+					<Y=-0.154359>
+					<Z=0.986778>
+					<W=0.000000>
+				>
+				<R3=
+					<X=1.278513>
+					<Y=4.463276>
+					<Z=-24.401802>
+					<W=1.000000>
+				>
+			>
+		>
+		<Viewport=
+			<Index=1>
+			<Camera="@Top">
+			<Matrix=
+				<R0=
+					<X=1.000000>
+					<Y=0.000000>
+					<Z=0.000000>
+					<W=0.000000>
+				>
+				<R1=
+					<X=0.000000>
+					<Y=-0.000000>
+					<Z=1.000000>
+					<W=0.000000>
+				>
+				<R2=
+					<X=0.000000>
+					<Y=-1.000000>
+					<Z=-0.000000>
+					<W=0.000000>
+				>
+				<R3=
+					<X=0.000000>
+					<Y=10.000000>
+					<Z=0.000000>
+					<W=1.000000>
+				>
+			>
+		>
+		<Viewport=
+			<Index=2>
+			<Camera="@Bottom">
+			<Matrix=
+				<R0=
+					<X=1.000000>
+					<Y=0.000000>
+					<Z=0.000000>
+					<W=0.000000>
+				>
+				<R1=
+					<X=0.000000>
+					<Y=-0.000000>
+					<Z=-1.000000>
+					<W=0.000000>
+				>
+				<R2=
+					<X=0.000000>
+					<Y=1.000000>
+					<Z=-0.000000>
+					<W=0.000000>
+				>
+				<R3=
+					<X=0.000000>
+					<Y=-10.000000>
+					<Z=0.000000>
+					<W=1.000000>
+				>
+			>
+		>
+		<Viewport=
+			<Index=3>
+			<Camera="@Left">
+			<Matrix=
+				<R0=
+					<X=-0.000000>
+					<Y=0.000000>
+					<Z=-1.000000>
+					<W=0.000000>
+				>
+				<R1=
+					<X=0.000000>
+					<Y=1.000000>
+					<Z=0.000000>
+					<W=0.000000>
+				>
+				<R2=
+					<X=1.000000>
+					<Y=0.000000>
+					<Z=-0.000000>
+					<W=0.000000>
+				>
+				<R3=
+					<X=-10.000000>
+					<Y=0.000000>
+					<Z=0.000000>
+					<W=1.000000>
+				>
+			>
+		>
+	>
+>

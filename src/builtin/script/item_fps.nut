@@ -24,10 +24,6 @@ class	BuiltinCharacterController
 
 	body		=	0
 
-	mx			=	0
-	my			=	0
-	old_mx		=	0
-	old_my		=	0
 	acc			=	0
 	euler		=	0
 
@@ -70,16 +66,16 @@ class	BuiltinCharacterController
 
 	function	OnUpdate(item)
 	{
-		KeyboardUpdate()
-		MouseUpdate()
+		local	keyboard = GetKeyboardDevice(),
+				mouse = GetMouseDevice()
 
-		old_mx = mx
-		old_my = my
-		mx = MousePoolFunction(DeviceAxisX)
-		my = MousePoolFunction(DeviceAxisY)
+		local	old_mx = DeviceInputLastValue(mouse, DeviceAxisX),
+				old_my = DeviceInputLastValue(mouse, DeviceAxisY)
+		local	mx = DeviceInputValue(mouse, DeviceAxisX),
+				my = DeviceInputValue(mouse, DeviceAxisY)
 
 		acc = Vector(0, 0, 0)
-		euler = item.rotation() + Vector(my - old_my, mx - old_mx, 0) * Deg(0.006)
+		euler = item.rotation() + Vector(my - old_my, mx - old_mx, 0) * Deg(360.0)
 
 		if	(euler.x < Deg(-30))
 			euler.x = Deg(-30)
@@ -87,17 +83,20 @@ class	BuiltinCharacterController
 			euler.x = Deg(35)
 		item.setRotation(euler)
 
-		if	(KeyboardSeekFunction(DeviceKeyPress, KeySpace))
-			body.applyLinearImpulse(item.matrix().GetRow(1).MulReal(1.5 * speed))
+		if	(DeviceKeyPressed(keyboard, KeySpace))
+			body.applyLinearImpulse(item.matrix().GetRow(1).MulReal(25.0 * speed))
 
-		if	(KeyboardSeekFunction(DeviceKeyPress, KeyUpArrow))
+		if	(DeviceIsKeyDown(keyboard, KeyUpArrow) || DeviceIsKeyDown(keyboard, KeyZ) || DeviceIsKeyDown(keyboard, KeyW))
 			acc = Vector(0, 0, 1)
-		if	(KeyboardSeekFunction(DeviceKeyPress, KeyDownArrow))
+		if	(DeviceIsKeyDown(keyboard, KeyDownArrow) || DeviceIsKeyDown(keyboard, KeyS))
 			acc = Vector(0, 0, -1)
-		if	(KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow))
+		if	(DeviceIsKeyDown(keyboard, KeyLeftArrow) || DeviceIsKeyDown(keyboard, KeyQ) || DeviceIsKeyDown(keyboard, KeyA))
 			acc = Vector(-1, 0, 0)
-		if	(KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow))
+		if	(DeviceIsKeyDown(keyboard, KeyRightArrow) || DeviceIsKeyDown(keyboard, KeyD))
 			acc = Vector(1, 0, 0)
+
+		if	(DeviceIsKeyDown(keyboard, KeyLShift))
+			acc *= 2.5
 
 		body.applyLinearImpulse(acc * RotationMatrixY(euler.y) * speed)
 

@@ -20,6 +20,8 @@ class	BuiltinMaterialReflection
 	half_resolution		=	true
 	affect_parent		=	false
 
+	camera_reflect		=	0
+
 	//-----------------------
 	material			=	0
 	texture				=	0
@@ -30,10 +32,12 @@ class	BuiltinMaterialReflection
 		material = GeometryGetMaterial(affect_parent ? ItemGetGeometry(ItemGetParent(item)) : ItemGetGeometry(item), material_name)
 
 		// Create a new render target.
-		texture = EngineCreateCanvasTexture(g_engine, (1024 * (half_resolution ? 0.5 : 1.0)).tointeger(), (512 * (half_resolution ? 0.5 : 1.0)).tointeger())
+		texture = EngineNewTexture(g_engine, (1024 * (half_resolution ? 0.5 : 1.0)).tointeger(), (512 * (half_resolution ? 0.5 : 1.0)).tointeger(), true)
 
 		MaterialChannelSetTexture(material, texture, (apply_to_diffuse?ChannelDiffuse:ChannelReflection))
 		MaterialBuildShaderTreeFromFixedFunction(material)
+
+		camera_reflect = SceneAddCamera(g_scene, "Reflection Camera")
 	}
 
 	/*
@@ -44,30 +48,24 @@ class	BuiltinMaterialReflection
 		local	scene = ItemGetScene(item)
 
 		// Compute aspect ratio.
+		local	scene_camera = SceneGetCurrentCamera(g_scene)
+		SceneSetCurrentCamera(g_scene, camera_reflect)
+
 		local	viewport = RendererGetViewport(g_render)
-		local	ar = RendererSetGlobalAspectRatio(g_render, (viewport.w / viewport.z) * (2048.0 / 1024.0))
+//		local	ar = RendererSetGlobalAspectRatio(g_render, (viewport.w / viewport.z) * (2048.0 / 1024.0))
 
 		// Grab camera and current settings.
-		local	camera_item = CameraGetItem(SceneGetCurrentCamera(scene))
+		local	camera_item = CameraGetItem(camera_reflect)
 
 		local	camera_matrix = ItemGetMatrix(camera_item),
 				camera_p = camera_matrix.GetRow(3),
 				camera_f = camera_matrix.GetRow(2)
 
-		local	prv_p = ItemGetPosition(camera_item),
-				prv_r = ItemGetRotation(camera_item),
-				prv_parent = ItemGetParent(camera_item),
-				has_target = ItemHasTarget(camera_item),
-				target = ItemGetTarget(camera_item)
-
 		// Compute camera reflexion.
-
 		local	item_matrix = ItemGetMatrix(item),
 				item_n = item_matrix.GetRow(1).Normalize(),
 				item_p = item_matrix.GetRow(3)
 		local	d = item_n.Dot(camera_p - item_p)
-
-		ItemSetParent(camera_item, NullItem)
 
 		local	d = item_n.Dot(camera_p - item_p)
 		local	mirror_p = camera_p - item_n * 2.0 * d
@@ -100,7 +98,6 @@ class	BuiltinMaterialReflection
 			mtx.SetRow(2, mirror_f - mirror_p)
 //			mtx.SetRow(3, mirror_p)
 
-			ItemSetNoTarget(camera_item)
 			ItemSetMatrix(camera_item, mtx)
 			ItemSetPosition(camera_item, mirror_p)
 		}
@@ -124,15 +121,9 @@ class	BuiltinMaterialReflection
 		RendererClearClippingPlane(g_render)
 
 		// Restore camera, output buffer and viewport.	
-		ItemSetPosition(camera_item, prv_p)
-		ItemSetRotation(camera_item, prv_r)
-		ItemSetParent(camera_item, prv_parent)
-		if	(has_target)
-				ItemSetTarget(camera_item, target)
-		else	ItemSetNoTarget(camera_item)
-
+		SceneSetCurrentCamera(g_scene, scene_camera)
 		RendererSetOutputTexture(g_render, NullTexture)
 		RendererSetViewport(g_render, 0.0, 0.0, 1.0, 1.0)
-		RendererSetGlobalAspectRatio(g_render, ar)
+//		RendererSetGlobalAspectRatio(g_render, ar)
 	}
 }

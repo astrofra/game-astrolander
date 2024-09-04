@@ -11,6 +11,7 @@ class	CameraHandler
 {
 	scene			=	0
 	camera_item		=	0
+	camera 			=	0
 	camera_pos		=	0
 	target_vel		=	0
 	max_sneak_speed	=	10.0		//	max speed when evaluating the camera unzoom
@@ -19,15 +20,26 @@ class	CameraHandler
 	constructor(_scene)
 	{
 		scene = _scene
-		camera_item = SceneFindItem(scene,"game_camera")
+		camera_item = LegacySceneFindItem(scene,"game_camera")
 		camera_pos = ItemGetWorldPosition(camera_item)
-		SceneSetCurrentCamera(scene, ItemCastToCamera(camera_item))
+		camera = ItemCastToCamera(camera_item)
+		SceneSetCurrentCamera(scene, camera)
 		CameraSetFov(ItemCastToCamera(camera_item), DegreeToRadian(22.5))
 		target_vel = Vector(0,0,0)
 	}
 
 	function	SetMaxSneakSpeed(_s)
 	{	max_sneak_speed = _s	}
+
+	//------------------------------------
+	function	StickToPlayerPosition(player_pos)
+	//------------------------------------
+	{
+		local	_z_save = camera_pos.z
+		camera_pos = player_pos
+		camera_pos.z = _z_save
+		ItemSetPosition(camera_item, camera_pos)
+	}
 	
 	//------------------------------------
 	function	FollowPlayerPosition(player_pos = Vector(0,0,0), player_vel = Vector(0,0,0))

@@ -10,6 +10,7 @@ class	BuiltinItemPlayMotion
 	>
 	<Parameter =
 		<motion = <Name = "Motion"> <Type = "ItemMotion">>
+		<skinned = <Name = "Play on item bones."> <Type = "Bool"> <Default = False>>
 		<loop_motion = <Name = "Loop motion."> <Type = "Bool"> <Default = True>>
 		<custom_loop = <Name = "Set loop point."> <Type = "Bool"> <Default = False>>
 		<loop_start = <Name = "Loop Start"> <Type = "Float"> <Default = 0.0>>
@@ -18,6 +19,7 @@ class	BuiltinItemPlayMotion
 >*/
 
 	motion			=	"motion"
+	skinned			=	false
 	loop_motion		=	false
 	custom_loop		=	false
 	loop_start		=	0.0
@@ -25,7 +27,12 @@ class	BuiltinItemPlayMotion
 
 	function	OnSetup(item)
 	{
-		local	source = ItemSetMotion(item, motion, 0.0)
+		local	source = 0
+
+		if	(skinned)
+				source = GroupSetMotion(ItemGetSkinBoneItemsGroup(item), motion, 0)
+		else	source = ItemSetMotion(item, motion, 0)
+
 		if	(loop_motion)
 			AnimationSourceSetLoopMode(source, AnimationRepeat)
 		if	(custom_loop)

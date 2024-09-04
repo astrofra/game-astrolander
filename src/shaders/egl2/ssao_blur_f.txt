@@ -1,19 +1,17 @@
-uniform	vec2		u_ibs;
+uniform	vec2		u_ibs, u_ivs;
 uniform float		u_znear, u_zfar, u_blur_radius, u_ao_radius, u_fx_scale;
-uniform	sampler2D	u_depth, u_tex;
+uniform	sampler2D	u_normal_depth, u_tex;
 
 float	DecodeDepth(vec2 UV)
-{
-	float	z_b = texture2D(u_depth, UV).x;
-	float	z_e = 0.5 * (u_znear * u_zfar) / (u_zfar - z_b * (u_zfar - u_znear));
-	return z_e;
-}
+{	return texture2D(u_normal_depth, UV).w;	}
 
 vec4	BlurSample(vec2 UV, float ref_depth, vec4 ref_source)
 {
+#if	0
 	float	val_depth = DecodeDepth(UV);
 	if	(abs(val_depth - ref_depth) > (u_ao_radius / 1000.0))
 		return ref_source;
+#endif
 	return texture2D(u_tex, UV);
 }
 
@@ -23,7 +21,7 @@ void	main()
 	float	ref_depth = DecodeDepth(UV);
 	vec4	ref_source = texture2D(u_tex, UV);
 
-	float	blur_factor = u_blur_radius * (u_ibs.x * u_fx_scale);
+	vec2	blur_factor = u_blur_radius * u_ivs;
 
 	vec4	txl = vec4(0.0, 0.0, 0.0, 0.0);
 	for	(float v = -0.5; v < 0.51; v += 0.25)

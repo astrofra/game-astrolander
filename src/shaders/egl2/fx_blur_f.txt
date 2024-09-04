@@ -5,7 +5,7 @@ uniform	vec2		u_ibs, u_blur_d;
 
 void	main()
 {
-	vec2	UV = vec2(gl_FragCoord.x, gl_FragCoord.y) * (u_ibs * u_fx_scale);
+	vec2	UV = gl_FragCoord.xy * (u_ibs * u_fx_scale);
 	float	b = pow(4.0, u_pass);
 
 	vec4	ref = texture2D(u_source, UV);

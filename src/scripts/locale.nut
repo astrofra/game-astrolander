@@ -16,10 +16,13 @@ g_locale	<-	{
 	no_fuel				=	"Out of Fuel!"
 	dead_by_damage		=	"Brain Damage!"
 	no_time_left		=	"No Time Left!"
-	return_base			=	"Return to Base!\n~~Size(40)You found all the artifacts."
+	return_base			=	"Go to Base!\n~~Size(40)You found all the artifacts."
 	mission_complete	=	"Mission Complete!"
 	player_time			=	"~~Size(40)Your time : "
 	level_names			=	{	default_name	=	"Level Name",
+								tutorial_0		=	"First Flight",
+								tutorial_1		=	"Jump Again",
+								tutorial_2		=	"Going Narrow",
 								watch_ceilling	=	"Watch the Ceilling",
 								up_down			=	"Up and Down",
 								old_factory		=	"The Old Factory",

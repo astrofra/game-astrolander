@@ -67,8 +67,8 @@ class	BuiltinThirdPersonCamera
 		if	(target == 0)
 			warmStart(item)
 
-		local	idt = Min(1.0 / g_dt_frame, 30.0)		// Keep the refresh rate in reasonable ranges.
-		local	k_lerp = pow(accuracy, idt)
+		local	fps = Min(1.0 / g_dt_frame, 30.0)		// Keep the refresh rate in reasonable ranges.
+		local	k_lerp = pow(accuracy, fps)
 		local	target_position = target.worldPosition() + Vector(0, target_height, 0)
 
 		// Compute ideal position.
@@ -76,7 +76,7 @@ class	BuiltinThirdPersonCamera
 		local	safe_distance = GetSafeDistance(target_position, dt)
 
 		// Increase or decrease distance to target.
-		smooth_distance += (safe_distance - smooth_distance) * pow(0.97, idt)
+		smooth_distance += (safe_distance - smooth_distance) * pow(accuracy + (1.0 - accuracy) * 0.5, fps)
 
 		dt.y = 0
 		dt = dt.Normalize()
@@ -95,5 +95,10 @@ class	BuiltinThirdPersonCamera
 
 		smooth_target += (target_position - smooth_target) * k_lerp
 		ItemSetTarget(item, smooth_target)
+	}
+
+	function	OnSetup(item)
+	{
+		accuracy = Min(accuracy, 1.0)
 	}
 }
