@@ -3,15 +3,6 @@
 	Author: Astrofra
 */
 
-		Include("scripts/utils.nut")
-		Include("scripts/ui.nut")
-		Include("scripts/thread_handler.nut")
-		Include("scripts/bonus.nut")
-		Include("scripts/camera_handler.nut")
-		Include("scripts/stopwatch_handler.nut")
-		Include("scripts/feedback_emitter.nut")
-		Include("scripts/minimap.nut")
-
 /*!
 	@short	LevelHandler
 	@author	Astrofra
@@ -45,6 +36,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 	feedback_emitter		=	0
 
+	ui						=	0
 	game_ui					=	0
 
 	level_name				=	"default"
@@ -66,8 +58,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			timer_table.rawset(timer_name, g_clock)
 		else
 		{
-			print("g_clock = " + g_clock)
-			print("g_clock - timer_table[timer_name] = " + (g_clock - timer_table[timer_name]).tostring())
+			//print("g_clock = " + g_clock)
+			//print("g_clock - timer_table[timer_name] = " + (g_clock - timer_table[timer_name]).tostring())
 			if (g_clock - timer_table[timer_name] >= SecToTick(timer_duration))
 				return false
 		}
@@ -86,6 +78,9 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//-------------------------
 	{
 		base.OnUpdate(scene)
+
+		game_ui.UpdateCursor()
+
 		stopwatch_handler.Update()
 		feedback_emitter.Update()
 		minimap.Update({player = ItemGetWorldPosition(player), artifacts = GetArtifactsPositionList(), bonus = GetBonusPositionList(), homebase = GetHomebasePosition()})
@@ -263,13 +258,23 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		camera_handler = CameraHandler(scene)
 		stopwatch_handler = StopwatchHandler()
 		feedback_emitter = FeedbackEmitter(scene)
-		game_ui	=	InGameUI(SceneGetUI(scene))
-		game_ui.UpdateRoomName(g_locale.level_names[level_name])
+		ui		=	SceneGetUI(scene)
+		game_ui	=	InGameUI(scene)
+		level_name = "level_" + (ProjectGetScriptInstance(g_project).player_data.current_level).tostring()
+		local	level_name_str
+		try	{	level_name_str = g_locale.level_names[level_name]	}
+		catch(e)	{	level_name_str = level_name	}
+		game_ui.UpdateRoomName(level_name_str)
 		state = "Game"
 		print("LevelHandler::OnSetup() g_clock_scale = " + g_clock_scale)
 		EngineSetClockScale(g_engine, g_clock_scale)
 //		EngineSetFixedDeltaFrame(g_engine, 1.0 / 60.0)
 		EngineSetMaximumDeltaFrame(g_engine, 1.0 / 60.0)
+		if	(g_is_touch_platform)
+		{
+			ItemActivate(SceneFindItem(scene, "sun"), false)
+			SceneSetAmbientIntensity(scene, 2.0)
+		}
 	}
 
 	//----------------------------

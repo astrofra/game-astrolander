@@ -1,25 +1,20 @@
 /* UI
 */
 
-		Include("scripts/locale.nut")
-		Include("scripts/globals.nut")
-
 g_ui_IDs			<-	0
 g_hud_font_color	<-	Vector(0,0,0,255)
 
 function	CreateNewUIID()
 {
-	return g_ui_IDs
 	g_ui_IDs++
+	return g_ui_IDs
 }
 
 function	UICommonSetup(ui)
 {
-	UILoadFont("ui/anna.ttf")
+	UILoadFont("ui/banksb20caps.ttf")
 	UILoadFont("ui/aerial.ttf")
-	UILoadFont("ui/creative_block.ttf")
 	UILoadFont("ui/profont.ttf")
-//	UILoadFont("ui/elronet.ttf")
 
 /*	
 	//	Enable this and watch the editor crash.
@@ -58,53 +53,533 @@ function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_
 	return [ window, widget, _id ]
 }
 
+//------------
+class	BaseUI
+//------------
+{
+	ui				=	0
+	cursor_sprite	=	0
+
+	cursor_prev_x	=	0
+	cursor_prev_y	=	0
+
+	fade_timeout	=	0
+	cursor_opacity	=	1.0
+
+	//--------------
+	constructor(_ui)
+	//--------------
+	{
+		ui = _ui
+		local	_texture = EngineLoadTexture(g_engine, "ui/cursor.png")
+
+		if (!g_is_touch_platform)
+		{
+			cursor_sprite = UIAddSprite(ui, -1, _texture, 0, 0, TextureGetWidth(_texture),	TextureGetHeight(_texture))
+			WindowSetScale(cursor_sprite, 2.0, 2.0)
+			WindowSetZOrder(cursor_sprite, -1)
+		}
+
+		fade_timeout = g_clock
+		cursor_opacity	=	1.0
+	}
+
+	function	FadeTimeout()
+	{
+		if ((g_clock - fade_timeout) > SecToTick(Sec(5.0)))
+			cursor_opacity = Clamp((cursor_opacity - g_dt_frame), 0.0, 1.0)
+		else
+			cursor_opacity = Clamp((cursor_opacity + 10.0 * g_dt_frame), 0.0, 1.0)
+
+		WindowSetOpacity(cursor_sprite, cursor_opacity)	
+	}
+
+	//------------------------
+	function	UpdateCursor()
+	//------------------------
+	{
+		local ui_device = GetInputDevice("mouse")
+		local	_x, _y, _dx, _dy
+		_x = DeviceInputValue(ui_device, DeviceAxisX)
+		_y = DeviceInputValue(ui_device, DeviceAxisY)
+
+		UISetCursorState(ui, g_ui_cursor, _x, _y, DeviceIsKeyDown(ui_device, KeyButton0))
+
+		_dx = Abs(_x - cursor_prev_x)
+		_dy = Abs(_y - cursor_prev_y)
+
+		cursor_prev_x = _x
+		cursor_prev_y = _y
+
+		if (!g_is_touch_platform)
+		{
+			//	Actual desktop cursor
+			local	dr = RendererGetViewport(g_render)
+
+			local	viewport_ar = dr.z / dr.w
+			local	reference_ar = 1280.0 / 960.0
+
+			local	kx = viewport_ar / reference_ar, ky = 1.0
+
+			_x = (_x - 0.5) * kx + 0.5
+			_y = (_y - 0.5) * ky + 0.5
+
+			WindowSetPosition(cursor_sprite, _x * 1280.0, _y * 960.0)
+
+			if ((_dx > 0.0) || (_dx > 0.0))
+				fade_timeout = g_clock
+
+			FadeTimeout()
+	
+		}
+
+
+	}
+
+}
+
 //-------------
-class	TitleUI
+class	TitleUI	extends	BaseUI
 //-------------
 {
 
-	ui	=	0
+//	ui	=	0
 
-	start_button		=	0
-	level_easy_button	=	0
-	level_normal_button	=	0
-	level_hard_button	=	0
-	control_reverse		=	0
+	virtual_screen_width	=	1600
+
+	master_window_handler	=	0
+	master_window_option	=	0
+	master_window_level		=	0
+
+	//	Title screen
+	game_title				=	0
+	start_button			=	0
+	option_button			=	0
+	title_left_arrow		=	0
+	title_right_arrow		=	0
+
+	gfx_hero				=	0
+
+	//	Option screen
+	option_right_arrow		=	0
+
+	level_easy_button		=	0
+	level_normal_button		=	0
+	level_hard_button		=	0
+	control_reverse			=	0
+	back_from_option_button	=	0
+
+	//	Level selection screen
+	back_from_level_button	=	0
+	level_left_arrow		=	0
+	level_button_table		=	0
+	level_button_id_table	=	0
+	level_thumbnail			=	0
+	level_name				=	0
+	next_world_arrow		=	0
+	next_world_button		=	0
+	play_level_arrow		=	0
+	play_level_button		=	0
+	selector_hilite			=	0
+
+	current_selected_level	=	0
+	current_world			=	0
 
 	constructor(_ui)
 	{
-		ui = _ui
-		start_button = CreateLabel(ui, "Cosmic Lander", 640 - 300, 300, 80, 600, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
-		level_easy_button = CreateLabel(ui, g_locale.level_easy, 640 - 200 - 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
-		level_normal_button = CreateLabel(ui, g_locale.level_normal, 640 - 200, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
-		level_hard_button = CreateLabel(ui, g_locale.level_hard, 640 - 200 + 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+		base.constructor(_ui)
 
-		WidgetSetEventHandler(level_easy_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelEasy)
-		WidgetSetEventHandler(level_normal_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelNormal)
-		WidgetSetEventHandler(level_hard_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelHard)
+		//	Main Title
+
+		master_window_handler = UIAddWindow(ui, CreateNewUIID(), 0, 0, 16, 16)
+		master_window_option = UIAddWindow(ui, CreateNewUIID(), -virtual_screen_width, 0, 16, 16)
+		master_window_level = UIAddWindow(ui, CreateNewUIID(), virtual_screen_width, 0, 16, 16)
+
+		gfx_hero = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_hero.png"), 128, -100, 1024, 1024)
+
+		local	_glass = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_hero_reflection_0.png"), 242, 222, 256, 512)
+		WindowSetParent(_glass, gfx_hero)
+		WindowSetCommandList(_glass, "loop;toalpha 0, 0.75;nop 0.15;toalpha 0, 0.95;nop 0.1;toalpha 0.1, 0.65;nop 0.1;toalpha 0,1;nop 0.15;toalpha 0, 0.85;nop 0.05;toalpha 0.2, 0.75;next;")
+
+		local	_glass = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_hero_reflection_1.png"), 511, 190, 256, 512)
+		WindowSetParent(_glass, gfx_hero)
+		WindowSetCommandList(_glass, "loop;nop 0.1;toalpha 0.1, 0.75;nop 0.15;toalpha 0, 0.5;nop 0.1;toalpha 0, 0.65;nop 0.1;toalpha 0,1;nop 0.15;next;")
+
+		local	_shadow_game_title = CreateLabel(ui, g_locale.game_title, -10, 5, 200, 800, 200, Vector(0, 0, 0, 255), g_main_font_name, TextAlignCenter)
+		game_title = CreateLabel(ui, g_locale.game_title, 640 - 400, 30, 200, 800, 200, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		local	_game_subtitle = CreateLabel(ui, g_locale.game_subtitle, 0, 150, 50, 800, 100, Vector(117, 155, 168, 180), g_main_font_name, TextAlignCenter)
+		WindowSetParent(_game_subtitle[0], game_title[0])
+		WindowSetParent(_shadow_game_title[0], game_title[0])
+
+		title_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_left.png"), 16, 700, 256, 128)
+		title_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_right.png"), 1280 - 16 - 256, 700, 256, 128)
+
+		start_button = CreateLabel(ui, g_locale.start_game, 0, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		option_button = CreateLabel(ui, g_locale.option, 0, 30, 50, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+
+		WindowSetParent(option_button[0], title_left_arrow)
+		WindowSetParent(start_button[0], title_right_arrow)
+
+		WidgetSetEventHandlerWithContext(start_button[1], EventCursorDown, this, TitleUI.ScrollToLevelScreen) //OnTitleUIStartGame)
+		WidgetSetEventHandlerWithContext(option_button[1], EventCursorDown, this, TitleUI.ScrollToOptionScreen)
+		local	_copyright = CreateLabel(ui, g_locale.copyright, 640 - 400, 900, 30, 800, 64, Vector(117, 155, 168, 128), g_main_font_name, TextAlignCenter)
+
+		//	Options
+
+		option_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_right.png"), 1280 - 16 - 256, 700, 256, 128)
+		WindowSetParent(option_right_arrow, master_window_option)
+
+		level_easy_button = CreateLabel(ui, g_locale.level_easy, 640 - 200 - 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
+		level_normal_button = CreateLabel(ui, CreateSelectedOptionString(g_locale.level_normal), 640 - 200, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
+		level_hard_button = CreateLabel(ui, g_locale.level_hard, 640 - 200 + 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
+
+		back_from_option_button = CreateLabel(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		WindowSetParent(back_from_option_button[0], option_right_arrow)
+
+		WidgetSetEventHandlerWithContext(level_easy_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelEasy)
+		WidgetSetEventHandlerWithContext(level_normal_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelNormal)
+		WidgetSetEventHandlerWithContext(level_hard_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelHard)
+		WidgetSetEventHandlerWithContext(back_from_option_button[1], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
 		
-		control_reverse = CreateLabel(ui, CreateStringControlReverse(), 640 - 300, 750, 32, 600, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+		control_reverse = CreateLabel(ui, CreateStringControlReverse(), 640 - 300, 750, 32, 600, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
 		WidgetSetEventHandlerWithContext(control_reverse[1], EventCursorDown, this, TitleUI.OnTitleUIReverseControls)
-		CreateLabel(ui, g_locale.copyright, 640 - 400, 900, 30, 800, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+
+		//	Level Selector
+
+		level_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_left.png"), 16, 700, 256, 128)
+		WindowSetParent(level_left_arrow, master_window_level)
+		back_from_level_button = CreateLabel(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		WindowSetParent(back_from_level_button[0], level_left_arrow)
+		WidgetSetEventHandlerWithContext(back_from_level_button[1], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
+
+		level_button_table = []
+		CreateLevelButtonGrid()
+		selector_hilite = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/level_selector_hilite.png"), 0, 0, 256, 256)
+		WindowSetZOrder(selector_hilite, 1.0)
+		WindowShow(selector_hilite, false)
+		HiliteLevelSelection()
+
+		level_thumbnail = LevelSelectorLoadLevelThumbnail(current_selected_level, 1280.0 - 256.0, 480.0 - 128.0)
+		WindowSetParent(level_thumbnail, master_window_level)
+
+		level_name = CreateLabel(ui, GetLevelName(current_selected_level),1280 - 256.0 - 256.0, 480 - 256 - 40 - 128.0, 50, 512, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		WindowSetParent(level_name[0], master_window_level)
+
+		play_level_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_validate.png"), 1280 - 256.0 - 128.0, 480.0 + 128.0 - 64.0, 256, 128)
+		WindowSetParent(play_level_arrow, master_window_level)
+		play_level_button = CreateLabel(ui, g_locale.play_level, -10, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		WindowSetParent(play_level_button[0], play_level_arrow)
+		WidgetSetEventHandlerWithContext(play_level_button[1], EventCursorDown, this, TitleUI.OnTitleUIStartGame)
+
+		next_world_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_right.png"), 1280 - 16 - 256, 700, 256, 128)
+		WindowSetParent(next_world_arrow, master_window_level)
+		next_world_button = CreateLabel(ui, g_locale.next_level, -10, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		WindowSetParent(next_world_button[0], next_world_arrow)
+		WidgetSetEventHandlerWithContext(next_world_button[1], EventCursorDown, this, TitleUI.GoToNextWorldPage)
+
+		WindowSetParent(game_title[0], master_window_handler)
+		WindowSetParent(_copyright[0], master_window_handler)
+		WindowSetParent(gfx_hero, master_window_handler)
+		WindowSetParent(title_left_arrow, master_window_handler)
+		WindowSetParent(title_right_arrow, master_window_handler)
+
+		WindowSetParent(master_window_option, master_window_handler)
+		WindowSetParent(master_window_level, master_window_handler)
+
+		WindowSetParent(level_easy_button[0], master_window_option)
+		WindowSetParent(level_normal_button[0], master_window_option)
+		WindowSetParent(level_hard_button[0], master_window_option)
+		WindowSetParent(control_reverse[0], master_window_option) 
 
 		//AddLogo()
 	}
+
+	function	UpdateCursor()
+	{
+		base.UpdateCursor()
+	}
+
+	//---------------------------------
+	function	CreateLevelButtonGrid()
+	//---------------------------------
+	{
+		if (level_button_table.len() > 0)
+		{
+			local	_level_button
+			foreach(_level_button in level_button_table)
+			{
+				UIDeleteWindow(ui, _level_button.level_button)
+				UIDeleteWindow(ui, _level_button.level_number_button)
+			}
+
+			level_button_table = []
+		}
+
+		level_button_id_table = {}
+
+		local	_xoffset = 128.0, _yoffset = 16.0
+
+		local	_x, _y
+		local	_button_bg = EngineLoadTexture(g_engine, "ui/level_selector_background.png")
+		for (_y = 0; _y < 2; _y++)
+			for(_x = 0; _x < 2; _x++)
+			{
+				local	_level_number = _x + _y * 2 + (current_world * 4)
+				local	_level_button = UIAddSprite(ui, -1, _button_bg, _xoffset + _x * 256 * 1.25, _yoffset + _y * 256 * 1.1, 256, 256)
+				WindowSetParent(_level_button, master_window_level)
+				local	_level_number_button = CreateLabel(ui, (_level_number + 1).tostring(), 0, 0, 120, 256, 256, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+				WindowSetParent(_level_number_button[0], _level_button)
+				WidgetSetEventHandlerWithContext(_level_number_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevel)
+				level_button_id_table.rawset(WindowGetName(_level_number_button[0]), _level_number)
+
+				level_button_table.append({ level_button = _level_button, level_number_button = _level_number_button[0] })
+			}
+	}
+
+	//---------------------------------
+	function	FadeInLevelButtonGrid()
+	//---------------------------------
+	{
+		if (level_button_table.len() > 0)
+		{
+			local	_level_button
+			foreach(_idx, _level_button in level_button_table)
+				WindowSetCommandList(_level_button.level_button, "toalpha 0,0; nop " + ((_idx + 1) * 0.1).tostring() + "; toalpha 0.1, 1.0;")
+		}
+	}
+
+	//----------------------------
+	function	GetLevelName(_idx)
+	//----------------------------
+	{
+		local	_str
+		try
+		{
+			_str = g_locale.level_names[("level_" + _idx.tostring())]
+		}
+		catch(e)
+		{
+			_str = "level #" + (_idx + 1).tostring()
+		}
+		
+		return _str
+	}
+
+	//------------------------------------------------
+	function	LoadMinimapTextureFromLevelIndex(_idx)
+	//------------------------------------------------
+	{
+		local	_fname = "ui/minimaps/level_" + _idx.tostring() + ".tga"
+
+		if (FileExists(_fname))
+			return EngineLoadTexture(g_engine, _fname)
+		else
+			return 0
+	}
+
+	//-------------------------------------------------------
+	function	LevelSelectorLoadLevelThumbnail(_idx, _x, _y)
+	//-------------------------------------------------------
+	{
+		local	_id = CreateNewUIID()
+
+		local	_minimap = LoadMinimapTextureFromLevelIndex(_idx)
+
+		local	_w, _h, _window
+
+		if (_minimap == 0)
+		{
+			_w = 128
+			_h = 128
+			_window = UIAddWindow(ui, _id, 0.0, 0.0, _w, _h)
+		}
+		else
+		{
+			_w = TextureGetWidth(_minimap)
+			_h = TextureGetHeight(_minimap)
+			_window = UIAddSprite(ui, _id, _minimap, 0.0, 0.0, _w, _h)
+		}
+
+		WindowSetPivot(_window, (_w * 0.5), (_h * 0.5))
+		WindowSetScale(_window, 0.75, 0.75)
+		WindowSetPosition(_window , _x, _y)
+
+		SpriteSetTexture
+
+		return _window
+	}
+
+	//	+---+ +---+ +---+  O = options
+	//	| O | | T | | S |  T = title
+	//	+---+ +---+ +---+  S = level selection
+
+
+	//-------------------------------------------------------
+	function	CreateTweeningCommandList(start_pos, end_pos)
+	//-------------------------------------------------------
+	{
+		start_pos = start_pos.tofloat()
+		end_pos = end_pos.tofloat()
+
+		local n,	step	= 10.0, _str = ""
+
+		for(n = 0.0; n <= step; n++)
+		{
+			local	_lerp	=	n / step;
+			local	_time = (1.0 - Pow(MakeTriangleWave(_lerp), 0.25)) * 0.25;
+			local	_current_pos = Lerp(_lerp, start_pos, end_pos)
+
+			print("_time = " + _time)
+
+			_str += "toposition " + _time.tostring() + ", " + _current_pos.tostring() + ", 0;"
+		}
+
+		return (_str)
+	}
+
+	//--------------------------------
+	function	HiliteLevelSelection()
+	//--------------------------------
+	{
+		if ((current_selected_level >= current_world * 4) && (current_selected_level < (current_world + 1) * 4))
+		{
+			local	_local_level_index
+			_local_level_index = current_selected_level - (current_world * 4)
+			WindowSetParent(selector_hilite, level_button_table[_local_level_index].level_button)
+			WindowShow(selector_hilite, true)
+		}
+	}
+
+	//-----------------------------------------
+	function	GoToNextWorldPage(event, table)
+	//-----------------------------------------
+	{
+		current_world++
+
+		WindowShow(selector_hilite, false)
+
+		if (current_world > 5)
+		{
+			current_world = 5
+			return
+		}
+		
+		if (current_world == 5)
+			WindowShow(next_world_arrow, false)
+
+		CreateLevelButtonGrid()
+		FadeInLevelButtonGrid()
+		HiliteLevelSelection()
+
+		WidgetSetEventHandlerWithContext(back_from_level_button[1], EventCursorDown, this, TitleUI.GoToPreviousWorldPage)
+	}
+
+	//-----------------------------------------
+	function	GoToPreviousWorldPage(event, table)
+	//-----------------------------------------
+	{
+		current_world--
+
+		WindowShow(selector_hilite, false)
+
+		if (current_world < 0)
+		{
+			current_world = 0
+			return
+		}
+
+		CreateLevelButtonGrid()
+		FadeInLevelButtonGrid()
+		HiliteLevelSelection()
+
+		WindowShow(next_world_arrow, true)
+
+		if (current_world == 0)
+			WidgetSetEventHandlerWithContext(back_from_level_button[1], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
+		else
+			WidgetSetEventHandlerWithContext(back_from_level_button[1], EventCursorDown, this, TitleUI.GoToPreviousWorldPage)
+	}
+
+	//-------------------------------------------
+	function	ScrollToLevelScreen(event, table)
+	//-------------------------------------------
+	{
+		current_world = 0
+		CreateLevelButtonGrid()
+		FadeInLevelButtonGrid()
+		HiliteLevelSelection()
+		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, -virtual_screen_width))
+	}
+
+	//-------------------------------------------
+	function	ScrollToOptionScreen(event, table)
+	//-------------------------------------------
+	{
+		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, virtual_screen_width))
+	}
+
+	//-------------------------------------------
+	function	ScrollToTitleScreen(event, table)
+	//-------------------------------------------
+	{
+		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, 0))
+	}
 	
+	//--------------------------------------
 	function	CreateStringControlReverse()
+	//--------------------------------------
 	{	return (g_locale.control_reverse + " : " + (g_reversed_controls?g_locale.yes:g_locale.no))	}
 
+	//------------------------------------------------
 	function	OnTitleUIReverseControls(event, table)
+	//------------------------------------------------
 	{
 		g_reversed_controls = !g_reversed_controls
 		TextSetText(control_reverse[1], CreateStringControlReverse())
+		GlobalSaveGame()
 	}
+
+	//--------------------------------------------
+	function	OnTitleUISelectLevel(event, table)
+	//--------------------------------------------
+	{
+		local	_button_id = SpriteGetName(table.sprite)
+		local	_level = level_button_id_table[_button_id]
+		current_selected_level = _level
+
+		WindowSetParent(selector_hilite, table.sprite)
+		WindowShow(selector_hilite, true)
+
+		local	_x = WindowGetPosition(level_thumbnail).x
+		local	_y = WindowGetPosition(level_thumbnail).y
+		UIDeleteWindow(ui, level_thumbnail)
+		level_thumbnail = LevelSelectorLoadLevelThumbnail(current_selected_level, _x, _y)
+		WindowSetParent(level_thumbnail, master_window_level)
+
+		TextSetText(level_name[1] , GetLevelName(current_selected_level))
+	}
+
+	//----------------------------------------
+	function	OnTitleUIStartGame(event, table)
+	//----------------------------------------
+	{
+		ProjectGetScriptInstance(g_project).player_data.current_level = current_selected_level
+		SceneGetScriptInstance(g_scene).StartGame()	
+	}
+
+	function	CreateSelectedOptionString(str)
+	{	return  ("[" + str + "]")	}
 
 	function	OnTitleUISelectLevelEasy(event, table)
 	{
 		print("TitleUI::OnTitleUISelectLevelEasy()")
 		g_clock_scale = g_clock_scale_easy
 		print("TitleUI::g_clock_scale = " + g_clock_scale)
-		SceneGetScriptInstance(g_scene).StartGame()
+
+		TextSetText(level_easy_button[1],CreateSelectedOptionString(g_locale.level_easy))
+		TextSetText(level_normal_button[1], g_locale.level_normal)
+		TextSetText(level_hard_button[1], g_locale.level_hard)
+//		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
 	function	OnTitleUISelectLevelNormal(event, table)
@@ -112,7 +587,11 @@ class	TitleUI
 		print("TitleUI::OnTitleUISelectLevelNormal()")
 		g_clock_scale = 1.0
 		print("TitleUI::g_clock_scale = " + g_clock_scale)
-		SceneGetScriptInstance(g_scene).StartGame()
+
+		TextSetText(level_easy_button[1],g_locale.level_easy)
+		TextSetText(level_normal_button[1], CreateSelectedOptionString(g_locale.level_normal))
+		TextSetText(level_hard_button[1], g_locale.level_hard)
+//		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
 	function	OnTitleUISelectLevelHard(event, table)
@@ -120,7 +599,11 @@ class	TitleUI
 		print("TitleUI::OnTitleUISelectLevelHard()")
 		g_clock_scale = g_clock_scale_hard
 		print("TitleUI::g_clock_scale = " + g_clock_scale)
-		SceneGetScriptInstance(g_scene).StartGame()
+
+		TextSetText(level_easy_button[1],g_locale.level_easy)
+		TextSetText(level_normal_button[1], g_locale.level_normal)
+		TextSetText(level_hard_button[1], CreateSelectedOptionString(g_locale.level_hard))
+//		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
 	function	AddLogo()
@@ -130,302 +613,4 @@ class	TitleUI
 		WindowSetScale(logo, 0.65, 0.65)
 	}
 
-}
-
-
-//--------------
-class	InGameUI
-//--------------
-{
-	ui						=	0
-	
-	Damage_gauge			=	0
-	fuel_gauge				=	0
-	artifact_count			=	0
-	room_name				=	0
-	stopwatch				=	0
-	beacon_window			=	0
-	beacon_angle			=	0
-
-	inventory_bitmaps		=	0
-
-	update_frequency		=	0
-
-	game_window			=	{
-		game_over_no_fuel	= { handler = 0, visible = false }
-		game_over_damage	= { handler = 0, visible = false }
-		game_over_time		= { handler = 0, visible = false }
-		get_ready			= { handler = 0, visible = false }
-		return_base			= { handler = 0, visible = false }
-		mission_complete	= { handler = 0, visible = false }
-	}
-
-	touch_feedback			=	0
-	
-	//--------------
-	constructor(_ui)
-	//--------------
-	{		
-		print("InGameUI::Setup()")
-		ui = _ui
-		UICommonSetup(ui)
-		Damage_gauge = CreateDamageGauge()
-		fuel_gauge = CreateFuelGauge()
-		stopwatch = CreateStopwatch()
-		room_name = CreateLevelName()
-		artifact_count = CreateArtifactCounter()
-		touch_feedback = CreateTouchFeedback()
-		//beacon_window = CreateCompass()
-
-		inventory_bitmaps = []
-		game_window.game_over_no_fuel.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_fuel)
-		game_window.game_over_damage.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.dead_by_damage)
-		game_window.game_over_time.handler		= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_time_left)
-		game_window.get_ready.handler			= CreateGameMessageWindow(g_locale.get_ready)
-		game_window.return_base.handler			= CreateGameMessageWindow(g_locale.return_base)
-		game_window.mission_complete.handler	= CreateGameMessageWindow(g_locale.mission_complete)
-	}
-
-	function	CreateTouchFeedback()
-	{
-		local	_texture,
-				_touch_feedback = { left = 0, right = 0	},
-				_touch_scale
-
-		_touch_scale = 2.0
-
-		_texture = EngineLoadTexture(g_engine, "ui/touch_feedback.png")
-		_touch_feedback.left = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 256.0, 256.0)
-		WindowCenterPivot(_touch_feedback.left)
-		WindowSetPosition(_touch_feedback.left, 640.0 * 0.3, 480.0 + 256.0)
-		WindowSetScale(_touch_feedback.left, _touch_scale, _touch_scale)
-
-		_touch_feedback.right = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 256.0, 256.0)
-		WindowCenterPivot(_touch_feedback.right)
-		WindowSetPosition(_touch_feedback.right, 1280.0 - 640.0 * 0.3, 480.0 + 256.0)
-		WindowSetScale(_touch_feedback.right, _touch_scale, _touch_scale)
-
-		WindowShow(_touch_feedback.left, false)
-		WindowShow(_touch_feedback.right, false)
-
-		return _touch_feedback
-	}
-
-	function	UpdateTouchFeedback(left_enabled, right_enabled, 
-									left_pos = Vector(640.0 * 0.3, 480.0 + 256.0, 0),
-									right_pos = Vector(1280.0 - 640.0 * 0.3, 480.0 + 256.0, 0) )
-	{
-		WindowShow(touch_feedback.left, left_enabled)
-		WindowShow(touch_feedback.right, right_enabled)
-		WindowSetPosition(touch_feedback.left, left_pos.x, left_pos.y)
-		WindowSetPosition(touch_feedback.right, right_pos.x, right_pos.y)
-	}
-
-	//-------------------------
-	function	CreateCompass()
-	//-------------------------
-	{
-		print("InGameUI::CreateCompass()")
-		local	compass_window, beacon_window
-		local	_texture
-
-		_texture = EngineLoadTexture(g_engine, "ui/beacon_arrow.png")
-		beacon_window = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
-		WindowCenterPivot(beacon_window)
-
-		WindowSetPosition(beacon_window, 245.0 / 2.0, 245.0 / 2.0)
-		WindowSetScale(beacon_window, 0.85, 0.85)
-
-		return beacon_window
-	}
-
-	//-------------------------------
-	function	UpdateCompass(_pos, _angle)
-	//-------------------------------
-	{
-
-		WindowSetPosition(beacon_window, _pos.x, _pos.y)
-		WindowSetRotation(beacon_window, _angle)
-	}
-
-	//----------------------------------------
-	function	CreateGameMessageWindow(_text)
-	//----------------------------------------
-	{
-		local	_window, _widget
-		//	Start menu window
-		_window = UIAddWindow(ui, -1, 1280.0 / 2.0, 960.0 / 2.0, 800.0, 300.0)
-//		WindowSetStyle(_window, StyleMovable)
-		WindowSetTitle(_window, "")
-		WindowCenterPivot(_window)		
-		WindowSetCommandList(_window, "hide;")
-		
-		//	Start menu widget
-		local	hsizer = UIAddHorizontalSizerWidget(ui, -1);
-		WindowSetBaseWidget(_window, hsizer);
-		
-		//local	_title_name = "Game Over"
-		_widget = UIAddStaticTextWidget(ui, -1, _text, "creative_block")
-		TextSetParameters(_widget, { size = 80, align = "center", color = 0xffffffff })
-		SizerAddWidget(hsizer, _widget)
-
-		//	window_game_over = _window
-		return _window
-	}
-
-	//----------------------------------------
-	function	GameMessageWindowSetVisible(window_handler, flag = true, speed_scale = 1.0)
-	//----------------------------------------
-	{
-		local	_win = game_window[window_handler]
-
-		if (_win.visible == flag)
-			return
-
-		print("InGameUI::GameMessageWindowSetVisible('" + window_handler + "') : flag = " + flag)
-
-
-		if (flag)
-			WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.75 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + " ;")
-		else
-			WindowSetCommandList(_win.handler, "toalpha 0,1;toalpha " + (0.75 / speed_scale * g_clock_scale).tostring() + ",0;hide;")
-
-		_win.visible = flag
-	}
-
-	//----------------------------------------
-	function	GameMessageWindowShowOnce(window_handler)
-	//----------------------------------------
-	{
-		local	_win = game_window[window_handler]
-		if (_win.visible == true)
-			return
-
-		WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.75 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + ";nop " + (5 * g_clock_scale).tostring() + ";toalpha 1.5,0;")
-
-		_win.visible = false
-	}
-
-	//----------------------------------------
-	function	UpdateInventory(inventory)
-	//----------------------------------------
-	{
-		local	x,y
-		local	i, new_bitmap
-
-		x = 650.0
-		y = 8.0
-
-		foreach(i in inventory_bitmaps)
-			UIDeleteWindow(ui, i)
-
-		inventory_bitmaps = []
-/*
-		foreach(i in inventory)
-		{
-			new_bitmap = UIAddBitmapWindow(ui, -1, "data/maps/keys/" + i + ".tga", x, y, 256, 256)
-			WindowSetScale(new_bitmap, 0.175, 0.175)
-			inventory_bitmaps.append(new_bitmap)
-			x += 32
-		}
-		*/
-	}
-
-	//----------------------------
-	function	UpdateStopwatch(t)
-	//----------------------------
-	{
-		if (++update_frequency > 5)
-		{
-			TextSetText(stopwatch[1], TimeToString(t))
-			update_frequency = 0
-		}
-
-		update_frequency++
-	}
-
-	//----------------------------------------
-	function	UpdateDamageGauge(v)
-	//----------------------------------------
-	{		TextSetText(Damage_gauge[1], CreateGaugeBar(v))	}
-
-	//----------------------------------------
-	function	UpdateFuelGauge(v)
-	//----------------------------------------
-	{		TextSetText(fuel_gauge[1], CreateGaugeBar(v))	}
-
-	//----------------------------------------
-	function	UpdateRoomName(name)
-	//----------------------------------------
-	{		TextSetText(room_name[1], name)	}
-
-	//----------------------------------------
-	function	UpdateArtifactCounter(c)
-	//----------------------------------------
-	{		TextSetText(artifact_count[1], c)	}
-
-	//----------------------------------------
-	function	CreateGaugeBar(n)
-	//----------------------------------------
-	{
-		n = (n.tofloat() / 2.0).tointeger()
-		local i, str
-		str = ""
-		for(i = 0; i < n; i++)
-			str += "|"
-
-		return str
-	}
-	
-	//----------------------------------------
-	function	CreateLevelName()
-	//----------------------------------------
-	{
-		print("InGameUI::CreateLevelName()")
-		local	_name = CreateLabel(ui, "Level Name", 0, 960 - 64, 32, 1024)
-		return _name
-	}
-
-	//----------------------------------------
-	function	CreateStopwatch()
-	//----------------------------------------
-	{
-		print("InGameUI::CreateStopwatch()")
-		CreateLabel(ui, g_locale.hud_stopwatch, 1280 - 400, 0, 32, 400)
-		local	_stopwatch = CreateLabel(ui, TimeToString(0.0), 1280 - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
-		return _stopwatch
-	}
-
-	//----------------------------------------
-	function	CreateArtifactCounter()
-	//----------------------------------------
-	{
-		print("InGameUI::CreateArtifactCounter()")
-		CreateLabel(ui, g_locale.hud_artifacts, 1280 - 400, 40, 32, 380)// 960 - 64, 32, 380)
-		local	_counter = CreateLabel(ui, "0/0", 1280 - 400 + 280,  40) //960 - 64)
-		return _counter
-	}
-	//----------------------------------------
-	function	CreateDamageGauge()
-	//----------------------------------------
-	{
-		print("InGameUI::CreateDamageGauge()")
-
-		CreateLabel(ui, g_locale.hud_damage, 0, 0) //310 + 0, 0)
-		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100), 200, 0, 32, 680)
-		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 200, 0, 32, 680)
-		return _gauge
-	}
-
-	//----------------------------------------
-	function	CreateFuelGauge()
-	//----------------------------------------
-	{
-		print("InGameUI::CreateFuelGauge()")
-
-		CreateLabel(ui, g_locale.hud_fuel, 0, 40)
-		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100),  200, 40, 32, 680)
-		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 200, 40, 32, 680)
-		return _gauge
-	}
 }

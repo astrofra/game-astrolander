@@ -1,6 +1,4 @@
 //	Utils.nut
-
-		Include("scripts/globals.nut")
 		
 function	LegacySceneFindItem(_scene, _item_name)
 {

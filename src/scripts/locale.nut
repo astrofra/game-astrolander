@@ -2,15 +2,23 @@
 //	locale.nut
 
 g_locale	<-	{
+	game_title			=	"ASTLAN",
+	game_subtitle		=	"Astro Lander",	
 	level_easy			=	"Easy",
 	level_normal		=	"Normal",
 	level_hard			=	"Hardcore",
-	press_space			=	"Press Space"
-	copyright			=	"A game by Astrofra (c) 2011-2012 MuteBlast."
+	start_game			=	"Play"
+	play_level			=	"Start",
+	next_level			=	"Next",
+	option				=	"Options"
+	back_to_title		=	"Back",
+	copyright			=	"(c) 2011-2012 MuteBlast."
 	control_reverse		=	"Reversed Controls"
 	yes					=	"Yes"
 	no					=	"No"
-	hud_damage			=	"DAMAGE"
+	hud_help			=	"?",
+	hud_skip			=	">>",
+	hud_damage			=	"LIFE"
 	hud_fuel			=	"FUEL"
 	hud_artifacts		=	"ARTIFACTS"
 	hud_stopwatch		=	"TIME"
@@ -23,19 +31,26 @@ g_locale	<-	{
 	mission_complete	=	"Mission Complete!"
 	player_time			=	"~~Size(40)Your time : "
 	level_names			=	{	default_name	=	"Level Name",
-								tutorial_0		=	"First Flight",
-								tutorial_1		=	"Jump Again",
-								wheelomatic		=	"Wheel'O'matic",
-								under_garden	=	"Under the Garden",
-								going_narrow	=	"Going Narrow",
-								watch_ceilling	=	"Watch the Ceilling",
-								up_down			=	"Up and Down",
-								old_factory		=	"The Old Factory",
-								into_the_mine	=	"Into the Mine"
-								the_core		=	"The Core",
-								lost_ship		=	"The Lost Ship",
-								floating_valley		=	"The Floating Valley",
-								elevator_action	=	"Elevator Action",
-								lost_ruins		=	"The Lost Ruins"
+								level_0		=	"First Flight",
+								level_1		=	"Jump Again",
+								level_2		=	"Three Parter"
+								level_3		=	"Wheel'O'matic",
+								level_4		=	"Under the Garden",
+								level_5		=	"Watch the Ceilling",
+								level_6		=	"Watch the Ceilling 2",
+								level_7		=	"Going Narrow",
+								level_8		=	"Up and Down",
+								level_9		=	"The Old Factory",
+								level_10	=	"Into the Mine"
+								level_11	=	"The Core",
+								level_12	=	"The Lost Ship",
+								level_13	=	"The Floating Valley",
+								level_14	=	"Elevator Action",
+								level_15	=	"The Lost Ruins",
+								level_16	=	"The Sunken Galeon",
+								level_17	=	"Labyrinth #1",
+								level_18	=	"Labyrinth #2",
+								level_19	=	"Laser Chimney",
+								level_20	=	"Laser Cave"
 							}
 }

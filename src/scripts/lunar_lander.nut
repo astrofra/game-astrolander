@@ -3,9 +3,6 @@
 	Author: Astrofra
 */
 
-	Include("scripts/globals.nut")
-	Include("scripts/utils.nut")
-
 /*!
 	@short	LunarLander
 	@author	Astrofra
@@ -109,18 +106,23 @@ class	LunarLander
 			{
 				local	touch_device =	GetInputDevice("touch" + n)
 				if	(DeviceIsKeyDown(touch_device, KeyButton0))
-					if	(DeviceInputValue(touch_device, DeviceAxisX) > 0.5)
+				{
+					local	_touch_pos_x = DeviceInputValue(touch_device, DeviceAxisX),
+							_touch_pos_y = DeviceInputValue(touch_device, DeviceAxisY)	
+
+					if	(_touch_pos_x > 0.5)
 					{
 						_right = true
-						_right_pos.x = DeviceInputValue(touch_device, DeviceAxisX)
-						_right_pos.y = DeviceInputValue(touch_device, DeviceAxisY)						
+						_right_pos.x = _touch_pos_x
+						_right_pos.y = _touch_pos_y
 					}
 					else
 					{
 						_left = true
-						_left_pos.x = DeviceInputValue(touch_device, DeviceAxisX)
-						_left_pos.y = DeviceInputValue(touch_device, DeviceAxisY)
+						_left_pos.x = _touch_pos_x
+						_left_pos.y = _touch_pos_y
 					}
+				}
 			}
 
 			game_ui.UpdateTouchFeedback(_left, _right, _left_pos, _right_pos)
@@ -129,7 +131,7 @@ class	LunarLander
 		{
 			_left = DeviceIsKeyDown(g_device, KeyLeftArrow)
 			_right = DeviceIsKeyDown(g_device, KeyRightArrow)
-game_ui.UpdateTouchFeedback(_left, _right)
+//game_ui.UpdateTouchFeedback(_left, _right)
 		}
 
 		if (!g_reversed_controls)

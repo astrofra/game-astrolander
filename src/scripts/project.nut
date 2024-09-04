@@ -3,6 +3,35 @@
 	Author: Emmanuel Julien
 */
 
+	Include("scriptlib/nad.nut")
+	Include("scripts/globals.nut")
+	Include("scripts/ace_deleter.nut")
+	Include("scripts/achievements.nut")
+	Include("scripts/camera_handler.nut")
+	Include("scripts/feedback_emitter.nut")
+	Include("scripts/inventory.nut")
+	Include("scripts/thread_handler.nut")
+	Include("scripts/level_handler.nut")
+	Include("scripts/level_generator.nut")
+	Include("scripts/bonus.nut")
+	Include("scripts/locale.nut")
+	Include("scripts/minimap.nut")
+	Include("scripts/particle_emitter.nut")
+	Include("scripts/save.nut")
+	Include("scripts/stopwatch_handler.nut")
+	Include("scripts/title.nut")
+	Include("scripts/ui.nut")
+	Include("scripts/game_ui.nut")
+	Include("scripts/utils.nut")
+	Include("scripts/vfx.nut")
+
+
+function	GlobalSaveGame()
+{
+	local	_game = ProjectGetScriptInstance(g_project)
+	_game.save_game.SavePlayerData(_game.player_data)
+}
+
 //
 class	TitleScreenLogic
 {
@@ -54,9 +83,8 @@ class	GameScreenLogic
 	function	Setup(game, project)
 	{
 		print("GameScreenLogic::Setup()")
-		scene = ProjectInstantiateScene(project, "levels/level_" + game.current_level.tostring() + ".nms")
+		scene = ProjectInstantiateScene(project, "levels/level_" + game.player_data.current_level.tostring() + ".nms")
 		ProjectAddLayer(project, scene, 0.5)
-
 		dispatch = Update
 	}
 
@@ -72,7 +100,10 @@ class	GameScreenLogic
 		if	(ProjectSceneGetScriptInstance(scene).state == "NextGame")
 		{
 			print("GameScreenLogic::Update() state = " + ProjectSceneGetScriptInstance(scene).state)
-			game.current_level++
+
+			game.player_data.current_level++
+			game.save_game.SavePlayerData(game.player_data)
+
 			ProjectUnloadScene(project, scene)
 			game.screen_logic = GameScreenLogic()
 		}
@@ -93,15 +124,28 @@ class	GameScreenLogic
 class	ProjectHandler
 {
 	screen_logic		=	0
-	current_level		=	0
+
+	save_game			=	0
+
+	player_data		=	{
+			current_level		=	0
+	}
+
+	constructor()
+	{
+		print("ProjectHandler::constructor()")
+		save_game = SaveGame()
+	}
 
 	function	OnUpdate(project)
 	{
 		screen_logic.Dispatch(this, project)
 	}
+
 	function	OnSetup(project)
 	{
 		print("ProjectHandler::OnSetup()")
+		player_data = save_game.LoadPlayerData(player_data)
 		screen_logic = TitleScreenLogic()
 	}
 }

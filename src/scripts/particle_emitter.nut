@@ -1,7 +1,5 @@
 //
 
-Include("scripts/ace_deleter.nut")
-
 class	ParticleEmitter
 {
 	

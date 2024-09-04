@@ -9,8 +9,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="mobile_items">
 							<UseQuaternion=True>
 							<QChannel=
@@ -242,8 +242,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="mobile_items">
 							<UseQuaternion=True>
 							<QChannel=
@@ -469,7 +469,7 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -500,8 +500,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -624,8 +624,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -738,8 +738,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -852,8 +852,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -966,8 +966,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -1080,8 +1080,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -1204,8 +1204,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -1318,8 +1318,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -1432,8 +1432,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -1546,8 +1546,8 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="generic_blocks">
 							<UseQuaternion=True>
 							<QChannel=
@@ -1660,7 +1660,7 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1696,7 +1696,7 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1732,7 +1732,7 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=4>
@@ -1848,7 +1848,7 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=4>
@@ -1965,7 +1965,7 @@ Xçe]**ªiXçe]Xçe]**ªiXçe]**ªiXçe]Xçe]>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>

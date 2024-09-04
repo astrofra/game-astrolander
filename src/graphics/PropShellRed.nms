@@ -9,8 +9,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="sea_props">
 							<UseQuaternion=True>
 							<QChannel=
@@ -127,8 +127,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="sea_props">
 							<UseQuaternion=True>
 							<QChannel=
@@ -255,8 +255,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="sea_props">
 							<UseQuaternion=True>
 							<QChannel=
@@ -383,8 +383,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="sea_props">
 							<UseQuaternion=True>
 							<QChannel=
@@ -511,7 +511,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=

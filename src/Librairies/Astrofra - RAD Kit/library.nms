@@ -9,8 +9,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="barrel_bumped_green">
 							<UseQuaternion=False>
 							<QChannel>
@@ -141,8 +141,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="barrel_bumped_orange">
 							<UseQuaternion=True>
 							<QChannel>
@@ -273,8 +273,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="barrel_bumped_blue">
 							<UseQuaternion=False>
 							<QChannel>
@@ -405,8 +405,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_0_red">
 							<UseQuaternion=False>
 							<QChannel>
@@ -537,8 +537,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_1_red">
 							<UseQuaternion=True>
 							<QChannel>
@@ -669,8 +669,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_2_red">
 							<UseQuaternion=False>
 							<QChannel>
@@ -801,8 +801,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="chair_0">
 							<UseQuaternion=True>
 							<QChannel>
@@ -938,8 +938,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="crate">
 							<UseQuaternion=True>
 							<QChannel>
@@ -1070,8 +1070,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="cube_bumped_green">
 							<UseQuaternion=False>
 							<QChannel>
@@ -1202,8 +1202,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="cube_bumped_grey">
 							<UseQuaternion=False>
 							<QChannel>
@@ -1334,8 +1334,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="cube_bumped_red">
 							<UseQuaternion=False>
 							<QChannel>
@@ -1466,8 +1466,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="cube_bumped_blue">
 							<UseQuaternion=False>
 							<QChannel>
@@ -1598,8 +1598,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="galleon_0">
 							<UseQuaternion=False>
 							<QChannel>
@@ -1730,8 +1730,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="reservoir">
 							<UseQuaternion=False>
 							<QChannel>
@@ -1862,8 +1862,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="spaceship">
 							<UseQuaternion=False>
 							<QChannel>
@@ -1994,8 +1994,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tree_0">
 							<UseQuaternion=False>
 							<QChannel>
@@ -2126,8 +2126,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_2_blue">
 							<UseQuaternion=False>
 							<QChannel>
@@ -2258,8 +2258,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_2_green">
 							<UseQuaternion=False>
 							<QChannel>
@@ -2390,8 +2390,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_1_blue">
 							<UseQuaternion=False>
 							<QChannel>
@@ -2522,8 +2522,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_1_green">
 							<UseQuaternion=False>
 							<QChannel>
@@ -2654,8 +2654,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_0_blue">
 							<UseQuaternion=False>
 							<QChannel>
@@ -2786,8 +2786,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="car_small_0_green">
 							<UseQuaternion=True>
 							<QChannel>
@@ -2918,8 +2918,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="old_temple_0">
 							<UseQuaternion=False>
 							<QChannel>
@@ -3050,8 +3050,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="ufo_0">
 							<UseQuaternion=False>
 							<QChannel>
@@ -3182,8 +3182,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tank_jungle_1">
 							<UseQuaternion=False>
 							<QChannel>
@@ -3314,8 +3314,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tank_jungle_0">
 							<UseQuaternion=False>
 							<QChannel>
@@ -3446,8 +3446,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tank_desert_1">
 							<UseQuaternion=True>
 							<QChannel>
@@ -3578,8 +3578,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tank_desert_0">
 							<UseQuaternion=True>
 							<QChannel>
@@ -3710,8 +3710,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tank_desert_turret_1">
 							<UseQuaternion=False>
 							<QChannel>
@@ -3868,8 +3868,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tank_jungle_turret_1">
 							<UseQuaternion=True>
 							<QChannel>
@@ -4026,8 +4026,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tank_jungle_turret_0">
 							<UseQuaternion=True>
 							<QChannel>
@@ -4158,8 +4158,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="tank_desert_turret_0">
 							<UseQuaternion=False>
 							<QChannel>
@@ -4290,7 +4290,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -4326,7 +4326,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -4362,8 +4362,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="planet_tile_07">
 							<UseQuaternion=False>
 							<QChannel>
@@ -4494,8 +4494,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="planet_tile_00">
 							<UseQuaternion=False>
 							<QChannel>
@@ -4626,8 +4626,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="planet_tile_01">
 							<UseQuaternion=False>
 							<QChannel>
@@ -4758,8 +4758,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="planet_tile_02">
 							<UseQuaternion=False>
 							<QChannel>
@@ -4890,8 +4890,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="planet_tile_03">
 							<UseQuaternion=False>
 							<QChannel>
@@ -5022,8 +5022,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="planet_tile_04">
 							<UseQuaternion=False>
 							<QChannel>
@@ -5159,8 +5159,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="planet_tile_05">
 							<UseQuaternion=False>
 							<QChannel>
@@ -5291,8 +5291,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="planet_tile_06">
 							<UseQuaternion=False>
 							<QChannel>
@@ -5423,7 +5423,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -5459,7 +5459,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -5495,7 +5495,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -5531,7 +5531,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>

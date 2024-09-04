@@ -3,8 +3,6 @@
 	Author: Astrofra
 */
 
-		Include("scripts/globals.nut")
-
 /*!
 	@short	MiniMap
 	@author	Astrofra
@@ -126,7 +124,9 @@ class	MiniMap
 			WindowSetParent(map_items.player, map_window)
 		}
 
-		function	CreateMapTexture()
+		//---------------------------
+		function	TraceMapTexture()
+		//---------------------------
 		{
 			//	The texture largest dimension should be around 'map_pixel_size' (256)
 			if (max_real_width > max_real_height)
@@ -184,22 +184,54 @@ class	MiniMap
 
 			TextureUpdate(map_texture, map_picture)
 			map_picture = 0
+		}
 
+		//--------------------------------------
+		function	LoadCachedMapTexture()
+		//--------------------------------------
+		{
+			local	_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring() + ".tga"
+
+			if (FileExists(_filename))
+			{
+				print("MiniMap::LoadCachedMapTexture('" + _filename + "')")
+				map_texture = EngineLoadTexture(g_engine, _filename)
+				map_pixel_width = TextureGetWidth(map_texture)
+				map_pixel_height = TextureGetHeight(map_texture)
+
+				if (max_real_width > max_real_height)
+					pixel_scale_factor = map_pixel_width / max_real_width
+				else
+					pixel_scale_factor = map_pixel_height / max_real_height
+			}
+			else
+				print("MiniMap::LoadCachedMapTexture() Cannot find texture '" + _filename + "')")
+		}
+
+		//--------------------------------------
+		function	CreateMapTexture()
+		//--------------------------------------
+		{
 			local	map_ui_pos_x, map_ui_pos_y
-			map_window = UIAddSprite(ui, -1, map_texture, 0.0, 0.0, map_pixel_width, map_pixel_height)
-			WindowSetScale(map_window, ui_scale, ui_scale)
-			if	((true) || (g_platform == "Android"))
+
+			if	(g_is_touch_platform)
 			{
 				//	Touch
+				LoadCachedMapTexture()
 				map_ui_pos_x = 640.0 - (map_pixel_width * ui_scale * 0.5)
 				map_ui_pos_y = 960.0 - (map_pixel_height * ui_scale)
 			}
 			else
 			{
 				//	PC
+				TraceMapTexture()
 				map_ui_pos_x = 1280.0 - (map_pixel_width * ui_scale)
 				map_ui_pos_y = 960.0 - (map_pixel_height * ui_scale) - 64.0
 			}
+
+			map_window = UIAddSprite(ui, -1, map_texture, 0.0, 0.0, map_pixel_width, map_pixel_height)
+			WindowSetScale(map_window, ui_scale, ui_scale)
+
 			WindowSetPosition(map_window ,map_ui_pos_x, map_ui_pos_y)
 			WindowSetOpacity(map_window, 0.75)
 		}
@@ -209,7 +241,7 @@ class	MiniMap
 		//--------------------------------------
 		{
 			local	_filename
-			_filename = "minimaps/level_" + ProjectGetScriptInstance(g_project).current_level.tostring() + ".tga"
+			_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring() + ".tga"
 			
 			if (!FileExists(_filename))
 				PictureSaveTGA(_picture, _filename)

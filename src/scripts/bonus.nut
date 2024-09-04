@@ -3,9 +3,6 @@
 	Author: Astrofra
 */
 
-		Include("scripts/thread_handler.nut")
-		Include("scripts/globals.nut")
-
 //--------------------------------
 function	ThreadBonusFastClock(scene)
 //--------------------------------

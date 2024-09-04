@@ -3,9 +3,6 @@
 	Author: Astrofra
 */
 
-		Include("scripts/globals.nut")
-		Include("scripts/locale.nut")
-
 class	AchievementsHandler
 {
 
@@ -20,6 +17,10 @@ class	AchievementsHandler
 	//	Eco Drive : Finished the level with more than 90% of fuel left
 	//	Fuel Close Call : Finished the level with less than 2% of fuel left
 	//	Rush Mode : Did 90% of the level at 90% of the maximum velocity.
+	//	One take : completes all levels without retry
+	//	Like a fish in water : spent more than [minutes] in the underwater levels
+	//	No respect for the ancients : knocked at least 5 columns
+	//	Finished the whole game in less than [X] minutes 
 
 	constructor(_player_script)
 	{

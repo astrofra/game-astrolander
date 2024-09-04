@@ -3,9 +3,6 @@
 	Author: Astrofra
 */
 
-		Include("scripts/ui.nut")
-		Include("scripts/inventory.nut")
-
 /*!
 	@short	Artefact
 	@author	Astrofra

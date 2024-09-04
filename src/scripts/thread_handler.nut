@@ -44,6 +44,7 @@ class	SceneWithThreadHandler
 	{
 		HandleThreadList()
 
+/*
 		dt_frame_table.remove(0)
 		dt_frame_table.append(g_dt_frame)
 		local	dt_frame_table_sorted
@@ -53,6 +54,7 @@ class	SceneWithThreadHandler
 		print("--")
 		print("g_dt_frame      = " + g_dt_frame)
 		print("dt_frame_median = " + dt_frame_median)
+*/
 
 /*
 		print(thread_list.len().tostring() + " thread(s)")

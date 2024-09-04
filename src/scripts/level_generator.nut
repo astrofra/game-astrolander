@@ -3,8 +3,6 @@
 	Author: Astrofra
 */
 
-		Include("scripts/level_handler.nut")
-
 /*!
 	@short	LevelGenerator
 	@author	Astrofra

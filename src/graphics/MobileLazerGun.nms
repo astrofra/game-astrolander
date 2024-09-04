@@ -9,8 +9,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="pod">
 							<UseQuaternion=True>
 							<QChannel=
@@ -131,8 +131,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="pod">
 							<UseQuaternion=True>
 							<QChannel=
@@ -253,7 +253,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -293,8 +293,8 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions=
-						<Motion=
+					<NoMotions=
+						<NoMotion=
 							<Id="pod">
 							<UseQuaternion=True>
 							<QChannel=
@@ -410,7 +410,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -449,7 +449,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -489,7 +489,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -556,7 +556,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -627,7 +627,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>

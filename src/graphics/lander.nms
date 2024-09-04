@@ -9,87 +9,6 @@
 				<TriggerDetected>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="lander_model_0">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Â¹º_+**ªiÂ¹º_>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
 				<ScriptedObject=
 					<ScriptUnit=
 						<Script="scripts/lunar_lander.nut">
@@ -348,87 +267,6 @@
 				<Helper>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ö*Oì+**ªiÖ*Oì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******k+**ªi***k>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
 				<PhysicItem=
 					<SelfMask=3>
 					<Mask=3>
@@ -499,7 +337,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -543,7 +381,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -586,87 +424,6 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="pod_uvs">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ðÌÝ+**ªiðÌÝ>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -698,87 +455,6 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="pod_uvs">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Çzi+**ªiÇzi>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******>ä+**ªi**>ä>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -815,87 +491,6 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="pod_uvs">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -927,87 +522,6 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="pod_uvs">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -1040,7 +554,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1090,7 +604,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1140,7 +654,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1190,7 +704,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -1256,7 +770,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -1322,7 +836,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1361,7 +875,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -1406,7 +920,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=2>
@@ -1468,7 +982,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1501,87 +1015,6 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="pod_uvs">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ðÌÝ+**ªiðÌÝ>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -1615,7 +1048,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1666,7 +1099,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1743,7 +1176,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1820,7 +1253,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1897,7 +1330,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<Motions>
+					<NoMotions>
 				>
 				<PhysicItem=
 					<SelfMask=1>

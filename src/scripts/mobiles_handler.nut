@@ -3,8 +3,6 @@
 	Author: Astrofra
 */
 
-		Include("scripts/globals.nut")
-
 class	MobileLazerGun
 {
 	scene				=	0
