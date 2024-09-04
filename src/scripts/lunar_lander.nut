@@ -24,7 +24,7 @@ class	LunarLander
 
 	consumption			=	2.5			//	Fuel unit per sec.
 	max_speed			=	Mtrs(25.0)	//	Max. speed of the ship.
-	speed_min_damage	=	Mtrs(3.0)
+	speed_min_damage	=	Mtrs(5.0)
 	speed_max_damage	=	Mtrs(25.0)
 	min_damage			=	5
 	max_damage			=	20
@@ -93,8 +93,16 @@ class	LunarLander
 	{
 		pad = controller.GetControllerVector()
 
-		_left = KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow)
-		_right = KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow)
+		if (g_reversed_controls)
+		{	
+			_left = KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow)
+			_right = KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow)
+		}
+		else
+		{
+			_right = KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow)
+			_left = KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow)
+		}
 
 		if (_left || _right)
 		{
@@ -276,13 +284,13 @@ class	LunarLander
 	//-------------------------
 	{
 		local	_timeout = TickToSec(g_clock - auto_align_timeout)
-		if (_timeout < Sec(0.015))
-			return
+		//if (_timeout < Sec(0.015))
+		//	return
 		
 		local	_rot_z = ItemGetRotation(item).z
 		local	_ang_v_z = ItemGetAngularVelocity(item).z
 
-		_timeout = Clamp(_timeout - 0.05, 0.0, 1.0) 
+		_timeout = 1.0 //Clamp(_timeout - 0.05, 0.0, 1.0) 
 		_timeout *= Clamp(Abs(RadianToDegree(_rot_z)) / 180.0,0.0,1.0)
 		_timeout *= 250.0
 

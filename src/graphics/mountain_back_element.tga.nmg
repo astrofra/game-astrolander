@@ -1,0 +1,274 @@
+<NML=1.0>
+<Geometry=
+	<Vertex=
+		<Count=20>
+		<Data==245:240@
+ö“µê*gæ|Ñ]\"Ïé*gæ|Ñ]ŠEÏh*gæ|Ñ]ö“µj*gæ|Ñ]ö“µêJùÀhK3†]e¥ê
+oð3iÀ¸*]Â\=}êÐ„3jÃÝ\"Ïé¤úÞh"1p]¢XNé€¨iªÐSÜŠEÏhŠ/ûh¥‚[]"€½i_›Ì
+i<;Ý"€½i8'ièEùÝÚÝ	iO/jŠmÝ2°+jðŸPjÇ§KÞnmjðŸPjÇ§KÞÃCpj¸Øi¬¢`
+Ý&w~j¨°i–Ä©ÜZð jÙ¦¢iRx1Ü¨ø«jj€hmiU]ö“µjšÑhË=@y]>
+	>
+	<Polygon=
+		<Count=18>
+		<BindingCount=54>
+		<Data==366:360@
+-***1***/***0*******-***3***,***2*******-***=}***-***<*******-**
+*4***5***9*******-***3***:***<*******-***6***7***9*******-***,**
+*3***<*******-***3***4***:*******-***:***;***<*******-*******.**
+*/*******-***,***+***1*******-***,***1***2*******-***-***,***<**
+*****-***5***6***9*******-***7***8***9*******-***4***9***:******
+*-***+*******/*******-***/***1***+*******>
+	>
+	<PNormal=
+		<Count=18>
+		<Data==54:54@
+**«**«**«**«**«**«**«**«**«**«**«**«**¬**«**¬**«**«**«>
+	>
+	<VNormal=
+		<Count=54>
+		<Data==164:162@
+**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«*
+*«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**«**
+«**«**«**«**«**«**«**«**«**«**«**«>
+	>
+	<VTangent=
+		<Count=54>
+		<Data==329:324@
+¨***¬*¨***¬*¨***¬*¨***¬*¨***¬*¨+*+¬*¨,*,¬*¨+*+¬*¨+*+¬*¨***¬*¨(*(
+¬*¨***¬*¨***¬*¨***¬*¨+*+¬*¨***¬*¨,*,¬*¨***¬*¨***¬*¨***¬*¨+*+¬*¨*
+**¬*¨***¬*¨***¬*¨***¬*¨-*-¬*¨+*+¬*©***«*©***«*¨***¬*¨***¬*¨***¬*
+¨***¬*¨***¬*¨***¬*¨+*+¬*¨+*+¬*¨***¬*¨+*+¬*¨(*(¬*¨***¬*¨***¬*¨,*,
+¬*¨***¬*¨***¬*¨***¬*¨***¬*¨***¬*¨***¬*©***«*¨***¬*¨***¬*¨***¬*¨*
+**¬*>
+	>
+	<UV=
+		<Count=1>
+		<Data==440:432@
+SòÜh²…iI°ogBsiÜÞ›hf@\hœ£3iµÒ€iœ£3i**ªiP”hlôDi**ªiúÅˆi**ªi**ªi
+¼( iÃ¥~i ?LixÇ+i³ˆLi:Rh°±„i†Ghœ£3iµÒ€i£ß‹iÜß?i¼( iÃ¥~i=}_iB¯k
+hùËei*Â¥d°±„i†Ghœ£3i**ªiœ£3iµÒ€i¼( iÃ¥~iœ£3iµÒ€i ?LixÇ+i£ß‹iÜß?
+i£ß‹iÜß?iyÅši€Hi¼( iÃ¥~i******ªi****ó‹iI°ogBsiœ£3i**ªi?ùÝh**ª
+iSòÜh²…iœ£3i**ªiSòÜh²…iP”hlôDi**ªi**ªiœ£3i**ªi¼( iÃ¥~i³ˆLi:R
+h=}_iB¯kh°±„i†GhùËei*Â¥dkÎƒi****°±„i†Gh ?LixÇ+i°±„i†Gh£ß‹iÜß
+?i?ùÝh**ªi******ªiI°ogBsiI°ogBsiSòÜh²…i?ùÝh**ªi>
+	>
+	<Materials=
+		<Material=
+			<Id="mountain_back_element">
+			<Specular=
+				<X=0.000000>
+				<Y=0.000000>
+				<Z=0.000000>
+			>
+			<Glossiness=0.100000>
+			<AlphaThreshold=0.500000>
+			<PhysicMaterial=
+				<StaticFriction=0.750000>
+				<DynamicFriction=0.500000>
+				<Restitution=0.100000>
+			>
+			<RenderMask=
+				<Smoothing>
+				<NormalMapTangent>
+				<AlphaTest>
+			>
+			<ShaderMap=
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Map=
+					<Entry=
+						<Type="Geometry Normal">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param>
+					>
+					<Entry=
+						<Type="Sampler 2D">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<WrapU=True>
+							<WrapV=True>
+						>
+					>
+					<Entry=
+						<Type="Texture">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Texture="graphics/mountain_back_element.tga">
+						>
+					>
+					<Entry=
+						<Type="Geometry UV">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Channel=0>
+						>
+					>
+					<Entry=
+						<Type="Material Parameter">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Param=1>
+						>
+					>
+					<Entry=
+						<Type="Material Parameter">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Param=4>
+						>
+					>
+					<Entry=
+						<Type="Material Parameter">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Param=2>
+						>
+					>
+					<Entry=
+						<Type="Swizzle">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Swizzle="wnnn">
+						>
+					>
+					<Entry=
+						<Type="Sampler 2D">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<WrapU=True>
+							<WrapV=True>
+						>
+					>
+					<Entry=
+						<Type="Texture">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Texture="graphics/mountain_back_element.tga">
+						>
+					>
+					<Entry=
+						<Type="Geometry UV">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Channel=0>
+						>
+					>
+					<Entry=
+						<Type="Material Parameter">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Param=6>
+						>
+					>
+				>
+				<Normal=
+					<Block=
+						<Index=0>
+					>
+				>
+				<Diffuse=
+					<Block=
+						<Index=1>
+						<Input=
+							<Block=
+								<Index=2>
+							>
+							<Block=
+								<Index=3>
+							>
+						>
+					>
+				>
+				<Specular=
+					<Block=
+						<Index=4>
+					>
+				>
+				<Glossiness=
+					<Block=
+						<Index=5>
+					>
+				>
+				<Constant=
+					<Block=
+						<Index=6>
+					>
+				>
+				<Opacity=
+					<Block=
+						<Index=7>
+						<Input=
+							<Block=
+								<Index=8>
+								<Input=
+									<Block=
+										<Index=9>
+									>
+									<Block=
+										<Index=10>
+									>
+								>
+							>
+						>
+					>
+				>
+				<Reflection=
+					<Block=
+						<Index=11>
+					>
+				>
+			>
+			<TextureStage=
+				<Index=0>
+				<Active>
+				<Texture="graphics/mountain_back_element.tga">
+				<UV=0>
+			>
+			<TextureStage=
+				<Index=1>
+				<Active>
+				<Texture="graphics/mountain_back_element.tga">
+				<UV=0>
+				<Channel="Opacity">
+			>
+		>
+	>
+>

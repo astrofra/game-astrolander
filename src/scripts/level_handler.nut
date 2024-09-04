@@ -12,6 +12,12 @@
 */
 class	LevelHandler
 {
+/*<
+	<Parameter =
+		<level_name = <Name = "Level Name"> <Type = "String"> <Default = "default">>
+	>
+>*/
+
 	player					=	0	//	Player item
 	player_script			=	0	//	Player script instance
 	camera_handler			=	0	//	Camera
@@ -26,7 +32,9 @@ class	LevelHandler
 	total_artifact_to_found	=	0
 	bonus					=	0
 
-	game_ui				=	0
+	game_ui					=	0
+
+	level_name				=	"default"
 
 	update_function			=	0
 	timer_table				=	0
@@ -69,7 +77,7 @@ class	LevelHandler
 	{
 		if (WaitForTimer("UpdateIntroScreen", Sec(2.0)))
 		{
-			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			game_ui.GameMessageWindowSetVisible("get_ready", true)
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
@@ -88,14 +96,14 @@ class	LevelHandler
 	{
 		if (WaitForTimer("UpdateLevelCompleteScreen", Sec(3.0)))
 		{
-			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			game_ui.GameMessageWindowSetVisible("mission_complete", true)
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
 		else
 		{
 			ResetTimer("UpdateLevelCompleteScreen")
-			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			game_ui.GameMessageWindowSetVisible("mission_complete", false)
 			GoToNextLevel(scene)
 		}
@@ -107,7 +115,7 @@ class	LevelHandler
 	{
 		if (WaitForTimer("UpdateGameOverScreen", Sec(3.0)))
 		{
-			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
 		else
@@ -121,7 +129,7 @@ class	LevelHandler
 	function	UpdateGameIsRunning(scene)
 	//------------------------------------
 	{
-		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 		UpdateCompass()
 		CheckIfPlayerGetArtifacts(scene)
 		CheckIfPlayerGetBonus(scene, "fuel")
@@ -132,7 +140,7 @@ class	LevelHandler
 	function	UpdateGameReturnToBase(scene)
 	//---------------------------------------
 	{
-		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 		UpdateCompass()
 		CheckIfPlayerGetBonus(scene, "fuel")
 		CheckIfPlayerIsBackToBase(scene)
@@ -184,7 +192,7 @@ class	LevelHandler
 	{
 		camera_handler = CameraHandler(scene)
 		game_ui	=	InGameUI(SceneGetUI(scene))
-		game_ui.UpdateRoomName(g_locale.level_names[ProjectGetScriptInstance(g_project).current_level])
+		game_ui.UpdateRoomName(g_locale.level_names[level_name])
 		state = "Game"
 	}
 
@@ -194,6 +202,7 @@ class	LevelHandler
 	{
 		print("LevelHandler::OnSetupDone()")
 		SceneFindPlayer(scene)
+		camera_handler.SetMaxSneakSpeed(player_script.max_speed / 2.0)
 		SceneFindPath(scene)
 		SceneFindArtefacts(scene)
 		SceneFindBonus(scene, "fuel")
