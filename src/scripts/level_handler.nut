@@ -660,13 +660,27 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 	function	PlayLevelMusic()
 	{
-		if (music_filename != "")
-			if (FileExists(music_filename))
-			{
-					music_channel = MixerStreamStart(g_mixer, music_filename)
-					MixerChannelSetLoopMode(g_mixer, music_channel, LoopRepeat)
-//					MixerChannelLock(g_mixer, music_channel)
-			}
+		local	_rand_music = [	"children_of_science.ogg"
+								"creepy_forest.ogg",
+								"drip_drop.ogg",
+								"egyptian_meditation_music.ogg",
+								"out_there.ogg",
+								"rat_sewer.ogg",
+								"strangers_on_the_train.ogg",
+								"town_in_ruins.ogg",
+								"youre_my_hero.ogg"
+								]
+		if (music_filename == "")
+			music_filename = "audio/music/" + _rand_music[Irand(0,8)]
+
+		if (FileExists(music_filename))
+		{
+				music_channel = MixerStreamStart(g_mixer, music_filename)
+				MixerChannelSetLoopMode(g_mixer, music_channel, LoopRepeat)
+//				MixerChannelLock(g_mixer, music_channel)
+		}
+		else
+			print("PlayLevelMusic() : Cannot find music '" + music_filename + "'.")
 	}
 
 	function	StopLevelMusic()
