@@ -57,7 +57,10 @@ class	InGameUI
 	
 	Damage_gauge			=	0
 	fuel_gauge				=	0
+	artifact_count			=	0
 	room_name				=	0
+	beacon_window			=	0
+	beacon_angle			=	0
 
 	inventory_bitmaps		=	0
 
@@ -67,6 +70,7 @@ class	InGameUI
 		game_over_time		= { handler = 0, visible = false }
 		get_ready			= { handler = 0, visible = false }
 		return_base			= { handler = 0, visible = false }
+		mission_complete	= { handler = 0, visible = false }
 	}
 	
 	constructor(_ui)
@@ -77,15 +81,69 @@ class	InGameUI
 		Damage_gauge = CreateDamageGauge()
 		fuel_gauge = CreateFuelGauge()
 		room_name = CreateLevelName()
+		artifact_count = CreateArtifactCounter()
+		beacon_window = CreateCompass()
+
 		inventory_bitmaps = []
 		game_window.game_over_no_fuel.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_fuel)
 		game_window.game_over_damage.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.dead_by_damage)
 		game_window.game_over_time.handler		= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_time_left)
 		game_window.get_ready.handler			= CreateGameMessageWindow(g_locale.get_ready)
 		game_window.return_base.handler			= CreateGameMessageWindow(g_locale.return_base)
+		game_window.mission_complete.handler	= CreateGameMessageWindow(g_locale.mission_complete)
 	}
 
+	//-------------------------
+	function	CreateCompass()
+	//-------------------------
+	{
+		print("InGameUI::CreateCompass()")
+		local	compass_window, beacon_window
+		compass_window = UIAddBitmapWindow(ui, 1, "ui/compass.tga", 0.0, 0.0, 245.0, 245.0)
+		WindowCenterPivot(compass_window)
+
+		beacon_window = UIAddBitmapWindow(ui, 2, "ui/beacon_arrow.tga", 0.0, 0.0, 245.0, 245.0)
+		WindowCenterPivot(beacon_window)
+		WindowSetParent(beacon_window, compass_window)
+		WindowSetPosition(beacon_window, 245.0 / 2.0, 245.0 / 2.0)
+		
+		local _ship = UIAddBitmapWindow(ui, 2, "ui/compass_dot.tga", 0.0, 0.0, 80.0, 80.0)
+		WindowCenterPivot(_ship)
+		WindowSetParent(_ship, compass_window)
+		WindowSetPosition(_ship, 245.0 / 2.0, 245.0 / 2.0)
+		
+		local _spec = UIAddBitmapWindow(ui, 2, "ui/compass_specular.tga", 0.0, 0.0, 245.0, 245.0)
+		WindowSetParent(_spec, compass_window)
+
+		WindowSetScale(compass_window, 0.65, 0.65)
+		WindowSetPosition(compass_window, 1280.0 - 100, 100.0)
+
+		return beacon_window
+	}
+
+	//-------------------------------
+	function	UpdateCompass(_angle)
+	//-------------------------------
+	{
+/*
+		if (RadianToDegree(_angle) < 0.0)
+			_angle += DegreeToRadian(360.0)
+		print(RadianToDegree(_angle))
+
+		local	_dt_angle = _angle - beacon_angle
+		if (Abs(RadianToDegree(_dt_angle)) > 45.0)
+			beacon_angle = Lerp(0.5, beacon_angle, _angle)
+		else
+			beacon_angle += (_dt_angle) * g_dt_frame
+
+		WindowSetRotation(beacon_window, beacon_angle)
+*/
+		WindowSetRotation(beacon_window, _angle)
+	}
+
+	//----------------------------------------
 	function	CreateGameMessageWindow(_text)
+	//----------------------------------------
 	{
 		local	_window, _widget
 		//	Start menu window
@@ -108,7 +166,9 @@ class	InGameUI
 		return _window
 	}
 
+	//----------------------------------------
 	function	GameMessageWindowSetVisible(window_handler, flag = true)
+	//----------------------------------------
 	{
 		local	_win = game_window[window_handler]
 		if (_win.visible == flag)
@@ -122,7 +182,9 @@ class	InGameUI
 		_win.visible = flag
 	}
 
+	//----------------------------------------
 	function	GameMessageWindowShowOnce(window_handler)
+	//----------------------------------------
 	{
 		local	_win = game_window[window_handler]
 		if (_win.visible == true)
@@ -133,7 +195,9 @@ class	InGameUI
 		_win.visible = true
 	}
 
+	//----------------------------------------
 	function	UpdateInventory(inventory)
+	//----------------------------------------
 	{
 		local	x,y
 		local	i, new_bitmap
@@ -156,16 +220,29 @@ class	InGameUI
 		*/
 	}
 
+	//----------------------------------------
 	function	UpdateDamageGauge(v)
+	//----------------------------------------
 	{		TextSetText(Damage_gauge[1], CreateGaugeBar(v))	}
 
+	//----------------------------------------
 	function	UpdateFuelGauge(v)
-	{		TextSetText(fuel_gauge[1], CreateGaugeBar(v))	}
+	//----------------------------------------
+	{		TextSetText(fuel_gauge[1], CreateGaugeBar(v + 4))	}
 
+	//----------------------------------------
 	function	UpdateRoomName(name)
+	//----------------------------------------
 	{		TextSetText(room_name[1], name)	}
 
+	//----------------------------------------
+	function	UpdateArtifactCounter(c)
+	//----------------------------------------
+	{		TextSetText(artifact_count[1], c)	}
+
+	//----------------------------------------
 	function	CreateGaugeBar(n)
+	//----------------------------------------
 	{
 		n = (n.tofloat() / 10.0).tointeger()
 		local i, str
@@ -176,14 +253,27 @@ class	InGameUI
 		return str
 	}
 	
+	//----------------------------------------
 	function	CreateLevelName()
+	//----------------------------------------
 	{
 		print("InGameUI::CreateLevelName()")
 		local	_name = CreateLabel(ui, "Level Name", 0, 960 - 64, 32, 1024)
 		return _name
 	}
 
+	//----------------------------------------
+	function	CreateArtifactCounter()
+	//----------------------------------------
+	{
+		print("InGameUI::CreateArtifactCounter()")
+		CreateLabel(ui, g_locale.artifacts, 1280 - 360, 960 - 64, 32, 380)
+		local	_counter = CreateLabel(ui, "0/0", 1280 - 360 + 280, 960 - 64)
+		return _counter
+	}
+	//----------------------------------------
 	function	CreateDamageGauge()
+	//----------------------------------------
 	{
 		print("InGameUI::CreateDamageGauge()")
 
@@ -192,7 +282,9 @@ class	InGameUI
 		return _gauge
 	}
 
+	//----------------------------------------
 	function	CreateFuelGauge()
+	//----------------------------------------
 	{
 		print("InGameUI::CreateFuelGauge()")
 

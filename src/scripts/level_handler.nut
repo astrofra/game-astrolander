@@ -12,21 +12,24 @@
 */
 class	LevelHandler
 {
-	player			=	0
-	player_script	=	0
-	camera_handler	=	0
+	player					=	0	//	Player item
+	player_script			=	0	//	Player script instance
+	camera_handler			=	0	//	Camera
+	homebase_item			=	0	//	Where the player wants to go back
 
-	state			=	0
+	state					=	0
 
-	path			=	0
-	path_length		=	0.0
+	path					=	0
+	path_length				=	0.0
 
-	artefact		=	0
+	artefact				=	0
+	total_artifact_to_found	=	0
+	bonus					=	0
 
-	game_hui		=	0
+	game_ui				=	0
 
-	update_function	=	0
-	timer_table		=	0
+	update_function			=	0
+	timer_table				=	0
 
 	//--------------------------------------------------
 	//	Timer generic routine
@@ -67,15 +70,34 @@ class	LevelHandler
 		if (WaitForTimer("UpdateIntroScreen", Sec(2.0)))
 		{
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
-			game_hui.GameMessageWindowSetVisible("get_ready", true)
+			game_ui.GameMessageWindowSetVisible("get_ready", true)
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
 		else
 		{
 			ResetTimer("UpdateIntroScreen")
-			game_hui.GameMessageWindowSetVisible("get_ready", false)
+			game_ui.GameMessageWindowSetVisible("get_ready", false)
 			update_function = UpdateGameIsRunning
 			player_script.update_function = player_script.UpdatePlayerIsAlive
+		}
+	}
+
+	//------------------------------------------
+	function	UpdateLevelCompleteScreen(scene)
+	//------------------------------------------
+	{
+		if (WaitForTimer("UpdateLevelCompleteScreen", Sec(3.0)))
+		{
+			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+			game_ui.GameMessageWindowSetVisible("mission_complete", true)
+			player_script.update_function = player_script.UpdatePlayerIsDead
+		}
+		else
+		{
+			ResetTimer("UpdateLevelCompleteScreen")
+			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+			game_ui.GameMessageWindowSetVisible("mission_complete", false)
+			GoToNextLevel(scene)
 		}
 	}
 
@@ -90,19 +112,19 @@ class	LevelHandler
 		}
 		else
 		{
-			ResetTimer("UpdateGameOverScreen")
 			ExitGame(scene)
+			ResetTimer("UpdateGameOverScreen")
 		}
 	}
-
-
 
 	//------------------------------------
 	function	UpdateGameIsRunning(scene)
 	//------------------------------------
 	{
 		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+		UpdateCompass()
 		CheckIfPlayerGetArtifacts(scene)
+		CheckIfPlayerGetBonus(scene, "fuel")
 		CheckPlayerStats(scene)
 	}
 
@@ -111,7 +133,39 @@ class	LevelHandler
 	//---------------------------------------
 	{
 		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player))
+		UpdateCompass()
+		CheckIfPlayerGetBonus(scene, "fuel")
+		CheckIfPlayerIsBackToBase(scene)
 		CheckPlayerStats(scene)
+	}
+
+	//-------------------------
+	function	UpdateCompass()
+	//-------------------------
+	{
+		local	_angle = 0.0
+		local	_beacon_pos, _dir 
+
+		if (artefact.len() > 0)
+			_beacon_pos = ItemGetWorldPosition(artefact[0])
+		else
+			_beacon_pos = ItemGetWorldPosition(homebase_item)
+
+		_dir = (_beacon_pos - ItemGetWorldPosition(player)).Normalize()
+
+		//3|0
+		//-+-
+		//2|1
+		if (_dir.x >= 0.0)							//	Quadrant 0 & 1
+			_angle = _dir.AngleWithVector(Vector(0,1,0))
+		else
+		if ((_dir.x < 0.0) && (_dir.y < 0.0))		//	Quadrant 2
+			_angle = DegreeToRadian(180.0) + _dir.AngleWithVector(Vector(0,-1,0))
+		else
+		if ((_dir.x < 0.0) && (_dir.y >= 0.0))		//	Quadrant 3
+			_angle = -_dir.AngleWithVector(Vector(0,1,0))
+		
+		game_ui.UpdateCompass(_angle)
 	}
 
 	//-----------
@@ -121,14 +175,16 @@ class	LevelHandler
 		path		=	[]
 		artefact	=	[]
 		timer_table	=	{}
+		bonus		=	{	fuel = [],	heal = [], time = []	}
 	}
 
 	//------------------------
 	function	OnSetup(scene)
 	//------------------------
 	{
-		game_hui	=	InGameUI(SceneGetUI(scene))
 		camera_handler = CameraHandler(scene)
+		game_ui	=	InGameUI(SceneGetUI(scene))
+		game_ui.UpdateRoomName(g_locale.level_names[ProjectGetScriptInstance(g_project).current_level])
 		state = "Game"
 	}
 
@@ -140,6 +196,9 @@ class	LevelHandler
 		SceneFindPlayer(scene)
 		SceneFindPath(scene)
 		SceneFindArtefacts(scene)
+		SceneFindBonus(scene, "fuel")
+		UpdateArtifactCounter()
+		homebase_item = SceneFindItem(scene, "homebase")
 		update_function = UpdateIntroScreen
 		player_script.update_function = player_script.UpdatePlayerIsDead
 	}
@@ -159,12 +218,31 @@ class	LevelHandler
 		SceneSuspendScriptUpdate(scene, 3.0 * SystemGetClockFrequency())
 	}
 
+	//------------------------------
+	function	GoToNextLevel(scene)
+	//------------------------------
+	{
+		state = "NextGame"
+	}
+
 	//------------------------
 	function	ExitGame(scene)
 	//------------------------
 	{
-		//MixerChannelStopAll(g_mixer)
+		print("LevelHandler::ExitGame()")
 		state = "ExitGame"
+	}
+
+	//------------------------------------------
+	function	CheckIfPlayerIsBackToBase(scene)
+	//------------------------------------------
+	{
+		local	_item_pos = ItemGetWorldPosition(homebase_item)
+		local	_dist = ItemGetWorldPosition(player).Dist(_item_pos)
+
+		if ((_dist < Mtr(3.0)) && (player_script.current_speed < Mtrs(0.5)))
+			update_function = UpdateLevelCompleteScreen
+
 	}
 
 	//---------------------------------
@@ -173,19 +251,19 @@ class	LevelHandler
 	{
 		if (ItemGetScriptInstance(player).damage >= 100)
 		{
-			game_hui.GameMessageWindowSetVisible("game_over_damage", true)
+			game_ui.GameMessageWindowSetVisible("game_over_damage", true)
 			update_function = UpdateGameOverScreen
 		}
-
+		else
 		if (ItemGetScriptInstance(player).fuel <= 0) 
 		{
-			game_hui.GameMessageWindowSetVisible("game_over_no_fuel", true)
+			game_ui.GameMessageWindowSetVisible("game_over_no_fuel", true)
 			update_function = UpdateGameOverScreen
 		}
 
 	}
 
-	//	Artefacts
+	//	Artefacts/Bonus
 	//------------------------------------------
 	function	CheckIfPlayerGetArtifacts(scene)
 	//------------------------------------------
@@ -196,7 +274,44 @@ class	LevelHandler
 			local	_dist = ItemGetWorldPosition(player).Dist(_item_pos)
 
 			if (_dist < Mtr(3.0))
+			{
 				ScenePlayerGetsArtifact(scene, _item)
+				UpdateArtifactCounter()
+			}
+		}
+	}
+
+	//------------------------------------------
+	function	CheckIfPlayerGetBonus(scene, bonus_name)
+	//------------------------------------------
+	{
+		foreach(_item in bonus[bonus_name])
+		{
+			local	_item_pos = ItemGetWorldPosition(_item)
+			local	_dist = ItemGetWorldPosition(player).Dist(_item_pos)
+
+			//	If a bonus was reached
+			if (_dist < Mtr(3.0))
+			{
+				//	Remove it, from scene & from the bonus list
+				ItemActivateHierarchy(_item, false)
+				local	idx, val
+				foreach(idx,val in bonus[bonus_name])
+					if (ItemCompare(val, _item))
+					{
+						bonus[bonus_name].remove(idx)
+						ItemActivateHierarchy(_item, false)
+					}
+
+				//	Increase the players stats according to the bonus type
+				switch(bonus_name)
+				{
+					case "fuel":
+						player_script.Refuel()
+						break;
+				}
+				return
+			}
 		}
 	}
 
@@ -216,11 +331,13 @@ class	LevelHandler
 		if (artefact.len() < 1)
 		{
 			update_function = UpdateGameReturnToBase
-			game_hui.GameMessageWindowShowOnce("return_base")
+			game_ui.GameMessageWindowShowOnce("return_base")
 		}
 	}
 
+	//-----------------------------------
 	function	SceneFindArtefacts(scene)
+	//-----------------------------------
 	{
 		local	n = 0
 		
@@ -235,13 +352,36 @@ class	LevelHandler
 			n++
 		}
 
-		print("LevelHandler::SceneFindArtefacts() found " + artefact.len().tostring() + " artefact(s).")	
+		total_artifact_to_found = artefact.len()
+		print("LevelHandler::SceneFindArtefacts() found " + total_artifact_to_found.tostring() + " artefact(s).")	
+	}
+
+	//---------------------------------
+	function	UpdateArtifactCounter()
+	//---------------------------------
+	{
+		game_ui.UpdateArtifactCounter((total_artifact_to_found - artefact.len()).tostring() + "/" + total_artifact_to_found.tostring())
+	}
+
+	//	=====
+	//	Bonus
+	//-------------------------------------------
+	function	SceneFindBonus(scene, bonus_name)
+	//-------------------------------------------
+	{
+		local	_list, _bonus_list
+		_list = SceneGetItemList(scene)
+		foreach(_item in _list)
+			if (ItemGetName(_item) == bonus_name)
+				bonus[bonus_name].append(_item)
+		print("LevelHandler::SceneFindBonus() found " + bonus[bonus_name].len().tostring() + " " + bonus_name)	
 	}
 
 	//	=====
 	//	Paths
-	//	=====
+	//------------------------------
 	function	SceneFindPath(scene)
+	//------------------------------
 	{
 		local	n = 0
 		

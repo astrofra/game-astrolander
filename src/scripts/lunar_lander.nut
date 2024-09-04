@@ -22,7 +22,7 @@ class	LunarLander
 	fuel				=	100
 	damage				=	0
 
-	consumption			=	2.5	//	Fuel unit per sec.
+	consumption			=	2.5			//	Fuel unit per sec.
 	max_speed			=	Mtrs(25.0)	//	Max. speed of the ship.
 	speed_min_damage	=	Mtrs(3.0)
 	speed_max_damage	=	Mtrs(25.0)
@@ -47,7 +47,7 @@ class	LunarLander
 
 	auto_align_timeout	=	0.0
 
-	game_hui					=	0
+	game_ui					=	0
 
 	sfx_thrust_clean		=	0
 	sfx_thrust_dirty		=	0
@@ -64,6 +64,10 @@ class	LunarLander
 	_right					=	false
 
 	update_function			=	0
+
+	_c						=	0
+	_t						=	0
+	_prev_c					=	0
 
 	//------------------------
 	function	OnUpdate(item)
@@ -123,8 +127,32 @@ class	LunarLander
 	function	OnPhysicStep(item, dt)
 	//--------------------------------
 	{
+		//	CountThePhysicSteps()
+
+		if (!dt)
+		{
+			print("Physic Step skipped")
+			return
+		}
+
 		ThrustTypeControl(item)
 		current_speed = ItemGetLinearVelocity(item).Len()
+	}
+
+	//-------------------------------
+	function	CountThePhysicSteps()
+	//-------------------------------
+	{
+		if (g_clock - _t > SecToTick(Sec(1.0)))
+		{
+			if (_c != _prev_c)
+				print("Physic Steps during the last second = " + _c)
+			_t = g_clock
+			_prev_c = _c
+			_c = 0
+		}
+
+		_c++
 	}
 
 	//---------------------------------
@@ -188,8 +216,17 @@ class	LunarLander
 	//-----------------------
 	{
 		fuel -= consumption * g_dt_frame
-		if (game_hui)
-			game_hui.UpdateFuelGauge(fuel)
+		if (game_ui)
+			game_ui.UpdateFuelGauge(fuel)
+	}
+
+	//------------------
+	function	Refuel()
+	//------------------
+	{
+		fuel = 100.0
+		if (game_ui)
+			game_ui.UpdateFuelGauge(fuel)
 	}
 
 	//----------------------------
@@ -239,15 +276,15 @@ class	LunarLander
 	//-------------------------
 	{
 		local	_timeout = TickToSec(g_clock - auto_align_timeout)
-		if (_timeout < Sec(0.125))
+		if (_timeout < Sec(0.015))
 			return
 		
 		local	_rot_z = ItemGetRotation(item).z
 		local	_ang_v_z = ItemGetAngularVelocity(item).z
 
-		_timeout = Clamp(_timeout - 0.125, 0.0, 1.0) 
+		_timeout = Clamp(_timeout - 0.05, 0.0, 1.0) 
 		_timeout *= Clamp(Abs(RadianToDegree(_rot_z)) / 180.0,0.0,1.0)
-		_timeout *= 100.0
+		_timeout *= 250.0
 
 		
 		ItemApplyTorque(item, Vector(0,0,-_rot_z - _ang_v_z).Scale(_timeout * ItemGetMass(item)))
@@ -279,8 +316,8 @@ class	LunarLander
 		damage_amount = RangeAdjust(damage_amount, speed_min_damage, speed_max_damage, min_damage, max_damage)
 		hit_timeout = g_clock
 		damage += damage_amount
-		if (game_hui)
-			game_hui.UpdateDamageGauge(damage)
+		if (game_ui)
+			game_ui.UpdateDamageGauge(damage)
 		print("LunarLander::TakeDamage() : damage = " + damage_amount.tostring())
 	}
 
@@ -334,19 +371,22 @@ class	LunarLander
 		LoadSounds()
 
 		update_function = UpdatePlayerIsDead
+
+		SceneSetPhysicFrequency(scene, 60.0)
+		_t = g_clock
 	}
 
 	//---------------------------
 	function	OnSetupDone(item)
 	//---------------------------
 	{
-		try	{	game_hui = SceneGetScriptInstance(scene).game_hui	}
-		catch(e)	{	game_hui = 0	}
+		try	{	game_ui = SceneGetScriptInstance(scene).game_ui	}
+		catch(e)	{	game_ui = 0	}
 
-		if (game_hui)
+		if (game_ui)
 		{
-			game_hui.UpdateDamageGauge(damage)
-			game_hui.UpdateFuelGauge(fuel)
+			game_ui.UpdateDamageGauge(damage)
+			game_ui.UpdateFuelGauge(fuel)
 		}
 
 		weak_zone_item = ItemGetChild(item, "weak_zone")

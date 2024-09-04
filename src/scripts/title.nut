@@ -21,12 +21,13 @@ class	Title
 		KeyboardUpdate()
 		if	(KeyboardSeekFunction(DeviceKeyPress, KeySpace))
 		{
+			MixerChannelStopAll(g_mixer)
+			MixerChannelUnlockAll(g_mixer)
 			state = "startgame"
-			MixerChannelStop(g_mixer, channel_music)
 		}
 	}
 
-	function	CreateLabel(name, x, y, size = 70, w = 300, h = 64)
+	function	CreateTitleLabel(name, x, y, size = 70, w = 300, h = 64)
 	{
 		local	window = UIAddWindow(ui, -1, x, y, w, h)
 		WindowSetPivot(window, w / 2, h / 2)
@@ -45,8 +46,8 @@ class	Title
 		ui = SceneGetUI(scene)
 		UILoadFont("ui/creative_block.ttf")
 
-		CreateLabel("Press Space", 640, 600, 60, 400)
-		CreateLabel("A game by Astrofra (c) 2011 Mutant Inc.", 640, 900, 32, 900, 64)
+		CreateTitleLabel("Press Space", 640, 600, 60, 400)
+		CreateTitleLabel("A game by Astrofra (c) 2011 Mutant Inc.", 640, 900, 32, 900, 64)
 
 		sfx_music = EngineLoadSound(g_engine, "audio/music/intro_riff.wav")
 	}

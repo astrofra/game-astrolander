@@ -6,12 +6,12 @@
 class Inventory
 {
 	inventory			=	0
-	game_hui				=	0
+	game_ui				=	0
 
 	constructor(_ui = 0)
 	{
 		inventory = []
-		game_hui = _ui
+		game_ui = _ui
 	}
 
 	function	AddItem(item_name)
@@ -20,8 +20,8 @@ class Inventory
 
 		inventory.append(item_name)
 		DumpInventoryInConsole()
-		if (game_hui)
-			game_hui.UpdateInventory(inventory)
+		if (game_ui)
+			game_ui.UpdateInventory(inventory)
 	}
 
 	function	RemoveItem(item_name)
@@ -34,8 +34,8 @@ class Inventory
 			{
 				inventory.remove(idx)
 				DumpInventoryInConsole()
-				if (game_hui)
-					game_hui.UpdateInventory(inventory)
+				if (game_ui)
+					game_ui.UpdateInventory(inventory)
 				return	true
 			}
 

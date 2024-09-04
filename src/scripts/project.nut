@@ -54,18 +54,29 @@ class	GameScreenLogic
 	function	Setup(game, project)
 	{
 		print("GameScreenLogic::Setup()")
-		scene = ProjectInstantiateScene(project, "levels/test_level_0.nms")
+		scene = ProjectInstantiateScene(project, "levels/level_" + game.current_level.tostring() + ".nms")
 		ProjectAddLayer(project, scene, 0.5)
 
 		dispatch = Update
 	}
+
 	function	Update(game, project)
 	{
 		if	(ProjectSceneGetScriptInstance(scene).state == "ExitGame")
 		{
+			print("GameScreenLogic::Update() state = " + ProjectSceneGetScriptInstance(scene).state)
 			ProjectUnloadScene(project, scene)
 			game.screen_logic = TitleScreenLogic()
 		}
+		else
+		if	(ProjectSceneGetScriptInstance(scene).state == "NextGame")
+		{
+			print("GameScreenLogic::Update() state = " + ProjectSceneGetScriptInstance(scene).state)
+			game.current_level++
+			ProjectUnloadScene(project, scene)
+			game.screen_logic = GameScreenLogic()
+		}
+		
 	}
 
 	function	Dispatch(game, project)
@@ -82,6 +93,7 @@ class	GameScreenLogic
 class	ProjectHandler
 {
 	screen_logic		=	0
+	current_level		=	0
 
 	function	OnUpdate(project)
 	{

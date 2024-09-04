@@ -3,7 +3,7 @@
 	<Items=
 		<MObject=
 			<MItem=
-				<Id="artefact_mesh">
+				<Id="fuel_mesh">
 				<UId=0>
 				<Active>
 				<Priority=0.500000>
@@ -147,6 +147,16 @@
 			>
 			<Object=
 				<Item=
+					<Rotation=
+						<X=0.000000>
+						<Y=-0.000000>
+						<Z=-0.149226>
+					>
+					<Scale=
+						<X=1.500000>
+						<Y=1.500000>
+						<Z=1.500000>
+					>
 					<ItemFlag>
 					<Target=
 						<X=0.000000>
@@ -156,7 +166,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props/crate.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/barrel_bumped_orange.nmg">
 			>
 		>
 		<MLight=

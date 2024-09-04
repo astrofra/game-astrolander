@@ -26,63 +26,206 @@
 				<Param>
 			>
 			<Entry=
-				<Type="Material Parameter">
+				<Type="Add">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param>
+			>
+			<Entry=
+				<Type="Add">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param>
+			>
+			<Entry=
+				<Type="Multiply">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param>
+			>
+			<Entry=
+				<Type="Sampler 2D">
 				<Pos=
 					<X=0.000000>
 					<Y=0.000000>
 				>
 				<Param=
-					<Param=0>
+					<WrapU=True>
+					<WrapV=True>
 				>
 			>
 			<Entry=
-				<Type="Material Parameter">
+				<Type="Texture">
 				<Pos=
 					<X=0.000000>
 					<Y=0.000000>
 				>
 				<Param=
-					<Param=1>
+					<Texture="graphics/sky_0.png">
 				>
 			>
 			<Entry=
-				<Type="Material Parameter">
+				<Type="Geometry UV">
 				<Pos=
 					<X=0.000000>
 					<Y=0.000000>
 				>
 				<Param=
-					<Param=4>
+					<Channel=0>
 				>
 			>
 			<Entry=
-				<Type="Material Parameter">
+				<Type="Build">
 				<Pos=
 					<X=0.000000>
 					<Y=0.000000>
 				>
 				<Param=
-					<Param=2>
+					<Build="xxxx">
 				>
 			>
 			<Entry=
-				<Type="Material Parameter">
+				<Type="Sampler 2D">
 				<Pos=
 					<X=0.000000>
 					<Y=0.000000>
 				>
 				<Param=
-					<Param=5>
+					<WrapU=True>
+					<WrapV=True>
 				>
 			>
 			<Entry=
-				<Type="Material Parameter">
+				<Type="Texture">
 				<Pos=
 					<X=0.000000>
 					<Y=0.000000>
 				>
 				<Param=
-					<Param=6>
+					<Texture="terrains/terrain_0/blend.tga">
+				>
+			>
+			<Entry=
+				<Type="Geometry UV">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Channel=0>
+				>
+			>
+			<Entry=
+				<Type="Multiply">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param>
+			>
+			<Entry=
+				<Type="Color">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Color=
+						<X=1.000000>
+						<Y=1.000000>
+						<Z=1.000000>
+						<W=1.000000>
+					>
+				>
+			>
+			<Entry=
+				<Type="Build">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Build="yyyy">
+				>
+			>
+			<Entry=
+				<Type="Add">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param>
+			>
+			<Entry=
+				<Type="Multiply">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param>
+			>
+			<Entry=
+				<Type="Color">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Color=
+						<X=1.000000>
+						<Y=1.000000>
+						<Z=1.000000>
+						<W=1.000000>
+					>
+				>
+			>
+			<Entry=
+				<Type="Build">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Build="zzzz">
+				>
+			>
+			<Entry=
+				<Type="Multiply">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param>
+			>
+			<Entry=
+				<Type="Color">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Color=
+						<X=1.000000>
+						<Y=1.000000>
+						<Z=1.000000>
+						<W=1.000000>
+					>
+				>
+			>
+			<Entry=
+				<Type="Build">
+				<Pos=
+					<X=0.000000>
+					<Y=0.000000>
+				>
+				<Param=
+					<Build="wwww">
 				>
 			>
 		>
@@ -94,31 +237,254 @@
 		<Diffuse=
 			<Block=
 				<Index=1>
-			>
-		>
-		<Specular=
-			<Block=
-				<Index=2>
-			>
-		>
-		<Glossiness=
-			<Block=
-				<Index=3>
-			>
-		>
-		<Constant=
-			<Block=
-				<Index=4>
-			>
-		>
-		<Opacity=
-			<Block=
-				<Index=5>
-			>
-		>
-		<Reflection=
-			<Block=
-				<Index=6>
+				<Input=
+					<Block=
+						<Index=2>
+						<Input=
+							<Block=
+								<Index=3>
+								<Input=
+									<Block=
+										<Index=4>
+										<Input=
+											<Block=
+												<Index=5>
+											>
+											<Block=
+												<Index=6>
+											>
+										>
+									>
+									<Block=
+										<Index=7>
+										<Input=
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+										>
+									>
+								>
+							>
+							<Block=
+								<Index=11>
+								<Input=
+									<Block=
+										<Index=12>
+									>
+									<Block=
+										<Index=13>
+										<Input=
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+										>
+									>
+								>
+							>
+						>
+					>
+					<Block=
+						<Index=14>
+						<Input=
+							<Block=
+								<Index=15>
+								<Input=
+									<Block=
+										<Index=16>
+									>
+									<Block=
+										<Index=17>
+										<Input=
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+										>
+									>
+								>
+							>
+							<Block=
+								<Index=18>
+								<Input=
+									<Block=
+										<Index=19>
+									>
+									<Block=
+										<Index=20>
+										<Input=
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=8>
+												<Input=
+													<Block=
+														<Index=9>
+													>
+													<Block=
+														<Index=10>
+													>
+												>
+											>
+										>
+									>
+								>
+							>
+						>
+					>
+				>
 			>
 		>
 	>
