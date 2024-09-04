@@ -100,7 +100,7 @@
 					<Class="LunarLander">
 				>
 				<PhysicItem=
-					<SelfMask=1>
+					<SelfMask=7>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
@@ -1274,7 +1274,7 @@
 							>
 							<Parm=
 								<Id="scale_factor">
-								<Value=0.350000>
+								<Value=0.500000>
 							>
 							<Parm=
 								<Id="immediate_emit_amount">
@@ -1282,7 +1282,7 @@
 							>
 							<Parm=
 								<Id="particle_life">
-								<Value=0.250000>
+								<Value=0.350000>
 							>
 						>
 					>
@@ -1305,7 +1305,7 @@
 						>
 						<Parm=
 							<Id="scale_factor">
-							<Value=0.350000>
+							<Value=0.500000>
 						>
 						<Parm=
 							<Id="immediate_emit_amount">
@@ -1313,7 +1313,7 @@
 						>
 						<Parm=
 							<Id="particle_life">
-							<Value=0.250000>
+							<Value=0.350000>
 						>
 					>
 				>
@@ -1423,7 +1423,7 @@
 		<MObject=
 			<MItem=
 				<Id="shield_col">
-				<UId=16>
+				<UId=15>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1482,7 +1482,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=15>
+				<UId=16>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -1753,7 +1753,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_4">
-				<UId=22>
+				<UId=20>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1876,22 +1876,22 @@
 		<Constraint=
 			<Uid=17>
 			<UidA=0>
-			<UidB=16>
+			<UidB=15>
 		>
 		<Constraint=
 			<Uid=18>
 			<UidA=0>
-			<UidB=16>
+			<UidB=15>
 		>
 		<Constraint=
 			<Uid=19>
 			<UidA=0>
-			<UidB=16>
+			<UidB=15>
 		>
 		<Constraint=
-			<Uid=22>
+			<Uid=20>
 			<UidA=0>
-			<UidB=16>
+			<UidB=15>
 		>
 	>
 	<Globals=

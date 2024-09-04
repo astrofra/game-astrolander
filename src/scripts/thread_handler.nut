@@ -37,6 +37,13 @@ class	SceneWithThreadHandler
 	//-------------------------
 	{
 		HandleThreadList()
+/*
+		print(thread_list.len().tostring() + " thread(s)")
+		local str = ""
+		foreach(_t in thread_list)
+			str += _t.handle.tostring() + ","
+		if (str != "") print(str)
+*/
 	}
 
 	//------------------------------------
@@ -53,9 +60,12 @@ class	SceneWithThreadHandler
 	function	DestroyThread(_thread_name)
 	//------------------------------------
 	{
-		foreach (_thread in thread_list)
+		foreach (idx, _thread in thread_list)
 			if (_thread.name == _thread_name)
+			{
 				_thread.handle = 0
+				thread_list.remove(idx)
+			}
 	}
 
 	//---------------------------
@@ -81,7 +91,14 @@ class	SceneWithThreadHandler
 			if (_thread.handle.getstatus() == "suspended")
 				_thread.handle.wakeup()
 			else
-				_thread.handle = 0
+			{
+				foreach (idx, _thread_to_remove in thread_list)
+					if (_thread_to_remove.handle == _thread.handle)
+					{
+						_thread_to_remove.handle = 0
+						thread_list.remove(idx)
+					}
+			}
 		}
 	}
 

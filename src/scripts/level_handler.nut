@@ -8,6 +8,8 @@
 		Include("scripts/bonus.nut")
 		Include("scripts/camera_handler.nut")
 		Include("scripts/stopwatch_handler.nut")
+		Include("scripts/feedback_emitter.nut")
+		Include("scripts/minimap.nut")
 
 /*!
 	@short	LevelHandler
@@ -31,11 +33,15 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	path					=	0
 	path_length				=	0.0
 
+	minimap					=	0
+
 	artefact				=	0
 	total_artifact_to_found	=	0
 	bonus					=	0
 
 	stopwatch_handler		=	0
+
+	feedback_emitter		=	0
 
 	game_ui					=	0
 
@@ -74,6 +80,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		base.OnUpdate(scene)
 		stopwatch_handler.Update()
+		feedback_emitter.Update()
 		if (update_function != 0)
 			update_function(scene)
 	}
@@ -142,11 +149,11 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 		UpdateCompass()
 		CheckIfPlayerGetArtifacts(scene)
-		CheckIfPlayerGetBonus(scene, "fuel")
-		CheckIfPlayerGetBonus(scene, "fast_clock")
-		CheckIfPlayerGetBonus(scene, "slow_clock")
-		CheckIfPlayerGetBonus(scene, "time")
-		CheckIfPlayerGetBonus(scene, "shield")
+		CheckIfPlayerGetBonus(scene, "BonusFuel")
+		CheckIfPlayerGetBonus(scene, "BonusFastClock")
+		CheckIfPlayerGetBonus(scene, "BonusSlowClock")
+		CheckIfPlayerGetBonus(scene, "BonusTime")
+		CheckIfPlayerGetBonus(scene, "BonusShield")
 		CheckPlayerStats(scene)
 		game_ui.UpdateStopwatch(stopwatch_handler.clock)
 	}
@@ -157,11 +164,11 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 		UpdateCompass()
-		CheckIfPlayerGetBonus(scene, "fuel")
-		CheckIfPlayerGetBonus(scene, "fast_clock")
-		CheckIfPlayerGetBonus(scene, "slow_clock")
-		CheckIfPlayerGetBonus(scene, "time")
-		CheckIfPlayerGetBonus(scene, "shield")
+		CheckIfPlayerGetBonus(scene, "BonusFuel")
+		CheckIfPlayerGetBonus(scene, "BonusFastClock")
+		CheckIfPlayerGetBonus(scene, "BonusSlowClock")
+		CheckIfPlayerGetBonus(scene, "BonusTime")
+		CheckIfPlayerGetBonus(scene, "BonusShield")
 		CheckIfPlayerIsBackToBase(scene)
 		CheckPlayerStats(scene)
 		game_ui.UpdateStopwatch(stopwatch_handler.clock)
@@ -203,12 +210,12 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		path		=	[]
 		artefact	=	[]
 		timer_table	=	{}
-		bonus		=	{	fuel = [],			//	Additional fuel
-							heal = [], 			//	Additional health
-							time = [], 			//	Freeze the timer for a short period of time
-							shield = [],		//	Invincibility to collisions for a short period of time
-							slow_clock = [],	//	EngineClockScale * 0.5
-							fast_clock = [],	//	EngineClockScale * 2.0
+		bonus		=	{	BonusFuel = [],				//	Additional fuel
+							BonusHeal = [], 			//	Additional health
+							BonusTime = [], 			//	Freeze the timer for a short period of time
+							BonusShield = [],			//	Invincibility to collisions for a short period of time
+							BonusSlowClock = [],		//	EngineClockScale * 0.5
+							BonusFastClock = [],		//	EngineClockScale * 2.0
 					}
 	}
 
@@ -219,6 +226,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		base.OnSetup(scene)
 		camera_handler = CameraHandler(scene)
 		stopwatch_handler = StopwatchHandler()
+		feedback_emitter = FeedbackEmitter(scene)
 		game_ui	=	InGameUI(SceneGetUI(scene))
 		game_ui.UpdateRoomName(g_locale.level_names[level_name])
 		state = "Game"
@@ -234,14 +242,16 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		SceneFindPath(scene)
 		SceneFindArtefacts(scene)
-		SceneFindBonus(scene, "fuel")
-		SceneFindBonus(scene, "heal")
-		SceneFindBonus(scene, "time")
-		SceneFindBonus(scene, "shield")
-		SceneFindBonus(scene, "slow_clock")
-		SceneFindBonus(scene, "fast_clock")
+		SceneFindBonus(scene, "BonusFuel")
+		SceneFindBonus(scene, "BonusHeal")
+		SceneFindBonus(scene, "BonusTime")
+		SceneFindBonus(scene, "BonusShield")
+		SceneFindBonus(scene, "BonusSlowClock")
+		SceneFindBonus(scene, "BonusFastClock")
 		homebase_item = SceneFindItem(scene, "homebase")
 		UpdateArtifactCounter()
+		minimap = MiniMap(scene)
+
 		update_function = UpdateIntroScreen
 		player_script.update_function = player_script.UpdatePlayerIsDead
 	}
@@ -316,7 +326,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			local	_item_pos = ItemGetWorldPosition(_item)
 			local	_dist = ItemGetWorldPosition(player).Dist(_item_pos)
 
-			if (_dist < Mtr(3.0))
+			if (_dist < Mtr(2.5))
 			{
 				ScenePlayerGetsArtifact(scene, _item)
 				UpdateArtifactCounter()
@@ -334,42 +344,44 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			local	_dist = ItemGetWorldPosition(player).Dist(_item_pos)
 
 			//	If a bonus was reached
-			if (_dist < Mtr(3.0))
+			if (_dist < Mtr(2.5))
 			{
 				//	Remove it, from scene & from the bonus list
 				ItemActivateHierarchy(_item, false)
+				feedback_emitter.Emit(ItemGetWorldPosition(_item))
+
 				local	idx, val
 				foreach(idx,val in bonus[bonus_name])
 					if (ItemCompare(val, _item))
 					{
 						bonus[bonus_name].remove(idx)
-						ItemActivateHierarchy(_item, false)
+//						ItemActivateHierarchy(_item, false)
 					}
 
 				//	Increase the players stats according to the bonus type
 				switch(bonus_name)
 				{
-					case "fuel":
+					case "BonusFuel":
 						player_script.Refuel()
 						break;
 
-					case "heal":
+					case "BonusHeal":
 						player_script.Heal()
 						break;
 
-					case "time":
+					case "BonusTime":
 						CreateThread(ThreadBonusTime)
 						break;
 
-					case "shield":
+					case "BonusShield":
 						CreateThread(ThreadBonusShield)
 						break;
 
-					case "slow_clock":
+					case "BonusSlowClock":
 						CreateThread(ThreadBonusSlowClock)
 						break;
 
-					case "fast_clock":
+					case "BonusFastClock":
 						CreateThread(ThreadBonusFastClock)
 						break;
 				}
@@ -391,6 +403,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 				ItemActivateHierarchy(_item, false)
 			}
 
+		feedback_emitter.Emit(ItemGetWorldPosition(_item))
+
 		if (artefact.len() < 1)
 		{
 			update_function = UpdateGameReturnToBase
@@ -406,7 +420,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		
 		while(true)
 		{
-			local	_item = SceneFindItem(scene, "artefact_" + n.tostring())
+			local	_item = SceneFindItem(scene, "Artifact" + n.tostring())
 			if (ObjectIsValid(_item))
 				artefact.append(_item)
 			else

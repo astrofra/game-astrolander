@@ -21,10 +21,9 @@ function	UICommonSetup(ui)
 //	UILoadFont("ui/elronet.ttf")
 
 /*	
-	//	Will crash if un-commented
     UISetSkin    (
-                    ui, "ui/skin/t.tga", "ui/skin/l.tga", "ui/skin/r.tga", "ui/skin/b.tga",
-                    "ui/skin/tl.tga", "ui/skin/tr.tga", "ui/skin/bl.tga", "ui/skin/br.tga", 0xff9ebc24,
+                    ui, "ui/skin/t.png", "ui/skin/l.png", "ui/skin/r.png", "ui/skin/b.png",
+                    "ui/skin/tl.png", "ui/skin/tr.png", "ui/skin/bl.png", "ui/skin/br.png", 0xff9ebc24,
                     0xffffffff, 30, 20, 10, "anna"
                 )
 */
@@ -111,20 +110,25 @@ class	InGameUI
 	{
 		print("InGameUI::CreateCompass()")
 		local	compass_window, beacon_window
-		compass_window = UIAddBitmapWindow(ui, 1, "ui/compass.tga", 0.0, 0.0, 245.0, 245.0)
+		local	_texture
+		_texture = EngineLoadTexture(g_engine, "ui/compass.png")
+		compass_window = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
 		WindowCenterPivot(compass_window)
 
-		beacon_window = UIAddBitmapWindow(ui, 2, "ui/beacon_arrow.tga", 0.0, 0.0, 245.0, 245.0)
+		_texture = EngineLoadTexture(g_engine, "ui/beacon_arrow.png")
+		beacon_window = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
 		WindowCenterPivot(beacon_window)
 		WindowSetParent(beacon_window, compass_window)
 		WindowSetPosition(beacon_window, 245.0 / 2.0, 245.0 / 2.0)
 		
-		local _ship = UIAddBitmapWindow(ui, 2, "ui/compass_dot.tga", 0.0, 0.0, 80.0, 80.0)
+		_texture = EngineLoadTexture(g_engine, "ui/compass_dot.png")
+		local _ship = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 80.0, 80.0)
 		WindowCenterPivot(_ship)
 		WindowSetParent(_ship, compass_window)
 		WindowSetPosition(_ship, 245.0 / 2.0, 245.0 / 2.0)
 		
-		local _spec = UIAddBitmapWindow(ui, 2, "ui/compass_specular.tga", 0.0, 0.0, 245.0, 245.0)
+		_texture = EngineLoadTexture(g_engine, "ui/compass_specular.png")
+		local _spec = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
 		WindowSetParent(_spec, compass_window)
 
 		WindowSetScale(compass_window, 0.65, 0.65)
