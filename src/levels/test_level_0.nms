@@ -180,7 +180,6 @@
 						<Y=2.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -323,7 +322,6 @@
 						<Y=11.700041>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -466,7 +464,6 @@
 						<Y=7.395729>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -609,7 +606,6 @@
 						<Y=15.300000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -752,7 +748,6 @@
 						<Y=2.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -895,7 +890,6 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1186,7 +1180,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1330,7 +1323,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1474,7 +1466,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1618,7 +1609,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1761,7 +1751,6 @@
 						<Y=8.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1904,7 +1893,6 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4373,7 +4361,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4815,7 +4802,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6424,7 +6410,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9895,6 +9880,7 @@
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11151,10 +11137,158 @@
 				>
 			>
 		>
+		<MObject=
+			<MItem=
+				<Id="target">
+				<UId=91>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="target">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****¸S–ç+**ªi¸S–ç>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****5æf+**ªi5æf>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.200000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=3.600000>
+								<Y=0.400000>
+								<Z=3.600000>
+							>
+							<StaticFriction=0.100000>
+							<DynamicFriction=0.000000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=75.000000>
+						<Y=11.787810>
+						<Z=0.023000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=-3.141592>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/target.nmg">
+			>
+		>
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=91>
+				<UId=92>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11207,7 +11341,7 @@
 		<Instance=
 			<MItem=
 				<Id="lander">
-				<UId=92>
+				<UId=93>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11224,8 +11358,8 @@
 			>
 			<Item=
 				<Position=
-					<X=73.683998>
-					<Y=12.036132>
+					<X=75.000000>
+					<Y=12.322123>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -11242,7 +11376,7 @@
 		<Instance=
 			<MItem=
 				<Id="artefact_2">
-				<UId=93>
+				<UId=94>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11277,7 +11411,7 @@
 		<Instance=
 			<MItem=
 				<Id="artefact_1">
-				<UId=94>
+				<UId=95>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11312,7 +11446,7 @@
 		<Instance=
 			<MItem=
 				<Id="artefact_0">
-				<UId=95>
+				<UId=96>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11347,7 +11481,7 @@
 		<MTerrain=
 			<MItem=
 				<Id="Terrain_0">
-				<UId=96>
+				<UId=97>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>

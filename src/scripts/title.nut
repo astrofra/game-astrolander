@@ -7,9 +7,12 @@
 */
 class	Title
 {
-	ui			=	0
+	ui				=	0
 
-	state		=	"running"
+	sfx_music		=	0
+	channel_music	=	0
+
+	state			=	"running"
 
 	/*
 	*/
@@ -17,7 +20,10 @@ class	Title
 	{
 		KeyboardUpdate()
 		if	(KeyboardSeekFunction(DeviceKeyPress, KeySpace))
+		{
 			state = "startgame"
+			MixerChannelStop(g_mixer, channel_music)
+		}
 	}
 
 	function	CreateLabel(name, x, y, size = 70, w = 300, h = 64)
@@ -35,10 +41,23 @@ class	Title
 	*/
 	function	OnSetup(scene)
 	{
+		print("Title::OnSetup()")
 		ui = SceneGetUI(scene)
 		UILoadFont("ui/creative_block.ttf")
 
 		CreateLabel("Press Space", 640, 600, 60, 400)
 		CreateLabel("A game by Astrofra (c) 2011 Mutant Inc.", 640, 900, 32, 900, 64)
+
+		sfx_music = EngineLoadSound(g_engine, "audio/music/intro_riff.wav")
+	}
+
+	function	OnSetupDone(scene)
+	{
+		print("Title::OnSetupDone()")
+		MixerChannelStopAll(g_mixer)
+		MixerChannelUnlockAll(g_mixer)
+		channel_music = MixerSoundStart(g_mixer, sfx_music)
+		//MixerChannelSetGain(g_mixer, channel_music, 0.5)
+		MixerChannelSetLoopMode(g_mixer, channel_music, LoopRepeat)
 	}
 }

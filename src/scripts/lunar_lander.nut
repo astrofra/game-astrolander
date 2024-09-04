@@ -22,7 +22,7 @@ class	LunarLander
 	fuel				=	100
 	damage				=	0
 
-	consumption			=	2.0	//	Fuel unit per sec.
+	consumption			=	2.5	//	Fuel unit per sec.
 	max_speed			=	Mtrs(25.0)	//	Max. speed of the ship.
 	speed_min_damage	=	Mtrs(3.0)
 	speed_max_damage	=	Mtrs(25.0)
@@ -44,21 +44,79 @@ class	LunarLander
 
 	scene				=	0
 	scene_script		=	0
-	camera				=	0
 
 	auto_align_timeout	=	0.0
 
-	hud_ui				=	0
+	game_hui					=	0
 
-	/*!
-		@short	OnUpdate
-		Called during the scene update, each frame.
-	*/
+	sfx_thrust_clean		=	0
+	sfx_thrust_dirty		=	0
+	channel_thrust_clean	=	0
+	channel_thrust_dirty	=	0
+	max_thrust_sfx_gain		=	1.0
+	sfx_clean_dirty_ratio	=	1.0
+	sfx_thrust_volume		=	0.0
+	sfx_metal_col			=	0
+	channel_metal_col		=	0
+	sfx_metal_col_counter	=	0
+
+	_left					=	false
+	_right					=	false
+
+	update_function			=	0
+
+	//------------------------
 	function	OnUpdate(item)
+	//------------------------
+	{
+		if (update_function != 0)
+			update_function(item)
+	}
+
+	//--------------------------------
+	function	UpdatePlayerIsDead(item)
+	//--------------------------------
+	{
+		FadeThrusters()
+		HandleAudioFeedback()
+		_left = false
+		_right = false
+	}
+
+	//------------------------------
+	function	UpdatePlayerIsAlive(item)
+	//------------------------------
 	{
 		pad = controller.GetControllerVector()
-		UpdateCameraFromPlayerPosition(camera, item)
-		ItemWake(item);
+
+		_left = KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow)
+		_right = KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow)
+
+		if (_left || _right)
+		{
+			if (fuel > 0.0)
+				sfx_thrust_volume = Clamp(sfx_thrust_volume + 5.0 * g_dt_frame, 0.0, 1.0)
+			ConsumeFuel()
+		}
+
+		ItemWake(item)
+		HandleAudioFeedback()
+		CheckPlayerStats()
+	}
+
+	//-------------------------------
+	function	HandleAudioFeedback()
+	//-------------------------------
+	{
+		local	cross_fade_clean_dirty_ratio
+		cross_fade_clean_dirty_ratio = Pow(sfx_clean_dirty_ratio, 0.25)
+		cross_fade_clean_dirty_ratio = RangeAdjustClamped(cross_fade_clean_dirty_ratio, 0.0, 0.5, 0.0, 1.0)
+
+		MixerChannelSetGain(g_mixer, channel_thrust_clean, cross_fade_clean_dirty_ratio * max_thrust_sfx_gain * sfx_thrust_volume)
+		MixerChannelSetGain(g_mixer, channel_thrust_dirty, (1.0 - cross_fade_clean_dirty_ratio) * max_thrust_sfx_gain * sfx_thrust_volume)
+
+		sfx_clean_dirty_ratio = Clamp(sfx_clean_dirty_ratio + 2.0 * g_dt_frame, 0.0, 1.0)
+		sfx_thrust_volume = Clamp(sfx_thrust_volume - 3.5 * g_dt_frame, 0.0, 1.0)
 	}
 
 	//--------------------------------
@@ -69,39 +127,12 @@ class	LunarLander
 		current_speed = ItemGetLinearVelocity(item).Len()
 	}
 
-	//-----------------------------------------------------------
-	function	UpdateCameraFromPlayerPosition(camera_item, item)
-	//-----------------------------------------------------------
-	{
-		try
-		{
-			local	cam_pos = ItemGetWorldPosition(camera_item)
-			local	player_pos = ItemGetWorldPosition(item)
-			local	cam_pos_z
-
-			cam_pos_z = cam_pos.z
-
-			cam_pos =  cam_pos.Lerp(0.95, player_pos)		//	TODO : Frame independent code.
-			cam_pos.z = cam_pos_z
-			ItemSetPosition(camera_item, cam_pos)
-		}
-		catch (e)
-		{}
-	}
-
 	//---------------------------------
 	function	ThrustTypeControl(item)
 	//---------------------------------
 	{
 
-		local	v_thrust = Vector(0,0,0),
-				_left, _right
-
-		_left = KeyboardSeekFunction(DeviceKeyPress, KeyLeftArrow)
-		_right = KeyboardSeekFunction(DeviceKeyPress, KeyRightArrow)
-
-		if (_left || _right)
-			ConsumeFuel()
+		local	v_thrust = Vector(0,0,0)
 
 		local	speed_limiter = Max(ItemGetLinearVelocity(item).Len() - max_speed, 0.0)
 		if (speed_limiter > 0.0)
@@ -134,6 +165,15 @@ class	LunarLander
 				SmokeFeedBack(flame_item[1])
 			}
 		}
+
+		FadeThrusters()
+		AutoAlign(item)
+	}
+
+	//-------------------------
+	function	FadeThrusters()
+	//-------------------------
+	{
 		if (Rand(0,100) > 70)
 			ItemSetOpacity(flame_item[0], Clamp(ItemGetOpacity(flame_item[0]) * 0.25, 0.0, 1.0))//			ItemActivate(flame_item[0], false)		
 		if (Rand(0,100) > 70)
@@ -141,14 +181,25 @@ class	LunarLander
 		if (Rand(0,100) > 70)
 			ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[2]) * 0.25, 0.0, 1.0))//			ItemActivate(flame_item[2], false)		
 
-		AutoAlign(item)
 	}
 
+	//-----------------------
 	function	ConsumeFuel()
+	//-----------------------
 	{
 		fuel -= consumption * g_dt_frame
-		if (hud_ui)
-			hud_ui.UpdateFuelGauge(fuel)
+		if (game_hui)
+			game_hui.UpdateFuelGauge(fuel)
+	}
+
+	//----------------------------
+	function	CheckPlayerStats()
+	//----------------------------
+	{
+		if (fuel <= 0.0)
+			update_function = UpdatePlayerIsDead
+		if (damage >= 100.0)
+			update_function = UpdatePlayerIsDead
 	}
 
 	//-------------------------------------
@@ -164,6 +215,7 @@ class	LunarLander
 
 		if ((_hit.hit) && (_hit.d < Mtr(3.0)))
 		{
+			sfx_clean_dirty_ratio = Clamp(sfx_clean_dirty_ratio - (10.0 * g_dt_frame), 0.0, 1.0)
 			ItemSetPosition(smoke_emitter, _hit.p) 
 			smoke_emitter_script.Emit()
 		}
@@ -175,6 +227,11 @@ class	LunarLander
 	{
 		ItemSetPosition(hit_emitter, p) 
 		hit_emitter_script.Emit()
+
+		MixerChannelStart(g_mixer, channel_metal_col, sfx_metal_col[sfx_metal_col_counter])
+		sfx_metal_col_counter += Irand(1,2)
+		if (sfx_metal_col_counter >= sfx_metal_col.len())
+			sfx_metal_col_counter = 0
 	}
 
 	//-------------------------
@@ -205,8 +262,8 @@ class	LunarLander
 
 		if (current_speed >= speed_min_damage)
 		{
-			foreach(_hit_point in contact.p)
-				ImpactFeedBack(_hit_point)
+			//foreach(_hit_point in contact.p)
+			ImpactFeedBack(contact.p[0])
 			TakeDamage(current_speed)
 		}
 	}
@@ -222,9 +279,38 @@ class	LunarLander
 		damage_amount = RangeAdjust(damage_amount, speed_min_damage, speed_max_damage, min_damage, max_damage)
 		hit_timeout = g_clock
 		damage += damage_amount
-		if (hud_ui)
-			hud_ui.UpdateDamageGauge(damage)
+		if (game_hui)
+			game_hui.UpdateDamageGauge(damage)
 		print("LunarLander::TakeDamage() : damage = " + damage_amount.tostring())
+	}
+
+	function	LoadSounds()
+	{
+		//	Thrusters
+		sfx_thrust_clean	=	EngineLoadSound(g_engine, "audio/sfx/sfx_thrust.wav")
+		sfx_thrust_dirty	=	EngineLoadSound(g_engine, "audio/sfx/sfx_thrust_dirty.wav")
+
+		//	Collisions
+		sfx_metal_col		=	[]
+		for(local n = 0; n < 6; n++)
+			sfx_metal_col.append(EngineLoadSound(g_engine, "audio/sfx/sfx_metal_col_" + n.tostring() + ".wav"))
+	}
+
+	function	SetupLanderSounds()
+	{
+		//	Thrusters
+		channel_thrust_clean = MixerSoundStart(g_mixer, sfx_thrust_clean)
+		MixerChannelSetGain(g_mixer, channel_thrust_clean, sfx_thrust_volume)
+		MixerChannelSetLoopMode(g_mixer, channel_thrust_clean, LoopRepeat)
+
+		channel_thrust_dirty = MixerSoundStart(g_mixer, sfx_thrust_dirty)
+		MixerChannelSetGain(g_mixer, channel_thrust_dirty, sfx_thrust_volume)
+		MixerChannelSetLoopMode(g_mixer, channel_thrust_dirty, LoopRepeat)
+
+		//	Collisions
+		channel_metal_col = MixerChannelLock(g_mixer)
+		MixerChannelSetGain(g_mixer, channel_metal_col, 0.25)
+		MixerChannelSetLoopMode(g_mixer, channel_metal_col, LoopNone)
 	}
 
 	/*!
@@ -239,25 +325,28 @@ class	LunarLander
 		pad = controller.GetControllerVector()
 
 		scene = ItemGetScene(item)
-		camera = SceneFindItem(scene,"game_camera")
 
 		SceneSetGravity(scene, g_gravity);
 		ItemPhysicSetAngularFactor(item, Vector(0,0,1.0))
 		ItemPhysicSetLinearFactor(item,  Vector(1.0,1.0,0.0))
 		ItemSetLinearDamping(item, 0.9)
+
+		LoadSounds()
+
+		update_function = UpdatePlayerIsDead
 	}
 
 	//---------------------------
 	function	OnSetupDone(item)
 	//---------------------------
 	{
-		try	{	hud_ui = SceneGetScriptInstance(scene).hud_ui	}
-		catch(e)	{	hud_ui = 0	}
+		try	{	game_hui = SceneGetScriptInstance(scene).game_hui	}
+		catch(e)	{	game_hui = 0	}
 
-		if (hud_ui)
+		if (game_hui)
 		{
-			hud_ui.UpdateDamageGauge(damage)
-			hud_ui.UpdateFuelGauge(fuel)
+			game_hui.UpdateDamageGauge(damage)
+			game_hui.UpdateFuelGauge(fuel)
 		}
 
 		weak_zone_item = ItemGetChild(item, "weak_zone")
@@ -284,5 +373,12 @@ class	LunarLander
 		scene_root = ObjectGetItem(scene_root)	//	'unparent' the smoke emitter
 		ItemSetParent(smoke_emitter, scene_root)
 		ItemSetParent(hit_emitter, scene_root)
+
+		SetupLanderSounds()
+	}
+
+	constructor()
+	{
+		//update_function = UpdateDoNothing
 	}
 }
