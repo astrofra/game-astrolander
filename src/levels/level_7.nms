@@ -842,6 +842,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -881,6 +882,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -925,6 +927,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1101,6 +1104,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1145,6 +1149,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1195,6 +1200,7 @@
 				<Id="g_block_8x16">
 				<UId=27>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1292,6 +1298,7 @@
 				<Id="g_block_8x16">
 				<UId=28>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1394,6 +1401,7 @@
 				<Id="g_block_8x16">
 				<UId=29>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1496,6 +1504,7 @@
 				<Id="g_block_8x16">
 				<UId=30>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1598,6 +1607,7 @@
 				<Id="g_block_8x16">
 				<UId=31>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1700,6 +1710,7 @@
 				<Id="g_block_8x16">
 				<UId=32>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1802,6 +1813,7 @@
 				<Id="g_block_8x16">
 				<UId=33>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1883,6 +1895,7 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1899,6 +1912,7 @@
 				<Id="g_block_8x16">
 				<UId=34>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1980,6 +1994,7 @@
 						<Y=20.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1996,6 +2011,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=35>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2077,6 +2093,7 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2093,6 +2110,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=36>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2174,6 +2192,7 @@
 						<Y=20.000002>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2190,6 +2209,7 @@
 				<Id="g_block_8x16">
 				<UId=37>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2292,6 +2312,7 @@
 				<Id="g_block_8x16">
 				<UId=38>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2373,6 +2394,7 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2389,6 +2411,7 @@
 				<Id="g_block_8x16">
 				<UId=39>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2470,6 +2493,7 @@
 						<Y=20.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2486,6 +2510,7 @@
 				<Id="g_block_8x16">
 				<UId=40>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2572,6 +2597,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2588,6 +2614,7 @@
 				<Id="g_block_8x16">
 				<UId=41>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2674,6 +2701,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2690,6 +2718,7 @@
 				<Id="g_block_8x16">
 				<UId=42>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2776,6 +2805,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2792,6 +2822,7 @@
 				<Id="g_block_4x4">
 				<UId=43>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2873,6 +2904,7 @@
 						<Y=30.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2889,6 +2921,7 @@
 				<Id="g_block_4x4">
 				<UId=44>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2970,6 +3003,7 @@
 						<Y=30.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2986,6 +3020,7 @@
 				<Id="g_block_4x4">
 				<UId=45>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3067,6 +3102,7 @@
 						<Y=34.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3083,6 +3119,7 @@
 				<Id="g_block_4x4">
 				<UId=46>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3164,6 +3201,7 @@
 						<Y=34.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3180,6 +3218,7 @@
 				<Id="g_block_8x16">
 				<UId=47>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3266,6 +3305,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3282,6 +3322,7 @@
 				<Id="g_block_8x16">
 				<UId=48>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3384,6 +3425,7 @@
 				<Id="g_block_8x16">
 				<UId=49>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3470,6 +3512,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3486,6 +3529,7 @@
 				<Id="g_block_8x16">
 				<UId=50>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3572,6 +3616,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3588,6 +3633,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=51>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3674,6 +3720,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3690,6 +3737,7 @@
 				<Id="g_block_8x16">
 				<UId=52>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3771,6 +3819,7 @@
 						<Y=20.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3787,6 +3836,7 @@
 				<Id="g_block_8x16">
 				<UId=53>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3868,6 +3918,7 @@
 						<Y=36.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3884,6 +3935,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=54>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3966,6 +4018,7 @@
 						<Y=43.900002>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3982,6 +4035,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=55>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4069,6 +4123,7 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4085,6 +4140,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=56>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4172,6 +4228,7 @@
 						<Y=-3.141593>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4188,6 +4245,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=57>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4275,6 +4333,7 @@
 						<Y=3.141593>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4291,6 +4350,7 @@
 				<Id="g_block_2x4">
 				<UId=58>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4377,6 +4437,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4393,6 +4454,7 @@
 				<Id="g_block_2x4">
 				<UId=59>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4479,6 +4541,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4495,6 +4558,7 @@
 				<Id="g_block_2x4">
 				<UId=60>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4581,6 +4645,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4597,6 +4662,7 @@
 				<Id="g_block_2x4">
 				<UId=61>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4683,6 +4749,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4699,6 +4766,7 @@
 				<Id="g_block_4x4">
 				<UId=62>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4780,6 +4848,7 @@
 						<Y=17.999998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4796,6 +4865,7 @@
 				<Id="g_block_4x4">
 				<UId=63>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4877,6 +4947,7 @@
 						<Y=21.999998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4893,6 +4964,7 @@
 				<Id="g_block_4x4">
 				<UId=64>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4974,6 +5046,7 @@
 						<Y=13.999998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4990,6 +5063,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=65>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5076,6 +5150,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5092,6 +5167,7 @@
 				<Id="g_block_4x4">
 				<UId=66>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5173,6 +5249,7 @@
 						<Y=17.999998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5189,6 +5266,7 @@
 				<Id="g_block_4x4">
 				<UId=67>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5270,6 +5348,7 @@
 						<Y=17.999998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5286,6 +5365,7 @@
 				<Id="g_block_8x16">
 				<UId=68>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5367,6 +5447,7 @@
 						<Y=12.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5383,6 +5464,7 @@
 				<Id="g_block_4x4">
 				<UId=69>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5464,6 +5546,7 @@
 						<Y=17.999998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5480,6 +5563,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=70>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5566,6 +5650,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5582,6 +5667,7 @@
 				<Id="g_block_4x4">
 				<UId=71>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5663,6 +5749,7 @@
 						<Y=1.999998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5679,6 +5766,7 @@
 				<Id="g_block_4x4">
 				<UId=72>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5760,6 +5848,7 @@
 						<Y=1.999998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5776,6 +5865,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=73>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5862,6 +5952,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5878,6 +5969,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=74>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5965,6 +6057,7 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5981,6 +6074,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=75>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6068,6 +6162,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6084,6 +6179,7 @@
 				<Id="g_block_8x16">
 				<UId=76>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6170,6 +6266,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6186,6 +6283,7 @@
 				<Id="g_block_8x16">
 				<UId=77>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6272,6 +6370,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6288,6 +6387,7 @@
 				<Id="g_block_8x16">
 				<UId=78>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6374,6 +6474,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6390,6 +6491,7 @@
 				<Id="g_block_8x16">
 				<UId=79>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6471,6 +6573,7 @@
 						<Y=12.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6487,6 +6590,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=80>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6568,6 +6672,7 @@
 						<Y=8.000002>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6584,6 +6689,7 @@
 				<Id="g_block_4x4">
 				<UId=81>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6665,6 +6771,7 @@
 						<Y=18.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6681,6 +6788,7 @@
 				<Id="g_block_4x4">
 				<UId=82>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6762,6 +6870,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6778,6 +6887,7 @@
 				<Id="g_block_4x4">
 				<UId=83>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6836,6 +6946,7 @@
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6852,6 +6963,7 @@
 				<Id="g_block_4x4">
 				<UId=84>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6933,6 +7045,7 @@
 						<Y=-6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6949,6 +7062,7 @@
 				<Id="g_block_4x4">
 				<UId=85>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7030,6 +7144,7 @@
 						<Y=-10.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7046,6 +7161,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=86>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7148,6 +7264,7 @@
 				<Id="g_block_4x4">
 				<UId=87>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7222,6 +7339,7 @@
 				<Id="g_block_8x16">
 				<UId=88>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7319,6 +7437,7 @@
 				<Id="g_block_8x16">
 				<UId=89>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7416,6 +7535,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=90>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7518,6 +7638,7 @@
 				<Id="g_block_8x16">
 				<UId=91>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7615,6 +7736,7 @@
 				<Id="g_block_8x16">
 				<UId=92>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7712,6 +7834,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=93>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7793,6 +7916,7 @@
 						<Y=12.096251>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7809,6 +7933,7 @@
 				<Id="g_block_8x16">
 				<UId=94>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7890,6 +8015,7 @@
 						<Y=-3.800001>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7906,6 +8032,7 @@
 				<Id="g_block_8x16">
 				<UId=95>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7992,6 +8119,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8008,6 +8136,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=96>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8094,6 +8223,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8110,6 +8240,7 @@
 				<Id="g_block_4x4">
 				<UId=97>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8191,6 +8322,7 @@
 						<Y=-10.000002>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8207,6 +8339,7 @@
 				<Id="g_block_4x4">
 				<UId=98>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8288,6 +8421,7 @@
 						<Y=-10.000002>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8304,6 +8438,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=99>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8390,6 +8525,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8406,6 +8542,7 @@
 				<Id="g_block_4x4">
 				<UId=100>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8487,6 +8624,7 @@
 						<Y=-10.000002>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8503,6 +8641,7 @@
 				<Id="g_block_4x4">
 				<UId=101>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8584,6 +8723,7 @@
 						<Y=-10.000002>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8600,6 +8740,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=102>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8681,6 +8822,7 @@
 						<Y=-3.999999>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8697,6 +8839,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=103>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8778,6 +8921,7 @@
 						<Y=12.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8794,6 +8938,7 @@
 				<Id="g_block_4x4">
 				<UId=104>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8891,6 +9036,7 @@
 				<Id="g_block_4x4">
 				<UId=105>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8972,6 +9118,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8988,6 +9135,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=106>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9085,6 +9233,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=107>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9187,6 +9336,7 @@
 				<Id="g_block_4x4">
 				<UId=108>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9284,6 +9434,7 @@
 				<Id="g_block_4x4">
 				<UId=109>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9381,6 +9532,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=110>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9484,6 +9636,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=111>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9582,6 +9735,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=112>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9664,6 +9818,7 @@
 						<Y=7.900001>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9680,6 +9835,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=113>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9767,6 +9923,7 @@
 						<Y=3.141575>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9783,6 +9940,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=114>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9886,6 +10044,7 @@
 				<Id="g_block_4x4">
 				<UId=115>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9967,6 +10126,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9983,6 +10143,7 @@
 				<Id="g_block_4x4">
 				<UId=116>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10064,6 +10225,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10080,6 +10242,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=117>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10183,6 +10346,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=118>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10286,6 +10450,7 @@
 				<Id="g_block_4x4">
 				<UId=119>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10383,6 +10548,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=120>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10486,6 +10652,7 @@
 				<Id="g_block_4x4">
 				<UId=121>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10583,6 +10750,7 @@
 				<Id="g_block_4x4">
 				<UId=122>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10680,6 +10848,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=123>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10777,6 +10946,7 @@
 				<Id="g_block_4x4">
 				<UId=124>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10874,6 +11044,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=125>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10977,6 +11148,7 @@
 				<Id="g_block_8x16">
 				<UId=126>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11079,6 +11251,7 @@
 				<Id="g_block_8x16">
 				<UId=127>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11181,6 +11354,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=128>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11279,6 +11453,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=129>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11382,6 +11557,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=130>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11485,6 +11661,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=131>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11588,6 +11765,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=132>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11690,6 +11868,7 @@
 				<Id="g_block_4x4">
 				<UId=133>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11787,6 +11966,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=134>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11890,6 +12070,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=135>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11993,6 +12174,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=136>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12080,6 +12262,7 @@
 						<Y=3.141592>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12096,6 +12279,7 @@
 				<Id="g_block_4x4">
 				<UId=137>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12193,6 +12377,7 @@
 				<Id="g_block_4x4">
 				<UId=138>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12274,6 +12459,7 @@
 						<Y=37.700001>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12290,6 +12476,7 @@
 				<Id="g_block_8x16">
 				<UId=139>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12387,6 +12574,7 @@
 				<Id="g_block_4x4">
 				<UId=140>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12461,6 +12649,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=141>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12559,6 +12748,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=142>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12657,6 +12847,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=143>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12760,6 +12951,7 @@
 				<Id="g_block_4x4">
 				<UId=144>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12857,6 +13049,7 @@
 				<Id="g_block_8x16">
 				<UId=145>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12943,6 +13136,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12959,6 +13153,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=146>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13046,6 +13241,7 @@
 						<Y=3.141575>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13062,6 +13258,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=147>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13149,6 +13346,7 @@
 						<Y=0.000000>
 						<Z=3.141575>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13165,6 +13363,7 @@
 				<Id="g_block_8x16">
 				<UId=148>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13251,6 +13450,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13267,6 +13467,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=149>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13354,6 +13555,7 @@
 						<Y=-3.141575>
 						<Z=-0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13370,6 +13572,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=150>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13457,6 +13660,7 @@
 						<Y=0.000000>
 						<Z=-0.000018>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13473,6 +13677,7 @@
 				<Id="g_block_8x16">
 				<UId=151>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13559,6 +13764,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13575,6 +13781,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=152>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13662,6 +13869,7 @@
 						<Y=0.000000>
 						<Z=-0.000018>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13678,6 +13886,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=153>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13765,6 +13974,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13781,6 +13991,7 @@
 				<Id="g_block_4x4">
 				<UId=154>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13862,6 +14073,7 @@
 						<Y=65.300003>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13878,6 +14090,7 @@
 				<Id="g_block_4x4">
 				<UId=155>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13959,6 +14172,7 @@
 						<Y=65.300003>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13975,6 +14189,7 @@
 				<Id="g_block_4x4">
 				<UId=156>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14033,6 +14248,7 @@
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14049,6 +14265,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=157>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14136,6 +14353,7 @@
 						<Y=0.000000>
 						<Z=-0.000018>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14152,6 +14370,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=158>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14239,6 +14458,7 @@
 						<Y=-3.141592>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14255,6 +14475,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=159>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14342,6 +14563,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14358,6 +14580,7 @@
 				<Id="g_block_4x4">
 				<UId=160>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14439,6 +14662,7 @@
 						<Y=57.500000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14455,6 +14679,7 @@
 				<Id="g_block_8x16">
 				<UId=161>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14541,6 +14766,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14557,6 +14783,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=162>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14644,6 +14871,7 @@
 						<Y=-3.141575>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14660,6 +14888,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=163>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14746,6 +14975,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14762,6 +14992,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=164>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14849,6 +15080,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14865,6 +15097,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=165>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14952,6 +15185,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14968,6 +15202,7 @@
 				<Id="g_block_4x4">
 				<UId=166>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15049,6 +15284,7 @@
 						<Y=61.399998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15065,6 +15301,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=167>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15152,6 +15389,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15168,6 +15406,7 @@
 				<Id="g_block_4x4">
 				<UId=168>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15249,6 +15488,7 @@
 						<Y=69.299995>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15265,6 +15505,7 @@
 				<Id="g_block_8x16">
 				<UId=169>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15346,6 +15587,7 @@
 						<Y=67.524330>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15362,6 +15604,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=170>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15444,6 +15687,7 @@
 						<Y=75.500999>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15460,6 +15704,7 @@
 				<Id="g_block_4x4">
 				<UId=171>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15541,6 +15786,7 @@
 						<Y=61.399998>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15557,6 +15803,7 @@
 				<Id="g_block_4x4">
 				<UId=172>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15638,6 +15885,7 @@
 						<Y=69.299995>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15654,6 +15902,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=173>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15741,6 +15990,7 @@
 						<Y=-3.141575>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15757,6 +16007,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=174>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15860,6 +16111,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=175>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15963,6 +16215,7 @@
 				<Id="g_block_4x4">
 				<UId=176>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16060,6 +16313,7 @@
 				<Id="g_block_8x16">
 				<UId=177>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16162,6 +16416,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=178>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16265,6 +16520,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=179>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16351,6 +16607,7 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16367,6 +16624,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=180>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16454,6 +16712,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16470,6 +16729,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=181>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16557,6 +16817,7 @@
 						<Y=-3.141592>
 						<Z=-1.570814>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16573,6 +16834,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=182>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16660,6 +16922,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16676,6 +16939,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=183>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16763,6 +17027,7 @@
 						<Y=-3.141575>
 						<Z=-3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16779,6 +17044,7 @@
 				<Id="g_block_4x4">
 				<UId=184>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16865,6 +17131,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16881,6 +17148,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=185>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16967,6 +17235,7 @@
 						<Y=0.000000>
 						<Z=1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16983,6 +17252,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=186>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17070,6 +17340,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17086,6 +17357,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=187>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17173,6 +17445,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17189,6 +17462,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=188>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17276,6 +17550,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17292,6 +17567,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=189>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17379,6 +17655,7 @@
 						<Y=-3.141593>
 						<Z=-1.570814>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17395,6 +17672,7 @@
 				<Id="g_block_4x4">
 				<UId=190>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17453,6 +17731,7 @@
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17469,6 +17748,7 @@
 				<Id="g_block_4x4">
 				<UId=191>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17550,6 +17830,7 @@
 						<Y=27.299999>
 						<Z=-2.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17566,6 +17847,7 @@
 				<Id="g_block_4x4">
 				<UId=192>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17624,6 +17906,7 @@
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17640,6 +17923,7 @@
 				<Id="g_block_4x4">
 				<UId=193>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17698,6 +17982,7 @@
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17714,6 +17999,7 @@
 				<Id="g_block_4x4">
 				<UId=194>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17772,6 +18058,7 @@
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17788,6 +18075,7 @@
 				<Id="g_block_8x16">
 				<UId=195>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17869,6 +18157,7 @@
 						<Y=63.493370>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17885,6 +18174,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=196>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17972,6 +18262,7 @@
 						<Y=-3.141593>
 						<Z=-0.000035>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17988,6 +18279,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=197>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18070,6 +18362,7 @@
 						<Y=71.441628>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18086,6 +18379,7 @@
 				<Id="g_block_8x16">
 				<UId=198>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18167,6 +18461,7 @@
 						<Y=61.611465>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18183,6 +18478,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=199>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18270,6 +18566,7 @@
 						<Y=0.000000>
 						<Z=1.570779>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18286,6 +18583,7 @@
 				<Id="g_block_8x16">
 				<UId=200>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18367,6 +18665,7 @@
 						<Y=79.315262>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18383,6 +18682,7 @@
 				<Id="g_block_4x4">
 				<UId=201>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18464,6 +18764,7 @@
 						<Y=71.575211>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18480,6 +18781,7 @@
 				<Id="g_block_4x4">
 				<UId=202>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18561,6 +18863,7 @@
 						<Y=71.575211>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18577,6 +18880,7 @@
 				<Id="g_block_8x16">
 				<UId=203>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18663,6 +18967,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18679,6 +18984,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=204>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18766,6 +19072,7 @@
 						<Y=-3.141593>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18782,6 +19089,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=205>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18869,6 +19177,7 @@
 						<Y=3.141592>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18885,6 +19194,7 @@
 				<Id="g_block_8x16">
 				<UId=206>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18971,6 +19281,7 @@
 						<Y=0.000000>
 						<Z=0.785398>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18987,6 +19298,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=207>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19069,6 +19381,7 @@
 						<Y=46.066380>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19085,6 +19398,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=208>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19171,6 +19485,7 @@
 						<Y=0.000000>
 						<Z=1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19187,6 +19502,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=209>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19269,6 +19585,7 @@
 						<Y=50.120930>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19285,6 +19602,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=210>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19372,6 +19690,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19388,6 +19707,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=211>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19469,6 +19789,7 @@
 						<Y=28.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19485,6 +19806,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=212>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19566,6 +19888,7 @@
 						<Y=44.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19582,6 +19905,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=213>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19663,6 +19987,7 @@
 						<Y=60.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19679,6 +20004,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=214>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19766,6 +20092,7 @@
 						<Y=0.000000>
 						<Z=0.785398>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19782,6 +20109,7 @@
 				<Id="g_block_8x16">
 				<UId=215>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19863,6 +20191,7 @@
 						<Y=-7.965150>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19879,6 +20208,7 @@
 				<Id="g_block_8x16">
 				<UId=216>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19960,6 +20290,7 @@
 						<Y=-7.965150>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19976,6 +20307,7 @@
 				<Id="g_block_8x16">
 				<UId=217>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20062,6 +20394,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20078,6 +20411,7 @@
 				<Id="g_block_8x16">
 				<UId=218>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20164,6 +20498,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20180,6 +20515,7 @@
 				<Id="g_block_8x16">
 				<UId=219>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20266,6 +20602,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20282,6 +20619,7 @@
 				<Id="g_block_8x16">
 				<UId=220>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20384,6 +20722,7 @@
 				<Id="g_block_8x16">
 				<UId=221>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20486,6 +20825,7 @@
 				<Id="g_block_8x16">
 				<UId=222>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20588,6 +20928,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=223>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20691,6 +21032,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=224>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20794,6 +21136,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=225>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20897,6 +21240,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=226>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21000,6 +21344,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=227>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21098,6 +21443,7 @@
 				<Id="g_block_8x16">
 				<UId=228>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21179,6 +21525,7 @@
 						<Y=12.082947>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21195,6 +21542,7 @@
 				<Id="g_block_8x16">
 				<UId=229>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21281,6 +21629,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21297,6 +21646,7 @@
 				<Id="g_block_8x16">
 				<UId=230>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21383,6 +21733,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21399,6 +21750,7 @@
 				<Id="g_block_4x4">
 				<UId=231>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21480,6 +21832,7 @@
 						<Y=14.055437>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21496,6 +21849,7 @@
 				<Id="g_block_4x4">
 				<UId=232>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21577,6 +21931,7 @@
 						<Y=18.055437>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21593,6 +21948,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=233>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21680,6 +22036,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21696,6 +22053,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=234>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21783,6 +22141,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21799,6 +22158,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=235>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21886,6 +22246,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21902,6 +22263,7 @@
 				<Id="g_block_4x4">
 				<UId=236>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21983,6 +22345,7 @@
 						<Y=6.045485>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -21999,6 +22362,7 @@
 				<Id="g_block_4x4">
 				<UId=237>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22080,6 +22444,7 @@
 						<Y=6.045485>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22096,6 +22461,7 @@
 				<Id="g_block_4x4">
 				<UId=238>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22177,6 +22543,7 @@
 						<Y=10.045485>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22193,6 +22560,7 @@
 				<Id="g_block_4x4">
 				<UId=239>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22274,6 +22642,7 @@
 						<Y=10.045485>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22290,6 +22659,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=240>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22377,6 +22747,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22393,6 +22764,7 @@
 				<Id="g_block_8x16">
 				<UId=241>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22479,6 +22851,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22495,6 +22868,7 @@
 				<Id="g_block_8x16">
 				<UId=242>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22576,6 +22950,7 @@
 						<Y=59.987701>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22592,6 +22967,7 @@
 				<Id="g_block_8x16">
 				<UId=243>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22673,6 +23049,7 @@
 						<Y=43.945610>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22689,6 +23066,7 @@
 				<Id="g_block_8x16">
 				<UId=244>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22770,6 +23148,7 @@
 						<Y=27.958309>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22786,6 +23165,7 @@
 				<Id="g_block_8x16">
 				<UId=245>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22867,6 +23247,7 @@
 						<Y=12.030849>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22883,6 +23264,7 @@
 				<Id="g_block_8x16">
 				<UId=246>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -22964,6 +23346,7 @@
 						<Y=-3.979367>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -22980,6 +23363,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=247>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23067,6 +23451,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23083,6 +23468,7 @@
 				<Id="g_block_8x16">
 				<UId=248>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23169,6 +23555,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23185,6 +23572,7 @@
 				<Id="g_block_8x16">
 				<UId=249>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23266,6 +23654,7 @@
 						<Y=41.165573>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23282,6 +23671,7 @@
 				<Id="g_block_8x16">
 				<UId=250>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23363,6 +23753,7 @@
 						<Y=41.165573>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23379,6 +23770,7 @@
 				<Id="g_block_8x16">
 				<UId=251>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23465,6 +23857,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23481,6 +23874,7 @@
 				<Id="g_block_8x16">
 				<UId=252>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23567,6 +23961,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23583,6 +23978,7 @@
 				<Id="g_block_8x16">
 				<UId=253>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23664,6 +24060,7 @@
 						<Y=9.218111>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23680,6 +24077,7 @@
 				<Id="g_block_8x16">
 				<UId=254>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23761,6 +24159,7 @@
 						<Y=9.218111>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23777,6 +24176,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=255>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -23864,6 +24264,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23966,6 +24367,7 @@
 						<Y=-3.141592>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -23982,6 +24384,7 @@
 				<Id="g_block_8x16">
 				<UId=257>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24063,6 +24466,7 @@
 						<Y=59.987701>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -24079,6 +24483,7 @@
 				<Id="g_block_8x16">
 				<UId=258>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24160,6 +24565,7 @@
 						<Y=44.056889>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -24176,6 +24582,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=259>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24263,6 +24670,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -24279,6 +24687,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=260>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24376,6 +24785,7 @@
 				<Id="g_block_4x4">
 				<UId=261>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24473,6 +24883,7 @@
 				<Id="g_block_4x4">
 				<UId=262>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24554,6 +24965,7 @@
 						<Y=1.900976>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -24570,6 +24982,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=263>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24652,6 +25065,7 @@
 						<Y=-0.104140>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -24707,6 +25121,7 @@
 				<Id="g_block_8x16">
 				<UId=265>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24788,6 +25203,7 @@
 						<Y=42.202782>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -24804,6 +25220,7 @@
 				<Id="g_block_8x16">
 				<UId=266>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24885,6 +25302,7 @@
 						<Y=26.178902>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -24901,6 +25319,7 @@
 				<Id="g_block_4x4">
 				<UId=267>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -24982,6 +25401,7 @@
 						<Y=16.201485>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -24998,6 +25418,7 @@
 				<Id="g_block_4x4">
 				<UId=268>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25079,6 +25500,7 @@
 						<Y=16.201485>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25095,6 +25517,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=269>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25182,6 +25605,7 @@
 						<Y=0.000000>
 						<Z=-3.141593>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25198,6 +25622,7 @@
 				<Id="g_block_4x4">
 				<UId=270>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25279,6 +25704,7 @@
 						<Y=12.278074>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25295,6 +25721,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=271>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25382,6 +25809,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25398,6 +25826,7 @@
 				<Id="g_block_tr_4x16">
 				<UId=272>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25479,6 +25908,7 @@
 						<Y=30.315435>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25495,6 +25925,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=273>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25582,6 +26013,7 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25598,6 +26030,7 @@
 				<Id="g_block_8x16">
 				<UId=274>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25679,6 +26112,7 @@
 						<Y=58.122833>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25695,6 +26129,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=275>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25782,6 +26217,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25798,6 +26234,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=276>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25885,6 +26322,7 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -25901,6 +26339,7 @@
 				<Id="g_block_4x4">
 				<UId=277>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -25987,6 +26426,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26003,6 +26443,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=278>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26090,6 +26531,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26106,6 +26548,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=279>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26188,6 +26631,7 @@
 						<Y=24.062822>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26204,6 +26648,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=280>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26291,6 +26736,7 @@
 						<Y=-3.141593>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26307,6 +26753,7 @@
 				<Id="g_block_4x4">
 				<UId=281>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26388,6 +26835,7 @@
 						<Y=22.109505>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26404,6 +26852,7 @@
 				<Id="g_block_4x4">
 				<UId=282>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26485,6 +26934,7 @@
 						<Y=18.187328>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26501,6 +26951,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=283>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26588,6 +27039,7 @@
 						<Y=-3.141593>
 						<Z=3.141575>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26604,6 +27056,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=284>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26691,6 +27144,7 @@
 						<Y=-3.141593>
 						<Z=1.570779>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26707,6 +27161,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=285>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26794,6 +27249,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26810,6 +27266,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=286>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -26897,6 +27354,7 @@
 						<Y=3.141593>
 						<Z=1.570779>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -26913,6 +27371,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=287>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27000,6 +27459,7 @@
 						<Y=3.141592>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27016,6 +27476,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=288>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27103,6 +27564,7 @@
 						<Y=3.141592>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27119,6 +27581,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=289>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27206,6 +27669,7 @@
 						<Y=3.141592>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27222,6 +27686,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=290>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27309,6 +27774,7 @@
 						<Y=3.141592>
 						<Z=1.570779>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27325,6 +27791,7 @@
 				<Id="g_block_4x4">
 				<UId=291>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27406,6 +27873,7 @@
 						<Y=13.997150>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27422,6 +27890,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=292>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27509,6 +27978,7 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27525,6 +27995,7 @@
 				<Id="g_block_4x4">
 				<UId=293>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27606,6 +28077,7 @@
 						<Y=83.870613>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27622,6 +28094,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=294>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27709,6 +28182,7 @@
 						<Y=0.000000>
 						<Z=-0.000018>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27725,6 +28199,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=295>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27812,6 +28287,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27828,6 +28304,7 @@
 				<Id="g_block_4x4">
 				<UId=296>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -27909,6 +28386,7 @@
 						<Y=76.076462>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -27925,6 +28403,7 @@
 				<Id="g_block_8x16">
 				<UId=297>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28011,6 +28490,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28027,6 +28507,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=298>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28114,6 +28595,7 @@
 						<Y=-3.141575>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28130,6 +28612,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=299>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28217,6 +28700,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28233,6 +28717,7 @@
 				<Id="g_block_4x4">
 				<UId=300>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28314,6 +28799,7 @@
 						<Y=68.090561>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28330,6 +28816,7 @@
 				<Id="g_block_4x4">
 				<UId=301>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28411,6 +28898,7 @@
 						<Y=68.090561>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28427,6 +28915,7 @@
 				<Id="g_block_4x4">
 				<UId=302>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28508,6 +28997,7 @@
 						<Y=72.090561>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28524,6 +29014,7 @@
 				<Id="g_block_4x4">
 				<UId=303>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28605,6 +29096,7 @@
 						<Y=72.090561>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28621,6 +29113,7 @@
 				<Id="g_block_8x16">
 				<UId=304>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28702,6 +29195,7 @@
 						<Y=89.922508>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28718,6 +29212,7 @@
 				<Id="g_block_4x4">
 				<UId=305>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28799,6 +29294,7 @@
 						<Y=69.982742>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28815,6 +29311,7 @@
 				<Id="g_block_4x4">
 				<UId=306>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28896,6 +29393,7 @@
 						<Y=80.058525>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -28912,6 +29410,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=307>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -28999,6 +29498,7 @@
 						<Y=3.141575>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29015,6 +29515,7 @@
 				<Id="g_block_4x4">
 				<UId=308>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29096,6 +29597,7 @@
 						<Y=73.949936>
 						<Z=0.272461>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29112,6 +29614,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=309>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29199,6 +29702,7 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29215,6 +29719,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=310>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29302,6 +29807,7 @@
 						<Y=-3.141575>
 						<Z=-1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29318,6 +29824,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=311>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29400,6 +29907,7 @@
 						<Y=85.759361>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29416,6 +29924,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=312>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29498,6 +30007,7 @@
 						<Y=81.868881>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29514,6 +30024,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=313>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29601,6 +30112,7 @@
 						<Y=0.000000>
 						<Z=-3.141593>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29617,6 +30129,7 @@
 				<Id="g_block_8x16">
 				<UId=314>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29703,6 +30216,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29717,8 +30231,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=344>
+				<UId=315>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29777,6 +30292,7 @@
 						<Y=2.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29791,8 +30307,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=375>
+				<UId=316>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29874,6 +30391,7 @@
 						<Y=21.999998>
 						<Z=4.148514>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29888,8 +30406,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=380>
+				<UId=317>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -29971,6 +30490,7 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -29985,8 +30505,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=381>
+				<UId=318>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -30068,6 +30589,7 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -30082,8 +30604,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=382>
+				<UId=319>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -30165,6 +30688,7 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -30179,8 +30703,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=383>
+				<UId=320>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -30262,6 +30787,7 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -30276,8 +30802,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=384>
+				<UId=321>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -30359,6 +30886,7 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -30373,8 +30901,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=385>
+				<UId=322>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -30456,6 +30985,7 @@
 						<Y=65.502136>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -30470,8 +31000,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=386>
+				<UId=323>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -30558,6 +31089,7 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -30572,8 +31104,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=387>
+				<UId=324>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -30655,6 +31188,7 @@
 						<Y=61.541904>
 						<Z=-1.301588>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -30669,8 +31203,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=388>
+				<UId=325>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -30752,6 +31287,7 @@
 						<Y=61.541904>
 						<Z=-1.301588>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -30766,7 +31302,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=315>
+				<UId=326>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -30822,7 +31358,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=316>
+				<UId=327>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -30860,7 +31396,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=317>
+				<UId=328>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -30898,7 +31434,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=318>
+				<UId=329>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -30936,7 +31472,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=319>
+				<UId=330>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -30974,7 +31510,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusShield">
-				<UId=320>
+				<UId=331>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31012,7 +31548,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=321>
+				<UId=332>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31050,7 +31586,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=322>
+				<UId=333>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31088,7 +31624,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=323>
+				<UId=334>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31126,7 +31662,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=324>
+				<UId=335>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31164,7 +31700,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=325>
+				<UId=336>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31202,7 +31738,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=326>
+				<UId=337>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31240,7 +31776,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=327>
+				<UId=338>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31278,7 +31814,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=328>
+				<UId=339>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31316,7 +31852,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=329>
+				<UId=340>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31354,7 +31890,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=330>
+				<UId=341>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31392,7 +31928,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=331>
+				<UId=342>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31430,7 +31966,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=332>
+				<UId=343>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31468,7 +32004,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=333>
+				<UId=344>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31506,7 +32042,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=334>
+				<UId=345>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31544,7 +32080,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=335>
+				<UId=346>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31587,7 +32123,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=336>
+				<UId=347>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31630,7 +32166,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=337>
+				<UId=348>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31668,7 +32204,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=338>
+				<UId=349>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31706,7 +32242,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=339>
+				<UId=350>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31744,7 +32280,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=340>
+				<UId=351>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31787,7 +32323,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=341>
+				<UId=352>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31830,7 +32366,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropReservoir">
-				<UId=342>
+				<UId=353>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31868,7 +32404,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=343>
+				<UId=354>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31911,7 +32447,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=345>
+				<UId=355>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31949,7 +32485,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=346>
+				<UId=356>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -31987,7 +32523,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=347>
+				<UId=357>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32030,7 +32566,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTree0">
-				<UId=349>
+				<UId=358>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32068,7 +32604,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=350>
+				<UId=359>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32106,7 +32642,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=351>
+				<UId=360>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32144,7 +32680,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=352>
+				<UId=361>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32182,7 +32718,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=353>
+				<UId=362>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32225,7 +32761,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=354>
+				<UId=363>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32268,7 +32804,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=355>
+				<UId=364>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32311,7 +32847,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=356>
+				<UId=365>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32354,7 +32890,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=357>
+				<UId=366>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32397,7 +32933,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=358>
+				<UId=367>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32435,7 +32971,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=359>
+				<UId=368>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32473,7 +33009,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=360>
+				<UId=369>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32516,7 +33052,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=361>
+				<UId=370>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32559,7 +33095,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=362>
+				<UId=371>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32597,7 +33133,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=363>
+				<UId=372>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32635,7 +33171,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=364>
+				<UId=373>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32673,7 +33209,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=365>
+				<UId=374>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32716,7 +33252,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=366>
+				<UId=375>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32759,7 +33295,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=367>
+				<UId=376>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32802,7 +33338,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=368>
+				<UId=377>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32840,7 +33376,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=369>
+				<UId=378>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32878,7 +33414,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=370>
+				<UId=379>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32916,7 +33452,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=372>
+				<UId=380>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32959,7 +33495,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=373>
+				<UId=381>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -32997,7 +33533,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileJawgate">
-				<UId=374>
+				<UId=382>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -33040,7 +33576,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=377>
+				<UId=383>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -33083,7 +33619,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=378>
+				<UId=384>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -33121,7 +33657,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=379>
+				<UId=385>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>

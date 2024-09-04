@@ -94,6 +94,9 @@
 					<Mask=3>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -213,6 +216,9 @@
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -343,22 +349,12 @@
 							>
 							<Parm=
 								<Id="strength">
-								<Value=2.000000>
+								<Value=3.000000>
 							>
-						>
-					>
-				>
-				<ScriptUnit=
-					<Script="scripts/mobiles_handler.nut">
-					<Class="MobileRotary">
-					<ParmList=
-						<Parm=
-							<Id="target_RPM">
-							<Value=0.250000>
-						>
-						<Parm=
-							<Id="strength">
-							<Value=2.000000>
+							<Parm=
+								<Id="is_physic">
+								<Value=1>
+							>
 						>
 					>
 				>
@@ -367,6 +363,9 @@
 					<Mask=4>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="Dynamic">
 					<Shapes=
 						<PhysicShape=
@@ -480,6 +479,9 @@
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -500,7 +502,6 @@
 						<Y=1.000000>
 						<Z=15.850000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -528,6 +529,9 @@
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>

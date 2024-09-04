@@ -7,7 +7,11 @@
 			<ParmList=
 				<Parm=
 					<Id="level_name">
-					<Value="watch_ceilling">
+					<Value="into_the_mine">
+				>
+				<Parm=
+					<Id="is_underwater">
+					<Value=0>
 				>
 			>
 		>
@@ -18,7 +22,11 @@
 		<ParmList=
 			<Parm=
 				<Id="level_name">
-				<Value="watch_ceilling">
+				<Value="into_the_mine">
+			>
+			<Parm=
+				<Id="is_underwater">
+				<Value=0>
 			>
 		>
 	>
@@ -1200,6 +1208,7 @@
 				<Id="g_block_8x32">
 				<UId=27>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1302,6 +1311,7 @@
 				<Id="g_block_16x16">
 				<UId=28>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1448,6 +1458,7 @@
 				<Id="g_block_2x2">
 				<UId=30>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1545,6 +1556,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=31>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1648,6 +1660,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=32>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1751,6 +1764,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=33>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1849,6 +1863,7 @@
 				<Id="g_block_4x8">
 				<UId=34>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -1951,6 +1966,7 @@
 				<Id="g_block_4x8">
 				<UId=35>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2053,6 +2069,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=36>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2156,6 +2173,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=37>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2259,6 +2277,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=38>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2362,6 +2381,7 @@
 				<Id="g_block_4x8">
 				<UId=39>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2464,6 +2484,7 @@
 				<Id="g_block_4x8">
 				<UId=40>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2566,6 +2587,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=41>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2669,6 +2691,7 @@
 				<Id="g_block_4x4">
 				<UId=42>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2766,6 +2789,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=43>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2869,6 +2893,7 @@
 				<Id="g_block_4x4">
 				<UId=44>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -2966,6 +2991,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=45>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3064,6 +3090,7 @@
 				<Id="g_block_4x8">
 				<UId=46>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3166,6 +3193,7 @@
 				<Id="g_block_4x8">
 				<UId=47>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3263,6 +3291,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=48>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3366,6 +3395,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=49>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3469,6 +3499,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=50>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3572,6 +3603,7 @@
 				<Id="g_block_4x8">
 				<UId=51>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3674,6 +3706,7 @@
 				<Id="g_block_4x8">
 				<UId=52>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3776,6 +3809,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=53>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3874,6 +3908,7 @@
 				<Id="g_block_4x8">
 				<UId=54>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -3976,6 +4011,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=55>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4078,6 +4114,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=56>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4180,6 +4217,7 @@
 				<Id="g_block_4x8">
 				<UId=57>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4282,6 +4320,7 @@
 				<Id="g_block_2x2">
 				<UId=58>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4379,6 +4418,7 @@
 				<Id="g_block_2x2">
 				<UId=59>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4476,6 +4516,7 @@
 				<Id="g_block_2x2">
 				<UId=60>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4573,6 +4614,7 @@
 				<Id="g_block_16x16">
 				<UId=61>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4670,6 +4712,7 @@
 				<Id="g_block_16x16">
 				<UId=62>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4767,6 +4810,7 @@
 				<Id="g_block_8x16">
 				<UId=63>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4869,6 +4913,7 @@
 				<Id="g_block_2x2">
 				<UId=64>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -4966,6 +5011,7 @@
 				<Id="g_block_2x2">
 				<UId=65>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5063,6 +5109,7 @@
 				<Id="g_block_8x16">
 				<UId=66>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5165,6 +5212,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=67>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5268,6 +5316,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=68>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5371,6 +5420,7 @@
 				<Id="g_block_4x8">
 				<UId=69>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5468,6 +5518,7 @@
 				<Id="g_block_8x16">
 				<UId=70>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5570,6 +5621,7 @@
 				<Id="g_block_16x32">
 				<UId=71>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5667,6 +5719,7 @@
 				<Id="g_block_8x16">
 				<UId=72>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5769,6 +5822,7 @@
 				<Id="g_block_4x8">
 				<UId=73>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5871,6 +5925,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=74>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -5969,6 +6024,7 @@
 				<Id="g_block_8x16">
 				<UId=75>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6071,6 +6127,7 @@
 				<Id="g_block_4x8">
 				<UId=76>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6173,6 +6230,7 @@
 				<Id="g_block_16x16">
 				<UId=77>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6270,6 +6328,7 @@
 				<Id="g_block_8x16">
 				<UId=78>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6372,6 +6431,7 @@
 				<Id="g_block_8x16">
 				<UId=79>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6474,6 +6534,7 @@
 				<Id="g_block_4x8">
 				<UId=80>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6576,6 +6637,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=81>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6679,6 +6741,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=82>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6782,6 +6845,7 @@
 				<Id="g_block_16x16">
 				<UId=83>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6879,6 +6943,7 @@
 				<Id="g_block_8x16">
 				<UId=84>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -6981,6 +7046,7 @@
 				<Id="g_block_2x2">
 				<UId=85>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7078,6 +7144,7 @@
 				<Id="g_block_2x2">
 				<UId=86>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7175,6 +7242,7 @@
 				<Id="g_block_2x2">
 				<UId=87>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7272,6 +7340,7 @@
 				<Id="g_block_2x2">
 				<UId=88>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7369,6 +7438,7 @@
 				<Id="g_block_2x2">
 				<UId=89>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7466,6 +7536,7 @@
 				<Id="g_block_2x2">
 				<UId=90>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7563,6 +7634,7 @@
 				<Id="g_block_2x2">
 				<UId=91>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7660,6 +7732,7 @@
 				<Id="g_block_2x2">
 				<UId=92>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7757,6 +7830,7 @@
 				<Id="g_block_2x2">
 				<UId=93>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7854,6 +7928,7 @@
 				<Id="g_block_2x2">
 				<UId=94>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -7951,6 +8026,7 @@
 				<Id="g_block_8x16">
 				<UId=95>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8053,6 +8129,7 @@
 				<Id="g_block_8x16">
 				<UId=96>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8155,6 +8232,7 @@
 				<Id="g_block_8x16">
 				<UId=97>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8252,6 +8330,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=98>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8355,6 +8434,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=99>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8458,6 +8538,7 @@
 				<Id="g_block_2x2">
 				<UId=100>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8555,6 +8636,7 @@
 				<Id="g_block_2x2">
 				<UId=101>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8652,6 +8734,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=102>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8755,6 +8838,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=103>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8852,6 +8936,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=104>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -8949,6 +9034,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=105>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9046,6 +9132,7 @@
 				<Id="g_block_4x8">
 				<UId=106>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9148,6 +9235,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=107>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9245,6 +9333,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=108>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9342,6 +9431,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=109>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9439,6 +9529,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=110>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9536,6 +9627,7 @@
 				<Id="g_block_8x16">
 				<UId=111>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9638,6 +9730,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=112>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9736,6 +9829,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=113>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9839,6 +9933,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=114>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -9942,6 +10037,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=115>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10045,6 +10141,7 @@
 				<Id="g_block_16x16">
 				<UId=116>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10142,6 +10239,7 @@
 				<Id="g_block_16x16">
 				<UId=117>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10244,6 +10342,7 @@
 				<Id="g_block_8x16">
 				<UId=118>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10346,6 +10445,7 @@
 				<Id="g_block_4x8">
 				<UId=119>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10448,6 +10548,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=120>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10550,6 +10651,7 @@
 				<Id="g_block_8x16">
 				<UId=121>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10652,6 +10754,7 @@
 				<Id="g_block_8x16">
 				<UId=122>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10754,6 +10857,7 @@
 				<Id="g_block_16x16">
 				<UId=123>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10851,6 +10955,7 @@
 				<Id="g_block_16x16">
 				<UId=124>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -10948,6 +11053,7 @@
 				<Id="g_block_8x16">
 				<UId=125>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11045,6 +11151,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=126>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11148,6 +11255,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=127>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11251,6 +11359,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=128>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11354,6 +11463,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=129>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11457,6 +11567,7 @@
 				<Id="g_block_8x16">
 				<UId=130>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11554,6 +11665,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=131>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11651,6 +11763,7 @@
 				<Id="g_block_8x16">
 				<UId=132>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11748,6 +11861,7 @@
 				<Id="g_block_8x16">
 				<UId=133>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11850,6 +11964,7 @@
 				<Id="g_block_8x16">
 				<UId=134>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -11952,6 +12067,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=135>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12054,6 +12170,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=136>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12156,6 +12273,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=137>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12258,6 +12376,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=138>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12360,6 +12479,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=139>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12458,6 +12578,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=140>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12561,6 +12682,7 @@
 				<Id="g_block_8x16">
 				<UId=141>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12658,6 +12780,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=142>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12761,6 +12884,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=143>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12864,6 +12988,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=144>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -12967,6 +13092,7 @@
 				<Id="g_block_tr_8x8">
 				<UId=145>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13070,6 +13196,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=146>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13173,6 +13300,7 @@
 				<Id="g_block_8x16">
 				<UId=147>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13275,6 +13403,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=148>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13373,6 +13502,7 @@
 				<Id="g_block_8x16">
 				<UId=149>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13475,6 +13605,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=150>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13578,6 +13709,7 @@
 				<Id="g_block_8x16">
 				<UId=151>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13680,6 +13812,7 @@
 				<Id="g_block_16x16">
 				<UId=152>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13777,6 +13910,7 @@
 				<Id="g_block_16x16">
 				<UId=153>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13874,6 +14008,7 @@
 				<Id="g_block_16x16">
 				<UId=154>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -13971,6 +14106,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=155>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14074,6 +14210,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=156>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14177,6 +14314,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=157>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14280,6 +14418,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=158>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14383,6 +14522,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=159>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14485,6 +14625,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=160>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14587,6 +14728,7 @@
 				<Id="g_block_16x32">
 				<UId=161>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14689,6 +14831,7 @@
 				<Id="g_block_16x16">
 				<UId=162>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14786,6 +14929,7 @@
 				<Id="g_block_4x8">
 				<UId=163>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14888,6 +15032,7 @@
 				<Id="g_block_4x8">
 				<UId=164>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -14990,6 +15135,7 @@
 				<Id="g_block_16x32">
 				<UId=165>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15092,6 +15238,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=166>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15195,6 +15342,7 @@
 				<Id="g_block_8x16">
 				<UId=167>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15297,6 +15445,7 @@
 				<Id="g_block_8x16">
 				<UId=168>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15399,6 +15548,7 @@
 				<Id="g_block_8x16">
 				<UId=169>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15501,6 +15651,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=170>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15604,6 +15755,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=171>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15707,6 +15859,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=172>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15810,6 +15963,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=173>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -15913,6 +16067,7 @@
 				<Id="g_block_8x16">
 				<UId=174>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16015,6 +16170,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=175>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16118,6 +16274,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=176>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16221,6 +16378,7 @@
 				<Id="g_block_tr_8x16">
 				<UId=177>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16324,6 +16482,7 @@
 				<Id="g_block_1x1">
 				<UId=178>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16421,6 +16580,7 @@
 				<Id="g_block_1x1">
 				<UId=179>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16518,6 +16678,7 @@
 				<Id="g_block_1x1">
 				<UId=180>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16615,6 +16776,7 @@
 				<Id="g_block_2x2">
 				<UId=181>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16712,6 +16874,7 @@
 				<Id="g_block_1x1">
 				<UId=182>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16809,6 +16972,7 @@
 				<Id="g_block_1x1">
 				<UId=183>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -16906,6 +17070,7 @@
 				<Id="g_block_1x1">
 				<UId=184>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17003,6 +17168,7 @@
 				<Id="g_block_1x1">
 				<UId=185>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17100,6 +17266,7 @@
 				<Id="g_block_1x1">
 				<UId=186>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17197,6 +17364,7 @@
 				<Id="g_block_1x1">
 				<UId=187>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17294,6 +17462,7 @@
 				<Id="g_block_1x1">
 				<UId=188>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17391,6 +17560,7 @@
 				<Id="g_block_1x1">
 				<UId=189>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17488,6 +17658,7 @@
 				<Id="g_block_2x2">
 				<UId=190>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17585,6 +17756,7 @@
 				<Id="g_block_1x1">
 				<UId=191>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17682,6 +17854,7 @@
 				<Id="g_block_1x1">
 				<UId=192>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17779,6 +17952,7 @@
 				<Id="g_block_1x1">
 				<UId=193>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -17876,6 +18050,7 @@
 				<Id="g_block_1x1">
 				<UId=194>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18075,6 +18250,7 @@
 				<Id="g_block_4x8">
 				<UId=196>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18177,6 +18353,7 @@
 				<Id="g_block_4x8">
 				<UId=197>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18279,6 +18456,7 @@
 				<Id="g_block_tr_4x8">
 				<UId=198>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18382,6 +18560,7 @@
 				<Id="g_block_2x2">
 				<UId=199>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18479,6 +18658,7 @@
 				<Id="g_block_1x1">
 				<UId=200>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18576,6 +18756,7 @@
 				<Id="g_block_1x1">
 				<UId=201>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18678,6 +18859,7 @@
 				<Id="g_block_1x1">
 				<UId=202>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18775,6 +18957,7 @@
 				<Id="g_block_1x1">
 				<UId=203>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18872,6 +19055,7 @@
 				<Id="g_block_1x1">
 				<UId=204>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -18969,6 +19153,7 @@
 				<Id="g_block_2x2">
 				<UId=205>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19066,6 +19251,7 @@
 				<Id="g_block_1x1">
 				<UId=206>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19163,6 +19349,7 @@
 				<Id="g_block_2x2">
 				<UId=207>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19260,6 +19447,7 @@
 				<Id="g_block_1x1">
 				<UId=208>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19357,6 +19545,7 @@
 				<Id="g_block_1x1">
 				<UId=209>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19454,6 +19643,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=210>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19556,6 +19746,7 @@
 				<Id="g_block_2x2">
 				<UId=211>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19653,6 +19844,7 @@
 				<Id="g_block_2x2">
 				<UId=212>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19750,6 +19942,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=213>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19853,6 +20046,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=214>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -19956,6 +20150,7 @@
 				<Id="g_block_4x8">
 				<UId=215>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20058,6 +20253,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=216>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20161,6 +20357,7 @@
 				<Id="g_block_tr_4x4">
 				<UId=217>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20264,6 +20461,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=218>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20366,6 +20564,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=219>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20468,6 +20667,7 @@
 				<Id="g_block_1x1">
 				<UId=220>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20565,6 +20765,7 @@
 				<Id="g_block_1x1">
 				<UId=221>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20662,6 +20863,7 @@
 				<Id="g_block_2x2">
 				<UId=222>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20759,6 +20961,7 @@
 				<Id="g_block_tr_2x8">
 				<UId=223>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20861,6 +21064,7 @@
 				<Id="g_block_1x1">
 				<UId=224>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -20958,6 +21162,7 @@
 				<Id="g_block_1x1">
 				<UId=225>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21055,6 +21260,7 @@
 				<Id="g_block_1x1">
 				<UId=226>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21150,8 +21356,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=265>
+				<UId=227>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21247,8 +21454,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=266>
+				<UId=228>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21344,8 +21552,9 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=269>
+				<UId=229>
 				<Active>
+				<Static>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -21441,7 +21650,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=227>
+				<UId=230>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21497,7 +21706,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=228>
+				<UId=231>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21535,7 +21744,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=229>
+				<UId=232>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21573,7 +21782,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusTime">
-				<UId=230>
+				<UId=233>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21611,7 +21820,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=231>
+				<UId=234>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21649,7 +21858,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusShield">
-				<UId=232>
+				<UId=235>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21687,7 +21896,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=233>
+				<UId=236>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21725,7 +21934,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=234>
+				<UId=237>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21763,7 +21972,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=235>
+				<UId=238>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21801,7 +22010,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=236>
+				<UId=239>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21839,7 +22048,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptBrokenColumn1">
-				<UId=237>
+				<UId=240>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21877,7 +22086,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=238>
+				<UId=241>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21915,7 +22124,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropReservoir">
-				<UId=239>
+				<UId=242>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21958,7 +22167,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptBrokenColumn2">
-				<UId=240>
+				<UId=243>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -21996,7 +22205,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=241>
+				<UId=244>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22034,7 +22243,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=242>
+				<UId=245>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22072,7 +22281,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush2">
-				<UId=243>
+				<UId=246>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22110,7 +22319,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=244>
+				<UId=247>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22148,7 +22357,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptBrokenColumn2">
-				<UId=245>
+				<UId=248>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22191,7 +22400,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=246>
+				<UId=249>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22234,7 +22443,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=247>
+				<UId=250>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22277,7 +22486,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTree0">
-				<UId=248>
+				<UId=251>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22320,7 +22529,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=249>
+				<UId=252>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22358,7 +22567,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=250>
+				<UId=253>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22396,7 +22605,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=251>
+				<UId=254>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22439,7 +22648,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=252>
+				<UId=255>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22482,7 +22691,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=253>
+				<UId=256>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22525,7 +22734,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptBrokenColumn1">
-				<UId=254>
+				<UId=257>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22563,7 +22772,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=255>
+				<UId=258>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22606,7 +22815,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=256>
+				<UId=259>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22649,7 +22858,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=257>
+				<UId=260>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22692,7 +22901,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=258>
+				<UId=261>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22735,7 +22944,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=259>
+				<UId=262>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22773,7 +22982,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=260>
+				<UId=263>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22816,7 +23025,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=261>
+				<UId=264>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22854,7 +23063,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=262>
+				<UId=265>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22892,7 +23101,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceColumn">
-				<UId=268>
+				<UId=266>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22930,7 +23139,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=270>
+				<UId=267>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -22968,7 +23177,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=271>
+				<UId=268>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -23006,7 +23215,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=272>
+				<UId=269>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -23049,7 +23258,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=273>
+				<UId=270>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -23087,7 +23296,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=274>
+				<UId=271>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>

@@ -23,9 +23,14 @@ g_locale	<-	{
 								tutorial_0		=	"First Flight",
 								tutorial_1		=	"Jump Again",
 								under_garden	=	"Under the Garden",
-								tutorial_2		=	"Going Narrow",
+								going_narrow	=	"Going Narrow",
 								watch_ceilling	=	"Watch the Ceilling",
 								up_down			=	"Up and Down",
 								old_factory		=	"The Old Factory",
+								into_the_mine	=	"Into the Mine"
+								the_core		=	"The Core",
+								lost_ship		=	"The Lost Ship",
+								floating_valley		=	"The Floating Valley",
+								elevator_action	=	"Elevator Action"
 							}
 }

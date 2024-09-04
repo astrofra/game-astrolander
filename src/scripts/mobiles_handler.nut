@@ -16,12 +16,19 @@ class	MobileElevator
 		course_height	=	Mtr(5.0)
 		pos_start		=	0
 		pos				=	0
+		scene			=	0
+		elevator_trigger	=	0
+		player_body			=	0
 
+		enabled			=	false
 		going_up		=	true
 
 		function	OnSetup(item)
 		{
 			pos_start = ItemGetPosition(item) //ItemGetWorldPosition(item)
+
+			scene = ItemGetScene(item)
+			elevator_trigger = ItemCastToTrigger(ItemGetChild(item, "elevator_trigger"))
 
 			//	Get height course if possible
 			local	_parent = ItemGetParent(item)
@@ -38,6 +45,21 @@ class	MobileElevator
 
 		function	OnUpdate(item)
 		{
+//			print("MobileElevator::OnUpdate()")
+			ItemSetPosition(item, pos)
+			ItemSetPhysicPosition(item, pos)
+
+			if (player_body == 0)
+				player_body = SceneGetScriptInstance(scene).player_script.body
+//			else
+//				ItemGetWorldPointVelocity(player_body).Print("player_body")
+
+			if ((player_body != 0) && (TriggerTestItem(elevator_trigger, player_body)))
+				enabled = true
+
+			if (!enabled)
+				return
+
 			local	_vel = Vector(0,1,0)
 			_vel = _vel.Scale(g_dt_frame * (going_up?1.0:-1.0) * speed)
 
@@ -56,8 +78,6 @@ class	MobileElevator
 					going_up = true
 				}
 			}
-
-			ItemSetPosition(item, pos)
 		}
 }
 

@@ -12,6 +12,7 @@
 */
 class	LunarLander
 {
+	body				=	0
 	thrust				=	15.0
 	thrust_item			=	0
 	thrust_script		=	0
@@ -406,6 +407,7 @@ class	LunarLander
 		print("LunarLander::OnSetup()")
 
 		scene = ItemGetScene(item)
+		body = item
 
 		SceneSetGravity(scene, g_gravity);
 		ItemPhysicSetAngularFactor(item, Vector(0,0,1.0))

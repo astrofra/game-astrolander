@@ -7,7 +7,7 @@
 			<ParmList=
 				<Parm=
 					<Id="level_name">
-					<Value="default_name">
+					<Value="the_core">
 				>
 				<Parm=
 					<Id="is_underwater">
@@ -22,7 +22,7 @@
 		<ParmList=
 			<Parm=
 				<Id="level_name">
-				<Value="default_name">
+				<Value="the_core">
 			>
 			<Parm=
 				<Id="is_underwater">
@@ -309,6 +309,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -348,6 +349,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -392,6 +394,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -524,6 +527,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -568,6 +572,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -612,6 +617,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -768,6 +774,7 @@
 						<Y=0.996000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -880,6 +887,7 @@
 			>
 			<Object=
 				<Item=
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -992,6 +1000,7 @@
 			>
 			<Object=
 				<Item=
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1337,6 +1346,7 @@
 						<Y=0.000000>
 						<Z=-0.261799>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1488,6 +1498,7 @@
 						<Y=0.000000>
 						<Z=-0.261799>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1639,6 +1650,7 @@
 						<Y=0.000000>
 						<Z=-0.261799>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2009,6 +2021,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2078,6 +2091,7 @@
 						<Y=3.000000>
 						<Z=-0.250000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2295,6 +2309,7 @@
 						<Y=-5.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2369,6 +2384,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2443,6 +2459,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2517,6 +2534,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2591,6 +2609,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3179,6 +3198,7 @@
 						<Y=9.000000>
 						<Z=-1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3277,6 +3297,7 @@
 						<Y=8.000000>
 						<Z=-1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3375,6 +3396,7 @@
 						<Y=8.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3473,6 +3495,7 @@
 						<Y=-3.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3571,6 +3594,7 @@
 						<Y=-4.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3669,6 +3693,7 @@
 						<Y=-4.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3767,6 +3792,7 @@
 						<Y=-7.000000>
 						<Z=-1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3865,6 +3891,7 @@
 						<Y=-8.000000>
 						<Z=-0.250000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3963,6 +3990,7 @@
 						<Y=-10.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4061,6 +4089,7 @@
 						<Y=-11.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4159,6 +4188,7 @@
 						<Y=-11.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4257,6 +4287,7 @@
 						<Y=-12.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4355,6 +4386,7 @@
 						<Y=-14.000000>
 						<Z=-1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4453,6 +4485,7 @@
 						<Y=-15.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4551,6 +4584,7 @@
 						<Y=-18.000000>
 						<Z=-0.500000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4649,6 +4683,7 @@
 						<Y=-20.000000>
 						<Z=-1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4747,6 +4782,7 @@
 						<Y=-24.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4845,6 +4881,7 @@
 						<Y=-24.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4943,6 +4980,7 @@
 						<Y=-24.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7491,6 +7529,7 @@
 						<Y=10.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7687,6 +7726,7 @@
 						<Y=8.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7883,6 +7923,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7981,6 +8022,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8079,6 +8121,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8177,6 +8220,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8275,6 +8319,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8373,6 +8418,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8471,6 +8517,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8569,6 +8616,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8667,6 +8715,7 @@
 						<Y=6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8765,6 +8814,7 @@
 						<Y=5.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8863,6 +8913,7 @@
 						<Y=5.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8961,6 +9012,7 @@
 						<Y=5.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9059,6 +9111,7 @@
 						<Y=5.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9157,6 +9210,7 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9255,6 +9309,7 @@
 						<Y=4.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9353,6 +9408,7 @@
 						<Y=2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9451,6 +9507,7 @@
 						<Y=2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9549,6 +9606,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9647,6 +9705,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9745,6 +9804,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9843,6 +9903,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9941,6 +10002,7 @@
 						<Y=-2.000000>
 						<Z=-0.250000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10039,6 +10101,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10137,6 +10200,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10235,6 +10299,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10333,6 +10398,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10431,6 +10497,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10529,6 +10596,7 @@
 						<Y=-4.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10627,6 +10695,7 @@
 						<Y=-6.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10725,6 +10794,7 @@
 						<Y=-7.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10823,6 +10893,7 @@
 						<Y=-7.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10921,6 +10992,7 @@
 						<Y=-8.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11019,6 +11091,7 @@
 						<Y=-9.000000>
 						<Z=-0.250000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11117,6 +11190,7 @@
 						<Y=-10.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11215,6 +11289,7 @@
 						<Y=-10.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11313,6 +11388,7 @@
 						<Y=-11.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11411,6 +11487,7 @@
 						<Y=-12.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11509,6 +11586,7 @@
 						<Y=-12.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11607,6 +11685,7 @@
 						<Y=-14.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11705,6 +11784,7 @@
 						<Y=-14.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11803,6 +11883,7 @@
 						<Y=-14.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11901,6 +11982,7 @@
 						<Y=-15.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11999,6 +12081,7 @@
 						<Y=-17.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12097,6 +12180,205 @@
 						<Y=-18.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_2x2.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_2x2">
+				<UId=132>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=2.000000>
+								<Y=2.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=6.000000>
+						<Y=-23.000000>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_2x2.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_2x2">
+				<UId=133>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=2.000000>
+								<Y=2.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=8.000000>
+						<Y=-23.000000>
+						<Z=0.000000>
+					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12191,10 +12473,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=6.000000>
+						<X=10.000000>
 						<Y=-23.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12289,10 +12572,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=8.000000>
-						<Y=-23.000000>
+						<X=-10.000000>
+						<Y=-25.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12387,10 +12671,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=10.000000>
-						<Y=-23.000000>
+						<X=-8.000000>
+						<Y=-25.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12485,206 +12770,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-10.000000>
-						<Y=-25.000000>
-						<Z=0.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_2x2.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_2x2">
-				<UId=138>
-				<Active>
-				<Static>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=-8.000000>
-						<Y=-25.000000>
-						<Z=0.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_2x2.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_2x2">
-				<UId=139>
-				<Active>
-				<Static>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
 						<X=6.000000>
 						<Y=-25.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12699,7 +12789,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x8">
-				<UId=140>
+				<UId=138>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12773,7 +12863,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x8">
-				<UId=141>
+				<UId=139>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12847,7 +12937,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x8">
-				<UId=142>
+				<UId=140>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12907,6 +12997,152 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x8">
+				<UId=141>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=8.000000>
+								<Z=4.000000>
+							>
+							<Mass=0.000000>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-3.000000>
+						<Y=-26.500000>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x8">
+				<UId=142>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=8.000000>
+								<Z=4.000000>
+							>
+							<Mass=0.000000>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-19.500000>
+						<Y=3.000000>
+						<Z=0.000000>
+					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12972,15 +13208,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-3.000000>
-						<Y=-26.500000>
+						<X=-7.500000>
+						<Y=-12.000000>
 						<Z=0.000000>
 					>
-					<Rotation=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13046,10 +13278,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-19.500000>
-						<Y=3.000000>
+						<X=4.500000>
+						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13115,148 +13348,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-7.500000>
-						<Y=-12.000000>
-						<Z=0.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x8.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x8">
-				<UId=146>
-				<Active>
-				<Static>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=-0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=8.000000>
-								<Z=4.000000>
-							>
-							<Mass=0.000000>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=4.500000>
-						<Y=0.000000>
-						<Z=0.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x8.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x8">
-				<UId=147>
-				<Active>
-				<Static>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=-0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=8.000000>
-								<Z=4.000000>
-							>
-							<Mass=0.000000>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
 						<X=4.500000>
 						<Y=-8.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13271,7 +13367,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=148>
+				<UId=146>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13374,7 +13470,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=149>
+				<UId=147>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13477,7 +13573,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=150>
+				<UId=148>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13566,6 +13662,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13580,7 +13677,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=151>
+				<UId=149>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13664,6 +13761,7 @@
 						<Y=-5.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13678,7 +13776,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=152>
+				<UId=150>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13762,6 +13860,7 @@
 						<Y=-3.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13776,7 +13875,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=153>
+				<UId=151>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13874,7 +13973,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=154>
+				<UId=152>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13958,6 +14057,7 @@
 						<Y=-18.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13972,7 +14072,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=155>
+				<UId=153>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -14070,7 +14170,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=156>
+				<UId=154>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -14168,7 +14268,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=157>
+				<UId=155>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14252,6 +14352,210 @@
 						<Y=15.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_tr_4x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x4">
+				<UId=156>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-27.500000>
+						<Y=13.000000>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_tr_4x4">
+				<UId=157>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="generic_blocks">
+							<UseQuaternion=True>
+							<QChannel>
+							<Channel=
+								<Curve>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Mesh">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Mesh="graphics/g_block_tr_4x4.nmg">
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-16.000000>
+						<Y=-22.000000>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14346,211 +14650,11 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-27.500000>
-						<Y=13.000000>
-						<Z=0.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_tr_4x4">
-				<UId=159>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Mesh">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Mesh="graphics/g_block_tr_4x4.nmg">
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=-16.000000>
-						<Y=-22.000000>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_tr_4x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=160>
-				<Active>
-				<Static>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
 						<X=-15.500000>
 						<Y=-22.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14565,7 +14669,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=161>
+				<UId=159>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14668,7 +14772,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=162>
+				<UId=160>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -14766,7 +14870,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=163>
+				<UId=161>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14849,6 +14953,7 @@
 						<Y=-13.500000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14863,7 +14968,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=164>
+				<UId=162>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14946,6 +15051,7 @@
 						<Y=-6.258170>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14960,7 +15066,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=165>
+				<UId=163>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15057,7 +15163,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=166>
+				<UId=164>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15154,7 +15260,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=167>
+				<UId=165>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15251,7 +15357,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=168>
+				<UId=166>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15348,7 +15454,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=169>
+				<UId=167>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -15446,7 +15552,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=202>
+				<UId=168>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15529,6 +15635,7 @@
 						<Y=-14.012523>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15543,7 +15650,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=203>
+				<UId=169>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15626,6 +15733,7 @@
 						<Y=-14.012523>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15640,7 +15748,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=204>
+				<UId=170>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15723,6 +15831,7 @@
 						<Y=-14.012523>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15737,7 +15846,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=205>
+				<UId=171>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15820,6 +15929,7 @@
 						<Y=-14.012523>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15834,7 +15944,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=206>
+				<UId=172>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15917,6 +16027,7 @@
 						<Y=-14.012523>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15931,7 +16042,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x8">
-				<UId=207>
+				<UId=173>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15990,6 +16101,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16004,7 +16116,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=210>
+				<UId=174>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16087,6 +16199,7 @@
 						<Y=-14.012523>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16101,7 +16214,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=212>
+				<UId=175>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16184,6 +16297,7 @@
 						<Y=-15.992873>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16198,7 +16312,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=213>
+				<UId=176>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16281,6 +16395,7 @@
 						<Y=-15.992873>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16295,7 +16410,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=214>
+				<UId=177>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16378,6 +16493,7 @@
 						<Y=-15.992873>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16392,7 +16508,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=215>
+				<UId=178>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16475,6 +16591,7 @@
 						<Y=-15.992873>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16489,7 +16606,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=216>
+				<UId=179>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16572,6 +16689,7 @@
 						<Y=-15.992873>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16586,7 +16704,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x8">
-				<UId=217>
+				<UId=180>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16645,6 +16763,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16659,7 +16778,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=218>
+				<UId=181>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16742,6 +16861,7 @@
 						<Y=-15.992873>
 						<Z=-0.000008>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16756,7 +16876,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=224>
+				<UId=182>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16845,6 +16965,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16859,7 +16980,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=225>
+				<UId=183>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16948,6 +17069,7 @@
 						<Y=-3.141593>
 						<Z=1.570779>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16962,7 +17084,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=226>
+				<UId=184>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17051,6 +17173,7 @@
 						<Y=3.141592>
 						<Z=1.570779>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17065,7 +17188,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=227>
+				<UId=185>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -17154,6 +17277,7 @@
 						<Y=0.000000>
 						<Z=0.709476>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17168,7 +17292,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=228>
+				<UId=186>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17257,6 +17381,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17271,7 +17396,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=170>
+				<UId=187>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17327,7 +17452,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=171>
+				<UId=188>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17365,7 +17490,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=172>
+				<UId=189>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17403,7 +17528,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTree0">
-				<UId=173>
+				<UId=190>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17441,7 +17566,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=174>
+				<UId=191>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17479,7 +17604,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=175>
+				<UId=192>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17517,7 +17642,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=176>
+				<UId=193>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17560,7 +17685,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=177>
+				<UId=194>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17603,7 +17728,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=178>
+				<UId=195>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17646,7 +17771,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=179>
+				<UId=196>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17684,7 +17809,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=180>
+				<UId=197>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17722,7 +17847,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=181>
+				<UId=198>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17760,7 +17885,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=182>
+				<UId=199>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17803,7 +17928,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceColumn">
-				<UId=183>
+				<UId=200>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17841,7 +17966,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=184>
+				<UId=201>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17879,7 +18004,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=185>
+				<UId=202>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17917,7 +18042,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=186>
+				<UId=203>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17955,7 +18080,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=187>
+				<UId=204>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -17993,7 +18118,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=188>
+				<UId=205>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18031,7 +18156,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=189>
+				<UId=206>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18069,7 +18194,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=190>
+				<UId=207>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18107,7 +18232,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=191>
+				<UId=208>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18145,7 +18270,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=192>
+				<UId=209>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18183,7 +18308,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=193>
+				<UId=210>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18221,7 +18346,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=194>
+				<UId=211>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18259,7 +18384,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=195>
+				<UId=212>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18297,7 +18422,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=196>
+				<UId=213>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18335,7 +18460,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=197>
+				<UId=214>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18383,7 +18508,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=198>
+				<UId=215>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18421,7 +18546,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=199>
+				<UId=216>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18459,7 +18584,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=200>
+				<UId=217>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18497,7 +18622,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=201>
+				<UId=218>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18535,7 +18660,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=208>
+				<UId=219>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18573,7 +18698,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=209>
+				<UId=220>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18611,7 +18736,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=220>
+				<UId=221>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18649,7 +18774,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=221>
+				<UId=222>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18687,7 +18812,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=222>
+				<UId=223>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18725,7 +18850,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=223>
+				<UId=224>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -18763,7 +18888,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=229>
+				<UId=225>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>

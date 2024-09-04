@@ -11,7 +11,7 @@
 				>
 				<Parm=
 					<Id="bitmap_filename">
-					<Value="levels/level_1.psd">
+					<Value="levels/level_6.psd">
 				>
 				<Parm=
 					<Id="is_underwater">
@@ -30,7 +30,7 @@
 			>
 			<Parm=
 				<Id="bitmap_filename">
-				<Value="levels/level_1.psd">
+				<Value="levels/level_6.psd">
 			>
 			<Parm=
 				<Id="is_underwater">
@@ -617,7 +617,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1977,9 +1976,9 @@
 			<W=0.000000>
 		>
 		<R3=
-			<X=12.996021>
-			<Y=18.003925>
-			<Z=-92.138161>
+			<X=13.556540>
+			<Y=19.621473>
+			<Z=-104.984612>
 			<W=1.000000>
 		>
 	>
@@ -2010,9 +2009,9 @@
 					<W=0.000000>
 				>
 				<R3=
-					<X=12.996021>
-					<Y=18.003925>
-					<Z=-92.138161>
+					<X=13.556540>
+					<Y=19.621473>
+					<Z=-104.984612>
 					<W=1.000000>
 				>
 			>

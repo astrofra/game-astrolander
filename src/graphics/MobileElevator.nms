@@ -3,8 +3,400 @@
 	<Items=
 		<MObject=
 			<MItem=
-				<Id="elevator_mesh">
+				<Id="elevator">
 				<UId=0>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="mobile_items">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
+\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
+**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
+***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
+\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
+÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
+\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****d±zë+**ªid±zë>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****z¹cj+**ªiz¹cj>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=5>
+					<Mask=4>
+					<LinearDamping_v2=0.750000>
+					<AngularDamping_v2=0.750000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Dynamic">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.205446>
+								<Y=0.151844>
+								<Z=-0.022129>
+							>
+							<Rotation=
+								<X=-0.000000>
+								<Y=-1.570796>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=6.000000>
+								<Y=0.670455>
+								<Z=3.464836>
+							>
+							<Mass=10.000000>
+							<StaticFriction=1.000000>
+							<DynamicFriction=1.000000>
+							<Restitution=0.000000>
+						>
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=-1.405446>
+								<Y=0.064752>
+								<Z=-0.022129>
+							>
+							<Rotation=
+								<X=0.785416>
+								<Y=1.570791>
+								<Z=3.141580>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=6.000000>
+								<Y=0.500000>
+								<Z=0.850000>
+							>
+							<Mass=10.000000>
+							<StaticFriction=0.000000>
+							<DynamicFriction=0.000000>
+							<Restitution=0.000000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="elevator_handler">
+				<UId=1>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<ScriptedObject=
+					<ScriptUnit=
+						<Script="scripts/mobiles_handler.nut">
+						<Class="MobileElevator">
+						<ParmList=
+							<Parm=
+								<Id="speed">
+								<Value=1.000000>
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=0>
+					<Mask=0>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Kinematic">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="block">
+				<UId=2>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=0.000001>
+						<Y=2.174460>
+						<Z=0.087352>
+					>
+					<Rotation=
+						<X=-0.000017>
+						<Y=1.570796>
+						<Z=-0.000000>
+					>
+					<Scale=
+						<X=0.200000>
+						<Y=0.200000>
+						<Z=0.400000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_2x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="block">
+				<UId=3>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-1.250000>
+						<Y=2.174000>
+						<Z=0.087000>
+					>
+					<Rotation=
+						<X=-0.000017>
+						<Y=1.570796>
+						<Z=0.000000>
+					>
+					<Scale=
+						<X=0.200000>
+						<Y=0.200000>
+						<Z=0.100000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_2x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="block">
+				<UId=4>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=1.250000>
+						<Y=2.174000>
+						<Z=0.087000>
+					>
+					<Rotation=
+						<X=-0.000017>
+						<Y=1.570796>
+						<Z=0.000000>
+					>
+					<Scale=
+						<X=0.200000>
+						<Y=0.200000>
+						<Z=0.100000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_2x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="elevator_mesh">
+				<UId=5>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -94,63 +486,10 @@
 					<Mask=4>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
-					<Mode="Dynamic">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.387066>
-								<Z=0.000002>
-							>
-							<Rotation=
-								<X=-0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=6.000000>
-								<Y=3.125000>
-								<Z=1.000000>
-							>
-							<Mass=10.000000>
-							<StaticFriction=1.000000>
-							<DynamicFriction=1.000000>
-							<Restitution=0.000000>
-						>
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=-1.451124>
-								<Z=0.167441>
-							>
-							<Rotation=
-								<X=0.785398>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=6.000000>
-								<Y=0.500000>
-								<Z=0.850000>
-							>
-							<Mass=10.000000>
-							<StaticFriction=0.000000>
-							<DynamicFriction=0.000000>
-							<Restitution=0.500000>
-						>
-					>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
 				>
 			>
 			<Object=
@@ -160,6 +499,7 @@
 						<Y=-1.570796>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -171,288 +511,10 @@
 				<Geometry="graphics/jawgate_top.nmg">
 			>
 		>
-		<MObject=
-			<MItem=
-				<Id="anchor_0">
-				<UId=1>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="Kinematic">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=4.000000>
-						<Y=0.000000>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-1.570796>
-						<Y=0.000000>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="anchor_1">
-				<UId=2>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="Kinematic">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=-4.000000>
-						<Y=0.000000>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-1.570796>
-						<Y=0.000000>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="elevator_handler">
-				<UId=3>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<ScriptedObject=
-					<ScriptUnit=
-						<Script="scripts/mobiles_handler.nut">
-						<Class="MobileElevator">
-						<ParmList=
-							<Parm=
-								<Id="speed">
-								<Value=5.000000>
-							>
-						>
-					>
-				>
-				<ScriptUnit=
-					<Script="scripts/mobiles_handler.nut">
-					<Class="MobileElevator">
-					<ParmList=
-						<Parm=
-							<Id="speed">
-							<Value=5.000000>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Rotation=
-						<X=0.000000>
-						<Y=-1.570796>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="block">
-				<UId=4>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=0.000001>
-						<Y=2.174460>
-						<Z=0.087352>
-					>
-					<Rotation=
-						<X=-0.000017>
-						<Y=1.570796>
-						<Z=-0.000000>
-					>
-					<Scale=
-						<X=0.200000>
-						<Y=0.200000>
-						<Z=0.400000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_2x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="block">
-				<UId=5>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=-1.250000>
-						<Y=2.174000>
-						<Z=0.087000>
-					>
-					<Rotation=
-						<X=-0.000017>
-						<Y=1.570796>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.200000>
-						<Y=0.200000>
-						<Z=0.100000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_2x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="block">
-				<UId=6>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=1.250000>
-						<Y=2.174000>
-						<Z=0.087000>
-					>
-					<Rotation=
-						<X=-0.000017>
-						<Y=1.570796>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.200000>
-						<Y=0.200000>
-						<Z=0.100000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_2x4.nmg">
-			>
-		>
 		<MLight=
 			<MItem=
 				<Id="New Light">
-				<UId=7>
+				<UId=6>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -465,6 +527,9 @@
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -491,9 +556,51 @@
 				<VolumetricRange=8.000000>
 			>
 		>
+		<Trigger=
+			<MItem=
+				<Id="elevator_trigger">
+				<UId=7>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=0.000000>
+					<Y=1.817150>
+					<Z=0.000000>
+				>
+				<Scale=
+					<X=3.638000>
+					<Y=3.000000>
+					<Z=6.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+		>
 		<MConstraint=
 			<MItem=
-				<Id="const_0a">
+				<Id="New Constraint">
 				<UId=8>
 				<Active>
 				<Priority=0.500000>
@@ -506,6 +613,9 @@
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -531,9 +641,9 @@
 						<W=0.000000>
 					>
 					<R3=
-						<X=0.000000>
+						<X=2.000000>
 						<Y=0.000000>
-						<Z=1.000000>
+						<Z=3.000000>
 						<W=1.000000>
 					>
 				>
@@ -557,9 +667,9 @@
 						<W=0.000000>
 					>
 					<R3=
-						<X=4.000000>
+						<X=2.000000>
 						<Y=0.000000>
-						<Z=1.000000>
+						<Z=3.000000>
 						<W=1.000000>
 					>
 				>
@@ -567,7 +677,7 @@
 		>
 		<MConstraint=
 			<MItem=
-				<Id="const_0b">
+				<Id="New Constraint">
 				<UId=9>
 				<Active>
 				<Priority=0.500000>
@@ -580,6 +690,9 @@
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -605,9 +718,9 @@
 						<W=0.000000>
 					>
 					<R3=
-						<X=0.000000>
+						<X=2.000000>
 						<Y=0.000000>
-						<Z=-1.000000>
+						<Z=-3.000000>
 						<W=1.000000>
 					>
 				>
@@ -631,9 +744,9 @@
 						<W=0.000000>
 					>
 					<R3=
-						<X=4.000000>
+						<X=2.000000>
 						<Y=0.000000>
-						<Z=-1.000000>
+						<Z=-3.000000>
 						<W=1.000000>
 					>
 				>
@@ -641,7 +754,7 @@
 		>
 		<MConstraint=
 			<MItem=
-				<Id="const_1a">
+				<Id="New Constraint">
 				<UId=10>
 				<Active>
 				<Priority=0.500000>
@@ -654,6 +767,9 @@
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -679,9 +795,9 @@
 						<W=0.000000>
 					>
 					<R3=
-						<X=0.000000>
+						<X=-2.000000>
 						<Y=0.000000>
-						<Z=1.000000>
+						<Z=-3.000000>
 						<W=1.000000>
 					>
 				>
@@ -705,9 +821,9 @@
 						<W=0.000000>
 					>
 					<R3=
-						<X=-4.000000>
+						<X=-2.000000>
 						<Y=0.000000>
-						<Z=1.000000>
+						<Z=-3.000000>
 						<W=1.000000>
 					>
 				>
@@ -715,7 +831,7 @@
 		>
 		<MConstraint=
 			<MItem=
-				<Id="const_1b">
+				<Id="New Constraint">
 				<UId=11>
 				<Active>
 				<Priority=0.500000>
@@ -728,6 +844,9 @@
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -753,9 +872,9 @@
 						<W=0.000000>
 					>
 					<R3=
-						<X=0.000000>
+						<X=-2.000000>
 						<Y=0.000000>
-						<Z=-1.000000>
+						<Z=3.000000>
 						<W=1.000000>
 					>
 				>
@@ -779,9 +898,9 @@
 						<W=0.000000>
 					>
 					<R3=
-						<X=-4.000000>
+						<X=-2.000000>
 						<Y=0.000000>
-						<Z=-1.000000>
+						<Z=3.000000>
 						<W=1.000000>
 					>
 				>
@@ -790,47 +909,47 @@
 	>
 	<Links=
 		<Link=
-			<Item=1>
-			<Link=3>
+			<Item=2>
+			<Link=5>
 		>
 		<Link=
-			<Item=2>
-			<Link=3>
+			<Item=3>
+			<Link=5>
 		>
 		<Link=
 			<Item=4>
-			<Link=0>
+			<Link=5>
 		>
 		<Link=
 			<Item=5>
 			<Link=0>
 		>
 		<Link=
-			<Item=6>
-			<Link=0>
+			<Item=7>
+			<Link=1>
 		>
 	>
 	<Skins>
 	<Constraints=
 		<Constraint=
 			<Uid=8>
-			<UidA=1>
-			<UidB=0>
+			<UidA=0>
+			<UidB=1>
 		>
 		<Constraint=
 			<Uid=9>
-			<UidA=1>
-			<UidB=0>
+			<UidA=0>
+			<UidB=1>
 		>
 		<Constraint=
 			<Uid=10>
-			<UidA=2>
-			<UidB=0>
+			<UidA=0>
+			<UidB=1>
 		>
 		<Constraint=
 			<Uid=11>
-			<UidA=2>
-			<UidB=0>
+			<UidA=0>
+			<UidB=1>
 		>
 	>
 	<Globals=
@@ -859,27 +978,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.882331>
+			<X=0.830753>
 			<Y=0.000000>
-			<Z=-0.470629>
+			<Z=-0.556641>
 			<W=0.000000>
 		>
 		<R1=
-			<X=0.195562>
-			<Y=0.909577>
-			<Z=0.366639>
+			<X=0.179688>
+			<Y=0.946465>
+			<Z=0.268174>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.428073>
-			<Y=-0.415535>
-			<Z=0.802549>
+			<X=0.526841>
+			<Y=-0.322808>
+			<Z=0.786278>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-13.377880>
-			<Y=12.986040>
-			<Z=-25.080767>
+			<X=-20.909275>
+			<Y=18.254742>
+			<Z=-31.782242>
 			<W=1.000000>
 		>
 	>
@@ -892,27 +1011,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=0.882331>
+					<X=0.830753>
 					<Y=0.000000>
-					<Z=-0.470629>
+					<Z=-0.556641>
 					<W=0.000000>
 				>
 				<R1=
-					<X=0.195562>
-					<Y=0.909577>
-					<Z=0.366639>
+					<X=0.179688>
+					<Y=0.946465>
+					<Z=0.268174>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.428073>
-					<Y=-0.415535>
-					<Z=0.802549>
+					<X=0.526841>
+					<Y=-0.322808>
+					<Z=0.786278>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-13.377880>
-					<Y=12.986040>
-					<Z=-25.080767>
+					<X=-20.909275>
+					<Y=18.254742>
+					<Z=-31.782242>
 					<W=1.000000>
 				>
 			>
