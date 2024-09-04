@@ -84,7 +84,7 @@
 				<Z=0.000000>
 			>
 			<Glossiness=0.100000>
-			<AlphaThreshold=0.100000>
+			<AlphaThreshold=0.010000>
 			<PhysicMaterial=
 				<StaticFriction=0.750000>
 				<DynamicFriction=0.500000>
@@ -94,8 +94,9 @@
 				<Smoothing>
 				<NormalMapTangent>
 				<DoubleSided>
-				<AlphaTest>
+				<NoZWrite>
 			>
+			<BlendOp="Alpha">
 			<ShaderMap=
 				<Pos=
 					<X=0.000000>

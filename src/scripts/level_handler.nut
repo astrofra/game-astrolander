@@ -66,6 +66,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			timer_table.rawset(timer_name, g_clock)
 		else
 		{
+			print("g_clock = " + g_clock)
+			print("g_clock - timer_table[timer_name] = " + (g_clock - timer_table[timer_name]).tostring())
 			if (g_clock - timer_table[timer_name] >= SecToTick(timer_duration))
 				return false
 		}
@@ -115,7 +117,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	UpdateIntroScreen(scene)
 	//----------------------------------
 	{
-		if (WaitForTimer("UpdateIntroScreen", Sec(2.0)))
+		if (WaitForTimer("UpdateIntroScreen", Sec(2.0) * g_clock_scale))
 		{
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			game_ui.GameMessageWindowSetVisible("get_ready", true)
@@ -135,7 +137,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	UpdateLevelCompleteScreen(scene)
 	//------------------------------------------
 	{
-		if (WaitForTimer("UpdateLevelCompleteScreen", Sec(3.0)))
+		if (WaitForTimer("UpdateLevelCompleteScreen", Sec(3.0) * g_clock_scale))
 		{
 			stopwatch_handler.Stop()
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
@@ -156,7 +158,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	UpdateGameOverScreen(scene)
 	//-------------------------------------
 	{
-		if (WaitForTimer("UpdateGameOverScreen", Sec(3.0)))
+		if (WaitForTimer("UpdateGameOverScreen", Sec(3.0) * g_clock_scale))
 		{
 			stopwatch_handler.Stop()
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
@@ -264,6 +266,10 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		game_ui	=	InGameUI(SceneGetUI(scene))
 		game_ui.UpdateRoomName(g_locale.level_names[level_name])
 		state = "Game"
+		print("LevelHandler::OnSetup() g_clock_scale = " + g_clock_scale)
+		EngineSetClockScale(g_engine, g_clock_scale)
+//		EngineSetFixedDeltaFrame(g_engine, 1.0 / 60.0)
+		EngineSetMaximumDeltaFrame(g_engine, 1.0 / 60.0)
 	}
 
 	//----------------------------
@@ -289,8 +295,6 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		update_function = UpdateIntroScreen
 		player_script.update_function = player_script.UpdatePlayerIsDead
-
-		EngineSetClockScale(g_engine, g_clock_scale)
 	}
 
 	//------------------------

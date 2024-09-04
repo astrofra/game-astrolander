@@ -2,6 +2,7 @@
 */
 
 		Include("scripts/locale.nut")
+		Include("scripts/globals.nut")
 
 g_ui_IDs			<-	0
 g_hud_font_color	<-	Vector(0,0,0,255)
@@ -21,6 +22,7 @@ function	UICommonSetup(ui)
 //	UILoadFont("ui/elronet.ttf")
 
 /*	
+	//	Enable this and watch the editor crash.
     UISetSkin    (
                     ui, "ui/skin/t.png", "ui/skin/l.png", "ui/skin/r.png", "ui/skin/b.png",
                     "ui/skin/tl.png", "ui/skin/tr.png", "ui/skin/bl.png", "ui/skin/br.png", 0xff9ebc24,
@@ -56,7 +58,9 @@ function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_
 	return [ window, widget, _id ]
 }
 
+//-------------
 class	TitleUI
+//-------------
 {
 
 	ui	=	0
@@ -65,11 +69,12 @@ class	TitleUI
 	level_easy_button	=	0
 	level_normal_button	=	0
 	level_hard_button	=	0
+	control_reverse		=	0
 
 	constructor(_ui)
 	{
 		ui = _ui
-		start_button = CreateLabel(ui, g_locale.press_space, 640 - 200, 600, 60, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+		start_button = CreateLabel(ui, "Cosmic Lander", 640 - 300, 300, 80, 600, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
 		level_easy_button = CreateLabel(ui, g_locale.level_easy, 640 - 200 - 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
 		level_normal_button = CreateLabel(ui, g_locale.level_normal, 640 - 200, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
 		level_hard_button = CreateLabel(ui, g_locale.level_hard, 640 - 200 + 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
@@ -77,27 +82,45 @@ class	TitleUI
 		WidgetSetEventHandler(level_easy_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelEasy)
 		WidgetSetEventHandler(level_normal_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelNormal)
 		WidgetSetEventHandler(level_hard_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelHard)
-
-		//CreateLabel(g_locale.copyright, 640, 900, 32, 900, 64)
+		
+		control_reverse = CreateLabel(ui, CreateStringControlReverse(), 640 - 300, 750, 32, 600, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+		WidgetSetEventHandlerWithContext(control_reverse[1], EventCursorDown, this, TitleUI.OnTitleUIReverseControls)
+		CreateLabel(ui, g_locale.copyright, 640 - 400, 900, 30, 800, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
 
 		//AddLogo()
+	}
+	
+	function	CreateStringControlReverse()
+	{	return (g_locale.control_reverse + " : " + (g_reversed_controls?g_locale.yes:g_locale.no))	}
 
-		//w_cfg_control_reverse = CreateTitleLabel(CreateStringControlReverse(), 640, 650, 28, 400, 64)
+	function	OnTitleUIReverseControls(event, table)
+	{
+		g_reversed_controls = !g_reversed_controls
+		TextSetText(control_reverse[1], CreateStringControlReverse())
 	}
 
-	function	OnTitleUISelectLevelEasy()
+	function	OnTitleUISelectLevelEasy(event, table)
 	{
 		print("TitleUI::OnTitleUISelectLevelEasy()")
+		g_clock_scale = g_clock_scale_easy
+		print("TitleUI::g_clock_scale = " + g_clock_scale)
+		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
-	function	OnTitleUISelectLevelNormal()
+	function	OnTitleUISelectLevelNormal(event, table)
 	{
 		print("TitleUI::OnTitleUISelectLevelNormal()")
+		g_clock_scale = 1.0
+		print("TitleUI::g_clock_scale = " + g_clock_scale)
+		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
-	function	OnTitleUISelectLevelHard()
+	function	OnTitleUISelectLevelHard(event, table)
 	{
 		print("TitleUI::OnTitleUISelectLevelHard()")
+		g_clock_scale = g_clock_scale_hard
+		print("TitleUI::g_clock_scale = " + g_clock_scale)
+		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
 	function	AddLogo()
@@ -136,6 +159,8 @@ class	InGameUI
 		return_base			= { handler = 0, visible = false }
 		mission_complete	= { handler = 0, visible = false }
 	}
+
+	touch_feedback			=	0
 	
 	//--------------
 	constructor(_ui)
@@ -149,6 +174,7 @@ class	InGameUI
 		stopwatch = CreateStopwatch()
 		room_name = CreateLevelName()
 		artifact_count = CreateArtifactCounter()
+		touch_feedback = CreateTouchFeedback()
 		//beacon_window = CreateCompass()
 
 		inventory_bitmaps = []
@@ -158,6 +184,41 @@ class	InGameUI
 		game_window.get_ready.handler			= CreateGameMessageWindow(g_locale.get_ready)
 		game_window.return_base.handler			= CreateGameMessageWindow(g_locale.return_base)
 		game_window.mission_complete.handler	= CreateGameMessageWindow(g_locale.mission_complete)
+	}
+
+	function	CreateTouchFeedback()
+	{
+		local	_texture,
+				_touch_feedback = { left = 0, right = 0	},
+				_touch_scale
+
+		_touch_scale = 2.0
+
+		_texture = EngineLoadTexture(g_engine, "ui/touch_feedback.png")
+		_touch_feedback.left = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 256.0, 256.0)
+		WindowCenterPivot(_touch_feedback.left)
+		WindowSetPosition(_touch_feedback.left, 640.0 * 0.3, 480.0 + 256.0)
+		WindowSetScale(_touch_feedback.left, _touch_scale, _touch_scale)
+
+		_touch_feedback.right = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 256.0, 256.0)
+		WindowCenterPivot(_touch_feedback.right)
+		WindowSetPosition(_touch_feedback.right, 1280.0 - 640.0 * 0.3, 480.0 + 256.0)
+		WindowSetScale(_touch_feedback.right, _touch_scale, _touch_scale)
+
+		WindowShow(_touch_feedback.left, false)
+		WindowShow(_touch_feedback.right, false)
+
+		return _touch_feedback
+	}
+
+	function	UpdateTouchFeedback(left_enabled, right_enabled, 
+									left_pos = Vector(640.0 * 0.3, 480.0 + 256.0, 0),
+									right_pos = Vector(1280.0 - 640.0 * 0.3, 480.0 + 256.0, 0) )
+	{
+		WindowShow(touch_feedback.left, left_enabled)
+		WindowShow(touch_feedback.right, right_enabled)
+		WindowSetPosition(touch_feedback.left, left_pos.x, left_pos.y)
+		WindowSetPosition(touch_feedback.right, right_pos.x, right_pos.y)
 	}
 
 	//-------------------------
@@ -174,7 +235,6 @@ class	InGameUI
 
 		WindowSetPosition(beacon_window, 245.0 / 2.0, 245.0 / 2.0)
 		WindowSetScale(beacon_window, 0.85, 0.85)
-
 
 		return beacon_window
 	}
@@ -195,7 +255,7 @@ class	InGameUI
 		local	_window, _widget
 		//	Start menu window
 		_window = UIAddWindow(ui, -1, 1280.0 / 2.0, 960.0 / 2.0, 800.0, 300.0)
-		WindowSetStyle(_window, StyleMovable)
+//		WindowSetStyle(_window, StyleMovable)
 		WindowSetTitle(_window, "")
 		WindowCenterPivot(_window)		
 		WindowSetCommandList(_window, "hide;")
@@ -226,9 +286,9 @@ class	InGameUI
 
 
 		if (flag)
-			WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha 0.75,1;")
+			WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.75 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + " ;")
 		else
-			WindowSetCommandList(_win.handler, "toalpha 0,1;toalpha " + (0.75 / speed_scale).tostring() + ",0;hide;")
+			WindowSetCommandList(_win.handler, "toalpha 0,1;toalpha " + (0.75 / speed_scale * g_clock_scale).tostring() + ",0;hide;")
 
 		_win.visible = flag
 	}
@@ -241,7 +301,7 @@ class	InGameUI
 		if (_win.visible == true)
 			return
 
-		WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha 0.75,1;nop 5;toalpha 1.5,0;")
+		WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.75 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + ";nop " + (5 * g_clock_scale).tostring() + ";toalpha 1.5,0;")
 
 		_win.visible = false
 	}
@@ -292,7 +352,7 @@ class	InGameUI
 	//----------------------------------------
 	function	UpdateFuelGauge(v)
 	//----------------------------------------
-	{		TextSetText(fuel_gauge[1], CreateGaugeBar(v + 4))	}
+	{		TextSetText(fuel_gauge[1], CreateGaugeBar(v))	}
 
 	//----------------------------------------
 	function	UpdateRoomName(name)
@@ -308,7 +368,7 @@ class	InGameUI
 	function	CreateGaugeBar(n)
 	//----------------------------------------
 	{
-		n = (n.tofloat() / 10.0).tointeger()
+		n = (n.tofloat() / 2.0).tointeger()
 		local i, str
 		str = ""
 		for(i = 0; i < n; i++)
@@ -341,8 +401,8 @@ class	InGameUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateArtifactCounter()")
-		CreateLabel(ui, g_locale.hud_artifacts, 1280 - 360, 960 - 64, 32, 380)
-		local	_counter = CreateLabel(ui, "0/0", 1280 - 360 + 280, 960 - 64)
+		CreateLabel(ui, g_locale.hud_artifacts, 1280 - 400, 40, 32, 380)// 960 - 64, 32, 380)
+		local	_counter = CreateLabel(ui, "0/0", 1280 - 400 + 280,  40) //960 - 64)
 		return _counter
 	}
 	//----------------------------------------
@@ -351,9 +411,9 @@ class	InGameUI
 	{
 		print("InGameUI::CreateDamageGauge()")
 
-		CreateLabel(ui, g_locale.hud_damage, 310 + 0, 0)
-		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100), 310 + 200, 0)
-		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 310 + 200, 0)
+		CreateLabel(ui, g_locale.hud_damage, 0, 0) //310 + 0, 0)
+		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100), 200, 0, 32, 680)
+		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 200, 0, 32, 680)
 		return _gauge
 	}
 
@@ -363,9 +423,9 @@ class	InGameUI
 	{
 		print("InGameUI::CreateFuelGauge()")
 
-		CreateLabel(ui, g_locale.hud_fuel, 0, 0)
-		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100),  150, 0, 32)
-		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 150, 0, 32)
+		CreateLabel(ui, g_locale.hud_fuel, 0, 40)
+		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100),  200, 40, 32, 680)
+		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 200, 40, 32, 680)
 		return _gauge
 	}
 }

@@ -5,6 +5,99 @@
 
 		Include("scripts/globals.nut")
 
+class	MobileLazerGun
+{
+	scene				=	0
+	parent				=	0
+	beam_item			=	0
+
+	min_angle			=	-45.0
+	max_angle			=	45.0
+
+	direction			=	1.0
+
+	beam_start			=	0
+	beam_dir			=	0
+
+	amplitude			=	1.0
+	angle				=	0.0
+	angular_speed		=	15.0
+
+	lazer_hit_emitter	=	0
+	lazer_hit_script	=	0
+
+	function	OnSetup(item)
+	{
+		scene = ItemGetScene(item)
+		beam_item = ItemGetChild(item, "Beam")
+		beam_start = ItemGetChild(beam_item, "beam_start")
+		beam_dir = ItemGetChild(beam_item, "beam_dir")
+
+		try
+		{
+			parent = ItemGetParent(item)
+			lazer_hit_emitter = ItemGetChild(parent, "lazer_hit_emitter")
+			ItemSetParent(lazer_hit_emitter, NullItem)
+		}
+		catch(e)
+		{
+			lazer_hit_emitter = SceneFindItem(scene, "lazer_hit_emitter")
+		}
+
+		min_angle *= 1.2
+		max_angle *= 1.2
+	}
+
+	function	OnSetupDone(item)
+	{
+		lazer_hit_script = ItemGetScriptInstance(lazer_hit_emitter)
+	}
+
+	function	OnUpdate(item)
+	{
+		//	Gun
+		angle += g_dt_frame * angular_speed * direction
+		if (angle > max_angle)
+		{
+			angle = max_angle
+			direction = -1.0
+		}
+		else
+		{
+			if (angle < min_angle)
+			{
+				angle = min_angle
+				direction = 1.0
+			}
+		}
+
+		local	_clamped_angle
+		_clamped_angle = Clamp(angle, min_angle * 0.8, max_angle * 0.8) 
+		ItemSetRotation(item, Vector(0,0,DegreeToRadian(_clamped_angle)))
+
+		//	Beam
+		local	_start, _dir, _hit, _scale
+		_start = ItemGetWorldPosition(beam_start)
+		_dir = (ItemGetWorldPosition(beam_dir) - _start).Normalize()
+
+		_hit = SceneCollisionRaytrace(scene, _start, _dir, 7, CollisionTraceAll, Mtr(50.0))
+
+		if (_hit.hit)
+		{
+			local	_dist = _hit.d + Mtr(1.0)
+			_scale = Vector(_dist / Mtr(10.0), 1.0, 1.0)
+
+			ItemSetPosition(lazer_hit_emitter, _hit.p)
+			lazer_hit_script.Emit()
+		}
+		else
+			_scale = Vector(1,1,1)
+		
+		ItemSetScale(beam_item, _scale)
+	
+	}
+}
+
 class	SeaPlantOscillation
 {
 /*<

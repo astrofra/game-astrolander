@@ -12,6 +12,7 @@ class	ParticleEmitter
 		<particle_speed = <Name = "Particle Speed (m/s)"> <Type = "float"> <Default = 10.0>>
 		<particle_life = <Name = "Particle Life (sec)"> <Type = "float"> <Default = 1.0>>
 		<emit_freq = <Name = "Emit Interval (sec)"> <Type = "float"> <Default = 0.1>>
+		<jitter = <Name = "Jitter"> <Type = "bool"> <Default = 1>>
 	>
 >*/
 
@@ -28,6 +29,7 @@ class	ParticleEmitter
 	ace_deleter			=	0
 	particle_speed		=	10.0
 	particle_life		=	1.0
+	jitter				=	true
 
 	//-----------------------
 	function	OnSetup(item)
@@ -53,6 +55,8 @@ class	ParticleEmitter
 		ace_deleter = AceDeleter()
 
 		print("ParticleEmitter::OnSetup() : OK.")
+		print("ParticleEmitter::OnSetup() :jitter = " + jitter)
+
 	}
 
 	//------------------------
@@ -73,7 +77,8 @@ class	ParticleEmitter
 			local	_size, new_part, _d
 			_size = Rand(0.125,0.95)
 			pos = ItemGetWorldPosition(emitter_item)
-			pos = pos + Vector(Rand(-1,1), Rand(-1,1), 0).Normalize().Scale(_size * scale_factor * 0.45)
+			if (jitter)
+				pos = pos + Vector(Rand(-1,1), Rand(-1,1), 0).Normalize().Scale(_size * scale_factor * 0.45)
 			_d = ItemGetMatrix(emitter_item).GetRow(0)
 			_d.y += -0.5
 			_d = _d.Normalize().Scale(particle_speed) //	Emitter speed in m/s

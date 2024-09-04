@@ -153,7 +153,7 @@ class	MiniMap
 			print("MiniMap::CreateMapTexture()")
 			print("pixel width = " + map_pixel_width.tostring() + ", pixel height = " + map_pixel_height.tostring())
 
-			map_texture = EngineCreateTexture(g_engine, map_pixel_width, map_pixel_height, true)
+			map_texture = EngineNewTexture(g_engine) //, map_pixel_width, map_pixel_height, true)
 			map_picture = NewPicture(map_pixel_width, map_pixel_height)
 
 			local	x,y, world_x, world_y
@@ -180,16 +180,39 @@ class	MiniMap
 			//for(x = 0; x < 50; x++)
 			//	PictureSetPixel(map_picture, map_pixel_width / 2.0 + Rand(-10,10), map_pixel_height / 2.0 + Rand(-4,4), Vector(1,0,0,1))
 
+			SaveMinimapPicture(map_picture)
+
 			TextureUpdate(map_texture, map_picture)
 			map_picture = 0
 
 			local	map_ui_pos_x, map_ui_pos_y
 			map_window = UIAddSprite(ui, -1, map_texture, 0.0, 0.0, map_pixel_width, map_pixel_height)
 			WindowSetScale(map_window, ui_scale, ui_scale)
-			map_ui_pos_x = 1280.0 - (map_pixel_width * ui_scale)
-			map_ui_pos_y = 960.0 - (map_pixel_height * ui_scale) - 64.0
+			if	((true) || (g_platform == "Android"))
+			{
+				//	Touch
+				map_ui_pos_x = 640.0 - (map_pixel_width * ui_scale * 0.5)
+				map_ui_pos_y = 960.0 - (map_pixel_height * ui_scale)
+			}
+			else
+			{
+				//	PC
+				map_ui_pos_x = 1280.0 - (map_pixel_width * ui_scale)
+				map_ui_pos_y = 960.0 - (map_pixel_height * ui_scale) - 64.0
+			}
 			WindowSetPosition(map_window ,map_ui_pos_x, map_ui_pos_y)
 			WindowSetOpacity(map_window, 0.75)
+		}
+		
+		//--------------------------------------
+		function	SaveMinimapPicture(_picture)
+		//--------------------------------------
+		{
+			local	_filename
+			_filename = "minimaps/level_" + ProjectGetScriptInstance(g_project).current_level.tostring() + ".tga"
+			
+			if (!FileExists(_filename))
+				PictureSaveTGA(_picture, _filename)
 		}
 
 		function	EvaluateLevelBoundingBox()

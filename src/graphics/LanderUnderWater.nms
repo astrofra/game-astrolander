@@ -1219,7 +1219,11 @@
 							>
 							<Parm=
 								<Id="particle_life">
-								<Value=1.000000>
+								<Value=1.500000>
+							>
+							<Parm=
+								<Id="jitter">
+								<Value=1>
 							>
 						>
 					>
@@ -1286,6 +1290,10 @@
 							<Parm=
 								<Id="particle_life">
 								<Value=0.350000>
+							>
+							<Parm=
+								<Id="jitter">
+								<Value=1>
 							>
 						>
 					>
@@ -1463,7 +1471,7 @@
 		<MObject=
 			<MItem=
 				<Id="pod_body_wounded">
-				<UId=21>
+				<UId=16>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1483,7 +1491,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1498,7 +1505,7 @@
 		<MObject=
 			<MItem=
 				<Id="pod_body_mesh">
-				<UId=22>
+				<UId=17>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1610,7 +1617,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=16>
+				<UId=18>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -1662,7 +1669,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_0">
-				<UId=17>
+				<UId=19>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1739,7 +1746,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_1">
-				<UId=18>
+				<UId=20>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1816,7 +1823,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_2">
-				<UId=19>
+				<UId=21>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1893,7 +1900,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_4">
-				<UId=20>
+				<UId=22>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2014,26 +2021,16 @@
 			<Link=0>
 		>
 		<Link=
-			<Item=21>
+			<Item=16>
 			<Link=0>
 		>
 		<Link=
-			<Item=22>
+			<Item=17>
 			<Link=0>
 		>
 	>
 	<Skins>
 	<Constraints=
-		<Constraint=
-			<Uid=17>
-			<UidA=0>
-			<UidB=15>
-		>
-		<Constraint=
-			<Uid=18>
-			<UidA=0>
-			<UidB=15>
-		>
 		<Constraint=
 			<Uid=19>
 			<UidA=0>
@@ -2041,6 +2038,16 @@
 		>
 		<Constraint=
 			<Uid=20>
+			<UidA=0>
+			<UidB=15>
+		>
+		<Constraint=
+			<Uid=21>
+			<UidA=0>
+			<UidB=15>
+		>
+		<Constraint=
+			<Uid=22>
 			<UidA=0>
 			<UidB=15>
 		>

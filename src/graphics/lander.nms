@@ -471,8 +471,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-0.000003>
-						<Y=-9.086797>
+						<X=-0.000005>
+						<Y=-14.637041>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -1483,7 +1483,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1596,7 +1595,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1611,7 +1609,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=18>
+				<UId=27>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -1663,7 +1661,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_0">
-				<UId=19>
+				<UId=28>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1740,7 +1738,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_1">
-				<UId=20>
+				<UId=29>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1817,7 +1815,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_2">
-				<UId=21>
+				<UId=30>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1894,7 +1892,7 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_4">
-				<UId=22>
+				<UId=31>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2026,22 +2024,22 @@
 	<Skins>
 	<Constraints=
 		<Constraint=
-			<Uid=19>
+			<Uid=28>
 			<UidA=0>
 			<UidB=15>
 		>
 		<Constraint=
-			<Uid=20>
+			<Uid=29>
 			<UidA=0>
 			<UidB=15>
 		>
 		<Constraint=
-			<Uid=21>
+			<Uid=30>
 			<UidA=0>
 			<UidB=15>
 		>
 		<Constraint=
-			<Uid=22>
+			<Uid=31>
 			<UidA=0>
 			<UidB=15>
 		>
@@ -2073,7 +2071,7 @@
 	<ViewMatrix=
 		<R0=
 			<X=-0.993670>
-			<Y=-0.000000>
+			<Y=0.000000>
 			<Z=-0.112336>
 			<W=0.000000>
 		>
@@ -2090,9 +2088,9 @@
 			<W=0.000000>
 		>
 		<R3=
-			<X=-1.302910>
-			<Y=-0.097249>
-			<Z=15.986143>
+			<X=-2.478976>
+			<Y=-0.038421>
+			<Z=26.389057>
 			<W=1.000000>
 		>
 	>
@@ -2106,7 +2104,7 @@
 			<Matrix=
 				<R0=
 					<X=-0.993670>
-					<Y=-0.000000>
+					<Y=0.000000>
 					<Z=-0.112336>
 					<W=0.000000>
 				>
@@ -2123,9 +2121,9 @@
 					<W=0.000000>
 				>
 				<R3=
-					<X=-1.302910>
-					<Y=-0.097249>
-					<Z=15.986143>
+					<X=-2.478976>
+					<Y=-0.038421>
+					<Z=26.389057>
 					<W=1.000000>
 				>
 			>

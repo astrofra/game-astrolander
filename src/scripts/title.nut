@@ -5,6 +5,11 @@
 		Include("scripts/locale.nut")
 		Include("scripts/globals.nut")
 		Include("scripts/ui.nut")
+
+
+g_ui_cursor <- UICreateCursor(0);
+
+
 /*
 */
 class	Title
@@ -23,34 +28,22 @@ class	Title
 	*/
 	function	OnUpdate(scene)
 	{
+		local ui_device = GetInputDevice("mouse")
+		UISetCursorState(ui, g_ui_cursor, DeviceInputValue(ui_device, DeviceAxisX), DeviceInputValue(ui_device, DeviceAxisY), DeviceIsKeyDown(ui_device, KeyButton0))
+
 		if	(DeviceIsKeyDown(g_device, KeySpace))
 		{
-			MixerChannelUnlock(g_mixer, channel_music)
-			MixerChannelStop(g_mixer, channel_music)
-			//MixerChannelStopAll(g_mixer)
-			//MixerChannelUnlockAll(g_mixer)
-			state = "startgame"
-		}
-		else
-		if	(DeviceKeyPressed(g_device, KeyF1))
-		{
-			g_reversed_controls = !g_reversed_controls
-			TextSetText(w_cfg_control_reverse[1], CreateStringControlReverse())
-		}
-		
+			StartGame()
+		}		
 	}
 
-	function	CreateTitleLabel(name, x, y, size = 70, w = 300, h = 64, font_name = "creative_block")
+	function	StartGame()
 	{
-		local	window = UIAddWindow(ui, -1, x, y, w, h)
-		WindowSetPivot(window, w / 2, h / 2)
-		local	widget = UIAddStaticTextWidget(ui, -1, name, font_name)
-		WindowSetBaseWidget(window, widget)
-		TextSetSize(widget, size)
-		TextSetColor(widget, 64, 32, 160, 255)
-		TextSetAlignment(widget, TextAlignCenter)
-
-		return ([window, widget])
+			//MixerChannelUnlock(g_mixer, channel_music)
+			//MixerChannelStop(g_mixer, channel_music)
+			MixerChannelStopAll(g_mixer)
+			MixerChannelUnlockAll(g_mixer)
+			state = "startgame"
 	}
 
 	/*
@@ -62,19 +55,9 @@ class	Title
 		UICommonSetup(ui)
 		title_ui = TitleUI(ui)
 /*
-		UILoadFont("ui/creative_block.ttf")
-
-		CreateTitleLabel(g_locale.press_space, 640, 600, 60, 400)
-		CreateTitleLabel(g_locale.copyright, 640, 900, 32, 900, 64)
-
-		w_cfg_control_reverse = CreateTitleLabel(CreateStringControlReverse(), 640, 650, 28, 400, 64)
-
 		sfx_music = EngineLoadSound(g_engine, "audio/music/intro_riff.wav")
 */
 	}
-
-	function	CreateStringControlReverse()
-	{	return (g_locale.control_reverse + " (F1) : " + (g_reversed_controls?g_locale.yes:g_locale.no))	}
 
 	function	OnSetupDone(scene)
 	{
