@@ -64,6 +64,12 @@ class	ParticleEmitter
 
 	}
 
+	function	OnDelete(item)
+	{
+		print("ParticleEmitter::OnDelete()")
+		ace_deleter.Flush()
+	}
+
 	function	OnSetupDone(item)
 	{
 		current_camera = SceneGetCurrentCamera(scene)

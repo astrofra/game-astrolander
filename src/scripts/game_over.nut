@@ -33,6 +33,8 @@ class	GameOverScreen
 		print("GameOverScreen::ShowStoryImage()")
 		local	story_texture, fname
 		local	ui = SceneGetUI(scene)
+
+		CreateOpaqueScreen(ui)
 		
 		fname = "ui/story_game_over.jpg"
 		if (FileExists(fname))

@@ -35,6 +35,8 @@ class	LogoScreen
 		local	ui, logo, logo_flash, logo_handler
 		ui = SceneGetUI(scene)
 
+		CreateOpaqueScreen(ui)
+
 		logo_handler = UIAddWindow(ui, -1, 0, 0, 2, 2)
 
 		logo = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/astrofra_logo.png"), 0, 0, 256, 256)
@@ -51,7 +53,7 @@ class	LogoScreen
 		WindowSetCommandList(logo_handler, "nop 0.5;toposition 0.25,0,8;toposition 0.25,0,10;")
 		WindowSetCommandList(logo_flash, "toalpha 0,1;toalpha 2.0,0;")
 
-//		sfx_channel = MixerSoundStart(g_mixer, EngineLoadSound(g_engine, "audio/sfx/sfx_polaroid.wav"))
+		sfx_channel = MixerSoundStart(g_mixer, EngineLoadSound(g_engine, "audio/sfx/sfx_polaroid.wav"))
 //		MixerChannelLock(g_mixer, sfx_channel)
 	}
 }

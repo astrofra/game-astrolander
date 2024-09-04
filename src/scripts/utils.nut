@@ -1,6 +1,8 @@
 //	Utils.nut
 		
+//-------------------------------------------------
 function	LegacySceneFindItem(_scene, _item_name)
+//-------------------------------------------------
 {
 	local	_item, _current_item
 	local	_list = SceneGetItemList(_scene)
@@ -12,6 +14,17 @@ function	LegacySceneFindItem(_scene, _item_name)
 	return NullItem
 }
 
+//-------------------------------------------------
+function	SceneDeleteItemHierarchy(_scene, _item)
+//-------------------------------------------------
+{
+	local _list = ItemGetChildList(_item)
+
+	foreach(_child in _list)
+		SceneDeleteItemHierarchy(_scene, _child)
+
+	SceneDeleteItem(_scene, _item)
+}
 
 //-----------------------------
 function	MakeTriangleWave(i)

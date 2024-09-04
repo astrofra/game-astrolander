@@ -27,4 +27,12 @@ class	AceDeleter
 				//return
 			}
 	}
+	
+	function	Flush()
+	{
+		foreach(n,current_item in item_list)
+			SceneDeleteObject(ItemGetScene(current_item), ItemCastToObject(current_item))
+			
+		item_list = []
+	}
 }

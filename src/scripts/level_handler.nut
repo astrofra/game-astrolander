@@ -471,7 +471,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			if (_dist < Mtr(2.5))
 			{
 				//	Remove it, from scene & from the bonus list
-				ItemActivateHierarchy(_item, false)
+				SceneDeleteItemHierarchy(scene, _item) //ItemActivateHierarchy(_item, false)
 				feedback_emitter.Emit(ItemGetWorldPosition(_item))
 				PlaySfxGotItem()
 
@@ -525,7 +525,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			if (ItemCompare(val, _item))
 			{
 				artefact.remove(idx)
-				ItemActivateHierarchy(_item, false)
+				//ItemActivateHierarchy(_item, false)
+				SceneDeleteItemHierarchy(scene, _item)
 			}
 
 		feedback_emitter.Emit(ItemGetWorldPosition(_item))

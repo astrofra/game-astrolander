@@ -25,6 +25,8 @@ class	LevelEndUI extends	BaseUI
 
 		base.constructor(_ui)
 
+		CreateOpaqueScreen(_ui)
+
 		old_stats	=	{}	
 
 		//	Scores ...
