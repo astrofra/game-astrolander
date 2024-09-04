@@ -2,8 +2,12 @@
 <Environment=
 	<Name="Cosmic Lander Game">
 	<Authors="Astrofra">
-	<Description="New project">
+	<Description="Cosmic Lander Game">
 	<Copyright="Copyright 2011">
+	<ScriptUnit=
+		<Script="scripts/project.nut">
+		<Class="ProjectHandler">
+	>
 	<Include>
 	<SearchPaths>
 >

@@ -1,4 +1,4 @@
 <NML=1.0>
 <ViewMode="Project">
-<Input="levels/test_level_0.nms">
-<ViewScene><IgnoreEsc=True><IgnoreMissingResource=True>
+<Input="project.ngp">
+<IgnoreEsc=False><IgnoreMissingResource=True>

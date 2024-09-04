@@ -13,6 +13,8 @@ class	LevelHandler
 {
 	player		=	0
 
+	state		=	0
+
 	path		=	0
 	path_length	=	0.0
 
@@ -27,6 +29,7 @@ class	LevelHandler
 	function	OnUpdate(scene)
 	{
 		SceneCheckArtefacts(scene)
+		CheckPlayerStats(scene)
 	}
 
 	constructor()
@@ -43,6 +46,7 @@ class	LevelHandler
 	{
 		hud_ui	=	HudUI(SceneGetUI(scene))
 		SceneSetCurrentCamera(scene, ItemCastToCamera(SceneFindItem(scene, "game_camera")))
+		state = "Game"
 	}
 
 	function	OnSetupDone(scene)
@@ -51,6 +55,30 @@ class	LevelHandler
 		SceneFindPlayer(scene)
 		SceneFindPath(scene)
 		SceneFindArtefacts(scene)
+	}
+
+	function	CloseGame(scene)
+	{
+		// Start the game over info display.
+		print("GAME OVER")
+
+		// Set the UI command list to pause for 2 seconds, then fade to black in 0.5 seconds.
+		UISetCommandList(SceneGetUI(scene), "nop 2; globalfade 0.5, 1;")
+
+		// Next update sets the end game flag and waits for an action from the project script.
+		game_dispatcher = ExitGame
+		SceneSuspendScriptUpdate(scene, 3.0 * SystemGetClockFrequency())
+	}
+
+	function	ExitGame(scene)
+	{
+		state = "ExitGame"
+	}
+
+	function	CheckPlayerStats(scene)
+	{
+		if (ItemGetScriptInstance(player).damage >= 100)
+			ExitGame(scene)
 	}
 
 	//	=========
