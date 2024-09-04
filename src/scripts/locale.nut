@@ -22,6 +22,7 @@ g_locale	<-	{
 	level_names			=	{	default_name	=	"Level Name",
 								tutorial_0		=	"First Flight",
 								tutorial_1		=	"Jump Again",
+								under_garden	=	"Under the Garden",
 								tutorial_2		=	"Going Narrow",
 								watch_ceilling	=	"Watch the Ceilling",
 								up_down			=	"Up and Down",

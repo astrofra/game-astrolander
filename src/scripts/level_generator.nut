@@ -267,7 +267,7 @@ class	LevelGenerator	extends	LevelHandler
 		GroupLongBlock(scene, 4, 4, 90)
 
 		//	1 x 1 blocks
-		GroupSquareBlock(scene, 1, 0, 90, 0)
+//		GroupSquareBlock(scene, 1, 0, 90, 0)
 
 		//	Destroy the original blocks
 		foreach(_item in block)
@@ -277,6 +277,8 @@ class	LevelGenerator	extends	LevelHandler
 			ItemSetName(_item, "none")
 			SceneDeleteItem(scene, _item)
 		}
+
+		SceneSave(scene, "levels/tmp.nms")
 
 		//	Last step, setup the built level.
 		base.OnSetup(scene)

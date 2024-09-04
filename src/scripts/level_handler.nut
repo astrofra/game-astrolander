@@ -21,6 +21,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 /*<
 	<Parameter =
 		<level_name = <Name = "Level Name"> <Type = "String"> <Default = "default_name">>
+		<is_underwater = <Name = "Underwater Level"> <Type = "Bool"> <Default = 0>>
 	>
 >*/
 
@@ -47,6 +48,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	game_ui					=	0
 
 	level_name				=	"default"
+	is_underwater			=	false
 
 	update_function			=	0
 	timer_table				=	0

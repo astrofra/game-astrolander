@@ -11,7 +11,11 @@
 				>
 				<Parm=
 					<Id="bitmap_filename">
-					<Value="levels/level_4.psd">
+					<Value="levels/level_1.psd">
+				>
+				<Parm=
+					<Id="is_underwater">
+					<Value=0>
 				>
 			>
 		>
@@ -26,7 +30,11 @@
 			>
 			<Parm=
 				<Id="bitmap_filename">
-				<Value="levels/level_4.psd">
+				<Value="levels/level_1.psd">
+			>
+			<Parm=
+				<Id="is_underwater">
+				<Value=0>
 			>
 		>
 	>
@@ -305,7 +313,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -345,7 +352,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -522,7 +528,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1581,7 +1586,7 @@
 		<MObject=
 			<MItem=
 				<Id="Artifact">
-				<UId=29>
+				<UId=23>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1646,20 +1651,6 @@
 						>
 					>
 				>
-				<ScriptUnit=
-					<Script="builtin/script/item_rotate.nut">
-					<Class="BuiltinItemRotate">
-					<ParmList=
-						<Parm=
-							<Id="speed">
-							<Value=-25.000000>
-						>
-						<Parm=
-							<Id="rot_y">
-							<Value=True>
-						>
-					>
-				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -1678,7 +1669,6 @@
 						<Y=6.538257>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1693,7 +1683,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=23>
+				<UId=24>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1749,7 +1739,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=24>
+				<UId=25>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1987,9 +1977,9 @@
 			<W=0.000000>
 		>
 		<R3=
-			<X=10.255714>
-			<Y=10.095912>
-			<Z=-29.333294>
+			<X=12.996021>
+			<Y=18.003925>
+			<Z=-92.138161>
 			<W=1.000000>
 		>
 	>
@@ -2020,9 +2010,9 @@
 					<W=0.000000>
 				>
 				<R3=
-					<X=10.255714>
-					<Y=10.095912>
-					<Z=-29.333294>
+					<X=12.996021>
+					<Y=18.003925>
+					<Z=-92.138161>
 					<W=1.000000>
 				>
 			>
