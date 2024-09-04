@@ -66,6 +66,11 @@ class	BaseUI
 	fade_timeout	=	0
 	cursor_opacity	=	1.0
 
+	sfx_select		=	0
+	sfx_validate	=	0
+	sfx_page		=	0
+	sfx_pause		=	0
+
 	//--------------
 	constructor(_ui)
 	//--------------
@@ -82,7 +87,29 @@ class	BaseUI
 
 		fade_timeout = g_clock
 		cursor_opacity	=	1.0
+
+		LoadSounds()
 	}
+
+	function	LoadSounds()
+	{
+		sfx_select = EngineLoadSound(g_engine, "audio/sfx/gui_up_down.wav")
+		sfx_validate = EngineLoadSound(g_engine, "audio/sfx/gui_validate.wav")
+		sfx_page = EngineLoadSound(g_engine, "audio/sfx/gui_next_page.wav")
+		sfx_pause = EngineLoadSound(g_engine, "audio/sfx/gui_game_pause.wav")
+	}
+
+	function	PlaySfxUISelect()
+	{		local	_chan	= MixerSoundStart(g_mixer, sfx_select)	}
+
+	function	PlaySfxUIValidate()
+	{		local	_chan	= MixerSoundStart(g_mixer, sfx_validate)	}
+
+	function	PlaySfxUINextPage()
+	{		local	_chan	= MixerSoundStart(g_mixer, sfx_page)	}
+
+	function	PlaySfxUIPause()
+	{		local	_chan	= MixerSoundStart(g_mixer, sfx_pause)	}
 
 	function	FadeTimeout()
 	{
@@ -153,12 +180,15 @@ class	TitleUI	extends	BaseUI
 
 	//	Title screen
 	game_title				=	0
+	game_title_texture		=	0
 	start_button			=	0
 	option_button			=	0
 	title_left_arrow		=	0
 	title_right_arrow		=	0
 
 	gfx_hero				=	0
+
+	blue_background			=	0
 
 	//	Option screen
 	option_right_arrow		=	0
@@ -195,7 +225,16 @@ class	TitleUI	extends	BaseUI
 		master_window_option = UIAddWindow(ui, CreateNewUIID(), -virtual_screen_width, 0, 16, 16)
 		master_window_level = UIAddWindow(ui, CreateNewUIID(), virtual_screen_width, 0, 16, 16)
 
-		gfx_hero = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_hero.png"), 128, -100, 1024, 1024)
+		local	blue_background_texture = EngineLoadTexture(g_engine, "ui/main_menu_back.png")
+		blue_background = UIAddSprite(ui, -1, blue_background_texture, 0, 0, TextureGetWidth(blue_background_texture), TextureGetHeight(blue_background_texture))
+		WindowSetPivot(blue_background, TextureGetWidth(blue_background_texture) / 2.0, TextureGetHeight(blue_background_texture) / 2.0)
+		WindowSetPosition(blue_background, 1280.0 / 2.0, 960.0 / 2.0)
+		WindowSetScale(blue_background, 1.5, 1.5)
+		WindowSetZOrder(blue_background, 1.0)
+		WindowSetParent(blue_background, master_window_level)
+
+		gfx_hero = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_hero.png"), 128 + 512, -100 + 512, 1024, 1024)
+		WindowSetPivot(gfx_hero, 512, 512)
 
 		local	_glass = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_hero_reflection_0.png"), 242, 222, 256, 512)
 		WindowSetParent(_glass, gfx_hero)
@@ -204,18 +243,23 @@ class	TitleUI	extends	BaseUI
 		local	_glass = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_hero_reflection_1.png"), 511, 190, 256, 512)
 		WindowSetParent(_glass, gfx_hero)
 		WindowSetCommandList(_glass, "loop;nop 0.1;toalpha 0.1, 0.75;nop 0.15;toalpha 0, 0.5;nop 0.1;toalpha 0, 0.65;nop 0.1;toalpha 0,1;nop 0.15;next;")
+		WindowSetCommandList(gfx_hero, "loop;toscale 5,0.975,0.975;toscale 5,0.95,0.95;toscale 5,1.025,1.025;toscale 5,1.05,1.05;next;")
 
-		local	_shadow_game_title = CreateLabel(ui, g_locale.game_title, -10, 5, 200, 800, 200, Vector(0, 0, 0, 255), g_main_font_name, TextAlignCenter)
-		game_title = CreateLabel(ui, g_locale.game_title, 640 - 400, 30, 200, 800, 200, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
-		local	_game_subtitle = CreateLabel(ui, g_locale.game_subtitle, 0, 150, 50, 800, 100, Vector(117, 155, 168, 180), g_main_font_name, TextAlignCenter)
-		WindowSetParent(_game_subtitle[0], game_title[0])
-		WindowSetParent(_shadow_game_title[0], game_title[0])
+//		local	_shadow_game_title = CreateLabel(ui, g_locale.game_title, -10, 5, 200, 800, 200, Vector(0, 0, 0, 255), g_main_font_name, TextAlignCenter)
+//		game_title = CreateLabel(ui, g_locale.game_title, 640 - 400, 30, 200, 800, 200, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		game_title_texture = EngineLoadTexture(g_engine, "ui/title_astlan.png")
+		game_title = UIAddSprite(ui, -1, game_title_texture, 0, 0, TextureGetWidth(game_title_texture), TextureGetHeight(game_title_texture))
+		WindowSetPivot(game_title, TextureGetWidth(game_title_texture) / 2.0, TextureGetHeight(game_title_texture) / 2.0)
+		WindowSetPosition(game_title, 1280.0 / 2.0, TextureGetHeight(game_title_texture) / 2.0 * 1.15)
+		local	_game_subtitle = CreateLabel(ui, g_locale.game_subtitle, 0, 170, 50, 800, 100, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		WindowSetParent(_game_subtitle[0], game_title)
+//		WindowSetParent(_shadow_game_title[0], game_title[0])
 
-		title_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_left.png"), 16, 700, 256, 128)
-		title_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_right.png"), 1280 - 16 - 256, 700, 256, 128)
+		title_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_blue_left.png"), 16, 700, 256, 128)
+		title_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_blue_right.png"), 1280 - 16 - 256, 700, 256, 128)
 
-		start_button = CreateLabel(ui, g_locale.start_game, 0, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
-		option_button = CreateLabel(ui, g_locale.option, 0, 30, 50, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		start_button = CreateLabel(ui, g_locale.start_game, 0, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		option_button = CreateLabel(ui, g_locale.option, 0, 30, 50, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 
 		WindowSetParent(option_button[0], title_left_arrow)
 		WindowSetParent(start_button[0], title_right_arrow)
@@ -226,14 +270,14 @@ class	TitleUI	extends	BaseUI
 
 		//	Options
 
-		option_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_right.png"), 1280 - 16 - 256, 700, 256, 128)
+		option_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_blue_right.png"), 1280 - 16 - 256, 700, 256, 128)
 		WindowSetParent(option_right_arrow, master_window_option)
 
 		level_easy_button = CreateLabel(ui, g_locale.level_easy, 640 - 200 - 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
 		level_normal_button = CreateLabel(ui, CreateSelectedOptionString(g_locale.level_normal), 640 - 200, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
 		level_hard_button = CreateLabel(ui, g_locale.level_hard, 640 - 200 + 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
 
-		back_from_option_button = CreateLabel(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		back_from_option_button = CreateLabel(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(back_from_option_button[0], option_right_arrow)
 
 		WidgetSetEventHandlerWithContext(level_easy_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelEasy)
@@ -246,16 +290,16 @@ class	TitleUI	extends	BaseUI
 
 		//	Level Selector
 
-		level_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_left.png"), 16, 700, 256, 128)
+		level_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_blue_left.png"), 16, 700, 256, 128)
 		WindowSetParent(level_left_arrow, master_window_level)
-		back_from_level_button = CreateLabel(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		back_from_level_button = CreateLabel(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(back_from_level_button[0], level_left_arrow)
 		WidgetSetEventHandlerWithContext(back_from_level_button[1], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
 
 		level_button_table = []
 		CreateLevelButtonGrid()
 		selector_hilite = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/level_selector_hilite.png"), 0, 0, 256, 256)
-		WindowSetZOrder(selector_hilite, 1.0)
+		WindowSetZOrder(selector_hilite, 0.7)
 		WindowShow(selector_hilite, false)
 		HiliteLevelSelection()
 
@@ -271,13 +315,13 @@ class	TitleUI	extends	BaseUI
 		WindowSetParent(play_level_button[0], play_level_arrow)
 		WidgetSetEventHandlerWithContext(play_level_button[1], EventCursorDown, this, TitleUI.OnTitleUIStartGame)
 
-		next_world_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_right.png"), 1280 - 16 - 256, 700, 256, 128)
+		next_world_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_blue_right.png"), 1280 - 16 - 256, 700, 256, 128)
 		WindowSetParent(next_world_arrow, master_window_level)
-		next_world_button = CreateLabel(ui, g_locale.next_level, -10, 30, 65, 256, 80, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		next_world_button = CreateLabel(ui, g_locale.next_level, -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(next_world_button[0], next_world_arrow)
 		WidgetSetEventHandlerWithContext(next_world_button[1], EventCursorDown, this, TitleUI.GoToNextWorldPage)
 
-		WindowSetParent(game_title[0], master_window_handler)
+		WindowSetParent(game_title, master_window_handler)
 		WindowSetParent(_copyright[0], master_window_handler)
 		WindowSetParent(gfx_hero, master_window_handler)
 		WindowSetParent(title_left_arrow, master_window_handler)
@@ -447,6 +491,7 @@ class	TitleUI	extends	BaseUI
 			_local_level_index = current_selected_level - (current_world * 4)
 			WindowSetParent(selector_hilite, level_button_table[_local_level_index].level_button)
 			WindowShow(selector_hilite, true)
+//			PlaySfxUISelect()
 		}
 	}
 
@@ -472,6 +517,8 @@ class	TitleUI	extends	BaseUI
 		HiliteLevelSelection()
 
 		WidgetSetEventHandlerWithContext(back_from_level_button[1], EventCursorDown, this, TitleUI.GoToPreviousWorldPage)
+
+		PlaySfxUISelect()
 	}
 
 	//-----------------------------------------
@@ -498,6 +545,8 @@ class	TitleUI	extends	BaseUI
 			WidgetSetEventHandlerWithContext(back_from_level_button[1], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
 		else
 			WidgetSetEventHandlerWithContext(back_from_level_button[1], EventCursorDown, this, TitleUI.GoToPreviousWorldPage)
+
+		PlaySfxUISelect()
 	}
 
 	//-------------------------------------------
@@ -509,6 +558,7 @@ class	TitleUI	extends	BaseUI
 		FadeInLevelButtonGrid()
 		HiliteLevelSelection()
 		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, -virtual_screen_width))
+		PlaySfxUINextPage()
 	}
 
 	//-------------------------------------------
@@ -516,6 +566,7 @@ class	TitleUI	extends	BaseUI
 	//-------------------------------------------
 	{
 		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, virtual_screen_width))
+		PlaySfxUINextPage()
 	}
 
 	//-------------------------------------------
@@ -523,6 +574,7 @@ class	TitleUI	extends	BaseUI
 	//-------------------------------------------
 	{
 		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, 0))
+		PlaySfxUINextPage()
 	}
 	
 	//--------------------------------------
@@ -537,6 +589,7 @@ class	TitleUI	extends	BaseUI
 		g_reversed_controls = !g_reversed_controls
 		TextSetText(control_reverse[1], CreateStringControlReverse())
 		GlobalSaveGame()
+		PlaySfxUISelect()
 	}
 
 	//--------------------------------------------
@@ -557,6 +610,7 @@ class	TitleUI	extends	BaseUI
 		WindowSetParent(level_thumbnail, master_window_level)
 
 		TextSetText(level_name[1] , GetLevelName(current_selected_level))
+		PlaySfxUISelect()
 	}
 
 	//----------------------------------------
@@ -564,7 +618,8 @@ class	TitleUI	extends	BaseUI
 	//----------------------------------------
 	{
 		ProjectGetScriptInstance(g_project).player_data.current_level = current_selected_level
-		SceneGetScriptInstance(g_scene).StartGame()	
+		SceneGetScriptInstance(g_scene).StartGame()
+		PlaySfxUIValidate()
 	}
 
 	function	CreateSelectedOptionString(str)
@@ -579,6 +634,7 @@ class	TitleUI	extends	BaseUI
 		TextSetText(level_easy_button[1],CreateSelectedOptionString(g_locale.level_easy))
 		TextSetText(level_normal_button[1], g_locale.level_normal)
 		TextSetText(level_hard_button[1], g_locale.level_hard)
+		PlaySfxUISelect()
 //		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
@@ -591,6 +647,7 @@ class	TitleUI	extends	BaseUI
 		TextSetText(level_easy_button[1],g_locale.level_easy)
 		TextSetText(level_normal_button[1], CreateSelectedOptionString(g_locale.level_normal))
 		TextSetText(level_hard_button[1], g_locale.level_hard)
+		PlaySfxUISelect()
 //		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
@@ -603,6 +660,7 @@ class	TitleUI	extends	BaseUI
 		TextSetText(level_easy_button[1],g_locale.level_easy)
 		TextSetText(level_normal_button[1], g_locale.level_normal)
 		TextSetText(level_hard_button[1], CreateSelectedOptionString(g_locale.level_hard))
+		PlaySfxUISelect()
 //		SceneGetScriptInstance(g_scene).StartGame()
 	}
 

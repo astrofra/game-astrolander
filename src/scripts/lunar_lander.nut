@@ -7,7 +7,8 @@
 	@short	LunarLander
 	@author	Astrofra
 */
-class	LunarLander
+
+class	LunarLander	extends	SceneWithThreadHandler
 {
 	body				=	0
 	mesh_body			=	0
@@ -15,15 +16,16 @@ class	LunarLander
 	thrust				=	15.0
 	thrust_item			=	0
 	thrust_script		=	0
+	low_dt_compensation	=	1.0
 
 	fuel				=	100
-	damage				=	0
+	life				=	100
 
 	thrusters_active	=	false
 	consumption			=	2.5			//	Fuel unit per sec.
 	max_speed			=	Mtrs(25.0)	//	Max. speed of the ship.
 	speed_min_damage	=	Mtrs(5.0)
-	speed_max_damage	=	Mtrs(25.0)
+	speed_max_damage	=	Mtrs(15.0)
 	min_damage			=	10
 	max_damage			=	20
 	shield_enabled		=	false
@@ -42,6 +44,7 @@ class	LunarLander
 
 	current_velocity	=	0
 	current_speed		=	0.0
+	low_speed_timer		=	0
 
 	hit_timeout			=	0.0
 	hit_counter			=	0
@@ -77,6 +80,9 @@ class	LunarLander
 	function	OnUpdate(item)
 	//------------------------
 	{
+		base.OnUpdate(item)
+		HandleLowSpeedTimer()
+
 		if (update_function != 0)
 			update_function(item)
 	}
@@ -131,7 +137,6 @@ class	LunarLander
 		{
 			_left = DeviceIsKeyDown(g_device, KeyLeftArrow)
 			_right = DeviceIsKeyDown(g_device, KeyRightArrow)
-//game_ui.UpdateTouchFeedback(_left, _right)
 		}
 
 		if (!g_reversed_controls)
@@ -175,6 +180,9 @@ class	LunarLander
 			return
 		}
 
+		low_dt_compensation = Clamp(1.0 / (60.0 * g_dt_frame), 0.0, 1.0) // Clamp(1.0 / (60.0 / (1.0 / g_dt_frame)), 0.0, 1.0) // Clamp(60.0 / (1.0 / g_dt_frame), 0.0, 1.0)
+//		print("low_dt_compensation = " + low_dt_compensation)
+
 		local	_vel = ItemGetLinearVelocity(item)
 		current_velocity = _vel.Normalize()
 		current_speed = _vel.Len()
@@ -207,7 +215,7 @@ class	LunarLander
 
 		local	speed_limiter = Max(ItemGetLinearVelocity(item).Len() - max_speed, 0.0)
 		if (speed_limiter > 0.0)
-			ItemApplyLinearImpulse(item, ItemGetLinearVelocity(item).Scale(-speed_limiter))
+			ItemApplyLinearImpulse(item, ItemGetLinearVelocity(item).Scale(-speed_limiter * low_dt_compensation))
 
 		thrusters_active	=	false
 
@@ -215,8 +223,8 @@ class	LunarLander
 		{
 			if (_left && !_right)
 			{
-				ItemApplyLinearForce(item, ItemGetMatrix(item).GetRow(0).Normalize().Scale(thrust * 0.9 * ItemGetMass(item)))
-				ItemApplyForce(item, ItemGetWorldPosition(thrust_item[0]), ItemGetMatrix(thrust_item[0]).GetRow(0).Scale(-thrust * 0.1 * ItemGetMass(item)))
+				ItemApplyLinearForce(item, ItemGetMatrix(item).GetRow(0).Normalize().Scale(thrust * 0.9 * ItemGetMass(item) * low_dt_compensation))
+				ItemApplyForce(item, ItemGetWorldPosition(thrust_item[0]), ItemGetMatrix(thrust_item[0]).GetRow(0).Scale(-thrust * 0.1 * ItemGetMass(item) * low_dt_compensation))
 				ItemSetOpacity(flame_item[0], Clamp(ItemGetOpacity(flame_item[0]) + 0.35, 0.0, 1.0))
 				SmokeFeedBack(flame_item[0])
 				thrusters_active = true
@@ -224,8 +232,8 @@ class	LunarLander
 	
 			if (!_left && _right)
 			{
-				ItemApplyLinearForce(item, ItemGetMatrix(item).GetRow(0).Normalize().Scale(-thrust * 0.9 * ItemGetMass(item)))
-				ItemApplyForce(item, ItemGetWorldPosition(thrust_item[1]), ItemGetMatrix(thrust_item[1]).GetRow(0).Scale(-thrust * 0.1 * ItemGetMass(item)))
+				ItemApplyLinearForce(item, ItemGetMatrix(item).GetRow(0).Normalize().Scale(-thrust * 0.9 * ItemGetMass(item) * low_dt_compensation))
+				ItemApplyForce(item, ItemGetWorldPosition(thrust_item[1]), ItemGetMatrix(thrust_item[1]).GetRow(0).Scale(-thrust * 0.1 * ItemGetMass(item) * low_dt_compensation))
 				ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[2]) + 1.35, 0.0, 1.0))
 				SmokeFeedBack(flame_item[2])
 				thrusters_active = true
@@ -233,7 +241,7 @@ class	LunarLander
 	
 			if (_left && _right)
 			{
-				ItemApplyLinearForce(item, ItemGetMatrix(item).GetUp().Scale(thrust * ItemGetMass(item)))
+				ItemApplyLinearForce(item, ItemGetMatrix(item).GetUp().Scale(thrust * ItemGetMass(item) * low_dt_compensation))
 				ItemSetOpacity(flame_item[1], Clamp(ItemGetOpacity(flame_item[1]) + 0.35, 0.0, 1.0))
 				ItemSetOpacity(flame_item[0], Clamp(ItemGetOpacity(flame_item[0]) * 0.35, 0.0, 1.0))
 				ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[0]) * 0.35, 0.0, 1.0))
@@ -263,7 +271,7 @@ class	LunarLander
 	function	ConsumeFuel()
 	//-----------------------
 	{
-		fuel -= consumption * (g_dt_frame / g_clock_scale)
+		fuel -= consumption * (g_dt_frame / g_clock_scale) * low_dt_compensation
 		if (game_ui)
 			game_ui.UpdateFuelGauge(fuel)
 	}
@@ -281,9 +289,9 @@ class	LunarLander
 	function	Heal()
 	//------------------
 	{
-		damage = 0.0
+		life = 100.0
 		if (game_ui)
-			game_ui.UpdateDamageGauge(damage)
+			game_ui.UpdateLifeGauge(life)
 	}
 
 
@@ -293,7 +301,7 @@ class	LunarLander
 	{
 		if (fuel <= 0.0)
 			update_function = UpdatePlayerIsDead
-		if (damage >= 100.0)
+		if (life <= 0.0)
 			update_function = UpdatePlayerIsDead
 	}
 
@@ -349,7 +357,7 @@ class	LunarLander
 		_speed = Clamp(_speed, 0.0, 1.0)
 		_align *= _speed
 
-		ItemApplyTorque(item, Vector(0,0,-_rot_z - _ang_v_z).Scale(_align * ItemGetMass(item)))
+		ItemApplyTorque(item, Vector(0,0,-_rot_z - _ang_v_z).Scale(_align * ItemGetMass(item) * low_dt_compensation))
 	}
 
 	//------------------------------------------------------
@@ -365,15 +373,47 @@ class	LunarLander
 //				current_velocity.Print("current_velocity")
 				local	k_damage = Max(-contact.n[0].Dot(current_velocity), 0.0)
 //				print("k_damage = " + k_damage)
-				TakeDamage(current_speed, k_damage)
-				foreach(_p in contact.p)
-					ImpactFeedBack(_p)
+				local	with_item_name
+				with_item_name = ItemGetName(with_item)
+//				print("OnCollisionEx() : with_item_name = " + with_item_name)
+				switch (with_item_name)
+				{
+					case "DeadlySlimeItem":			//	DeadlySlime
+						TakeSlimeDamage()
+						break;
+
+					default:							//	Regular block
+						TakeDamage(current_speed, k_damage)
+						foreach(_p in contact.p)
+							ImpactFeedBack(_p)
+						break;
+				}
 			}
 		}
 	}
 
+	//---------------------------
+	function	TakeSlimeDamage()
+	//---------------------------
+	{
+		life = 0.0
+		if (game_ui)
+			game_ui.UpdateLifeGauge(life)
+		BodyImpactFeedback()
+	}
+
+	//---------------------------
+	function	TakeLaserDamage()
+	//---------------------------
+	{
+		life -= 60.0 * g_dt_frame
+		if (game_ui)
+			game_ui.UpdateLifeGauge(life)
+		BodyImpactFeedback()
+	}
+
 	//-----------------------------------
-	function	TakeDamage(impact_speed, angle_incidence = 1.0)
+	function	TakeDamage(impact_speed = 9999, angle_incidence = 1.0)
 	//-----------------------------------
 	{
 		//print("LunarLander::TakeDamage() : hit_timeout           = " + hit_timeout)
@@ -390,9 +430,9 @@ class	LunarLander
 			print("LunarLander::TakeDamage() : impact_speed  = " + impact_speed)
 			BodyImpactFeedback()
 			hit_timeout = g_clock
-			damage += damage_amount
+			life -= damage_amount
 			if (game_ui)
-				game_ui.UpdateDamageGauge(damage)
+				game_ui.UpdateLifeGauge(life)
 			print("LunarLander::TakeDamage() : damage = " + damage_amount.tostring())
 		}
 	}
@@ -438,6 +478,20 @@ class	LunarLander
 		MixerChannelSetLoopMode(g_mixer, channel_metal_col, LoopNone)
 	}
 
+	function	HandleLowSpeedTimer()
+	{
+		if (current_speed > Mtrs(0.1))
+			low_speed_timer = g_clock
+	}
+
+	function	LanderIsStopped()
+	{
+		if ((g_clock - low_speed_timer) > SecToTick(Sec(1.5)))
+			return true
+		else
+			return false
+	}
+
 	/*!
 		@short	OnSetup
 		Called when the item is about to be setup.
@@ -448,12 +502,16 @@ class	LunarLander
 	{
 		print("LunarLander::OnSetup()")
 
+		base.OnSetup(item)
+
 		scene = ItemGetScene(item)
 		body = item
 		mesh_body = ItemGetChild(item, "pod_body_mesh")
 		mesh_wounded = ItemGetChild(item, "pod_body_wounded")
 		ItemSetScale(mesh_body, Vector(1,1,1))
 		ItemSetScale(mesh_wounded, Vector(0,0,0))
+		low_dt_compensation	= 1.0
+		low_speed_timer	= 0.0
 
 		SceneSetGravity(scene, g_gravity.Scale(1.0))
 		ItemPhysicSetAngularFactor(item, Vector(0,0,1.0))
@@ -483,7 +541,7 @@ class	LunarLander
 
 		if (game_ui)
 		{
-			game_ui.UpdateDamageGauge(damage)
+			game_ui.UpdateLifeGauge(life)
 			game_ui.UpdateFuelGauge(fuel)
 		}
 

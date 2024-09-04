@@ -1,4 +1,4 @@
-<NML=1.0>
+<Version=1.0>
 <Scene=
 	<ScriptedObject=
 		<ScriptUnit=
@@ -8,6 +8,14 @@
 				<Parm=
 					<Id="level_name">
 					<Value="tutorial_1">
+				>
+				<Parm=
+					<Id="music_filename">
+					<Value="audio/music/children_of_science.ogg">
+				>
+				<Parm=
+					<Id="is_underwater">
+					<Value=0>
 				>
 			>
 		>
@@ -20,6 +28,14 @@
 				<Id="level_name">
 				<Value="tutorial_1">
 			>
+			<Parm=
+				<Id="music_filename">
+				<Value="audio/music/children_of_science.ogg">
+			>
+			<Parm=
+				<Id="is_underwater">
+				<Value=0>
+			>
 		>
 	>
 	<Items=
@@ -31,7 +47,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -86,7 +102,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -125,7 +141,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -164,7 +180,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -203,7 +219,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -242,7 +258,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -281,7 +297,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -320,7 +336,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -359,7 +375,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -398,7 +414,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -437,7 +453,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -476,7 +492,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -515,7 +531,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -554,7 +570,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -593,7 +609,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -632,37 +648,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="target">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -734,7 +720,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -778,7 +764,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -822,7 +808,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -862,7 +848,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -902,7 +888,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -946,7 +932,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -990,7 +976,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1034,7 +1020,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1079,7 +1065,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1124,7 +1110,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1169,7 +1155,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1209,37 +1195,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -1292,7 +1248,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1313,37 +1268,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -1391,7 +1316,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1412,37 +1336,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -1495,7 +1389,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1516,37 +1409,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -1599,7 +1462,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1620,37 +1482,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -1719,37 +1551,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -1802,7 +1604,6 @@
 						<Y=0.000000>
 						<Z=3.141593>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1823,37 +1624,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -1901,7 +1672,6 @@
 						<Y=16.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1922,37 +1692,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2000,7 +1740,6 @@
 						<Y=48.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2021,37 +1760,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2099,7 +1808,6 @@
 						<Y=62.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2120,37 +1828,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2198,7 +1876,6 @@
 						<Y=62.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2219,37 +1896,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2323,37 +1970,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2427,37 +2044,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2511,7 +2098,6 @@
 						<Y=-3.141593>
 						<Z=-3.141593>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2532,37 +2118,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2637,37 +2193,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2720,7 +2246,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2741,37 +2266,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2846,37 +2341,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -2930,7 +2395,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2951,37 +2415,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3035,7 +2469,6 @@
 						<Y=3.141575>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3056,37 +2489,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3139,7 +2542,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3160,37 +2562,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3238,7 +2610,6 @@
 						<Y=34.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3259,37 +2630,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3343,7 +2684,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3364,37 +2704,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3442,7 +2752,6 @@
 						<Y=34.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3463,37 +2772,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3546,7 +2825,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3567,37 +2845,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3650,7 +2898,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3671,37 +2918,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3750,7 +2967,6 @@
 						<Y=0.000000>
 						<Z=-0.001000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3771,37 +2987,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3855,7 +3041,6 @@
 						<Y=-3.141593>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3876,37 +3061,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -3959,7 +3114,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3980,37 +3134,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4084,37 +3208,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4189,37 +3283,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4273,7 +3337,6 @@
 						<Y=-3.141593>
 						<Z=3.141575>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4294,37 +3357,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4372,7 +3405,6 @@
 						<Y=56.932590>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4393,37 +3425,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4492,37 +3494,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4570,7 +3542,6 @@
 						<Y=55.014767>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4591,37 +3562,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4690,37 +3631,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4789,37 +3700,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4867,7 +3748,6 @@
 						<Y=23.008284>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4888,37 +3768,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -4966,7 +3816,6 @@
 						<Y=40.823078>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4987,37 +3836,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5065,7 +3884,6 @@
 						<Y=36.871399>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5086,37 +3904,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5185,37 +3973,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5268,7 +4026,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5289,37 +4046,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5372,7 +4099,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5393,37 +4119,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5476,7 +4172,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5497,37 +4192,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5601,37 +4266,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5684,7 +4319,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5705,37 +4339,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5789,7 +4393,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5810,37 +4413,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5894,7 +4467,6 @@
 						<Y=-3.141593>
 						<Z=3.141575>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5915,37 +4487,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -5999,7 +4541,6 @@
 						<Y=-3.141593>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6020,37 +4561,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -6099,7 +4610,6 @@
 						<Y=64.000000>
 						<Z=-0.001000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6120,37 +4630,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -6218,37 +4698,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="target">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -6322,37 +4772,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -6400,7 +4820,6 @@
 						<Y=1.993511>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6421,37 +4840,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="generic_blocks">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=3>
@@ -6499,7 +4888,6 @@
 						<Y=4.412139>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6519,7 +4907,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6575,7 +4963,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6613,7 +5001,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6651,7 +5039,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6689,7 +5077,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6727,7 +5115,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6765,7 +5153,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6803,7 +5191,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6846,7 +5234,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6889,7 +5277,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6932,7 +5320,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -6975,7 +5363,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7013,7 +5401,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7056,7 +5444,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7094,7 +5482,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7137,7 +5525,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7180,7 +5568,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7218,7 +5606,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7256,7 +5644,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7299,7 +5687,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -7337,7 +5725,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>

@@ -58,10 +58,13 @@ class	BuiltinItemSoapbox
 		ray_position = []
 		for	(local n = 0; true; ++n)
 		{
-			local	ray_item = SceneFindItemChild(g_scene, item, ray_prefix + n)
-			if	(!ObjectIsValid(ray_item))
-				break;
-			ray_position.append(ItemGetPosition(ray_item))
+			try
+			{
+				local ray_item = SceneFindItemChild(g_scene, item, ray_prefix + n)
+				ray_position.append(ItemGetPosition(ray_item))
+			}
+			catch (e)
+			{	break	}
 		}
 		ray_count = ray_position.len()
 		thrust_item = SceneFindItemChild(g_scene, item, thrust_name)

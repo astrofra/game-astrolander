@@ -7,7 +7,7 @@ class	InGameUI extends	BaseUI
 	scene					=	0
 //	ui						=	0
 	
-	Damage_gauge			=	0
+	life_gauge				=	0
 	fuel_gauge				=	0
 	artifact_count			=	0
 	room_name				=	0
@@ -43,7 +43,7 @@ class	InGameUI extends	BaseUI
 		base.constructor(SceneGetUI(scene))
 		UICommonSetup(ui)
 		CreateHelpButtons()
-		Damage_gauge = CreateDamageGauge()
+		life_gauge = CreateLifeGauge()
 		fuel_gauge = CreateFuelGauge()
 		stopwatch = CreateStopwatch()
 		room_name = CreateLevelName()
@@ -105,7 +105,7 @@ class	InGameUI extends	BaseUI
 	//-----------------------------------------
 	{
 		print("InGameUI::OnGameUISkipLevel()")
-		SceneGetScriptInstance(scene).GoToNextLevel(scene)
+		SceneGetScriptInstance(scene).GoToLevelEndScreen(scene)
 	}
 
 	function	CreateTouchFeedback()
@@ -176,7 +176,7 @@ class	InGameUI extends	BaseUI
 	{
 		local	_window, _widget
 		//	Start menu window
-		_window = UIAddWindow(ui, -1, 1280.0 / 2.0, 960.0 / 2.0, 800.0, 300.0)
+		_window = UIAddWindow(ui, -1, 1280.0 / 2.0, 960.0 / 2.0 + 120.0, 800.0, 300.0)
 //		WindowSetStyle(_window, StyleMovable)
 		WindowSetTitle(_window, "")
 		WindowCenterPivot(_window)		
@@ -208,9 +208,15 @@ class	InGameUI extends	BaseUI
 
 
 		if (flag)
+		{
+			WindowResetCommandList(_win.handler)
 			WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.75 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + " ;")
+		}
 		else
-			WindowSetCommandList(_win.handler, "toalpha 0,1;toalpha " + (0.75 / speed_scale * g_clock_scale).tostring() + ",0;hide;")
+		{
+			WindowResetCommandList(_win.handler)
+			WindowSetCommandList(_win.handler, "toalpha 0,1;show;toalpha " + (0.75 / speed_scale * g_clock_scale).tostring() + ",0;hide;")
+		}
 
 		_win.visible = flag
 	}
@@ -267,9 +273,9 @@ class	InGameUI extends	BaseUI
 	}
 
 	//----------------------------------------
-	function	UpdateDamageGauge(v)
+	function	UpdateLifeGauge(v)
 	//----------------------------------------
-	{		TextSetText(Damage_gauge[1], CreateGaugeBar(v))	}
+	{		TextSetText(life_gauge[1], CreateGaugeBar(v))	}
 
 	//----------------------------------------
 	function	UpdateFuelGauge(v)
@@ -328,10 +334,10 @@ class	InGameUI extends	BaseUI
 		return _counter
 	}
 	//----------------------------------------
-	function	CreateDamageGauge()
+	function	CreateLifeGauge()
 	//----------------------------------------
 	{
-		print("InGameUI::CreateDamageGauge()")
+		print("InGameUI::CreateLifeGauge()")
 
 		CreateLabel(ui, g_locale.hud_damage, 0, 0) //310 + 0, 0)
 		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100), 200, 0, 32, 680)

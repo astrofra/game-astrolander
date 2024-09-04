@@ -1,4 +1,4 @@
-<NML=1.0>
+<Version=1.0>
 <Material=
 	<Id="graphics/blocks.nmm">
 	<Diffuse=
@@ -30,8 +30,8 @@
 	>
 	<ShaderMap=
 		<Pos=
-			<X=0.000000>
-			<Y=0.000000>
+			<X=-449.280060>
+			<Y=-10.368001>
 		>
 		<Map=
 			<Entry=
@@ -43,10 +43,18 @@
 				<Param>
 			>
 			<Entry=
+				<Type="Mix">
+				<Pos=
+					<X=-181.440018>
+					<Y=-255.744034>
+				>
+				<Param>
+			>
+			<Entry=
 				<Type="Sampler 2D">
 				<Pos=
-					<X=263.000000>
-					<Y=-141.000000>
+					<X=292.032043>
+					<Y=-508.032043>
 				>
 				<Param=
 					<WrapU=True>
@@ -56,11 +64,11 @@
 			<Entry=
 				<Type="Texture">
 				<Pos=
-					<X=480.000000>
-					<Y=-236.000000>
+					<X=666.792053>
+					<Y=-548.808044>
 				>
 				<Param=
-					<Texture="graphics/dirt_color.png">
+					<Texture="graphics/grass_diffuse.jpg">
 				>
 			>
 			<Entry=
@@ -196,6 +204,58 @@
 				<Param>
 			>
 			<Entry=
+				<Type="Sampler 2D">
+				<Pos=
+					<X=263.000000>
+					<Y=-141.000000>
+				>
+				<Param=
+					<WrapU=True>
+					<WrapV=True>
+				>
+			>
+			<Entry=
+				<Type="Texture">
+				<Pos=
+					<X=480.000000>
+					<Y=-236.000000>
+				>
+				<Param=
+					<Texture="graphics/dirt_color.png">
+				>
+			>
+			<Entry=
+				<Type="Swizzle">
+				<Pos=
+					<X=3.456000>
+					<Y=-551.232056>
+				>
+				<Param=
+					<Swizzle="xnnn">
+				>
+			>
+			<Entry=
+				<Type="Sampler 2D">
+				<Pos=
+					<X=196.992020>
+					<Y=-673.920044>
+				>
+				<Param=
+					<WrapU=True>
+					<WrapV=True>
+				>
+			>
+			<Entry=
+				<Type="Texture">
+				<Pos=
+					<X=547.776062>
+					<Y=-848.448120>
+				>
+				<Param=
+					<Texture="graphics/hard_dent.jpg">
+				>
+			>
+			<Entry=
 				<Type="Material Parameter">
 				<Pos=
 					<X=320.000000>
@@ -257,10 +317,10 @@
 				<Input=
 					<Block=
 						<Index=2>
-					>
-					<Block=
-						<Index=3>
 						<Input=
+							<Block=
+								<Index=3>
+							>
 							<Block=
 								<Index=4>
 								<Input=
@@ -272,36 +332,168 @@
 												<Input=
 													<Block=
 														<Index=7>
-													>
-													<Block=
-														<Index=8>
+														<Input=
+															<Block=
+																<Index=8>
+															>
+															<Block=
+																<Index=9>
+															>
+														>
 													>
 												>
+											>
+											<Block=
+												<Index=10>
 											>
 										>
 									>
 									<Block=
-										<Index=9>
-									>
-								>
-							>
-							<Block=
-								<Index=10>
-								<Input=
-									<Block=
 										<Index=11>
-									>
-									<Block=
-										<Index=12>
 										<Input=
+											<Block=
+												<Index=12>
+											>
 											<Block=
 												<Index=13>
 												<Input=
 													<Block=
 														<Index=14>
+														<Input=
+															<Block=
+																<Index=15>
+															>
+															<Block=
+																<Index=16>
+															>
+														>
+													>
+												>
+											>
+										>
+									>
+								>
+							>
+						>
+					>
+					<Block=
+						<Index=17>
+						<Input=
+							<Block=
+								<Index=18>
+							>
+							<Block=
+								<Index=4>
+								<Input=
+									<Block=
+										<Index=5>
+										<Input=
+											<Block=
+												<Index=6>
+												<Input=
+													<Block=
+														<Index=7>
+														<Input=
+															<Block=
+																<Index=8>
+															>
+															<Block=
+																<Index=9>
+															>
+														>
+													>
+												>
+											>
+											<Block=
+												<Index=10>
+											>
+										>
+									>
+									<Block=
+										<Index=11>
+										<Input=
+											<Block=
+												<Index=12>
+											>
+											<Block=
+												<Index=13>
+												<Input=
+													<Block=
+														<Index=14>
+														<Input=
+															<Block=
+																<Index=15>
+															>
+															<Block=
+																<Index=16>
+															>
+														>
+													>
+												>
+											>
+										>
+									>
+								>
+							>
+						>
+					>
+					<Block=
+						<Index=19>
+						<Input=
+							<Block=
+								<Index=20>
+								<Input=
+									<Block=
+										<Index=21>
+									>
+									<Block=
+										<Index=4>
+										<Input=
+											<Block=
+												<Index=5>
+												<Input=
+													<Block=
+														<Index=6>
+														<Input=
+															<Block=
+																<Index=7>
+																<Input=
+																	<Block=
+																		<Index=8>
+																	>
+																	<Block=
+																		<Index=9>
+																	>
+																>
+															>
+														>
 													>
 													<Block=
-														<Index=15>
+														<Index=10>
+													>
+												>
+											>
+											<Block=
+												<Index=11>
+												<Input=
+													<Block=
+														<Index=12>
+													>
+													<Block=
+														<Index=13>
+														<Input=
+															<Block=
+																<Index=14>
+																<Input=
+																	<Block=
+																		<Index=15>
+																	>
+																	<Block=
+																		<Index=16>
+																	>
+																>
+															>
+														>
 													>
 												>
 											>
@@ -316,27 +508,27 @@
 		>
 		<Specular=
 			<Block=
-				<Index=16>
+				<Index=22>
 			>
 		>
 		<Glossiness=
 			<Block=
-				<Index=17>
+				<Index=23>
 			>
 		>
 		<Constant=
 			<Block=
-				<Index=18>
+				<Index=24>
 			>
 		>
 		<Opacity=
 			<Block=
-				<Index=19>
+				<Index=25>
 			>
 		>
 		<Reflection=
 			<Block=
-				<Index=20>
+				<Index=26>
 			>
 		>
 	>

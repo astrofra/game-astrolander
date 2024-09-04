@@ -14,8 +14,8 @@ class	CameraHandler
 	camera 			=	0
 	camera_pos		=	0
 	target_vel		=	0
-	max_sneak_speed	=	10.0		//	max speed when evaluating the camera unzoom
-	sneak_radius	=	Mtr(25.0)
+	max_sneak_speed	=	1.5		//	max speed when evaluating the camera unzoom
+	sneak_radius	=	Mtr(40.0)
 
 	constructor(_scene)
 	{

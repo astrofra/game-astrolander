@@ -1,3 +1,88 @@
 <Version=1.0>
-<current_level=1>
+<score=94086>
+<level_2=
+	<fuel=100>
+	<stopwatch=0.000000>
+	<life=100>
+	<complete=True>
+	<wall_hits=0>
+>
+<level_3=
+	<fuel=100>
+	<stopwatch=12545.000000>
+	<life=100>
+	<complete=True>
+	<wall_hits=0>
+>
+<level_4=
+	<complete=True>
+	<stopwatch=652385.000000>
+	<fuel=73.170044>
+	<life=74.314423>
+	<wall_hits=0>
+>
+<level_0=
+	<fuel=100>
+	<stopwatch=15530.000000>
+	<life=100>
+	<complete=True>
+	<wall_hits=0>
+>
+<level_10=
+	<life=100>
+	<stopwatch=0.000000>
+	<complete=True>
+	<fuel=100>
+	<wall_hits=0>
+>
+<level_11=
+	<life=100>
+	<stopwatch=0.000000>
+	<complete=True>
+	<fuel=100>
+	<wall_hits=0>
+>
 <reversed_controls=False>
+<level_9=
+	<life=100>
+	<stopwatch=0.000000>
+	<complete=True>
+	<fuel=100>
+	<wall_hits=0>
+>
+<current_level=1>
+<level_1=
+	<fuel=100>
+	<stopwatch=75482.000000>
+	<life=100>
+	<complete=True>
+	<wall_hits=0>
+>
+<level_5=
+	<complete=True>
+	<stopwatch=64127.000000>
+	<fuel=100>
+	<life=100>
+	<wall_hits=0>
+>
+<level_6=
+	<life=100>
+	<stopwatch=64293.000000>
+	<complete=True>
+	<fuel=100>
+	<wall_hits=0>
+>
+<level_7=
+	<life=100>
+	<stopwatch=10687.000000>
+	<complete=True>
+	<fuel=100>
+	<wall_hits=0>
+>
+<level_8=
+	<life=100>
+	<stopwatch=61975.000000>
+	<complete=True>
+	<fuel=100>
+	<wall_hits=0>
+>

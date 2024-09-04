@@ -21,6 +21,7 @@ catch(e)
 	Include("@core/scriptlib/helper.nut");
 	Include("@core/scriptlib/project.nut");
 	Include("@core/scriptlib/billboard.nut");
+	Include("@core/scriptlib/metafile.nut");
 
 	// OO wrapper API.
 	Include("@core/scriptlib/oo/oo.nut");

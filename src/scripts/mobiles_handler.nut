@@ -3,11 +3,38 @@
 	Author: Astrofra
 */
 
+class	MobileDeadlySlime
+{
+	bubble_spawn_0_pos	=	0
+	bubble_spawn_1_pos	=	0
+
+	emitter_item		=	0
+	emitter_script		=	0
+
+	function	OnSetupDone(item)
+	{
+		emitter_item = ItemGetChild(item, "deadzone_bubble_emitter")
+		emitter_script = ItemGetScriptInstance(emitter_item)
+		bubble_spawn_0_pos = ItemGetPosition(ItemGetChild(item, "bubble_spawn_0"))
+		bubble_spawn_1_pos = ItemGetPosition(ItemGetChild(item, "bubble_spawn_1"))
+	}
+
+	function	OnUpdate(item)
+	{
+		local	_pos = bubble_spawn_0_pos.Lerp(Rand(0.0,1.0), bubble_spawn_1_pos)
+		ItemSetPosition(emitter_item, _pos)
+		emitter_script.Emit()
+	}
+}
+
 class	MobileLazerGun
 {
 	scene				=	0
 	parent				=	0
 	beam_item			=	0
+
+	player_body			=	0
+	player_script		=	0
 
 	min_angle			=	-45.0
 	max_angle			=	45.0
@@ -49,6 +76,8 @@ class	MobileLazerGun
 	function	OnSetupDone(item)
 	{
 		lazer_hit_script = ItemGetScriptInstance(lazer_hit_emitter)
+		player_body	= SceneFindItem(scene, "player")
+		player_script = ItemGetScriptInstance(player_body)
 	}
 
 	function	OnUpdate(item)
@@ -87,6 +116,21 @@ class	MobileLazerGun
 
 			ItemSetPosition(lazer_hit_emitter, _hit.p)
 			lazer_hit_script.Emit()
+
+			//	Laser will block the player & hurt him
+			local	_item_hit = _hit.item
+			if (ItemGetName(_item_hit) == "player")
+			{
+				//	Hurt player
+				if (ProbabilityOccurence(30.0))
+					player_script.TakeLaserDamage()
+				
+				//	Evaluate repulsion direction
+				local	_rep_dir = ItemGetWorldPosition(player_body) - _hit.p
+				_rep_dir = _rep_dir.Normalize()
+				ItemApplyForce(player_body, _hit.p, _rep_dir.Scale(ItemGetMass(player_body) * 25.0 * player_script.low_dt_compensation))
+//				ItemApplyImpulse(player_body, _hit.p, _rep_dir.Scale(Mtrs(1.0)))
+			}
 		}
 		else
 			_scale = Vector(1,1,1)

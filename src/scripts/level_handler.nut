@@ -12,6 +12,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 /*<
 	<Parameter =
 		<level_name = <Name = "Level Name"> <Type = "String"> <Default = "default_name">>
+		<music_filename = <Name = "Music Filename"> <Type = "String"> <Default = "">>
 		<is_underwater = <Name = "Underwater Level"> <Type = "Bool"> <Default = 0>>
 	>
 >*/
@@ -20,6 +21,11 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	player_script			=	0	//	Player script instance
 	camera_handler			=	0	//	Camera
 	homebase_item			=	0	//	Where the player wants to go back
+
+	music_filename			=	""
+	music_channel			=	-1
+
+	game					=	0
 
 	state					=	0
 
@@ -46,6 +52,9 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	timer_table				=	0
 
 	sfx_got_item			=	0
+	sfx_got_item_special	=	0
+	sfx_mission_complete	=	0
+	sfx_game_over			=	0
 
 	//--------------------------------------------------
 	//	Timer generic routine
@@ -132,12 +141,10 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	UpdateLevelCompleteScreen(scene)
 	//------------------------------------------
 	{
-		if (WaitForTimer("UpdateLevelCompleteScreen", Sec(3.0) * g_clock_scale))
+		if (WaitForTimer("UpdateLevelCompleteScreen", Sec(3.75) * g_clock_scale))
 		{
 			stopwatch_handler.Stop()
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
-			game_ui.GameMessageWindowSetVisible("return_base", false, 4.0)		// [EJ]
-			game_ui.GameMessageWindowSetVisible("mission_complete", true)
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
 		else
@@ -145,7 +152,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			ResetTimer("UpdateLevelCompleteScreen")
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			game_ui.GameMessageWindowSetVisible("mission_complete", false)
-			GoToNextLevel(scene)
+			GoToLevelEndScreen(scene)
 		}
 	}
 
@@ -153,7 +160,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	UpdateGameOverScreen(scene)
 	//-------------------------------------
 	{
-		if (WaitForTimer("UpdateGameOverScreen", Sec(3.0) * g_clock_scale))
+		if (WaitForTimer("UpdateGameOverScreen", Sec(6.0) * g_clock_scale))
 		{
 			stopwatch_handler.Stop()
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
@@ -233,6 +240,57 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		game_ui.UpdateCompass(_pos, _angle)
 	}
 
+	//--------------------------
+	function	RecordGameData()
+	//--------------------------
+	{
+		game.player_data.latest_run	= {
+								stopwatch = stopwatch_handler.clock,
+								fuel = player_script.fuel,
+								life = player_script.life,
+								new_record_stopwatch = false,
+								new_record_fuel = false,
+								new_record_life = false,
+								wall_hits = 0
+		}
+
+		local	_level_key = "level_" + game.player_data.current_level.tostring()
+
+		local	_record	=	{	complete = false,//true,
+								stopwatch = 0.0, //stopwatch_handler.clock,
+								fuel = 0.0, //player_script.fuel,
+								life = 0.0, //player_script.life,
+								wall_hits = 0	
+							}
+
+		if (!game.player_data.rawin(_level_key))
+		{
+			game.player_data.rawset(_level_key, 0)
+			game.player_data[_level_key] = _record
+		}
+
+		game.player_data[_level_key].complete = true
+
+		if (game.player_data[_level_key].stopwatch < stopwatch_handler.clock)
+		{
+			game.player_data[_level_key].stopwatch = stopwatch_handler.clock
+			game.player_data.latest_run.new_record_stopwatch = true
+		}
+
+		if (game.player_data[_level_key].fuel < player_script.fuel)
+		{
+			game.player_data[_level_key].fuel = player_script.fuel
+			game.player_data.latest_run.new_record_fuel = true
+		}
+
+		if (game.player_data[_level_key].life < player_script.life)
+		{
+			game.player_data[_level_key].life = player_script.life
+			game.player_data.latest_run.new_record_life = true
+		}
+		
+	}
+
 	//-----------
 	constructor()
 	//-----------
@@ -254,6 +312,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//------------------------
 	{
 		base.OnSetup(scene)
+		game = ProjectGetScriptInstance(g_project)
 		LoadSounds()
 		camera_handler = CameraHandler(scene)
 		stopwatch_handler = StopwatchHandler()
@@ -300,8 +359,10 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		update_function = UpdateIntroScreen
 		player_script.update_function = player_script.UpdatePlayerIsDead
-	}
 
+		PlayLevelMusic()
+	}
+/*
 	//------------------------
 	function	CloseGame(scene)
 	//------------------------
@@ -316,14 +377,18 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		// Next update sets the end game flag and waits for an action from the project script.
 		game_dispatcher = ExitGame
-		SceneSuspendScriptUpdate(scene, 3000)
 	}
-
-	//------------------------------
-	function	GoToNextLevel(scene)
-	//------------------------------
+*/
+	
+	//-----------------------------------
+	function	GoToLevelEndScreen(scene)
+	//-----------------------------------
+	//	Victory!
 	{
-		state = "NextGame"
+		StopLevelMusic()
+		RecordGameData()
+		EngineSetClockScale(g_engine, 1.0)
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/level_end_screen.nms")
 	}
 
 	//------------------------
@@ -331,7 +396,9 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//------------------------
 	{
 		print("LevelHandler::ExitGame()")
-		state = "ExitGame"
+		EngineSetClockScale(g_engine, 1.0)
+		StopLevelMusic()
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/game_over.nms")
 	}
 
 	//------------------------------------------
@@ -341,18 +408,25 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		local	_item_pos = ItemGetWorldPosition(homebase_item)
 		local	_dist = ItemGetWorldPosition(player).Dist(_item_pos)
 
-		if ((_dist < Mtr(3.0)) && (player_script.current_speed < Mtrs(0.5)))
+//		if ((_dist < Mtr(3.0)) && (player_script.current_speed < Mtrs(0.5)))
+		if ((_dist < Mtr(3.0)) && (player_script.LanderIsStopped()))
+		{
+			PlaySfxMissionComplete()
+			game_ui.GameMessageWindowSetVisible("return_base", false, 10.0)		// [EJ]
+			game_ui.GameMessageWindowSetVisible("mission_complete", true)
 			update_function = UpdateLevelCompleteScreen
+		}
 	}
 
 	//---------------------------------
 	function	CheckPlayerStats(scene)
 	//---------------------------------
 	{
-		if (ItemGetScriptInstance(player).damage >= 100)
+		if (ItemGetScriptInstance(player).life <= 0)
 		{
 			game_ui.GameMessageWindowSetVisible("return_base", false, 4.0)		// [EJ] make sure this message is hidden asap so we can read the next one (should I automate that in UI?).
 			game_ui.GameMessageWindowSetVisible("game_over_damage", true)
+			PlaySfxGameOver()
 			update_function = UpdateGameOverScreen
 		}
 		else
@@ -360,6 +434,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		{
 			game_ui.GameMessageWindowSetVisible("return_base", false, 4.0)		// [EJ]
 			game_ui.GameMessageWindowSetVisible("game_over_no_fuel", true)
+			PlaySfxGameOver()
 			update_function = UpdateGameOverScreen
 		}
 
@@ -552,6 +627,9 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		//	Feedbacks
 		sfx_got_item = EngineLoadSound(g_engine, "audio/sfx/sfx_got_item.wav")
+		sfx_got_item_special = EngineLoadSound(g_engine, "audio/sfx/sfx_got_item_special.wav")
+		sfx_mission_complete = EngineLoadSound(g_engine, "audio/sfx/sfx_mission_complete.wav")
+		sfx_game_over = EngineLoadSound(g_engine, "audio/sfx/sfx_game_over.wav")
 	}
 
 	function	PlaySfxGotItem()
@@ -559,4 +637,43 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		local	_chan
 		_chan = MixerSoundStart(g_mixer, sfx_got_item)
 	}
+
+	function	PlaySfxGotItemSpecial()
+	{
+		local	_chan
+		_chan = MixerSoundStart(g_mixer, sfx_got_item_special)
+	}
+
+	function	PlaySfxMissionComplete()
+	{
+		local	_chan
+		StopLevelMusic()
+		_chan = MixerSoundStart(g_mixer, sfx_mission_complete)
+	}
+
+	function	PlaySfxGameOver()
+	{
+		local	_chan
+		StopLevelMusic()
+		_chan = MixerSoundStart(g_mixer, sfx_game_over)
+	}
+
+	function	PlayLevelMusic()
+	{
+		if (music_filename != "")
+			if (FileExists(music_filename))
+			{
+					music_channel = MixerStreamStart(g_mixer, music_filename)
+					MixerChannelSetLoopMode(g_mixer, music_channel, LoopRepeat)
+//					MixerChannelLock(g_mixer, music_channel)
+			}
+	}
+
+	function	StopLevelMusic()
+	{
+		if (music_channel != -1)
+		{
+			MixerChannelStop(g_mixer, music_channel)
+		}
+	}	
 }

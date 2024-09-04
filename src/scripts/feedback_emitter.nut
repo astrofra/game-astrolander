@@ -16,9 +16,9 @@ class	FeedbackEmitter
 		ace_deleter = AceDeleter()
 	}
 
-	//------------------------
+	//------------------
 	function	Update()
-	//------------------------
+	//------------------
 	{
 		ace_deleter.Update()
 	}

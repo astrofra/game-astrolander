@@ -23,11 +23,6 @@ class	Title
 	function	OnUpdate(scene)
 	{
 		title_ui.UpdateCursor()
-
-		if	(DeviceIsKeyDown(g_device, KeySpace))
-		{
-			StartGame()
-		}		
 	}
 
 	function	StartGame()
@@ -37,7 +32,7 @@ class	Title
 //			MixerChannelUnlockAll(g_mixer)
 			MixerChannelStop(g_mixer, channel_music)
 //			MixerChannelStopAll(g_mixer)
-			state = "startgame"
+			ProjectGetScriptInstance(g_project).ProjectStartGame()
 	}
 
 	/*
@@ -54,10 +49,10 @@ class	Title
 	{
 		print("Title::OnSetupDone()")
 
-		MixerChannelStopAll(g_mixer)
+//		MixerChannelStopAll(g_mixer)
 //		MixerChannelUnlockAll(g_mixer)
-//		channel_music = MixerStreamStart(g_mixer, "audio/music/bobby_cole-downtempo_guitar_interval-w.ogg")
-//		MixerChannelSetGain(g_mixer, channel_music, 0.5)
-//		MixerChannelSetLoopMode(g_mixer, channel_music, LoopRepeat)
+		channel_music = MixerStreamStart(g_mixer, "audio/music/chill_main_menu_music.ogg")
+		MixerChannelSetGain(g_mixer, channel_music, 1.0)
+		MixerChannelSetLoopMode(g_mixer, channel_music, LoopRepeat)
 	}
 }

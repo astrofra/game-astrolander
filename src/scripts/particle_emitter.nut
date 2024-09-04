@@ -11,10 +11,14 @@ class	ParticleEmitter
 		<particle_life = <Name = "Particle Life (sec)"> <Type = "float"> <Default = 1.0>>
 		<emit_freq = <Name = "Emit Interval (sec)"> <Type = "float"> <Default = 0.1>>
 		<jitter = <Name = "Jitter"> <Type = "bool"> <Default = 1>>
+		<jitter_radius_min = <Name = "Jitter Inner Radius (m)"> <Type = "float"> <Default = 0.125>>
+		<jitter_radius_max = <Name = "Jitter Outer Radius (m)"> <Type = "float"> <Default = 0.95>>
+		<autoemit = <Name = "Auto Emit"> <Type = "bool"> <Default = 0>>
 	>
 >*/
 
 	scene				=	0
+	current_camera		=	0
 	lander_item			=	0
 	emitter_item		=	0
 	pos					=	0
@@ -28,6 +32,9 @@ class	ParticleEmitter
 	particle_speed		=	10.0
 	particle_life		=	1.0
 	jitter				=	true
+	jitter_radius_min	=	Mtr(0.125)
+	jitter_radius_max	=	Mtr(0.95)
+	autoemit			=	false
 
 	//-----------------------
 	function	OnSetup(item)
@@ -57,12 +64,22 @@ class	ParticleEmitter
 
 	}
 
+	function	OnSetupDone(item)
+	{
+		current_camera = SceneGetCurrentCamera(scene)
+	}
+
 	//------------------------
 	function	OnUpdate(item)
 	//------------------------
 	{
 		ace_deleter.Update()
-		//Emit()
+		
+		if (CameraCullPosition(current_camera, ItemGetWorldPosition(emitter_item)) == VisibilityOutside)
+			return
+
+		if (autoemit)
+			Emit()
 		//ItemSetScale(item, scale.Scale(Rand(1,1.1)))
 	}
 
@@ -73,10 +90,10 @@ class	ParticleEmitter
 		if ((emit_freq == 0.0) || ((g_clock - emit_clock) > SecToTick(emit_freq)))
 		{
 			local	_size, new_part, _d
-			_size = Rand(0.125,0.95)
+			_size = Rand(0.25, 1.0)
 			pos = ItemGetWorldPosition(emitter_item)
 			if (jitter)
-				pos = pos + Vector(Rand(-1,1), Rand(-1,1), 0).Normalize().Scale(_size * scale_factor * 0.45)
+				pos = pos + Vector(Rand(-1,1), Rand(-1,1), 0).Normalize().Scale(Rand(jitter_radius_min, jitter_radius_max))
 			_d = ItemGetMatrix(emitter_item).GetRow(0)
 			_d.y += -0.5
 			_d = _d.Normalize().Scale(particle_speed) //	Emitter speed in m/s
