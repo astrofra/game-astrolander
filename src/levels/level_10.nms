@@ -1,4 +1,4 @@
-<NML=1.0>
+<Version=1.0>
 <Scene=
 	<ScriptedObject=
 		<ScriptUnit=
@@ -673,8 +673,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -747,8 +747,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -821,8 +821,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -895,8 +895,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -969,8 +969,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1043,8 +1043,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1112,8 +1112,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1186,8 +1186,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1261,8 +1261,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1330,8 +1330,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1404,8 +1404,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1479,8 +1479,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1554,8 +1554,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1629,8 +1629,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1703,8 +1703,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1778,8 +1778,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1852,8 +1852,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1927,8 +1927,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2002,8 +2002,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2077,8 +2077,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2152,8 +2152,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2226,8 +2226,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2301,8 +2301,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2376,8 +2376,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2446,8 +2446,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2521,8 +2521,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2595,8 +2595,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2669,8 +2669,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2743,8 +2743,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2817,8 +2817,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2891,8 +2891,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2965,8 +2965,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3039,8 +3039,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17116,8 +17116,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17167,6 +17167,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17190,8 +17191,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17265,8 +17266,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17340,8 +17341,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17391,6 +17392,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17414,8 +17416,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17465,6 +17467,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17488,8 +17491,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17539,6 +17542,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17562,8 +17566,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17613,6 +17617,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17636,8 +17641,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17687,6 +17692,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17710,8 +17716,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17785,8 +17791,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17860,8 +17866,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17935,8 +17941,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -17986,6 +17992,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18009,8 +18016,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -18055,6 +18062,7 @@
 						<Y=1.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -18078,8 +18086,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -18124,6 +18132,7 @@
 						<Y=-2.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -19347,8 +19356,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -19421,8 +19430,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -19495,8 +19504,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -19982,8 +19991,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -20051,8 +20060,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -20329,8 +20338,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -20380,6 +20389,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20403,8 +20413,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -20454,6 +20464,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -20477,8 +20488,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
+					<SelfMask=3>
+					<Mask=2>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -20523,6 +20534,7 @@
 						<Y=-12.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>

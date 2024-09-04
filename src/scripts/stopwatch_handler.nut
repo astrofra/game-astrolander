@@ -34,7 +34,7 @@ class	StopwatchHandler
 	function	Update()
 	{
 		if (is_counting)
-			clock += (g_clock - prev_clock_count)
+			clock += ((g_clock - prev_clock_count) / g_clock_scale)
 
 		prev_clock_count = g_clock
 	}

@@ -5,6 +5,48 @@
 
 		Include("scripts/globals.nut")
 
+class	SeaPlantOscillation
+{
+/*<
+	<Parameter =
+		<freq = <Name = "Frequency"> <Type = "float"> <Default = 1.0>>
+	>
+	<Parameter =
+		<amplitude = <Name = "Amplitude"> <Type = "float"> <Default = 1.0>>
+	>
+>*/
+		amplitude	=	1.0
+		angle		=	0.0
+		phase		=	0.0
+		freq		=	1.0
+		item_list	=	0
+		item_scale	=	0
+
+		function	OnSetup(item)
+		{
+			item_scale = []
+			item_list = ItemGetChildList(item)
+			foreach(_item in item_list)
+				item_scale.append(ItemGetScale(_item))
+			
+			phase		=	DegreeToRadian(Rand(0, 90) + 15.0)
+			freq *= Rand(0.95, 1.05)
+		}
+
+		function	OnUpdate(item)
+		{
+			angle += g_dt_frame * freq * DegreeToRadian(360.0)
+
+			foreach(_i, _item in item_list)
+			{
+				local	_scale
+				_scale = item_scale[_i] + Vector(sin(angle + (phase * _i)) * 0.1 * amplitude, 0, cos(angle + (phase * _i)) * 0.025 * amplitude)
+				ItemSetScale(_item, _scale)
+			}
+		}
+
+}
+
 class	MobileElevator
 {
 /*<
@@ -12,16 +54,48 @@ class	MobileElevator
 		<speed = <Name = "Speed"> <Type = "float"> <Default = 1.0>>
 	>
 >*/
-		speed 			=	Mtrs(1.0)
-		course_height	=	Mtr(5.0)
-		pos_start		=	0
-		pos				=	0
-		scene			=	0
+		speed 				=	Mtrs(1.0)
+		course_height		=	Mtr(5.0)
+		pos_start			=	0
+		pos					=	0
+		scene				=	0
 		elevator_trigger	=	0
+
+		player_script		=	0
 		player_body			=	0
+
+		constraints			=	0
+		constraints_created	= false
+		constraints_enabled	= false
+		player_is_in		=	false
+		constraints_timeout	=	0
 
 		enabled			=	false
 		going_up		=	true
+
+		function	CreateConstraints(item)
+		{
+			print("MobileElevator::CreateConstraints(item)")
+			constraints = []
+			constraints.append(SceneAddPointConstraint(scene, "const0", player_body, item, Vector(0, -1.5, 0), Vector(0, 0.75, 0)))
+			constraints.append(SceneAddPointConstraint(scene, "const1", player_body, item, Vector(0, 3, 0), Vector(0, 5.5, 0)))
+			constraints_created	= true
+			constraints_enabled = true
+		}
+
+		function	DisableConstraints(item)
+		{
+			ConstraintEnable(constraints[0], false)
+			ConstraintEnable(constraints[1], false)
+			constraints_enabled = false
+		}
+
+		function	EnableConstraints(item)
+		{
+			ConstraintEnable(constraints[0], true)
+			ConstraintEnable(constraints[1], true)
+			constraints_enabled = true
+		}
 
 		function	OnSetup(item)
 		{
@@ -41,21 +115,69 @@ class	MobileElevator
 
 			pos = pos_start
 			going_up = true
+			constraints_created	= false
+			constraints_enabled	= false
+			constraints_timeout	=	g_clock
+			player_is_in	=	false
 		}
 
 		function	OnUpdate(item)
 		{
-//			print("MobileElevator::OnUpdate()")
 			ItemSetPosition(item, pos)
 			ItemSetPhysicPosition(item, pos)
 
 			if (player_body == 0)
-				player_body = SceneGetScriptInstance(scene).player_script.body
-//			else
-//				ItemGetWorldPointVelocity(player_body).Print("player_body")
+			{
+				try	//	So that the script can work outside a level
+				{
+					player_script = SceneGetScriptInstance(scene).player_script
+					player_body = player_script.body
+				}
+				catch(e)
+				{
+					player_body = 0
+					enabled = true
+				}
+			}
+			else
+			{
+				if (TriggerTestItem(elevator_trigger, player_body))
+				{
+					player_is_in = true
+					enabled = true					
+				}
+				else
+					player_is_in = false
+					
+				if (!constraints_created)
+				{
+					CreateConstraints(item)
+					DisableConstraints(item)
+				}
+				else
+				{
+					if ((g_clock - constraints_timeout) > SecToTick(Sec(0.25)))
+					{
+						if (player_is_in)
+						{
+							if (!constraints_enabled)
+							{
+								EnableConstraints(item)
+								constraints_timeout = g_clock
+							}
+						}
 
-			if ((player_body != 0) && (TriggerTestItem(elevator_trigger, player_body)))
-				enabled = true
+						if (player_script.thrusters_active)
+						{
+							if (constraints_enabled)
+							{
+								DisableConstraints(item)
+								constraints_timeout = g_clock
+							}
+						}
+					}
+				}
+			}				
 
 			if (!enabled)
 				return

@@ -28,14 +28,17 @@ function	UICommonSetup(ui)
                 )
 */
 
+
 }
 
 //----------------------
-function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_hud_font_color, font_name = "aerial")
+function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_hud_font_color, font_name = "aerial", text_align = TextAlignLeft)
 //----------------------
 {
 	// Create UI window.
-	local	window = UIAddWindow(ui, -1, x, y, w, h)
+	local	_id
+	_id = CreateNewUIID()
+	local	window = UIAddWindow(ui, _id, x, y, w, h)
 
 	// Center window pivot.
 	//WindowSetPivot(window, w / 2, h / 2)
@@ -47,10 +50,63 @@ function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_
 	// Set text attributes.
 	TextSetSize(widget, size)
 	TextSetColor(widget, font_color.x, font_color.y, font_color.z, font_color.w)
-	TextSetAlignment(widget, TextAlignLeft)
+	TextSetAlignment(widget, text_align)
 
 	// Return window.
-	return [ window, widget ]
+	return [ window, widget, _id ]
+}
+
+class	TitleUI
+{
+
+	ui	=	0
+
+	start_button		=	0
+	level_easy_button	=	0
+	level_normal_button	=	0
+	level_hard_button	=	0
+
+	constructor(_ui)
+	{
+		ui = _ui
+		start_button = CreateLabel(ui, g_locale.press_space, 640 - 200, 600, 60, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+		level_easy_button = CreateLabel(ui, g_locale.level_easy, 640 - 200 - 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+		level_normal_button = CreateLabel(ui, g_locale.level_normal, 640 - 200, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+		level_hard_button = CreateLabel(ui, g_locale.level_hard, 640 - 200 + 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), "creative_block", TextAlignCenter)
+
+		WidgetSetEventHandler(level_easy_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelEasy)
+		WidgetSetEventHandler(level_normal_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelNormal)
+		WidgetSetEventHandler(level_hard_button[1], EventCursorDown, TitleUI.OnTitleUISelectLevelHard)
+
+		//CreateLabel(g_locale.copyright, 640, 900, 32, 900, 64)
+
+		//AddLogo()
+
+		//w_cfg_control_reverse = CreateTitleLabel(CreateStringControlReverse(), 640, 650, 28, 400, 64)
+	}
+
+	function	OnTitleUISelectLevelEasy()
+	{
+		print("TitleUI::OnTitleUISelectLevelEasy()")
+	}
+
+	function	OnTitleUISelectLevelNormal()
+	{
+		print("TitleUI::OnTitleUISelectLevelNormal()")
+	}
+
+	function	OnTitleUISelectLevelHard()
+	{
+		print("TitleUI::OnTitleUISelectLevelHard()")
+	}
+
+	function	AddLogo()
+	{
+		local	logo = UIAddBitmapWindow(ui, -1, "ui/muteblast_logo.png", 640, 850, 512, 512)
+		WindowSetPivot(logo, 256, 256)
+		WindowSetScale(logo, 0.65, 0.65)
+	}
+
 }
 
 
@@ -111,31 +167,14 @@ class	InGameUI
 		print("InGameUI::CreateCompass()")
 		local	compass_window, beacon_window
 		local	_texture
-/*
-		_texture = EngineLoadTexture(g_engine, "ui/compass.png")
-		compass_window = UIAddWindow(ui, CreateNewUIID(), 0.0, 0.0, 245.0, 245.0)
-//UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
-		WindowCenterPivot(compass_window)
-*/
+
 		_texture = EngineLoadTexture(g_engine, "ui/beacon_arrow.png")
 		beacon_window = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
 		WindowCenterPivot(beacon_window)
-//		WindowSetParent(beacon_window, compass_window)
+
 		WindowSetPosition(beacon_window, 245.0 / 2.0, 245.0 / 2.0)
 		WindowSetScale(beacon_window, 0.85, 0.85)
-/*		
-		_texture = EngineLoadTexture(g_engine, "ui/compass_dot.png")
-		local _ship = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 80.0, 80.0)
-		WindowCenterPivot(_ship)
-		WindowSetParent(_ship, compass_window)
-		WindowSetPosition(_ship, 245.0 / 2.0, 245.0 / 2.0)
-		
-		_texture = EngineLoadTexture(g_engine, "ui/compass_specular.png")
-		local _spec = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
-		WindowSetParent(_spec, compass_window)
-*/
-//		WindowSetScale(compass_window, 0.65, 0.65)
-//		WindowSetPosition(compass_window, 1280.0 - 100, 100.0 + 32.0)
+
 
 		return beacon_window
 	}
@@ -144,19 +183,7 @@ class	InGameUI
 	function	UpdateCompass(_pos, _angle)
 	//-------------------------------
 	{
-/*
-		if (RadianToDegree(_angle) < 0.0)
-			_angle += DegreeToRadian(360.0)
-		print(RadianToDegree(_angle))
 
-		local	_dt_angle = _angle - beacon_angle
-		if (Abs(RadianToDegree(_dt_angle)) > 45.0)
-			beacon_angle = Lerp(0.5, beacon_angle, _angle)
-		else
-			beacon_angle += (_dt_angle) * g_dt_frame
-
-		WindowSetRotation(beacon_window, beacon_angle)
-*/
 		WindowSetPosition(beacon_window, _pos.x, _pos.y)
 		WindowSetRotation(beacon_window, _angle)
 	}
@@ -187,17 +214,21 @@ class	InGameUI
 	}
 
 	//----------------------------------------
-	function	GameMessageWindowSetVisible(window_handler, flag = true)
+	function	GameMessageWindowSetVisible(window_handler, flag = true, speed_scale = 1.0)
 	//----------------------------------------
 	{
 		local	_win = game_window[window_handler]
+
 		if (_win.visible == flag)
 			return
+
+		print("InGameUI::GameMessageWindowSetVisible('" + window_handler + "') : flag = " + flag)
+
 
 		if (flag)
 			WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha 0.75,1;")
 		else
-			WindowSetCommandList(_win.handler, "toalpha 0,1;toalpha 0.75,0;hide;")
+			WindowSetCommandList(_win.handler, "toalpha 0,1;toalpha " + (0.75 / speed_scale).tostring() + ",0;hide;")
 
 		_win.visible = flag
 	}
@@ -212,7 +243,7 @@ class	InGameUI
 
 		WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha 0.75,1;nop 5;toalpha 1.5,0;")
 
-		_win.visible = true
+		_win.visible = false
 	}
 
 	//----------------------------------------

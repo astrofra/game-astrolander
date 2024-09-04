@@ -139,6 +139,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		{
 			stopwatch_handler.Stop()
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
+			game_ui.GameMessageWindowSetVisible("return_base", false, 4.0)		// [EJ]
 			game_ui.GameMessageWindowSetVisible("mission_complete", true)
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
@@ -288,6 +289,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		update_function = UpdateIntroScreen
 		player_script.update_function = player_script.UpdatePlayerIsDead
+
+		EngineSetClockScale(g_engine, g_clock_scale)
 	}
 
 	//------------------------
@@ -300,9 +303,11 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		// Set the UI command list to pause for 2 seconds, then fade to black in 0.5 seconds.
 		UISetCommandList(SceneGetUI(scene), "nop 2; globalfade 0.5, 1;")
 
+		EngineSetClockScale(g_engine, 1.0)
+
 		// Next update sets the end game flag and waits for an action from the project script.
 		game_dispatcher = ExitGame
-		SceneSuspendScriptUpdate(scene, 3.0 * SystemGetClockFrequency())
+		SceneSuspendScriptUpdate(scene, 3000)
 	}
 
 	//------------------------------
@@ -329,7 +334,6 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		if ((_dist < Mtr(3.0)) && (player_script.current_speed < Mtrs(0.5)))
 			update_function = UpdateLevelCompleteScreen
-
 	}
 
 	//---------------------------------
@@ -338,12 +342,14 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		if (ItemGetScriptInstance(player).damage >= 100)
 		{
+			game_ui.GameMessageWindowSetVisible("return_base", false, 4.0)		// [EJ] make sure this message is hidden asap so we can read the next one (should I automate that in UI?).
 			game_ui.GameMessageWindowSetVisible("game_over_damage", true)
 			update_function = UpdateGameOverScreen
 		}
 		else
 		if (ItemGetScriptInstance(player).fuel <= 0) 
 		{
+			game_ui.GameMessageWindowSetVisible("return_base", false, 4.0)		// [EJ]
 			game_ui.GameMessageWindowSetVisible("game_over_no_fuel", true)
 			update_function = UpdateGameOverScreen
 		}

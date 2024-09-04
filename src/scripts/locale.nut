@@ -2,8 +2,11 @@
 //	locale.nut
 
 g_locale	<-	{
+	level_easy			=	"Easy",
+	level_normal		=	"Normal",
+	level_hard			=	"Hardcore",
 	press_space			=	"Press Space"
-	copyright			=	"A game by Astrofra (c) 2011 Mutant Inc."
+	copyright			=	"A game by Astrofra (c) 2011-2012 MuteBlast."
 	control_reverse		=	"Reversed Controls"
 	yes					=	"Yes"
 	no					=	"No"
@@ -31,6 +34,7 @@ g_locale	<-	{
 								the_core		=	"The Core",
 								lost_ship		=	"The Lost Ship",
 								floating_valley		=	"The Floating Valley",
-								elevator_action	=	"Elevator Action"
+								elevator_action	=	"Elevator Action",
+								lost_ruins		=	"The Lost Ruins"
 							}
 }

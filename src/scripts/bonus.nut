@@ -11,9 +11,9 @@ function	ThreadBonusFastClock(scene)
 //--------------------------------
 {
 	print("ThreadBonusFastClock() : begin.")
-	EngineSetClockScale(g_engine, 2.0)
+	EngineSetClockScale(g_engine, 2.0 * g_clock_scale)
 	GenericThreadWait(g_bonus_duration * EngineGetClockScale(g_engine))
-	EngineSetClockScale(g_engine, 1.0)
+	EngineSetClockScale(g_engine, 1.0 * g_clock_scale)
 	print("ThreadBonusFastClock() : end.")
 }
 
@@ -22,9 +22,9 @@ function	ThreadBonusSlowClock(scene)
 //--------------------------------
 {
 	print("ThreadBonusSlowClock() : begin.")
-	EngineSetClockScale(g_engine, 0.5)
+	EngineSetClockScale(g_engine, 0.5 * g_clock_scale)
 	GenericThreadWait(g_bonus_duration * EngineGetClockScale(g_engine))
-	EngineSetClockScale(g_engine, 1.0)
+	EngineSetClockScale(g_engine, 1.0 * g_clock_scale)
 	print("ThreadBonusSlowClock() : end.")
 }
 
