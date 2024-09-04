@@ -17,6 +17,8 @@ function	UICommonSetup(ui)
 	UILoadFont("ui/anna.ttf")
 	UILoadFont("ui/aerial.ttf")
 	UILoadFont("ui/creative_block.ttf")
+	UILoadFont("ui/profont.ttf")
+//	UILoadFont("ui/elronet.ttf")
 
 /*	
 	//	Will crash if un-commented
@@ -29,7 +31,9 @@ function	UICommonSetup(ui)
 
 }
 
+//----------------------
 function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_hud_font_color, font_name = "aerial")
+//----------------------
 {
 	// Create UI window.
 	local	window = UIAddWindow(ui, -1, x, y, w, h)
@@ -51,7 +55,9 @@ function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_
 }
 
 
+//--------------
 class	InGameUI
+//--------------
 {
 	ui						=	0
 	
@@ -59,10 +65,13 @@ class	InGameUI
 	fuel_gauge				=	0
 	artifact_count			=	0
 	room_name				=	0
+	stopwatch				=	0
 	beacon_window			=	0
 	beacon_angle			=	0
 
 	inventory_bitmaps		=	0
+
+	update_frequency		=	0
 
 	game_window			=	{
 		game_over_no_fuel	= { handler = 0, visible = false }
@@ -73,13 +82,16 @@ class	InGameUI
 		mission_complete	= { handler = 0, visible = false }
 	}
 	
+	//--------------
 	constructor(_ui)
+	//--------------
 	{		
 		print("InGameUI::Setup()")
 		ui = _ui
 		UICommonSetup(ui)
 		Damage_gauge = CreateDamageGauge()
 		fuel_gauge = CreateFuelGauge()
+		stopwatch = CreateStopwatch()
 		room_name = CreateLevelName()
 		artifact_count = CreateArtifactCounter()
 		beacon_window = CreateCompass()
@@ -116,7 +128,7 @@ class	InGameUI
 		WindowSetParent(_spec, compass_window)
 
 		WindowSetScale(compass_window, 0.65, 0.65)
-		WindowSetPosition(compass_window, 1280.0 - 100, 100.0)
+		WindowSetPosition(compass_window, 1280.0 - 100, 100.0 + 32.0)
 
 		return beacon_window
 	}
@@ -220,6 +232,19 @@ class	InGameUI
 		*/
 	}
 
+	//----------------------------
+	function	UpdateStopwatch(t)
+	//----------------------------
+	{
+		if (++update_frequency > 5)
+		{
+			TextSetText(stopwatch[1], TimeToString(t))
+			update_frequency = 0
+		}
+
+		update_frequency++
+	}
+
 	//----------------------------------------
 	function	UpdateDamageGauge(v)
 	//----------------------------------------
@@ -263,11 +288,21 @@ class	InGameUI
 	}
 
 	//----------------------------------------
+	function	CreateStopwatch()
+	//----------------------------------------
+	{
+		print("InGameUI::CreateStopwatch()")
+		CreateLabel(ui, g_locale.hud_stopwatch, 1280 - 400, 0, 32, 400)
+		local	_stopwatch = CreateLabel(ui, TimeToString(0.0), 1280 - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
+		return _stopwatch
+	}
+
+	//----------------------------------------
 	function	CreateArtifactCounter()
 	//----------------------------------------
 	{
 		print("InGameUI::CreateArtifactCounter()")
-		CreateLabel(ui, g_locale.artifacts, 1280 - 360, 960 - 64, 32, 380)
+		CreateLabel(ui, g_locale.hud_artifacts, 1280 - 360, 960 - 64, 32, 380)
 		local	_counter = CreateLabel(ui, "0/0", 1280 - 360 + 280, 960 - 64)
 		return _counter
 	}

@@ -3,7 +3,7 @@
 	<Items=
 		<MObject=
 			<MItem=
-				<Id="background_hills_0">
+				<Id="rotary_gate_0">
 				<UId=0>
 				<Active>
 				<Priority=0.500000>
@@ -11,19 +11,19 @@
 				<MotionPlayer=
 					<Motions=
 						<Motion=
-							<Id="background">
+							<Id="mobile_items">
 							<UseQuaternion=True>
 							<QChannel=
 								<BinaryKeys=
 									<Count=21>
 									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
+********\[7[\[7[**ªi÷övg****\[7[\[7[**ªi÷öög****\[7[\[7[**ªiÄÃCh
+****\[7[\[7[**ªi÷övh****\[7[\[7[**ªi**ªh****\[7[\[7[**ªiÄÃÃh****
+\[7[\[7[**ªi]]Ýh****\[7[\[7[**ªi÷ööh****\[7[\[7[**ªih****\[7[
+\[7[**ªi***i****\[7[\[7[**ªi÷ö6i****\[7[\[7[**ªiÄÃCi****\[7[\[7[
+**ªiPi****\[7[\[7[**ªi]]]i****\[7[\[7[**ªi**ji****\[7[\[7[**ªi
+÷övi****\[7[\[7[**ªiÄÃƒi****\[7[\[7[**ªii****\[7[\[7[**ªi]]i
+****\[7[\[7[**ªi**ªi****\[7[\[7[**ªi>
 								>
 							>
 							<Channel=
@@ -51,7 +51,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****ŠÚýç+**ªiŠÚýç>
++********+**ªi****>
 									>
 								>
 								<Id="PositionZ">
@@ -99,17 +99,11 @@
 			>
 			<Object=
 				<Item=
-					<Position=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=-0.103364>
-					>
 					<Rotation=
-						<X=-0.000000>
-						<Y=3.141593>
-						<Z=0.000000>
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=3.141593>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -118,12 +112,12 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/background_hills_0.nmg">
+				<Geometry="graphics/rotary_gate_0.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
-				<Id="background_hills_1">
+				<Id="rotary_gate_slot">
 				<UId=1>
 				<Active>
 				<Priority=0.500000>
@@ -131,7 +125,7 @@
 				<MotionPlayer=
 					<Motions=
 						<Motion=
-							<Id="background">
+							<Id="mobile_items">
 							<UseQuaternion=True>
 							<QChannel=
 								<BinaryKeys=
@@ -151,7 +145,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****¢Äßl+**ªi¢Äßl>
++********+**ªi****>
 									>
 								>
 								<Id="PositionX">
@@ -171,7 +165,7 @@
 									<BinaryKnot=
 										<Count=2>
 										<Data==18:18@
-+****ŠÚýç+**ªiŠÚýç>
++****ðYÒé+**ªiðYÒé>
 									>
 								>
 								<Id="PositionZ">
@@ -220,9 +214,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=90.801697>
+						<X=0.000000>
 						<Y=0.000000>
-						<Z=-0.103364>
+						<Z=-1.313958>
 					>
 					<Rotation=
 						<X=-0.000000>
@@ -237,126 +231,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/background_hills_1.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="background_hills_2">
-				<UId=2>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions=
-						<Motion=
-							<Id="background">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****÷ê_m+**ªi÷ê_m>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ŠÚýç+**ªiŠÚýç>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=181.753128>
-						<Y=0.000000>
-						<Z=-0.103364>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=3.141593>
-						<Z=0.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/background_hills_2.nmg">
+				<Geometry="graphics/rotary_gate_slot.nmg">
 			>
 		>
 	>
@@ -386,156 +261,5 @@
 	>
 	<Physics=
 		<Frequency=59.999996>
-	>
-	<ViewMatrix=
-		<R0=
-			<X=-0.957492>
-			<Y=-0.000000>
-			<Z=-0.288460>
-			<W=0.000000>
-		>
-		<R1=
-			<X=0.060985>
-			<Y=0.977396>
-			<Z=-0.202428>
-			<W=0.000000>
-		>
-		<R2=
-			<X=0.281940>
-			<Y=-0.211415>
-			<Z=-0.935849>
-			<W=0.000000>
-		>
-		<R3=
-			<X=-160.029312>
-			<Y=113.374687>
-			<Z=506.601105>
-			<W=1.000000>
-		>
-	>
->
-<Editor=
-	<View=
-		<Layout="Single">
-		<Viewport=
-			<Index=0>
-			<Camera="@Perspective">
-			<Matrix=
-				<R0=
-					<X=-0.957492>
-					<Y=-0.000000>
-					<Z=-0.288460>
-					<W=0.000000>
-				>
-				<R1=
-					<X=0.060985>
-					<Y=0.977396>
-					<Z=-0.202428>
-					<W=0.000000>
-				>
-				<R2=
-					<X=0.281940>
-					<Y=-0.211415>
-					<Z=-0.935849>
-					<W=0.000000>
-				>
-				<R3=
-					<X=-160.029312>
-					<Y=113.374687>
-					<Z=506.601105>
-					<W=1.000000>
-				>
-			>
-		>
-		<Viewport=
-			<Index=1>
-			<Camera="@Top">
-			<Matrix=
-				<R0=
-					<X=1.000000>
-					<Y=0.000000>
-					<Z=0.000000>
-					<W=0.000000>
-				>
-				<R1=
-					<X=0.000000>
-					<Y=-0.000000>
-					<Z=1.000000>
-					<W=0.000000>
-				>
-				<R2=
-					<X=0.000000>
-					<Y=-1.000000>
-					<Z=-0.000000>
-					<W=0.000000>
-				>
-				<R3=
-					<X=0.000000>
-					<Y=10.000000>
-					<Z=0.000000>
-					<W=1.000000>
-				>
-			>
-		>
-		<Viewport=
-			<Index=2>
-			<Camera="@Bottom">
-			<Matrix=
-				<R0=
-					<X=1.000000>
-					<Y=0.000000>
-					<Z=0.000000>
-					<W=0.000000>
-				>
-				<R1=
-					<X=0.000000>
-					<Y=-0.000000>
-					<Z=-1.000000>
-					<W=0.000000>
-				>
-				<R2=
-					<X=0.000000>
-					<Y=1.000000>
-					<Z=-0.000000>
-					<W=0.000000>
-				>
-				<R3=
-					<X=0.000000>
-					<Y=-10.000000>
-					<Z=0.000000>
-					<W=1.000000>
-				>
-			>
-		>
-		<Viewport=
-			<Index=3>
-			<Camera="@Left">
-			<Matrix=
-				<R0=
-					<X=-0.000000>
-					<Y=0.000000>
-					<Z=-1.000000>
-					<W=0.000000>
-				>
-				<R1=
-					<X=0.000000>
-					<Y=1.000000>
-					<Z=0.000000>
-					<W=0.000000>
-				>
-				<R2=
-					<X=1.000000>
-					<Y=0.000000>
-					<Z=-0.000000>
-					<W=0.000000>
-				>
-				<R3=
-					<X=-10.000000>
-					<Y=0.000000>
-					<Z=0.000000>
-					<W=1.000000>
-				>
-			>
-		>
 	>
 >

@@ -9,7 +9,8 @@ g_locale	<-	{
 	no					=	"No"
 	hud_damage			=	"DAMAGE"
 	hud_fuel			=	"FUEL"
-	artifacts			=	"ARTIFACTS"
+	hud_artifacts		=	"ARTIFACTS"
+	hud_stopwatch		=	"TIME"
 	get_ready			=	"Get Ready!"
 	game_over			=	"Game Over"
 	no_fuel				=	"Out of Fuel!"
@@ -17,6 +18,7 @@ g_locale	<-	{
 	no_time_left		=	"No Time Left!"
 	return_base			=	"Return to Base!\n~~Size(40)You found all the artifacts."
 	mission_complete	=	"Mission Complete!"
+	player_time			=	"~~Size(40)Your time : "
 	level_names			=	{	default_name	=	"Level Name",
 								watch_ceilling	=	"Watch the Ceilling",
 								up_down			=	"Up and Down",

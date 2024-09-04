@@ -3,9 +3,8 @@
 	Author: Astrofra
 */
 
-Include("scripts/controller.nut")
-
-g_gravity	<-	Vector(0.0, -4.0, 0.0)
+	Include("scripts/globals.nut")
+	Include("scripts/utils.nut")
 
 /*!
 	@short	LunarLander
@@ -13,8 +12,6 @@ g_gravity	<-	Vector(0.0, -4.0, 0.0)
 */
 class	LunarLander
 {
-	controller			=	0
-	pad					=	0
 	thrust				=	15.0
 	thrust_item			=	0
 	thrust_script		=	0
@@ -28,16 +25,21 @@ class	LunarLander
 	speed_max_damage	=	Mtrs(25.0)
 	min_damage			=	5
 	max_damage			=	20
+	shield_enabled		=	false
 
 	flame_item			=	0
 	smoke_emitter		=	0
 	smoke_emitter_script	=	0
+
+	shield_item			=	0
+	shield_col_item		=	0
 
 	hit_emitter		=	0
 	hit_emitter_script	=	0
 	weak_zone_item		=	0
 
 
+	current_velocity	=	0
 	current_speed		=	0.0
 
 	hit_timeout			=	0.0
@@ -91,7 +93,7 @@ class	LunarLander
 	function	UpdatePlayerIsAlive(item)
 	//------------------------------
 	{
-		pad = controller.GetControllerVector()
+		KeyboardUpdate()
 
 		if (g_reversed_controls)
 		{	
@@ -136,15 +138,17 @@ class	LunarLander
 	//--------------------------------
 	{
 		//	CountThePhysicSteps()
-
 		if (!dt)
 		{
 			print("Physic Step skipped")
 			return
 		}
 
+		local	_vel = ItemGetLinearVelocity(item)
+		current_velocity = _vel.Normalize()
+		current_speed = _vel.Len()
+		
 		ThrustTypeControl(item)
-		current_speed = ItemGetLinearVelocity(item).Len()
 	}
 
 	//-------------------------------
@@ -237,6 +241,16 @@ class	LunarLander
 			game_ui.UpdateFuelGauge(fuel)
 	}
 
+	//------------------
+	function	Heal()
+	//------------------
+	{
+		damage = 0.0
+		if (game_ui)
+			game_ui.UpdateDamageGauge(damage)
+	}
+
+
 	//----------------------------
 	function	CheckPlayerStats()
 	//----------------------------
@@ -283,38 +297,40 @@ class	LunarLander
 	function	AutoAlign(item)
 	//-------------------------
 	{
-		local	_timeout = TickToSec(g_clock - auto_align_timeout)
-		//if (_timeout < Sec(0.015))
-		//	return
+		local	_align, _speed
 		
 		local	_rot_z = ItemGetRotation(item).z
 		local	_ang_v_z = ItemGetAngularVelocity(item).z
 
-		_timeout = 1.0 //Clamp(_timeout - 0.05, 0.0, 1.0) 
-		_timeout *= Clamp(Abs(RadianToDegree(_rot_z)) / 180.0,0.0,1.0)
-		_timeout *= 250.0
+		_align = Clamp(Abs(RadianToDegree(_rot_z)) / 180.0,0.0,1.0)
+		_align *= 250.0
 
-		
-		ItemApplyTorque(item, Vector(0,0,-_rot_z - _ang_v_z).Scale(_timeout * ItemGetMass(item)))
+		_speed = ItemGetLinearVelocity(item).Len()
+		_speed = RangeAdjust(_speed, 0.25, 0.5, 0.0, 1.0)
+		_speed = Clamp(_speed, 0.0, 1.0)
+		_align *= _speed
+
+		ItemApplyTorque(item, Vector(0,0,-_rot_z - _ang_v_z).Scale(_align * ItemGetMass(item)))
 	}
 
 	//------------------------------------------------------
 	function	OnCollisionEx(item, with_item, contact, dir)
 	//------------------------------------------------------
 	{
-		//	Cancel auto align
-		auto_align_timeout = g_clock + SecToTick(Sec(0.25))
-
 		if (current_speed >= speed_min_damage)
 		{
-			//foreach(_hit_point in contact.p)
-			ImpactFeedBack(contact.p[0])
-			TakeDamage(current_speed)
+			if (!shield_enabled)
+			{
+				local	k_damage = Max(-contact.n[0].Dot(current_velocity), 0.0)
+				TakeDamage(current_speed, k_damage)
+				foreach(_p in contact.p)
+					ImpactFeedBack(_p)
+			}
 		}
 	}
 
 	//-----------------------------------
-	function	TakeDamage(impact_speed)
+	function	TakeDamage(impact_speed, angle_incidence = 1.0)
 	//-----------------------------------
 	{
 		if (g_clock - hit_timeout < SecToTick(Sec(1.0)))
@@ -322,6 +338,7 @@ class	LunarLander
 
 		local	damage_amount = Clamp(impact_speed.tofloat(), speed_min_damage, speed_max_damage)
 		damage_amount = RangeAdjust(damage_amount, speed_min_damage, speed_max_damage, min_damage, max_damage)
+		damage_amount = damage_amount * angle_incidence
 		hit_timeout = g_clock
 		damage += damage_amount
 		if (game_ui)
@@ -329,7 +346,9 @@ class	LunarLander
 		print("LunarLander::TakeDamage() : damage = " + damage_amount.tostring())
 	}
 
+	//----------------------
 	function	LoadSounds()
+	//----------------------
 	{
 		//	Thrusters
 		sfx_thrust_clean	=	EngineLoadSound(g_engine, "audio/sfx/sfx_thrust.wav")
@@ -341,7 +360,9 @@ class	LunarLander
 			sfx_metal_col.append(EngineLoadSound(g_engine, "audio/sfx/sfx_metal_col_" + n.tostring() + ".wav"))
 	}
 
+	//-----------------------------
 	function	SetupLanderSounds()
+	//-----------------------------
 	{
 		//	Thrusters
 		channel_thrust_clean = MixerSoundStart(g_mixer, sfx_thrust_clean)
@@ -366,15 +387,13 @@ class	LunarLander
 	function	OnSetup(item)
 	//-----------------------
 	{
-		controller = GenericController()
-		pad = controller.GetControllerVector()
-
 		scene = ItemGetScene(item)
 
 		SceneSetGravity(scene, g_gravity);
 		ItemPhysicSetAngularFactor(item, Vector(0,0,1.0))
 		ItemPhysicSetLinearFactor(item,  Vector(1.0,1.0,0.0))
 		ItemSetLinearDamping(item, 0.9)
+		current_velocity = Vector(0,0,0)
 
 		LoadSounds()
 
@@ -388,6 +407,7 @@ class	LunarLander
 	function	OnSetupDone(item)
 	//---------------------------
 	{
+		print("LunarLander::OnSetupDone()")
 		try	{	game_ui = SceneGetScriptInstance(scene).game_ui	}
 		catch(e)	{	game_ui = 0	}
 
@@ -398,10 +418,15 @@ class	LunarLander
 		}
 
 		weak_zone_item = ItemGetChild(item, "weak_zone")
+		hit_timeout = g_clock
 
 		thrust_item = []
 		thrust_item.append(ItemGetChild(item, "thrust_item_l"))
 		thrust_item.append(ItemGetChild(item, "thrust_item_r"))
+
+		shield_item = ItemGetChild(item, "shield_mesh")
+		shield_col_item = ItemGetChild(ItemGetParent(item), "shield_col")
+		DisableShield()
 
 		flame_item = []
 		flame_item.append(ItemGetChild(item, "flame_item_l"))
@@ -423,6 +448,22 @@ class	LunarLander
 		ItemSetParent(hit_emitter, scene_root)
 
 		SetupLanderSounds()
+	}
+
+	function	EnableShield()
+	{	
+		print("LunarLander::EnableShield()")
+		shield_enabled = true
+		ItemActivate(shield_item, true)
+		ItemSetCollisionMask(shield_col_item, 2)
+	}
+
+	function	DisableShield()
+	{	
+		print("LunarLander::DisableShield()")
+		shield_enabled = false
+		ItemActivate(shield_item, false)
+		ItemSetCollisionMask(shield_col_item, 0)
 	}
 
 	constructor()

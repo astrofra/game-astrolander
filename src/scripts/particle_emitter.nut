@@ -10,7 +10,8 @@ class	ParticleEmitter
 		<particle_mesh = <Name = "Particle Mesh"> <Type = "String"> <Default = "graphics/particle_glow.nmg">>
 		<scale_factor = <Name = "Scale Factor"> <Type = "Float"> <Default = 1.0>>
 		<particle_speed = <Name = "Particle Speed (m/s)"> <Type = "float"> <Default = 10.0>>
-		<emit_freq = <Name = "Emit Interval (sec)"> <Type = "Float"> <Default = 0.1>>
+		<particle_life = <Name = "Particle Life (sec)"> <Type = "float"> <Default = 1.0>>
+		<emit_freq = <Name = "Emit Interval (sec)"> <Type = "float"> <Default = 0.1>>
 	>
 >*/
 
@@ -26,6 +27,7 @@ class	ParticleEmitter
 	particle_mesh		=	"graphics/particle_glow.nmg"
 	ace_deleter			=	0
 	particle_speed		=	10.0
+	particle_life		=	1.0
 
 	//-----------------------
 	function	OnSetup(item)
@@ -44,6 +46,8 @@ class	ParticleEmitter
 		ObjectSetGeometry(original_particle, geo)
 		original_particle = ObjectGetItem(original_particle)
 		ItemActivate(original_particle, false)
+
+		particle_speed = particle_speed * particle_life
 
 		//	Ace deleter
 		ace_deleter = AceDeleter()
@@ -83,7 +87,7 @@ class	ParticleEmitter
 			ItemSetRotation(new_part, Vector(0,0,Rand(0,180)))
 			ItemSetScale(new_part, Vector(_size * scale_factor,_size * scale_factor,1.0))
 			ItemSetOpacity(new_part, 1.0)
-			ItemSetCommandList(new_part, "offsetposition 1," + _d.x + "," + _d.y + "," + _d.z + "+toscale 1,0.05,0.05,1.0;")
+			ItemSetCommandList(new_part, "offsetposition " + particle_life + "," + _d.x + "," + _d.y + "," + _d.z + "+toscale " + particle_life + ",0.05,0.05,1.0;")
 
 			ace_deleter.RegisterItem(new_part)
 

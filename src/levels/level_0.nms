@@ -48,7 +48,6 @@
 						<Y=13.919093>
 						<Z=-60.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=80.458984>
 						<Y=-17.147449>
@@ -2375,7 +2374,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3536,7 +3534,6 @@
 						<Y=3.141592>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6165,6 +6162,7 @@
 						<Y=-12.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16329,7 +16327,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -16700,7 +16697,7 @@
 			<Item=
 				<Position=
 					<X=75.000000>
-					<Y=12.322123>
+					<Y=14.214606>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -16818,6 +16815,77 @@
 				<Registry>
 			>
 			<Template="graphics/prop_cube.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="time">
+				<UId=141>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=85.797997>
+					<Y=13.326759>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/bonus_time.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="Mobile Rotary 0">
+				<UId=143>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=16.055490>
+					<Y=12.325414>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/mobile_rotary_0.nms">
+			<DoNotParent=True>
 		>
 	>
 	<Links=

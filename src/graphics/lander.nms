@@ -109,9 +109,9 @@
 						<PhysicShape=
 							<Type="Box">
 							<Position=
-								<X=0.550000>
+								<X=0.684011>
 								<Y=-1.228000>
-								<Z=-0.550000>
+								<Z=-0.587792>
 							>
 							<Rotation=
 								<X=-0.000000>
@@ -124,9 +124,9 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
+								<X=0.350000>
 								<Y=1.000000>
-								<Z=1.000000>
+								<Z=0.350000>
 							>
 							<Mass=10.000000>
 							<StaticFriction=1.750000>
@@ -136,9 +136,9 @@
 						<PhysicShape=
 							<Type="Box">
 							<Position=
-								<X=0.550000>
+								<X=0.625442>
 								<Y=-1.228000>
-								<Z=0.550000>
+								<Z=0.650686>
 							>
 							<Rotation=
 								<X=-0.000000>
@@ -151,9 +151,9 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
+								<X=0.350000>
 								<Y=1.000000>
-								<Z=1.000000>
+								<Z=0.350000>
 							>
 							<Mass=10.000000>
 							<StaticFriction=1.750000>
@@ -163,9 +163,9 @@
 						<PhysicShape=
 							<Type="Box">
 							<Position=
-								<X=-0.550000>
+								<X=-0.574338>
 								<Y=-1.228000>
-								<Z=0.550000>
+								<Z=0.663044>
 							>
 							<Rotation=
 								<X=-0.000000>
@@ -178,9 +178,9 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
+								<X=0.350000>
 								<Y=1.000000>
-								<Z=1.000000>
+								<Z=0.350000>
 							>
 							<Mass=10.000000>
 							<StaticFriction=1.750000>
@@ -190,9 +190,9 @@
 						<PhysicShape=
 							<Type="Box">
 							<Position=
-								<X=-0.550000>
+								<X=-0.606601>
 								<Y=-1.228000>
-								<Z=-0.550000>
+								<Z=-0.597680>
 							>
 							<Rotation=
 								<X=-0.000000>
@@ -205,9 +205,9 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=1.000000>
+								<X=0.350000>
 								<Y=1.000000>
-								<Z=1.000000>
+								<Z=0.350000>
 							>
 							<Mass=10.000000>
 							<StaticFriction=1.750000>
@@ -325,9 +325,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=0.000000>
-						<Y=1.829000>
-						<Z=0.000000>
+						<X=-0.062000>
+						<Y=0.000000>
+						<Z=0.032000>
 					>
 					<ItemFlag>
 					<Target=
@@ -668,7 +668,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -783,7 +782,6 @@
 						<Y=0.996000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -893,7 +891,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1003,7 +1000,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1050,7 +1046,6 @@
 						<Y=0.499000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1098,7 +1093,6 @@
 						<Y=0.499000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1146,7 +1140,6 @@
 						<Y=0.499000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1186,6 +1179,18 @@
 								<Id="particle_speed">
 								<Value=0.000000>
 							>
+							<Parm=
+								<Id="scale_factor">
+								<Value=1.000000>
+							>
+							<Parm=
+								<Id="immediate_emit_amount">
+								<Value=1>
+							>
+							<Parm=
+								<Id="particle_life">
+								<Value=1.000000>
+							>
 						>
 					>
 				>
@@ -1204,6 +1209,18 @@
 						<Parm=
 							<Id="particle_speed">
 							<Value=0.000000>
+						>
+						<Parm=
+							<Id="scale_factor">
+							<Value=1.000000>
+						>
+						<Parm=
+							<Id="immediate_emit_amount">
+							<Value=1>
+						>
+						<Parm=
+							<Id="particle_life">
+							<Value=1.000000>
 						>
 					>
 				>
@@ -1249,14 +1266,22 @@
 							>
 							<Parm=
 								<Id="emit_freq">
-								<Value=0.010000>
-							>
-							<Parm=
-								<Id="particle_speed">
 								<Value=0.000000>
 							>
 							<Parm=
+								<Id="particle_speed">
+								<Value=1.000000>
+							>
+							<Parm=
 								<Id="scale_factor">
+								<Value=0.350000>
+							>
+							<Parm=
+								<Id="immediate_emit_amount">
+								<Value=8.000000>
+							>
+							<Parm=
+								<Id="particle_life">
 								<Value=0.250000>
 							>
 						>
@@ -1272,14 +1297,22 @@
 						>
 						<Parm=
 							<Id="emit_freq">
-							<Value=0.010000>
-						>
-						<Parm=
-							<Id="particle_speed">
 							<Value=0.000000>
 						>
 						<Parm=
+							<Id="particle_speed">
+							<Value=1.000000>
+						>
+						<Parm=
 							<Id="scale_factor">
+							<Value=0.350000>
+						>
+						<Parm=
+							<Id="immediate_emit_amount">
+							<Value=8.000000>
+						>
+						<Parm=
+							<Id="particle_life">
 							<Value=0.250000>
 						>
 					>
@@ -1341,10 +1374,115 @@
 				>
 			>
 		>
+		<MObject=
+			<MItem=
+				<Id="shield_mesh">
+				<UId=14>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<ScriptedObject=
+					<ScriptUnit=
+						<Script="scripts/vfx.nut">
+						<Class="AlphaFlicker">
+					>
+				>
+				<ScriptUnit=
+					<Script="scripts/vfx.nut">
+					<Class="AlphaFlicker">
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Scale=
+						<X=0.900000>
+						<Y=0.900000>
+						<Z=0.900000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/pod_shield.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="shield_col">
+				<UId=16>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=2>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="Dynamic">
+					<Shapes=
+						<PhysicShape=
+							<Type="Sphere">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=2.350000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=14>
+				<UId=15>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -1390,6 +1528,302 @@
 				<VolumetricRange=8.000000>
 			>
 		>
+		<MConstraint=
+			<MItem=
+				<Id="shield_link_0">
+				<UId=17>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Constraint=
+				<Type="Point">
+				<PivotA=
+					<R0=
+						<X=1.000000>
+						<Y=0.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R1=
+						<X=0.000000>
+						<Y=1.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R2=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+						<W=0.000000>
+					>
+					<R3=
+						<X=0.000000>
+						<Y=2.250000>
+						<Z=0.000000>
+						<W=1.000000>
+					>
+				>
+				<PivotB=
+					<R0=
+						<X=1.000000>
+						<Y=0.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R1=
+						<X=0.000000>
+						<Y=1.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R2=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+						<W=0.000000>
+					>
+					<R3=
+						<X=0.000000>
+						<Y=2.250000>
+						<Z=0.000000>
+						<W=1.000000>
+					>
+				>
+			>
+		>
+		<MConstraint=
+			<MItem=
+				<Id="shield_link_1">
+				<UId=18>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Constraint=
+				<Type="Point">
+				<PivotA=
+					<R0=
+						<X=1.000000>
+						<Y=0.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R1=
+						<X=0.000000>
+						<Y=1.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R2=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+						<W=0.000000>
+					>
+					<R3=
+						<X=-1.645000>
+						<Y=-1.645000>
+						<Z=0.000000>
+						<W=1.000000>
+					>
+				>
+				<PivotB=
+					<R0=
+						<X=1.000000>
+						<Y=0.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R1=
+						<X=0.000000>
+						<Y=1.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R2=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+						<W=0.000000>
+					>
+					<R3=
+						<X=-1.645000>
+						<Y=-1.645000>
+						<Z=0.000000>
+						<W=1.000000>
+					>
+				>
+			>
+		>
+		<MConstraint=
+			<MItem=
+				<Id="shield_link_2">
+				<UId=19>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Constraint=
+				<Type="Point">
+				<PivotA=
+					<R0=
+						<X=1.000000>
+						<Y=0.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R1=
+						<X=0.000000>
+						<Y=1.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R2=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+						<W=0.000000>
+					>
+					<R3=
+						<X=1.645000>
+						<Y=-1.645000>
+						<Z=0.000000>
+						<W=1.000000>
+					>
+				>
+				<PivotB=
+					<R0=
+						<X=1.000000>
+						<Y=0.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R1=
+						<X=0.000000>
+						<Y=1.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R2=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+						<W=0.000000>
+					>
+					<R3=
+						<X=1.645000>
+						<Y=-1.645000>
+						<Z=0.000000>
+						<W=1.000000>
+					>
+				>
+			>
+		>
+		<MConstraint=
+			<MItem=
+				<Id="shield_link_4">
+				<UId=22>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<Mode="None">
+				>
+			>
+			<Constraint=
+				<Type="Point">
+				<PivotA=
+					<R0=
+						<X=1.000000>
+						<Y=0.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R1=
+						<X=0.000000>
+						<Y=1.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R2=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+						<W=0.000000>
+					>
+					<R3=
+						<X=0.000000>
+						<Y=-2.250000>
+						<Z=0.000000>
+						<W=1.000000>
+					>
+				>
+				<PivotB=
+					<R0=
+						<X=1.000000>
+						<Y=0.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R1=
+						<X=0.000000>
+						<Y=1.000000>
+						<Z=0.000000>
+						<W=0.000000>
+					>
+					<R2=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+						<W=0.000000>
+					>
+					<R3=
+						<X=0.000000>
+						<Y=-2.250000>
+						<Z=0.000000>
+						<W=1.000000>
+					>
+				>
+			>
+		>
 	>
 	<Links=
 		<Link=
@@ -1432,9 +1866,34 @@
 			<Item=13>
 			<Link=0>
 		>
+		<Link=
+			<Item=14>
+			<Link=0>
+		>
 	>
 	<Skins>
-	<Constraints>
+	<Constraints=
+		<Constraint=
+			<Uid=17>
+			<UidA=0>
+			<UidB=16>
+		>
+		<Constraint=
+			<Uid=18>
+			<UidA=0>
+			<UidB=16>
+		>
+		<Constraint=
+			<Uid=19>
+			<UidA=0>
+			<UidB=16>
+		>
+		<Constraint=
+			<Uid=22>
+			<UidA=0>
+			<UidB=16>
+		>
+	>
 	<Globals=
 		<BackgroundColor=
 			<X=0.000000>
@@ -1461,27 +1920,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.995776>
-			<Y=0.000000>
-			<Z=0.091811>
+			<X=-0.993670>
+			<Y=-0.000000>
+			<Z=-0.112336>
 			<W=0.000000>
 		>
 		<R1=
-			<X=-0.020855>
-			<Y=0.973860>
-			<Z=0.226191>
+			<X=0.000631>
+			<Y=0.999984>
+			<Z=-0.005584>
 			<W=0.000000>
 		>
 		<R2=
-			<X=-0.089411>
-			<Y=-0.227150>
-			<Z=0.969747>
+			<X=0.112334>
+			<Y=-0.005619>
+			<Z=-0.993655>
 			<W=0.000000>
 		>
 		<R3=
-			<X=1.778351>
-			<Y=2.951682>
-			<Z=-22.963209>
+			<X=-1.302910>
+			<Y=-0.097249>
+			<Z=15.986143>
 			<W=1.000000>
 		>
 	>
@@ -1494,27 +1953,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=0.995776>
-					<Y=0.000000>
-					<Z=0.091811>
+					<X=-0.993670>
+					<Y=-0.000000>
+					<Z=-0.112336>
 					<W=0.000000>
 				>
 				<R1=
-					<X=-0.020855>
-					<Y=0.973860>
-					<Z=0.226191>
+					<X=0.000631>
+					<Y=0.999984>
+					<Z=-0.005584>
 					<W=0.000000>
 				>
 				<R2=
-					<X=-0.089411>
-					<Y=-0.227150>
-					<Z=0.969747>
+					<X=0.112334>
+					<Y=-0.005619>
+					<Z=-0.993655>
 					<W=0.000000>
 				>
 				<R3=
-					<X=1.778351>
-					<Y=2.951682>
-					<Z=-22.963209>
+					<X=-1.302910>
+					<Y=-0.097249>
+					<Z=15.986143>
 					<W=1.000000>
 				>
 			>

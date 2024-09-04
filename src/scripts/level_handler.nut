@@ -4,13 +4,16 @@
 */
 
 		Include("scripts/ui.nut")
+		Include("scripts/thread_handler.nut")
+		Include("scripts/bonus.nut")
 		Include("scripts/camera_handler.nut")
+		Include("scripts/stopwatch_handler.nut")
 
 /*!
 	@short	LevelHandler
 	@author	Astrofra
 */
-class	LevelHandler
+class	LevelHandler	extends	SceneWithThreadHandler
 {
 /*<
 	<Parameter =
@@ -31,6 +34,8 @@ class	LevelHandler
 	artefact				=	0
 	total_artifact_to_found	=	0
 	bonus					=	0
+
+	stopwatch_handler		=	0
 
 	game_ui					=	0
 
@@ -67,6 +72,8 @@ class	LevelHandler
 	function	OnUpdate(scene)
 	//-------------------------
 	{
+		base.OnUpdate(scene)
+		stopwatch_handler.Update()
 		if (update_function != 0)
 			update_function(scene)
 	}
@@ -87,6 +94,7 @@ class	LevelHandler
 			game_ui.GameMessageWindowSetVisible("get_ready", false)
 			update_function = UpdateGameIsRunning
 			player_script.update_function = player_script.UpdatePlayerIsAlive
+			stopwatch_handler.Start()
 		}
 	}
 
@@ -96,6 +104,7 @@ class	LevelHandler
 	{
 		if (WaitForTimer("UpdateLevelCompleteScreen", Sec(3.0)))
 		{
+			stopwatch_handler.Stop()
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			game_ui.GameMessageWindowSetVisible("mission_complete", true)
 			player_script.update_function = player_script.UpdatePlayerIsDead
@@ -115,6 +124,7 @@ class	LevelHandler
 	{
 		if (WaitForTimer("UpdateGameOverScreen", Sec(3.0)))
 		{
+			stopwatch_handler.Stop()
 			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
@@ -133,7 +143,12 @@ class	LevelHandler
 		UpdateCompass()
 		CheckIfPlayerGetArtifacts(scene)
 		CheckIfPlayerGetBonus(scene, "fuel")
+		CheckIfPlayerGetBonus(scene, "fast_clock")
+		CheckIfPlayerGetBonus(scene, "slow_clock")
+		CheckIfPlayerGetBonus(scene, "time")
+		CheckIfPlayerGetBonus(scene, "shield")
 		CheckPlayerStats(scene)
+		game_ui.UpdateStopwatch(stopwatch_handler.clock)
 	}
 
 	//---------------------------------------
@@ -143,8 +158,13 @@ class	LevelHandler
 		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 		UpdateCompass()
 		CheckIfPlayerGetBonus(scene, "fuel")
+		CheckIfPlayerGetBonus(scene, "fast_clock")
+		CheckIfPlayerGetBonus(scene, "slow_clock")
+		CheckIfPlayerGetBonus(scene, "time")
+		CheckIfPlayerGetBonus(scene, "shield")
 		CheckIfPlayerIsBackToBase(scene)
 		CheckPlayerStats(scene)
+		game_ui.UpdateStopwatch(stopwatch_handler.clock)
 	}
 
 	//-------------------------
@@ -183,14 +203,22 @@ class	LevelHandler
 		path		=	[]
 		artefact	=	[]
 		timer_table	=	{}
-		bonus		=	{	fuel = [],	heal = [], time = []	}
+		bonus		=	{	fuel = [],			//	Additional fuel
+							heal = [], 			//	Additional health
+							time = [], 			//	Freeze the timer for a short period of time
+							shield = [],		//	Invincibility to collisions for a short period of time
+							slow_clock = [],	//	EngineClockScale * 0.5
+							fast_clock = [],	//	EngineClockScale * 2.0
+					}
 	}
 
 	//------------------------
 	function	OnSetup(scene)
 	//------------------------
 	{
+		base.OnSetup(scene)
 		camera_handler = CameraHandler(scene)
+		stopwatch_handler = StopwatchHandler()
 		game_ui	=	InGameUI(SceneGetUI(scene))
 		game_ui.UpdateRoomName(g_locale.level_names[level_name])
 		state = "Game"
@@ -203,11 +231,17 @@ class	LevelHandler
 		print("LevelHandler::OnSetupDone()")
 		SceneFindPlayer(scene)
 		camera_handler.SetMaxSneakSpeed(player_script.max_speed / 2.0)
+
 		SceneFindPath(scene)
 		SceneFindArtefacts(scene)
 		SceneFindBonus(scene, "fuel")
-		UpdateArtifactCounter()
+		SceneFindBonus(scene, "heal")
+		SceneFindBonus(scene, "time")
+		SceneFindBonus(scene, "shield")
+		SceneFindBonus(scene, "slow_clock")
+		SceneFindBonus(scene, "fast_clock")
 		homebase_item = SceneFindItem(scene, "homebase")
+		UpdateArtifactCounter()
 		update_function = UpdateIntroScreen
 		player_script.update_function = player_script.UpdatePlayerIsDead
 	}
@@ -317,6 +351,26 @@ class	LevelHandler
 				{
 					case "fuel":
 						player_script.Refuel()
+						break;
+
+					case "heal":
+						player_script.Heal()
+						break;
+
+					case "time":
+						CreateThread(ThreadBonusTime)
+						break;
+
+					case "shield":
+						CreateThread(ThreadBonusShield)
+						break;
+
+					case "slow_clock":
+						CreateThread(ThreadBonusSlowClock)
+						break;
+
+					case "fast_clock":
+						CreateThread(ThreadBonusFastClock)
 						break;
 				}
 				return
