@@ -32,6 +32,21 @@ class	LevelEndUI extends	BaseUI
 		old_stats	=	{}
 		label_table = []
 	}
+	
+	//----------------------------------
+	function	OnRenderContextChanged()
+	//----------------------------------
+	{
+		print("LevelEndUI::OnRenderContextChanged()")
+		next_button[1].rebuild()
+		next_button[1].refresh()
+		
+		foreach(_label in label_table)
+		{
+			_label.rebuild()
+			_label.refresh()
+		}
+	}
 
 	//---------------------------------------
 	function	DisplayDebrief(debrief_table)
@@ -44,19 +59,26 @@ class	LevelEndUI extends	BaseUI
 		foreach(n, line in debrief_table)
 		{
 			local	_label
-			_label = Label(ui, g_screen_width * 0.5, 128,  g_screen_width * 0.5 - g_screen_width * 0.25 - 16, base_y, true, true)
-			_label.label = line.text // + " :"
-			_label.font = g_main_font_name
-			_label.font_size = (n == 0)?80:60
-			_label.label_align = "right"
-			_label.label_color = RGBAToHex(g_ui_color_blue)
-			_label.refresh()
 
-			label_table.append(_label)
+			if ("text" in line)
+			{
+				_label = Label(ui, g_screen_width * 0.5, 128,  g_screen_width * 0.5 - g_screen_width * 0.25 - 16, base_y, true, true)
+				_label.label = line.text // + " :"
+				_label.font = g_main_font_name
+				_label.font_size = (n == 0)?80:60
+				_label.label_align = "right"
+				_label.label_color = RGBAToHex(g_ui_color_blue)
+				_label.refresh()
+
+				label_table.append(_label)
+			}
 
 			if ("value" in line)
 			{
-				_label = Label(ui, g_screen_width * 0.5, 128,  g_screen_width * 0.5 + g_screen_width * 0.25 + 16, base_y, true, true)
+				if ("text" in line)
+					_label = Label(ui, g_screen_width * 0.5, 128,  g_screen_width * 0.5 + g_screen_width * 0.25 + 16, base_y, true, true)
+				else
+					_label = Label(ui, g_screen_width, 128, g_screen_width * 0.5, base_y, true, true)
 
 				local	str = line.value.tostring()
 				if ("bonus" in line)
@@ -65,7 +87,8 @@ class	LevelEndUI extends	BaseUI
 				_label.label = str
 				_label.font = g_main_font_name
 				_label.font_size = (n == 0)?80:((n == debrief_table.len() - 1)?100:60)
-				_label.label_align = "left"
+				if ("text" in line)
+					_label.label_align = "left"
 				_label.label_color = RGBAToHex(g_ui_color_yellow)
 				_label.refresh()
 
@@ -89,6 +112,7 @@ class	LevelEndUI extends	BaseUI
 		WindowSetParent(next_button[0], next_arrow)
 		WindowSetEventHandlerWithContext(next_arrow, EventCursorDown, this, LevelEndUI.GotoNextGame)
 		WindowSetEventHandlerWithContext(next_button[0], EventCursorDown, this, LevelEndUI.GotoNextGame)
+		WindowSetCommandList(next_arrow, "toalpha 0,0;nop 0.5;toalpha 0.25,1;")
 	}
 
 	//------------------------------------

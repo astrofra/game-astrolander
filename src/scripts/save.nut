@@ -22,8 +22,8 @@ function	GlobalSetPlayerGuid()
 {
 	local	_game = ProjectGetScriptInstance(g_project)
 	//	Set Player's GUID (if not already node)
-	if (_game.player_data.guid == "")
-		_game.player_data.guid = GenerateEncodedTimeStamp()
+	if (!("guid" in _game.player_data))
+		_game.player_data.rawset("guid", GenerateEncodedTimeStamp())
 }
 
 //-------------------------------------
@@ -117,9 +117,12 @@ class	SaveGame
 			if	(MetafileLoad(_file, GetSaveFilename()))
 			{
 				local tag = MetafileGetTag(_file, "save;")
-				data_table = deserializeObjectFromMetatag(tag)
-				g_reversed_controls = data_table.reversed_controls
-			}	
+				if	(ObjectIsValid(tag))
+				{
+					data_table = deserializeObjectFromMetatag(tag)
+					g_reversed_controls = data_table.reversed_controls
+				}
+			}
 		}
 
 		return	data_table

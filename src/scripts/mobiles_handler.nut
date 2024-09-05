@@ -27,10 +27,17 @@ class	MeshSelectBasedOnPlatform
 			pc_asset_item = SceneFindItem(scene, ItemGetName(mobile_asset_item) + "_pc")	
 		}
 
-		if (IsTouchPlatform())
-			SceneDeleteItem(scene, pc_asset_item)
-		else
-			SceneDeleteItem(scene, mobile_asset_item)
+		try
+		{
+			if (IsTouchPlatform())
+				SceneDeleteItem(scene, pc_asset_item)
+			else
+				SceneDeleteItem(scene, mobile_asset_item)
+		}
+		catch (e)
+		{
+			print("A RIEN VU")
+		}
 	}
 }
 

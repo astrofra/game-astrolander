@@ -125,6 +125,11 @@ class	LevelHandler	extends	SceneWithThreadHandler
 				EngineSetClockScale(g_engine, 0.0)
 	}
 
+	function	OnRenderUI(scene)
+	{
+		game_ui.UpdateStopwatch(stopwatch_handler.clock)
+	}
+
 	//-------------------------
 	function	OnUpdate(scene)
 	//-------------------------
@@ -154,6 +159,10 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	GetBonusPositionList()
 	{
 		local	_list = []
+		//	Actually does only display fuel bonuses
+		foreach(_item in bonus.BonusFuel)
+			_list.append(ItemGetWorldPosition(_item))
+
 		return _list
 	}
 
@@ -226,12 +235,13 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		//UpdateCompass()
 		CheckIfPlayerGetArtifacts(scene)
 		CheckIfPlayerGetBonus(scene, "BonusFuel")
+		CheckIfPlayerGetBonus(scene, "BonusHeal")
 		CheckIfPlayerGetBonus(scene, "BonusFastClock")
 		CheckIfPlayerGetBonus(scene, "BonusSlowClock")
 		CheckIfPlayerGetBonus(scene, "BonusTime")
 		CheckIfPlayerGetBonus(scene, "BonusShield")
 		CheckPlayerStats(scene)
-		game_ui.UpdateStopwatch(stopwatch_handler.clock)
+//		game_ui.UpdateStopwatch(stopwatch_handler.clock)
 	}
 
 	//---------------------------------------
@@ -241,13 +251,14 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 		//UpdateCompass()
 		CheckIfPlayerGetBonus(scene, "BonusFuel")
+		CheckIfPlayerGetBonus(scene, "BonusHeal")
 		CheckIfPlayerGetBonus(scene, "BonusFastClock")
 		CheckIfPlayerGetBonus(scene, "BonusSlowClock")
 		CheckIfPlayerGetBonus(scene, "BonusTime")
 		CheckIfPlayerGetBonus(scene, "BonusShield")
 		CheckIfPlayerIsBackToBase(scene)
 		CheckPlayerStats(scene)
-		game_ui.UpdateStopwatch(stopwatch_handler.clock)
+//		game_ui.UpdateStopwatch(stopwatch_handler.clock)
 	}
 
 	//-------------------------
@@ -349,23 +360,6 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		}
 		
-	}
-
-	//--------------------------------
-	function	SetAmbientColor(scene)
-	//--------------------------------
-	{
-		local	k = ProjectGetScriptInstance(g_project).player_data.current_level
-		k = RangeAdjust(k.tofloat(), 0.0, 20.0, 0.0, 1.0)
-		k = Clamp(k, 0.0, 1.0)
-		local _color = RGBColorBlend(g_ambient_color_warm, g_ambient_color_cold, k)
-
-		_color = RGBColorBlend(_color, g_ambient_color_dawn, MakeTriangleWave(k))
-
-		_color = _color.Scale(1.0 / 255.0)
-		_color.Print("SetAmbientColor()")
-		SceneSetAmbientColor(scene, _color)
-		_color = SceneGetAmbientColor(scene)
 	}
 
 	//-----------
@@ -484,7 +478,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		StopLevelMusic()
 		RecordGameData()
-		GlobalSetPlayerGuid()
+		if (game.player_data.current_level > 3)
+			GlobalSetPlayerGuid()
 		GlobalSaveGame()
 		EngineSetClockScale(g_engine, 1.0)
 		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_level_end.nms")

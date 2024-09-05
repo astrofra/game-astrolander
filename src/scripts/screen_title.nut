@@ -24,7 +24,7 @@ class	Title
 	{
 		print("Title::NicknameChanged() str = " + str)
 		ProjectGetScriptInstance(g_project).player_data.nickname = str
-		GlobalSaveGame()
+		//GlobalSaveGame()
 	}
 
 	//-------------------------
@@ -50,6 +50,15 @@ class	Title
 			print("Title::GotoLeaderboard()")
 			MixerChannelStop(g_mixer, channel_music)
 			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_leaderboard.nms")
+	}
+
+	//-----------------------
+	function	GotoCredits()
+	//-----------------------
+	{
+			print("Title::GotoCredits()")
+			MixerChannelStop(g_mixer, channel_music)
+			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_credits.nms")
 	}
 
 	//------------------------

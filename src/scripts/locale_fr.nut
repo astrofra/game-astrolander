@@ -29,13 +29,6 @@ g_locale_fr	<-	{
 	//	Leaderboard
 	leaderboard_title	=	"Grands Pilotes"
 	
-	//	Credits
-	credit_0		=	"Code & Graphisme 3D : Astrofra",
-	credit_1		=	"Illustrations : Pehesse",
-	credit_2		=	"Moteur 3D & Assistance au Code : GameStart",
-	credit_3		=	"Musique : AudioBank.fm & OpenGameArt",
-	credit_4		=	"Remerciements à Emmanuel Julien, Yann van der Cruyssen, David Ghodsi, Florian Belmonte, Thomas Simonnet, Lucas Boulestin."
-
 	//	EndLevel / Debrief
 	endlevel_score		=	"Score",
 	endlevel_fuel		=	"Fioul",

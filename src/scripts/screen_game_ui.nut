@@ -6,6 +6,7 @@ class	InGameUI extends	BaseUI
 {
 	scene					=	0
 //	ui						=	0
+	font_digital			=	0
 	
 	message_background		=	0
 	life_gauge				=	0
@@ -63,8 +64,8 @@ class	InGameUI extends	BaseUI
 		room_name[1].rebuild()
 		room_name[1].refresh()
 		
-		stopwatch[1].rebuild()
-		stopwatch[1].refresh()
+		//stopwatch[1].rebuild()
+		//stopwatch[1].refresh()
 		
 		//	In game Message
 		game_window.game_over_no_fuel.handler.rebuild()
@@ -97,6 +98,7 @@ class	InGameUI extends	BaseUI
 		scene = _scene
 		base.constructor(SceneGetUI(scene))
 		UICommonSetup(ui)
+		font_digital = RendererLoadWriterFont(EngineGetRenderer(g_engine), "ui/profont.nml", "ui/profont")
 		CreateHelpButtons()
 		CreateMessageBackground()
 		CreatePauseWindow()
@@ -392,33 +394,6 @@ class	InGameUI extends	BaseUI
 		WindowSetPosition(touch_feedback.right, right_pos.x * g_screen_width, right_pos.y * g_screen_height)
 	}
 
-	//-------------------------
-	function	CreateCompass()
-	//-------------------------
-	{
-		print("InGameUI::CreateCompass()")
-		local	compass_window, beacon_window
-		local	_texture
-
-		_texture = EngineLoadTexture(g_engine, "ui/beacon_arrow.png")
-		beacon_window = UIAddSprite(ui, CreateNewUIID(), _texture, 0.0, 0.0, 245.0, 245.0)
-		WindowCenterPivot(beacon_window)
-
-		WindowSetPosition(beacon_window, 245.0 / 2.0, 245.0 / 2.0)
-		WindowSetScale(beacon_window, 0.85, 0.85)
-
-		return beacon_window
-	}
-
-	//-------------------------------
-	function	UpdateCompass(_pos, _angle)
-	//-------------------------------
-	{
-
-		WindowSetPosition(beacon_window, _pos.x, _pos.y)
-		WindowSetRotation(beacon_window, _angle)
-	}
-
 	//----------------------------------------
 	function	CreateGameMessageWindow(_text)
 	//----------------------------------------
@@ -477,62 +452,30 @@ class	InGameUI extends	BaseUI
 		_win.visible = false
 	}
 
-	//----------------------------------------
-	function	UpdateInventory(inventory)
-	//----------------------------------------
-	{
-		local	x,y
-		local	i, new_bitmap
-
-		x = 650.0
-		y = 8.0
-
-		foreach(i in inventory_bitmaps)
-			UIDeleteWindow(ui, i)
-
-		inventory_bitmaps = []
-/*
-		foreach(i in inventory)
-		{
-			new_bitmap = UIAddBitmapWindow(ui, -1, "data/maps/keys/" + i + ".tga", x, y, 256, 256)
-			WindowSetScale(new_bitmap, 0.175, 0.175)
-			inventory_bitmaps.append(new_bitmap)
-			x += 32
-		}
-		*/
-	}
-
 	//----------------------------
 	function	UpdateStopwatch(t)
 	//----------------------------
 	{
-		if (++update_frequency > 5)
-		{
-			//TextSetText(stopwatch[1], TimeToString(t))
-			stopwatch[1].label = TimeToString(t)
-			stopwatch[1].refresh()
-			update_frequency = 0
-		}
-
-		update_frequency++
+		//RendererWrite(EngineGetRenderer(g_engine), font_digital, TimeToString(t), 0, 0, 0.35, true, WriterAlignLeft, g_ui_color_black.Scale(1.0 / 255.0))
+		WriterWrapper(font_digital, TimeToString(t), stopwatch.x, stopwatch.y, 0.75, g_ui_color_black.Scale(1.0 / 255.0))
 	}
 
 	//----------------------------------------
 	function	UpdateLifeGauge(v)
 	//----------------------------------------
 	{		
-		//TextSetText(life_gauge[1], CreateGaugeBar(v))	
-		life_gauge[1].label = CreateGaugeBar(v)
-		life_gauge[1].refresh()
+//		life_gauge[1].label = CreateGaugeBar(v)
+//		life_gauge[1].refresh()
+		WindowSetScale(life_gauge[0], v.tofloat() / 100.0, 1.0)
 	}
 
 	//----------------------------------------
 	function	UpdateFuelGauge(v)
 	//----------------------------------------
 	{	
-		//TextSetText(fuel_gauge[1], CreateGaugeBar(v))	
-		fuel_gauge[1].label = CreateGaugeBar(v)
-		fuel_gauge[1].refresh()
+//		fuel_gauge[1].label = CreateGaugeBar(v)
+//		fuel_gauge[1].refresh()
+		WindowSetScale(fuel_gauge[0], v.tofloat() / 100.0, 1.0)
 	}
 
 	//----------------------------------------
@@ -561,7 +504,7 @@ class	InGameUI extends	BaseUI
 
 		local i, str
 		str = ""
-		for(i = 0; i < n; i++)
+		for(i = 0; i < 100; i++)
 			str += "|"
 
 		if (!shadow_mode)
@@ -593,7 +536,7 @@ class	InGameUI extends	BaseUI
 	{
 		print("InGameUI::CreateStopwatch()")
 		LabelWrapper(ui, g_locale.hud_stopwatch, g_screen_width - 400 - 16, 0, 32, 400)
-		local	_stopwatch = LabelWrapper(ui, TimeToString(0.0), g_screen_width - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
+		local	_stopwatch = Vector(g_screen_width - 400, 4, 0) //LabelWrapper(ui, TimeToString(0.0), g_screen_width - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
 		return _stopwatch
 	}
 

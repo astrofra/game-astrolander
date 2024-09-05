@@ -87,6 +87,26 @@ class	MiniMap
 					_map_item_index++
 				}
 			}
+			
+			//	Update Bonus
+			foreach(_map_item in map_items.bonus)
+				WindowShow(_map_item, false)
+	
+			if (item_list.bonus.len() > 0)
+			{ 
+				local	_map_item_index = 0
+				foreach(_item in item_list.bonus)
+				{
+					if (_map_item_index < map_items.bonus.len())
+					{
+						local	_item_pos = WorldToMapCoordinates(_item)
+						WindowSetPosition(map_items.bonus[_map_item_index], _item_pos.x, _item_pos.y)
+						WindowShow(map_items.bonus[_map_item_index], true)
+					}
+					_map_item_index++
+				}
+			}
+
 		}
 
 		//--------------------------
@@ -94,31 +114,46 @@ class	MiniMap
 		//--------------------------
 		{
 			//	Artifacts
-			local	_dot_texture = EngineLoadTexture(g_engine, "ui/compass_dot_green.png")
+			local	_dot_texture = EngineLoadTexture(g_engine, "ui/minimap_dot_artefact.png")
 			local	n
 			for (n = 0; n < 16; n++)
 			{
-				local	_map_item = UIAddSprite(ui, -1, _dot_texture, 0.0, 0.0, 80, 80)
-				WindowSetPivot(_map_item, 40, 40)
-				WindowSetScale(_map_item, 0.25 / ui_scale , 0.25 / ui_scale)
+				local	_map_item = UIAddSprite(ui, -1, _dot_texture, 0.0, 0.0, 64, 64)
+				WindowSetPivot(_map_item, 32, 32)
+				WindowSetScale(_map_item, 0.35 / ui_scale , 0.35 / ui_scale)
 				WindowSetPosition(_map_item,0,0)
 				WindowSetParent(_map_item, map_window)
 				WindowShow(_map_item, false)
 				map_items.artifacts.append(_map_item)
 			}
+			
+			//	Bonus
+			local	_dot_texture = EngineLoadTexture(g_engine, "ui/minimap_dot_bonus.png")
+			local	n
+			for (n = 0; n < 16; n++)
+			{
+				local	_map_item = UIAddSprite(ui, -1, _dot_texture, 0.0, 0.0, 64, 64)
+				WindowSetPivot(_map_item, 32, 32)
+				WindowSetScale(_map_item, 0.35 / ui_scale , 0.35 / ui_scale)
+				WindowSetPosition(_map_item,0,0)
+				WindowSetParent(_map_item, map_window)
+				WindowShow(_map_item, false)
+				map_items.bonus.append(_map_item)
+			}
+
 
 			//	homebase
-			local	_dot_texture = EngineLoadTexture(g_engine, "ui/compass_dot_red.png")
-			map_items.homebase = UIAddSprite(ui, -1, _dot_texture, 0.0, 0.0, 80, 80)
-			WindowSetPivot(map_items.homebase, 40, 40)
-			WindowSetScale(map_items.homebase, 0.25 / ui_scale , 0.25 / ui_scale)
+			local	_dot_texture = EngineLoadTexture(g_engine, "ui/minimap_dot_homebase.png")
+			map_items.homebase = UIAddSprite(ui, -1, _dot_texture, 0.0, 0.0, 64, 64)
+			WindowSetPivot(map_items.homebase, 32, 32)
+			WindowSetScale(map_items.homebase, 0.35 / ui_scale , 0.35 / ui_scale)
 			WindowSetPosition(map_items.homebase ,0,0)
 			WindowSetParent(map_items.homebase, map_window)
 
 			//	player
-			local	_dot_texture = EngineLoadTexture(g_engine, "ui/compass_dot.png")
-			map_items.player = UIAddSprite(ui, -1, _dot_texture, 0.0, 0.0, 80, 80)
-			WindowSetPivot(map_items.player, 40, 40)
+			local	_dot_texture = EngineLoadTexture(g_engine, "ui/minimap_dot_player.png")
+			map_items.player = UIAddSprite(ui, -1, _dot_texture, 0.0, 0.0, 64, 64)
+			WindowSetPivot(map_items.player, 32, 32)
 			WindowSetScale(map_items.player, 0.35 / ui_scale , 0.35 / ui_scale)
 			WindowSetPosition(map_items.player ,0,0)
 			WindowSetParent(map_items.player, map_window)

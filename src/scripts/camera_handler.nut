@@ -97,7 +97,7 @@ class	CameraHandler
 			//	--------------------------------------------------
 			local	_clamp_x_vel = Abs(player_vel.x)
 			_clamp_x_vel = Clamp(_clamp_x_vel, 0.0, g_player_max_speed)
-			_clamp_x_vel = RangeAdjust(_clamp_x_vel, g_player_max_speed * 0.15, g_player_max_speed * 0.75, 0.0, 1.0)
+			_clamp_x_vel = RangeAdjust(_clamp_x_vel, g_player_max_speed * 0.125, g_player_max_speed * 0.75, 0.0, 1.0)
 			_clamp_x_vel = Clamp(_clamp_x_vel, 0.0, 1.0)
 			if (player_vel.x < 0.0)
 				_clamp_x_vel *= -1
@@ -118,8 +118,8 @@ class	CameraHandler
 			camera_rot_z /= (camera_rot_z_table.len().tofloat())
 			camera_rot.z = DegreeToRadian(camera_rot_z)
 
-			print("player_vel.x = " + player_vel.x)
-			print("camera_rot_z = " + camera_rot_z)
+//			print("player_vel.x = " + player_vel.x)
+//			print("camera_rot_z = " + camera_rot_z)
 
 			ItemSetPosition(camera_item, camera_pos + clamp_vel)
 			ItemSetRotation(camera_item, camera_rot)

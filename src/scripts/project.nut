@@ -15,6 +15,7 @@
 	Include("scripts/feedback_emitter.nut")
 	Include("scripts/inventory.nut")
 	Include("scripts/thread_handler.nut")
+	Include("scripts/weather.nut")	
 	Include("scripts/screen_game.nut")
 	Include("scripts/level_generator.nut")
 	Include("scripts/bonus.nut")
@@ -38,8 +39,6 @@ class	ProjectHandler	extends	BaseProjectHandler
 	save_game			=	0
 
 	player_data		=	{
-			guid					=	""
-			nickname 				=	""
 			total_score				=	0
 			current_selected_level	=	0
 			current_level			=	0
@@ -58,7 +57,7 @@ class	ProjectHandler	extends	BaseProjectHandler
 
 	function	OnUpdate(project)
 	{
-		GenerateEncodedTimeStamp()
+//		print("GenerateEncodedTimeStamp() : " + GenerateEncodedTimeStamp())
 		base.OnUpdate(project)
 /*
 		if (!IsTouchPlatform())
@@ -74,6 +73,7 @@ class	ProjectHandler	extends	BaseProjectHandler
 				print("ProjectHandler::Faking the Android Device 'Back' button pressed !!!")
 				OnHardwareButtonPressed(HardwareButtonBack)
 			}
+
 		}
 */
 	}
@@ -82,8 +82,11 @@ class	ProjectHandler	extends	BaseProjectHandler
 	{
 		base.OnSetup(project)
 		GlobalLoadGame()
-		if (player_data.nickname == "")
-			player_data.nickname = g_locale.guest_nickname + " " + (Irand(1,9) * 100 + Irand(0,9) * 10 + Irand(0,9)).tostring()
+		if (!("nickname" in player_data))
+		{
+			local	_nickname = g_locale.guest_nickname + " " + (Irand(1,9) * 100 + Irand(0,9) * 10 + Irand(0,9)).tostring()
+			player_data.rawset("nickname", _nickname)
+		}
 
 		if (!IsTouchPlatform())
 			keyboard_device = GetKeyboardDevice()

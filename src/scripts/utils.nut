@@ -2,6 +2,47 @@
 
 guid_table <- []
 
+//-----------------------------------------
+function	CalculateCheckKey(values_array)
+//-----------------------------------------
+{
+	local	_str = ""
+	foreach(_value in values_array)
+		_str += _value
+
+	_str += GetHashString()
+
+	return SHA1(_str)
+}
+
+//-------------------------
+function	GetHashString()
+//-------------------------
+{
+	local	t = ["H","E","D","T","H","D","I","O","K","B","G","W","Z","Q","F","O","0","2","4","G","F","4","9","K","L"]
+	local	_str = ""
+	_str += t[0] + t[2] + t[6] + t[1] + t[8] + t[10] + t[20] + t[12] + t[15] + t[5] + t[1] + t[7] + t[21] + t[0]
+	_str += "0" + (47392).tostring() + "H" + (3).tostring()
+	_str += t[10] + t[19] + t[1] + t[2] + t[9] + t[1] + t[8] + t[11] + t[13] + t[5] + t[4] + t[22] + t[21] + t[0]
+	_str += "X"
+
+	return _str
+}
+
+//----------------------------------------------------------------------------------------------------
+function	WriterWrapper(font, text, x, y, size, color = Vector(1, 1, 1, 1), align = WriterAlignLeft)
+//----------------------------------------------------------------------------------------------------
+{
+	local	viewport = RendererGetViewport(g_render)
+	local	vw = viewport.z, vh = viewport.w
+	local	k_ar = vh / vw
+
+	local	sx = (x - (g_screen_width * 0.5)) / (g_screen_width * 0.5) * k_ar + 0.5
+	local	sy = y / g_screen_height
+
+	RendererWrite(g_render, font, text, sx, sy, size / 2.6, true, align, color)
+}
+
 //------------------------------------
 function	GenerateEncodedTimeStamp()
 //------------------------------------
@@ -41,6 +82,7 @@ function	GenerateEncodedTimeStamp()
 
 	guid_table.append(guid)
 */
+	guid = SHA1(guid)
 
 	return guid	
 }

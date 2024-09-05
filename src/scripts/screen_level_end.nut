@@ -144,7 +144,7 @@ class	LevelEnd	extends	SceneWithThreadHandler
 
 		local	debrief_table = []
 
-		debrief_table.append({	text = g_locale.endlevel_level_name, 
+		debrief_table.append({	/*text = g_locale.endlevel_level_name, */
 								value = GetLevelName(game.player_data.current_level)	})
 
 		debrief_table.append({	text = g_locale.endlevel_remain_life,
@@ -191,16 +191,33 @@ class	LevelEnd	extends	SceneWithThreadHandler
 	//----------------------------
 	{
 		print("LevelEnd::SubmitTotalScore()")
-		local	_guid, _name, _score
+		local	_guid, _name, _score, _player_data, _check_key
+		_player_data = ProjectGetScriptInstance(g_project).player_data
 
-		_guid = ProjectGetScriptInstance(g_project).player_data.guid
-		_name = ProjectGetScriptInstance(g_project).player_data.nickname
-		_score = ProjectGetScriptInstance(g_project).player_data.total_score.tointeger()
+		if (("guid" in _player_data) && ("nickname" in _player_data))
+		{
+			_guid = _player_data.guid.tostring()
+			_name = _player_data.nickname.tostring()
+			_score = _player_data.total_score.tointeger().tostring()
 
-		local	post = "command=set&guid=" + _guid + "&name=" + _name + "&score=" + _score
-		print("post = " + post)
-		return HttpPost(g_base_url + "/leaderboard.php", post)
+			_check_key = CalculateCheckKey([_guid, _name, _score])
+	
+			local	post = "command=set&guid=" + _guid + "&name=" + _name + "&score=" + _score + "&session=" + _check_key
+			print("post = " + post)
+			return HttpPost(g_base_url + "/leaderboard.php", post)
+		}
 	}
+	
+	//-----------------
+	//	OS Interactions
+	//-----------------
+	
+	//----------------------------------
+	function	OnRenderContextChanged()
+	//----------------------------------
+	{
+		level_end_ui.OnRenderContextChanged()
+	}	
 	
 	//---------------------
 	function	HttpRequestComplete(uid, data)

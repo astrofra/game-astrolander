@@ -159,6 +159,8 @@ class	LeaderboardUI	extends	BaseUI
 		WindowSetParent(skip_button[0], skip_arrow)
 		WindowSetEventHandlerWithContext(skip_arrow, EventCursorDown, this, LeaderboardUI.BackToTitleScreen)
 		WindowSetEventHandlerWithContext(skip_button[0], EventCursorDown, this, LeaderboardUI.BackToTitleScreen)
+		WindowSetCommandList(skip_arrow, "toalpha 0,0;nop 0.5;toalpha 0.25,1;")
+
 
 	}
 

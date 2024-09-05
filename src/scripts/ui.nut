@@ -30,7 +30,9 @@ function	UICommonSetup(ui)
 
 }
 
+//------------------------------------------------------------
 function	CreateOpaqueScreen(ui, _color = Vector(0,0,0,255))
+//------------------------------------------------------------
 {
 		//ui = SceneGetUI(scene)
 		_color = _color.Scale(1.0 / 255.0)
@@ -69,8 +71,11 @@ class	EditableTextField
 	label				=	0
 	text 				=	""
 	has_focus			=	false
+	
+	is_dirty			=	true
 
 	cursor_blink_timer	=	0
+	cursor_is_on		=	false
 
 	keyboard_device		=	0
 
@@ -116,6 +121,8 @@ class	EditableTextField
 		//	Assign a click handler
 		WindowSetEventHandlerWithContext(label.window, EventCursorDown, this, OnTextFieldFocus)
 		WindowSetEventHandlerWithContext(label.window, EventCursorLeave, this, OnTextFieldDefocus)
+		
+		is_dirty = true
 	}
 
 	function	FillBackground()
@@ -127,6 +134,18 @@ class	EditableTextField
 
 		PictureFillRect(back_picture, g_ui_color_white.Scale(1.0 / 255.0), Rect(4,4, w - 4, h - 4))
 		TextureUpdate(back_texture, back_picture)
+	}
+	
+	function	rebuild()
+	{
+		label.rebuild()
+		is_dirty = true
+	}
+	
+	function	refresh()
+	{
+		label.refresh()
+		is_dirty = false
 	}
 
 	//------------------
@@ -144,7 +163,9 @@ class	EditableTextField
 	//----------------------
 	{
 		text = str
+		is_dirty = true
 		RefreshTextField()
+		label.refresh()
 	}
 
 	//----------------------------
@@ -152,6 +173,7 @@ class	EditableTextField
 	//----------------------------
 	{
 		local	_key = GetKeys()
+		is_dirty = false
 
 		switch(_key)
 		{
@@ -159,11 +181,17 @@ class	EditableTextField
 				break
 			case	"<":
 				if (text.len() > 0)
+				{
 					text = text.slice(0, text.len() - 1)
+					is_dirty = true
+				}
 				break
 			default:
 				if (text.len() < max_char)
+				{
 					text += _key
+					is_dirty = true
+				}
 				break
 		}
 
@@ -172,17 +200,24 @@ class	EditableTextField
 
 		if (has_focus)
 		{
-			if ((g_clock - cursor_blink_timer) < SecToTick(Sec(0.5)))
-				_cursor = "|"
-			else
-			if ((g_clock - cursor_blink_timer) < SecToTick(Sec(1.0)))
-				_cursor = ""
-			else
+			if ((g_clock - cursor_blink_timer) > SecToTick(Sec(0.5)))
+			{
+				cursor_is_on = !cursor_is_on
 				cursor_blink_timer = g_clock
+				is_dirty = true
+			}
+
+			_cursor = cursor_is_on?"|":""
 		}
 
 		label.label = RGBAToTag(g_ui_color_black) + text + RGBAToTag(g_ui_color_red) + _cursor
-		label.refresh()
+		
+		if (is_dirty)
+		{
+			label.refresh()
+			print("EditableTextField::refresh()")
+			is_dirty = false
+		}
 	}
 
 	//------------------
@@ -201,7 +236,9 @@ class	EditableTextField
 	//-----------------------------------------
 	{
 		has_focus = true
+		is_dirty = true
 		FillBackground()
+		label.refresh()
 	}
 
 	//-------------------------------------------
@@ -209,8 +246,10 @@ class	EditableTextField
 	//-------------------------------------------
 	{
 		has_focus = false
+		is_dirty = true
 		FillBackground()
 		RefreshTextField()
+		label.refresh()
 		if (defocus_callback_function != 0)
 		{
 			local	callback = defocus_callback_context[defocus_callback_function]
@@ -400,6 +439,14 @@ class	BaseUI
 		cursor_opacity	=	1.0
 
 		LoadSounds()
+	}
+	
+	function	AddButtonBlack(_x, _y, _center_pivot = false)
+	{
+		local	_button = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_generic_black.png"), _x, _y, 240, 90)
+		if (_center_pivot)
+			WindowSetPivot(_button, 120, 45)
+		return _button
 	}
 
 	function	AddButtonRed(_x, _y, _center_pivot = false)

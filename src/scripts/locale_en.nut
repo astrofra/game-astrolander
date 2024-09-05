@@ -23,17 +23,24 @@ g_locale_en	<-	{
 	leaderboard			=	"Leaders"
 	music_enabled		=	"Music"
 	sound_fx_enabled	=	"Sound Fx"
+	player_nickname		=	"Player's Nickname"
+	credits_button 		=	"Credits"
 
 	//	Leaderboard
 	leaderboard_title	=	"Astro Leaders"
 	guest_nickname		=	"Guest"
 	
 	//	Credits
-	credit_0		=	"Code & 3D Graphics : Astrofra",
-	credit_1		=	"UI & 2D Graphics : Pehesse",
-	credit_2		=	"Engine & Additional Code : GameStart",
-	credit_3		=	"Music : AudioBank.fm, Brandon Morris and Kareem Kenawy",
-	credit_4		=	"Special Thanks to Emmanuel Julien, Yann van der Cruyssen, David Ghodsi, Florian Belmonte, Thomas Simonnet, Lucas Boulestin."
+	credits 		=	[
+			{	desc	=	"Game Code & 3D Graphics" ,	name	=	"Astrofra"	}
+			{	desc	=	"2D Graphics" ,	name	=	"Pehesse"	}
+			{	desc	=	"Game Engine, Additional Code",	name	=	"Emmanuel Julien"	}
+			{	desc	=	"Music" ,	name	=	["Alex Khaskin", "William Lamy", "Brandon Morris", "Kareem Kenawy"], 
+										note	=	"Provided by AudioBank.Fm and OpenGameArt.org"		}
+			{	desc	=	"Special Thanks to",	name	=	["Yann van der Cruyssen", "David Ghodsi", "Thomas Simonnet", "Lucas Boulestin"]	}
+			{	desc	=	"Testers",	name = ["Florian Belmonte", "Clement Vincent"]	}
+			{	desc	=	"Powered by GameStart!"	}
+	]
 
 	//	EndLevel / Debrief
 	endlevel_level_name	=	"Level",

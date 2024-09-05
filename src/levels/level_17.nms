@@ -773,6 +773,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1071,6 +1072,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2010,7 +2012,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=40>
+				<UId=39>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2082,7 +2084,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=41>
+				<UId=40>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2154,7 +2156,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=42>
+				<UId=41>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2226,7 +2228,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=43>
+				<UId=42>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2293,7 +2295,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=44>
+				<UId=43>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2365,7 +2367,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=45>
+				<UId=44>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2437,7 +2439,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=46>
+				<UId=45>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2509,7 +2511,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=49>
+				<UId=46>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2581,7 +2583,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=51>
+				<UId=47>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2648,7 +2650,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=52>
+				<UId=48>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2720,7 +2722,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=53>
+				<UId=49>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2792,7 +2794,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=54>
+				<UId=50>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2859,7 +2861,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=58>
+				<UId=51>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2926,7 +2928,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=59>
+				<UId=52>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2993,7 +2995,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=60>
+				<UId=53>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3065,7 +3067,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=61>
+				<UId=54>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3137,7 +3139,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=62>
+				<UId=55>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3209,7 +3211,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=63>
+				<UId=56>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3281,7 +3283,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=64>
+				<UId=57>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3353,7 +3355,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=65>
+				<UId=58>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3421,7 +3423,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=66>
+				<UId=59>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3493,7 +3495,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=67>
+				<UId=60>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3565,7 +3567,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=68>
+				<UId=61>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3637,7 +3639,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=69>
+				<UId=62>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3704,7 +3706,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=70>
+				<UId=63>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3771,7 +3773,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=71>
+				<UId=64>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3843,7 +3845,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=72>
+				<UId=65>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3910,7 +3912,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=73>
+				<UId=66>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3977,7 +3979,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=74>
+				<UId=67>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4049,7 +4051,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=75>
+				<UId=68>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4121,7 +4123,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=76>
+				<UId=69>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4194,7 +4196,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=77>
+				<UId=70>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4266,7 +4268,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=78>
+				<UId=71>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4333,7 +4335,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=79>
+				<UId=72>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4405,7 +4407,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=80>
+				<UId=73>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4477,7 +4479,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=81>
+				<UId=74>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4544,7 +4546,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=82>
+				<UId=75>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4611,7 +4613,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=83>
+				<UId=76>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4683,7 +4685,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=84>
+				<UId=77>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4750,7 +4752,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=85>
+				<UId=78>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4817,7 +4819,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=86>
+				<UId=79>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4890,7 +4892,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=87>
+				<UId=80>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -4962,7 +4964,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=88>
+				<UId=81>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5034,7 +5036,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=89>
+				<UId=82>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5106,7 +5108,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=90>
+				<UId=83>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5173,7 +5175,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=91>
+				<UId=84>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5240,7 +5242,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=92>
+				<UId=85>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5312,7 +5314,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=93>
+				<UId=86>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5384,7 +5386,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=94>
+				<UId=87>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5451,7 +5453,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=95>
+				<UId=88>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5519,7 +5521,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=96>
+				<UId=89>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5586,7 +5588,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=97>
+				<UId=90>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5659,7 +5661,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=98>
+				<UId=91>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5731,7 +5733,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=99>
+				<UId=92>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5803,7 +5805,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=100>
+				<UId=93>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5870,7 +5872,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=101>
+				<UId=94>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5942,7 +5944,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=102>
+				<UId=95>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6009,7 +6011,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=103>
+				<UId=96>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6076,7 +6078,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=104>
+				<UId=97>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6148,7 +6150,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=105>
+				<UId=98>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6221,7 +6223,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=106>
+				<UId=99>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6270,14 +6272,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=42.787807>
-						<Y=-53.567894>
-						<Z=0.000000>
+						<X=42.823643>
+						<Y=-53.177902>
+						<Z=0.212162>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=1.479166>
 					>
 					<Target=
 						<X=0.000000>
@@ -6293,7 +6295,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=107>
+				<UId=100>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6360,7 +6362,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=108>
+				<UId=101>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6432,7 +6434,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=109>
+				<UId=102>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6499,7 +6501,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=110>
+				<UId=103>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6571,7 +6573,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=111>
+				<UId=104>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6643,7 +6645,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=112>
+				<UId=105>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6715,7 +6717,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=113>
+				<UId=106>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6787,7 +6789,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=114>
+				<UId=107>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6859,7 +6861,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=115>
+				<UId=108>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6931,7 +6933,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=116>
+				<UId=109>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6998,7 +7000,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=117>
+				<UId=110>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7065,7 +7067,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=118>
+				<UId=111>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7132,7 +7134,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=119>
+				<UId=112>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7204,7 +7206,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=120>
+				<UId=113>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7271,7 +7273,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=121>
+				<UId=114>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7338,7 +7340,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=122>
+				<UId=115>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7410,7 +7412,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=123>
+				<UId=116>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7482,7 +7484,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=124>
+				<UId=117>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7554,7 +7556,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=125>
+				<UId=118>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7626,7 +7628,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=126>
+				<UId=119>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7693,7 +7695,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=127>
+				<UId=120>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7760,7 +7762,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=128>
+				<UId=121>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7832,7 +7834,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=129>
+				<UId=122>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7905,7 +7907,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=130>
+				<UId=123>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7972,7 +7974,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=131>
+				<UId=124>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8021,9 +8023,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=36.098484>
-						<Y=-58.841156>
-						<Z=0.000000>
+						<X=35.467880>
+						<Y=-59.862030>
+						<Z=1.028820>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-0.146608>
 					>
 					<Target=
 						<X=0.000000>
@@ -8039,7 +8046,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=132>
+				<UId=125>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8106,7 +8113,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=133>
+				<UId=126>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8178,7 +8185,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=134>
+				<UId=127>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8245,7 +8252,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=135>
+				<UId=128>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8312,7 +8319,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=136>
+				<UId=129>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8379,7 +8386,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=137>
+				<UId=130>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8451,7 +8458,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=138>
+				<UId=131>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8518,7 +8525,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=139>
+				<UId=132>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8590,7 +8597,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=140>
+				<UId=133>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8662,7 +8669,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=141>
+				<UId=134>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8734,7 +8741,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=142>
+				<UId=135>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8806,7 +8813,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=143>
+				<UId=136>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8873,7 +8880,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=144>
+				<UId=137>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8940,7 +8947,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=145>
+				<UId=138>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9012,7 +9019,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=146>
+				<UId=139>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9084,7 +9091,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=147>
+				<UId=140>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9151,7 +9158,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=148>
+				<UId=141>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9218,7 +9225,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=149>
+				<UId=142>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9285,7 +9292,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=150>
+				<UId=143>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9352,7 +9359,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=151>
+				<UId=144>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9419,7 +9426,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=152>
+				<UId=145>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9486,7 +9493,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=153>
+				<UId=146>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9558,7 +9565,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=154>
+				<UId=147>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9630,7 +9637,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=155>
+				<UId=148>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9702,7 +9709,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=156>
+				<UId=149>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9769,7 +9776,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=157>
+				<UId=150>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9841,7 +9848,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=163>
+				<UId=151>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9913,7 +9920,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=164>
+				<UId=152>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9985,7 +9992,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=165>
+				<UId=153>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10057,7 +10064,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=166>
+				<UId=154>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10129,7 +10136,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=167>
+				<UId=155>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10201,7 +10208,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=168>
+				<UId=156>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10273,7 +10280,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=169>
+				<UId=157>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10345,7 +10352,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=170>
+				<UId=158>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10417,7 +10424,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=171>
+				<UId=159>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10484,7 +10491,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x16">
-				<UId=172>
+				<UId=160>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10556,7 +10563,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=173>
+				<UId=161>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10628,7 +10635,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=174>
+				<UId=162>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10700,7 +10707,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=175>
+				<UId=163>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10767,7 +10774,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=176>
+				<UId=164>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10834,7 +10841,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=177>
+				<UId=165>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10901,7 +10908,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=178>
+				<UId=166>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10968,7 +10975,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=179>
+				<UId=167>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11035,7 +11042,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=180>
+				<UId=168>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11107,7 +11114,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=181>
+				<UId=169>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11174,7 +11181,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=182>
+				<UId=170>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11241,7 +11248,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=183>
+				<UId=171>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11308,7 +11315,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=184>
+				<UId=172>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11380,7 +11387,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=185>
+				<UId=173>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11452,7 +11459,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=186>
+				<UId=174>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11525,7 +11532,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=187>
+				<UId=175>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11592,7 +11599,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=188>
+				<UId=176>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11659,7 +11666,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=189>
+				<UId=177>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11726,7 +11733,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=217>
+				<UId=178>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11793,7 +11800,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=218>
+				<UId=179>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11865,7 +11872,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=219>
+				<UId=180>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11932,7 +11939,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=220>
+				<UId=181>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11999,7 +12006,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=221>
+				<UId=182>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12071,7 +12078,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=222>
+				<UId=183>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12138,7 +12145,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=223>
+				<UId=184>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12205,7 +12212,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=224>
+				<UId=185>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12278,7 +12285,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=225>
+				<UId=186>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12351,7 +12358,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=228>
+				<UId=187>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12418,7 +12425,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=229>
+				<UId=188>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12485,7 +12492,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=230>
+				<UId=189>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12558,7 +12565,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=231>
+				<UId=190>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12630,7 +12637,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=232>
+				<UId=191>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12699,10 +12706,77 @@
 				<Geometry="graphics/g_block_1x4.nmg">
 			>
 		>
+		<MObject=
+			<MItem=
+				<Id="g_block_2x2">
+				<UId=192>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=2.000000>
+								<Y=2.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=35.523674>
+						<Y=22.811707>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_2x2.nmg">
+			>
+		>
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=190>
+				<UId=193>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12758,7 +12832,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=191>
+				<UId=194>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12796,7 +12870,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=192>
+				<UId=195>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12834,7 +12908,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=193>
+				<UId=196>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12872,7 +12946,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=194>
+				<UId=197>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12915,7 +12989,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=196>
+				<UId=198>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12953,7 +13027,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=197>
+				<UId=199>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12991,7 +13065,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=199>
+				<UId=200>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13029,7 +13103,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropStatueCody">
-				<UId=200>
+				<UId=201>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13050,7 +13124,7 @@
 			<Item=
 				<Position=
 					<X=31.730350>
-					<Y=-62.807846>
+					<Y=-63.162098>
 					<Z=0.990260>
 				>
 				<Rotation=
@@ -13072,7 +13146,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=201>
+				<UId=202>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13110,7 +13184,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusSlowClock">
-				<UId=202>
+				<UId=203>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13348,7 +13422,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=210>
+				<UId=209>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13391,7 +13465,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=211>
+				<UId=210>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13434,7 +13508,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=212>
+				<UId=211>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13477,7 +13551,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=213>
+				<UId=212>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13515,7 +13589,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTree0">
-				<UId=215>
+				<UId=213>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13552,46 +13626,8 @@
 		>
 		<Instance=
 			<MItem=
-				<Id="BonusShield">
-				<UId=216>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
-					<X=82.010857>
-					<Y=35.223885>
-					<Z=0.000000>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/BonusShield.nms">
-		>
-		<Instance=
-			<MItem=
 				<Id="MobileJawgate">
-				<UId=226>
+				<UId=214>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13634,7 +13670,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=233>
+				<UId=215>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13668,6 +13704,44 @@
 				<Registry>
 			>
 			<Template="graphics/PropGear0.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="BonusHeal">
+				<UId=216>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=82.120331>
+					<Y=35.296589>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/BonusHeal.nms">
 		>
 	>
 	<Links=
@@ -13740,27 +13814,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.679560>
-			<Y=0.000000>
-			<Z=0.733620>
+			<X=0.999332>
+			<Y=-0.000000>
+			<Z=0.036551>
 			<W=0.000000>
 		>
 		<R1=
-			<X=-0.213127>
-			<Y=0.956871>
-			<Z=0.197421>
+			<X=-0.003188>
+			<Y=0.996189>
+			<Z=0.087163>
 			<W=0.000000>
 		>
 		<R2=
-			<X=-0.701980>
-			<Y=-0.290513>
-			<Z=0.650251>
+			<X=-0.036411>
+			<Y=-0.087221>
+			<Z=0.995523>
 			<W=0.000000>
 		>
 		<R3=
-			<X=126.371704>
-			<Y=14.368963>
-			<Z=-68.802734>
+			<X=58.626705>
+			<Y=-28.254372>
+			<Z=-74.855759>
 			<W=1.000000>
 		>
 	>
@@ -13773,27 +13847,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=0.679560>
-					<Y=0.000000>
-					<Z=0.733620>
+					<X=0.999332>
+					<Y=-0.000000>
+					<Z=0.036551>
 					<W=0.000000>
 				>
 				<R1=
-					<X=-0.213127>
-					<Y=0.956871>
-					<Z=0.197421>
+					<X=-0.003188>
+					<Y=0.996189>
+					<Z=0.087163>
 					<W=0.000000>
 				>
 				<R2=
-					<X=-0.701980>
-					<Y=-0.290513>
-					<Z=0.650251>
+					<X=-0.036411>
+					<Y=-0.087221>
+					<Z=0.995523>
 					<W=0.000000>
 				>
 				<R3=
-					<X=126.371704>
-					<Y=14.368963>
-					<Z=-68.802734>
+					<X=58.626705>
+					<Y=-28.254372>
+					<Z=-74.855759>
 					<W=1.000000>
 				>
 			>
