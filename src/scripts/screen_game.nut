@@ -21,6 +21,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	player_script			=	0	//	Player script instance
 	camera_handler			=	0	//	Camera
 	homebase_item			=	0	//	Where the player wants to go back
+	
+	replay_handler			=	0
 
 	music_filename			=	""
 	music_channel			=	-1
@@ -89,6 +91,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		if (paused)
 			return
+//		replay_handler.SaveItemMotion("c:/motion")
 		paused	=	true
 		game_ui.ShowPauseWindow()
 	}
@@ -113,7 +116,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		paused	=	false
 		EngineSetClockScale(g_engine, g_clock_scale)
 		game_ui.HidePauseWindow()
-		ExitGame(scene)
+		//ExitGame(scene)
+		ExitToTitleScreen(scene)
 	}
 
 	//-----------------------
@@ -145,6 +149,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		minimap.Update({player = ItemGetWorldPosition(player), artifacts = GetArtifactsPositionList(), bonus = GetBonusPositionList(), homebase = GetHomebasePosition()})
 		if (update_function != 0)
 			update_function(scene)
+			
+//		replay_handler.UpdateItemMotionRecord(g_clock, ItemGetWorldPosition(player), ItemGetRotation(player))
 	}
 
 	function	GetArtifactsPositionList()
@@ -414,6 +420,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		SceneFindPlayer(scene)
 		camera_handler.SetMaxSneakSpeed(player_script.max_speed / 2.0)
 		camera_handler.StickToPlayerPosition(ItemGetWorldPosition(player))
+		
+//		replay_handler = ReplayItemMotion(player, g_clock)
 
 		//	Seek for various gameplay items
 		SceneFindPath(scene)
@@ -480,6 +488,16 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		EngineSetClockScale(g_engine, 1.0)
 		StopLevelMusic()
 		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_game_over.nms")
+	}
+
+	//------------------------
+	function	ExitToTitleScreen(scene)
+	//------------------------
+	{
+		print("LevelHandler::ExitToTitleScreen()")
+		EngineSetClockScale(g_engine, 1.0)
+		StopLevelMusic()
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_title.nms")
 	}
 
 	//----------------------------

@@ -7,15 +7,26 @@
 	@short	LogoScreen
 	@author	Astrofra
 */
-class	GameOverScreen
+class	GameOverScreen	extends	BaseUI
 {
 	display_timer		=	0
+
+	skip_arrow			=	0
+	skip_button			=	0
+
+	constructor()
+	{
+		base.constructor(SceneGetUI(g_scene))
+	}
+
 	/*!
 		@short	OnUpdate
 		Called each frame.
 	*/
 	function	OnUpdate(scene)
 	{
+		base.UpdateCursor()
+
 		if ((g_clock - display_timer) > SecToTick(Sec(10.0)))
 		{
 			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_title.nms")
@@ -27,11 +38,10 @@ class	GameOverScreen
 	{
 		print("GameOverScreen::OnSetup()")
 		display_timer = g_clock
-		local	ui, story_texture, fname
-		ui = SceneGetUI(scene)
+		local	story_texture, fname
 
 		CreateOpaqueScreen(ui)
-		
+	
 		fname = "ui/story_game_over.jpg"
 		if (FileExists(fname))
 		{
@@ -48,5 +58,34 @@ class	GameOverScreen
 		{
 			print("GameOverScreen::ShowStoryImage() : Cannot find file '" + fname + "'.")
 		}
+
+		//	Back button
+		skip_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
+		skip_button = LabelWrapper(ui, g_locale.skip_screen, -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		WindowSetParent(skip_button[0], skip_arrow)
+		WindowSetEventHandlerWithContext(skip_arrow, EventCursorDown, this, GameOverScreen.BackToTitleScreen)
+		WindowSetEventHandlerWithContext(skip_button[0], EventCursorDown, this, GameOverScreen.BackToTitleScreen)
+		WindowSetOpacity(skip_arrow, 0.0)
+		WindowSetCommandList(skip_arrow, "toalpha 0,0;nop 1.5;toalpha 0.25,1;")
+	}
+
+	function	BackToTitleScreen(event, table)
+	{
+		PlaySfxUINextPage()
+		ButtonFeedback(table.window)
+//		MixerChannelStop(g_mixer, channel_music)
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_title.nms")
+	}
+
+	//-----------------
+	//	OS Interactions
+	//-----------------
+
+	//----------------------------------
+	function	OnRenderContextChanged()
+	//----------------------------------
+	{
+		skip_button[1].rebuild()
+		skip_button[1].refresh()
 	}
 }

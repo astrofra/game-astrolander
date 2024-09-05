@@ -20,4 +20,8 @@ levels_defaults	<-	{
 	level_16=	{	stopwatch	=	1542250,	fuel	=	40	},
 	level_17=	{	stopwatch	=	973150,		fuel	=	60	},
 	level_18=	{	stopwatch	=	1556080,	fuel	=	55	},
+	level_19=	{	stopwatch	=	1233250,	fuel	=	55	},
+	level_20=	{	stopwatch	=	3393858,	fuel	=	15	},
+	level_21=	{	stopwatch	=	1981283,	fuel	=	80	},
+	level_22=	{	stopwatch	=	984978,		fuel	=	70	},
 }

@@ -188,6 +188,8 @@ class	LunarLander	extends	SceneWithThreadHandler
 		current_speed = _vel.Len()
 		
 		ThrustTypeControl(item)
+
+//		SceneGetScriptInstance(g_scene).replay_handler.UpdateItemMotionRecord(g_clock, ItemGetWorldPosition(item), ItemGetRotation(item))
 	}
 
 	//-------------------------------

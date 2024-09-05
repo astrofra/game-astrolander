@@ -16,6 +16,7 @@
 	Include("scripts/audio.nut")
 	Include("scripts/inventory.nut")
 	Include("scripts/thread_handler.nut")
+	Include("scripts/replay.nut")
 	Include("scripts/weather.nut")	
 	Include("scripts/screen_game.nut")
 	Include("scripts/level_generator.nut")

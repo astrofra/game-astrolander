@@ -3,6 +3,48 @@
 	Author: Astrofra
 */
 
+class	SimpleRotation
+{
+/*<
+	<Parameter =
+		<rpm = <Name = "RPM"> <Type = "float"> <Default = 0.5>>
+	>
+	<Parameter =
+		<axis_x = <Name = "Axis X"> <Type = "bool"> <Default = 0>>
+	>
+	<Parameter =
+		<axis_y = <Name = "Axis Y"> <Type = "bool"> <Default = 0>>
+	>
+	<Parameter =
+		<axis_z = <Name = "Axis Z"> <Type = "bool"> <Default = 1>>
+	>
+>*/
+
+	rpm		=	0.5
+	axis_x	=	false
+	axis_y	=	false
+	axis_z	=	true
+
+	angle	=	0.0
+
+	function	OnSetup(item)
+	{
+		angle	=	Rand(0.0,180.0)
+	}
+
+	function	OnUpdate(item)
+	{
+		angle += g_dt_frame * rpm * 360.0
+		local	r = Vector(0,0,0)
+		if (axis_x) r.x = DegreeToRadian(angle)
+		if (axis_y) r.y = DegreeToRadian(angle)
+		if (axis_z) r.z = DegreeToRadian(angle)
+
+		ItemSetRotation(item, r)
+	}
+	
+}
+
 class	MeshSelectBasedOnPlatform
 {
 

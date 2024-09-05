@@ -1,0 +1,23 @@
+<NML=1.0>
+<Geometry=
+	<Vertex=
+		<Count=8>
+		<Data==104:96@
+=Jœfr#ªZjù!åú´fr#ªZª{¨eJ!kfr#ªZ=J=MTf*Ü=Mär#ªZ*þ±fª{œær#ªZ=J8F
+fZ´ær#ªZjÿå=J\…ær#ªZJæJá@fr#ªZ=Jý±æ>
+	>
+	<Polygon=
+		<Count=2>
+		<BindingCount=10>
+		<Data==56:56@
+/***/***.***-***,***0*******/***,***+*******1***0*******>
+	>
+	<VNormal=
+		<Count=10>
+		<Data==30:30@
+*©**©**©**©**©**©**©**©**©**©*>
+	>
+	<Materials=
+		<MaterialRef="graphics/background_elements.nmm">
+	>
+>
