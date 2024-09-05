@@ -1,3 +1,5 @@
+<img src="img/tigslogo.png" align="right" width="80"/>
+
 # Astrolander
 
 [![hero image](img/astlan-hero.png)](img/astlan-hires.png)
