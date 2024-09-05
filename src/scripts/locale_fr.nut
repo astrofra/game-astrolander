@@ -5,7 +5,9 @@ g_locale_fr	<-	{
 	main_font_name		=	"yanone_kaffeesatz"
 
 	//	System
-	loading				=	"Chargement"
+	loading				=	"Chargement",
+	language 			=	"Français",
+
 	//	Title
 	game_title			=	"ASTLAN",
 	game_subtitle		=	"Astro Lander",	
@@ -25,11 +27,18 @@ g_locale_fr	<-	{
 	leaderboard			=	"Pilotes"
 	music_enabled		=	"Musique"
 	sound_fx_enabled	=	"Sons"
+	player_nickname		=	"Player's Nickname"
+	credits_button 		=	"Credits"
 
 	//	Leaderboard
 	leaderboard_title	=	"Grands Pilotes"
+	guest_nickname		=	"Guest"
 	
+	//	Game End
+	end_game_line_0		=	"Staff : ",
+
 	//	EndLevel / Debrief
+	endlevel_level_name	=	"Level",
 	endlevel_score		=	"Score",
 	endlevel_fuel		=	"Fioul",
 	endlevel_life		=	"Vie",
@@ -42,6 +51,14 @@ g_locale_fr	<-	{
 	endlevel_remain_fuel	=	"Fioul Restant",
 	total_score				=	"Score Total",
 	endlevel_time			=	"Time",
+	total_score				=	"Total Score",
+	score_points			=	"points",
+	story_0					=	"Derriere ces murs,\nvous trouvez une relique d'humanité...",
+	story_1					=	"Echappant aux lasers mortels,\nvous emportez un deuxieme bras!",
+	story_2					=	"Cachée dans ces rochers,\nse trouve une jambe.",
+	story_3					=	"Deux bras et deux jambes ?\nRien ne s'adapte à votre corps de métal.",
+	story_4					=	"Un corps, un cerveau ?\nIl ne vous manque plus qu'un crane.",
+	story_5					=	"Votre corps reconstruit,\nvotre quête s'acheve.",
 
 	//	InGame / Hud
 	hud_help			=	"||",
@@ -59,6 +76,7 @@ g_locale_fr	<-	{
 	game_over			=	"Game Over"
 	no_fuel				=	"Fioul Epuisé !"
 	dead_by_damage		=	"Commotion Cérébrale !"
+	dead_by_poison		=	"Empoisonement!"
 	no_time_left		=	"Fin du temps imparti !"
 	return_base			=	"Retour à la Base!\n~~Size(40)Vous avez tous les artefacts."
 	mission_complete	=	"Mission Terminée !"

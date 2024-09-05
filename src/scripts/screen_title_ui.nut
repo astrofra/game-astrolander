@@ -40,6 +40,7 @@ class	TitleUI	extends	BaseUI
 	credit_button			=	0
 	sfx_volume_button		=	0
 	music_volume_button		=	0
+	language_button			=	0
 
 	//	Level selection screen
 	back_from_level_button	=	0
@@ -79,6 +80,9 @@ class	TitleUI	extends	BaseUI
 		
 		back_from_option_button[1].rebuild()
 		back_from_option_button[1].refresh()
+
+		sfx_volume_button[1].rebuild()
+		music_volume_button[1].refresh()
 		
 		control_reverse[1].rebuild()
 		control_reverse[1].refresh()
@@ -181,12 +185,21 @@ class	TitleUI	extends	BaseUI
 		WindowSetEventHandlerWithContext(option_right_arrow, EventCursorDown, this, TitleUI.ScrollToTitleScreen)
 		WindowSetEventHandlerWithContext(back_from_option_button[0], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
 				
+		//	Reverse controls
 		local	_control_reverse_button = AddButtonRed(g_screen_width * 0.5, g_screen_height * 0.525, true)
 		control_reverse = LabelWrapper(ui, CreateStringControlReverse(), -170, 32, 30, 600, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WindowSetEventHandlerWithContext(control_reverse[0], EventCursorDown, this, TitleUI.OnTitleUIReverseControls)
 		WindowSetEventHandlerWithContext(_control_reverse_button, EventCursorDown, this, TitleUI.OnTitleUIReverseControls)
 		WindowSetParent(control_reverse[0], _control_reverse_button)
 
+		//	Change UI language
+		local	_language_button = AddButtonRed(g_screen_width * 0.5, g_screen_height * 0.675, true)
+		language_button = LabelWrapper(ui, g_locale.language, -20, 20, 40, 300, 90, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		WindowSetEventHandlerWithContext(language_button[0], EventCursorDown, this, TitleUI.OnTitleUINextLanguage)
+		WindowSetEventHandlerWithContext(_language_button, EventCursorDown, this, TitleUI.OnTitleUINextLanguage)
+		WindowSetParent(language_button[0], _language_button)
+
+		//	Goto Credits Page
 		local	_credit_button = AddButtonGenericBlack(g_screen_width * 0.5, g_screen_height * 0.825, true)
 		credit_button = LabelWrapper(ui, g_locale.credits_button, -30, 0, 40, 300, 90, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WindowSetEventHandlerWithContext(credit_button[0], EventCursorDown, this, TitleUI.OnTitleUIGotoCredits)
@@ -196,7 +209,10 @@ class	TitleUI	extends	BaseUI
 		local	enter_nickname_text = LabelWrapper(ui, g_locale.player_nickname, g_screen_width * 0.5 - 256, g_screen_height * 0.25 - 110, 48, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WindowSetParent(enter_nickname_text[0], master_window_option)
 
-		nickname_textfield = EditableTextField(ui, 512, 80, g_screen_width * 0.5, g_screen_height * 0.25)
+		if (IsTouchPlatform())
+			nickname_textfield = EditableTouchTextField(ui, 512, 80, g_screen_width * 0.5, g_screen_height * 0.25)
+		else
+			nickname_textfield = EditableTextField(ui, 512, 80, g_screen_width * 0.5, g_screen_height * 0.25)
 		WindowSetParent(nickname_textfield.handler, master_window_option)
 
 		local	_sfx_volume = AddButtonGenericRed(g_screen_width * 0.375, g_screen_height * 0.4, true)
@@ -278,13 +294,25 @@ class	TitleUI	extends	BaseUI
 //		WindowSetParent(level_easy_button[0], master_window_option)
 //		WindowSetParent(level_normal_button[0], master_window_option)
 //		WindowSetParent(level_hard_button[0], master_window_option)
+
 		WindowSetParent(_control_reverse_button, master_window_option)
+		WindowSetParent(_language_button, master_window_option)
 		WindowSetParent(_credit_button, master_window_option)
 
 		HandleLevelLock()
 		
 		WindowSetOpacity(master_window_option, 0.0)
 		WindowSetOpacity(master_window_level, 0.0)
+
+		switch(g_title_screen_index)
+		{
+			case -1:
+				GoToOptionScreen()
+				break;
+			case 0:
+			case 1:
+				break;
+		}
 
 		//AddLogo()
 	}
@@ -518,7 +546,8 @@ class	TitleUI	extends	BaseUI
 	function	ScrollToLevelScreen(event, table)
 	//-------------------------------------------
 	{
-		ButtonFeedback(table.window)
+		if (table != 0)
+			ButtonFeedback(table.window)
 
 		current_world = 0
 		CreateLevelButtonGrid()
@@ -528,29 +557,37 @@ class	TitleUI	extends	BaseUI
 		WindowSetCommandList(master_window_level, "toalpha 0.5,1;")
 		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, -virtual_screen_width))
 		PlaySfxUINextPage()
+		g_title_screen_index = 1
+	}
+
+	//-------------------------------------------
+	function	GoToOptionScreen()
+	//-------------------------------------------
+	{
+		WindowSetCommandList(master_window_option, "toalpha 0.0,1;")
+		WindowSetPosition(master_window_handler, virtual_screen_width, 0)
+		g_title_screen_index = -1
 	}
 
 	//-------------------------------------------
 	function	ScrollToOptionScreen(event, table)
 	//-------------------------------------------
 	{
-		ButtonFeedback(table.window)
-
 		WindowSetCommandList(master_window_option, "toalpha 0.5,1;")
 		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, virtual_screen_width))
 		PlaySfxUINextPage()
+		g_title_screen_index = -1
 	}
 
 	//-------------------------------------------
 	function	ScrollToTitleScreen(event, table)
 	//-------------------------------------------
 	{
-		ButtonFeedback(table.window)
-
 		WindowSetCommandList(master_window_option, "toalpha 0.5,0.0;")
 		WindowSetCommandList(master_window_level, "toalpha 0.5,0.0;")
 		WindowSetCommandList(master_window_handler, CreateTweeningCommandList(WindowGetPosition(master_window_handler).x, 0))
 		PlaySfxUINextPage()
+		g_title_screen_index = 0
 
 		GlobalSaveGame()
 	}
@@ -571,6 +608,15 @@ class	TitleUI	extends	BaseUI
 		ButtonFeedback(table.window)
 		PlaySfxUINextPage()
 		SceneGetScriptInstance(g_scene).GotoCredits()
+	}
+
+	//--------------------------------------------
+	function	OnTitleUINextLanguage(event, table)
+	//--------------------------------------------
+	{
+		SwitchToNextLanguage()
+		GlobalSaveGame()
+		SceneGetScriptInstance(g_scene).ReloadTitleScreen()
 	}
 
 	//--------------------------------------------
@@ -661,7 +707,7 @@ class	TitleUI	extends	BaseUI
 //		TextSetText(control_reverse[1], CreateStringControlReverse())
 		control_reverse[1].label = CreateStringControlReverse()
 		control_reverse[1].refresh()
-		//GlobalSaveGame()
+		GlobalSaveGame()
 		PlaySfxUISelect()
 		ButtonFeedback(table.window)
 	}

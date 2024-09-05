@@ -19,7 +19,7 @@ class	ParticleEmitter
 
 	scene				=	0
 	current_camera		=	0
-	lander_item			=	0
+	parent_item			=	0
 	emitter_item		=	0
 	pos					=	0
 	scale				=	0
@@ -41,14 +41,18 @@ class	ParticleEmitter
 	//-----------------------
 	{
 		emitter_item = item
-		lander_item = ItemGetParent(item)
-		if (!ObjectIsValid(lander_item))
-			lander_item = 0
+		parent_item = ItemGetParent(item)
+		if (!ObjectIsValid(parent_item))
+			parent_item = 0
 		pos	= ItemGetWorldPosition(item)
 		scale = ItemGetScale(item)
 		emit_clock = g_clock
 		scene = ItemGetScene(item)
 		original_particle = SceneAddObject(scene, "original_particle")
+
+		try{ItemRenderSetup(ObjectGetItem(original_particle), g_factory)}
+		catch(e){}
+
 		local	geo = EngineLoadGeometry(g_engine, particle_mesh)
 		ObjectSetGeometry(original_particle, geo)
 		original_particle = ObjectGetItem(original_particle)
@@ -73,6 +77,14 @@ class	ParticleEmitter
 	function	OnSetupDone(item)
 	{
 		current_camera = SceneGetCurrentCamera(scene)
+	}
+	
+	function	IsEmitDone()
+	{
+		if (ace_deleter.IsDeletionQueueDone())
+			return true
+
+		return false
 	}
 
 	//------------------------
@@ -102,12 +114,15 @@ class	ParticleEmitter
 				pos = pos + Vector(Rand(-1,1), Rand(-1,1), 0).Normalize().Scale(Rand(jitter_radius_min, jitter_radius_max))
 			_d = ItemGetMatrix(emitter_item).GetRow(0)
 			_d.y += -0.5
-			_d = _d.Normalize().Scale(particle_speed) //	Emitter speed in m/s
-			if (lander_item != 0)
-				_d += ItemGetLinearVelocity(lander_item)
+			_d = _d.Normalize() //	Emitter speed in m/s
+			if (parent_item != 0)
+				_d += ItemGetLinearVelocity(parent_item)
 			_d.z = 0.0
+			_d = _d.Scale(particle_speed)
 
 			new_part = SceneDuplicateItem(scene, original_particle)
+try{ItemRenderSetup(new_part, g_factory)}
+catch(e){}
 			ItemActivate(new_part, true)
 			ItemSetPosition(new_part, pos + Vector(0,0,Mtr(Rand(0.25, 1.0))))
 			ItemSetRotation(new_part, Vector(0,0,Rand(0,180)))

@@ -24,7 +24,7 @@ class	Title
 	{
 		print("Title::NicknameChanged() str = " + str)
 		ProjectGetScriptInstance(g_project).player_data.nickname = str
-		//GlobalSaveGame()
+		GlobalSaveGame()
 	}
 
 	//-------------------------
@@ -38,27 +38,37 @@ class	Title
 	function	StartGame()
 	//---------------------
 	{
-			print("Title::StartGame()")
-			MixerChannelStop(g_mixer, channel_music)
-			ProjectGetScriptInstance(g_project).ProjectStartGame()
+		print("Title::StartGame()")
+		MixerChannelStop(g_mixer, channel_music)
+		ProjectGetScriptInstance(g_project).ProjectStartGame()
 	}
 
 	//---------------------------
 	function	GotoLeaderboard()
 	//---------------------------
 	{
-			print("Title::GotoLeaderboard()")
-			MixerChannelStop(g_mixer, channel_music)
-			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_leaderboard.nms")
+		print("Title::GotoLeaderboard()")
+		MixerChannelStop(g_mixer, channel_music)
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_leaderboard.nms")
 	}
 
 	//-----------------------
 	function	GotoCredits()
 	//-----------------------
 	{
-			print("Title::GotoCredits()")
-			MixerChannelStop(g_mixer, channel_music)
-			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_credits.nms")
+		print("Title::GotoCredits()")
+		MixerChannelStop(g_mixer, channel_music)
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_credits.nms")
+	}
+
+	//-----------------------------
+	function	ReloadTitleScreen()
+	//-----------------------------
+	{
+		print("Title::ReloadTitleScreen()")
+		MixerChannelStop(g_mixer, channel_music)
+		ProjectGetScriptInstance(g_project).prev_scene_filename = ""
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_title.nms")
 	}
 
 	//------------------------

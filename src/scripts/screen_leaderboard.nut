@@ -30,6 +30,9 @@ class	LeaderboardUI	extends	BaseUI
 		print("LeaderboardUI::OnRenderContextChanged()")
 		title.rebuild()
 		title.refresh()
+
+		skip_button[1].rebuild()
+		skip_button[1].refresh()
 		
 		foreach(_score_entry in score_table)
 		{

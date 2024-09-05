@@ -183,7 +183,7 @@
 		<MObject=
 			<MItem=
 				<Id="Particle Flare">
-				<UId=4>
+				<UId=2>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -222,7 +222,7 @@
 		<MObject=
 			<MItem=
 				<Id="Particle Flare">
-				<UId=5>
+				<UId=3>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -252,7 +252,6 @@
 						<Y=0.350000>
 						<Z=0.350000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -267,7 +266,7 @@
 		<MLight=
 			<MItem=
 				<Id="New Light">
-				<UId=2>
+				<UId=4>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -312,7 +311,7 @@
 		<MLight=
 			<MItem=
 				<Id="New Light">
-				<UId=3>
+				<UId=5>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
@@ -368,11 +367,11 @@
 	>
 	<Links=
 		<Link=
-			<Item=3>
+			<Item=2>
 			<Link=1>
 		>
 		<Link=
-			<Item=4>
+			<Item=3>
 			<Link=1>
 		>
 		<Link=

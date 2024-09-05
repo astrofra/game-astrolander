@@ -67,6 +67,7 @@
 						<Y=13.919093>
 						<Z=-60.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=80.458984>
 						<Y=-17.147449>
@@ -96,554 +97,8 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="path_0">
-				<UId=1>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=73.749298>
-						<Y=13.717617>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_1">
-				<UId=2>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=16.857525>
-						<Y=15.329974>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_2">
-				<UId=3>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=16.857525>
-						<Y=5.698771>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_3">
-				<UId=4>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=16.857525>
-						<Y=15.329974>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_4">
-				<UId=5>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=54.086075>
-						<Y=15.627187>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_5">
-				<UId=6>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=63.939941>
-						<Y=-46.776157>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_6">
-				<UId=7>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=83.933075>
-						<Y=-49.259125>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_7">
-				<UId=8>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=105.287071>
-						<Y=-27.973129>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_8">
-				<UId=9>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=83.647903>
-						<Y=-17.421627>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_9">
-				<UId=10>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=104.141174>
-						<Y=-21.210480>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_10">
-				<UId=11>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=96.680954>
-						<Y=-46.639305>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_11">
-				<UId=12>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=62.751625>
-						<Y=-46.639305>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_12">
-				<UId=13>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=52.962021>
-						<Y=11.433481>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="path_13">
-				<UId=14>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=73.244904>
-						<Y=17.903122>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-			>
-		>
-		<MObject=
-			<MItem=
 				<Id="homebase">
-				<UId=15>
+				<UId=1>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -715,7 +170,7 @@
 		<MObject=
 			<MItem=
 				<Id="Background Atmosphere Layer">
-				<UId=16>
+				<UId=2>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -759,7 +214,7 @@
 		<MObject=
 			<MItem=
 				<Id="Background Atmosphere Layer">
-				<UId=17>
+				<UId=3>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -784,7 +239,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -799,7 +253,7 @@
 		<MObject=
 			<MItem=
 				<Id="Background Atmosphere Layer">
-				<UId=18>
+				<UId=4>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -838,7 +292,7 @@
 		<MObject=
 			<MItem=
 				<Id="background_handler">
-				<UId=19>
+				<UId=5>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -877,7 +331,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_Merged">
-				<UId=20>
+				<UId=6>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6430,6 +5884,7 @@
 			>
 			<Object=
 				<Item=
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6444,7 +5899,7 @@
 		<MObject=
 			<MItem=
 				<Id="background_Merged">
-				<UId=21>
+				<UId=7>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6483,7 +5938,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=22>
+				<UId=8>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6539,7 +5994,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=23>
+				<UId=9>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6577,7 +6032,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=24>
+				<UId=10>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6610,12 +6065,12 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/ArtifactSpecial.nms">
+			<Template="graphics/ArtifactSpecialHand.nms">
 		>
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=25>
+				<UId=11>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6653,7 +6108,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=26>
+				<UId=12>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6691,7 +6146,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusTime">
-				<UId=27>
+				<UId=13>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6729,7 +6184,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=28>
+				<UId=14>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6767,7 +6222,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTree0">
-				<UId=29>
+				<UId=15>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6810,7 +6265,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropReservoir">
-				<UId=30>
+				<UId=16>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6848,7 +6303,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=31>
+				<UId=17>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6886,7 +6341,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=32>
+				<UId=18>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6929,7 +6384,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=33>
+				<UId=19>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -6967,7 +6422,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=34>
+				<UId=20>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7010,7 +6465,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush2">
-				<UId=35>
+				<UId=21>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7048,7 +6503,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=36>
+				<UId=22>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7086,7 +6541,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=37>
+				<UId=23>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7124,7 +6579,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=38>
+				<UId=24>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7167,7 +6622,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=39>
+				<UId=25>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7210,7 +6665,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=40>
+				<UId=26>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7253,7 +6708,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=41>
+				<UId=27>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7291,7 +6746,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=42>
+				<UId=28>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7329,7 +6784,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=43>
+				<UId=29>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7367,7 +6822,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=44>
+				<UId=30>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7405,7 +6860,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=45>
+				<UId=31>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7443,7 +6898,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=46>
+				<UId=32>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7486,7 +6941,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=47>
+				<UId=33>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7524,7 +6979,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=48>
+				<UId=34>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7567,7 +7022,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=49>
+				<UId=35>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7610,7 +7065,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=50>
+				<UId=36>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7653,7 +7108,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=51>
+				<UId=37>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7691,7 +7146,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=52>
+				<UId=38>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7734,7 +7189,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTree0">
-				<UId=53>
+				<UId=39>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7777,7 +7232,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=54>
+				<UId=40>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7815,7 +7270,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=55>
+				<UId=41>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7858,7 +7313,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=56>
+				<UId=42>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7896,7 +7351,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=57>
+				<UId=43>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7939,7 +7394,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=58>
+				<UId=44>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7982,7 +7437,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=59>
+				<UId=45>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8020,7 +7475,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=60>
+				<UId=46>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8063,7 +7518,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=61>
+				<UId=47>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8106,7 +7561,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=62>
+				<UId=48>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8144,7 +7599,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=63>
+				<UId=49>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8187,7 +7642,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=64>
+				<UId=50>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8230,7 +7685,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=65>
+				<UId=51>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8273,7 +7728,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=66>
+				<UId=52>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8311,7 +7766,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=67>
+				<UId=53>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8354,7 +7809,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush2">
-				<UId=68>
+				<UId=54>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8397,16 +7852,16 @@
 	>
 	<Links=
 		<Link=
-			<Item=16>
-			<Link=19>
+			<Item=2>
+			<Link=5>
 		>
 		<Link=
-			<Item=17>
-			<Link=16>
+			<Item=3>
+			<Link=2>
 		>
 		<Link=
-			<Item=18>
-			<Link=16>
+			<Item=4>
+			<Link=2>
 		>
 	>
 	<Skins>
@@ -8437,27 +7892,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.999999>
+			<X=1.000000>
 			<Y=0.000000>
-			<Z=0.001348>
+			<Z=0.001045>
 			<W=0.000000>
 		>
 		<R1=
-			<X=-0.000127>
-			<Y=0.995563>
-			<Z=0.094102>
+			<X=-0.000000>
+			<Y=1.000000>
+			<Z=0.000000>
 			<W=0.000000>
 		>
 		<R2=
-			<X=-0.001342>
-			<Y=-0.094102>
-			<Z=0.995562>
+			<X=-0.001045>
+			<Y=-0.000000>
+			<Z=1.000000>
 			<W=0.000000>
 		>
 		<R3=
-			<X=83.603470>
-			<Y=-19.224960>
-			<Z=-38.748039>
+			<X=66.247269>
+			<Y=4.371571>
+			<Z=-70.368828>
 			<W=1.000000>
 		>
 	>
@@ -8467,30 +7922,30 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="@Perspective">
+			<Camera="@Front">
 			<Matrix=
 				<R0=
-					<X=0.999999>
+					<X=1.000000>
 					<Y=0.000000>
-					<Z=0.001348>
+					<Z=0.001045>
 					<W=0.000000>
 				>
 				<R1=
-					<X=-0.000127>
-					<Y=0.995563>
-					<Z=0.094102>
+					<X=-0.000000>
+					<Y=1.000000>
+					<Z=0.000000>
 					<W=0.000000>
 				>
 				<R2=
-					<X=-0.001342>
-					<Y=-0.094102>
-					<Z=0.995562>
+					<X=-0.001045>
+					<Y=-0.000000>
+					<Z=1.000000>
 					<W=0.000000>
 				>
 				<R3=
-					<X=83.603470>
-					<Y=-19.224960>
-					<Z=-38.748039>
+					<X=66.247269>
+					<Y=4.371571>
+					<Z=-70.368828>
 					<W=1.000000>
 				>
 			>

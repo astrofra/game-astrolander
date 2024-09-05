@@ -15,6 +15,7 @@ class	LevelEndUI extends	BaseUI
 	next_button				=	0
 
 	story_image				=	0
+	story_line				=	0
 
 	old_stats				=	0
 	
@@ -49,6 +50,9 @@ class	LevelEndUI extends	BaseUI
 		print("LevelEndUI::OnRenderContextChanged()")
 		next_button[1].rebuild()
 		next_button[1].refresh()
+
+		story_line.rebuild()
+		story_line.refresh()
 		
 		foreach(_label in label_table)
 		{
@@ -82,6 +86,9 @@ class	LevelEndUI extends	BaseUI
 				_label.refresh()
 
 				label_table.append(_label)
+
+				if (n == debrief_table.len() - 1)
+					WindowSetCommandList(_label.window, "hide;toalpha 0,0;nop 0.5;show;toalpha 0.15,1;")
 			}
 
 			if ("value" in line)
@@ -104,6 +111,9 @@ class	LevelEndUI extends	BaseUI
 				_label.refresh()
 
 				label_table.append(_label)
+
+				if (n == debrief_table.len() - 1)
+					WindowSetCommandList(_label.window, "hide;toalpha 0,0;nop 0.5;show;toalpha 0.25,1;")
 			}
 
 			base_y += g_screen_height * 0.1
@@ -125,7 +135,7 @@ class	LevelEndUI extends	BaseUI
 		WindowSetParent(next_button[0], next_arrow)
 		WindowSetEventHandlerWithContext(next_arrow, EventCursorDown, this, LevelEndUI.GotoScoreBrief)
 		WindowSetEventHandlerWithContext(next_button[0], EventCursorDown, this, LevelEndUI.GotoScoreBrief)
-		WindowSetCommandList(next_arrow, "toalpha 0,0;nop 1.5;toalpha 0.25,1;")
+		WindowSetCommandList(next_arrow, "toalpha 0,0;nop 4.5;toalpha 0.25,1;")
 	}
 
 	//------------------------------------
@@ -147,7 +157,7 @@ class	LevelEndUI extends	BaseUI
 		WindowSetParent(next_button[0], next_arrow)
 		WindowSetEventHandlerWithContext(next_arrow, EventCursorDown, this, LevelEndUI.GotoNextGame)
 		WindowSetEventHandlerWithContext(next_button[0], EventCursorDown, this, LevelEndUI.GotoNextGame)
-		WindowSetCommandList(next_arrow, "toalpha 0,0;nop 0.5;toalpha 0.25,1;")
+		WindowSetCommandList(next_arrow, "toalpha 0,0;nop 1.5;toalpha 0.25,1;")
 	}
 
 	//------------------------------------
@@ -167,6 +177,7 @@ class	LevelEndUI extends	BaseUI
 		local	story_texture, fname
 		fname = "ui/story_" + n.tostring() + ".jpg"
 
+		//	Image
 		if (FileExists(fname))
 		{
 			story_texture = EngineLoadTexture(g_engine, fname)
@@ -175,11 +186,35 @@ class	LevelEndUI extends	BaseUI
 			WindowSetPivot(story_image, TextureGetWidth(story_texture) * 0.5, TextureGetHeight(story_texture) * 0.5)
 			WindowSetPosition(story_image, g_screen_width * 0.5, g_screen_height * 0.5)
 			WindowSetOpacity(story_image, 0.0)
-			WindowSetCommandList(story_image, "nop 0.5; show; toalpha 2.0, 1.0+toscale 10.0,1.1,1.1;")
+			WindowSetCommandList(story_image, "nop 2.0; show;toalpha 3.0,0.2+toscale 3.0,1.02,1.02;toalpha 2.5,1.0+toscale 9.0,1.1,1.1;")
 		}
 		else
 		{
 			print("LevelEndUI::ShowStoryImage() : Cannot find file '" + fname + "'.")
+		}
+
+		//	Text
+		local	story_line_locale = "story_" + n.tostring()
+		if (story_line_locale in g_locale)
+		{
+			local	gradient_sprite = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/black_gradient_alpha.png"), 0, 0, 16, 256)
+			WindowSetPivot(gradient_sprite, 16 * 0.5, 256 * 0.5)
+			WindowSetPosition(gradient_sprite, g_screen_width * 0.5, g_screen_height * 0.65)
+			WindowSetScale(gradient_sprite, 100.0, 3.5)
+//			WindowSetOpacity(gradient_sprite, 0.0)
+			WindowSetCommandList(gradient_sprite, "nop 0.25; nop 4.0;toalpha 1.5,0.0;")
+
+			story_line = Label(ui, g_screen_width * 0.75, 256,  g_screen_width * 0.5, g_screen_height * 0.65, true, true)
+			story_line.label = g_locale[story_line_locale]
+			story_line.font = g_main_font_name
+			story_line.font_size = 60
+			story_line.label_align = "right"
+			story_line.label_color = RGBAToHex(g_ui_color_white)
+			story_line.glow = true
+			story_line.glow_radius = 5.0
+			story_line.refresh()
+			WindowSetScale(story_line.window, 1.1, 1.1)
+			WindowSetCommandList(story_line.window, "nop 0.25; show; toalpha 1.0,1.0+toscale 4.5,0.995,0.995;toalpha 0.5,0.0+toscale 4.75,0.95,0.95;")
 		}
 	}
 

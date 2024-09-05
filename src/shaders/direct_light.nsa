@@ -1,0 +1,29 @@
+<Version=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Attribute=<Name="a_normal"><Semantic="Normal">>
+
+		<Uniform=<Name="u_mat_diff"><Semantic="MaterialDiffuse"><Scope=<Fragment>>>
+		<Uniform=<Name="u_ambient"><Semantic="AmbientColor"><Scope=<Fragment>>>
+		<Uniform=<Name="u_nmv_matrix"><Semantic="NormalViewMatrix"><Scope=<Vertex>>>
+	>
+	<Varying=
+		<Variable=<Name="v_normal"><Type="vec3">>
+	>
+	<VertexSource="
+		v_normal = n_mtx_mul(u_nmv_matrix, a_normal);
+	">
+	<PixelSource="
+		vec3 u_light_dir = normalize(vec3(0.25, -0.5, 0.75));
+
+		vec4 tex = u_mat_diff;
+		vec3 n_normal = normalize(v_normal);
+		
+		float k_diff = -dot(n_normal, u_light_dir);	// lighting coef
+		k_diff = max(k_diff, 0.0);
+
+		vec4 rgba = tex * k_diff;
+		%out.constant% = rgba;
+	">
+>

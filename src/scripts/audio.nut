@@ -8,6 +8,35 @@
 	@author	Astrofra
 */
 
+//------------------------
+class	GlobalAudioHandler
+//------------------------
+{
+	sound_table		=	0
+
+	constructor()
+	{
+		sound_table = {}
+		sound_table.rawset("explode", EngineLoadSound(g_engine, "audio/sfx/sfx_explode.wav"))
+	}
+
+	function	Delete()	//	FIXME ?
+	{
+//		sound_table = {}
+	}
+
+	//-----------------------------
+	function	PlaySound(sound_id)
+	//-----------------------------
+	{
+		if (sound_id in sound_table)
+		{
+			local	_sfx_channel = MixerSoundStart(g_mixer, sound_table[sound_id])
+			MixerChannelSetGain(g_mixer, _sfx_channel, GlobalGetSfxVolume())
+		}
+	}
+}
+
 //------------------------------
 function	GlobalGetSfxVolume()
 //------------------------------

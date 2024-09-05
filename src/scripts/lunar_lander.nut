@@ -50,7 +50,6 @@ class	LunarLander	extends	SceneWithThreadHandler
 	hit_counter			=	0
 
 	scene				=	0
-	scene_script		=	0
 
 	auto_align_timeout	=	0.0
 
@@ -95,6 +94,30 @@ class	LunarLander	extends	SceneWithThreadHandler
 		HandleAudioFeedback()
 		_left = false
 		_right = false
+	}
+
+	//--------------------------------------------
+	function	OnEnterTrigger(item, trigger_item)
+	//--------------------------------------------
+	{
+		switch (ItemGetName(trigger_item))
+		{
+			case "artifact_trigger":
+				SceneGetScriptInstance(scene).camera_handler.EnableCloseUp(true)
+				break
+		}
+	}
+
+	//--------------------------------------------
+	function	OnExitTrigger(item, trigger_item)
+	//--------------------------------------------
+	{
+		switch (ItemGetName(trigger_item))
+		{
+			case "artifact_trigger_exit":
+				SceneGetScriptInstance(scene).camera_handler.EnableCloseUp(false)
+				break
+		}
 	}
 
 	//------------------------------

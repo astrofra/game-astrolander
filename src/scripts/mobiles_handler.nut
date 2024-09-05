@@ -3,6 +3,395 @@
 	Author: Astrofra
 */
 
+//----------------
+class	MobileBase
+//----------------
+{
+	is_culled		=	false
+	prev_culled		=	false
+	culling_changed	=	true
+
+	check_every		=	0
+
+	scene			=	0
+	current_camera	=	0
+
+	function	OnSetup(item)
+	{
+		is_culled 		=	false
+		prev_culled		=	false
+		culling_changed	=	true
+		check_every		=	Irand(0,8)
+	}
+
+	function	OnSetupDone(item)
+	{
+		scene = ItemGetScene(item)
+		current_camera = SceneGetCurrentCamera(scene)
+	}
+
+	function	OnUpdate(item)
+	{
+		check_every++
+
+		if (check_every < 8)
+			return
+
+		check_every = 0
+
+		if (CameraCullPosition(current_camera, ItemGetWorldPosition(item)) == VisibilityOutside)
+			is_culled = true
+		else
+			is_culled = false
+
+		if (prev_culled == is_culled)
+			culling_changed = false
+		else
+			culling_changed = true
+
+		prev_culled = is_culled
+	}
+}
+
+//-----------------------------------
+class	HomingMine extends MobileBase
+//-----------------------------------
+{
+	low_dt_compensation		=	1.0
+	mass					=	0.0
+	vel						=	0
+	pos						=	0
+	dist					=	0
+
+	wake_timeout			=	0.0
+	alive					=	true
+
+	scene					=	0
+	mesh_body				=	0
+	player_item				=	0
+	emitter_item			=	0
+	smoke_emitter_item		=	0
+
+	item_collision_mask		=	0
+	item_self_mask			=	0
+
+	probe_orientation		=	0
+
+	warning_material		=	0
+
+	physic_step_function	=	0
+
+	current_force			=	0
+	ideal_force				=	0
+
+	//-----------------------
+	function	OnSetup(item)
+	//-----------------------
+	{
+		base.OnSetup(item)
+
+		print("HomingMine::OnSetup()")
+
+		scene = ItemGetScene(item)
+		emitter_item = SceneFindItemChild(scene, item, "explosion_emitter")
+		smoke_emitter_item = SceneFindItemChild(scene, item, "explosion_cloud_emitter")
+		mesh_body = SceneFindItemChild(scene, item, "mine_mesh")
+		ItemPhysicSetLinearFactor(item, Vector(1,1,0))
+		ItemPhysicSetAngularFactor(item, Vector(0,0,0.2))
+		item_collision_mask = 2
+		item_self_mask = 2
+		mass = ItemGetMass(item)
+		vel = Vector(0,0,0)
+		pos = ItemGetPosition(item)
+		current_force = Vector(0,0,0)
+		ideal_force = Vector(0,0,0)
+		probe_orientation = 0.0
+		wake_timeout = g_clock
+		warning_material = GeometryGetMaterialFromIndex(ItemGetGeometry(mesh_body), 1)
+		SetWarningColorGreen()
+		ItemSetSelfMask(item, 0)
+		ItemSetCollisionMask(item, 0)
+	}
+
+	//-----------------------
+	function	IdleMode(item)
+	//-----------------------
+	{
+		if (is_culled)
+			return
+
+		ItemSetLinearDamping(item, 0.5)
+
+		local	_force = Vector(-vel.x,-vel.y,0)
+		local	_force_len = _force.Len()
+		if (_force_len > 1.0)
+		_force = _force.Scale(1.0 / _force_len)
+
+		ideal_force = _force.Scale(mass * 100.0)
+		ideal_force += g_gravity.Scale(mass * -1.0)
+		ideal_force += (Vector(Rand(-1,1),Rand(-1,1),0).Normalize().Scale(mass * 5.0))
+
+		current_force = current_force.Lerp(0.95, ideal_force)
+
+		if (player_item == 0)
+			return
+
+		local _dist = dist
+
+		if (_dist < Mtr(7.0))
+		{
+			if (((g_clock - wake_timeout ) * low_dt_compensation) > SecToTick(Sec(1.5)))
+			{
+				SetWarningColorRed()
+				physic_step_function = HuntMode
+				print("HomingMine::IdleMode() : going to HuntMode")
+			}
+			else
+				SetWarningColorOrange()
+		}
+		else
+		{
+			SetWarningColorGreen()
+			wake_timeout = g_clock 
+		}
+	}
+
+	//-----------------------
+	function	HuntMode(item)
+	//-----------------------
+	{
+		if (player_item == 0)
+			return
+
+		if (is_culled)
+			return
+
+		ItemSetLinearDamping(item, 1.0)
+
+		//	Search for the player
+		local _dist = dist
+		if (_dist > Mtr(10.0))
+		{
+			SetWarningColorGreen()
+			wake_timeout = g_clock 
+			physic_step_function = IdleMode
+			return
+		}
+
+		local	_target_pos = ItemGetWorldPosition(player_item)
+
+		local	_force = _target_pos - pos
+		local	_force_len = _force.Len()
+		if (_force_len > 1.0)
+		_force = _force.Scale(1.0 / _force_len)
+
+		local _dist_factor = RangeAdjust(_dist, 1.0, 5.0, 0.1, 1.0)
+		_dist_factor = Clamp(_dist_factor, 0.1, 1.0)
+		ideal_force = _force.Scale(mass * 10.0 * _dist_factor)
+		ideal_force += g_gravity.Scale(mass * -1.0)
+
+		//	Avoid any walls in a given range (ex : 5m)
+
+		probe_orientation += DegreeToRadian(50.0)
+		local	_probe_dir = vel.Normalize() + Vector(cos(probe_orientation), sin(probe_orientation), 0).Normalize().Scale(0.1)
+		local	_hit = SceneCollisionRaytrace(scene, pos, _probe_dir, 1, CollisionTraceAll, Mtr(5.0))
+
+		if ((_hit.hit) && (ItemGetName(_hit.item) != "player"))
+			ItemApplyLinearImpulse(item, _hit.n.Normalize().Scale(vel.Len() * 0.25 * low_dt_compensation))
+
+		current_force = current_force.Lerp(0.25, ideal_force)
+/*
+		local _dist_factor = RangeAdjust(_dist, 10.0, 50.0, 0.0, 1.0)
+		_dist_factor = Clamp(_dist_factor, 0.0, 1.0)
+		_dist_factor = Pow(_dist_factor, 2.0) * 0.25
+
+		local	_current_impulse = current_force.Scale(low_dt_compensation * _dist_factor)
+		if (_current_impulse.Len() > Mtr(5.0))
+			_current_impulse = _current_impulse.Scale(_current_impulse.Len() / Mtr(5.0))
+
+		ItemApplyLinearImpulse(item, _current_impulse)
+*/
+	}
+
+	function	SetWarningColorRed()
+	{		MaterialSetDiffuse(warning_material, Vector(1,0,0,1))	}
+
+	function	SetWarningColorOrange()
+	{		MaterialSetDiffuse(warning_material, Vector(1,0.5,0,1))	}
+
+	function	SetWarningColorGreen()
+	{		MaterialSetDiffuse(warning_material, Vector(0.1,1,0,1))	}
+
+	function	SetWarningColorBlue()
+	{		MaterialSetDiffuse(warning_material, Vector(0.0,0.8,1,1))	}
+
+	//---------------------------------
+	function	OnLogicUpdate(item, dt)
+	//---------------------------------
+	{
+		if (is_culled)
+			return
+
+		if (player_item != 0)
+			dist = pos.Dist(ItemGetWorldPosition(player_item))
+	}
+
+	//-----------------------
+	function	OnUpdate(item)
+	//-----------------------
+	{
+		base.OnUpdate(item)
+
+		if (culling_changed)
+		{
+			if (is_culled)
+			{
+				ItemSetPhysicMode(item, PhysicModeNone)
+				ItemSetSelfMask(item, 0)
+				ItemSetCollisionMask(item, 0)
+				physic_step_function = IdleMode
+				SetWarningColorGreen()
+			}
+			else
+			{
+				ItemSetPhysicMode(item, PhysicModeDynamic)
+				ItemSetSelfMask(item, item_self_mask)
+				ItemSetCollisionMask(item, item_collision_mask)
+				ItemSetup(item)
+				ItemWake(item)
+			}
+		}
+
+		if (!is_culled)
+			ItemWake(item)
+
+		if (player_item == 0)
+		{
+			player_item = LegacySceneFindItem(scene, "player")
+
+			if (player_item == NullItem)
+				player_item = 0
+			else
+				print("HomingMine::OnUpdate() found 'player' item.")
+		}
+	}
+
+
+	//---------------------------
+	function	OnSetupDone(item)
+	//---------------------------
+	{
+		base.OnSetupDone(item)
+		physic_step_function = IdleMode
+	}
+
+	//--------------------------------
+	function	OnPhysicStep(item, dt)
+	//--------------------------------
+	{
+		low_dt_compensation = Clamp(1.0 / (60.0 * g_dt_frame), 0.0, 1.0)
+		vel = ItemGetLinearVelocity(item)
+		pos = ItemGetWorldPosition(item)
+
+		physic_step_function(item)
+
+		if (player_item == 0)
+			return
+
+		ItemApplyLinearForce(item, current_force.Scale(low_dt_compensation))
+	}
+
+	//--------------------------------------
+	function	OnCollision(item, with_item)
+	//--------------------------------------
+	{
+		if ((ItemGetName(with_item) == "player") && alive)
+		{
+			alive = false
+			physic_step_function = Explode
+		}
+	}
+
+	//-----------------------
+	function	Explode(item)
+	//-----------------------
+	{
+		ItemGetScriptInstance(player_item).TakeLaserDamage()
+		local	_ejection = ItemGetWorldPosition(player_item) - pos
+		_ejection = _ejection.Normalize().Scale(5.0)
+		ItemApplyLinearImpulse(player_item, _ejection)
+		for(local n = 0; n < 15; n++)
+			ItemGetScriptInstance(emitter_item).Emit()
+		physic_step_function = EmitCloud
+	}
+
+	//-----------------------
+	function	EmitCloud(item)
+	//-----------------------
+	{
+		for(local n = 0; n < 20; n++)
+			ItemGetScriptInstance(smoke_emitter_item).Emit()
+		physic_step_function = SelfDelete
+	}
+
+	//-----------------------
+	function	SelfDelete(item)
+	//-----------------------
+	{
+
+		if (mesh_body != 0)
+		{
+			SceneDeleteItem(scene,mesh_body)
+			mesh_body = 0
+			g_audio_handler.PlaySound("explode")
+		}
+
+		if ((emitter_item != 0) && (ItemGetScriptInstance(emitter_item).IsEmitDone()))
+		{
+			SceneDeleteItem(scene, emitter_item)
+			emitter_item = 0
+		}
+
+		if ((smoke_emitter_item != 0) && (ItemGetScriptInstance(smoke_emitter_item).IsEmitDone()))
+		{
+			SceneDeleteItem(scene, smoke_emitter_item)
+			smoke_emitter_item = 0
+		}
+
+		if ((smoke_emitter_item == 0) && (emitter_item == 0))
+			SceneDeleteItem(scene, item)
+	}
+}
+
+//-----------------------------
+class	SpecialArtifactRotation
+//-----------------------------
+{
+
+	angle			=	0.0
+	rpm				=	-0.25
+	padding			=	30.0
+
+	function	OnSetup(item)
+	{
+		angle	=	0.0
+	}
+
+	function	OnUpdate(item)
+	{
+		angle += g_dt_frame * rpm * 360.0
+		local	mapped_angle = 0.0
+
+		for(local dt = 0.0; dt < padding; dt += 1.0)
+			mapped_angle += Clamp(RangeAdjust(modAngle(angle), 180.0 - padding - dt, 180.0 + padding + dt, 0.0, 360.0),  0.0, 360.0)
+
+		mapped_angle /= padding
+
+		ItemSetRotation(item, Vector(0,0,DegreeToRadian(mapped_angle)))
+	}
+
+}
+
 class	SimpleRotation
 {
 /*<
@@ -80,46 +469,6 @@ class	MeshSelectBasedOnPlatform
 		{
 			print("A RIEN VU")
 		}
-	}
-}
-
-//----------------
-class	MobileBase
-//----------------
-{
-	is_culled		=	false
-	prev_culled		=	false
-	culling_changed	=	true
-
-	scene			=	0
-	current_camera	=	0
-
-	function	OnSetup(item)
-	{
-		is_culled 		=	false
-		prev_culled		=	false
-		culling_changed	=	true
-	}
-
-	function	OnSetupDone(item)
-	{
-		scene = ItemGetScene(item)
-		current_camera = SceneGetCurrentCamera(scene)
-	}
-
-	function	OnUpdate(item)
-	{
-		if (CameraCullPosition(current_camera, ItemGetWorldPosition(item)) == VisibilityOutside)
-			is_culled = true
-		else
-			is_culled = false
-
-		if (prev_culled == is_culled)
-			culling_changed = false
-		else
-			culling_changed = true
-
-		prev_culled = is_culled
 	}
 }
 

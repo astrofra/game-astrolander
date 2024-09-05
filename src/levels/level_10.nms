@@ -67,6 +67,7 @@
 						<Y=8.226000>
 						<Z=-60.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=80.458984>
 						<Y=-17.147449>
@@ -1186,7 +1187,7 @@
 		<MObject=
 			<MItem=
 				<Id="homebase">
-				<UId=256>
+				<UId=27>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1258,7 +1259,7 @@
 		<MObject=
 			<MItem=
 				<Id="max_position">
-				<UId=264>
+				<UId=28>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1297,7 +1298,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Beam Crossed">
-				<UId=326>
+				<UId=29>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1342,7 +1343,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Beam Crossed">
-				<UId=327>
+				<UId=30>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1392,7 +1393,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Beam Crossed">
-				<UId=328>
+				<UId=31>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1442,7 +1443,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Beam Crossed">
-				<UId=329>
+				<UId=32>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1492,7 +1493,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Beam Crossed">
-				<UId=330>
+				<UId=33>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1542,7 +1543,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Beam Crossed">
-				<UId=331>
+				<UId=34>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1592,7 +1593,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Beam Crossed">
-				<UId=332>
+				<UId=35>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1642,7 +1643,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Beam Crossed">
-				<UId=333>
+				<UId=36>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1692,7 +1693,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 0">
-				<UId=334>
+				<UId=37>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1742,7 +1743,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 0">
-				<UId=335>
+				<UId=38>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1792,7 +1793,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 0">
-				<UId=336>
+				<UId=39>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1842,7 +1843,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 0">
-				<UId=337>
+				<UId=40>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1892,7 +1893,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 0">
-				<UId=338>
+				<UId=41>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1942,7 +1943,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 0">
-				<UId=339>
+				<UId=42>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1992,7 +1993,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 0">
-				<UId=340>
+				<UId=43>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2042,7 +2043,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 0">
-				<UId=341>
+				<UId=44>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2092,7 +2093,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=342>
+				<UId=45>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2142,7 +2143,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=343>
+				<UId=46>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2192,7 +2193,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=344>
+				<UId=47>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2242,7 +2243,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=345>
+				<UId=48>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2292,7 +2293,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=346>
+				<UId=49>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2342,7 +2343,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=347>
+				<UId=50>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2392,7 +2393,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=348>
+				<UId=51>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2442,7 +2443,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=349>
+				<UId=52>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2492,7 +2493,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=350>
+				<UId=53>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2542,7 +2543,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=351>
+				<UId=54>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2592,7 +2593,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=352>
+				<UId=55>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2642,7 +2643,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=353>
+				<UId=56>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2692,7 +2693,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=354>
+				<UId=57>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2742,7 +2743,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=355>
+				<UId=58>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2792,7 +2793,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=356>
+				<UId=59>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2842,7 +2843,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=357>
+				<UId=60>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2892,7 +2893,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=358>
+				<UId=61>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2942,7 +2943,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=359>
+				<UId=62>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2992,7 +2993,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=360>
+				<UId=63>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3042,7 +3043,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=361>
+				<UId=64>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3092,7 +3093,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=362>
+				<UId=65>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3142,7 +3143,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=363>
+				<UId=66>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3192,7 +3193,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=364>
+				<UId=67>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3242,7 +3243,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 2">
-				<UId=365>
+				<UId=68>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3292,7 +3293,7 @@
 		<MObject=
 			<MItem=
 				<Id="Back Factory 1">
-				<UId=366>
+				<UId=69>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3342,7 +3343,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_Merged">
-				<UId=429>
+				<UId=70>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3415,7 +3416,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_Merged">
-				<UId=430>
+				<UId=71>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5618,7 +5619,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_Merged">
-				<UId=431>
+				<UId=72>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7714,7 +7715,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7729,7 +7729,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_Merged">
-				<UId=432>
+				<UId=73>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10162,7 +10162,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10177,7 +10176,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_Merged">
-				<UId=433>
+				<UId=74>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11396,7 +11395,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11408,10 +11406,197 @@
 				<Geometry="graphics/blocks_level_10_merged_d.nmg">
 			>
 		>
+		<MObject=
+			<MItem=
+				<Id="max_position">
+				<UId=75>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=0.000000>
+						<Y=63.670155>
+						<Z=0.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Back Beam Crossed">
+				<UId=138>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=260.193176>
+						<Y=48.516926>
+						<Z=3.769853>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<Scale=
+						<X=10.218996>
+						<Y=10.320827>
+						<Z=8.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/back_wire_3.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Back Beam Crossed">
+				<UId=139>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=260.226440>
+						<Y=46.453171>
+						<Z=3.769853>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.515818>
+					>
+					<Scale=
+						<X=7.641671>
+						<Y=9.079664>
+						<Z=8.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/back_wire_3.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Back Beam Crossed">
+				<UId=140>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=258.382324>
+						<Y=34.872726>
+						<Z=3.769853>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.515818>
+					>
+					<Scale=
+						<X=7.641671>
+						<Y=9.079664>
+						<Z=8.000000>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/back_wire_3.nmg">
+			>
+		>
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=367>
+				<UId=76>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11467,7 +11652,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=368>
+				<UId=77>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11505,7 +11690,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=369>
+				<UId=78>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11543,7 +11728,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=370>
+				<UId=79>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11581,7 +11766,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=371>
+				<UId=80>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11619,7 +11804,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=373>
+				<UId=81>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11657,7 +11842,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=374>
+				<UId=82>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11695,7 +11880,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=375>
+				<UId=83>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11733,7 +11918,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=376>
+				<UId=84>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11771,7 +11956,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=377>
+				<UId=85>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11809,7 +11994,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary1">
-				<UId=378>
+				<UId=86>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11847,7 +12032,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=379>
+				<UId=87>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11885,7 +12070,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=380>
+				<UId=88>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11923,7 +12108,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=381>
+				<UId=89>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11961,7 +12146,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=382>
+				<UId=90>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11999,7 +12184,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=383>
+				<UId=91>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12037,7 +12222,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=384>
+				<UId=92>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12075,7 +12260,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=385>
+				<UId=93>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12113,7 +12298,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=386>
+				<UId=94>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12151,7 +12336,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=387>
+				<UId=95>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12194,7 +12379,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=388>
+				<UId=96>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12237,7 +12422,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=389>
+				<UId=97>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12275,7 +12460,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=390>
+				<UId=98>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12313,7 +12498,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=391>
+				<UId=99>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12351,7 +12536,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=392>
+				<UId=100>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12394,7 +12579,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=393>
+				<UId=101>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12437,7 +12622,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropReservoir">
-				<UId=394>
+				<UId=102>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12475,7 +12660,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=395>
+				<UId=103>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12518,7 +12703,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=396>
+				<UId=104>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12556,7 +12741,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=397>
+				<UId=105>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12594,7 +12779,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=398>
+				<UId=106>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12637,7 +12822,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTree0">
-				<UId=399>
+				<UId=107>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12675,7 +12860,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=400>
+				<UId=108>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12713,7 +12898,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush0">
-				<UId=401>
+				<UId=109>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12751,7 +12936,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=402>
+				<UId=110>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12789,7 +12974,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=403>
+				<UId=111>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12832,7 +13017,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=404>
+				<UId=112>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12875,7 +13060,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=405>
+				<UId=113>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12918,7 +13103,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=406>
+				<UId=114>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12961,7 +13146,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=407>
+				<UId=115>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13004,7 +13189,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=408>
+				<UId=116>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13042,7 +13227,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=409>
+				<UId=117>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13080,7 +13265,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=410>
+				<UId=118>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13123,7 +13308,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=411>
+				<UId=119>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13166,7 +13351,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=412>
+				<UId=120>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13204,7 +13389,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=413>
+				<UId=121>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13242,7 +13427,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=414>
+				<UId=122>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13280,7 +13465,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=415>
+				<UId=123>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13323,7 +13508,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=416>
+				<UId=124>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13366,7 +13551,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=417>
+				<UId=125>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13409,7 +13594,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=418>
+				<UId=126>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13447,7 +13632,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=419>
+				<UId=127>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13485,7 +13670,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=420>
+				<UId=128>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13523,7 +13708,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=421>
+				<UId=129>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13566,7 +13751,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=422>
+				<UId=130>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13604,7 +13789,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileJawgate">
-				<UId=423>
+				<UId=131>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13647,7 +13832,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=424>
+				<UId=132>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13690,7 +13875,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=425>
+				<UId=133>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13728,7 +13913,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=426>
+				<UId=134>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13771,7 +13956,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusSlowClock">
-				<UId=427>
+				<UId=135>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13809,7 +13994,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush1">
-				<UId=428>
+				<UId=136>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13848,6 +14033,44 @@
 				<Registry>
 			>
 			<Template="graphics/PropTreeBush1.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="MobileElevator">
+				<UId=137>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=261.415192>
+					<Y=4.425763>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/MobileElevator.nms">
 		>
 	>
 	<Links=
@@ -13891,6 +14114,10 @@
 			<Item=25>
 			<Link=26>
 		>
+		<Link=
+			<Item=75>
+			<Link=137>
+		>
 	>
 	<Skins>
 	<Constraints>
@@ -13918,30 +14145,29 @@
 	<Physics=
 		<Frequency=59.999996>
 	>
-	<CurrentCamera="game_camera">
 	<ViewMatrix=
 		<R0=
 			<X=1.000000>
-			<Y=0.000000>
-			<Z=0.000000>
+			<Y=-0.000000>
+			<Z=-0.000256>
 			<W=0.000000>
 		>
 		<R1=
 			<X=0.000000>
 			<Y=1.000000>
-			<Z=0.000000>
+			<Z=0.000002>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.000000>
-			<Y=0.000000>
+			<X=0.000256>
+			<Y=-0.000002>
 			<Z=1.000000>
 			<W=0.000000>
 		>
 		<R3=
-			<X=32.681999>
-			<Y=8.226000>
-			<Z=-60.000000>
+			<X=263.693939>
+			<Y=13.960222>
+			<Z=-88.446907>
 			<W=1.000000>
 		>
 	>
@@ -13951,30 +14177,30 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="game_camera">
+			<Camera="@Front">
 			<Matrix=
 				<R0=
 					<X=1.000000>
-					<Y=0.000000>
-					<Z=0.000000>
+					<Y=-0.000000>
+					<Z=-0.000256>
 					<W=0.000000>
 				>
 				<R1=
 					<X=0.000000>
 					<Y=1.000000>
-					<Z=0.000000>
+					<Z=0.000002>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.000000>
-					<Y=0.000000>
+					<X=0.000256>
+					<Y=-0.000002>
 					<Z=1.000000>
 					<W=0.000000>
 				>
 				<R3=
-					<X=32.681999>
-					<Y=8.226000>
-					<Z=-60.000000>
+					<X=263.693939>
+					<Y=13.960222>
+					<Z=-88.446907>
 					<W=1.000000>
 				>
 			>

@@ -78,6 +78,13 @@ class	LevelEnd	extends	SceneWithThreadHandler
 		{
 			update_function = ShowScoreBrief
 		}
+
+		//	Music ?
+		if (game.player_data.current_level == 23)
+		{
+			g_audio_music_channel = MixerStreamStart(g_mixer, "audio/music/bouncy_optimism.ogg")
+			MixerChannelSetLoopMode(g_mixer, g_audio_music_channel, LoopRepeat)
+		}
 	}
 
 	//---------------------------------
@@ -232,8 +239,13 @@ class	LevelEnd	extends	SceneWithThreadHandler
 	function	GotoNextLevel(scene)
 	{
 		update_function = 0
-		ProjectGetScriptInstance(g_project).player_data.current_level++
-		ProjectGetScriptInstance(g_project).ProjectStartGame()
+		if (ProjectGetScriptInstance(g_project).player_data.current_level < 23)
+		{
+			ProjectGetScriptInstance(g_project).player_data.current_level++
+			ProjectGetScriptInstance(g_project).ProjectStartGame()
+		}
+		else
+			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_game_end.nms")
 	}
 	
 	//----------------------------

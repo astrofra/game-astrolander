@@ -1088,7 +1088,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1133,7 +1132,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7465,6 +7463,168 @@
 			>
 			<Template="graphics/MobileDeadlySlime.nms">
 		>
+		<Instance=
+			<MItem=
+				<Id="Artifact">
+				<UId=86>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=108.241760>
+					<Y=24.118044>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/Artifact.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="MobileHomingMine">
+				<UId=88>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=76.337357>
+					<Y=48.128529>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/MobileHomingMine.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="MobileDeadlySlime">
+				<UId=89>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=75.793434>
+					<Y=38.137474>
+					<Z=-0.000071>
+				>
+				<Rotation=
+					<X=-0.000000>
+					<Y=0.000000>
+					<Z=-1.570796>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/MobileDeadlySlime.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="MobileDeadlySlime">
+				<UId=90>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=102.060814>
+					<Y=53.894676>
+					<Z=-0.000071>
+				>
+				<Rotation=
+					<X=-0.000000>
+					<Y=0.000000>
+					<Z=1.570796>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/MobileDeadlySlime.nms">
+		>
 	>
 	<Links=
 		<Link=
@@ -7536,27 +7696,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.999489>
-			<Y=0.000000>
-			<Z=-0.031950>
+			<X=0.999681>
+			<Y=-0.000000>
+			<Z=-0.025272>
 			<W=0.000000>
 		>
 		<R1=
-			<X=0.002391>
-			<Y=0.997195>
-			<Z=0.074805>
+			<X=0.000051>
+			<Y=0.999998>
+			<Z=0.001998>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.031860>
-			<Y=-0.074843>
-			<Z=0.996686>
+			<X=0.025272>
+			<Y=-0.001999>
+			<Z=0.999679>
 			<W=0.000000>
 		>
 		<R3=
-			<X=33.145981>
-			<Y=42.230278>
-			<Z=-132.360489>
+			<X=58.324276>
+			<Y=41.254318>
+			<Z=-150.625397>
 			<W=1.000000>
 		>
 	>
@@ -7566,30 +7726,30 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="@Perspective">
+			<Camera="@Front">
 			<Matrix=
 				<R0=
-					<X=0.999489>
-					<Y=0.000000>
-					<Z=-0.031950>
+					<X=0.999681>
+					<Y=-0.000000>
+					<Z=-0.025272>
 					<W=0.000000>
 				>
 				<R1=
-					<X=0.002391>
-					<Y=0.997195>
-					<Z=0.074805>
+					<X=0.000051>
+					<Y=0.999998>
+					<Z=0.001998>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.031860>
-					<Y=-0.074843>
-					<Z=0.996686>
+					<X=0.025272>
+					<Y=-0.001999>
+					<Z=0.999679>
 					<W=0.000000>
 				>
 				<R3=
-					<X=33.145981>
-					<Y=42.230278>
-					<Z=-132.360489>
+					<X=58.324276>
+					<Y=41.254318>
+					<Z=-150.625397>
 					<W=1.000000>
 				>
 			>

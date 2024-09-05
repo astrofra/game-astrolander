@@ -140,7 +140,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		base.OnUpdate(scene)
 
-		game_ui.UpdateCursor()
+		game_ui.Update()
 
 		HandlePause()
 
@@ -389,6 +389,13 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//------------------------
 	{
 		base.OnSetup(scene)
+
+		if (EngineGetToolMode(g_engine) != NoTool)
+		{
+			if (!("g_locale" in getroottable()) || !("game_subtitle" in g_locale))
+				LoadLocaleTable()
+		}
+
 //		RandomOffsetLevelBlocks(scene)
 		game = ProjectGetScriptInstance(g_project)
 		LoadSounds()
@@ -399,6 +406,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		//	UI		
 		ui		=	SceneGetUI(scene)
 		game_ui	=	InGameUI(scene)
+//		game_ui.how_to_control.OpenHowToControl()
+		
 		level_name = "level_" + (ProjectGetScriptInstance(g_project).player_data.current_level).tostring()
 		local	level_name_str
 		try	{	level_name_str = g_locale.level_names[level_name]	}
@@ -472,6 +481,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//	Victory!
 	{
 		StopLevelMusic()
+		GlobalAudioHandler.Delete()
 		RecordGameData()
 		if (game.player_data.current_level > 3)
 			GlobalSetPlayerGuid()
@@ -487,6 +497,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		print("LevelHandler::ExitGame()")
 		EngineSetClockScale(g_engine, 1.0)
 		StopLevelMusic()
+		GlobalAudioHandler.Delete()
 		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_game_over.nms")
 	}
 
@@ -497,6 +508,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		print("LevelHandler::ExitToTitleScreen()")
 		EngineSetClockScale(g_engine, 1.0)
 		StopLevelMusic()
+		GlobalAudioHandler.Delete()
 		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_title.nms")
 	}
 
@@ -644,6 +656,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		feedback_emitter.Emit(ItemGetWorldPosition(_item))
 		PlaySfxGotItem()
+		camera_handler.EnableCloseUp(false)
 
 		if (artefact.len() < 1)
 		{
@@ -744,6 +757,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		sfx_got_item_special = EngineLoadSound(g_engine, "audio/sfx/sfx_got_item_special.wav")
 		sfx_mission_complete = EngineLoadSound(g_engine, "audio/sfx/sfx_mission_complete.wav")
 		sfx_game_over = EngineLoadSound(g_engine, "audio/sfx/sfx_game_over.wav")
+		g_audio_handler = GlobalAudioHandler()
 	}
 
 	function	PlaySfxGotItem()

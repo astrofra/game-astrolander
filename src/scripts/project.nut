@@ -26,6 +26,7 @@
 	Include("scripts/save.nut")
 	Include("scripts/stopwatch_handler.nut")
 	Include("scripts/ui.nut")
+	Include("scripts/ui_how_to_control.nut")
 	Include("scripts/screen_title_ui.nut")
 	Include("scripts/screen_title.nut")
 	Include("scripts/screen_game_ui.nut")
@@ -61,7 +62,6 @@ class	ProjectHandler	extends	BaseProjectHandler
 
 	function	OnUpdate(project)
 	{
-//		print("GenerateEncodedTimeStamp() : " + GenerateEncodedTimeStamp())
 		base.OnUpdate(project)
 /*
 		if (!IsTouchPlatform())
@@ -85,7 +85,10 @@ class	ProjectHandler	extends	BaseProjectHandler
 	function	OnSetup(project)
 	{
 		base.OnSetup(project)
+		SelectLanguageFromSystemSettings()
 		GlobalLoadGame()
+		LoadLocaleTable()
+				
 		if (!("nickname" in player_data))
 		{
 			local	_nickname = g_locale.guest_nickname + " " + (Irand(1,9) * 100 + Irand(0,9) * 10 + Irand(0,9)).tostring()
@@ -98,8 +101,6 @@ class	ProjectHandler	extends	BaseProjectHandler
 	
 	constructor()
 	{
-		LoadLocaleTable()
-//	first_scene_filename = "levels/screen_title.nms"
 		base.constructor()
 		save_game = SaveGame()
 	}

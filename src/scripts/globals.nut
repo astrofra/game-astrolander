@@ -11,7 +11,10 @@ print("//	Globals.nut		//")
 			return false
 	}
 
+	g_supported_languages	<-	["en", "fr", "es", "it", "jp"] // "de", "cn", 
 	g_current_language		<-	"en"
+
+	g_title_screen_index	<-	0
 
 	g_screen_width			<-	1280.0
 	g_screen_height			<-	960.0
@@ -29,8 +32,10 @@ print("//	Globals.nut		//")
 	g_time_key_order		<-	["hour", "minute", "second", "ms"]
 
 	g_default_font_name		<-	"banksb20caps"
-	g_main_font_name		<-	"tabimyou" // "banksb20caps" //"banksb20"//g_main_font_name 
+	g_main_font_name		<-	"banksb20caps" //"banksb20"//g_main_font_name 
+	g_default_hud_font_name	<-	"aerial"
 	g_hud_font_name			<-	"aerial"
+	g_hud_font_size			<-	1.0
 
 	g_ui_color_blue			<-	Vector(117, 155, 168, 180)
 	g_ui_color_yellow		<-	Vector(248, 236, 188, 255)
@@ -46,6 +51,10 @@ print("//	Globals.nut		//")
 
 	g_leaderboard_max_entry	<-	10
 
-	g_base_url				<-	"http://astlan.astrofra.com"
+	g_base_url				<-	"http://www.astlan-game.com" //astlan.astrofra.com
 
 	g_player_name			<-	null
+
+	g_audio_handler			<-	0
+
+	g_audio_music_channel	<-	0

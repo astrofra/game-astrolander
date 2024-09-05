@@ -1,4 +1,4 @@
-<NML=1.0>
+<Version=1.0>
 <Scene=
 	<Items=
 		<MObject=
@@ -9,109 +9,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="barrel_bumped_green">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****lúÓè+]]}jlúÓè>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -130,7 +37,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//barrel_bumped_green.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/barrel_bumped_green.nmg">
 			>
 		>
 		<MObject=
@@ -141,109 +48,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="barrel_bumped_orange">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****øÔéè+]]}jøÔéè>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ã é+]]}jÃ é>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -262,7 +76,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//barrel_bumped_orange.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/barrel_bumped_orange.nmg">
 			>
 		>
 		<MObject=
@@ -273,109 +87,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="barrel_bumped_blue">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****‹aVè+]]}j‹aVè>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****­êšê+]]}j­êšê>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -394,7 +115,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//barrel_bumped_blue.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/barrel_bumped_blue.nmg">
 			>
 		>
 		<MObject=
@@ -405,109 +126,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_0_red">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****i˜ë+]]}ji˜ë>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -518,6 +146,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -526,7 +155,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_0_red.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_0_red.nmg">
 			>
 		>
 		<MObject=
@@ -537,109 +166,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_1_red">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*****þ7ë+]]}j*þ7ë>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Š*‹ç+]]}jŠ*‹ç>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****æù›æ+]]}jæù›æ>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -650,6 +186,7 @@
 						<Y=-0.054932>
 						<Z=-0.014759>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -658,7 +195,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_1_red.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_1_red.nmg">
 			>
 		>
 		<MObject=
@@ -669,109 +206,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_2_red">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ÍlÈë+]]}jÍlÈë>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ëãxg+]]}jËãxg>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -782,6 +226,7 @@
 						<Y=0.000000>
 						<Z=0.050470>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -790,7 +235,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_2_red.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_2_red.nmg">
 			>
 		>
 		<MObject=
@@ -801,109 +246,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="chair_0">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****‚±?ë+]]}j‚±?ë>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==20:18@
-+****æö=Mj+]]}jæö=Mj>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****9sê+]]}j9sê>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -927,7 +279,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//chair_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/chair_0.nmg">
 			>
 		>
 		<MObject=
@@ -938,109 +290,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="crate">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*****täj+]]}j*täj>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -1059,7 +318,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//crate.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/crate.nmg">
 			>
 		>
 		<MObject=
@@ -1070,109 +329,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="cube_bumped_green">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ó%úé+]]}jÓ%úé>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****¸æ+]]}j¸æ>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ä•ãj+]]}jÄ•ãj>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -1191,7 +357,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//cube_bumped_green.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/cube_bumped_green.nmg">
 			>
 		>
 		<MObject=
@@ -1202,109 +368,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="cube_bumped_grey">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****•Qvê+]]}j•Qvê>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****›«e+]]}j›«e>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ä•ãj+]]}jÄ•ãj>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -1323,7 +396,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//cube_bumped_grey.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/cube_bumped_grey.nmg">
 			>
 		>
 		<MObject=
@@ -1334,109 +407,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="cube_bumped_red">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****h.¿ê+]]}jh.¿ê>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****›«e+]]}j›«e>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****zãj+]]}jzãj>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -1455,7 +435,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//cube_bumped_red.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/cube_bumped_red.nmg">
 			>
 		>
 		<MObject=
@@ -1466,109 +446,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="cube_bumped_blue">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****qªìê+]]}jqªìê>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****©!¸f+]]}j©!¸f>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ä•ãj+]]}jÄ•ãj>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -1587,7 +474,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/props//cube_bumped_blue.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/props/cube_bumped_blue.nmg">
 			>
 		>
 		<MObject=
@@ -1598,109 +485,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="galleon_0">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****)ŸÁj+]]}j)ŸÁj>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****h+]]}jh>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****`gè+]]}j`gè>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -1711,6 +505,7 @@
 						<Y=0.429507>
 						<Z=-0.469217>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1719,7 +514,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//galleon_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/galleon_0.nmg">
 			>
 		>
 		<MObject=
@@ -1730,109 +525,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="reservoir">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*****yk+]]}j*yk>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -1851,7 +553,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/building//reservoir.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/building/reservoir.nmg">
 			>
 		>
 		<MObject=
@@ -1862,109 +564,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="spaceship">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****òck+]]}jòck>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****àxj+]]}jàxj>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -1983,7 +592,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//spaceship.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/spaceship.nmg">
 			>
 		>
 		<MObject=
@@ -1994,109 +603,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tree_0">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****®5Rl+]]}j®5Rl>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****e`$h+]]}je`$h>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -2115,7 +631,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/building//tree_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/building/tree_0.nmg">
 			>
 		>
 		<MObject=
@@ -2126,109 +642,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_2_blue">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****—3ßë+]]}j—3ßë>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ëãxg+]]}jËãxg>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -2239,6 +662,7 @@
 						<Y=0.000000>
 						<Z=0.050470>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2247,7 +671,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_0_blue.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_0_blue.nmg">
 			>
 		>
 		<MObject=
@@ -2258,109 +682,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_2_green">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****»õë+]]}j»õë>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Ëãxg+]]}jËãxg>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -2371,6 +702,7 @@
 						<Y=0.000000>
 						<Z=0.050470>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2379,7 +711,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_2_green.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_2_green.nmg">
 			>
 		>
 		<MObject=
@@ -2390,109 +722,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_1_blue">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+**** óhë+]]}j óhë>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Š*‹ç+]]}jŠ*‹ç>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****æù›æ+]]}jæù›æ>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -2503,6 +742,7 @@
 						<Y=-0.054932>
 						<Z=-0.014759>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2511,7 +751,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_1_blue.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_1_blue.nmg">
 			>
 		>
 		<MObject=
@@ -2522,109 +762,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_1_green">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****°ä—ë+]]}j°ä—ë>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Š*‹ç+]]}jŠ*‹ç>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****æù›æ+]]}jæù›æ>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -2635,6 +782,7 @@
 						<Y=-0.054932>
 						<Z=-0.014759>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2643,7 +791,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_1_green.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_1_green.nmg">
 			>
 		>
 		<MObject=
@@ -2654,109 +802,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_0_blue">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****h/ì+]]}jh/ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -2767,6 +822,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2775,7 +831,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_0_blue.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_0_blue.nmg">
 			>
 		>
 		<MObject=
@@ -2786,109 +842,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="car_small_0_green">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****R9;ì+]]}jR9;ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -2899,6 +862,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2907,7 +871,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//car_small_0_green.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/car_small_0_green.nmg">
 			>
 		>
 		<MObject=
@@ -2918,109 +882,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="old_temple_0">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****2Æ|k+]]}j2Æ|k>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ça°ß+]]}jça°ß>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Çøæë+]]}jÇøæë>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -3039,7 +910,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/building//old_temple_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/building/old_temple_0.nmg">
 			>
 		>
 		<MObject=
@@ -3050,109 +921,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="ufo_0">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****&Ák+]]}j&Ák>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****.‚Ij+]]}j.‚Ij>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****]N¯k+]]}j]N¯k>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -3171,7 +949,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//ufo_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/ufo_0.nmg">
 			>
 		>
 		<MObject=
@@ -3182,109 +960,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tank_jungle_1">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*****Ü|ì+]]}j*Ü|ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****žù4k+]]}jžù4k>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -3295,6 +980,7 @@
 						<Y=0.000000>
 						<Z=8.675648>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3303,7 +989,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//tank_jungle_1.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/tank_jungle_1.nmg">
 			>
 		>
 		<MObject=
@@ -3314,109 +1000,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tank_jungle_0">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*****Ü|ì+]]}j*Ü|ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****cT…é+]]}jcT…é>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -3427,6 +1020,7 @@
 						<Y=-0.000000>
 						<Z=-0.856113>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3435,7 +1029,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//tank_jungle_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/tank_jungle_0.nmg">
 			>
 		>
 		<MObject=
@@ -3446,109 +1040,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tank_desert_1">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ÊoZì+]]}jÊoZì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****üù4k+]]}jüù4k>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -3559,6 +1060,7 @@
 						<Y=0.000000>
 						<Z=8.675737>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3567,7 +1069,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//tank_desert_1.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/tank_desert_1.nmg">
 			>
 		>
 		<MObject=
@@ -3578,109 +1080,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tank_desert_0">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ÊoZì+]]}jÊoZì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****cT…é+]]}jcT…é>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -3691,6 +1100,7 @@
 						<Y=-0.000000>
 						<Z=-0.856113>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3699,7 +1109,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//tank_desert_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/tank_desert_0.nmg">
 			>
 		>
 		<MObject=
@@ -3710,109 +1120,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tank_desert_turret_1">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****¾Zì+]]}j¾Zì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****î23j+]]}jî23j>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****üù4k+]]}jüù4k>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -3849,6 +1166,7 @@
 						<Y=2.141000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3857,7 +1175,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//tank_desert_turret_1.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/tank_desert_turret_1.nmg">
 			>
 		>
 		<MObject=
@@ -3868,109 +1186,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tank_jungle_turret_1">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*****Ü|ì+]]}j*Ü|ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****S03j+]]}jS03j>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****žù4k+]]}jžù4k>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4007,6 +1232,7 @@
 						<Y=2.141000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4015,7 +1241,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//tank_jungle_turret_1.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/tank_jungle_turret_1.nmg">
 			>
 		>
 		<MObject=
@@ -4026,109 +1252,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tank_jungle_turret_0">
-							<UseQuaternion=True>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*****Ü|ì+]]}j*Ü|ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ÀKj+]]}jÀKj>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****sT…é+]]}jsT…é>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4139,6 +1272,7 @@
 						<Y=2.524000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4147,7 +1281,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//tank_jungle_turret_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/tank_jungle_turret_0.nmg">
 			>
 		>
 		<MObject=
@@ -4158,109 +1292,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="tank_desert_turret_0">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ÊoZì+]]}jÊoZì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ÄÃKj+]]}jÄÃKj>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****sT…é+]]}jsT…é>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4271,6 +1312,7 @@
 						<Y=2.525000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4279,7 +1321,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/war//tank_desert_turret_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/war/tank_desert_turret_0.nmg">
 			>
 		>
 		<MObject=
@@ -4290,13 +1332,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4315,7 +1360,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//rocket_broken_body.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/rocket_broken_body.nmg">
 			>
 		>
 		<MObject=
@@ -4326,13 +1371,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4351,7 +1399,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//rocket_broken_parts.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/rocket_broken_parts.nmg">
 			>
 		>
 		<MObject=
@@ -4362,109 +1410,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="planet_tile_07">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****‰ùj+]]}j‰ùj>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****µà+]]}jµà>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ñjFí+]]}jñjFí>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4475,6 +1430,7 @@
 						<Y=-0.000007>
 						<Z=-156.253036>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4483,7 +1439,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//planet_tile_07.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/planet_tile_07.nmg">
 			>
 		>
 		<MObject=
@@ -4494,109 +1450,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="planet_tile_00">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****3Í»ì+]]}j3Í»ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Æ}sà+]]}jÆ}sà>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****º«Âì+]]}jº«Âì>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4607,6 +1470,7 @@
 						<Y=-0.000003>
 						<Z=-76.253052>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4615,7 +1479,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//planet_tile_00.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/planet_tile_00.nmg">
 			>
 		>
 		<MObject=
@@ -4626,109 +1490,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="planet_tile_01">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****<p-ì+]]}j<p-ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****µà+]]}jµà>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ñjFí+]]}jñjFí>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4739,6 +1510,7 @@
 						<Y=-0.000007>
 						<Z=-156.253036>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4747,7 +1519,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//planet_tile_01.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/planet_tile_01.nmg">
 			>
 		>
 		<MObject=
@@ -4758,109 +1530,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="planet_tile_02">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****9p-ì+]]}j9p-ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Æ}sà+]]}jÆ}sà>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****º«Âì+]]}jº«Âì>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -4871,6 +1550,7 @@
 						<Y=-0.000003>
 						<Z=-76.253052>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4879,7 +1559,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//planet_tile_02.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/planet_tile_02.nmg">
 			>
 		>
 		<MObject=
@@ -4890,109 +1570,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="planet_tile_03">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****‰ùj+]]}j‰ùj>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Æ}sà+]]}jÆ}sà>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****º«Âì+]]}jº«Âì>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -5003,6 +1590,7 @@
 						<Y=-0.000003>
 						<Z=-76.253052>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5011,7 +1599,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//planet_tile_03.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/planet_tile_03.nmg">
 			>
 		>
 		<MObject=
@@ -5022,109 +1610,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="planet_tile_04">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****<p-ì+]]}j<p-ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ÖïÑà+]]}jÖïÑà>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****¹«ì+]]}j¹«ì>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -5140,6 +1635,7 @@
 						<Y=3.141593>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5148,7 +1644,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//planet_tile_04.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/planet_tile_04.nmg">
 			>
 		>
 		<MObject=
@@ -5159,109 +1655,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="planet_tile_05">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****‰ùj+]]}j‰ùj>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ÖïÑà+]]}jÖïÑà>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****¹«ì+]]}j¹«ì>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -5272,6 +1675,7 @@
 						<Y=-0.000005>
 						<Z=-116.253044>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5280,7 +1684,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//planet_tile_05.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/planet_tile_05.nmg">
 			>
 		>
 		<MObject=
@@ -5291,109 +1695,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="planet_tile_06">
-							<UseQuaternion=False>
-							<QChannel>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****2Í»ì+]]}j2Í»ì>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****Æ}óà+]]}jÆ}óà>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ñj2í+]]}jñj2í>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+]]}j**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+]]}j****>
-									>
-								>
-								<Id="RotationX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+*******ª+]]}j***ª>
-									>
-								>
-								<Id="RotationZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -5404,6 +1715,7 @@
 						<Y=-0.000006>
 						<Z=-136.253036>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5412,7 +1724,7 @@
 					<RotationOrder="ZXY">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//planet_tile_06.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/planet_tile_06.nmg">
 			>
 		>
 		<MObject=
@@ -5423,13 +1735,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -5440,6 +1755,7 @@
 						<Y=0.000000>
 						<Z=-181.429993>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5448,7 +1764,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//race_level_0.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/race_level_0.nmg">
 			>
 		>
 		<MObject=
@@ -5459,13 +1775,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -5476,6 +1795,7 @@
 						<Y=0.000000>
 						<Z=-180.816895>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5484,7 +1804,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/racing//race_level_1.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/racing/race_level_1.nmg">
 			>
 		>
 		<MObject=
@@ -5495,13 +1815,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>
@@ -5520,7 +1843,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi//spaceship_2.nmg">
+				<Geometry="Librairies/Astrofra - RAD Kit/sci_fi/spaceship_2.nmg">
 			>
 		>
 		<MLight=
@@ -5531,13 +1854,16 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
 					<Mode="None">
 				>
 			>

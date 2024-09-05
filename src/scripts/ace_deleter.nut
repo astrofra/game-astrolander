@@ -17,6 +17,14 @@ class	AceDeleter
 		item_list.append(_item)
 	}
 	
+	function	IsDeletionQueueDone()
+	{
+		if (item_list.len() > 0)
+			return false
+		
+		return true
+	}
+	
 	function	Update()
 	{
 		foreach(n,current_item in item_list)

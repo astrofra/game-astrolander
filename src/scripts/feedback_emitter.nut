@@ -30,6 +30,8 @@ class	FeedbackEmitter
 		local	f = Vector(-0.75, 0.75, 0.75)
 		local	fs = f.Scale(1.25)
 		new_part = SceneAddObject(scene, "feedback")
+try{ItemRenderSetup(ObjectGetItem(new_part), g_factory)}
+catch(e){}
 		ObjectSetGeometry(new_part, geo)
 		new_part = ObjectGetItem(new_part)
 		//ItemActivate(new_part, false)

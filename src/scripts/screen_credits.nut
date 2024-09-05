@@ -17,6 +17,8 @@ class	CreditsUI	extends	BaseUI
 	skip_arrow			=	0
 	skip_button			=	0
 
+	credit_table		=	0
+
 	scroll_y			=	0
 
 	main_handler		=	0
@@ -24,6 +26,15 @@ class	CreditsUI	extends	BaseUI
 	function	OnRenderContextChanged()
 	{
 		print("CreditsUI::OnRenderContextChanged()")
+
+		skip_button[1].rebuild()
+		skip_button[1].refresh()
+
+		foreach(_line in credit_table)
+		{
+			_line.rebuild()
+			_line.refresh()
+		}
 	}
 
 	constructor(_ui)
@@ -59,6 +70,8 @@ class	CreditsUI	extends	BaseUI
 	{
 		local	is_even = true
 		local	base_y = 128
+		credit_table = []
+
 		foreach(n, _str in _table)
 		{
 			print("CreditsUI::DrawCredits() : _line = " + _str)
@@ -73,6 +86,8 @@ class	CreditsUI	extends	BaseUI
 			_line.label_color = is_even?RGBAToHex(g_ui_color_grey):RGBAToHex(g_ui_color_white)
 
 			_line.refresh()
+
+			credit_table.append(_line)
 
 			WindowSetParent(_line.window, main_handler)
 
@@ -90,6 +105,9 @@ class	CreditsUI	extends	BaseUI
 		base.UpdateCursor()
 		WindowSetPosition(main_handler, 0, scroll_y)
 		scroll_y -= (g_dt_frame * 60.0)
+
+		if (scroll_y < -(g_screen_height * 0.8))
+			SceneGetScriptInstance(g_scene).GotoTitleScreen()
 	}
 
 	//-----------------------------------------
@@ -131,7 +149,9 @@ class	CreditsScreen
 		credits_ui.DrawCredits(PrepareCreditsTable())
 	}
 
+	//-------------------------------
 	function	PrepareCreditsTable()
+	//-------------------------------
 	{
 		local	lines_table = []
 
@@ -154,7 +174,7 @@ class	CreditsScreen
 					foreach(n, _name in _names_table)
 					{
 						_names_str += _name
-						if (_name_index == 2)
+						if (_name_index == 3)
 						{
 							_names_str += "\n"
 							_name_index = 0
@@ -184,8 +204,7 @@ class	CreditsScreen
 	function	OnRenderContextChanged()
 	//----------------------------------
 	{
-		leaderboard_ui.OnRenderContextChanged()
-		leaderboard_ui.RefreshLeaderboard(leaderboard_content)
+		credits_ui.OnRenderContextChanged()
 	}
 
 	//-----------------------------------------

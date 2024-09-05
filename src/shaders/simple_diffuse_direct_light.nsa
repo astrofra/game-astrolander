@@ -1,0 +1,31 @@
+<Version=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Attribute=<Name="a_normal"><Semantic="Normal">>
+		<Attribute=<Name="a_uv"><Semantic="UV0">>
+
+		<Uniform=<Name="u_tex"><Semantic="MaterialTexture0"><Scope=<Fragment>>>
+		<Uniform=<Name="u_ambient"><Semantic="AmbientColor"><Scope=<Fragment>>>
+		<Uniform=<Name="u_nmv_matrix"><Semantic="NormalViewMatrix"><Scope=<Vertex>>>
+	>
+	<Varying=
+		<Variable=<Name="v_uv"><Type="vec2">>
+		<Variable=<Name="v_normal"><Type="vec3">>
+	>
+	<VertexSource="
+		v_uv = a_uv;
+		v_normal = n_mtx_mul(u_nmv_matrix, a_normal);
+	">
+	<PixelSource="
+		vec3 u_light_dir = normalize(vec3(0.25, -0.5, 0.75));
+
+		vec3 n_normal = normalize(v_normal);
+		vec4 tex = texture2D(u_tex, v_uv);
+
+		float k = -dot(n_normal, u_light_dir);
+		vec4 rgba = tex * max(k, 0.0);
+
+		%out.constant% = rgba;
+	">
+>

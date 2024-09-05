@@ -2,6 +2,41 @@
 
 guid_table <- []
 
+//------------------
+class	LinearFilter
+//------------------
+{
+
+	filter_size		=	0
+	values			=	0
+
+	constructor(_size)
+	{
+		filter_size	=	_size
+		values = []
+	}
+
+	function	SetNewValue(val)
+	{
+		values.append(val)
+		if (values.len() > filter_size)
+			values.remove(0)
+	}
+
+	function	GetFilteredValue()
+	{
+		local	filtered_value = 0.0
+
+		foreach(_v in values)
+			filtered_value += _v
+
+		filtered_value /= (values.len().tofloat())
+
+		return	filtered_value
+	}
+
+}
+
 //-----------------------------------------
 function	CalculateCheckKey(values_array)
 //-----------------------------------------
@@ -339,10 +374,10 @@ function modAngle(angle)
 //---------------------- 
 {
 	while (angle < 0.0)
-		angle += g_2_pi
+		angle += 360.0
 
-	while (angle >= g_2_pi)
-		angle -= g_2_pi
+	while (angle >= 360.0)
+		angle -= 360.0
 
 	return angle
 }

@@ -31,6 +31,16 @@ function	UICommonSetup(ui)
 }
 
 //------------------------------------------------------------
+function	addSprite(ui, texture, x, y, w, h, center = false)
+//------------------------------------------------------------
+{
+	local sprite = UIAddSprite(ui, -1, texture, x, y, w, h)
+	if	(center)
+		WindowSetPivot(sprite, w / 2, h / 2)
+	return sprite
+}
+
+//------------------------------------------------------------
 function	CreateOpaqueScreen(ui, _color = Vector(0,0,0,255))
 //------------------------------------------------------------
 {
@@ -82,9 +92,9 @@ class	EditableTextField
 	defocus_callback_context	= 0
 	defocus_callback_function	= 0
 
-	keys_table			=	[KeyBackspace, /*KeySpace,*/ KeyA, KeyB, KeyC, KeyD, KeyE, KeyF, KeyG, KeyH, KeyI, KeyJ, KeyK, KeyL, KeyM, KeyN, KeyO, KeyP, KeyQ, KeyR, KeyS, KeyT, KeyU, KeyV, KeyW, KeyX, KeyY, KeyZ,
+	keys_table			=	[KeyBackspace, KeySpace, KeyA, KeyB, KeyC, KeyD, KeyE, KeyF, KeyG, KeyH, KeyI, KeyJ, KeyK, KeyL, KeyM, KeyN, KeyO, KeyP, KeyQ, KeyR, KeyS, KeyT, KeyU, KeyV, KeyW, KeyX, KeyY, KeyZ,
 							KeyNumpad0, KeyNumpad1, KeyNumpad2, KeyNumpad3, KeyNumpad4, KeyNumpad5, KeyNumpad6, KeyNumpad7, KeyNumpad8, KeyNumpad9]
-	sign_table			=	["<", /*" ",*/ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+	sign_table			=	["<", " ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
 							"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 	//--------------
@@ -156,8 +166,8 @@ class	EditableTextField
 			return
 
 		RefreshTextField()
-		if (IsTouchPlatform())
-			waitPlayerName()
+//		if (IsTouchPlatform())
+//			waitPlayerName()
 	}
 
 	//----------------------
@@ -233,19 +243,6 @@ class	EditableTextField
 		return	""
 	}
 
-	//--------------------------
-	function	waitPlayerName()
-	//--------------------------
-	{
-		if	(g_player_name == null)
-			return
-		print("baseUI::waitPlayerName() g_player_name = " + g_player_name)
-		text = g_player_name
-		label.label = text
-		label.refresh()
-		//OnTextFieldDefocus(null, null)
-	}
-
 	//-----------------------------------------
 	function	OnTextFieldFocus(event, table)
 	//-----------------------------------------
@@ -254,11 +251,6 @@ class	EditableTextField
 		is_dirty = true
 		FillBackground()
 		label.refresh()
-		if (IsTouchPlatform())
-		{
-			g_player_name = text
-			g_player_name = WizschoolRequestArcadeName(text)
-		}
 	}
 
 	//-------------------------------------------
@@ -286,6 +278,177 @@ class	EditableTextField
 	}
 }
 
+//-----------------------------
+class	EditableTouchTextField
+//-----------------------------
+{
+	ui					=	0
+
+	x					=	0
+	y					=	0
+	w					=	0
+	h					=	0
+
+	max_char			=	10
+
+	back_texture 		= 	0
+	back_picture 		= 	0
+
+	border				=	6
+
+	handler 			=	0
+	label				=	0
+	text 				=	""
+	has_focus			=	false
+	
+	update_function		=	0
+	defocus_callback_context		= 0
+	defocus_callback_function		= 0
+
+	//--------------
+	constructor(_ui, _w = 512.0, _h = 80.0, _x = 640.0, _y = 240.0)
+	//--------------
+	{
+		ui	=	_ui
+		text = ""
+	
+		x = _x
+		y = _y
+		w = _w
+		h = _h
+
+		//	Create the background
+		//	Assign a click handler
+		back_texture = EngineNewTexture(g_engine)
+		back_picture = NewPicture(w, h)
+		FillBackground()
+		handler = UIAddSprite(ui, -1, back_texture, x, y, w, h)
+		WindowSetPivot(handler, w * 0.5, h * 0.5)
+
+		//	Create label
+		label = Label(ui, w - border * 2, h - border * 2, w * 0.5 + border, h * 0.5 + border * 0.5, true, true)
+		label.label = ""
+		label.label_color = RGBAToHex(g_ui_color_black)
+		label.font_size = 60
+		label.font = g_main_font_name
+		label.label_align = "left"
+		label.refresh()
+		WindowSetParent(label.window, handler)
+		//	Assign a click handler
+		WindowSetEventHandlerWithContext(label.window, EventCursorDown, this, OnTextFieldFocus)
+	}
+
+	function	FillBackground()
+	{
+		if (has_focus)
+			PictureFill(back_picture, g_ui_color_green.Scale(1.0 / 255.0))
+		else
+			PictureFill(back_picture, g_ui_color_white.Scale((1.0 / 255.0) * 0.5))
+
+		PictureFillRect(back_picture, g_ui_color_white.Scale(1.0 / 255.0), Rect(4,4, w - 4, h - 4))
+		TextureUpdate(back_texture, back_picture)
+	}
+	
+	function	rebuild()
+	{
+		label.rebuild()
+	}
+	
+	function	refresh()
+	{
+		label.refresh()
+	}
+
+	//----------------------
+	function	SetText(str)
+	//----------------------
+	{
+		text = str
+		label.label = text
+		label.refresh()
+	}
+
+	//------------------
+	function	Update()
+	//------------------
+	{
+		if (update_function != 0)
+			update_function()
+	}
+
+	//--------------------------
+	function	waitPlayerName()
+	//--------------------------
+	{
+		print("EditableTouchTextField::waitPlayerName()")
+		if	(g_player_name == null)
+			return
+
+		if (g_player_name == -1)
+		{
+			print("EditableTouchTextField::waitPlayerName() Cancelled")
+			has_focus = false
+			update_function = 0
+		}
+		else
+		{
+			print("EditableTouchTextField::waitPlayerName() g_player_name = " + g_player_name)
+			has_focus = false
+			text = g_player_name
+			label.label = text
+			update_function = 0
+			RefreshField()
+			if (defocus_callback_function != 0)
+			{
+				local	callback = defocus_callback_context[defocus_callback_function]
+				callback(text)
+			}
+		}
+	}
+
+	//---------------------------
+	function	queryPlayerName()
+	//----------------------------
+	{
+		g_player_name = null
+
+		try	{	WizschoolRequestArcadeName(text)	}
+		catch(e)	{	print(e)	}
+
+		update_function = waitPlayerName
+	}
+
+	//-----------------------------------------
+	function	OnTextFieldFocus(event, table)
+	//-----------------------------------------
+	{
+		if (has_focus)
+			return
+
+		has_focus = true
+		FillBackground()
+		label.refresh()
+
+		update_function = queryPlayerName
+	}
+
+	//-------------------------------------------
+	function	RegisterDefocusCallback(context, callback)
+	//-------------------------------------------
+	{
+		defocus_callback_context = context
+		defocus_callback_function = callback
+	}
+
+	//-------------------------------------------
+	function	RefreshField()
+	//-------------------------------------------
+	{
+		FillBackground()
+		label.refresh()
+	}
+}
+
 //-----------
 class	Label
 //-----------
@@ -305,6 +468,8 @@ class	Label
 	font_vcenter		=	0
 
 	drop_shadow			=	false
+	glow				=	false
+	glow_radius			=	1.0
 	drop_shadow_color	=	0x000000ff
 
 	function	refresh()
@@ -338,12 +503,45 @@ class	Label
 				parm.color = label_color
 			}
 
+			if (glow)
+			{
+				parm.color = drop_shadow_color
+
+				local	i
+				for(i = 0; i < 360; i += 20)
+				{
+					rect.sx -= glow_radius * 2.0 * cos(DegreeToRadian(i)); rect.sy += glow_radius * sin(DegreeToRadian(i))
+					PictureTextRender(picture, rect, label, font, parm)
+					rect.sx += glow_radius * 2.0 * cos(DegreeToRadian(i)); rect.sy -= glow_radius * sin(DegreeToRadian(i))
+				}
+
+				applyBlur()
+
+				parm.color = label_color
+			}			
+
 			PictureTextRender(picture, rect, label, font, parm)
 			rect.sx -= 2; rect.ex += 2
 		}
 
 		TextureUpdate(texture, picture)
 		picture = 0
+	}
+
+	function	applyBlur()
+	{
+		local	kernel =
+		[
+			0, 1, 2, 4, 2, 1, 0,
+			1, 2, 4, 6, 4, 2, 1,
+			2, 3, 5, 8, 5, 3, 2,
+			2, 4, 8, 8, 8, 4, 2,
+			2, 3, 5, 8, 5, 3, 2,
+			1, 2, 4, 6, 4, 2, 1,
+			0, 1, 2, 4, 2, 1, 0
+		]
+
+		PictureApplyConvolution(picture, 7, 7, kernel, 1.25, 2)
 	}
 
 	function	rebuild()
@@ -364,7 +562,7 @@ class	Label
 }
 
 //----------------------
-function	LabelWrapper(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_hud_font_color, font_name = "aerial", text_align = TextAlignLeft)
+function	LabelWrapper(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_hud_font_color, font_name = g_hud_font_name, text_align = TextAlignLeft)
 //----------------------
 {
 
@@ -396,7 +594,7 @@ function	LabelWrapper(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g
 }
 
 //----------------------
-function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_hud_font_color, font_name = "aerial", text_align = TextAlignLeft)
+function	CreateLabel(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_hud_font_color, font_name = g_hud_font_name, text_align = TextAlignLeft)
 //----------------------
 {
 	// Create UI window.
@@ -507,7 +705,14 @@ class	BaseUI
 	function	ButtonFeedback(_window)
 	//------------------------	
 	{
-		WindowSetCommandList(_window, "toalpha 0.05, 0.35; toalpha 0.1, 1.0;")
+		if (_window != 0)
+		{
+			if (WindowIsCommandListDone(_window))
+			{
+				local	_opacity = WindowGetOpacity(_window)
+				WindowSetCommandList(_window, "toalpha 0.05, 0.35; toalpha 0.1, " + _opacity.tostring() + ";")
+			}
+		}
 	}
 
 	//------------------------	

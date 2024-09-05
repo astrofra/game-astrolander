@@ -3,7 +3,9 @@
 
 g_locale_en	<-	{
 	//	System
-	loading				=	"Loading"
+	loading				=	"Loading",
+	language 			=	"English",
+
 	//	Title
 	game_title			=	"ASTLAN",
 	game_subtitle		=	"Astro Lander",	
@@ -35,12 +37,15 @@ g_locale_en	<-	{
 			{	desc	=	"Game Code & 3D Graphics" ,	name	=	"Astrofra"	}
 			{	desc	=	"2D Graphics" ,	name	=	"Pehesse"	}
 			{	desc	=	"Game Engine, Additional Code",	name	=	"Emmanuel Julien"	}
-			{	desc	=	"Music" ,	name	=	["Alex Khaskin", "William Lamy", "Brandon Morris", "Kareem Kenawy"], 
+			{	desc	=	"Music" ,	name	=	["Alex Khaskin", "William Lamy", "Brandon Morris", "Alexandr Zhelanov", "Ilya Kaplan"], 
 										note	=	"Provided by AudioBank.Fm and OpenGameArt.org"		}
-			{	desc	=	"Special Thanks to",	name	=	["Yann van der Cruyssen", "David Ghodsi", "Thomas Simonnet", "Lucas Boulestin"]	}
-			{	desc	=	"Testers",	name = ["Florian Belmonte", "Clement Vincent"]	}
+			{	desc	=	"Special Thanks to",	name	=	["Yann van der Cruyssen", "Cedric Vaniez", "David Ghodsi", "Thomas Simonnet", "Lucas Boulestin", "Marc Planard"]	}
+			{	desc	=	"Testers",	name = ["Florian Belmonte", "Clement Vincent", "Thomas Lechaptois"]	}
 			{	desc	=	"Powered by GameStart!"	}
 	]
+
+	//	Game End
+	end_game_line_0		=	"Staff : ",
 
 	//	EndLevel / Debrief
 	endlevel_level_name	=	"Level",
@@ -55,8 +60,14 @@ g_locale_en	<-	{
 	endlevel_remain_life	=	"Remaining Life",
 	endlevel_remain_fuel	=	"Remaining Fuel",
 	endlevel_time			=	"Time",
-	total_score				=	"Total Score"
-	score_points			=	"points"
+	total_score				=	"Total Score",
+	score_points			=	"points",
+	story_0					=	"Deep down, behind the walls,\nyou found a hand...",
+	story_1					=	"Escaping the deadly lasers,\nyou found another hand!",
+	story_2					=	"Hidden within these rocks,\nyou just found a leg.",
+	story_3					=	"Two legs and two arms?\nNone fits your mechanic body.",
+	story_4					=	"A body, a brain,\nwhat you need now is a head.",
+	story_5					=	"Having found a whole body,\nyour journey now ends.",
 
 	//	InGame / Hud
 	hud_help			=	"||",
@@ -66,6 +77,7 @@ g_locale_en	<-	{
 	hud_artifacts		=	"ARTIFACTS"
 	hud_stopwatch		=	"TIME"
 
+	pause_how_to		=	"HELP"
 	pause_resume_game	=	"RESUME",
 	pause_restart_level	=	"RESTART",
 	pause_quit_game		=	"QUIT",
@@ -74,6 +86,7 @@ g_locale_en	<-	{
 	game_over			=	"Game Over"
 	no_fuel				=	"Out of Fuel!"
 	dead_by_damage		=	"Brain Damage!"
+	dead_by_poison		=	"Poisoned!"
 	no_time_left		=	"No Time Left!"
 	return_base			=	"Go to Base!\n~~Size(40)You found all the artifacts."
 	mission_complete	=	"Mission Complete!"

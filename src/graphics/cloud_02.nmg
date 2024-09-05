@@ -1,0 +1,39 @@
+<Version=1.0>
+<Geometry=
+	<Vertex=
+		<Count=6>
+		<Data==74:72@
+¦þÑé@°ûé¾ÑÃ]*œÇi„÷ïé8»]ªÓ2jš˜”çÐU[êÚ×é=J…Øicæ©Ýªki@°ûi¾ÑÃÝªÓ2
+êF*èÜGç[>
+	>
+	<Polygon=
+		<Count=3>
+		<BindingCount=10>
+		<Data==64:64@
+.***-***,***+***********-***-***.***,*******-***-*******/*******>
+	>
+	<PNormal=
+		<Count=3>
+		<Data==9:9@
+**«**«**«>
+	>
+	<VNormal=
+		<Count=10>
+		<Data==30:30@
+**«**«**«**«**«**«**«**«**«**«>
+	>
+	<VTangent=
+		<Count=10>
+		<Data==60:60@
+©***«*©***«*©***«*©***«*©***«*©***«*©***«*©***«*©***«*©***«*>
+	>
+	<UV=
+		<Count=1>
+		<Data==81:80@
+—v}i{àh**ªi¨((h«“žiÊÁOiž}iðQi—v}i{àhW˜™i@kÒh**ªi¨((h—v}i{àh
+ž}iðQiösi†k+i>
+	>
+	<Materials=
+		<MaterialRef="graphics/clouds.nmm">
+	>
+>

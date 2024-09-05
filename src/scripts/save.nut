@@ -85,6 +85,7 @@ class	SaveGame
 	{
 		//	Add game globals to the table
 		data_table.reversed_controls <- 	g_reversed_controls
+		data_table.current_language <- 	g_current_language
 
 		return data_table
 	}
@@ -120,7 +121,10 @@ class	SaveGame
 				if	(ObjectIsValid(tag))
 				{
 					data_table = deserializeObjectFromMetatag(tag)
-					g_reversed_controls = data_table.reversed_controls
+					if ("reversed_controls" in data_table)
+						g_reversed_controls = data_table.reversed_controls
+					if ("current_language" in data_table)
+						g_current_language = data_table.current_language
 				}
 			}
 		}

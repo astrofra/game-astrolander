@@ -20,6 +20,9 @@ class	CameraHandler
 	target_vel		=	0
 	max_sneak_speed	=	1.5		//	max speed when evaluating the camera unzoom
 	sneak_radius	=	Mtr(40.0)
+	close_up		=	false
+	close_up_factor	=	0.0
+	close_up_factor_filtered	=	0
 
 	constructor(_scene)
 	{
@@ -35,10 +38,19 @@ class	CameraHandler
 		CameraSetFov(ItemCastToCamera(camera_item), DegreeToRadian(22.5))
 		CameraSetClipping(ItemCastToCamera(camera_item), Mtr(20.0), Mtr(1500.0))
 		target_vel = Vector(0,0,0)
+		close_up		=	false
+		close_up_factor	=	0.0
+		close_up_factor_filtered = LinearFilter(25)
 	}
 
 	function	SetMaxSneakSpeed(_s)
 	{	max_sneak_speed = _s	}
+
+	function	EnableCloseUp(flag)
+	{
+		print("CameraHandler::EnableCloseUp(" + flag + ").")
+		close_up = flag
+	}
 
 	//------------------------------------
 	function	StickToPlayerPosition(player_pos)
@@ -119,11 +131,22 @@ class	CameraHandler
 			camera_rot_z /= (camera_rot_z_table.len().tofloat())
 			camera_rot.z = DegreeToRadian(camera_rot_z)
 
-//			print("player_vel.x = " + player_vel.x)
-//			print("camera_rot_z = " + camera_rot_z)
+			//	Close Up mode ?
+			if (close_up)
+				close_up_factor += (g_dt_frame * 0.75)
+			else
+				close_up_factor -= (g_dt_frame * 0.25)
 
-			ItemSetPosition(camera_item, camera_pos + clamp_vel)
+			close_up_factor = Clamp(close_up_factor, 0.0, 1.0)
+
+			close_up_factor_filtered.SetNewValue(close_up_factor)
+
+			local	_cam_pos_z
+			_cam_pos_z = clamp_vel.Lerp(1.0 - close_up_factor_filtered.GetFilteredValue(), Vector(0,0,Mtr(10.0)) )
+
+			ItemSetPosition(camera_item, camera_pos + _cam_pos_z)
 			ItemSetRotation(camera_item, camera_rot)
+
 	}
 
 }

@@ -15,6 +15,19 @@ function	GenericThreadWait(s)
 		suspend()
 }
 
+//------------------------------
+function	RawClockThreadWait(s)
+//------------------------------
+{
+	local	_timeout = 0.0
+				
+	while (_timeout < Sec(s))
+	{
+		_timeout += g_raw_dt_frame
+		suspend()
+	}
+}
+
 /*!
 	@short	ThreadHandler
 	@author	Astrofra
@@ -24,18 +37,17 @@ class	SceneWithThreadHandler
 	thread_list			=	0
 	current_scene		=	0
 
-	dt_frame_table		=	0
-	dt_frame_median		=	0.0
-
 	//------------------------
 	function	OnSetup(scene)
 	//------------------------
 	{
+		Setup(scene)
+	}
+
+	function	Setup(scene)
+	{
 		thread_list		= []
 		current_scene = scene
-
-		dt_frame_table		=	array(5, 1.0 / 60.0)
-		dt_frame_median		=	1.0 / 60.0
 	}
 
 	//-------------------------
@@ -43,26 +55,6 @@ class	SceneWithThreadHandler
 	//-------------------------
 	{
 		HandleThreadList()
-
-/*
-		dt_frame_table.remove(0)
-		dt_frame_table.append(g_dt_frame)
-		local	dt_frame_table_sorted
-		dt_frame_table_sorted = clone(dt_frame_table)
-		dt_frame_table_sorted.sort()
-		dt_frame_median = dt_frame_table_sorted[2]
-		print("--")
-		print("g_dt_frame      = " + g_dt_frame)
-		print("dt_frame_median = " + dt_frame_median)
-*/
-
-/*
-		print(thread_list.len().tostring() + " thread(s)")
-		local str = ""
-		foreach(_t in thread_list)
-			str += _t.handle.tostring() + ","
-		if (str != "") print(str)
-*/
 	}
 
 	//------------------------------------
@@ -87,6 +79,8 @@ class	SceneWithThreadHandler
 			}
 	}
 
+/*
+	//	Useless ?
 	//---------------------------
 	function	StartThreadList()
 	//---------------------------
@@ -97,6 +91,7 @@ class	SceneWithThreadHandler
 			_thread.handle.call(current_scene)
 		}
 	}
+*/
 	
 	//-------------------------------
 	function	HandleThreadList()

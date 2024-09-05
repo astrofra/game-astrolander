@@ -278,7 +278,7 @@ class	MiniMap
 			local	_filename
 			_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring()
 
-			if (!FileExists(_filename + ".tga") && !FileExists(_filename + ".png"))
+			if ((!FileExists(_filename + ".tga")) && (!FileExists(_filename + ".png")))
 				PictureSaveTGA(_picture, _filename + ".tga")
 		}
 

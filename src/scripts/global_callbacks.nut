@@ -45,3 +45,16 @@ function	OnHttpRequestError(uid)
 	if	("HttpRequestError" in current_scene_instance)
 		current_scene_instance.HttpRequestError(uid)
 }
+
+function OnSetArcadeName(name)
+{
+	print("OnSetArcadeName() : Arcade name set to: " + name)
+	g_player_name = name
+}
+
+
+function OnCancelArcadeName()
+{
+	print("OnSetArcadeName() Cancelled")
+	g_player_name = -1
+}

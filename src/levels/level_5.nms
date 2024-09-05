@@ -30,7 +30,7 @@
 			>
 			<Parm=
 				<Id="music_filename">
-				<Value="audio/music/strangers_on_the_train.ogg">
+				<Value="audio/music/path_to_lake_land.ogg">
 			>
 			<Parm=
 				<Id="is_underwater">
@@ -67,6 +67,7 @@
 						<Y=0.000000>
 						<Z=-60.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=80.458984>
 						<Y=-17.147449>
@@ -1001,7 +1002,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1135,7 +1135,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1296,7 +1295,6 @@
 						<Y=3.000000>
 						<Z=3.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1341,7 +1339,6 @@
 						<Y=3.000000>
 						<Z=3.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1386,7 +1383,6 @@
 						<Y=3.000000>
 						<Z=3.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1431,7 +1427,6 @@
 						<Y=3.000000>
 						<Z=3.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1476,7 +1471,6 @@
 						<Y=3.000000>
 						<Z=3.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1791,7 +1785,6 @@
 						<Y=3.000000>
 						<Z=3.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2012,7 +2005,6 @@
 						<Y=3.000000>
 						<Z=3.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2858,8 +2850,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4253,8 +4245,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4590,8 +4582,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6113,6 +6105,44 @@
 			>
 			<Template="graphics/PropGear0.nms">
 		>
+		<Instance=
+			<MItem=
+				<Id="PropTreeBush2">
+				<UId=84>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=93.811447>
+					<Y=5.808787>
+					<Z=1.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/PropTreeBush2.nms">
+		>
 	>
 	<Links=
 		<Link=
@@ -6150,30 +6180,29 @@
 	<Physics=
 		<Frequency=59.999996>
 	>
-	<CurrentCamera="game_camera">
 	<ViewMatrix=
 		<R0=
 			<X=1.000000>
 			<Y=0.000000>
-			<Z=0.000000>
+			<Z=0.000391>
 			<W=0.000000>
 		>
 		<R1=
 			<X=0.000000>
 			<Y=1.000000>
-			<Z=0.000000>
+			<Z=-0.000008>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.000000>
-			<Y=0.000000>
+			<X=-0.000391>
+			<Y=0.000008>
 			<Z=1.000000>
 			<W=0.000000>
 		>
 		<R3=
-			<X=0.000000>
-			<Y=0.000000>
-			<Z=-60.000000>
+			<X=25.050558>
+			<Y=-1.389348>
+			<Z=-104.718750>
 			<W=1.000000>
 		>
 	>
@@ -6183,30 +6212,30 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="game_camera">
+			<Camera="@Front">
 			<Matrix=
 				<R0=
 					<X=1.000000>
 					<Y=0.000000>
-					<Z=0.000000>
+					<Z=0.000391>
 					<W=0.000000>
 				>
 				<R1=
 					<X=0.000000>
 					<Y=1.000000>
-					<Z=0.000000>
+					<Z=-0.000008>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.000000>
-					<Y=0.000000>
+					<X=-0.000391>
+					<Y=0.000008>
 					<Z=1.000000>
 					<W=0.000000>
 				>
 				<R3=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=-60.000000>
+					<X=25.050558>
+					<Y=-1.389348>
+					<Z=-104.718750>
 					<W=1.000000>
 				>
 			>
