@@ -20,9 +20,9 @@ class	BuiltinSceneSetPostProcess
 
 	function	OnSetup(scene)
 	{
-		RendererRegistrySetKey(EngineGetRenderer(g_engine), "Antialising:Enable", enable_aa)
-		RendererRegistrySetKey(EngineGetRenderer(g_engine),"Antialising:Sample", 2.0)
-		RendererRegistrySetKey(EngineGetRenderer(g_engine), "PostProcess:SSAO:FastBlur", ssao_blur_fast)
-		RendererRegistrySetKey(EngineGetRenderer(g_engine), "PostProcess:Dof:Fast", dof_blur_fast)
+		RendererRegistrySetKey(g_render, "Antialising:Enable", enable_aa)
+		RendererRegistrySetKey(g_render,"Antialising:Sample", 2.0)
+		RendererRegistrySetKey(g_render, "PostProcess:SSAO:FastBlur", ssao_blur_fast)
+		RendererRegistrySetKey(g_render, "PostProcess:Dof:Fast", dof_blur_fast)
 	}
 }

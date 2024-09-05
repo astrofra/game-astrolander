@@ -1,0 +1,19 @@
+<Version=1.0>
+<Material=
+	<Id="graphics/bonus_coin.nmm">
+	<TextureStage=
+		<Active>
+		<Texture="C:\works\projects\games\svn_cosmic_lander\Cosmic Lander Game\graphics\coin_color.png">
+		<Channel="Diffuse">
+		<Index=0>
+	>
+	<TextureStage=
+		<Active>
+		<Texture="C:\works\projects\games\svn_cosmic_lander\Cosmic Lander Game\graphics\coin_color.png">
+		<Channel="Opacity">
+		<Index=1>
+	>
+	<RenderMask=
+		<NormalMapTangent>
+	>
+>

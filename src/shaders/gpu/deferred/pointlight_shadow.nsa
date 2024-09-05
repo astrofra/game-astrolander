@@ -27,6 +27,7 @@
 		<Uniform=<Name="psm_3_projection_matrix"><Semantic="LightShadowMatrix3">>
 		<Uniform=<Name="psm_4_projection_matrix"><Semantic="LightShadowMatrix4">>
 		<Uniform=<Name="psm_5_projection_matrix"><Semantic="LightShadowMatrix5">>
+		<Uniform=<Name="u_noise"><Semantic="NoiseMap">>
 	>
 	<Varying=
 		<Variable=<Name="forward"><Type="vec3">>

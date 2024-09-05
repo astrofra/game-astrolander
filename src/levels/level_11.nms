@@ -20,29 +20,11 @@
 			>
 		>
 	>
-	<ScriptUnit=
-		<Script="scripts/screen_game.nut">
-		<Class="LevelHandler">
-		<ParmList=
-			<Parm=
-				<Id="level_name">
-				<Value="h_world">
-			>
-			<Parm=
-				<Id="music_filename">
-				<Value="audio/music/creepy_forest.ogg">
-			>
-			<Parm=
-				<Id="is_underwater">
-				<Value=0>
-			>
-		>
-	>
 	<Items=
 		<MCamera=
 			<MItem=
 				<Id="game_camera">
-				<UId=0>
+				<UId=42785>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -98,7 +80,7 @@
 		<MObject=
 			<MItem=
 				<Id="path_0">
-				<UId=1>
+				<UId=42786>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -132,12 +114,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_1">
-				<UId=2>
+				<UId=42787>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -171,12 +155,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_2">
-				<UId=3>
+				<UId=42788>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -210,12 +196,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_3">
-				<UId=4>
+				<UId=42789>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -249,12 +237,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_4">
-				<UId=5>
+				<UId=42790>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -288,12 +278,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_5">
-				<UId=6>
+				<UId=42791>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -327,12 +319,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_6">
-				<UId=7>
+				<UId=42792>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -366,12 +360,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_7">
-				<UId=8>
+				<UId=42793>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -405,12 +401,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_8">
-				<UId=9>
+				<UId=42794>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -444,12 +442,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_9">
-				<UId=10>
+				<UId=42795>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -483,12 +483,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_10">
-				<UId=11>
+				<UId=42796>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -522,12 +524,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_11">
-				<UId=12>
+				<UId=42797>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -561,12 +565,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_12">
-				<UId=13>
+				<UId=42798>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -600,12 +606,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="path_13">
-				<UId=14>
+				<UId=42799>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -639,12 +647,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="start">
-				<UId=15>
+				<UId=42800>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -711,12 +721,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/target.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Atmosphere Layer">
-				<UId=16>
+				<UId=42801>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -755,12 +766,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_atmosphere_layer.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Hills 0">
-				<UId=17>
+				<UId=42802>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -799,12 +811,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_hills_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Atmosphere Layer">
-				<UId=18>
+				<UId=42803>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -829,7 +842,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -839,12 +851,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_atmosphere_layer.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Atmosphere Layer">
-				<UId=19>
+				<UId=42804>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -878,12 +891,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_atmosphere_layer.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Hills 0">
-				<UId=20>
+				<UId=42805>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -922,12 +936,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_hills_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Hills 1">
-				<UId=21>
+				<UId=42806>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -966,12 +981,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_hills_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Hills 2">
-				<UId=22>
+				<UId=42807>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1010,12 +1026,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_hills_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Hills 2">
-				<UId=23>
+				<UId=42808>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1054,12 +1071,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_hills_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Hills 1">
-				<UId=24>
+				<UId=42809>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1099,12 +1117,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_hills_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Background Hills 1">
-				<UId=25>
+				<UId=42810>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1144,12 +1163,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_hills_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="background_handler">
-				<UId=26>
+				<UId=42811>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1183,12 +1203,14 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="homebase">
-				<UId=27>
+				<UId=42812>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1246,7 +1268,6 @@
 						<Y=-3.141592>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1256,12 +1277,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/target.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 4">
-				<UId=28>
+				<UId=42813>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1300,12 +1322,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_temple_4.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 4">
-				<UId=29>
+				<UId=42814>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1344,12 +1367,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_temple_4.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 4">
-				<UId=30>
+				<UId=42815>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1388,12 +1412,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_temple_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 4">
-				<UId=31>
+				<UId=42816>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1432,12 +1457,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_temple_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 4">
-				<UId=32>
+				<UId=42817>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1476,12 +1502,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_temple_2.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 4">
-				<UId=33>
+				<UId=42818>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1520,12 +1547,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_temple_3.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=34>
+				<UId=42819>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1564,12 +1592,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_temple_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=35>
+				<UId=42820>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1608,12 +1637,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_temple_3.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=36>
+				<UId=42821>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1652,12 +1682,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=37>
+				<UId=42822>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1696,12 +1727,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=38>
+				<UId=42823>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1740,12 +1772,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=39>
+				<UId=42824>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1784,12 +1817,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=40>
+				<UId=42825>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1828,12 +1862,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=41>
+				<UId=42826>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1872,12 +1907,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=42>
+				<UId=42827>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1916,12 +1952,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=43>
+				<UId=42828>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -1960,12 +1997,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=44>
+				<UId=42829>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2004,12 +2042,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=45>
+				<UId=42830>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2048,12 +2087,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=46>
+				<UId=42831>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2092,12 +2132,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=47>
+				<UId=42832>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2136,12 +2177,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=48>
+				<UId=42833>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2180,12 +2222,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=49>
+				<UId=42834>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2224,12 +2267,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 2">
-				<UId=50>
+				<UId=42835>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2268,12 +2312,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=51>
+				<UId=42836>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2312,12 +2357,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=52>
+				<UId=42837>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2356,12 +2402,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=53>
+				<UId=42838>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2400,12 +2447,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=54>
+				<UId=42839>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2435,7 +2483,6 @@
 						<Y=4.000000>
 						<Z=4.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2445,12 +2492,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=55>
+				<UId=42840>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2480,7 +2528,6 @@
 						<Y=4.000000>
 						<Z=4.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2490,12 +2537,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=56>
+				<UId=42841>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2525,7 +2573,6 @@
 						<Y=4.000000>
 						<Z=4.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2535,12 +2582,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=57>
+				<UId=42842>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2570,7 +2618,6 @@
 						<Y=4.000000>
 						<Z=4.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2580,12 +2627,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=58>
+				<UId=42843>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2624,12 +2672,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=59>
+				<UId=42844>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2668,12 +2717,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=60>
+				<UId=42845>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2703,7 +2753,6 @@
 						<Y=4.000000>
 						<Z=4.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2713,12 +2762,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=61>
+				<UId=42846>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2748,7 +2798,6 @@
 						<Y=4.000000>
 						<Z=4.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2758,12 +2807,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=62>
+				<UId=42847>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2802,12 +2852,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=63>
+				<UId=42848>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2846,12 +2897,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=64>
+				<UId=42849>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2890,12 +2942,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_0.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=65>
+				<UId=42850>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2934,12 +2987,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=66>
+				<UId=42851>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -2978,12 +3032,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=67>
+				<UId=42852>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3022,12 +3077,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=68>
+				<UId=42853>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3066,12 +3122,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=69>
+				<UId=42854>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3110,12 +3167,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=70>
+				<UId=42855>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3154,12 +3212,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=71>
+				<UId=42856>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3198,12 +3257,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=72>
+				<UId=42857>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3242,12 +3302,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_02.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=73>
+				<UId=42858>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3286,12 +3347,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="Back Temple 3">
-				<UId=74>
+				<UId=42859>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -3330,12 +3392,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/back_tree_1.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="g_block_Merged">
-				<UId=75>
+				<UId=42860>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -5305,7 +5368,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5315,12 +5377,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/blocks_level_11_a.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="g_block_Merged">
-				<UId=76>
+				<UId=42861>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7679,12 +7742,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/blocks_level_11_b.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=77>
+				<UId=42862>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7723,24 +7787,47 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Type="Parallel">
-				<Shadow="Map">
-				<ShadowBias=0.010000>
-				<ShadowDistribution=0.100000>
-				<VolumetricSampleStep=0.500000>
-				<VolumetricThick=1.000000>
-				<VolumetricRange=8.000000>
 				<Diffuse=
 					<X=0.400000>
 					<Y=0.400000>
 					<Z=0.400000>
 				>
+				<Specular=
+					<X=1.000000>
+					<Y=1.000000>
+					<Z=1.000000>
+				>
+				<ShadowColor=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=0.000000>
+				>
+				<Type="Parallel">
+				<Falloff="Linear">
+				<Range=0.000000>
+				<VolumeRange=500.000000>
+				<ClipDistance=300.000000>
+				<ProjectionMap="">
+				<DiffuseIntensity=1.000000>
+				<SpecularIntensity=0.000000>
+				<ConeAngle=0.523599>
+				<EdgeAngle=0.523599>
+				<ZNear=0.020000>
+				<Shadow="Map">
+				<ShadowBias=0.010000>
+				<ShadowDistribution=0.100000>
+				<ShadowRange=100.000000>
+				<ShadowCastAll=False>
+				<Volumetric=False>
+				<VolumetricSampleStep=0.500000>
+				<VolumetricThick=1.000000>
+				<VolumetricRange=8.000000>
 			>
 		>
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=78>
+				<UId=42863>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7778,7 +7865,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=79>
+				<UId=42864>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7816,7 +7903,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusSlowClock">
-				<UId=80>
+				<UId=42865>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7854,7 +7941,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=81>
+				<UId=42866>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7892,7 +7979,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=82>
+				<UId=42867>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7930,7 +8017,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=83>
+				<UId=42868>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7973,7 +8060,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=84>
+				<UId=42869>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8016,7 +8103,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=85>
+				<UId=42870>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8054,7 +8141,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=86>
+				<UId=42871>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8092,7 +8179,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=87>
+				<UId=42872>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8130,7 +8217,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=88>
+				<UId=42873>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8168,7 +8255,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=89>
+				<UId=42874>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8216,7 +8303,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTree0">
-				<UId=90>
+				<UId=42875>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8254,7 +8341,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileRotary0">
-				<UId=91>
+				<UId=42876>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8292,7 +8379,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropReservoir">
-				<UId=92>
+				<UId=42877>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8330,7 +8417,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileJawgate">
-				<UId=93>
+				<UId=42878>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8373,7 +8460,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=94>
+				<UId=42879>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8416,7 +8503,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=95>
+				<UId=42880>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8454,7 +8541,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=96>
+				<UId=42881>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8492,7 +8579,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=97>
+				<UId=42882>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8530,7 +8617,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=98>
+				<UId=42883>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8573,7 +8660,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=99>
+				<UId=42884>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8611,7 +8698,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=100>
+				<UId=42885>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8649,7 +8736,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=101>
+				<UId=42886>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8687,7 +8774,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=102>
+				<UId=42887>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8725,7 +8812,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=103>
+				<UId=42888>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8763,7 +8850,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=104>
+				<UId=42889>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8801,7 +8888,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=105>
+				<UId=42890>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8839,7 +8926,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear2">
-				<UId=106>
+				<UId=42891>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8877,7 +8964,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=107>
+				<UId=42892>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8915,7 +9002,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=108>
+				<UId=42893>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8953,7 +9040,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=109>
+				<UId=42894>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8996,7 +9083,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=110>
+				<UId=42895>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9044,7 +9131,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=111>
+				<UId=42896>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9087,7 +9174,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=112>
+				<UId=42897>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9135,7 +9222,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptColumn">
-				<UId=113>
+				<UId=42898>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9178,7 +9265,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=114>
+				<UId=42899>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9221,7 +9308,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn1">
-				<UId=115>
+				<UId=42900>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9264,7 +9351,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=116>
+				<UId=42901>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9307,7 +9394,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=117>
+				<UId=42902>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9345,7 +9432,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=118>
+				<UId=42903>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9388,7 +9475,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=119>
+				<UId=42904>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9431,7 +9518,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=120>
+				<UId=42905>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9474,7 +9561,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=121>
+				<UId=42906>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9517,7 +9604,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=122>
+				<UId=42907>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9560,7 +9647,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=123>
+				<UId=42908>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9598,7 +9685,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=124>
+				<UId=42909>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9636,7 +9723,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=125>
+				<UId=42910>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9679,7 +9766,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=126>
+				<UId=42911>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9722,7 +9809,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileHomingMine">
-				<UId=127>
+				<UId=42912>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9760,7 +9847,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=128>
+				<UId=42913>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9808,7 +9895,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=129>
+				<UId=42914>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9856,7 +9943,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=130>
+				<UId=42915>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9904,7 +9991,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=131>
+				<UId=42916>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9952,7 +10039,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=132>
+				<UId=42917>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9997,47 +10084,1811 @@
 			>
 			<Template="graphics/PropGear0.nms">
 		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=43719>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.846828>
+						<Y=14.238706>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=43720>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=0.989060>
+						<Y=14.238706>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=43721>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-2.737828>
+						<Y=14.238706>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=43722>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=2.728728>
+						<Y=14.238704>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=44042>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=36.941719>
+						<Y=6.069486>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=44043>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=36.941719>
+						<Y=7.905374>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=44044>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=36.941719>
+						<Y=4.178487>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=44045>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=36.941719>
+						<Y=9.645040>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=45011>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=36.964046>
+						<Y=-43.072739>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=45012>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=35.665874>
+						<Y=-41.774567>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=45013>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=38.301186>
+						<Y=-44.409874>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=45014>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=34.435749>
+						<Y=-40.544441>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=45672>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-36.646828>
+						<Y=-13.861295>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=45673>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-38.537827>
+						<Y=-13.861295>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=45675>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-36.646828>
+						<Y=-11.961295>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=45676>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-38.537827>
+						<Y=-11.961295>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=46010>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-43.746830>
+						<Y=-35.461300>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=46011>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-45.637829>
+						<Y=-35.461300>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=46012>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-43.746830>
+						<Y=-33.561295>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=46013>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-45.637829>
+						<Y=-33.561295>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=46348>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-39.346828>
+						<Y=59.838707>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=46349>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-37.510941>
+						<Y=59.838707>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=46350>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-35.771271>
+						<Y=59.838707>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=47374>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=25.241718>
+						<Y=40.769485>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=47375>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=25.241718>
+						<Y=42.605373>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=47376>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=25.241718>
+						<Y=38.878487>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=47377>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=25.241718>
+						<Y=44.345039>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=48061>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=48.421833>
+						<Y=62.049599>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=48062>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=46.585945>
+						<Y=62.049599>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=48063>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=50.312832>
+						<Y=62.049599>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=48064>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=44.846279>
+						<Y=62.049599>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=48065>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=36.121834>
+						<Y=62.049599>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=48066>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=34.285946>
+						<Y=62.049599>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=48067>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=38.012833>
+						<Y=62.049599>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=48068>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=32.546280>
+						<Y=62.049599>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=49131>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=37.353172>
+						<Y=-21.461300>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=49132>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=35.462173>
+						<Y=-21.461300>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=49133>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=37.353172>
+						<Y=-19.561295>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=49134>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=35.462173>
+						<Y=-19.561295>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=49849>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-26.958281>
+						<Y=47.569485>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=49850>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-26.958281>
+						<Y=49.405373>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="Coin">
+				<UId=49851>
+				<TriggerDetected>
+				<Active>
+				<Static>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-26.958281>
+						<Y=51.145039>
+						<Z=0.000004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/bonus_coin.nmg">
+				<CacheGeometry=True>
+			>
+		>
 	>
 	<Links=
 		<Link=
-			<Item=16>
-			<Link=26>
+			<Item=42801>
+			<Link=42811>
 		>
 		<Link=
-			<Item=17>
-			<Link=26>
+			<Item=42802>
+			<Link=42811>
 		>
 		<Link=
-			<Item=18>
-			<Link=16>
+			<Item=42803>
+			<Link=42801>
 		>
 		<Link=
-			<Item=19>
-			<Link=16>
+			<Item=42804>
+			<Link=42801>
 		>
 		<Link=
-			<Item=20>
-			<Link=26>
+			<Item=42805>
+			<Link=42811>
 		>
 		<Link=
-			<Item=21>
-			<Link=26>
+			<Item=42806>
+			<Link=42811>
 		>
 		<Link=
-			<Item=22>
-			<Link=26>
+			<Item=42807>
+			<Link=42811>
 		>
 		<Link=
-			<Item=23>
-			<Link=26>
+			<Item=42808>
+			<Link=42811>
 		>
 		<Link=
-			<Item=24>
-			<Link=26>
+			<Item=42809>
+			<Link=42811>
 		>
 		<Link=
-			<Item=25>
-			<Link=26>
+			<Item=42810>
+			<Link=42811>
 		>
 	>
 	<Skins>
@@ -10053,6 +11904,7 @@
 			<Y=0.490196>
 			<Z=0.509804>
 		>
+		<TimeOfDay=0.500000>
 		<AmbientIntensity=1.000000>
 		<TargetExposure=0.250000>
 		<FogNear=100.000000>
@@ -10070,25 +11922,25 @@
 		<R0=
 			<X=1.000000>
 			<Y=-0.000000>
-			<Z=-0.000001>
+			<Z=-0.000072>
 			<W=0.000000>
 		>
 		<R1=
 			<X=-0.000000>
 			<Y=1.000000>
-			<Z=-0.000004>
+			<Z=-0.000018>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.000001>
-			<Y=0.000004>
+			<X=0.000072>
+			<Y=0.000018>
 			<Z=1.000000>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-33.567806>
-			<Y=-55.395271>
-			<Z=-146.967331>
+			<X=-9.238546>
+			<Y=9.488699>
+			<Z=-133.912308>
 			<W=1.000000>
 		>
 	>
@@ -10103,25 +11955,25 @@
 				<R0=
 					<X=1.000000>
 					<Y=-0.000000>
-					<Z=-0.000001>
+					<Z=-0.000072>
 					<W=0.000000>
 				>
 				<R1=
 					<X=-0.000000>
 					<Y=1.000000>
-					<Z=-0.000004>
+					<Z=-0.000018>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.000001>
-					<Y=0.000004>
+					<X=0.000072>
+					<Y=0.000018>
 					<Z=1.000000>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-33.567806>
-					<Y=-55.395271>
-					<Z=-146.967331>
+					<X=-9.238546>
+					<Y=9.488699>
+					<Z=-133.912308>
 					<W=1.000000>
 				>
 			>

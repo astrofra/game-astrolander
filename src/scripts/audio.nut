@@ -29,6 +29,8 @@ class	GlobalAudioHandler
 	function	PlaySound(sound_id)
 	//-----------------------------
 	{
+		if (!g_sound_enabled)	return
+
 		if (sound_id in sound_table)
 		{
 			local	_sfx_channel = MixerSoundStart(g_mixer, sound_table[sound_id])

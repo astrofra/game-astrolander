@@ -28,7 +28,6 @@
 		<Uniform=<Name="pssm_1_slice_distance"><Semantic="LightPSSMSliceDistance1">>
 		<Uniform=<Name="pssm_2_slice_distance"><Semantic="LightPSSMSliceDistance2">>
 		<Uniform=<Name="pssm_3_slice_distance"><Semantic="LightPSSMSliceDistance3">>
-
 		<Uniform=<Name="u_noise"><Semantic="NoiseMap">>
 	>
 	<Varying=

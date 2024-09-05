@@ -25,7 +25,11 @@ class	LinearFilter
 
 	function	GetFilteredValue()
 	{
-		local	filtered_value = 0.0
+		local	filtered_value
+		if ((typeof values[0]) == "float")
+			filtered_value = 0.0
+		else
+			filtered_value = Vector(0,0,0)
 
 		foreach(_v in values)
 			filtered_value += _v

@@ -8,6 +8,29 @@
 	@author	Astrofra
 */
 
+class	TriggerGrabber
+{
+
+	scene			=	0
+
+	function	OnSetup(trigger_item)
+	{
+		scene = ItemGetScene(trigger_item)	
+	}
+
+	function	OnItemEnter(trigger_item, item)
+	{
+		local	_item_name = ItemGetName(item)
+		switch(_item_name)
+		{
+			case "Coin":
+				SceneGetScriptInstance(scene).ScenePlayerGetsCoin(scene, item)
+				break
+		}
+	}
+
+}
+
 class	LunarLander	extends	SceneWithThreadHandler
 {
 	body				=	0
@@ -29,6 +52,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 	min_damage			=	5
 	max_damage			=	20
 	shield_enabled		=	false
+	speed_limit_filter	=	0
 
 	flame_item			=	0
 	smoke_emitter		=	0
@@ -84,6 +108,12 @@ class	LunarLander	extends	SceneWithThreadHandler
 
 		if (update_function != 0)
 			update_function(item)
+	}
+
+	function	UpdateCameraFromPlayer(item)
+	{
+		SceneGetScriptInstance(g_scene).camera_handler.FollowPlayerPosition(ItemGetWorldPosition(item),current_velocity)
+//ItemSetPosition(g_camera_item, ItemGetWorldPosition(item) + Vector(0,0,-60))
 	}
 
 	//--------------------------------
@@ -203,11 +233,10 @@ class	LunarLander	extends	SceneWithThreadHandler
 			return
 		}
 
-		low_dt_compensation = Clamp(1.0 / (60.0 * g_dt_frame), 0.0, 1.0) // Clamp(1.0 / (60.0 / (1.0 / g_dt_frame)), 0.0, 1.0) // Clamp(60.0 / (1.0 / g_dt_frame), 0.0, 1.0)
-//		print("low_dt_compensation = " + low_dt_compensation)
+		UpdateCameraFromPlayer(item)
 
 		local	_vel = ItemGetLinearVelocity(item)
-		current_velocity = _vel.Normalize()
+		current_velocity = _vel //.Normalize()
 		current_speed = _vel.Len()
 		
 		ThrustTypeControl(item)
@@ -238,9 +267,14 @@ class	LunarLander	extends	SceneWithThreadHandler
 
 		local	v_thrust = Vector(0,0,0)
 
+/*
 		local	speed_limiter = Max(ItemGetLinearVelocity(item).Len() - max_speed, 0.0)
+		local	impulse_limiter = ItemGetLinearVelocity(item).Scale(-speed_limiter)
+		speed_limit_filter.SetNewValue(impulse_limiter)
+
 		if (speed_limiter > 0.0)
-			ItemApplyLinearImpulse(item, ItemGetLinearVelocity(item).Scale(-speed_limiter * low_dt_compensation))
+			ItemApplyLinearImpulse(item, speed_limit_filter.GetFilteredValue())
+*/
 
 		thrusters_active	=	false
 
@@ -248,8 +282,8 @@ class	LunarLander	extends	SceneWithThreadHandler
 		{
 			if (_left && !_right)
 			{
-				ItemApplyLinearForce(item, ItemGetMatrix(item).GetRow(0).Normalize().Scale(thrust * 0.9 * ItemGetMass(item) * low_dt_compensation))
-				ItemApplyForce(item, ItemGetWorldPosition(thrust_item[0]), ItemGetMatrix(thrust_item[0]).GetRow(0).Scale(-thrust * 0.1 * ItemGetMass(item) * low_dt_compensation))
+				ItemApplyLinearForce(item, ItemGetMatrix(item).GetRow(0).Normalize().Scale(thrust * 0.9 * ItemGetMass(item)))
+				ItemApplyForce(item, ItemGetWorldPosition(thrust_item[0]), ItemGetMatrix(thrust_item[0]).GetRow(0).Scale(-thrust * 0.1 * ItemGetMass(item)))
 				ItemSetOpacity(flame_item[0], Clamp(ItemGetOpacity(flame_item[0]) + 0.35, 0.0, 1.0))
 				SmokeFeedBack(flame_item[0])
 				thrusters_active = true
@@ -257,8 +291,8 @@ class	LunarLander	extends	SceneWithThreadHandler
 	
 			if (!_left && _right)
 			{
-				ItemApplyLinearForce(item, ItemGetMatrix(item).GetRow(0).Normalize().Scale(-thrust * 0.9 * ItemGetMass(item) * low_dt_compensation))
-				ItemApplyForce(item, ItemGetWorldPosition(thrust_item[1]), ItemGetMatrix(thrust_item[1]).GetRow(0).Scale(-thrust * 0.1 * ItemGetMass(item) * low_dt_compensation))
+				ItemApplyLinearForce(item, ItemGetMatrix(item).GetRow(0).Normalize().Scale(-thrust * 0.9 * ItemGetMass(item)))
+				ItemApplyForce(item, ItemGetWorldPosition(thrust_item[1]), ItemGetMatrix(thrust_item[1]).GetRow(0).Scale(-thrust * 0.1 * ItemGetMass(item)))
 				ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[2]) + 1.35, 0.0, 1.0))
 				SmokeFeedBack(flame_item[2])
 				thrusters_active = true
@@ -266,7 +300,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 	
 			if (_left && _right)
 			{
-				ItemApplyLinearForce(item, ItemGetMatrix(item).GetUp().Scale(thrust * ItemGetMass(item) * low_dt_compensation))
+				ItemApplyLinearForce(item, ItemGetMatrix(item).GetUp().Scale(thrust * ItemGetMass(item)))
 				//ItemSetOpacity(flame_item[1], Clamp(ItemGetOpacity(flame_item[1]) + 0.35, 0.0, 1.0))
 				ItemSetOpacity(flame_item[0], Clamp(ItemGetOpacity(flame_item[0]) + 1.35, 0.0, 1.0))
 				ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[2]) + 1.35, 0.0, 1.0))
@@ -296,7 +330,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 	function	ConsumeFuel()
 	//-----------------------
 	{
-		fuel -= consumption * (g_dt_frame / g_clock_scale) * low_dt_compensation
+		fuel -= consumption * (g_dt_frame / g_clock_scale)
 		if (game_ui)
 			game_ui.UpdateFuelGauge(fuel)
 	}
@@ -359,7 +393,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 		ItemSetPosition(hit_emitter, p) 
 		hit_emitter_script.Emit()
 
-		MixerChannelStart(g_mixer, channel_metal_col, sfx_metal_col[sfx_metal_col_counter])
+		if (g_sound_enabled) MixerChannelStart(g_mixer, channel_metal_col, sfx_metal_col[sfx_metal_col_counter])
 		sfx_metal_col_counter += Irand(1,2)
 		if (sfx_metal_col_counter >= sfx_metal_col.len())
 			sfx_metal_col_counter = 0
@@ -382,7 +416,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 		_speed = Clamp(_speed, 0.0, 1.0)
 		_align *= _speed
 
-		ItemApplyTorque(item, Vector(0,0,-_rot_z - _ang_v_z).Scale(_align * ItemGetMass(item) * low_dt_compensation))
+		ItemApplyTorque(item, Vector(0,0,-_rot_z - _ang_v_z).Scale(_align * ItemGetMass(item)))
 	}
 
 	//------------------------------------------------------
@@ -493,6 +527,8 @@ class	LunarLander	extends	SceneWithThreadHandler
 	//-----------------------------
 	{
 		//	Thrusters
+		if (!g_sound_enabled)	return
+			
 		channel_thrust_clean = MixerSoundStart(g_mixer, sfx_thrust_clean)
 		MixerChannelSetGain(g_mixer, channel_thrust_clean, sfx_thrust_volume * GlobalGetSfxVolume())
 		MixerChannelSetLoopMode(g_mixer, channel_thrust_clean, LoopRepeat)
@@ -557,6 +593,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 		ItemSetScale(mesh_wounded, Vector(0,0,0))
 		low_dt_compensation	= 1.0
 		low_speed_timer	= 0.0
+		speed_limit_filter = LinearFilter(10)
 
 		SceneSetGravity(scene, g_gravity.Scale(1.0))
 		ItemPhysicSetAngularFactor(item, Vector(0,0,1.0))
@@ -571,7 +608,6 @@ class	LunarLander	extends	SceneWithThreadHandler
 
 		update_function = UpdatePlayerIsDead
 
-		SceneSetPhysicFrequency(scene, 60.0)
 		_t = g_clock
 	}
 

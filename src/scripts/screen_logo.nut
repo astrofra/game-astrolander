@@ -64,7 +64,8 @@ class	LogoScreen
 		WindowSetCommandList(logo_handler, "nop 0.125;toposition 0.25,0,-4;toposition 0.25,0,-10;")
 		WindowSetCommandList(logo_flash, "toalpha 0,1;toalpha 2.0,0;")
 
-		sfx_channel = MixerSoundStart(g_mixer, EngineLoadSound(g_engine, "audio/sfx/sfx_startup_sound.wav"))
+		if (g_sound_enabled)
+			sfx_channel = MixerSoundStart(g_mixer, EngineLoadSound(g_engine, "audio/sfx/sfx_startup_sound.wav"))
 
 		display_timer = g_clock
 		update_function = WaitOnAstrofraLogo

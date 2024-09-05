@@ -26,6 +26,44 @@ function	GlobalSetPlayerGuid()
 		_game.player_data.rawset("guid", GenerateEncodedTimeStamp())
 }
 
+//-------------------------------------------
+function	GlobalLevelGetScore(_level_index)
+//-------------------------------------------
+{
+	local	_player_data = ProjectGetScriptInstance(g_project).player_data
+	local	_score, _level_key
+
+	_level_key = "level_" + _level_index.tostring()
+	if (_level_key in _player_data)
+	{
+		local	_level_data = _player_data[_level_key]
+		_score = _level_data.score.tointeger()
+	}
+	else
+		_score = 0
+
+	return _score
+}
+
+//-------------------------------------------
+function	GlobalLevelGetStopwatch(_level_index)
+//-------------------------------------------
+{
+	local	_player_data = ProjectGetScriptInstance(g_project).player_data
+	local	_time, _level_key
+
+	_level_key = "level_" + _level_index.tostring()
+	if (_level_key in _player_data)
+	{
+		local	_level_data = _player_data[_level_key]
+		_time = _level_data.stopwatch
+	}
+	else
+		_time = 0.0
+
+	return _time
+}
+
 //-------------------------------------
 function	GlobalCalculateTotalScore()
 //-------------------------------------

@@ -11,6 +11,7 @@ class	GameOverScreen	extends	BaseUI
 {
 	display_timer		=	0
 
+	back_button			=	0
 	skip_arrow			=	0
 	skip_button			=	0
 
@@ -25,9 +26,9 @@ class	GameOverScreen	extends	BaseUI
 	*/
 	function	OnUpdate(scene)
 	{
-		base.UpdateCursor()
+		base.Update()
 
-		if ((g_clock - display_timer) > SecToTick(Sec(10.0)))
+		if ((g_clock - display_timer) > SecToTick(Sec(20.0)))
 		{
 			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_title.nms")
 			MixerChannelStopAll(g_mixer)
@@ -60,13 +61,31 @@ class	GameOverScreen	extends	BaseUI
 		}
 
 		//	Back button
+		local	back_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_left.png"), 16, 700, 256, 128)
+		back_button = LabelWrapper(ui, "Back", 10, 25, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		WindowSetParent(back_button[0], back_arrow)
+		WindowSetEventHandlerWithContext(back_arrow, EventCursorDown, this, GameOverScreen.BackToGame)
+		WindowSetEventHandlerWithContext(back_button[0], EventCursorDown, this, GameOverScreen.BackToGame)
+
+		//	Skip button
 		skip_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
-		skip_button = LabelWrapper(ui, g_locale.skip_screen, -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		skip_button = LabelWrapper(ui, tr("Skip", "screen nav."), -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(skip_button[0], skip_arrow)
 		WindowSetEventHandlerWithContext(skip_arrow, EventCursorDown, this, GameOverScreen.BackToTitleScreen)
 		WindowSetEventHandlerWithContext(skip_button[0], EventCursorDown, this, GameOverScreen.BackToTitleScreen)
 		WindowSetOpacity(skip_arrow, 0.0)
 		WindowSetCommandList(skip_arrow, "toalpha 0,0;nop 1.5;toalpha 0.25,1;")
+	}
+
+	//-------------------------------------------
+	function	BackToGame(event, table)
+	//-------------------------------------------
+	{
+		ButtonFeedback(table.window)
+//		MixerChannelStop(g_mixer, channel_music)
+//		ProjectGetScriptInstance(g_project).player_data.current_level = current_selected_level
+		ProjectGetScriptInstance(g_project).ProjectStartGame()
+		PlaySfxUIValidate()
 	}
 
 	function	BackToTitleScreen(event, table)

@@ -1,0 +1,22 @@
+<Version=1.0>
+<Material=
+	<Id="Librairies/Astrofra - RAD Kit/props/cube_bumped_red-material-0.nmm">
+	<Specular=
+		<X=0.000000>
+		<Y=0.000000>
+		<Z=0.000000>
+	>
+	<Glossiness=0.100000>
+	<AlphaThreshold=0.100000>
+	<PhysicMaterial=
+		<StaticFriction=0.750000>
+		<DynamicFriction=0.500000>
+		<Restitution=0.100000>
+	>
+	<RenderMask=
+		<Smoothing>
+		<NormalMapTangent>
+		<VertexColor>
+	>
+	<Shader="Librairies/Astrofra - RAD Kit/props/cube_bumped_red-material-0-shader-tree.nsa">
+>

@@ -25,6 +25,7 @@
 		<Uniform=<Name="u_lpm"><Semantic="LightShadowMatrix0">>
 		<Uniform=<Name="u_sm"><Semantic="LightShadowMap0">>
 		<Uniform=<Name="u_iss"><Semantic="InverseShadowMapSize">>
+		<Uniform=<Name="u_noise"><Semantic="NoiseMap">>
 	>
 	<Varying=
 		<Variable=<Name="forward"><Type="vec3">>

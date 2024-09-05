@@ -9,7 +9,7 @@
 		discard;
 	vec3	frag_viewpos = (forward / forward.z) * (norm_dpth.w + u_vdo - u_lsb);
 
-	float	pcf = ComputePCF(frag_viewpos, u_lpm, u_sm);
+	float	pcf = ComputePCF(frag_viewpos, u_lpm, u_sm, 1.0);
 
 	if	(pcf > 0.0)
 	{

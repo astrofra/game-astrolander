@@ -1,4 +1,1 @@
-<NML=1.0>
-<ViewMode="Project">
-<Input="project.ngp">
-<IgnoreEsc=False><IgnoreMissingResource=True>
+project.ngp -P -ignore_esc -ignore_missing -CC ./

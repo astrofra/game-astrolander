@@ -1,7 +1,7 @@
 // Sample velocity weighting to reduce background velocity induced leakage.
 #define	SAMPLE_WEIGHTING
 
-float	g_weight;
+static float g_weight;
 
 float	AdjustVelocity(float v)
 {	return clamp(pow(v, u_pow) * u_strength, -u_max, u_max);	}
@@ -9,8 +9,8 @@ float	AdjustVelocity(float v)
 vec4	MotionSample(vec2 uv)
 {
 #ifdef	SAMPLE_WEIGHTING
-	vec2	V = texture2D(u_velocity, uv).xy;
-	float	w = AdjustVelocity(length(V));
+	vec2 V = texture2D(u_velocity, uv).xy;
+	float w = AdjustVelocity(length(V));
 	g_weight += w;
 	return texture2D(u_source, uv) * w;
 #else
@@ -21,11 +21,11 @@ vec4	MotionSample(vec2 uv)
 
 %main%
 {
-	vec4	ref = texture2D(u_source, v_uv);
-	vec2	V = texture2D(u_velocity, v_uv).xy;
+	vec4 ref = texture2D(u_source, v_uv);
+	vec2 V = texture2D(u_velocity, v_uv).xy;
 
-	float	l = length(V);
-	float	n_l = AdjustVelocity(l);
+	float l = length(V);
+	float n_l = AdjustVelocity(l);
 
 	V = V * ((l > 0.0001) ? (n_l / l) : 0.0);
 
@@ -34,7 +34,7 @@ vec4	MotionSample(vec2 uv)
 #else
 	g_weight = 1.0;
 #endif
-	vec4	result =
+	vec4 result =
 			(
 				MotionSample(v_uv - V) +
 				MotionSample(v_uv - V * 0.75) +
@@ -51,7 +51,7 @@ vec4	MotionSample(vec2 uv)
 				MotionSample(v_uv + V)
 			);
 
-	float	a = clamp(n_l / u_ivs.x, 0.001, 1.0);
+	float a = clamp(n_l / u_ivs.x, 0.001, 1.0);
 #ifdef	SAMPLE_WEIGHTING
 	%out.color% = vec4(g_weight > 0.0 ? result.rgb / g_weight : ref.rgb, a);
 #else

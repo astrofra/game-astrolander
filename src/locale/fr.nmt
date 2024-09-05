@@ -1,0 +1,347 @@
+<Version=1.0>
+<Content=
+	<Entry=
+		<Ref="Loading">
+		<Local="Chargement">
+	>
+	<Entry=
+		<Ref="Game Code & 3D Graphics">
+		<Local="Code & 3D">
+	>
+	<Entry=
+		<Ref="2D Graphics">
+		<Local="2D">
+	>
+	<Entry=
+		<Ref="Game Engine, Additional Code">
+		<Local="Moteur, Code additionnel">
+	>
+	<Entry=
+		<Ref="Music">
+		<Local="Musique">
+	>
+	<Entry=
+		<Ref="Provided by AudioBank.Fm and OpenGameArt.org">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Special Thanks to">
+		<Local="Remerciements">
+	>
+	<Entry=
+		<Ref="Testers">
+		<Local="Testeurs">
+	>
+	<Entry=
+		<Ref="Powered by GameStart!">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Guest">
+		<Local="Invité">
+	>
+	<Entry=
+		<Ref="Back">
+		<Local="Retour">
+	>
+	<Entry=
+		<Ref="Skip">
+		<Local="Passer">
+	>
+	<Entry=
+		<Ref="Staff : ">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Game Over">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Out of Fuel!">
+		<Local="Fioul Epuisé !">
+	>
+	<Entry=
+		<Ref="Brain Damage!">
+		<Local="Commotion Cérébrale !">
+	>
+	<Entry=
+		<Ref="No Time Left!">
+		<Local="Fin du temps imparti !">
+	>
+	<Entry=
+		<Ref="Get Ready!">
+		<Local="A vos Marques!">
+	>
+	<Entry=
+		<Ref="Go to Base!\n~~Size(40)You found all the artifacts.">
+		<Local="Retour à la Base!\n~~Size(40)Vous avez tous les artefacts">
+	>
+	<Entry=
+		<Ref="Mission Complete!">
+		<Local="Mission Terminée !">
+	>
+	<Entry=
+		<Ref="HELP">
+		<Local="AIDE">
+	>
+	<Entry=
+		<Ref="RESUME">
+		<Local="CONTINUER">
+	>
+	<Entry=
+		<Ref="RESTART">
+		<Local="RELANCER">
+	>
+	<Entry=
+		<Ref="QUIT">
+		<Local="ABANDONNER">
+	>
+	<Entry=
+		<Ref="||">
+		<Local="">
+	>
+	<Entry=
+		<Ref=">>">
+		<Local="">
+	>
+	<Entry=
+		<Ref="TIME">
+		<Local="">
+	>
+	<Entry=
+		<Ref="ARTIFACTS">
+		<Local="">
+	>
+	<Entry=
+		<Ref="LIFE">
+		<Local="">
+	>
+	<Entry=
+		<Ref="FUEL">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Astro Leaders">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Level">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Remaining Life">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Remaining Fuel">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Time">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Score">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Total Score">
+		<Local="">
+	>
+	<Entry=
+		<Ref="points">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Next">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Astro Lander">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Play">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Options">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Leaders">
+		<Local="">
+	>
+	<Entry=
+		<Ref="(c) 2011-2012 Astrofra.">
+		<Local="">
+	>
+	<Entry=
+		<Ref="English">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Credits">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Player's Nickname">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Start">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Reverse Ctrl">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Yes">
+		<Local="">
+	>
+	<Entry=
+		<Ref="No">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Sfx Volume">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Music Volume">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Early Quest">
+		<Local="">
+	>
+	<Entry=
+		<Ref="First Flight">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Jump Again">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Three Parter">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Cogs Avenue">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Deep down, behind the walls,\nyou found a hand...">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Under the Garden">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Diagonals">
+		<Local="">
+	>
+	<Entry=
+		<Ref="The Slime Passage">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Meet the Lasers">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Escaping the deadly lasers,\nyou found another hand!">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Deep into the Sky">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Going Narrow">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Up and Down">
+		<Local="">
+	>
+	<Entry=
+		<Ref="The Old Factory">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Quad Death">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Hidden within these rocks,\nyou just found a leg.">
+		<Local="">
+	>
+	<Entry=
+		<Ref="The Rotary">
+		<Local="">
+	>
+	<Entry=
+		<Ref="The Core">
+		<Local="">
+	>
+	<Entry=
+		<Ref="The Lost Ship">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Floating Valley">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Two legs and two arms?\nNone fits your mechanic body.">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Wet Planet">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Elevator Action">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Lucas">
+		<Local="">
+	>
+	<Entry=
+		<Ref="The Lost Ruins">
+		<Local="">
+	>
+	<Entry=
+		<Ref="The Sunken Galeon">
+		<Local="">
+	>
+	<Entry=
+		<Ref="A body, a brain,\nwhat you need now is a head.">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Square Labyrinth">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Rect. Labyrinth">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Laser Cave">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Laser Chimney">
+		<Local="">
+	>
+	<Entry=
+		<Ref="Having found a whole body,\nyour journey now ends.">
+		<Local="">
+	>
+>

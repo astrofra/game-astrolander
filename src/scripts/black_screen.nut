@@ -25,7 +25,7 @@ class	levels_black_screen
 	{
 		local	ui = SceneGetUI(scene)
 		CreateOpaqueScreen(ui)
-		//local	_label = CreateLabel(ui, g_locale.loading, (g_screen_width * 0.5) - 200, g_screen_height * 0.8, 30, 400, 64, g_ui_color_white, g_hud_font_name, TextAlignCenter)
+		//local	_label = CreateLabel(ui, tr("Loading"), (g_screen_width * 0.5) - 200, g_screen_height * 0.8, 30, 400, 64, g_ui_color_white, g_hud_font_name, TextAlignCenter)
 		//WindowSetCommandList(_label[0], "loop;toalpha 0,0.5;nop 2;toalpha 0,0.25;nop 2;next;")
 	}
 }

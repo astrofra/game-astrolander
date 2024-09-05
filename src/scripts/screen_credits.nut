@@ -8,6 +8,8 @@
 	@author	Astrofra
 */
 
+Include("scripts/credits.nut")
+
 //--------------------------------
 class	CreditsUI	extends	BaseUI
 //--------------------------------
@@ -57,7 +59,7 @@ class	CreditsUI	extends	BaseUI
 	{
 		//	Back button
 		skip_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
-		skip_button = LabelWrapper(ui, g_locale.back_to_title, -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		skip_button = LabelWrapper(ui, tr("Back", "screen nav."), -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(skip_button[0], skip_arrow)
 		WindowSetEventHandlerWithContext(skip_arrow, EventCursorDown, this, CreditsUI.BackToTitleScreen)
 		WindowSetEventHandlerWithContext(skip_button[0], EventCursorDown, this, CreditsUI.BackToTitleScreen)
@@ -102,7 +104,7 @@ class	CreditsUI	extends	BaseUI
 	function	Update()
 	//------------------
 	{
-		base.UpdateCursor()
+		base.Update()
 		WindowSetPosition(main_handler, 0, scroll_y)
 		scroll_y -= (g_dt_frame * 60.0)
 
@@ -155,7 +157,7 @@ class	CreditsScreen
 	{
 		local	lines_table = []
 
-		foreach(_line in g_locale.credits)
+		foreach(_line in g_credits)
 		{
 			//	Add Task Description (Coding, 2D, 3D, Music....)
 			lines_table.append(_line.desc)

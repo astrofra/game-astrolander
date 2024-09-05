@@ -80,7 +80,7 @@ class	LevelEnd	extends	SceneWithThreadHandler
 		}
 
 		//	Music ?
-		if (game.player_data.current_level == 23)
+		if (g_sound_enabled && (game.player_data.current_level == 23))
 		{
 			g_audio_music_channel = MixerStreamStart(g_mixer, "audio/music/bouncy_optimism.ogg")
 			MixerChannelSetLoopMode(g_mixer, g_audio_music_channel, LoopRepeat)
@@ -201,23 +201,23 @@ class	LevelEnd	extends	SceneWithThreadHandler
 
 		local	debrief_table = []
 
-		debrief_table.append({	/*text = g_locale.endlevel_level_name, */
+		debrief_table.append({	/*text = tr("Level"), */
 								value = GetLevelName(game.player_data.current_level)	})
 
-		debrief_table.append({	text = g_locale.endlevel_remain_life,
+		debrief_table.append({	text = tr("Remaining Life", "end level"),
 								value = game.player_data.latest_run.life.tointeger().tostring(),
 								bonus = _life_bonus_amount.tointeger()})
-		debrief_table.append({	text = g_locale.endlevel_remain_fuel,
+		debrief_table.append({	text = tr("Remaining Fuel", "end level"),
 								value = game.player_data.latest_run.fuel.tointeger().tostring(),
 								bonus = _fuel_bonus_amount.tointeger() })
-		debrief_table.append({	text = g_locale.endlevel_time,
+		debrief_table.append({	text = tr("Time", "end level"),
 								value = TimeToString(game.player_data.latest_run.stopwatch),
 								bonus = _stopwatch_bonus.tointeger()})
 
-		debrief_table.append({	text = g_locale.endlevel_score ,
+		debrief_table.append({	text = tr("Score", "end level") ,
 								value = _level_score.tointeger().tostring()	})
 
-		debrief_table.append({	text = g_locale.total_score,	
+		debrief_table.append({	text = tr("Total Score", "end level"),	
 								value = game.player_data.total_score.tointeger().tostring()	})
 
 		return debrief_table
@@ -228,7 +228,7 @@ class	LevelEnd	extends	SceneWithThreadHandler
 	//-------------------------
 	{
 		base.OnUpdate(scene)
-		level_end_ui.UpdateCursor()
+		level_end_ui.Update()
 		HttpUpdate()
 
 		if (update_function != 0)
@@ -258,13 +258,14 @@ class	LevelEnd	extends	SceneWithThreadHandler
 
 		if (("guid" in _player_data) && ("nickname" in _player_data))
 		{
+			local _device_id = SystemGetPlatform()
 			_guid = _player_data.guid.tostring()
 			_name = _player_data.nickname.tostring()
 			_score = _player_data.total_score.tointeger().tostring()
 
-			_check_key = CalculateCheckKey([_guid, _name, _score])
+			_check_key = CalculateCheckKey([_guid, _name, _score, _device_id])
 	
-			local	post = "command=set&guid=" + _guid + "&name=" + _name + "&score=" + _score + "&session=" + _check_key
+			local	post = "command=set&guid=" + _guid + "&name=" + _name + "&score=" + _score + "&device=" + _device_id + "&session=" + _check_key
 			print("post = " + post)
 			return HttpPost(g_base_url + "/leaderboard.php", post)
 		}

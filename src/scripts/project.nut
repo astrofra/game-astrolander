@@ -3,7 +3,6 @@
 	Author : Francois Gutherz
 */
 
-	Include("scriptlib/nad.nut")
 	Include("scripts/globals.nut")
 	Include("scripts/locale.nut")
 	Include("scripts/global_callbacks.nut")
@@ -14,7 +13,7 @@
 	Include("scripts/camera_handler.nut")
 	Include("scripts/feedback_emitter.nut")
 	Include("scripts/audio.nut")
-	Include("scripts/inventory.nut")
+//	Include("scripts/inventory.nut")
 	Include("scripts/thread_handler.nut")
 	Include("scripts/replay.nut")
 	Include("scripts/weather.nut")	
@@ -31,6 +30,8 @@
 	Include("scripts/screen_title.nut")
 	Include("scripts/screen_game_ui.nut")
 	Include("scripts/screen_level_end_ui.nut")
+	Include("scripts/seasons_table.nut")
+	Include("scripts/seasons.nut")
 	Include("scripts/utils.nut")
 	Include("scripts/vfx.nut")
 
@@ -43,6 +44,7 @@ class	ProjectHandler	extends	BaseProjectHandler
 
 	player_data		=	{
 			total_score				=	0
+			current_selected_season	=	0
 			current_selected_level	=	0
 			current_level			=	0
 			latest_run				=	0
@@ -91,7 +93,7 @@ class	ProjectHandler	extends	BaseProjectHandler
 				
 		if (!("nickname" in player_data))
 		{
-			local	_nickname = g_locale.guest_nickname + " " + (Irand(1,9) * 100 + Irand(0,9) * 10 + Irand(0,9)).tostring()
+			local	_nickname = tr("Guest", "options") + " " + (Irand(1,9) * 100 + Irand(0,9) * 10 + Irand(0,9)).tostring()
 			player_data.rawset("nickname", _nickname)
 		}
 

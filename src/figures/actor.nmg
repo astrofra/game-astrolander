@@ -1,8 +1,5 @@
-<NML=1.0>
+<Version=1.0>
 <Geometry=
-	<RenderWord=
-		<Lit>
-	>
 	<Vertex=
 		<Count=36>
 		<Data==438:432@
@@ -34,26 +31,6 @@ BžeöövçXÿd¯²²æâH¯çXÿd¹ìç4ÍçXÿd)))gc±?ÒXÿd©›gº”.çXÿdvhãg
 *©**©**©**©**©**©**©**©**©**©**©**©**©**©**©>
 	>
 	<Materials=
-		<Material=
-			<Id="Default">
-			<Diffuse=
-				<X=0.000000>
-				<Y=0.000000>
-				<Z=0.000000>
-			>
-			<Specular=
-				<X=0.000000>
-				<Y=0.000000>
-				<Z=0.000000>
-			>
-			<PhysicMaterial=
-				<StaticFriction=0.750000>
-				<DynamicFriction=0.500000>
-				<Restitution=0.100000>
-			>
-			<RenderMask=
-				<Lit>
-			>
-		>
+		<MaterialRef="figures/figure.nmm">
 	>
 >

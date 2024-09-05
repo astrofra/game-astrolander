@@ -101,7 +101,7 @@ class	LevelEndUI extends	BaseUI
 				local	str = line.value.tostring()
 				if ("bonus" in line)
 					if (line.bonus > 0)
-						str += "~~Color(255, 200, 150, 255)" + " [" + line.bonus.tostring() + " " + g_locale.score_points + "]"
+						str += "~~Color(255, 200, 150, 255)" + " [" + line.bonus.tostring() + " " + tr("points", "end level") + "]"
 				_label.label = str
 				_label.font = g_main_font_name
 				_label.font_size = (n == 0)?80:((n == debrief_table.len() - 1)?100:60)
@@ -131,7 +131,7 @@ class	LevelEndUI extends	BaseUI
 	{
 		//	Back button
 		next_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
-		next_button = LabelWrapper(ui, g_locale.next_level, -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		next_button = LabelWrapper(ui, tr("Next", "screen nav."), -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(next_button[0], next_arrow)
 		WindowSetEventHandlerWithContext(next_arrow, EventCursorDown, this, LevelEndUI.GotoScoreBrief)
 		WindowSetEventHandlerWithContext(next_button[0], EventCursorDown, this, LevelEndUI.GotoScoreBrief)
@@ -153,7 +153,7 @@ class	LevelEndUI extends	BaseUI
 	{
 		//	Back button
 		next_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
-		next_button = LabelWrapper(ui, g_locale.next_level, -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		next_button = LabelWrapper(ui, tr("Next", "screen nav."), -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(next_button[0], next_arrow)
 		WindowSetEventHandlerWithContext(next_arrow, EventCursorDown, this, LevelEndUI.GotoNextGame)
 		WindowSetEventHandlerWithContext(next_button[0], EventCursorDown, this, LevelEndUI.GotoNextGame)
@@ -241,7 +241,7 @@ class	LevelEndUI extends	BaseUI
 
 	function	UpdateCursor()
 	{
-		base.UpdateCursor()
+		base.Update()
 	}
 
 }

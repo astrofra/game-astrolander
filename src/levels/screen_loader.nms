@@ -6,15 +6,11 @@
 			<Class="LoaderScreen">
 		>
 	>
-	<ScriptUnit=
-		<Script="scripts/screen_loader.nut">
-		<Class="LoaderScreen">
-	>
 	<Items=
 		<MCamera=
 			<MItem=
 				<Id="New Camera">
-				<UId=3>
+				<UId=675>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -39,6 +35,11 @@
 						<Y=34.737190>
 						<Z=-145.424957>
 					>
+					<Rotation=
+						<X=0.019783>
+						<Y=-0.017703>
+						<Z=0.000000>
+					>
 					<ItemFlag=
 						<HasTarget>
 					>
@@ -57,7 +58,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=0>
+				<UId=676>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -124,12 +125,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_16x16.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=4>
+				<UId=677>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -196,12 +198,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_16x16.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=5>
+				<UId=678>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -268,12 +271,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_16x16.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=6>
+				<UId=679>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -323,7 +327,7 @@
 				<Item=
 					<Position=
 						<X=-139.525848>
-						<Y=33.767029>
+						<Y=37.722740>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -331,6 +335,7 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -340,12 +345,13 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_16x16.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=7>
+				<UId=680>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -412,6 +418,7 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_16x16.nmg">
+				<CacheGeometry=True>
 			>
 		>
 	>
@@ -429,6 +436,7 @@
 			<Y=0.000000>
 			<Z=0.000000>
 		>
+		<TimeOfDay=0.500000>
 		<AmbientIntensity=1.000000>
 		<TargetExposure=0.250000>
 		<FogNear=0.000000>

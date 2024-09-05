@@ -225,7 +225,7 @@ class	MiniMap
 		function	LoadCachedMapTexture()
 		//--------------------------------------
 		{
-			local	_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring() + ".png" //".tga"
+			local	_filename = "ui/minimaps/level_" + GlobalGetCurrentLevel().tostring() + ".png" //".tga"
 
 			if (FileExists(_filename))
 			{
@@ -276,7 +276,7 @@ class	MiniMap
 		//--------------------------------------
 		{
 			local	_filename
-			_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring()
+			_filename = "ui/minimaps/level_" + GlobalGetCurrentLevel().tostring()
 
 			if ((!FileExists(_filename + ".tga")) && (!FileExists(_filename + ".png")))
 				PictureSaveTGA(_picture, _filename + ".tga")
@@ -284,6 +284,7 @@ class	MiniMap
 
 		function	EvaluateLevelBoundingBox()
 		{
+			print("EvaluateLevelBoundingBox()")
 			local	_block_list = [], _list
 			_list = SceneGetItemList(scene)
 
@@ -341,6 +342,7 @@ class	MiniMap
 		{
 			local	item_name_root = "g_block_"
 			local	_name = ItemGetName(_item)
+print("ItemIsABlock() _name = " + _name)
 			
 			if (_name.len() <=  item_name_root.len())
 				return false

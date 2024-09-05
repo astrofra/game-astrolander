@@ -89,7 +89,7 @@ class	Title
 	{
 		print("Title::OnSetupDone()")
 
-		channel_music = MixerStreamStart(g_mixer, "audio/music/chill_main_menu_music.ogg")
+		if (g_sound_enabled) channel_music = MixerStreamStart(g_mixer, "audio/music/chill_main_menu_music.ogg")
 		TitleScreenSetMusicVolume()
 		MixerChannelSetLoopMode(g_mixer, channel_music, LoopRepeat)
 	}

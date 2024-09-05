@@ -23,7 +23,7 @@ class	InGameUI extends	BaseUI
 
 	message_origin_y		=	g_screen_height / 2.0 + 250.0	//	Y coordinate of the ingame on screen messages
 
-	inventory_bitmaps		=	0
+//	inventory_bitmaps		=	0
 
 	update_frequency		=	0
 
@@ -117,23 +117,23 @@ class	InGameUI extends	BaseUI
 		touch_feedback = CreateTouchFeedback()
 		//beacon_window = CreateCompass()
 
-		inventory_bitmaps = []
-		game_window.game_over_no_fuel.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_fuel)
+//		inventory_bitmaps = []
+		game_window.game_over_no_fuel.handler	= CreateGameMessageWindow(tr("Game Over") + "\n" + "~~Size(60)" + tr("Out of Fuel!"))
 		game_window.game_over_no_fuel.window	= game_window.game_over_no_fuel.handler.window
 
-		game_window.game_over_damage.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.dead_by_damage)
+		game_window.game_over_damage.handler	= CreateGameMessageWindow(tr("Game Over") + "\n" + "~~Size(60)" + tr("Brain Damage!"))
 		game_window.game_over_damage.window		= game_window.game_over_damage.handler.window
 		
-		game_window.game_over_time.handler		= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_time_left)
+		game_window.game_over_time.handler		= CreateGameMessageWindow(tr("Game Over") + "\n" + "~~Size(60)" + tr("No Time Left!"))
 		game_window.game_over_time.window		= game_window.game_over_time.handler.window
 		
-		game_window.get_ready.handler			= CreateGameMessageWindow(g_locale.get_ready)
+		game_window.get_ready.handler			= CreateGameMessageWindow(tr("Get Ready!"))
 		game_window.get_ready.window			= game_window.get_ready.handler.window
 		
-		game_window.return_base.handler			= CreateGameMessageWindow(g_locale.return_base)
+		game_window.return_base.handler			= CreateGameMessageWindow(tr("Go to Base!\n~~Size(40)You found all the artifacts."))
 		game_window.return_base.window			= game_window.return_base.handler.window
 		
-		game_window.mission_complete.handler	= CreateGameMessageWindow(g_locale.mission_complete)
+		game_window.mission_complete.handler	= CreateGameMessageWindow(tr("Mission Complete!"))
 		game_window.mission_complete.window		= game_window.mission_complete.handler.window
 
 		//	Create the "how to control the ship" UI elements.
@@ -165,10 +165,10 @@ class	InGameUI extends	BaseUI
 		WindowSetParent(pause_window.pause_restart.button,pause_window.global_handler)
 		WindowSetParent(pause_window.pause_quit.button,pause_window.global_handler)
 
-		pause_window.pause_howto.text = LabelWrapper(ui, g_locale.pause_how_to, 0, 0, 50, 256, 128 - 10, g_ui_color_white , g_main_font_name, TextAlignCenter)
-		pause_window.pause_resume.text = LabelWrapper(ui, g_locale.pause_resume_game, 0, 0, 50, 256, 128 - 10, g_ui_color_white , g_main_font_name, TextAlignCenter)
-		pause_window.pause_restart.text = LabelWrapper(ui, g_locale.pause_restart_level, 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
-		pause_window.pause_quit.text = LabelWrapper(ui, g_locale.pause_quit_game, 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		pause_window.pause_howto.text = LabelWrapper(ui, tr("HELP", "screen nav."), 0, 0, 50, 256, 128 - 10, g_ui_color_white , g_main_font_name, TextAlignCenter)
+		pause_window.pause_resume.text = LabelWrapper(ui, tr("RESUME", "screen nav."), 0, 0, 50, 256, 128 - 10, g_ui_color_white , g_main_font_name, TextAlignCenter)
+		pause_window.pause_restart.text = LabelWrapper(ui, tr("RESTART", "screen nav."), 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		pause_window.pause_quit.text = LabelWrapper(ui, tr("QUIT", "screen nav."), 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
 
 		WindowSetParent(pause_window.pause_howto.text[0], pause_window.pause_howto.button)
 		WindowSetParent(pause_window.pause_resume.text[0], pause_window.pause_resume.button)
@@ -286,7 +286,7 @@ class	InGameUI extends	BaseUI
 	function	Update()
 	//------------------------
 	{
-		base.UpdateCursor()
+		base.Update()
 		if (how_to_control != 0)
 			how_to_control.Update()
 	}
@@ -322,7 +322,7 @@ class	InGameUI extends	BaseUI
 				WindowSetPivot(_button_sprite, 64, 64)
 				WindowSetScale(_button_sprite, 0.7, 0.7)
 				WindowSetPosition(_button_sprite, -60, 50)
-				button_help = LabelWrapper(ui, g_locale.hud_help, 0, 0, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
+				button_help = LabelWrapper(ui, tr("||", "screen nav."), 0, 0, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
 				WindowSetParent(button_help[0], _button_sprite)
 				//WindowSetOpacity(_button_sprite, 0.35)
 				WindowSetEventHandlerWithContext(_button_sprite, EventCursorDown, this, InGameUI.OnGameUIHelp)
@@ -335,7 +335,7 @@ class	InGameUI extends	BaseUI
 				WindowSetPivot(_button_sprite, 64, 64)
 				WindowSetScale(_button_sprite, 0.7, 0.7)
 				WindowSetPosition(_button_sprite, -60 - (50 * 2.0), 50)
-				button_skip = LabelWrapper(ui, g_locale.hud_skip, 0, -10, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
+				button_skip = LabelWrapper(ui, tr(">>", "screen nav."), 0, -10, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
 				WindowSetParent(button_skip[0], _button_sprite)
 				//WindowSetOpacity(_button_sprite, 0.35)
 				WindowSetEventHandlerWithContext(_button_sprite, EventCursorDown, this, InGameUI.OnGameUISkipLevel)
@@ -574,7 +574,7 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateStopwatch()")
-		LabelWrapper(ui, g_locale.hud_stopwatch, g_screen_width - 400 - 16, 0, 32, 400)
+		LabelWrapper(ui, tr("TIME", "hud"), g_screen_width - 400 - 16, 0, 32, 400)
 		local	_stopwatch = Vector(g_screen_width - 400 + 32, 7, 0) //LabelWrapper(ui, TimeToString(0.0), g_screen_width - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
 		return _stopwatch
 	}
@@ -584,7 +584,7 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateArtifactCounter()")
-		LabelWrapper(ui, g_locale.hud_artifacts, g_screen_width - 400 - 16, 40, 32, 380)// g_screen_height - 64, 32, 380)
+		LabelWrapper(ui, tr("ARTIFACTS", "hud"), g_screen_width - 400 - 16, 40, 32, 380)// g_screen_height - 64, 32, 380)
 		local	_counter = LabelWrapper(ui, "0/0", g_screen_width - 400 + 280,  40) //g_screen_height - 64)
 		return _counter
 	}
@@ -594,7 +594,7 @@ class	InGameUI extends	BaseUI
 	{
 		print("InGameUI::CreateLifeGauge()")
 
-		LabelWrapper(ui, g_locale.hud_damage, 0, 0) //310 + 0, 0)
+		LabelWrapper(ui, tr("LIFE", "hud"), 0, 0) //310 + 0, 0)
 		local	_gauge_rule = LabelWrapper(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100, true), 160, 0, 32, 680)
 		_gauge_rule[1].font_tracking = -5.0
 		_gauge_rule[1].refresh()
@@ -612,7 +612,7 @@ class	InGameUI extends	BaseUI
 	{
 		print("InGameUI::CreateFuelGauge()")
 
-		LabelWrapper(ui, g_locale.hud_fuel, 0, 40)
+		LabelWrapper(ui, tr("FUEL", "hud"), 0, 40)
 		local	_gauge_rule = LabelWrapper(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100, true),  160, 40, 32, 680)
 		_gauge_rule[1].font_tracking = -5.0
 		_gauge_rule[1].refresh()

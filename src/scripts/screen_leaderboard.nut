@@ -102,7 +102,7 @@ class	LeaderboardUI	extends	BaseUI
 
 		//	Leaderboard title
 		title = Label(ui, 1024, 128,  g_screen_width * 0.5, 128, true, true)
-		title.label = g_locale.leaderboard_title
+		title.label = tr("Astro Leaders", "leaderboard")
 		title.font = g_main_font_name
 		title.font_size = 90
 		title.drop_shadow = true
@@ -153,18 +153,40 @@ class	LeaderboardUI	extends	BaseUI
 
 			score_table.append(_score)
 
+			local _tex_device = EngineLoadTexture(g_engine, "ui/devices/windows.png")
+			local _device = UIAddSprite(ui, -1, _tex_device, 0, 0, TextureGetWidth(_tex_device), TextureGetHeight(_tex_device))
+			WindowSetPosition(_device, g_screen_width * 0.9, 128 + 90 + g_screen_height * 0.07 * n - TextureGetHeight(_tex_device) * 0.5)
+
 			_is_even = (_is_even?false:true)
 		}
 
 		//	Back button
 		skip_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
-		skip_button = LabelWrapper(ui, g_locale.back_to_title, -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		skip_button = LabelWrapper(ui, tr("Back", "screen nav."), -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(skip_button[0], skip_arrow)
 		WindowSetEventHandlerWithContext(skip_arrow, EventCursorDown, this, LeaderboardUI.BackToTitleScreen)
 		WindowSetEventHandlerWithContext(skip_button[0], EventCursorDown, this, LeaderboardUI.BackToTitleScreen)
 		WindowSetCommandList(skip_arrow, "toalpha 0,0;nop 0.5;toalpha 0.25,1;")
 
 
+	}
+	
+	function	GetDeviceIconPath(device)
+	{
+		switch (device)
+		{
+			case	"Windows":
+				return "ui/devices/windows.png"
+			case	"Linux":
+				return "ui/devices/linux.png"
+			case	"OSX":
+				return "ui/devices/osx.png"
+			case	"Android":
+				return "ui/devices/android.png"
+			case	"iOS":
+				return "ui/devices/ios.png"
+		}
+		return null
 	}
 
 	function	RefreshLeaderboard(_leaders_array)
@@ -198,7 +220,7 @@ class	LeaderboardUI	extends	BaseUI
 
 	function	Update()
 	{
-		base.UpdateCursor()
+		base.Update()
 		slideshow.update(g_dt_frame)
 	}
 
@@ -268,23 +290,30 @@ class	LeaderboardScreen
 
 		local	_leader_array = split(data, "|")
 
-		local	_parm_order = 0, _guid, _name, _score
+		local	_parm_order = 0, _guid, _name, _device, _score
 		foreach(_key in _leader_array)
 		{
-			print("_key = " + _key)
 			switch (_parm_order)
 			{
 				case 0:
 					_guid = _key
+					print("_guid = " + _key)
 					break
 
 				case 1:
 					_name = _key
+					print("_name = " + _key)
+					break
+					
+				case 2:
+					_device = _key
+					print("_device = " + _key)
 					break
 
-				case 2:
+				case 3:
 					_score = _key
-					leaderboard_content.append({name = _name, score = _score})
+					print("_score = " + _key)
+					leaderboard_content.append({name = _name, device = _device, score = _score})
 					break
 			}
 
@@ -323,6 +352,7 @@ class	LeaderboardScreen
 	function	OnSetupDone(scene)
 	//---------------------
 	{
+		if (!g_sound_enabled) return
 		channel_music = MixerStreamStart(g_mixer, "audio/music/leaderboard.ogg")
 		MixerChannelSetGain(g_mixer, channel_music, sfx_gain * GlobalGetMusicVolume())
 		MixerChannelSetLoopMode(g_mixer, channel_music, LoopRepeat)

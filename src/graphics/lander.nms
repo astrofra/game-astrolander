@@ -4,11 +4,10 @@
 		<MObject=
 			<MItem=
 				<Id="player">
-				<UId=0>
-				<Active>
+				<UId=315>
 				<TriggerDetected>
+				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -260,16 +259,17 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=1>
+				<UId=316>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -333,15 +333,15 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_8x16.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="thrust_item_l">
-				<UId=2>
+				<UId=317>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -377,15 +377,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="thrust_item_r">
-				<UId=3>
+				<UId=318>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -421,15 +422,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="pod_body">
-				<UId=4>
+				<UId=319>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -455,15 +457,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="pod_brain">
-				<UId=5>
+				<UId=320>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -494,14 +497,15 @@
 					<Registry>
 				>
 				<Geometry="graphics/pod_brain.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="pod_canopy">
-				<UId=6>
+				<UId=321>
+				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -518,7 +522,6 @@
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -528,15 +531,15 @@
 					<Registry>
 				>
 				<Geometry="graphics/pod_canopy.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="pod_edge">
-				<UId=7>
+				<UId=322>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -562,15 +565,15 @@
 					<Registry>
 				>
 				<Geometry="graphics/pod_edge.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="flame_item_l">
-				<UId=8>
+				<UId=323>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -610,17 +613,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<CacheGeometry=False>
 				<Geometry="graphics/thrust_flame.nmg">
+				<CacheGeometry=False>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="flame_item_r">
-				<UId=9>
+				<UId=324>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -660,17 +662,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<CacheGeometry=False>
 				<Geometry="graphics/thrust_flame.nmg">
+				<CacheGeometry=False>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="flame_item_m">
-				<UId=10>
+				<UId=325>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -710,17 +711,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<CacheGeometry=False>
 				<Geometry="graphics/thrust_flame.nmg">
+				<CacheGeometry=False>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="smoke_emitter">
-				<UId=11>
+				<UId=326>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -778,15 +778,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="hit_emitter">
-				<UId=12>
+				<UId=327>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -844,15 +845,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="weak_zone">
-				<UId=13>
+				<UId=328>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -883,15 +885,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="shield_mesh">
-				<UId=14>
+				<UId=329>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -928,15 +931,15 @@
 					<Registry>
 				>
 				<Geometry="graphics/pod_shield.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="shield_col">
-				<UId=15>
+				<UId=330>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -990,15 +993,16 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="pod_body_wounded">
-				<UId=16>
+				<UId=331>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -1024,15 +1028,15 @@
 					<Registry>
 				>
 				<Geometry="graphics/pod_body_wounded.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="pod_body_mesh">
-				<UId=17>
+				<UId=332>
 				<Active>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -1058,16 +1062,16 @@
 					<Registry>
 				>
 				<Geometry="graphics/pod_body.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="hat">
-				<UId=18>
+				<UId=333>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -1099,6 +1103,7 @@
 						<Y=0.500000>
 						<Z=0.396759>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1108,16 +1113,16 @@
 					<Registry>
 				>
 				<Geometry="graphics/fez_hat.nmg">
+				<CacheGeometry=True>
 			>
 		>
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=19>
+				<UId=334>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
@@ -1153,10 +1158,38 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Diffuse=
+					<X=1.000000>
+					<Y=1.000000>
+					<Z=1.000000>
+				>
+				<Specular=
+					<X=1.000000>
+					<Y=1.000000>
+					<Z=1.000000>
+				>
+				<ShadowColor=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=0.000000>
+				>
 				<Type="Parallel">
+				<Falloff="Linear">
+				<Range=0.000000>
+				<VolumeRange=500.000000>
+				<ClipDistance=300.000000>
+				<ProjectionMap="">
+				<DiffuseIntensity=1.000000>
+				<SpecularIntensity=0.000000>
+				<ConeAngle=0.523599>
+				<EdgeAngle=0.523599>
+				<ZNear=0.100000>
 				<Shadow="Map">
 				<ShadowBias=0.010000>
 				<ShadowDistribution=0.100000>
+				<ShadowRange=100.000000>
+				<ShadowCastAll=False>
+				<Volumetric=False>
 				<VolumetricSampleStep=0.500000>
 				<VolumetricThick=1.000000>
 				<VolumetricRange=8.000000>
@@ -1165,22 +1198,12 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_0">
-				<UId=20>
+				<UId=335>
 				<Active>
+				<Static>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
 				>
 			>
 			<Constraint=
@@ -1242,22 +1265,12 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_1">
-				<UId=21>
+				<UId=336>
 				<Active>
+				<Static>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
 				>
 			>
 			<Constraint=
@@ -1319,22 +1332,12 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_2">
-				<UId=22>
+				<UId=337>
 				<Active>
+				<Static>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
 				>
 			>
 			<Constraint=
@@ -1396,22 +1399,12 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_4">
-				<UId=23>
+				<UId=338>
 				<Active>
+				<Static>
 				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
 				>
 			>
 			<Constraint=
@@ -1473,83 +1466,83 @@
 	>
 	<Links=
 		<Link=
-			<Item=2>
-			<Link=0>
+			<Item=317>
+			<Link=315>
 		>
 		<Link=
-			<Item=3>
-			<Link=0>
+			<Item=318>
+			<Link=315>
 		>
 		<Link=
-			<Item=4>
-			<Link=0>
+			<Item=319>
+			<Link=315>
 		>
 		<Link=
-			<Item=5>
-			<Link=4>
+			<Item=320>
+			<Link=319>
 		>
 		<Link=
-			<Item=6>
-			<Link=4>
+			<Item=321>
+			<Link=319>
 		>
 		<Link=
-			<Item=7>
-			<Link=4>
+			<Item=322>
+			<Link=319>
 		>
 		<Link=
-			<Item=8>
-			<Link=0>
+			<Item=323>
+			<Link=315>
 		>
 		<Link=
-			<Item=9>
-			<Link=0>
+			<Item=324>
+			<Link=315>
 		>
 		<Link=
-			<Item=10>
-			<Link=0>
+			<Item=325>
+			<Link=315>
 		>
 		<Link=
-			<Item=13>
-			<Link=0>
+			<Item=328>
+			<Link=315>
 		>
 		<Link=
-			<Item=14>
-			<Link=0>
+			<Item=329>
+			<Link=315>
 		>
 		<Link=
-			<Item=16>
-			<Link=0>
+			<Item=331>
+			<Link=315>
 		>
 		<Link=
-			<Item=17>
-			<Link=0>
+			<Item=332>
+			<Link=315>
 		>
 		<Link=
-			<Item=18>
-			<Link=0>
+			<Item=333>
+			<Link=315>
 		>
 	>
 	<Skins>
 	<Constraints=
 		<Constraint=
-			<Uid=20>
-			<UidA=0>
-			<UidB=15>
+			<Uid=335>
+			<UidA=315>
+			<UidB=330>
 		>
 		<Constraint=
-			<Uid=21>
-			<UidA=0>
-			<UidB=15>
+			<Uid=336>
+			<UidA=315>
+			<UidB=330>
 		>
 		<Constraint=
-			<Uid=22>
-			<UidA=0>
-			<UidB=15>
+			<Uid=337>
+			<UidA=315>
+			<UidB=330>
 		>
 		<Constraint=
-			<Uid=23>
-			<UidA=0>
-			<UidB=15>
+			<Uid=338>
+			<UidA=315>
+			<UidB=330>
 		>
 	>
 	<Globals=
@@ -1563,6 +1556,7 @@
 			<Y=0.400000>
 			<Z=0.400000>
 		>
+		<TimeOfDay=0.500000>
 		<AmbientIntensity=0.250000>
 		<TargetExposure=0.250000>
 		<FogNear=0.000000>
@@ -1578,27 +1572,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.999999>
-			<Y=-0.000000>
-			<Z=0.001621>
+			<X=1.000000>
+			<Y=0.000000>
+			<Z=0.000000>
 			<W=0.000000>
 		>
 		<R1=
-			<X=-0.000227>
-			<Y=0.990184>
-			<Z=0.139771>
+			<X=0.000000>
+			<Y=1.000000>
+			<Z=0.000000>
 			<W=0.000000>
 		>
 		<R2=
-			<X=-0.001605>
-			<Y=-0.139771>
-			<Z=0.990183>
+			<X=0.000000>
+			<Y=0.000000>
+			<Z=1.000000>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-0.034632>
-			<Y=2.383478>
-			<Z=-16.853300>
+			<X=0.000000>
+			<Y=0.000000>
+			<Z=-25.840006>
 			<W=1.000000>
 		>
 	>
@@ -1608,30 +1602,30 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="@Perspective">
+			<Camera="@Front">
 			<Matrix=
 				<R0=
-					<X=0.999999>
-					<Y=-0.000000>
-					<Z=0.001621>
+					<X=1.000000>
+					<Y=0.000000>
+					<Z=0.000000>
 					<W=0.000000>
 				>
 				<R1=
-					<X=-0.000227>
-					<Y=0.990184>
-					<Z=0.139771>
+					<X=0.000000>
+					<Y=1.000000>
+					<Z=0.000000>
 					<W=0.000000>
 				>
 				<R2=
-					<X=-0.001605>
-					<Y=-0.139771>
-					<Z=0.990183>
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-0.034632>
-					<Y=2.383478>
-					<Z=-16.853300>
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=-25.840006>
 					<W=1.000000>
 				>
 			>

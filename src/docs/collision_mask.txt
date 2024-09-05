@@ -1,0 +1,25 @@
+     S W M P
+    +-------
+SHIP|0 0 0 1
+    |
+WALL|0 0 1 0
+    |
+MOBI|0 1 0 0
+    |
+PART|1 0 0 0
+
+SHIP = 1 , GROUP = 1 or 2 or 4 = 0111 = 7
+WALL = 2 , GROUP = 1 or 2      = 0011 = 3
+MOBI = 4 , GROUP = 1 or 4      = 0101 = 5
+PART = 8
+
+SHIP 0 011 = 3
+WALL 1 001 = 1
+MOBI 1 010 = 2
+SHIE 1 000 = 
+
+000
+001
+010
+011
+100

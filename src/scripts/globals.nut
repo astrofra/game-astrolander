@@ -2,6 +2,7 @@
 print("//	Globals.nut		//")
 
 	force_android_render_settings	<-	false
+	g_sound_enabled					<-	false
 
 	function	IsTouchPlatform()
 	{

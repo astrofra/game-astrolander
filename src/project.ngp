@@ -3,7 +3,7 @@
 	<Name="Cosmic Lander Game">
 	<Authors="Astrofra">
 	<Description="Cosmic Lander Game">
-	<Copyright="Copyright 2011">
+	<Company="Copyright 2011">
 	<ScriptUnit=
 		<Script="scripts/project.nut">
 		<Class="ProjectHandler">

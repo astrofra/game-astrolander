@@ -5,7 +5,7 @@
 function	SetAmbientColor(scene)
 //--------------------------------
 {
-	local	k = ProjectGetScriptInstance(g_project).player_data.current_level
+	local	k = GlobalGetCurrentLevel()
 	local	_color
 /*
 	k = RangeAdjust(k.tofloat(), 0.0, 20.0, 0.0, 1.0)

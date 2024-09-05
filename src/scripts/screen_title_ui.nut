@@ -147,7 +147,7 @@ class	TitleUI	extends	BaseUI
 		WindowSetPivot(game_title, TextureGetWidth(game_title_texture) / 2.0, TextureGetHeight(game_title_texture) / 2.0)
 		WindowSetPosition(game_title, g_screen_width / 2.0, TextureGetHeight(game_title_texture) / 2.0 * 1.15)
 
-		game_subtitle = LabelWrapper(ui, g_locale.game_subtitle, 0, 170, 50, 800, 100, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
+		game_subtitle = LabelWrapper(ui, tr("Astro Lander"), 0, 170, 50, 800, 100, Vector(117, 155, 168, 255), g_main_font_name, TextAlignCenter)
 		game_subtitle[1].drop_shadow = true
 		game_subtitle[1].refresh()
 		WindowSetParent(game_subtitle[0], game_title)
@@ -155,32 +155,32 @@ class	TitleUI	extends	BaseUI
 		title_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_left.png"), 16, 700, 256, 128)
 		title_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
 
-		start_button = LabelWrapper(ui, g_locale.start_game, -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
-		option_button = LabelWrapper(ui, g_locale.option, 10, 30, 50, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		start_button = LabelWrapper(ui, tr("Play", "screen nav."), -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		option_button = LabelWrapper(ui, tr("Options", "screen nav."), 10, 30, 50, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 
 		WindowSetParent(option_button[0], title_left_arrow)
 		WindowSetParent(start_button[0], title_right_arrow)
 		WindowSetEventHandlerWithContext(title_left_arrow, EventCursorDown, this, TitleUI.ScrollToOptionScreen)
-		WindowSetEventHandlerWithContext(title_right_arrow, EventCursorDown, this, TitleUI.ScrollToLevelScreen) //OnTitleUIStartGame)
+		WindowSetEventHandlerWithContext(title_right_arrow, EventCursorDown, this, TitleUI.GoToLevelScreen)
 		WindowSetEventHandlerWithContext(option_button[0], EventCursorDown, this, TitleUI.ScrollToOptionScreen)
-		WindowSetEventHandlerWithContext(start_button[0], EventCursorDown, this, TitleUI.ScrollToLevelScreen) //OnTitleUIStartGame)
+		WindowSetEventHandlerWithContext(start_button[0], EventCursorDown, this, TitleUI.GoToLevelScreen) 
 
 		title_leaderboard_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_left.png"), 16, 700 - 128 - 16, 256, 128)
-		leaderboard_button = LabelWrapper(ui, g_locale.leaderboard, 10, 30, 50, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		leaderboard_button = LabelWrapper(ui, tr("Leaders", "leaderboard"), 10, 30, 50, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(leaderboard_button[0], title_leaderboard_arrow)
 
 		WindowSetEventHandlerWithContext(title_leaderboard_arrow, EventCursorDown, this, TitleUI.GotoLeaderboard)
 		WindowSetEventHandlerWithContext(leaderboard_button[0], EventCursorDown, this, TitleUI.GotoLeaderboard) //OnTitleUIStartGame)
 
 
-		game_copyright = LabelWrapper(ui, g_locale.copyright, (g_screen_width * 0.5) - 400, 900, 30, 800, 64, Vector(117, 155, 168, 128), g_main_font_name, TextAlignCenter)
+		game_copyright = LabelWrapper(ui, tr("(c) 2011-2012 Astrofra."), (g_screen_width * 0.5) - 400, 900, 30, 800, 64, Vector(117, 155, 168, 128), g_main_font_name, TextAlignCenter)
 
 		//	Options	------------------------------------------------------------
 
 		option_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
 		WindowSetParent(option_right_arrow, master_window_option)
 
-		back_from_option_button = LabelWrapper(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		back_from_option_button = LabelWrapper(ui, tr("Back", "screen nav."), -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(back_from_option_button[0], option_right_arrow)
 		WindowSetEventHandlerWithContext(option_right_arrow, EventCursorDown, this, TitleUI.ScrollToTitleScreen)
 		WindowSetEventHandlerWithContext(back_from_option_button[0], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
@@ -194,19 +194,19 @@ class	TitleUI	extends	BaseUI
 
 		//	Change UI language
 		local	_language_button = AddButtonRed(g_screen_width * 0.5, g_screen_height * 0.675, true)
-		language_button = LabelWrapper(ui, g_locale.language, -20, 20, 40, 300, 90, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		language_button = LabelWrapper(ui, tr("English", "options"), -20, 20, 40, 300, 90, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WindowSetEventHandlerWithContext(language_button[0], EventCursorDown, this, TitleUI.OnTitleUINextLanguage)
 		WindowSetEventHandlerWithContext(_language_button, EventCursorDown, this, TitleUI.OnTitleUINextLanguage)
 		WindowSetParent(language_button[0], _language_button)
 
 		//	Goto Credits Page
 		local	_credit_button = AddButtonGenericBlack(g_screen_width * 0.5, g_screen_height * 0.825, true)
-		credit_button = LabelWrapper(ui, g_locale.credits_button, -30, 0, 40, 300, 90, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		credit_button = LabelWrapper(ui, tr("Credits", "screen nav."), -30, 0, 40, 300, 90, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WindowSetEventHandlerWithContext(credit_button[0], EventCursorDown, this, TitleUI.OnTitleUIGotoCredits)
 		WindowSetEventHandlerWithContext(_credit_button, EventCursorDown, this, TitleUI.OnTitleUIGotoCredits)
 		WindowSetParent(credit_button[0], _credit_button)
 
-		local	enter_nickname_text = LabelWrapper(ui, g_locale.player_nickname, g_screen_width * 0.5 - 256, g_screen_height * 0.25 - 110, 48, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		local	enter_nickname_text = LabelWrapper(ui, tr("Player's Nickname", "options"), g_screen_width * 0.5 - 256, g_screen_height * 0.25 - 110, 48, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WindowSetParent(enter_nickname_text[0], master_window_option)
 
 		if (IsTouchPlatform())
@@ -234,7 +234,7 @@ class	TitleUI	extends	BaseUI
 		current_selected_level = ProjectGetScriptInstance(g_project).player_data.current_selected_level
 		level_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_left.png"), 16, 700, 256, 128)
 		WindowSetParent(level_left_arrow, master_window_level)
-		back_from_level_button = LabelWrapper(ui, g_locale.back_to_title, 10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		back_from_level_button = LabelWrapper(ui, tr("Back", "screen nav."), 10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(back_from_level_button[0], level_left_arrow)
 		WindowSetEventHandlerWithContext(level_left_arrow, EventCursorDown, this, TitleUI.ScrollToTitleScreen)
 		WindowSetEventHandlerWithContext(back_from_level_button[0], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
@@ -269,14 +269,14 @@ class	TitleUI	extends	BaseUI
 
 		play_level_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_validate_green.png"), g_screen_width - 256.0 - 128.0, (g_screen_height * 0.5) + 128.0 - 64.0, 256, 128)
 		WindowSetParent(play_level_arrow, master_window_level)
-		play_level_button = LabelWrapper(ui, g_locale.play_level, 5, 25, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		play_level_button = LabelWrapper(ui, tr("Start", "screen nav."), 5, 25, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(play_level_button[0], play_level_arrow)
 		WindowSetEventHandlerWithContext(play_level_arrow, EventCursorDown, this, TitleUI.OnTitleUIStartGame)
 		WindowSetEventHandlerWithContext(play_level_button[0], EventCursorDown, this, TitleUI.OnTitleUIStartGame)
 
 		next_world_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
 		WindowSetParent(next_world_arrow, master_window_level)
-		next_world_button = LabelWrapper(ui, g_locale.next_level, -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		next_world_button = LabelWrapper(ui, tr("Next", "screen nav."), -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(next_world_button[0], next_world_arrow)
 		WindowSetEventHandlerWithContext(next_world_arrow, EventCursorDown, this, TitleUI.GoToNextWorldPage)		
 		WindowSetEventHandlerWithContext(next_world_button[0], EventCursorDown, this, TitleUI.GoToNextWorldPage)
@@ -319,7 +319,7 @@ class	TitleUI	extends	BaseUI
 
 	function	Update()
 	{
-		base.UpdateCursor()
+		base.Update()
 		nickname_textfield.Update()
 	}
 
@@ -542,6 +542,14 @@ class	TitleUI	extends	BaseUI
 		PlaySfxUISelect()
 	}
 
+	function	GoToLevelScreen(event, table)
+	{
+		PlaySfxUINextPage()
+		ButtonFeedback(table.window)
+		MixerChannelStop(g_mixer, SceneGetScriptInstance(g_scene).channel_music)
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_seasons.nms")
+	}
+
 	//-------------------------------------------
 	function	ScrollToLevelScreen(event, table)
 	//-------------------------------------------
@@ -560,9 +568,9 @@ class	TitleUI	extends	BaseUI
 		g_title_screen_index = 1
 	}
 
-	//-------------------------------------------
+	//----------------------------
 	function	GoToOptionScreen()
-	//-------------------------------------------
+	//----------------------------
 	{
 		WindowSetCommandList(master_window_option, "toalpha 0.0,1;")
 		WindowSetPosition(master_window_handler, virtual_screen_width, 0)
@@ -697,7 +705,7 @@ class	TitleUI	extends	BaseUI
 	//--------------------------------------
 	function	CreateStringControlReverse()
 	//--------------------------------------
-	{	return (g_locale.control_reverse + "\n" + (g_reversed_controls?g_locale.yes:g_locale.no))	}
+	{	return (tr("Reverse Ctrl", "options") + "\n" + (g_reversed_controls?tr("Yes", "options"):tr("No", "options")))	}
 
 	//------------------------------------------------
 	function	OnTitleUIReverseControls(event, table)
@@ -721,14 +729,14 @@ class	TitleUI	extends	BaseUI
 	function	SfxVolumeCreateString()
 	//---------------------------------
 	{
-		return (g_locale.sound_fx_volume + "\n" + (GlobalGetSfxVolume() * 100.0).tointeger().tostring() + "%") 
+		return (tr("Sfx Volume", "options") + "\n" + (GlobalGetSfxVolume() * 100.0).tointeger().tostring() + "%") 
 	}
 
 	//-----------------------------------
 	function	MusicVolumeCreateString()
 	//-----------------------------------
 	{
-		return (g_locale.music_volume + "\n" + (GlobalGetMusicVolume() * 100.0).tointeger().tostring() + "%") 
+		return (tr("Music Volume", "options") + "\n" + (GlobalGetMusicVolume() * 100.0).tointeger().tostring() + "%") 
 	}
 
 	//------------------------------------------------

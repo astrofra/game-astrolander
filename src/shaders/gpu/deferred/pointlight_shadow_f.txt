@@ -6,19 +6,19 @@ float	EvaluatePCF(vec3 frag_viewpos, vec3 dn)
 	float	pcf = 1.0;
 
 			if	((dn.z > 0.0) && (dn.x > -dn.z) && (dn.x < dn.z) && (dn.y > -dn.z) && (dn.y < dn.z))
-			pcf = ComputePCF(frag_viewpos, psm_0_projection_matrix, psm);
+			pcf = ComputePCF(frag_viewpos, psm_0_projection_matrix, psm, 1.0);
 	else	if	((dn.z < 0.0) && (dn.x > dn.z) && (dn.x < -dn.z) && (dn.y > dn.z) && (dn.y < -dn.z))
-			pcf = ComputePCF(frag_viewpos, psm_2_projection_matrix, psm);
+			pcf = ComputePCF(frag_viewpos, psm_2_projection_matrix, psm, 1.0);
 
 	else	if	((dn.x > 0.0) && (dn.y > -dn.x) && (dn.y < dn.x) && (dn.z > -dn.x) && (dn.z < dn.x))
-			pcf = ComputePCF(frag_viewpos, psm_1_projection_matrix, psm);
+			pcf = ComputePCF(frag_viewpos, psm_1_projection_matrix, psm, 1.0);
 	else	if	((dn.x < 0.0) && (dn.y > dn.x) && (dn.y < -dn.x) && (dn.z > dn.x) && (dn.z < -dn.x))
-			pcf = ComputePCF(frag_viewpos, psm_3_projection_matrix, psm);
+			pcf = ComputePCF(frag_viewpos, psm_3_projection_matrix, psm, 1.0);
 
 	else	if	((dn.y > 0.0) && (dn.x > -dn.y) && (dn.x < dn.y) && (dn.z > -dn.y) && (dn.z < dn.y))
-			pcf = ComputePCF(frag_viewpos, psm_5_projection_matrix, psm);
+			pcf = ComputePCF(frag_viewpos, psm_5_projection_matrix, psm, 1.0);
 	else	if	((dn.y < 0.0) && (dn.x > dn.y) && (dn.x < -dn.y) && (dn.z > dn.y) && (dn.z < -dn.y))
-			pcf = ComputePCF(frag_viewpos, psm_4_projection_matrix, psm);
+			pcf = ComputePCF(frag_viewpos, psm_4_projection_matrix, psm, 1.0);
 
 	return pcf;
 }

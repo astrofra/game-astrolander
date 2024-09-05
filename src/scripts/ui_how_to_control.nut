@@ -182,7 +182,7 @@ class	HowToControl	extends	SceneWithThreadHandler
 
 		//	Skip button
 		skip_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700 - 32, 256, 128)
-		skip_button = LabelWrapper(ui, g_locale.skip_screen, -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
+		skip_button = LabelWrapper(ui, tr("Skip", "screen nav."), -10, 25, 70, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(skip_button[0], skip_arrow)
 		SpriteSetZOrder(skip_arrow, -0.99)
 		SpriteSetZOrder(skip_button[0], -0.99)

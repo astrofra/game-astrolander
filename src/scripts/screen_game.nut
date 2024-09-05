@@ -40,6 +40,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	artefact				=	0
 	total_artifact_to_found	=	0
 	bonus					=	0
+	coin					=	0
+	total_coin_to_found		=	0
 
 	stopwatch_handler		=	0
 
@@ -142,6 +144,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		game_ui.Update()
 
+		UpdateCoins()
+
 		HandlePause()
 
 		stopwatch_handler.Update()
@@ -149,6 +153,9 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		minimap.Update({player = ItemGetWorldPosition(player), artifacts = GetArtifactsPositionList(), bonus = GetBonusPositionList(), homebase = GetHomebasePosition()})
 		if (update_function != 0)
 			update_function(scene)
+
+//		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
+
 			
 //		replay_handler.UpdateItemMotionRecord(g_clock, ItemGetWorldPosition(player), ItemGetRotation(player))
 	}
@@ -183,7 +190,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		if (WaitForTimer("UpdateIntroScreen", Sec(2.0) * g_clock_scale))
 		{
-			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
+//			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			game_ui.GameMessageWindowSetVisible("get_ready", true)
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
@@ -204,13 +211,13 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		if (WaitForTimer("UpdateLevelCompleteScreen", Sec(3.75) * g_clock_scale))
 		{
 			stopwatch_handler.Stop()
-			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
+//			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
 		else
 		{
 			ResetTimer("UpdateLevelCompleteScreen")
-			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
+//			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			game_ui.GameMessageWindowSetVisible("mission_complete", false)
 			GoToLevelEndScreen(scene)
 		}
@@ -223,7 +230,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		if (WaitForTimer("UpdateGameOverScreen", Sec(6.0) * g_clock_scale))
 		{
 			stopwatch_handler.Stop()
-			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
+//			camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 			player_script.update_function = player_script.UpdatePlayerIsDead
 		}
 		else
@@ -237,7 +244,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	UpdateGameIsRunning(scene)
 	//------------------------------------
 	{
-		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
+//		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 		//UpdateCompass()
 		CheckIfPlayerGetArtifacts(scene)
 		CheckIfPlayerGetBonus(scene, "BonusFuel")
@@ -254,7 +261,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	function	UpdateGameReturnToBase(scene)
 	//---------------------------------------
 	{
-		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
+//		camera_handler.FollowPlayerPosition(ItemGetWorldPosition(player), ItemGetLinearVelocity(player))
 		//UpdateCompass()
 		CheckIfPlayerGetBonus(scene, "BonusFuel")
 		CheckIfPlayerGetBonus(scene, "BonusHeal")
@@ -382,6 +389,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 							BonusSlowClock = [],		//	EngineClockScale * 0.5
 							BonusFastClock = [],		//	EngineClockScale * 2.0
 					}
+		coin		=	[]
 	}
 
 	//------------------------
@@ -408,15 +416,18 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		game_ui	=	InGameUI(scene)
 //		game_ui.how_to_control.OpenHowToControl()
 		
-		level_name = "level_" + (ProjectGetScriptInstance(g_project).player_data.current_level).tostring()
+		local	_current_level = GlobalGetCurrentLevel()
 		local	level_name_str
-		try	{	level_name_str = g_locale.level_names[level_name]	}
-		catch(e)	{	level_name_str = level_name	}
+		try	{	
+			level_name_str = GlobalLevelTableNameFromIndex(_current_level).title
+			}
+		catch(e)	{	level_name_str = "Level #" + _current_level.tostring()	}
 		game_ui.UpdateRoomName(level_name_str)		
 
 		print("LevelHandler::OnSetup() g_clock_scale = " + g_clock_scale)
 
 		EngineSetClockScale(g_engine, g_clock_scale)
+		SceneSetPhysicFrequency(scene, 60.0)
 
 		SetAmbientColor(scene)
 	}
@@ -442,6 +453,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		SceneFindBonus(scene, "BonusSlowClock")
 		SceneFindBonus(scene, "BonusFastClock")
 		homebase_item = LegacySceneFindItem(scene, "homebase")
+		SceneFindCoins(scene)
 
 		//	Minimap
 		minimap = MiniMap(scene)
@@ -665,6 +677,53 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		}
 	}
 
+	function	ScenePlayerGetsCoin(scene, coin_got)
+	{
+		PlaySfxGotItem()
+		feedback_emitter.Emit(ItemGetWorldPosition(coin_got))
+
+		foreach(idx, _coin in coin)
+		{
+			if (ItemCompare(_coin, coin_got))
+			{
+				coin.remove(idx)
+				break
+			}
+		}
+
+		SceneDeleteItem(scene, coin_got)
+		total_coin_to_found
+	}
+
+	//-----------------------
+	function	UpdateCoins()
+	//-----------------------
+	{
+		local	angle, phase
+		angle = TickToSec(g_clock) * -180.0
+		phase = 0
+
+		foreach(_coin_item in coin)
+		{
+			ItemSetRotation(_coin_item, Vector(0, DegreeToRadian(angle + phase), 0))
+			phase += 45.0
+		}
+	}
+
+	//-------------------------------
+	function	SceneFindCoins(scene)
+	//-------------------------------
+	{
+		local	_list, _item
+		_list = SceneGetItemList(scene)
+		foreach(_item in _list)
+			if (ItemGetName(_item) == "Coin")
+				coin.append(_item)
+
+		total_coin_to_found = coin.len()
+		print("LevelHandler::SceneFindCoins() found " + total_coin_to_found.tostring() + " coin(s).")
+	}
+
 	//-----------------------------------
 	function	SceneFindArtefacts(scene)
 	//-----------------------------------
@@ -762,6 +821,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 	function	PlaySfxGotItem()
 	{
+		if (!g_sound_enabled)	return
 		local	_chan
 		_chan = MixerSoundStart(g_mixer, sfx_got_item)
 		MixerChannelSetGain(g_mixer, _chan, GlobalGetSfxVolume())
@@ -769,6 +829,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 	function	PlaySfxGotItemSpecial()
 	{
+		if (!g_sound_enabled)	return
 		local	_chan
 		_chan = MixerSoundStart(g_mixer, sfx_got_item_special)
 		MixerChannelSetGain(g_mixer, _chan, GlobalGetSfxVolume())
@@ -778,6 +839,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		local	_chan
 		StopLevelMusic()
+		if (!g_sound_enabled)	return
 		_chan = MixerSoundStart(g_mixer, sfx_mission_complete)
 		MixerChannelSetGain(g_mixer, _chan, GlobalGetSfxVolume())
 	}
@@ -786,6 +848,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		local	_chan
 		StopLevelMusic()
+		if (!g_sound_enabled)	return
 		_chan = MixerSoundStart(g_mixer, sfx_game_over)
 		MixerChannelSetGain(g_mixer, _chan, GlobalGetSfxVolume())
 	}
@@ -807,7 +870,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		if ((typeof music_filename != "string") || (music_filename == ""))
 			music_filename = "audio/music/" + _rand_music[Irand(0,8)]
 
-		if (FileExists(music_filename))
+		if (g_sound_enabled && FileExists(music_filename))
 		{
 				music_channel = MixerStreamStart(g_mixer, music_filename)
 				MixerChannelSetLoopMode(g_mixer, music_channel, LoopRepeat)
