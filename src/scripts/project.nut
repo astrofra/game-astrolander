@@ -5,7 +5,7 @@
 
 	Include("scriptlib/nad.nut")
 	Include("scripts/globals.nut")
-	Include("scripts/project_base.nut")
+	Include("scripts/base_project.nut")
 	Include("scripts/ace_deleter.nut")
 	Include("scripts/achievements.nut")
 	Include("scripts/camera_handler.nut")
@@ -42,7 +42,7 @@ function	GlobalLoadGame()
 }
 
 //
-class	ProjectHandler	extends	ProjectHandlerBase
+class	ProjectHandler	extends	BaseProjectHandler
 {
 	save_game			=	0
 

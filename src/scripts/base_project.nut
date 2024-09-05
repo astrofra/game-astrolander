@@ -2,7 +2,7 @@
 */	
 
 //
-class	ProjectHandlerBase
+class	BaseProjectHandler
 {
 	scene				=	0
 	scene_filename		=	""

@@ -22,6 +22,7 @@ print("//	Globals.nut		//")
 	g_time_key_order		<-	["hour", "minute", "second", "ms"]
 
 	g_main_font_name		<-	"banksb20caps" //"banksb20"//g_main_font_name
+	g_hud_font_name			<-	"aerial"
 
 	g_ui_color_blue			<-	Vector(117, 155, 168, 180)
 	g_ui_color_yellow		<-	Vector(248, 236, 188, 255)

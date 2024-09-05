@@ -2,6 +2,8 @@
 //	locale.nut
 
 g_locale	<-	{
+	//	System
+	loading				=	"Loading"
 	//	Title
 	game_title			=	"ASTLAN",
 	game_subtitle		=	"Astro Lander",	
@@ -15,7 +17,7 @@ g_locale	<-	{
 	option				=	"Options"
 	back_to_title		=	"Back",
 	copyright			=	"(c) 2011-2012 Astrofra."
-	control_reverse		=	"Reversed Controls"
+	control_reverse		=	"Reverse Ctrl"
 	yes					=	"Yes"
 	no					=	"No"
 	

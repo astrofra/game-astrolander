@@ -105,6 +105,8 @@ class	Preload
 	ui					=	0
 	bar					=	0
 
+//object_list = []
+
 	function	OnSetup(scene)
 	{
 		print("Preload::OnSetup()")

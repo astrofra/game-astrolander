@@ -3,6 +3,36 @@
 	Author: Astrofra
 */
 
+class	MeshSelectBasedOnPlatform
+{
+
+	scene				=	0
+	parent_item			=	0
+	mobile_asset_item	=	0
+	pc_asset_item		=	0
+
+	function	OnSetup(item)
+	{
+		scene = ItemGetScene(item)
+		parent_item = ItemGetParent(item)
+		mobile_asset_item = item
+		try
+		{
+			pc_asset_item = ItemGetChild(parent_item, ItemGetName(mobile_asset_item) + "_pc")
+		}
+		catch(e)
+		{
+			print("MeshSelectBasedOnPlatform::OnSetup() " + e)
+			pc_asset_item = SceneFindItem(scene, ItemGetName(mobile_asset_item) + "_pc")	
+		}
+
+		if (IsTouchPlatform())
+			SceneDeleteItem(scene, pc_asset_item)
+		else
+			SceneDeleteItem(scene, mobile_asset_item)
+	}
+}
+
 //----------------
 class	MobileBase
 //----------------

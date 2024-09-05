@@ -242,9 +242,9 @@ class	LunarLander	extends	SceneWithThreadHandler
 			if (_left && _right)
 			{
 				ItemApplyLinearForce(item, ItemGetMatrix(item).GetUp().Scale(thrust * ItemGetMass(item) * low_dt_compensation))
-				ItemSetOpacity(flame_item[1], Clamp(ItemGetOpacity(flame_item[1]) + 0.35, 0.0, 1.0))
-				ItemSetOpacity(flame_item[0], Clamp(ItemGetOpacity(flame_item[0]) * 0.35, 0.0, 1.0))
-				ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[2]) * 0.35, 0.0, 1.0))
+				//ItemSetOpacity(flame_item[1], Clamp(ItemGetOpacity(flame_item[1]) + 0.35, 0.0, 1.0))
+				ItemSetOpacity(flame_item[0], Clamp(ItemGetOpacity(flame_item[0]) + 1.35, 0.0, 1.0))
+				ItemSetOpacity(flame_item[2], Clamp(ItemGetOpacity(flame_item[2]) + 1.35, 0.0, 1.0))
 				SmokeFeedBack(flame_item[1])
 				thrusters_active = true
 			}

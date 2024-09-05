@@ -117,9 +117,9 @@ class	TitleUI	extends	BaseUI
 		option_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
 		WindowSetParent(option_right_arrow, master_window_option)
 
-		level_easy_button = CreateLabel(ui, g_locale.level_easy, (g_screen_width * 0.5) - 200 - 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
-		level_normal_button = CreateLabel(ui, CreateSelectedOptionString(g_locale.level_normal), (g_screen_width * 0.5) - 200, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
-		level_hard_button = CreateLabel(ui, g_locale.level_hard, (g_screen_width * 0.5) - 200 + 300, 680, 40, 400, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
+		level_easy_button = CreateLabel(ui, g_locale.level_easy, (g_screen_width * 0.5) - 200 - 300, g_screen_height * 0.5, 40, 400, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		level_normal_button = CreateLabel(ui, CreateSelectedOptionString(g_locale.level_normal), (g_screen_width * 0.5) - 200, g_screen_height * 0.5, 40, 400, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		level_hard_button = CreateLabel(ui, g_locale.level_hard, (g_screen_width * 0.5) - 200 + 300, g_screen_height * 0.5, 40, 400, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
 
 		back_from_option_button = CreateLabel(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(back_from_option_button[0], option_right_arrow)
@@ -130,8 +130,11 @@ class	TitleUI	extends	BaseUI
 		WidgetSetEventHandlerWithContext(level_normal_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelNormal)
 		WidgetSetEventHandlerWithContext(level_hard_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelHard)
 				
-		control_reverse = CreateLabel(ui, CreateStringControlReverse(), (g_screen_width * 0.5) - 300, 750, 32, 600, 64, Vector(64, 32, 160, 255), g_main_font_name, TextAlignCenter)
+		local	_control_reverse_button = AddButtonRed(g_screen_width * 0.5, g_screen_height * 0.7, true)
+		control_reverse = CreateLabel(ui, CreateStringControlReverse(), -170, 32, 30, 600, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WidgetSetEventHandlerWithContext(control_reverse[1], EventCursorDown, this, TitleUI.OnTitleUIReverseControls)
+		WindowSetEventHandlerWithContext(_control_reverse_button, EventCursorDown, this, TitleUI.OnTitleUIReverseControls)
+		WindowSetParent(control_reverse[0], _control_reverse_button)
 
 		//	Level Selector
 		current_selected_level = ProjectGetScriptInstance(g_project).player_data.current_selected_level
@@ -196,7 +199,7 @@ class	TitleUI	extends	BaseUI
 		WindowSetParent(level_easy_button[0], master_window_option)
 		WindowSetParent(level_normal_button[0], master_window_option)
 		WindowSetParent(level_hard_button[0], master_window_option)
-		WindowSetParent(control_reverse[0], master_window_option) 
+		WindowSetParent(_control_reverse_button, master_window_option) 
 
 		HandleLevelLock()
 		//AddLogo()
@@ -461,7 +464,7 @@ class	TitleUI	extends	BaseUI
 	//--------------------------------------
 	function	CreateStringControlReverse()
 	//--------------------------------------
-	{	return (g_locale.control_reverse + " : " + (g_reversed_controls?g_locale.yes:g_locale.no))	}
+	{	return (g_locale.control_reverse + "\n" + (g_reversed_controls?g_locale.yes:g_locale.no))	}
 
 	//------------------------------------------------
 	function	OnTitleUIReverseControls(event, table)
@@ -471,6 +474,7 @@ class	TitleUI	extends	BaseUI
 		TextSetText(control_reverse[1], CreateStringControlReverse())
 		GlobalSaveGame()
 		PlaySfxUISelect()
+		ButtonFeedback(table.window)
 	}
 
 	//--------------------------------------------

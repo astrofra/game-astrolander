@@ -181,7 +181,9 @@ class	InGameUI extends	BaseUI
 		WindowSetCommandList(message_background, "toalpha 0,0;toscale 0,6,0;show;toalpha 0.1, 1+toscale 0.2,6,3;nop " + (5.0 * g_clock_scale).tostring() + ";toalpha 0,1;toscale 0,6,3;toalpha 0.1, 0+toscale 0.1,6,0;hide;")
 	}
 
+	//---------------------------------
 	function	HideMessageBackground()
+	//---------------------------------
 	{
 		WindowSetCommandList(message_background, "nop 0.25;toalpha 0,1;toscale 0,6,3;toalpha 0.1, 0+toscale 0.1,6,0;hide;")
 	}
@@ -215,14 +217,33 @@ class	InGameUI extends	BaseUI
 				WindowSetZOrder(button_skip[0], -0.9)
 	}
 
-	//-----------------------------------------
+	//------------------------------------
 	function	OnGameUIHelp(event, table)
-	//-----------------------------------------
+	//------------------------------------
 	{
 		print("InGameUI::OnGameUIHelp()")
 		PlaySfxUIPause()
 		ButtonFeedback(table.window)
+		HideAllMessages()
 		SceneGetScriptInstance(scene).PauseGame() //ExitGame(scene)
+	}
+
+	//---------------------------
+	function	HideAllMessages()
+	//---------------------------
+	{
+		WindowShow(game_window.game_over_no_fuel.handler, false)
+		WindowResetCommandList(game_window.game_over_no_fuel.handler)
+		WindowShow(game_window.game_over_damage.handler, false)
+		WindowResetCommandList(game_window.game_over_damage.handler)
+		WindowShow(game_window.game_over_time.handler, false)
+		WindowResetCommandList(game_window.game_over_time.handler)
+		WindowShow(game_window.get_ready.handler, false)
+		WindowResetCommandList(game_window.get_ready.handler)
+		WindowShow(game_window.return_base.handler, false)
+		WindowResetCommandList(game_window.return_base.handler)
+		WindowShow(game_window.mission_complete.handler, false)
+		WindowResetCommandList(game_window.mission_complete.handler)
 	}
 
 	//-----------------------------------------
@@ -323,9 +344,9 @@ class	InGameUI extends	BaseUI
 		return _window
 	}
 
-	//----------------------------------------
+	//-------------------------------------------------------------------------------------
 	function	GameMessageWindowSetVisible(window_handler, flag = true, speed_scale = 1.0)
-	//----------------------------------------
+	//-------------------------------------------------------------------------------------
 	{
 		local	_win = game_window[window_handler]
 
@@ -333,7 +354,6 @@ class	InGameUI extends	BaseUI
 			return
 
 		print("InGameUI::GameMessageWindowSetVisible('" + window_handler + "') : flag = " + flag)
-
 
 		if (flag)
 		{
