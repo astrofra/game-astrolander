@@ -27,12 +27,12 @@ class	InGameUI extends	BaseUI
 	update_frequency		=	0
 
 	game_window				=	{
-		game_over_no_fuel	= { handler = 0, visible = false }
-		game_over_damage	= { handler = 0, visible = false }
-		game_over_time		= { handler = 0, visible = false }
-		get_ready			= { handler = 0, visible = false }
-		return_base			= { handler = 0, visible = false }
-		mission_complete	= { handler = 0, visible = false }
+		game_over_no_fuel	= { handler = 0, window = 0, visible = false }
+		game_over_damage	= { handler = 0, window = 0,  visible = false }
+		game_over_time		= { handler = 0, window = 0,  visible = false }
+		get_ready			= { handler = 0, window = 0,  visible = false }
+		return_base			= { handler = 0, window = 0,  visible = false }
+		mission_complete	= { handler = 0, window = 0,  visible = false }
 	}
 
 	pause_window			=	{
@@ -43,6 +43,51 @@ class	InGameUI extends	BaseUI
 	}
 
 	touch_feedback			=	0
+	
+	//----------------------------------
+	function	OnRenderContextChanged()
+	//----------------------------------
+	{
+		print("InGameUI::OnRenderContextChanged()")
+		
+		//	Hud
+		life_gauge[1].rebuild()
+		life_gauge[1].refresh()
+
+		fuel_gauge[1].rebuild()
+		fuel_gauge[1].refresh()
+
+		artifact_count[1].rebuild()
+		artifact_count[1].refresh()
+
+		room_name[1].rebuild()
+		room_name[1].refresh()
+		
+		stopwatch[1].rebuild()
+		stopwatch[1].refresh()
+		
+		//	In game Message
+		game_window.game_over_no_fuel.handler.rebuild()
+		game_window.game_over_damage.handler.rebuild()
+		game_window.game_over_time.handler.rebuild()
+		game_window.get_ready.handler.rebuild()
+		game_window.return_base.handler.rebuild()
+		game_window.mission_complete.handler.rebuild()
+		game_window.game_over_no_fuel.handler.refresh()
+		game_window.game_over_damage.handler.refresh()
+		game_window.game_over_time.handler.refresh()
+		game_window.get_ready.handler.refresh()
+		game_window.return_base.handler.refresh()
+		game_window.mission_complete.handler.refresh()
+
+		//	Pause menu
+		pause_window.pause_resume.text[1].rebuild()
+		pause_window.pause_resume.text[1].refresh()
+		pause_window.pause_restart.text[1].rebuild()
+		pause_window.pause_restart.text[1].refresh()
+		pause_window.pause_quit.text[1].rebuild()
+		pause_window.pause_quit.text[1].refresh()
+	}	
 	
 	//--------------
 	constructor(_scene) //_ui)
@@ -65,11 +110,22 @@ class	InGameUI extends	BaseUI
 
 		inventory_bitmaps = []
 		game_window.game_over_no_fuel.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_fuel)
+		game_window.game_over_no_fuel.window	= game_window.game_over_no_fuel.handler.window
+
 		game_window.game_over_damage.handler	= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.dead_by_damage)
+		game_window.game_over_damage.window		= game_window.game_over_damage.handler.window
+		
 		game_window.game_over_time.handler		= CreateGameMessageWindow(g_locale.game_over + "\n" + "~~Size(60)" + g_locale.no_time_left)
+		game_window.game_over_time.window		= game_window.game_over_time.handler.window
+		
 		game_window.get_ready.handler			= CreateGameMessageWindow(g_locale.get_ready)
+		game_window.get_ready.window			= game_window.get_ready.handler.window
+		
 		game_window.return_base.handler			= CreateGameMessageWindow(g_locale.return_base)
+		game_window.return_base.window			= game_window.return_base.handler.window
+		
 		game_window.mission_complete.handler	= CreateGameMessageWindow(g_locale.mission_complete)
+		game_window.mission_complete.window		= game_window.mission_complete.handler.window
 	}
 	
 	//-----------------------------
@@ -89,9 +145,9 @@ class	InGameUI extends	BaseUI
 		WindowSetParent(pause_window.pause_restart.button,pause_window.global_handler)
 		WindowSetParent(pause_window.pause_quit.button,pause_window.global_handler)
 
-		pause_window.pause_resume.text = CreateLabel(ui, g_locale.pause_resume_game, 0, 0, 50, 256, 128 - 10, g_ui_color_white , g_main_font_name, TextAlignCenter)
-		pause_window.pause_restart.text = CreateLabel(ui, g_locale.pause_restart_level, 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
-		pause_window.pause_quit.text = CreateLabel(ui, g_locale.pause_quit_game, 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		pause_window.pause_resume.text = LabelWrapper(ui, g_locale.pause_resume_game, 0, 0, 50, 256, 128 - 10, g_ui_color_white , g_main_font_name, TextAlignCenter)
+		pause_window.pause_restart.text = LabelWrapper(ui, g_locale.pause_restart_level, 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		pause_window.pause_quit.text = LabelWrapper(ui, g_locale.pause_quit_game, 0, 0, 50, 256,  128 - 10, g_ui_color_white, g_main_font_name, TextAlignCenter)
 
 		WindowSetParent(pause_window.pause_resume.text[0], pause_window.pause_resume.button)
 		WindowSetParent(pause_window.pause_restart.text[0], pause_window.pause_restart.button)
@@ -102,7 +158,15 @@ class	InGameUI extends	BaseUI
 		WindowSetZOrder(pause_window.pause_quit.text[0], -0.99)
 
 		WindowSetEventHandlerWithContext(pause_window.pause_resume.button, EventCursorDown, this, InGameUI.PauseResumeGame)
-		WidgetSetEventHandlerWithContext(pause_window.pause_resume.text[1], EventCursorDown, this, InGameUI.PauseResumeGame)
+		WindowSetEventHandlerWithContext(pause_window.pause_resume.text[0], EventCursorDown, this, InGameUI.PauseResumeGame)
+
+		WindowSetEventHandlerWithContext(pause_window.pause_restart.button, EventCursorDown, this, InGameUI.PauseRestartGame)
+		WindowSetEventHandlerWithContext(pause_window.pause_restart.text[0], EventCursorDown, this, InGameUI.PauseRestartGame)
+
+
+		WindowSetEventHandlerWithContext(pause_window.pause_quit.button, EventCursorDown, this, InGameUI.PauseQuitGame)
+		WindowSetEventHandlerWithContext(pause_window.pause_quit.text[0], EventCursorDown, this, InGameUI.PauseQuitGame)
+
 
 		WindowShow(pause_window.global_handler, false)
 	}
@@ -114,6 +178,26 @@ class	InGameUI extends	BaseUI
 		print("InGameUI::PauseResumeGame()")
 		PlaySfxUIResume()
 		SceneGetScriptInstance(scene).ResumeGame()
+		ButtonFeedback(table.window)
+	}
+
+	//--------------------------------------
+	function	PauseRestartGame(event, table)
+	//--------------------------------------
+	{
+		print("InGameUI::PauseRestartGame()")
+		PlaySfxUIResume()
+		SceneGetScriptInstance(scene).RestartGame(scene)
+		ButtonFeedback(table.window)
+	}
+
+	//--------------------------------------
+	function	PauseQuitGame(event, table)
+	//--------------------------------------
+	{
+		print("InGameUI::PauseQuitGame()")
+		PlaySfxUIResume()
+		SceneGetScriptInstance(scene).ResumeAndExitGame(scene)
 		ButtonFeedback(table.window)
 	}
 
@@ -198,23 +282,26 @@ class	InGameUI extends	BaseUI
 				WindowSetPivot(_button_sprite, 64, 64)
 				WindowSetScale(_button_sprite, 0.7, 0.7)
 				WindowSetPosition(_button_sprite, -60, 50)
-				button_help = CreateLabel(ui, g_locale.hud_help, 0, 0, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
+				button_help = LabelWrapper(ui, g_locale.hud_help, 0, 0, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
 				WindowSetParent(button_help[0], _button_sprite)
 				//WindowSetOpacity(_button_sprite, 0.35)
 				WindowSetEventHandlerWithContext(_button_sprite, EventCursorDown, this, InGameUI.OnGameUIHelp)
-				WidgetSetEventHandlerWithContext(button_help[1], EventCursorDown, this, InGameUI.OnGameUIHelp)
+				WindowSetEventHandlerWithContext(button_help[0], EventCursorDown, this, InGameUI.OnGameUIHelp)
 
+				if (EngineGetToolMode(g_engine) == NoTool)
+					return
 
 				local	_button_sprite = UIAddSprite(ui, -1, _button_texture, 0, 0, 128, 128)
 				WindowSetPivot(_button_sprite, 64, 64)
 				WindowSetScale(_button_sprite, 0.7, 0.7)
 				WindowSetPosition(_button_sprite, -60 - (50 * 2.0), 50)
-				button_skip = CreateLabel(ui, g_locale.hud_skip, 0, -10, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
+				button_skip = LabelWrapper(ui, g_locale.hud_skip, 0, -10, 100, 128, 128, g_ui_color_white, g_main_font_name, TextAlignCenter)
 				WindowSetParent(button_skip[0], _button_sprite)
 				//WindowSetOpacity(_button_sprite, 0.35)
 				WindowSetEventHandlerWithContext(_button_sprite, EventCursorDown, this, InGameUI.OnGameUISkipLevel)
-				WidgetSetEventHandlerWithContext(button_help[1], EventCursorDown, this, InGameUI.OnGameUIHelp)
+				WindowSetEventHandlerWithContext(button_skip[0], EventCursorDown, this, InGameUI.OnGameUISkipLevel)
 				WindowSetZOrder(button_skip[0], -0.9)
+
 	}
 
 	//------------------------------------
@@ -222,28 +309,43 @@ class	InGameUI extends	BaseUI
 	//------------------------------------
 	{
 		print("InGameUI::OnGameUIHelp()")
-		PlaySfxUIPause()
 		ButtonFeedback(table.window)
-		HideAllMessages()
-		SceneGetScriptInstance(scene).PauseGame() //ExitGame(scene)
+		UIGamePause()
+	}
+	
+	//-----------------------
+	function	UIGamePause()
+	//-----------------------
+	{
+		if (!SceneGetScriptInstance(scene).paused)
+		{
+			PlaySfxUIPause()
+			HideAllMessages()
+			SceneGetScriptInstance(scene).PauseGame()
+		}
+		else
+		{
+			SceneGetScriptInstance(scene).ResumeGame()
+			PlaySfxUIResume()
+		}
 	}
 
 	//---------------------------
 	function	HideAllMessages()
 	//---------------------------
 	{
-		WindowShow(game_window.game_over_no_fuel.handler, false)
-		WindowResetCommandList(game_window.game_over_no_fuel.handler)
-		WindowShow(game_window.game_over_damage.handler, false)
-		WindowResetCommandList(game_window.game_over_damage.handler)
-		WindowShow(game_window.game_over_time.handler, false)
-		WindowResetCommandList(game_window.game_over_time.handler)
-		WindowShow(game_window.get_ready.handler, false)
-		WindowResetCommandList(game_window.get_ready.handler)
-		WindowShow(game_window.return_base.handler, false)
-		WindowResetCommandList(game_window.return_base.handler)
-		WindowShow(game_window.mission_complete.handler, false)
-		WindowResetCommandList(game_window.mission_complete.handler)
+		WindowShow(game_window.game_over_no_fuel.window, false)
+		WindowResetCommandList(game_window.game_over_no_fuel.window)
+		WindowShow(game_window.game_over_damage.window, false)
+		WindowResetCommandList(game_window.game_over_damage.window)
+		WindowShow(game_window.game_over_time.window, false)
+		WindowResetCommandList(game_window.game_over_time.window)
+		WindowShow(game_window.get_ready.window, false)
+		WindowResetCommandList(game_window.get_ready.window)
+		WindowShow(game_window.return_base.window, false)
+		WindowResetCommandList(game_window.return_base.window)
+		WindowShow(game_window.mission_complete.window, false)
+		WindowResetCommandList(game_window.mission_complete.window)
 	}
 
 	//-----------------------------------------
@@ -321,27 +423,17 @@ class	InGameUI extends	BaseUI
 	function	CreateGameMessageWindow(_text)
 	//----------------------------------------
 	{
-		local	_window, _widget
-		//	Start menu window
-		_window = UIAddWindow(ui, -1, g_screen_width / 2.0, message_origin_y, 800.0, 300.0)
-//		WindowSetStyle(_window, StyleMovable)
-		WindowSetTitle(_window, "")
-		WindowCenterPivot(_window)		
-		WindowSetCommandList(_window, "hide;")
-		
-		//	Start menu widget
-		local	hsizer = UIAddHorizontalSizerWidget(ui, -1);
-		WindowSetBaseWidget(_window, hsizer);
-		
-		//local	_title_name = "Game Over"
-		_widget = UIAddStaticTextWidget(ui, -1, _text, g_main_font_name)
-		TextSetParameters(_widget, { size = 80, align = "center", color = 0x000000ff })
-		SizerAddWidget(hsizer, _widget)
 
-		WindowSetZOrder(_window, -1.0)
+		local	_message = Label(ui, 800, 300, g_screen_width / 2.0, message_origin_y, true, true)
+		_message.label = _text
+		_message.font = g_main_font_name
+		_message.label_color = RGBAToHex(g_ui_color_black)
+		_message.font_size = 80
+		_message.refresh()
+		WindowSetZOrder(_message.window, -0.925)
+		WindowShow(_message.window, false)
 
-		//	window_game_over = _window
-		return _window
+		return _message
 	}
 
 	//-------------------------------------------------------------------------------------
@@ -358,14 +450,14 @@ class	InGameUI extends	BaseUI
 		if (flag)
 		{
 			ShowMessageBackground()
-			WindowResetCommandList(_win.handler)
-			WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.25 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + " ;")
+			WindowResetCommandList(_win.window)
+			WindowSetCommandList(_win.window, "toalpha 0,0;show;toalpha " + (0.25 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + " ;")
 		}
 		else
 		{
 			HideMessageBackground()
-			WindowResetCommandList(_win.handler)
-			WindowSetCommandList(_win.handler, "toalpha 0,1;show;toalpha " + (0.25 / speed_scale * g_clock_scale).tostring() + ",0;hide;")
+			WindowResetCommandList(_win.window)
+			WindowSetCommandList(_win.window, "toalpha 0,1;show;toalpha " + (0.25 / speed_scale * g_clock_scale).tostring() + ",0;hide;")
 		}
 
 		_win.visible = flag
@@ -380,7 +472,7 @@ class	InGameUI extends	BaseUI
 			return
 
 		ShowMessageBackgroundOnce()
-		WindowSetCommandList(_win.handler, "toalpha 0,0;show;toalpha " + (0.25 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + ";nop " + (5 * g_clock_scale).tostring() + ";toalpha 0.25,0;")
+		WindowSetCommandList(_win.window, "toalpha 0,0;show;toalpha " + (0.25 * g_clock_scale).tostring() + "," + g_clock_scale.tostring() + ";nop " + (5 * g_clock_scale).tostring() + ";toalpha 0.25,0;")
 
 		_win.visible = false
 	}
@@ -416,7 +508,9 @@ class	InGameUI extends	BaseUI
 	{
 		if (++update_frequency > 5)
 		{
-			TextSetText(stopwatch[1], TimeToString(t))
+			//TextSetText(stopwatch[1], TimeToString(t))
+			stopwatch[1].label = TimeToString(t)
+			stopwatch[1].refresh()
 			update_frequency = 0
 		}
 
@@ -426,32 +520,60 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	function	UpdateLifeGauge(v)
 	//----------------------------------------
-	{		TextSetText(life_gauge[1], CreateGaugeBar(v))	}
+	{		
+		//TextSetText(life_gauge[1], CreateGaugeBar(v))	
+		life_gauge[1].label = CreateGaugeBar(v)
+		life_gauge[1].refresh()
+	}
 
 	//----------------------------------------
 	function	UpdateFuelGauge(v)
 	//----------------------------------------
-	{		TextSetText(fuel_gauge[1], CreateGaugeBar(v))	}
+	{	
+		//TextSetText(fuel_gauge[1], CreateGaugeBar(v))	
+		fuel_gauge[1].label = CreateGaugeBar(v)
+		fuel_gauge[1].refresh()
+	}
 
 	//----------------------------------------
 	function	UpdateRoomName(name)
 	//----------------------------------------
-	{		TextSetText(room_name[1], name)	}
+	{		
+		//TextSetText(room_name[1], name)	
+		room_name[1].label = name
+		room_name[1].refresh()
+	}
 
 	//----------------------------------------
 	function	UpdateArtifactCounter(c)
 	//----------------------------------------
-	{		TextSetText(artifact_count[1], c)	}
+	{		
+		//TextSetText(artifact_count[1], c)	
+		artifact_count[1].label = c
+		artifact_count[1].refresh()
+	}
 
 	//----------------------------------------
-	function	CreateGaugeBar(n)
+	function	CreateGaugeBar(n, shadow_mode = false)
 	//----------------------------------------
 	{
-		n = (n.tofloat() / 2.0).tointeger()
+		n = n.tointeger()
+
 		local i, str
 		str = ""
 		for(i = 0; i < n; i++)
 			str += "|"
+
+		if (!shadow_mode)
+		{
+			if (n < 15)
+				str = "~~Color(237, 53, 28, 255)" + str
+			else
+			if (n < 30)
+				str = "~~Color(255, 147, 6, 255)" + str
+			else
+				str = "~~Color(141, 198, 63, 255)" + str
+		}
 
 		return str
 	}
@@ -461,7 +583,7 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateLevelName()")
-		local	_name = CreateLabel(ui, "Level Name", 0, g_screen_height - 64, 32, 1024)
+		local	_name = LabelWrapper(ui, "Level Name", 0, g_screen_height - 64, 32, 1024)
 		return _name
 	}
 
@@ -470,8 +592,8 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateStopwatch()")
-		CreateLabel(ui, g_locale.hud_stopwatch, g_screen_width - 400, 0, 32, 400)
-		local	_stopwatch = CreateLabel(ui, TimeToString(0.0), g_screen_width - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
+		LabelWrapper(ui, g_locale.hud_stopwatch, g_screen_width - 400 - 16, 0, 32, 400)
+		local	_stopwatch = LabelWrapper(ui, TimeToString(0.0), g_screen_width - 400 + 130, 0, 32, 400, 64, g_hud_font_color, "profont")
 		return _stopwatch
 	}
 
@@ -480,8 +602,8 @@ class	InGameUI extends	BaseUI
 	//----------------------------------------
 	{
 		print("InGameUI::CreateArtifactCounter()")
-		CreateLabel(ui, g_locale.hud_artifacts, g_screen_width - 400, 40, 32, 380)// g_screen_height - 64, 32, 380)
-		local	_counter = CreateLabel(ui, "0/0", g_screen_width - 400 + 280,  40) //g_screen_height - 64)
+		LabelWrapper(ui, g_locale.hud_artifacts, g_screen_width - 400 - 16, 40, 32, 380)// g_screen_height - 64, 32, 380)
+		local	_counter = LabelWrapper(ui, "0/0", g_screen_width - 400 + 280,  40) //g_screen_height - 64)
 		return _counter
 	}
 	//----------------------------------------
@@ -490,9 +612,15 @@ class	InGameUI extends	BaseUI
 	{
 		print("InGameUI::CreateLifeGauge()")
 
-		CreateLabel(ui, g_locale.hud_damage, 0, 0) //310 + 0, 0)
-		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100), 200, 0, 32, 680)
-		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 200, 0, 32, 680)
+		LabelWrapper(ui, g_locale.hud_damage, 0, 0) //310 + 0, 0)
+		local	_gauge_rule = LabelWrapper(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100, true), 160, 0, 32, 680)
+		_gauge_rule[1].font_tracking = -5.0
+		_gauge_rule[1].refresh()
+
+		local	_gauge	= LabelWrapper(ui, CreateGaugeBar(100), 160, 0, 32, 680)
+		_gauge[1].font_tracking = -5.0
+		_gauge[1].refresh()
+
 		return _gauge
 	}
 
@@ -502,9 +630,15 @@ class	InGameUI extends	BaseUI
 	{
 		print("InGameUI::CreateFuelGauge()")
 
-		CreateLabel(ui, g_locale.hud_fuel, 0, 40)
-		CreateLabel(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100),  200, 40, 32, 680)
-		local	_gauge	= CreateLabel(ui, CreateGaugeBar(100), 200, 40, 32, 680)
+		LabelWrapper(ui, g_locale.hud_fuel, 0, 40)
+		local	_gauge_rule = LabelWrapper(ui, "~~Color(0,0,0,64)" + CreateGaugeBar(100, true),  160, 40, 32, 680)
+		_gauge_rule[1].font_tracking = -5.0
+		_gauge_rule[1].refresh()
+
+		local	_gauge	= LabelWrapper(ui, CreateGaugeBar(100), 160, 40, 32, 680)
+		_gauge[1].font_tracking = -5.0
+		_gauge[1].refresh()
+
 		return _gauge
 	}
 }

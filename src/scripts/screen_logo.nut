@@ -50,7 +50,7 @@ class	LogoScreen
 		WindowSetOpacity(logo_flash, 1.0)
 		WindowSetParent(logo_flash, logo_handler)
 
-		WindowSetCommandList(logo_handler, "nop 0.5;toposition 0.25,0,8;toposition 0.25,0,10;")
+		WindowSetCommandList(logo_handler, "nop 0.125;toposition 0.25,0,-4;toposition 0.25,0,-10;")
 		WindowSetCommandList(logo_flash, "toalpha 0,1;toalpha 2.0,0;")
 
 		sfx_channel = MixerSoundStart(g_mixer, EngineLoadSound(g_engine, "audio/sfx/sfx_startup_sound.wav"))

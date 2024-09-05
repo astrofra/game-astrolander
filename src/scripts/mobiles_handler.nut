@@ -16,6 +16,7 @@ class	MeshSelectBasedOnPlatform
 		scene = ItemGetScene(item)
 		parent_item = ItemGetParent(item)
 		mobile_asset_item = item
+
 		try
 		{
 			pc_asset_item = ItemGetChild(parent_item, ItemGetName(mobile_asset_item) + "_pc")
@@ -99,7 +100,9 @@ class	MobileDeadlySlime
 	}
 }
 
+//--------------------
 class	MobileLazerGun
+//--------------------
 {
 	scene				=	0
 	parent				=	0
@@ -212,7 +215,9 @@ class	MobileLazerGun
 	}
 }
 
-class	SeaPlantOscillation
+//--------------------------------------------
+class	SeaPlantOscillation extends MobileBase
+//--------------------------------------------
 {
 /*<
 	<Parameter =
@@ -231,6 +236,8 @@ class	SeaPlantOscillation
 
 		function	OnSetup(item)
 		{
+			base.OnSetup(item)
+
 			item_scale = []
 			item_list = ItemGetChildList(item)
 			foreach(_item in item_list)
@@ -240,8 +247,18 @@ class	SeaPlantOscillation
 			freq *= Rand(0.95, 1.05)
 		}
 
+		function	OnSetupDone(item)
+		{
+			base.OnSetupDone(item)
+		}
+
 		function	OnUpdate(item)
 		{
+			base.OnUpdate(item)
+
+			if (is_culled)
+				return
+
 			angle += g_dt_frame * freq * DegreeToRadian(360.0)
 
 			foreach(_i, _item in item_list)
@@ -254,7 +271,9 @@ class	SeaPlantOscillation
 
 }
 
+//--------------------
 class	MobileElevator
+//--------------------
 {
 /*<
 	<Parameter =
@@ -425,6 +444,13 @@ class	MobileJawGate	extends	MobileBase
 	pos_closed				=	0
 	strength				=	10.0
 
+	trigger_item			=	0
+	player_item				=	0
+
+	item_collision_mask		=	0
+	item_self_mask			=	0
+
+
 	timer_table				=	0
 
 	//--------------------------------------------------
@@ -470,9 +496,8 @@ class	MobileJawGate	extends	MobileBase
 		dir.Print("Gate Direction")
 		pos_closed = ItemGetPosition(item)
 
-		SceneSetGravity(scene, g_gravity);
-		ItemPhysicSetLinearFactor(item, dir)
-		ItemPhysicSetAngularFactor(item, Vector(0,0,0))
+		item_collision_mask = 4
+		item_self_mask = 5
 	}
 
 	function	OnSetupDone(item)
@@ -486,36 +511,43 @@ class	MobileJawGate	extends	MobileBase
 	{
 		base.OnUpdate(item)
 
-		if (is_culled)
+		if (culling_changed)
 		{
-			ItemSetPhysicMode(item, PhysicModeNone)
-//			ItemSetPosition(item, pos_closed)
-			ItemSleep(item)
-		}
-		else
-		{
-			ItemSetPhysicMode(item, PhysicModeDynamic)
-			ItemWake(item)
-
-			if (!WaitForTimer("JawGateOpen", Sec(4.0)))
+			if (is_culled)
 			{
-				ResetTimer("JawGateOpen")
-				open = !open
+				//ItemSetPhysicMode(item, PhysicModeNone)
+				ItemSetSelfMask(item, 0)
+				ItemSetCollisionMask(item, 0)
+			}
+			else
+			{
+				//ItemSetPhysicMode(item, PhysicModeKinematic)
+				ItemSetSelfMask(item, item_self_mask)
+				ItemSetCollisionMask(item, item_collision_mask)
 			}
 		}
+
+		if (!WaitForTimer("JawGateOpen", Sec(4.0)))
+		{
+			ResetTimer("JawGateOpen")
+			open = !open
+		}
+
+		local	_pos = ItemGetPosition(item)
+		if (open)
+			_pos = _pos.Lerp(0.95, pos_closed + Vector(0,3 * (is_gate_top?1.0:-1.0),0))
+		else
+			_pos = _pos.Lerp(0.95, pos_closed)
+
+		ItemSetPosition(item, _pos)
 	}
 
-	//--------------------------------
-	function	OnPhysicStep(item, dt)
-	//--------------------------------
+	function	TestCollisionWithPlayer(item)
 	{
-		if (is_culled)
-			return
-
-		ItemApplyLinearForce(item, dir.Scale((open?1.0:-1.0) * (is_gate_top?1.0:-1.0) * ItemGetMass(item) * strength))
-		ItemApplyLinearForce(item, g_gravity.Scale(-1.0 * ItemGetMass(item)))
+		if (TriggerTestItem(trigger_item, player_item))
+		{
+		}
 	}
-
 }
 
 /*!
@@ -537,6 +569,10 @@ class	MobileRotary	extends MobileBase
 	target_angular_vel		=	0.0
 	strength				=	1.0
 	is_physic				=	true
+	post_collision_brake	=	0.0
+
+	item_collision_mask		=	0
+	item_self_mask			=	0
 
 	/*!
 		@short	OnUpdate
@@ -547,47 +583,34 @@ class	MobileRotary	extends MobileBase
 	{
 		base.OnUpdate(item)
 
-		if (is_physic)
-		{
-
-			if (!culling_changed)
-			{
-				if (!is_culled)
-					ItemWake(item)		
-				return
-			}
-
-			if (is_culled)
-			{
-				ItemSetAngularDamping(item, 0.5)
-//				ItemSetPhysicMode(item, PhysicModeNone)
-//				ItemSleep(item)
-			}
-			else
-			{
-				ItemSetPhysicMode(item, PhysicModeDynamic)
-				ItemSetAngularDamping(item, 1.0)
-				ItemSetAngularVelocity(item, Vector(0,0,target_angular_vel).Scale(0.1))
-				ItemWake(item)
-			}
-
-			return
-		}
-		else
-		{
+		post_collision_brake -= (g_dt_frame * 0.25)
+		post_collision_brake = Clamp(post_collision_brake, 0.0, 1.0)
 
 			if (culling_changed)
 			{
 				if (is_culled)
-					ItemSetPhysicMode(item, PhysicModeNone)
+				{
+					//ItemSetPhysicMode(item, PhysicModeNone)
+					ItemSetSelfMask(item, 0)
+					ItemSetCollisionMask(item, 0)
+				}
 				else
-					ItemSetPhysicMode(item, PhysicModeKinematic)
+				{
+					//ItemSetPhysicMode(item, PhysicModeKinematic)
+					ItemSetSelfMask(item, item_self_mask)
+					ItemSetCollisionMask(item, item_collision_mask)
+				}
 			}
-		}
 
-		local	_rot = ItemGetRotation(item)
-		_rot.z += target_RPM * g_dt_frame * 2 * PI
-		ItemSetRotation(item, _rot)
+
+		if (is_physic)
+			ItemWake(item)
+		else
+		{
+			local	_rot = ItemGetRotation(item)
+			_rot.z += target_RPM * g_dt_frame * PI * (1.0 - post_collision_brake)
+			ItemSetRotation(item, _rot)
+		}
 	}
 
 	function	OnPhysicStep(item, dt)
@@ -595,13 +618,16 @@ class	MobileRotary	extends MobileBase
 		if (!is_physic)
 			return
 
-		if (is_culled)
-			return
-
 		local	_angular_vel = ItemGetAngularVelocity(item).z
 		local	_torque	= Vector(0,0,target_angular_vel - _angular_vel)
-		_torque = _torque.Scale(strength * ItemGetMass(item))
+		_torque = _torque.Scale(strength * ItemGetMass(item) * (1.0 - post_collision_brake))
 		ItemApplyTorque(item, _torque)
+	}
+
+	function	OnCollision(item, with_item)
+	{
+		post_collision_brake += (g_dt_frame * 0.25)
+		post_collision_brake = Clamp(post_collision_brake, 0.0, 1.0)
 	}
 
 	function	OnSetupDone(item)
@@ -612,6 +638,10 @@ class	MobileRotary	extends MobileBase
 	function	OnSetup(item)
 	{
 		base.OnSetup(item)
+
+		post_collision_brake	=	0.0
+		item_collision_mask = 4
+		item_self_mask = 5
 
 		if (is_physic)
 			ItemSetPhysicMode(item, PhysicModeDynamic)

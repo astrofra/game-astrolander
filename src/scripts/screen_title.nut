@@ -18,41 +18,84 @@ class	Title
 
 	state			=	"running"
 
-	/*
-	*/
-	function	OnUpdate(scene)
+	//------------------------------
+	function	NicknameChanged(str)
+	//------------------------------
 	{
-		title_ui.UpdateCursor()
+		print("Title::NicknameChanged() str = " + str)
+		ProjectGetScriptInstance(g_project).player_data.nickname = str
+		GlobalSaveGame()
 	}
 
+	//-------------------------
+	function	OnUpdate(scene)
+	//-------------------------
+	{
+		title_ui.Update()
+	}
+
+	//---------------------
 	function	StartGame()
+	//---------------------
 	{
 			print("Title::StartGame()")
-//			MixerChannelUnlock(g_mixer, channel_music)
-//			MixerChannelUnlockAll(g_mixer)
 			MixerChannelStop(g_mixer, channel_music)
-//			MixerChannelStopAll(g_mixer)
 			ProjectGetScriptInstance(g_project).ProjectStartGame()
 	}
 
-	/*
-	*/
+	//---------------------------
+	function	GotoLeaderboard()
+	//---------------------------
+	{
+			print("Title::GotoLeaderboard()")
+			MixerChannelStop(g_mixer, channel_music)
+			ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_leaderboard.nms")
+	}
+
+	//------------------------
 	function	OnSetup(scene)
+	//------------------------
 	{
 		print("Title::OnSetup()")
 		ui = SceneGetUI(scene)
 		UICommonSetup(ui)
 		title_ui = TitleUI(ui)
+		title_ui.nickname_textfield.RegisterDefocusCallback(this, "NicknameChanged")
+		title_ui.nickname_textfield.SetText(ProjectGetScriptInstance(g_project).player_data.nickname)
 	}
 
+	//----------------------------
 	function	OnSetupDone(scene)
+	//----------------------------
 	{
 		print("Title::OnSetupDone()")
 
-//		MixerChannelStopAll(g_mixer)
-//		MixerChannelUnlockAll(g_mixer)
 		channel_music = MixerStreamStart(g_mixer, "audio/music/chill_main_menu_music.ogg")
 		MixerChannelSetGain(g_mixer, channel_music, 1.0)
 		MixerChannelSetLoopMode(g_mixer, channel_music, LoopRepeat)
+	}
+	
+	//-----------------
+	//	OS Interactions
+	//-----------------
+	
+	//----------------------------------
+	function	OnRenderContextChanged()
+	//----------------------------------
+	{
+		title_ui.OnRenderContextChanged()
+	}
+	
+	//-----------------------------------------
+	function	OnHardwareButtonPressed(button)
+	//-----------------------------------------
+	{
+		switch (button)
+		{
+			case	HardwareButtonBack:
+				print("ScreenTitle::OnHardwareButtonPressed(HardwareButtonBack)")
+				ProjectEnd(g_project)
+				break
+		}
 	}
 }

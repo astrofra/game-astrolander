@@ -116,11 +116,11 @@
 							>
 							<Parm=
 								<Id="strength">
-								<Value=3.000000>
+								<Value=50.000000>
 							>
 							<Parm=
 								<Id="is_physic">
-								<Value=False>
+								<Value=True>
 							>
 						>
 					>

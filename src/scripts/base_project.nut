@@ -27,7 +27,7 @@ class	BaseProjectHandler
 		{
 			dispatch = LeaveCurrentScene
 			if (scene != 0)
-				UISetCommandList(SceneGetUI(ProjectSceneGetInstance(scene)), "globalfade 0.5, 1;")
+				UISetCommandList(SceneGetUI(ProjectSceneGetInstance(scene)), "globalfade 0.25, 1;")
 		}
 
 		if (black_screen_scene != 0)
@@ -68,7 +68,7 @@ class	BaseProjectHandler
 			print("ProjectHandler::LeaveCurrentScene() Loading scene '" + scene_filename + "'.")
 			scene = ProjectInstantiateScene(project, scene_filename)
 			ProjectAddLayer(project, scene, 0.5)
-			UISetCommandList(SceneGetUI(ProjectSceneGetInstance(scene)), "globalfade 0,1; nop 0.5; globalfade 0.5, 0;")
+			UISetCommandList(SceneGetUI(ProjectSceneGetInstance(scene)), "globalfade 0,1; nop 0.1; globalfade 0.25, 0;")
 		}
 		else
 			error("ProjectHandler::LeaveCurrentScene() Cannot find scene '" + scene_filename + "'.")

@@ -1,5 +1,189 @@
 //	Utils.nut
+
+guid_table <- []
+
+//------------------------------------
+function	GenerateEncodedTimeStamp()
+//------------------------------------
+{
+	local	base_time_stamp = g_clock
+
+	while(base_time_stamp > 999000)
+		base_time_stamp -= (ProbabilityOccurence(70)?(10000 + Irand(1000,10000)):(1000 + Irand(100,1000)))
+
+	base_time_stamp = base_time_stamp.tointeger()
+
+	local	base_time_stamp_str = base_time_stamp.tostring()
+	local	guid = ""
+
+	for(local n = 0; n < base_time_stamp_str.len(); n++)
+	{
+		local c = base_time_stamp_str.slice(n, n + 1)
+		c = c.tointeger()
+		c += (Irand(1,8) * 1000)
+		if (ProbabilityOccurence(70))
+			c += (Irand(1,9) * 100)
+		if (ProbabilityOccurence(70))
+			c += (Irand(1,9) * 10)
+		if (ProbabilityOccurence(70))
+			c -= Irand(1,9)
+
+		c = Abs(c)
+
+		guid += c.tostring()
+		if (n < (base_time_stamp_str.len() - 1))
+			guid += "-"
+	}
+/*
+	foreach(_guid in guid_table)
+		if (_guid == guid)
+			print("found duplicate !!! " + guid + " = " + _guid)
+
+	guid_table.append(guid)
+*/
+
+	return guid	
+}
+
+
+//---------------------------
+// * Converts an RGB color value to HSL. Conversion formula
+// * adapted from http://en.wikipedia.org/wiki/HSL_color_space.
+// * Assumes r, g, and b are contained in the set [0, 255] and
+// * returns h, s, and l in the set [0, 1].
+function	RGBToHSL(rgb_color)
+//---------------------------
+{
+		local	r,g,b
+		r = rgb_color.x.tofloat()
+		g = rgb_color.y.tofloat()
+		b = rgb_color.z.tofloat()
 		
+    r /= 255.0
+    g /= 255.0
+    b /= 255.0
+    
+    local	max = Max(Max(r, g), b)
+    local	min = Min(Min(r, g), b)
+    local h, s, l = (max + min) / 2.0
+
+    if(max == min)
+    {
+        h = s = 0.0 // achromatic
+    }
+    else
+    {
+        local	d = max - min
+        s = l > 0.5 ? d / (2.0 - max - min) : d / (max + min)
+/*
+        switch(max){
+            case r: h = (g - b) / d + (g < b ? 6.0 : 0)
+            break
+            case g: h = (b - r) / d + 2.0
+            break
+            case b: h = (r - g) / d + 4.0
+            break
+        }
+*/
+		if (max == r)
+			h = (g - b) / d + (g < b ? 6.0 : 0)
+		else
+		if (max == g)
+			h = (b - r) / d + 2.0
+		else
+			h = (r - g) / d + 4.0
+
+        h /= 6.0;
+    }
+
+    return Vector(h, s, l)
+}
+
+
+//-----------------------
+function hue2rgb(p, q, t)
+//-----------------------
+{
+    if(t < 0.0) t += 1.0
+    if(t > 1.0) t -= 1.0
+    if(t < 1.0 / 6.0) return p + (q - p) * 6.0 * t
+    if(t < 1.0 / 2.0) return q
+    if(t < 2.0 / 3.0) return p + (q - p) * (2.0 / 3.0 - t) * 6.0
+    return p
+}
+
+//-------------------------
+// * Converts an HSL color value to RGB. Conversion formula
+// * adapted from http://en.wikipedia.org/wiki/HSL_color_space.
+// * Assumes h, s, and l are contained in the set [0, 1] and
+// * returns r, g, and b in the set [0, 255].
+function HSLToRGB(hsl_color)
+//-------------------------
+{
+    local r, g, b, h, s, l
+	h = hsl_color.x
+	s = hsl_color.y
+	l = hsl_color.z
+
+    if(s == 0)
+    {
+        r = g = b = l
+    }
+    else
+    {
+        local	q = (l < 0.5) ? (l * (1.0 + s)) : (l + s - (l * s))
+        local	p = 2.0 * l - q
+        r = hue2rgb(p, q, h + (1.0 / 3.0))
+        g = hue2rgb(p, q, h)
+        b = hue2rgb(p, q, h - (1.0 / 3.0))
+    }
+    
+    return Vector(r * 255.0, g * 255.0, b * 255.0, 255)
+}
+
+//------------------------------------------------------------------
+function	RGBColorBlend(color_A, color_B, k, HSL_blend_mode = false)
+//------------------------------------------------------------------
+{
+	k = Clamp(k, 0.0, 1.0)
+	local	_color, hsl_color_A, hsl_color_B, _hsl_blend
+
+	if (HSL_blend_mode)
+	{
+		hsl_color_A = RGBToHSL(color_A)
+		hsl_color_B = RGBToHSL(color_B)
+		_hsl_blend = Vector(0,0,0)
+		_hsl_blend.x = Lerp(k, hsl_color_A.x, hsl_color_B.x)
+		_hsl_blend.y = Lerp(k, hsl_color_A.y, hsl_color_B.y)
+		_hsl_blend.z = Lerp(k, hsl_color_A.z, hsl_color_B.z)
+		_color =	HSLToRGB(_hsl_blend)
+	}
+	else
+		_color = color_B.Lerp(k, color_A)
+
+	return _color
+}
+
+function	RGBAToTag(_rgba)
+{
+	return ("~~Color(" + _rgba.x + "," + _rgba.y + "," + _rgba.z + "," + _rgba.w + ")")
+}
+	
+//--------------------------	
+function	RGBAToHex(_rgba)
+//--------------------------	
+{
+//	_rgba.Print("RGBAToHex()")
+
+	local	_hex = 0
+	_hex = _hex | _rgba.w.tointeger()
+	_hex = _hex | (_rgba.z.tointeger() << 8)
+	_hex = _hex | (_rgba.y.tointeger() << 16)
+	_hex = _hex | (_rgba.x.tointeger() << 24)
+
+	return _hex	
+}
+
 //-------------------------------------------------
 function	LegacySceneFindItem(_scene, _item_name)
 //-------------------------------------------------
@@ -72,9 +256,9 @@ function	ColorIsEqualToColor(ca, cb)
 	return true
 }
 
-//-----------------------------
+//-------------------------------------------
 function	ProbabilityOccurence(prob_amount)
-//-----------------------------
+//-------------------------------------------
 {
 	if (prob_amount >= 100)
 		return true

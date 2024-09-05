@@ -56,12 +56,6 @@
 				<MotionPlayer=
 					<Motions>
 				>
-				<ScriptedObject=
-					<ScriptUnit=
-						<Script="scripts/mobiles_handler.nut">
-						<Class="MeshSelectBasedOnPlatform">
-					>
-				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -246,60 +240,10 @@
 				>
 			>
 		>
-		<MObject=
-			<MItem=
-				<Id="tree_0_pc">
-				<UId=5>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=-1.175000>
-					>
-					<Rotation=
-						<X=0.000000>
-						<Y=1.570796>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=2.500000>
-						<Y=2.500000>
-						<Z=2.500000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/tree_0.nmg">
-			>
-		>
 		<MLight=
 			<MItem=
 				<Id="New Light">
-				<UId=3>
+				<UId=4>
 				<Helper>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -344,7 +288,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=4>
+				<UId=5>
 				<Active>
 				<Helper>
 				<Priority=0.500000>

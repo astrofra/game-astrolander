@@ -1,6 +1,58 @@
 //	Save
 
+//--------------------------
+function	GlobalSaveGame()
+//--------------------------
+{
+	local	_game = ProjectGetScriptInstance(g_project)
+	_game.save_game.SavePlayerData(_game.player_data)
+}
+
+//--------------------------
+function	GlobalLoadGame()
+//--------------------------
+{
+	local	_game = ProjectGetScriptInstance(g_project)
+	_game.player_data = _game.save_game.LoadPlayerData(_game.player_data)
+}
+
+//-------------------------------
+function	GlobalSetPlayerGuid()
+//-------------------------------
+{
+	local	_game = ProjectGetScriptInstance(g_project)
+	//	Set Player's GUID (if not already node)
+	if (_game.player_data.guid == "")
+		_game.player_data.guid = GenerateEncodedTimeStamp()
+}
+
+//-------------------------------------
+function	GlobalCalculateTotalScore()
+//-------------------------------------
+{
+	local	_total_score = 0
+	local	_player_data = ProjectGetScriptInstance(g_project).player_data
+	local	_level_index = 0, _level_key
+
+	while(_level_index < 1024)
+	{
+		_level_key = "level_" + _level_index.tostring()
+		if (_level_key in _player_data)
+		{
+			local	_level_data = _player_data[_level_key]
+			_total_score += _level_data.score
+		}
+		else
+			break
+		_level_index++
+	}
+
+	game.player_data.total_score = _total_score
+}
+
+//--------------
 class	SaveGame
+//--------------
 {
 
 	//-----------

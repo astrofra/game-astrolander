@@ -23,7 +23,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 
 	thrusters_active	=	false
 	consumption			=	2.5			//	Fuel unit per sec.
-	max_speed			=	Mtrs(25.0)	//	Max. speed of the ship.
+	max_speed			=	g_player_max_speed	//	Max. speed of the ship.
 	speed_min_damage	=	Mtrs(5.0)
 	speed_max_damage	=	Mtrs(15.0)
 	min_damage			=	10
@@ -478,6 +478,22 @@ class	LunarLander	extends	SceneWithThreadHandler
 		MixerChannelSetLoopMode(g_mixer, channel_metal_col, LoopNone)
 	}
 
+	//------------------------------
+	function	FreeAudioResources()
+	//------------------------------
+	{
+		print("LunarLander::FreeAudioResources()")
+
+		MixerChannelUnlock(g_mixer, channel_metal_col)
+		MixerChannelStop(g_mixer, channel_metal_col)
+
+		MixerChannelUnlock(g_mixer, channel_thrust_clean)
+		MixerChannelStop(g_mixer, channel_thrust_clean)
+
+		MixerChannelUnlock(g_mixer, channel_thrust_dirty)
+		MixerChannelStop(g_mixer, channel_thrust_dirty)	
+	}
+
 	function	HandleLowSpeedTimer()
 	{
 		if (current_speed > Mtrs(0.1))
@@ -588,6 +604,13 @@ class	LunarLander	extends	SceneWithThreadHandler
 		ItemSetParent(hit_emitter, scene_root)
 
 		SetupLanderSounds()
+	}
+
+	//------------------------
+	function	OnDelete(item)
+	//------------------------
+	{
+		FreeAudioResources()
 	}
 
 	function	EnableShield()

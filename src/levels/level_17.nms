@@ -51,7 +51,6 @@
 						<Y=0.000000>
 						<Z=-60.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=80.458984>
 						<Y=-17.147449>
@@ -1072,7 +1071,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1117,7 +1115,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1220,8 +1217,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=22.806099>
-						<Y=2.195183>
+						<X=22.806000>
+						<Y=2.000000>
 						<Z=0.000000>
 					>
 					<Target=
@@ -1288,7 +1285,7 @@
 				<Item=
 					<Position=
 						<X=0.482858>
-						<Y=19.002951>
+						<Y=18.782970>
 						<Z=0.022999>
 					>
 					<Rotation=
@@ -1498,9 +1495,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=20.320110>
-						<Y=2.192008>
-						<Z=0.000000>
+						<X=20.320000>
+						<Y=1.506000>
+						<Z=0.575952>
 					>
 					<Target=
 						<X=0.000000>
@@ -1634,8 +1631,8 @@
 				<Item=
 					<Position=
 						<X=16.357849>
-						<Y=0.190223>
-						<Z=0.000000>
+						<Y=-0.494917>
+						<Z=0.385845>
 					>
 					<Target=
 						<X=0.000000>
@@ -1919,13 +1916,13 @@
 				<Item=
 					<Position=
 						<X=20.425360>
-						<Y=10.469936>
-						<Z=0.000000>
+						<Y=10.753782>
+						<Z=0.182427>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=1.411098>
 					>
 					<Target=
 						<X=0.000000>
@@ -1990,86 +1987,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=24.428864>
-						<Y=10.469935>
-						<Z=0.000000>
+						<X=24.218777>
+						<Y=10.698300>
+						<Z=0.303762>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=39>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=24.428864>
-						<Y=9.492817>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
+						<Z=1.693842>
 					>
 					<Target=
 						<X=0.000000>
@@ -2134,14 +2059,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=33.548008>
-						<Y=10.469933>
-						<Z=0.000000>
+						<X=33.949139>
+						<Y=10.560479>
+						<Z=0.255388>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=1.473930>
 					>
 					<Target=
 						<X=0.000000>
@@ -2206,14 +2131,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=33.548008>
-						<Y=9.509288>
-						<Z=0.000000>
+						<X=33.854683>
+						<Y=9.588416>
+						<Z=0.255388>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=1.473930>
 					>
 					<Target=
 						<X=0.000000>
@@ -2278,14 +2203,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=33.548008>
-						<Y=8.572767>
-						<Z=0.000000>
+						<X=33.759247>
+						<Y=8.606204>
+						<Z=0.255388>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=1.473930>
 					>
 					<Target=
 						<X=0.000000>
@@ -2350,8 +2275,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=37.490982>
-						<Y=8.982599>
+						<X=37.490002>
+						<Y=8.982000>
 						<Z=0.000000>
 					>
 					<Target=
@@ -2417,8 +2342,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=37.452026>
-						<Y=6.531644>
+						<X=37.483456>
+						<Y=6.468731>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -2491,7 +2416,7 @@
 					<Position=
 						<X=41.463120>
 						<Y=9.453967>
-						<Z=0.000000>
+						<Z=0.601598>
 					>
 					<Rotation=
 						<X=-0.000000>
@@ -2583,140 +2508,6 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_1x4">
-				<UId=47>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=44.027000>
-						<Y=8.969000>
-						<Z=0.100000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=48>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=45.022999>
-						<Y=9.008414>
-						<Z=0.100000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
 				<Id="g_block_4x4">
 				<UId=49>
 				<Active>
@@ -2767,9 +2558,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=47.516998>
-						<Y=9.016554>
-						<Z=0.100000>
+						<X=44.455669>
+						<Y=9.480369>
+						<Z=0.460280>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-0.206822>
 					>
 					<Target=
 						<X=0.000000>
@@ -2780,78 +2576,6 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_4x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=50>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=41.463120>
-						<Y=8.481206>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
 			>
 		>
 		<MObject=
@@ -2906,9 +2630,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=41.487366>
-						<Y=8.057450>
-						<Z=0.100000>
+						<X=41.487000>
+						<Y=7.929508>
+						<Z=0.000000>
 					>
 					<Target=
 						<X=0.000000>
@@ -2973,9 +2697,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=34.454594>
-						<Y=7.111781>
-						<Z=0.000000>
+						<X=35.424332>
+						<Y=8.082522>
+						<Z=0.265514>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-0.764454>
 					>
 					<Target=
 						<X=0.000000>
@@ -3129,207 +2858,6 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_2x2">
-				<UId=55>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=50.554100>
-						<Y=9.910975>
-						<Z=0.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_2x2.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=56>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=51.989799>
-						<Y=8.969000>
-						<Z=0.100000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_2x2">
-				<UId=57>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=50.554100>
-						<Y=7.979168>
-						<Z=0.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_2x2.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
 				<Id="g_block_8x16">
 				<UId=58>
 				<Active>
@@ -3449,7 +2977,7 @@
 					<Position=
 						<X=6.514142>
 						<Y=8.982599>
-						<Z=0.000000>
+						<Z=0.095635>
 					>
 					<Target=
 						<X=0.000000>
@@ -3514,9 +3042,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=46.542000>
-						<Y=-1.739000>
-						<Z=0.000000>
+						<X=44.472282>
+						<Y=-2.663940>
+						<Z=0.639094>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=0.282743>
 					>
 					<Target=
 						<X=0.000000>
@@ -3581,14 +3114,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=51.471703>
-						<Y=-10.272434>
-						<Z=0.000000>
+						<X=51.903069>
+						<Y=-10.543556>
+						<Z=0.348449>
 					>
 					<Rotation=
-						<X=1.570796>
+						<X=1.424188>
 						<Y=-1.570796>
-						<Z=3.141593>
+						<Z=-3.141593>
 					>
 					<Target=
 						<X=0.000000>
@@ -3797,7 +3330,7 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=8.560490>
+						<X=8.480807>
 						<Y=-18.986586>
 						<Z=0.000000>
 					>
@@ -3872,7 +3405,7 @@
 					<Position=
 						<X=18.525669>
 						<Y=-17.072235>
-						<Z=0.000000>
+						<Z=0.255636>
 					>
 					<Target=
 						<X=0.000000>
@@ -5061,7 +4594,7 @@
 				<Item=
 					<Position=
 						<X=18.250299>
-						<Y=-23.026756>
+						<Y=-22.986761>
 						<Z=0.000000>
 					>
 					<Target=
@@ -5407,7 +4940,7 @@
 				<Item=
 					<Position=
 						<X=18.483610>
-						<Y=-52.293339>
+						<Y=-52.153980>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -5415,7 +4948,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5480,7 +5012,7 @@
 				<Item=
 					<Position=
 						<X=14.475620>
-						<Y=-52.293339>
+						<Y=-52.153980>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -5488,7 +5020,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5561,7 +5092,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5629,7 +5159,6 @@
 						<Y=-58.697002>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5697,7 +5226,6 @@
 						<Y=-58.697002>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5770,7 +5298,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5843,7 +5370,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5911,7 +5437,6 @@
 						<Y=-52.871540>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5978,9 +5503,8 @@
 					<Position=
 						<X=64.374329>
 						<Y=-36.885353>
-						<Z=0.000000>
+						<Z=-0.465651>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6048,7 +5572,6 @@
 						<Y=-28.926064>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6122,7 +5645,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6186,11 +5708,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=38.708061>
-						<Y=-37.184505>
-						<Z=0.000000>
+						<X=39.933628>
+						<Y=-37.556660>
+						<Z=0.221675>
 					>
-					<ItemFlag>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-0.274889>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6254,16 +5780,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=38.671505>
-						<Y=-39.650482>
-						<Z=0.000000>
+						<X=39.162769>
+						<Y=-39.808262>
+						<Z=0.535976>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=1.117883>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6331,7 +5856,6 @@
 						<Y=-42.118717>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6683,7 +6207,6 @@
 						<Y=3.141575>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6756,7 +6279,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6887,8 +6409,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=35.107754>
-						<Y=-21.508934>
+						<X=34.449234>
+						<Y=-17.599899>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -6959,8 +6481,8 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=40.327942>
-						<Y=-29.616783>
+						<X=40.123699>
+						<Y=-24.597906>
 						<Z=0.000000>
 					>
 					<Target=
@@ -7026,11 +6548,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=21.354563>
-						<Y=-49.251854>
-						<Z=0.000000>
+						<X=20.989496>
+						<Y=-49.462486>
+						<Z=0.384116>
 					>
-					<ItemFlag>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-0.212058>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7094,11 +6620,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=22.827314>
-						<Y=-50.255577>
-						<Z=0.000000>
+						<X=22.218004>
+						<Y=-50.753696>
+						<Z=0.384116>
 					>
-					<ItemFlag>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-0.212058>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7162,11 +6692,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=21.354563>
-						<Y=-51.208656>
-						<Z=0.000000>
+						<X=20.577646>
+						<Y=-51.375458>
+						<Z=0.384116>
 					>
-					<ItemFlag>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-0.212058>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7230,11 +6764,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=20.959095>
-						<Y=-54.291878>
-						<Z=0.000000>
+						<X=20.740406>
+						<Y=-54.525154>
+						<Z=0.164682>
 					>
-					<ItemFlag>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-0.078540>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7248,80 +6786,8 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_8x16">
-				<UId=114>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=8.000000>
-								<Y=16.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=28.529772>
-						<Y=-17.040915>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_8x16.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
 				<Id="g_block_4x8">
-				<UId=115>
+				<UId=114>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7393,7 +6859,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=116>
+				<UId=115>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7465,7 +6931,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=117>
+				<UId=116>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7516,7 +6982,7 @@
 					<Position=
 						<X=50.577885>
 						<Y=-15.032362>
-						<Z=0.000000>
+						<Z=1.314321>
 					>
 					<Target=
 						<X=0.000000>
@@ -7532,7 +6998,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=118>
+				<UId=117>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7599,7 +7065,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=119>
+				<UId=118>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7649,7 +7115,7 @@
 				<Item=
 					<Position=
 						<X=10.420874>
-						<Y=22.607548>
+						<Y=22.881184>
 						<Z=0.000000>
 					>
 					<Target=
@@ -7666,7 +7132,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=120>
+				<UId=119>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7716,7 +7182,7 @@
 				<Item=
 					<Position=
 						<X=-7.539366>
-						<Y=26.292116>
+						<Y=26.251427>
 						<Z=0.000000>
 					>
 					<Rotation=
@@ -7738,7 +7204,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=121>
+				<UId=120>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7805,7 +7271,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=122>
+				<UId=121>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7856,7 +7322,7 @@
 					<Position=
 						<X=-9.543491>
 						<Y=36.182526>
-						<Z=0.000000>
+						<Z=-0.238805>
 					>
 					<Target=
 						<X=0.000000>
@@ -7872,7 +7338,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=123>
+				<UId=122>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7944,7 +7410,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=124>
+				<UId=123>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8016,7 +7482,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=125>
+				<UId=124>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8067,7 +7533,7 @@
 					<Position=
 						<X=-5.633887>
 						<Y=38.752838>
-						<Z=0.000000>
+						<Z=-0.660365>
 					>
 					<Rotation=
 						<X=-0.000000>
@@ -8088,7 +7554,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=126>
+				<UId=125>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8139,7 +7605,7 @@
 					<Position=
 						<X=-5.636326>
 						<Y=39.636192>
-						<Z=0.000000>
+						<Z=0.405549>
 					>
 					<Rotation=
 						<X=-0.000000>
@@ -8160,7 +7626,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=127>
+				<UId=126>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8227,7 +7693,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=128>
+				<UId=127>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8278,7 +7744,7 @@
 					<Position=
 						<X=-5.575888>
 						<Y=35.263683>
-						<Z=0.000000>
+						<Z=0.405549>
 					>
 					<Target=
 						<X=0.000000>
@@ -8294,7 +7760,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=129>
+				<UId=128>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8366,7 +7832,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=130>
+				<UId=129>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8439,7 +7905,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=131>
+				<UId=130>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8506,7 +7972,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=132>
+				<UId=131>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8559,7 +8025,6 @@
 						<Y=-58.841156>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8569,6 +8034,73 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_4x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x4">
+				<UId=132>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=59.940479>
+						<Y=-41.054260>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x4.nmg">
 			>
 		>
 		<MObject=
@@ -8623,11 +8155,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=59.940479>
-						<Y=-41.054260>
+						<X=50.708916>
+						<Y=-37.649311>
 						<Z=0.000000>
 					>
-					<ItemFlag>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8691,84 +8227,10 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=50.794144>
-						<Y=-37.649311>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=135>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=49.217426>
+						<X=49.195759>
 						<Y=-40.202538>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8783,7 +8245,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=136>
+				<UId=135>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8836,7 +8298,6 @@
 						<Y=-44.210827>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8846,6 +8307,73 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_4x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x4">
+				<UId=136>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=50.235485>
+						<Y=-40.202538>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x4.nmg">
 			>
 		>
 		<MObject=
@@ -8900,11 +8428,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=50.235485>
-						<Y=-40.202538>
+						<X=50.607571>
+						<Y=-46.795849>
 						<Z=0.000000>
 					>
-					<ItemFlag>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8968,16 +8500,10 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=50.607571>
-						<Y=-46.795849>
+						<X=59.940479>
+						<Y=-47.288044>
 						<Z=0.000000>
 					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9041,11 +8567,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=59.940479>
-						<Y=-47.288044>
+						<X=62.201328>
+						<Y=-32.318424>
 						<Z=0.000000>
 					>
-					<ItemFlag>
+					<Rotation=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=2.670354>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9109,16 +8639,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=62.201328>
-						<Y=-32.318424>
+						<X=64.079376>
+						<Y=-28.632545>
 						<Z=0.000000>
 					>
 					<Rotation=
-						<X=0.000000>
+						<X=-0.000000>
 						<Y=0.000000>
 						<Z=2.670354>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9182,89 +8711,15 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=64.079376>
-						<Y=-28.632545>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=2.670354>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=142>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
 						<X=63.269970>
 						<Y=-28.220133>
-						<Z=0.000000>
+						<Z=0.467910>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
 						<Z=2.670354>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9279,7 +8734,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=143>
+				<UId=142>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9330,14 +8785,13 @@
 					<Position=
 						<X=52.099911>
 						<Y=-34.577881>
-						<Z=0.000000>
+						<Z=0.675707>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
 						<Z=2.670354>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9352,7 +8806,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=144>
+				<UId=143>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9419,7 +8873,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=145>
+				<UId=144>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9486,7 +8940,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=146>
+				<UId=145>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9535,14 +8989,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=61.821999>
-						<Y=-1.218000>
-						<Z=0.100000>
+						<X=61.250835>
+						<Y=-1.911038>
+						<Z=0.350360>
 					>
 					<Rotation=
 						<X=-0.000000>
 						<Y=0.000000>
-						<Z=1.570796>
+						<Z=1.473930>
 					>
 					<Target=
 						<X=0.000000>
@@ -9558,7 +9012,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=147>
+				<UId=146>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9607,9 +9061,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=61.847000>
+						<X=61.630859>
 						<Y=1.285000>
-						<Z=0.100000>
+						<Z=0.350360>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=0.109956>
 					>
 					<Target=
 						<X=0.000000>
@@ -9625,7 +9084,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=148>
+				<UId=147>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9692,7 +9151,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=149>
+				<UId=148>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9745,7 +9204,6 @@
 						<Y=16.939777>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9760,7 +9218,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=150>
+				<UId=149>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9827,7 +9285,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=151>
+				<UId=150>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9880,7 +9338,6 @@
 						<Y=22.959518>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9890,6 +9347,73 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_4x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_4x4">
+				<UId=151>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=4.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=74.434067>
+						<Y=20.995777>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_4x4.nmg">
 			>
 		>
 		<MObject=
@@ -9945,78 +9469,9 @@
 				<Item=
 					<Position=
 						<X=74.434067>
-						<Y=20.995777>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_4x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_4x4">
-				<UId=153>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=4.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=74.434067>
 						<Y=24.967957>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10031,7 +9486,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=154>
+				<UId=153>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10089,7 +9544,78 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x4">
+				<UId=154>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=70.448448>
+						<Y=28.428154>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10154,79 +9680,6 @@
 				<Item=
 					<Position=
 						<X=70.448448>
-						<Y=28.428154>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=156>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=70.448448>
 						<Y=29.418200>
 						<Z=0.000000>
 					>
@@ -10235,7 +9688,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10250,7 +9702,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=157>
+				<UId=156>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10303,7 +9755,6 @@
 						<Y=28.907486>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10318,7 +9769,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=158>
+				<UId=157>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10376,357 +9827,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_4x8">
-				<UId=159>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=4.000000>
-								<Y=8.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=74.400726>
-						<Y=34.893166>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_4x8.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=160>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=70.344170>
-						<Y=35.410175>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_1x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_4x4">
-				<UId=161>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=4.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=70.417770>
-						<Y=32.892658>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_4x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_4x4">
-				<UId=162>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=4.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=70.417770>
-						<Y=37.828419>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/g_block_4x4.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="g_block_1x4">
-				<UId=163>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="Static">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.000000>
-								<Y=4.000000>
-								<Z=4.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=74.456772>
-						<Y=39.320499>
-						<Z=0.000000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=0.000000>
-						<Z=1.570796>
-					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10741,7 +9841,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=164>
+				<UId=163>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10813,7 +9913,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=165>
+				<UId=164>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10871,7 +9971,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10886,7 +9985,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=166>
+				<UId=165>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -10944,7 +10043,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10959,7 +10057,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=167>
+				<UId=166>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11031,7 +10129,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=168>
+				<UId=167>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11103,7 +10201,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=169>
+				<UId=168>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11175,7 +10273,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=170>
+				<UId=169>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11247,7 +10345,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=171>
+				<UId=170>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11319,7 +10417,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=172>
+				<UId=171>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11386,7 +10484,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x16">
-				<UId=173>
+				<UId=172>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11458,7 +10556,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x4">
-				<UId=174>
+				<UId=173>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11530,7 +10628,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=175>
+				<UId=174>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11602,7 +10700,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=176>
+				<UId=175>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11655,7 +10753,6 @@
 						<Y=42.128239>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11670,7 +10767,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=177>
+				<UId=176>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11723,7 +10820,6 @@
 						<Y=46.122623>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11738,7 +10834,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=178>
+				<UId=177>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11791,7 +10887,6 @@
 						<Y=44.094456>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11801,6 +10896,73 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_4x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_2x2">
+				<UId=178>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=2.000000>
+								<Y=2.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=42.336002>
+						<Y=26.361763>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_2x2.nmg">
 			>
 		>
 		<MObject=
@@ -11855,14 +11017,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=42.336002>
+						<X=40.309814>
 						<Y=26.361763>
 						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
 					>
 					<Target=
 						<X=0.000000>
@@ -11927,12 +11084,12 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=41.339554>
+						<X=40.322937>
 						<Y=26.361763>
 						<Z=0.000000>
 					>
 					<Scale=
-						<X=0.500000>
+						<X=0.000000>
 						<Y=1.000000>
 						<Z=1.000000>
 					>
@@ -11999,14 +11156,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=40.322937>
-						<Y=26.361763>
+						<X=28.919952>
+						<Y=29.129885>
 						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
 					>
 					<Target=
 						<X=0.000000>
@@ -12071,14 +11223,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=40.299721>
-						<Y=28.339014>
+						<X=17.723362>
+						<Y=29.129885>
 						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
 					>
 					<Target=
 						<X=0.000000>
@@ -12093,7 +11240,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_2x2">
+				<Id="g_block_4x4">
 				<UId=183>
 				<Active>
 				<Priority=0.500000>
@@ -12129,8 +11276,8 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
+								<X=4.000000>
+								<Y=4.000000>
 								<Z=4.000000>
 							>
 							<StaticFriction=0.500000>
@@ -12143,14 +11290,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=27.402328>
-						<Y=29.129885>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
+						<X=50.679520>
+						<Y=-35.590584>
+						<Z=1.067016>
 					>
 					<Target=
 						<X=0.000000>
@@ -12160,12 +11302,12 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_2x2.nmg">
+				<Geometry="graphics/g_block_4x4.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_2x2">
+				<Id="g_block_4x8">
 				<UId=184>
 				<Active>
 				<Priority=0.500000>
@@ -12201,8 +11343,8 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
+								<X=4.000000>
+								<Y=8.000000>
 								<Z=4.000000>
 							>
 							<StaticFriction=0.500000>
@@ -12215,14 +11357,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=28.422264>
-						<Y=29.129885>
-						<Z=0.000000>
+						<X=32.478065>
+						<Y=-15.378404>
+						<Z=0.568638>
 					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.510582>
 					>
 					<Target=
 						<X=0.000000>
@@ -12232,12 +11374,12 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_2x2.nmg">
+				<Geometry="graphics/g_block_4x8.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_2x2">
+				<Id="g_block_4x8">
 				<UId=185>
 				<Active>
 				<Priority=0.500000>
@@ -12273,8 +11415,8 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
+								<X=4.000000>
+								<Y=8.000000>
 								<Z=4.000000>
 							>
 							<StaticFriction=0.500000>
@@ -12287,14 +11429,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=29.441372>
-						<Y=29.129885>
+						<X=24.546635>
+						<Y=-15.090067>
 						<Z=0.000000>
 					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
 					>
 					<Target=
 						<X=0.000000>
@@ -12304,12 +11446,12 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_2x2.nmg">
+				<Geometry="graphics/g_block_4x8.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_2x2">
+				<Id="g_block_tr_4x4">
 				<UId=186>
 				<Active>
 				<Priority=0.500000>
@@ -12328,7 +11470,7 @@
 					<Mode="Static">
 					<Shapes=
 						<PhysicShape=
-							<Type="Box">
+							<Type="Convex">
 							<Position=
 								<X=0.000000>
 								<Y=0.000000>
@@ -12345,10 +11487,11 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
-								<Z=4.000000>
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
 							>
+							<Mesh="graphics/g_block_tr_4x4.nmg">
 							<StaticFriction=0.500000>
 							<DynamicFriction=0.500000>
 							<Restitution=0.500000>
@@ -12359,14 +11502,14 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=30.476446>
-						<Y=29.980743>
-						<Z=0.000000>
+						<X=38.340130>
+						<Y=-17.641956>
+						<Z=0.824274>
 					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
+					<Rotation=
+						<X=-0.000000>
+						<Y=3.141592>
+						<Z=0.000000>
 					>
 					<Target=
 						<X=0.000000>
@@ -12376,12 +11519,12 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_2x2.nmg">
+				<Geometry="graphics/g_block_tr_4x4.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
-				<Id="g_block_2x2">
+				<Id="g_block_4x4">
 				<UId=187>
 				<Active>
 				<Priority=0.500000>
@@ -12417,8 +11560,8 @@
 								<Z=1.000000>
 							>
 							<Dimensions=
-								<X=2.000000>
-								<Y=2.000000>
+								<X=4.000000>
+								<Y=4.000000>
 								<Z=4.000000>
 							>
 							<StaticFriction=0.500000>
@@ -12431,14 +11574,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=15.689767>
-						<Y=29.129885>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
+						<X=21.391569>
+						<Y=-17.600239>
+						<Z=0.402920>
 					>
 					<Target=
 						<X=0.000000>
@@ -12448,7 +11586,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/g_block_2x2.nmg">
+				<Geometry="graphics/g_block_4x4.nmg">
 			>
 		>
 		<MObject=
@@ -12503,14 +11641,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=16.715549>
+						<X=19.727007>
 						<Y=29.129885>
 						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
 					>
 					<Target=
 						<X=0.000000>
@@ -12575,14 +11708,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=17.709667>
-						<Y=28.295851>
+						<X=30.909239>
+						<Y=29.129885>
 						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.500000>
-						<Y=1.000000>
-						<Z=1.000000>
 					>
 					<Target=
 						<X=0.000000>
@@ -12593,6 +11721,982 @@
 					<Registry>
 				>
 				<Geometry="graphics/g_block_2x2.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_4x8">
+				<UId=217>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=4.000000>
+								<Y=8.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=90.662819>
+						<Y=34.893166>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_4x8.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x4">
+				<UId=218>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=86.681351>
+						<Y=35.410259>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_4x4">
+				<UId=219>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=4.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=86.679863>
+						<Y=32.918995>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_4x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_4x4">
+				<UId=220>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=4.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=86.679863>
+						<Y=37.903923>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_4x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x4">
+				<UId=221>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=90.680573>
+						<Y=39.396950>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.570796>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_4x4">
+				<UId=222>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=4.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=78.503075>
+						<Y=28.907486>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_4x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_4x4">
+				<UId=223>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=4.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=78.423706>
+						<Y=41.608448>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_4x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_tr_8x16">
+				<UId=224>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Convex">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Mesh="graphics/g_block_tr_8x16.nmg">
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=80.541069>
+						<Y=26.919157>
+						<Z=-0.465651>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=-3.141593>
+						<Z=1.570796>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_tr_8x16.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_tr_8x16">
+				<UId=225>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Convex">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Mesh="graphics/g_block_tr_8x16.nmg">
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=80.389709>
+						<Y=43.932377>
+						<Z=-0.465651>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=-1.570779>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_tr_8x16.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x1">
+				<UId=228>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.811977>
+						<Y=-18.964153>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x1.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x1">
+				<UId=229>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.811977>
+						<Y=-17.958826>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x1.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_tr_8x16">
+				<UId=230>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Convex">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Mesh="graphics/g_block_tr_8x16.nmg">
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-9.620667>
+						<Y=-39.692749>
+						<Z=0.000000>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=-3.141593>
+						<Z=3.141575>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_tr_8x16.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x4">
+				<UId=231>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=43.735130>
+						<Y=-0.411276>
+						<Z=0.280948>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.510582>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x4.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="g_block_1x4">
+				<UId=232>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=3>
+					<Mask=2>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="Static">
+					<Shapes=
+						<PhysicShape=
+							<Type="Box">
+							<Position=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Rotation=
+								<X=0.000000>
+								<Y=0.000000>
+								<Z=0.000000>
+							>
+							<Scale=
+								<X=1.000000>
+								<Y=1.000000>
+								<Z=1.000000>
+							>
+							<Dimensions=
+								<X=1.000000>
+								<Y=4.000000>
+								<Z=4.000000>
+							>
+							<StaticFriction=0.500000>
+							<DynamicFriction=0.500000>
+							<Restitution=0.500000>
+						>
+					>
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=43.946697>
+						<Y=7.194124>
+						<Z=0.584753>
+					>
+					<Rotation=
+						<X=-0.000000>
+						<Y=0.000000>
+						<Z=1.751438>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/g_block_1x4.nmg">
 			>
 		>
 		<MLight=
@@ -12712,8 +12816,8 @@
 			>
 			<Item=
 				<Position=
-					<X=51.002651>
-					<Y=5.557397>
+					<X=49.759968>
+					<Y=9.107931>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -12788,14 +12892,14 @@
 			>
 			<Item=
 				<Position=
-					<X=3.853452>
-					<Y=-19.903965>
+					<X=4.225472>
+					<Y=-18.994659>
 					<Z=0.000000>
 				>
 				<Rotation=
 					<X=-0.000000>
 					<Y=0.000000>
-					<Z=-3.141593>
+					<Z=3.141592>
 				>
 				<ItemFlag>
 				<Target=
@@ -12807,44 +12911,6 @@
 				<Registry>
 			>
 			<Template="graphics/MobileLazerGun.nms">
-		>
-		<Instance=
-			<MItem=
-				<Id="MobileGear0">
-				<UId=195>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
-					<X=-4.001236>
-					<Y=-11.141489>
-					<Z=0.000000>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/MobileGear0.nms">
 		>
 		<Instance=
 			<MItem=
@@ -12907,8 +12973,8 @@
 			>
 			<Item=
 				<Position=
-					<X=31.963625>
-					<Y=-29.613178>
+					<X=29.798498>
+					<Y=-27.730917>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -12920,45 +12986,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileRotary1.nms">
-		>
-		<Instance=
-			<MItem=
-				<Id="MobileGear2">
-				<UId=198>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
-					<X=23.736240>
-					<Y=-37.913456>
-					<Z=0.000000>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/MobileGear2.nms">
+			<Template="graphics/MobileRotary0.nms">
 		>
 		<Instance=
 			<MItem=
@@ -12983,8 +13011,8 @@
 			>
 			<Item=
 				<Position=
-					<X=23.736240>
-					<Y=-43.526226>
+					<X=23.352140>
+					<Y=-45.294106>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -13000,7 +13028,7 @@
 		>
 		<Instance=
 			<MItem=
-				<Id="FxGodRays">
+				<Id="PropStatueCody">
 				<UId=200>
 				<Active>
 				<Priority=0.500000>
@@ -13021,88 +13049,12 @@
 			>
 			<Item=
 				<Position=
-					<X=-48.249771>
-					<Y=-44.624336>
-					<Z=50.000000>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/FxGodRays.nms">
-		>
-		<Instance=
-			<MItem=
-				<Id="FxGodRays">
-				<UId=201>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
-					<X=160.400787>
-					<Y=-44.624336>
-					<Z=50.000000>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/FxGodRays.nms">
-		>
-		<Instance=
-			<MItem=
-				<Id="PropStatueCody">
-				<UId=202>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
 					<X=31.730350>
-					<Y=-60.578472>
-					<Z=0.000000>
+					<Y=-62.807846>
+					<Z=0.990260>
 				>
 				<Rotation=
-					<X=0.000000>
+					<X=-0.000000>
 					<Y=-1.570796>
 					<Z=0.000000>
 				>
@@ -13120,7 +13072,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=203>
+				<UId=201>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13158,7 +13110,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusSlowClock">
-				<UId=204>
+				<UId=202>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13195,7 +13147,45 @@
 		>
 		<Instance=
 			<MItem=
-				<Id="BonusFastClock">
+				<Id="PropTreeBush1">
+				<UId=204>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=42.292061>
+					<Y=-16.554283>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/PropTreeBush1.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="PropEgyptBrokenColumn1">
 				<UId=205>
 				<Active>
 				<Priority=0.500000>
@@ -13216,84 +13206,8 @@
 			>
 			<Item=
 				<Position=
-					<X=54.948105>
-					<Y=-51.726494>
-					<Z=0.000000>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/BonusFastClock.nms">
-		>
-		<Instance=
-			<MItem=
-				<Id="PropTreeBush1">
-				<UId=206>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
-					<X=39.396179>
-					<Y=-16.554283>
-					<Z=0.000000>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/PropTreeBush1.nms">
-		>
-		<Instance=
-			<MItem=
-				<Id="PropEgyptBrokenColumn1">
-				<UId=207>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
 					<X=10.388513>
-					<Y=26.424482>
+					<Y=26.698118>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -13310,7 +13224,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropEgyptBrokenColumn1">
-				<UId=208>
+				<UId=206>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13353,7 +13267,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileJawgate">
-				<UId=209>
+				<UId=207>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13396,6 +13310,44 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
+				<UId=208>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=29.217392>
+					<Y=-20.042070>
+					<Z=0.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/Artifact.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="MobileLazerGun">
 				<UId=210>
 				<Active>
 				<Priority=0.500000>
@@ -13416,9 +13368,14 @@
 			>
 			<Item=
 				<Position=
-					<X=35.565655>
-					<Y=-25.831583>
+					<X=35.472198>
+					<Y=19.094572>
 					<Z=0.000000>
+				>
+				<Rotation=
+					<X=-0.000000>
+					<Y=0.000000>
+					<Z=1.570796>
 				>
 				<ItemFlag>
 				<Target=
@@ -13429,11 +13386,11 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/Artifact.nms">
+			<Template="graphics/MobileLazerGun.nms">
 		>
 		<Instance=
 			<MItem=
-				<Id="BonusShield">
+				<Id="MobileLazerGun">
 				<UId=211>
 				<Active>
 				<Priority=0.500000>
@@ -13454,9 +13411,14 @@
 			>
 			<Item=
 				<Position=
-					<X=56.838978>
-					<Y=-25.225174>
+					<X=24.233406>
+					<Y=19.094576>
 					<Z=0.000000>
+				>
+				<Rotation=
+					<X=-0.000000>
+					<Y=0.000000>
+					<Z=1.570796>
 				>
 				<ItemFlag>
 				<Target=
@@ -13467,7 +13429,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/BonusShield.nms">
+			<Template="graphics/MobileLazerGun.nms">
 		>
 		<Instance=
 			<MItem=
@@ -13492,94 +13454,8 @@
 			>
 			<Item=
 				<Position=
-					<X=35.472198>
-					<Y=19.568863>
-					<Z=0.000000>
-				>
-				<Rotation=
-					<X=-0.000000>
-					<Y=0.000000>
-					<Z=1.570796>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/MobileLazerGun.nms">
-		>
-		<Instance=
-			<MItem=
-				<Id="MobileLazerGun">
-				<UId=213>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
-					<X=24.233406>
-					<Y=19.568867>
-					<Z=0.000000>
-				>
-				<Rotation=
-					<X=-0.000000>
-					<Y=0.000000>
-					<Z=1.570796>
-				>
-				<ItemFlag>
-				<Target=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
-				>
-				<RotationOrder="YXZ">
-				<Registry>
-			>
-			<Template="graphics/MobileLazerGun.nms">
-		>
-		<Instance=
-			<MItem=
-				<Id="MobileLazerGun">
-				<UId=214>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Item=
-				<Position=
 					<X=46.623978>
-					<Y=19.568859>
+					<Y=19.094568>
 					<Z=0.000000>
 				>
 				<Rotation=
@@ -13601,7 +13477,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=215>
+				<UId=213>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13638,7 +13514,45 @@
 		>
 		<Instance=
 			<MItem=
-				<Id="Artifact">
+				<Id="PropTree0">
+				<UId=215>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=57.097622>
+					<Y=19.113579>
+					<Z=-1.177527>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/PropTree0.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="BonusShield">
 				<UId=216>
 				<Active>
 				<Priority=0.500000>
@@ -13659,8 +13573,8 @@
 			>
 			<Item=
 				<Position=
-					<X=62.043083>
-					<Y=5.557397>
+					<X=82.010857>
+					<Y=35.223885>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -13672,12 +13586,12 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/Artifact.nms">
+			<Template="graphics/BonusShield.nms">
 		>
 		<Instance=
 			<MItem=
-				<Id="PropTree0">
-				<UId=217>
+				<Id="MobileJawgate">
+				<UId=226>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13697,8 +13611,51 @@
 			>
 			<Item=
 				<Position=
-					<X=56.676903>
-					<Y=19.633331>
+					<X=71.187431>
+					<Y=35.480770>
+					<Z=1.891845>
+				>
+				<Rotation=
+					<X=-0.000000>
+					<Y=1.047198>
+					<Z=3.141592>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/MobileJawgate.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="MobileGear2">
+				<UId=233>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=24.224773>
+					<Y=-39.461891>
 					<Z=0.000000>
 				>
 				<ItemFlag>
@@ -13710,7 +13667,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/PropTree0.nms">
+			<Template="graphics/PropGear0.nms">
 		>
 	>
 	<Links=
@@ -13783,27 +13740,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.999978>
-			<Y=-0.000000>
-			<Z=-0.006709>
+			<X=0.679560>
+			<Y=0.000000>
+			<Z=0.733620>
 			<W=0.000000>
 		>
 		<R1=
-			<X=-0.000013>
-			<Y=0.999998>
-			<Z=-0.001988>
+			<X=-0.213127>
+			<Y=0.956871>
+			<Z=0.197421>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.006709>
-			<Y=0.001988>
-			<Z=0.999976>
+			<X=-0.701980>
+			<Y=-0.290513>
+			<Z=0.650251>
 			<W=0.000000>
 		>
 		<R3=
-			<X=14.014334>
-			<Y=17.795279>
-			<Z=-117.081604>
+			<X=126.371704>
+			<Y=14.368963>
+			<Z=-68.802734>
 			<W=1.000000>
 		>
 	>
@@ -13816,27 +13773,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=0.999978>
-					<Y=-0.000000>
-					<Z=-0.006709>
+					<X=0.679560>
+					<Y=0.000000>
+					<Z=0.733620>
 					<W=0.000000>
 				>
 				<R1=
-					<X=-0.000013>
-					<Y=0.999998>
-					<Z=-0.001988>
+					<X=-0.213127>
+					<Y=0.956871>
+					<Z=0.197421>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.006709>
-					<Y=0.001988>
-					<Z=0.999976>
+					<X=-0.701980>
+					<Y=-0.290513>
+					<Z=0.650251>
 					<W=0.000000>
 				>
 				<R3=
-					<X=14.014334>
-					<Y=17.795279>
-					<Z=-117.081604>
+					<X=126.371704>
+					<Y=14.368963>
+					<Z=-68.802734>
 					<W=1.000000>
 				>
 			>

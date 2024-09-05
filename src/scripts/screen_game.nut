@@ -104,6 +104,18 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		game_ui.HidePauseWindow()
 	}
 
+	//---------------------
+	function	ResumeAndExitGame(scene)
+	//---------------------
+	{
+		if (!paused)
+			return
+		paused	=	false
+		EngineSetClockScale(g_engine, g_clock_scale)
+		game_ui.HidePauseWindow()
+		ExitGame(scene)
+	}
+
 	//-----------------------
 	function	HandlePause()
 	//-----------------------
@@ -294,7 +306,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 								fuel = 0.0, //player_script.fuel,
 								life = 0.0, //player_script.life,
 								wall_hits = 0,
-								score = -1.0,
+								score = -1,
+								attempt = 0,
 							}
 
 		if (!game.player_data.rawin(_level_key))
@@ -302,6 +315,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 			game.player_data.rawset(_level_key, 0)
 			game.player_data[_level_key] = _record
 		}
+
+		game.player_data[_level_key].attempt++
 
 		game.player_data[_level_key].complete = true
 
@@ -336,6 +351,23 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		
 	}
 
+	//--------------------------------
+	function	SetAmbientColor(scene)
+	//--------------------------------
+	{
+		local	k = ProjectGetScriptInstance(g_project).player_data.current_level
+		k = RangeAdjust(k.tofloat(), 0.0, 20.0, 0.0, 1.0)
+		k = Clamp(k, 0.0, 1.0)
+		local _color = RGBColorBlend(g_ambient_color_warm, g_ambient_color_cold, k)
+
+		_color = RGBColorBlend(_color, g_ambient_color_dawn, MakeTriangleWave(k))
+
+		_color = _color.Scale(1.0 / 255.0)
+		_color.Print("SetAmbientColor()")
+		SceneSetAmbientColor(scene, _color)
+		_color = SceneGetAmbientColor(scene)
+	}
+
 	//-----------
 	constructor()
 	//-----------
@@ -357,6 +389,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	//------------------------
 	{
 		base.OnSetup(scene)
+//		RandomOffsetLevelBlocks(scene)
 		game = ProjectGetScriptInstance(g_project)
 		LoadSounds()
 		camera_handler = CameraHandler(scene)
@@ -375,6 +408,8 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		print("LevelHandler::OnSetup() g_clock_scale = " + g_clock_scale)
 
 		EngineSetClockScale(g_engine, g_clock_scale)
+
+		SetAmbientColor(scene)
 
 		if	(IsTouchPlatform())
 		{
@@ -420,23 +455,27 @@ class	LevelHandler	extends	SceneWithThreadHandler
 
 		PlayLevelMusic()
 	}
-/*
-	//------------------------
-	function	CloseGame(scene)
-	//------------------------
+
+	//----------------------------------------
+	function	RandomOffsetLevelBlocks(scene)
+	//----------------------------------------
 	{
-		// Start the game over info display.
-		print("GAME OVER")
-
-		// Set the UI command list to pause for 2 seconds, then fade to black in 0.5 seconds.
-		UISetCommandList(SceneGetUI(scene), "nop 2; globalfade 0.5, 1;")
-
-		EngineSetClockScale(g_engine, 1.0)
-
-		// Next update sets the end game flag and waits for an action from the project script.
-		game_dispatcher = ExitGame
+		local	_block_list = []
+		foreach(_item in SceneGetItemList(scene))
+		{
+			local	_item_name = ItemGetName(_item)
+			if (_item_name.len() > ("g_block_").len())
+			{
+				local	_slice = _item_name.slice(0,7)
+				if (_slice == "g_block")
+				{
+					local	_pos = ItemGetPosition(_item)
+					_pos.z += (Irand(-2, 2).tofloat() * 0.1)
+					ItemSetPosition(_item, _pos)
+				}
+			}
+		}			
 	}
-*/
 	
 	//-----------------------------------
 	function	GoToLevelEndScreen(scene)
@@ -445,6 +484,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		StopLevelMusic()
 		RecordGameData()
+		GlobalSetPlayerGuid()
 		GlobalSaveGame()
 		EngineSetClockScale(g_engine, 1.0)
 		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_level_end.nms")
@@ -458,6 +498,20 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		EngineSetClockScale(g_engine, 1.0)
 		StopLevelMusic()
 		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_game_over.nms")
+	}
+
+	//----------------------------
+	function	RestartGame(scene)
+	//----------------------------
+	{
+		print("LevelHandler::RestartGame()")
+		if (!paused)
+			return
+		paused	=	false
+		EngineSetClockScale(g_engine, g_clock_scale)
+		game_ui.HidePauseWindow()
+		StopLevelMusic()
+		ProjectGetScriptInstance(g_project).ProjectGotoScene("levels/screen_game_restart.nms")
 	}
 
 	//------------------------------------------
@@ -730,7 +784,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 								"town_in_ruins.ogg",
 								"youre_my_hero.ogg"
 								]
-		if (music_filename == "")
+		if ((typeof music_filename != "string") || (music_filename == ""))
 			music_filename = "audio/music/" + _rand_music[Irand(0,8)]
 
 		if (FileExists(music_filename))
@@ -748,6 +802,29 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		if (music_channel != -1)
 		{
 			MixerChannelStop(g_mixer, music_channel)
+			MixerChannelUnlock(g_mixer, music_channel)
 		}
 	}	
+	
+	//-----------------
+	//	OS Interactions
+	//-----------------
+	
+	//----------------------------------
+	function	OnRenderContextChanged()
+	//----------------------------------
+	{
+		game_ui.OnRenderContextChanged()
+	}	
+	
+	function	OnHardwareButtonPressed(button)
+	{
+		switch (button)
+		{
+			case	HardwareButtonBack:
+				print("ScreenGame::OnHardwareButtonPressed(HardwareButtonBack)")
+				game_ui.UIGamePause()
+				break
+		}
+	}
 }

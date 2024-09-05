@@ -1,9 +1,19 @@
 <Version=1.0>
 <Scene=
+	<ScriptedObject=
+		<ScriptUnit=
+			<Script="scripts/screen_leaderboard.nut">
+			<Class="LeaderboardScreen">
+		>
+	>
+	<ScriptUnit=
+		<Script="scripts/screen_leaderboard.nut">
+		<Class="LeaderboardScreen">
+	>
 	<Items=
-		<MObject=
+		<MCamera=
 			<MItem=
-				<Id="rotary_gate_0">
+				<Id="New Camera">
 				<UId=0>
 				<Active>
 				<Priority=0.500000>
@@ -12,8 +22,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=3>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -22,33 +32,38 @@
 					<Mode="None">
 				>
 			>
-			<Object=
+			<Camera=
 				<Item=
+					<Position=
+						<X=16.111717>
+						<Y=16.163250>
+						<Z=-59.186073>
+					>
 					<Rotation=
-						<X=1.570779>
-						<Y=3.141593>
+						<X=0.261185>
+						<Y=-0.025809>
 						<Z=0.000000>
 					>
-					<Scale=
-						<X=1.500000>
-						<Y=1.000000>
-						<Z=1.500000>
+					<ItemFlag=
+						<HasTarget>
 					>
-					<ItemFlag>
 					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
+						<X=14.567137>
+						<Y=0.165323>
+						<Z=0.646039>
 					>
 					<RotationOrder="YXZ">
-					<Registry>
+					<Registry=
+						<PostProcess>
+					>
 				>
-				<Geometry="graphics/rotary_gate_0.nmg">
+				<ZFar=50000.000000>
+				<AspectRatioRefYAxis=True>
 			>
 		>
 		<MObject=
 			<MItem=
-				<Id="rotary_gate_slot">
+				<Id="G Block 4x8">
 				<UId=1>
 				<Active>
 				<Priority=0.500000>
@@ -69,21 +84,6 @@
 			>
 			<Object=
 				<Item=
-					<Position=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=2.500000>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=-3.141592>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=1.500000>
-						<Y=1.500000>
-						<Z=1.000000>
-					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -92,134 +92,37 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/rotary_gate_slot.nmg">
+				<Geometry="graphics/g_block_4x8.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
-				<Id="rotary_gate_item">
-				<UId=2>
+				<Id="G Block 4x8">
+				<UId=5>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
 					<Motions>
 				>
-				<ScriptedObject=
-					<ScriptUnit=
-						<Script="scripts/mobiles_handler.nut">
-						<Class="MobileRotary">
-						<ParmList=
-							<Parm=
-								<Id="target_RPM">
-								<Value=0.250000>
-							>
-							<Parm=
-								<Id="strength">
-								<Value=10.000000>
-							>
-							<Parm=
-								<Id="is_physic">
-								<Value=1>
-							>
-						>
-					>
-				>
 				<PhysicItem=
-					<SelfMask=5>
-					<Mask=4>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
 					<CharacterHeight=1.750000>
 					<CharacterMaxStep=0.250000>
-					<Mode="Dynamic">
-					<Shapes=
-						<PhysicShape=
-							<Type="Box">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=-0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=15.250000>
-								<Y=0.500000>
-								<Z=3.000000>
-							>
-							<Mass=100.000000>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-						<PhysicShape=
-							<Type="Sphere">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=0.750000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-						<PhysicShape=
-							<Type="Sphere">
-							<Position=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Rotation=
-								<X=0.000000>
-								<Y=0.000000>
-								<Z=0.000000>
-							>
-							<Scale=
-								<X=1.000000>
-								<Y=1.000000>
-								<Z=1.000000>
-							>
-							<Dimensions=
-								<X=1.150000>
-								<Y=1.150000>
-								<Z=1.150000>
-							>
-							<StaticFriction=0.500000>
-							<DynamicFriction=0.500000>
-							<Restitution=0.500000>
-						>
-					>
+					<Mode="None">
 				>
 			>
 			<Object=
 				<Item=
-					<ItemFlag>
+					<Position=
+						<X=31.055393>
+						<Y=0.000000>
+						<Z=0.000000>
+					>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -228,14 +131,13 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Geometry="graphics/g_block_4x8.nmg">
 			>
 		>
 		<MLight=
 			<MItem=
 				<Id="New Light">
-				<UId=3>
-				<Active>
-				<Helper>
+				<UId=6>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
@@ -255,10 +157,16 @@
 			<Light=
 				<Item=
 					<Position=
-						<X=0.320700>
-						<Y=9.886705>
-						<Z=1.627592>
+						<X=7.274453>
+						<Y=8.338881>
+						<Z=2.764464>
 					>
+					<Rotation=
+						<X=0.402321>
+						<Y=-0.344669>
+						<Z=-0.271542>
+					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -267,21 +175,20 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
+				<Type="Parallel">
 				<Shadow="Map">
 				<ShadowBias=0.010000>
-				<ShadowDistribution=0.900000>
+				<ShadowDistribution=0.000000>
 				<VolumetricSampleStep=0.500000>
 				<VolumetricThick=1.000000>
 				<VolumetricRange=8.000000>
+				<SpecularIntensity=1.000000>
+				<ConeAngle=0.349066>
+				<EdgeAngle=0.174533>
 			>
 		>
 	>
-	<Links=
-		<Link=
-			<Item=0>
-			<Link=2>
-		>
-	>
+	<Links>
 	<Skins>
 	<Constraints>
 	<Globals=
@@ -291,46 +198,47 @@
 			<Z=0.000000>
 		>
 		<AmbientColor=
-			<X=0.400000>
-			<Y=0.400000>
-			<Z=0.400000>
+			<X=0.482353>
+			<Y=0.309804>
+			<Z=0.443137>
 		>
-		<AmbientIntensity=1.000000>
+		<AmbientIntensity=0.000000>
 		<TargetExposure=0.250000>
 		<FogNear=0.000000>
 		<FogFar=0.000000>
 		<FogColor=
-			<X=1.000000>
-			<Y=1.000000>
-			<Z=1.000000>
+			<X=0.000000>
+			<Y=0.000000>
+			<Z=0.000000>
 		>
 	>
 	<Physics=
-		<Frequency=59.999996>
+		<Frequency=200.000000>
 	>
+	<CurrentCamera="New Camera">
 	<ViewMatrix=
 		<R0=
-			<X=0.881920>
+			<X=0.999667>
 			<Y=-0.000000>
-			<Z=-0.471399>
+			<Z=0.025807>
 			<W=0.000000>
 		>
 		<R1=
-			<X=0.137512>
-			<Y=0.956507>
-			<Z=0.257265>
+			<X=-0.006664>
+			<Y=0.966085>
+			<Z=0.258140>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.450896>
-			<Y=-0.291710>
-			<Z=0.843563>
+			<X=-0.024931>
+			<Y=-0.258226>
+			<Z=0.965763>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-18.945997>
-			<Y=12.257209>
-			<Z=-35.445271>
+			<X=16.111717>
+			<Y=16.163250>
+			<Z=-59.186073>
 			<W=1.000000>
 		>
 	>
@@ -340,30 +248,30 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="@Perspective">
+			<Camera="New Camera">
 			<Matrix=
 				<R0=
-					<X=0.881920>
+					<X=0.999667>
 					<Y=-0.000000>
-					<Z=-0.471399>
+					<Z=0.025807>
 					<W=0.000000>
 				>
 				<R1=
-					<X=0.137512>
-					<Y=0.956507>
-					<Z=0.257265>
+					<X=-0.006664>
+					<Y=0.966085>
+					<Z=0.258140>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.450896>
-					<Y=-0.291710>
-					<Z=0.843563>
+					<X=-0.024931>
+					<Y=-0.258226>
+					<Z=0.965763>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-18.945997>
-					<Y=12.257209>
-					<Z=-35.445271>
+					<X=16.111717>
+					<Y=16.163250>
+					<Z=-59.186073>
 					<W=1.000000>
 				>
 			>

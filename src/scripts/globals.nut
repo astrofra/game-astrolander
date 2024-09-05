@@ -9,11 +9,16 @@ print("//	Globals.nut		//")
 			return false
 	}
 
+	g_current_language		<-	"en"
+
 	g_screen_width			<-	1280.0
 	g_screen_height			<-	960.0
 
 	g_device				<-	GetKeyboardDevice()
 	g_gravity				<-	Vector(0.0, -4.0, 0.0)
+
+	g_player_max_speed		<-	Mtrs(25.0)
+
 	g_clock_scale			<-	1.0
 	g_clock_scale_easy		<-	0.8
 	g_clock_scale_hard		<-	1.35
@@ -21,11 +26,22 @@ print("//	Globals.nut		//")
 	g_reversed_controls		<-	false
 	g_time_key_order		<-	["hour", "minute", "second", "ms"]
 
-	g_main_font_name		<-	"banksb20caps" //"banksb20"//g_main_font_name
+	g_default_font_name		<-	"banksb20caps"
+	g_main_font_name		<-	"tabimyou" // "banksb20caps" //"banksb20"//g_main_font_name 
 	g_hud_font_name			<-	"aerial"
 
 	g_ui_color_blue			<-	Vector(117, 155, 168, 180)
 	g_ui_color_yellow		<-	Vector(248, 236, 188, 255)
 	g_ui_color_white		<-	Vector(255, 255, 255, 255)
 	g_ui_color_black		<-	Vector(0, 0, 0, 255)
+	g_ui_color_red			<-	Vector(255, 10, 0, 255)
+	g_ui_color_green		<-	Vector(0, 180, 5, 255)
+
+	g_ambient_color_warm	<-	Vector(150, 105, 85, 255)
+	g_ambient_color_dawn	<-	Vector(235, 135, 45, 255)
+	g_ambient_color_cold	<-	Vector(85, 130, 150, 255)
+
+	g_leaderboard_max_entry	<-	10
+
+	g_base_url				<-	"http://astlan.astrofra.com"
 	

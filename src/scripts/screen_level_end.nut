@@ -12,249 +12,12 @@ function	ComputeScoreThreadWait(s)
 		suspend()
 }
 
-//-----------------------------
-function	ComputeScore(scene)
-//-----------------------------
+//--------------------------------
+function	ShowScoreScreen(scene)
+//--------------------------------
 {
-
-	local	_dt_count, 
-			game,
-			level_end_ui,
-			ui, sfx_feedback_counter = 0
-
-	local	sfx_channel, sfx_count, sfx_end_count, sfx_new_record = []
-
-	sfx_count = AudioLoadSfx("gui_up_down.wav")
-	sfx_end_count = AudioLoadSfx("gui_next_page.wav")
-	sfx_new_record.append(AudioLoadSfx("sfx_success_light_0.wav"))
-	sfx_new_record.append(AudioLoadSfx("sfx_success_light_1.wav"))
-	sfx_new_record.append(AudioLoadSfx("sfx_success_light_2.wav"))
-	sfx_new_record.append(AudioLoadSfx("sfx_success_light_3.wav"))
-
-	local	current_channel = 0
-
-	game = SceneGetScriptInstance(scene).game
-	level_end_ui = SceneGetScriptInstance(scene).level_end_ui
-	ui = SceneGetScriptInstance(scene).ui
-
-	while(!UIIsCommandListDone(ui))
-		suspend()
-
-	ComputeScoreThreadWait(Sec(0.5))
-
-	sfx_channel = array(4,0)
-	foreach(i, chan in sfx_channel)
-	{
-		sfx_channel[i] = MixerSoundStart(g_mixer, sfx_count)
-//	MixerChannelLock(g_mixer, sfx_channel)
-		MixerChannelSetGain(g_mixer, sfx_channel[i], 1.0)
-		MixerChannelSetLoopMode(g_mixer, sfx_channel[i], LoopNone)
-	}
-
-	local	_level_key = "level_" + game.player_data.current_level.tostring(),
-			_score	=	0.0
-
-	//	Unwind life bar
-	local	life = game.player_data.latest_run.life,
-			fuel = game.player_data.latest_run.fuel
-
-	while(life > 0)
-	{
-		_dt_count = 1 //g_dt_frame * 60.0 * 2.0
-
-		if (life > 0)
-		{
-			life-=_dt_count
-			_score+=(_dt_count * 10.0)
-		}
-
-		local	_stats = {
-				life = (life / 2.0).tointeger() * 2,
-				fuel = fuel.tointeger(), //(fuel / 2.0).tointeger() * 2,
-				score = _score.tointeger()
-			}
-
-		if (!SceneGetScriptInstance(scene).skip)
-		{
-			level_end_ui.UpdateStats(_stats)
-
-			sfx_feedback_counter++
-			if (sfx_feedback_counter > 5)
-			{
-				sfx_feedback_counter = 0
-				current_channel++
-				if (current_channel >= sfx_channel.len())
-					current_channel = 0
-				MixerChannelStart(g_mixer, sfx_channel[current_channel], sfx_count)
-			}
-
-			ComputeScoreThreadWait(Sec(1.0 / 60.0))
-		}
-
-	}
-
-	//game.player_data.score = game.player_data.score.tointeger()
-
-	//	Perfect Drive bonus
-	if (game.player_data.latest_run.life >= 100)
-	{
-		if (!SceneGetScriptInstance(scene).skip)
-			ComputeScoreThreadWait(Sec(0.5) * EngineGetClockScale(g_engine))
-
-		print("Perfect Drive! + 1000")
-		_score += 1000
-
-		local	_stats = {
-				life = 0, //(life / 2.0).tointeger() * 2,
-				fuel = fuel.tointeger(), //(fuel / 2.0).tointeger() * 2,
-				score = _score.tointeger()
-			}
-
-		level_end_ui.UpdateStats(_stats)
-
-		if (!SceneGetScriptInstance(scene).skip)
-		{
-			level_end_ui.ShowMessagePerfect()
-			ComputeScoreThreadWait(Sec(0.25) * EngineGetClockScale(g_engine))
-			current_channel++
-			if (current_channel >= sfx_channel.len())
-				current_channel = 0
-			MixerChannelStart(g_mixer, sfx_channel[current_channel], sfx_new_record[0])
-			level_end_ui.ShowMessageScoreBonus()
-			ComputeScoreThreadWait(Sec(2.0) * EngineGetClockScale(g_engine))
-		}
-	}
-
-	//	Life record ?
-	if (game.player_data.latest_run.new_record_life)
-	{
-		if (!SceneGetScriptInstance(scene).skip)
-		{
-			ComputeScoreThreadWait(Sec(0.5) * EngineGetClockScale(g_engine))
-			level_end_ui.ShowNewRecordLife()
-			current_channel++
-			if (current_channel >= sfx_channel.len())
-				current_channel = 0
-			MixerChannelStart(g_mixer, sfx_channel[current_channel], sfx_new_record[1])
-			ComputeScoreThreadWait(Sec(0.1) * EngineGetClockScale(g_engine))
-			level_end_ui.ShowMessageScoreBonus(g_locale.endlevel_remain_life + " : " + game.player_data.latest_run.life.tointeger())
-			ComputeScoreThreadWait(Sec(2.0) * EngineGetClockScale(g_engine))
-		}
-	}
-
-	if (!SceneGetScriptInstance(scene).skip)
-		ComputeScoreThreadWait(Sec(0.5) * EngineGetClockScale(g_engine))
-
-	//	Unwind fuel bar
-	while(fuel > 0)
-	{
-		_dt_count = 1 //g_dt_frame * 60.0 * 2.0
-
-		if (fuel > 0)
-		{
-			fuel-=_dt_count
-			_score+=(_dt_count * 10.0)
-		}
-
-		local	_stats = {
-				life = 0, //(life / 2.0).tointeger() * 2,
-				fuel = (fuel / 2.0).tointeger() * 2,
-				score = _score.tointeger()
-			}
-
-		if (!SceneGetScriptInstance(scene).skip)
-		{
-			level_end_ui.UpdateStats(_stats)
-
-			sfx_feedback_counter++
-			if (sfx_feedback_counter > 5)
-			{
-				sfx_feedback_counter = 0
-				current_channel++
-				if (current_channel >= sfx_channel.len())
-					current_channel = 0
-				MixerChannelStart(g_mixer, sfx_channel[current_channel], sfx_count)
-			}
-
-			ComputeScoreThreadWait(Sec(1.0 / 60.0))
-		}
-	}
-
-	//game.player_data.score = game.player_data.score.tointeger()
-
-	//	Fuel record ?
-	if (game.player_data.latest_run.new_record_fuel && !SceneGetScriptInstance(scene).skip)
-	{
-		ComputeScoreThreadWait(Sec(0.5) * EngineGetClockScale(g_engine))
-		level_end_ui.ShowNewRecordFuel()
-		current_channel++
-		if (current_channel >= sfx_channel.len())
-			current_channel = 0
-		MixerChannelStart(g_mixer, sfx_channel[current_channel], sfx_new_record[2])
-		ComputeScoreThreadWait(Sec(0.1) * EngineGetClockScale(g_engine))
-		level_end_ui.ShowMessageScoreBonus(g_locale.endlevel_remain_fuel + " : " + game.player_data.latest_run.fuel.tointeger())
-		ComputeScoreThreadWait(Sec(2.0) * EngineGetClockScale(g_engine))
-	}
-
-	//	Stopwatch record ?
-	print("ComputeScore() : game.player_data.latest_run.new_record_stopwatch = " + game.player_data.latest_run.new_record_stopwatch)
-	if (game.player_data.latest_run.new_record_stopwatch && !SceneGetScriptInstance(scene).skip)
-	{
-		_score+=500
-		local	_stats = {
-				life = 0, //(life / 2.0).tointeger() * 2,
-				fuel = (fuel / 2.0).tointeger() * 2,
-				score = _score.tointeger()
-			}
-		ComputeScoreThreadWait(Sec(0.5) * EngineGetClockScale(g_engine))
-		level_end_ui.UpdateStats(_stats)
-		level_end_ui.ShowNewRecordTime()
-		current_channel++
-		if (current_channel >= sfx_channel.len())
-			current_channel = 0
-		MixerChannelStart(g_mixer, sfx_channel[current_channel], sfx_new_record[3])
-		ComputeScoreThreadWait(Sec(0.1) * EngineGetClockScale(g_engine))
-		level_end_ui.ShowMessageScoreBonus(TimeToString(game.player_data.latest_run.stopwatch))
-		ComputeScoreThreadWait(Sec(2.0) * EngineGetClockScale(g_engine))
-	}
-	
-	//	Save score & datas
-	if (game.player_data[_level_key].score < _score)
-		game.player_data[_level_key].score = _score.tointeger()
-	
-	GlobalSaveGame()	
-
-	if (!SceneGetScriptInstance(scene).skip)
-		ComputeScoreThreadWait(Sec(0.5) * EngineGetClockScale(g_engine))
-
-	//	Story image ?
-	print("LevelEnd::ComputeScore() : game.player_data.current_level + 1 = " + (game.player_data.current_level + 1).tostring())
-	print("((game.player_data.current_level + 1) / 4.0).tointeger() * 4 = " + (((game.player_data.current_level + 1) / 4.0).tointeger() * 4).tostring())
-	if ((game.player_data.current_level > 0) && ((game.player_data.current_level + 1) == (((game.player_data.current_level + 1) / 4.0).tointeger() * 4)))
-	{
-		level_end_ui.FadeOutScoreDebrief()
-		ComputeScoreThreadWait(Sec(0.5) * EngineGetClockScale(g_engine))
-		level_end_ui.ShowStoryImage(((game.player_data.current_level + 1.0) / 4.0).tointeger() - 1)
-		if (!SceneGetScriptInstance(scene).skip)
-			ComputeScoreThreadWait(Sec(6.0) * EngineGetClockScale(g_engine))
-		else
-			ComputeScoreThreadWait(Sec(1.0) * EngineGetClockScale(g_engine))
-	}
-/*
-	//	Fade out
-	UISetCommandList(ui, "globalfade 0.5, 1;")
-
-	while(!UIIsCommandListDone(ui))
-		suspend()
-*/
-
-	EngineSetClockScale(g_engine, 1.0)
-
-	if (SceneGetScriptInstance(scene).skip)
-		UISetCommandList(ui, "globalfade 0.1, 1;")
-
-	ProjectGetScriptInstance(g_project).player_data.current_level++
-	ProjectGetScriptInstance(g_project).ProjectStartGame()
+	ComputeScoreThreadWait(Sec(6.0))
+	SceneGetScriptInstance(scene).update_function = SceneGetScriptInstance(scene).GotoNextLevel
 }
 
 //------------------------------------------------
@@ -269,6 +32,11 @@ class	LevelEnd	extends	SceneWithThreadHandler
 	state					=	0
 
 	skip					=	false
+
+	update_function			=	0
+
+	pending_request			=	-1
+	available_request	=	"none"
 
 	constructor()
 	{
@@ -303,18 +71,99 @@ class	LevelEnd	extends	SceneWithThreadHandler
 		ui = SceneGetUI(scene)
 		UICommonSetup(ui)
 		level_end_ui = LevelEndUI(ui)
-		level_end_ui.UpdateLevelName(GetLevelName(game.player_data.current_level))
-
-//		state = "LevelEnd"
-
-		//ComputeScore(scene)
-		CreateThread(ComputeScore)
+		level_end_ui.DisplayDebrief(ComputeScoreFromLevelStats(scene))
+		level_end_ui.AddNextButton()
+		GlobalSaveGame()
+		
+//		update_function = GotoNextLevel
+//		level_end_ui.UpdateLevelName(GetLevelName(game.player_data.current_level))
 	}
 
 	//-------------------------
 	function	OnSetupDone(scene)
 	//-------------------------
 	{
+		pending_request = SubmitTotalScore()
+		CreateThread(ShowScoreScreen)
+	}
+
+	//-------------------------------------------
+	function	ComputeScoreFromLevelStats(scene)
+	//-------------------------------------------
+	{
+
+		//	Begin "fake project mode"
+/*
+		if (EngineGetToolMode(g_engine) != ToolProjectPreview)
+		{
+			game = {
+				player_data		=	{
+						total_score				=	15000
+						current_selected_level	=	0
+						current_level			=	0
+						latest_run				=	0
+						level_0 = { life = 80, fuel = 80, score = 250, stopwatch = 30000 }
+				}
+			}
+
+			game.player_data.latest_run	= {
+								stopwatch = 10500,
+								fuel = 60,
+								life = 20,
+								new_record_stopwatch = false,
+								new_record_fuel = false,
+								new_record_life = false,
+								wall_hits = 0
+			}
+		}//	End "fake project mode"
+*/
+		local	_current_level_key = "level_" + game.player_data.current_level.tostring()
+
+		//	Compute Remaining Life Bonus
+		local	_life_bonus_amount = Clamp(game.player_data.latest_run.life - 50, 0, 100) // No bonus if less than 50% Life
+		_life_bonus_amount *= 10
+
+		//	Compute Remaining Fuel Bonus
+		local	_fuel_bonus_amount = Clamp(game.player_data.latest_run.fuel - 25, 0, 100) // No bonus if less than 25% Fuel
+		_fuel_bonus_amount *= 5
+
+		//	Compute Stopwatch Record Bonus
+		local	reference_stopwach = 0.0
+		local	_stopwatch_bonus = Max(reference_stopwach - game.player_data.latest_run.stopwatch, 0.0)
+		local	_level_score = 150 + (game.player_data.current_level * 50) +  _life_bonus_amount + _fuel_bonus_amount + _stopwatch_bonus
+
+		if (game.player_data[_current_level_key].score < _level_score)
+		{
+			game.player_data[_current_level_key].score = _level_score
+			game.player_data[_current_level_key].life = game.player_data.latest_run.life
+			game.player_data[_current_level_key].fuel = game.player_data.latest_run.fuel
+			game.player_data[_current_level_key].stopwatch = game.player_data.latest_run.stopwatch
+		}
+
+		GlobalCalculateTotalScore()
+
+		local	debrief_table = []
+
+		debrief_table.append({	text = g_locale.endlevel_level_name, 
+								value = GetLevelName(game.player_data.current_level)	})
+
+		debrief_table.append({	text = g_locale.endlevel_remain_life,
+								value = game.player_data.latest_run.life.tointeger().tostring(),
+								bonus = _life_bonus_amount.tointeger()})
+		debrief_table.append({	text = g_locale.endlevel_remain_fuel,
+								value = game.player_data.latest_run.fuel.tointeger().tostring(),
+								bonus = _fuel_bonus_amount.tointeger() })
+		debrief_table.append({	text = g_locale.endlevel_time,
+								value = TimeToString(game.player_data.latest_run.stopwatch),
+								bonus = _stopwatch_bonus.tointeger()})
+
+		debrief_table.append({	text = g_locale.endlevel_score ,
+								value = _level_score.tointeger().tostring()	})
+
+		debrief_table.append({	text = g_locale.total_score,	
+								value = game.player_data.total_score.tointeger().tostring()	})
+
+		return debrief_table
 	}
 
 	//-------------------------
@@ -323,5 +172,61 @@ class	LevelEnd	extends	SceneWithThreadHandler
 	{
 		base.OnUpdate(scene)
 		level_end_ui.UpdateCursor()
+		HttpUpdate()
+
+		if (update_function != 0)
+			update_function(scene)
+
 	}
+
+	function	GotoNextLevel(scene)
+	{
+		update_function = 0
+		ProjectGetScriptInstance(g_project).player_data.current_level++
+		ProjectGetScriptInstance(g_project).ProjectStartGame()
+	}
+	
+	//----------------------------
+	function	SubmitTotalScore()
+	//----------------------------
+	{
+		print("LevelEnd::SubmitTotalScore()")
+		local	_guid, _name, _score
+
+		_guid = ProjectGetScriptInstance(g_project).player_data.guid
+		_name = ProjectGetScriptInstance(g_project).player_data.nickname
+		_score = ProjectGetScriptInstance(g_project).player_data.total_score.tointeger()
+
+		local	post = "command=set&guid=" + _guid + "&name=" + _name + "&score=" + _score
+		print("post = " + post)
+		return HttpPost(g_base_url + "/leaderboard.php", post)
+	}
+	
+	//---------------------
+	function	HttpRequestComplete(uid, data)
+	//---------------------
+	{
+		print("LevelEnd::onHttpRequestComplete() uid = " + uid)
+		if	(pending_request != uid)		// ignore
+			return
+
+		print("Score submit request done.")
+		available_request = "data"
+		print("Request returned : " + data)
+		pending_request = -1
+	}
+	
+	//---------------------
+	function	HttpRequestError(uid)
+	//---------------------
+	{
+		print("LevelEnd::onHttpRequestError() uid = " + uid)
+		if	(pending_request != uid)		// ignore
+			return
+
+		available_request = "error"
+		pending_request = -1
+	}
+	
+
 }

@@ -22,17 +22,13 @@ class	GameOverScreen
 			MixerChannelStopAll(g_mixer)
 		}
 	}
-
-	/*!
-		@short	OnSetup
-		Called when the scene is about to be setup.
-	*/
 	
-	function	ShowStoryImage(scene)
+	function	OnSetup(scene)
 	{
-		print("GameOverScreen::ShowStoryImage()")
-		local	story_texture, fname
-		local	ui = SceneGetUI(scene)
+		print("GameOverScreen::OnSetup()")
+		display_timer = g_clock
+		local	ui, story_texture, fname
+		ui = SceneGetUI(scene)
 
 		CreateOpaqueScreen(ui)
 		
@@ -50,18 +46,7 @@ class	GameOverScreen
 		}
 		else
 		{
-			print("LevelEndUI::ShowStoryImage() : Cannot find file '" + fname + "'.")
+			print("GameOverScreen::ShowStoryImage() : Cannot find file '" + fname + "'.")
 		}
-	}
-	
-	function	OnSetupDone(scene)
-	{
-		ShowStoryImage(scene)
-	}
-	
-	function	OnSetup(scene)
-	{
-		display_timer = g_clock
-		//MixerSoundStart(g_mixer, EngineLoadSound(g_engine, "audio/sfx/sfx_polaroid.wav"))
 	}
 }

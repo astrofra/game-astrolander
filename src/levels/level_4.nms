@@ -789,7 +789,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1088,7 +1087,6 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3567,7 +3565,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3778,7 +3775,6 @@
 						<Y=16.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3853,7 +3849,6 @@
 						<Y=0.000000>
 						<Z=-3.141593>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3922,7 +3917,6 @@
 						<Y=40.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3991,7 +3985,6 @@
 						<Y=40.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4066,7 +4059,6 @@
 						<Y=-3.141593>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4141,7 +4133,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4216,7 +4207,6 @@
 						<Y=3.141592>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4285,7 +4275,6 @@
 						<Y=13.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4354,7 +4343,6 @@
 						<Y=13.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4423,7 +4411,6 @@
 						<Y=13.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4492,7 +4479,6 @@
 						<Y=10.425495>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4561,7 +4547,6 @@
 						<Y=10.425495>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4630,7 +4615,6 @@
 						<Y=10.425495>
 						<Z=0.239879>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4699,7 +4683,6 @@
 						<Y=10.425495>
 						<Z=0.099154>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4768,7 +4751,6 @@
 						<Y=10.425495>
 						<Z=0.427041>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4837,7 +4819,6 @@
 						<Y=10.425495>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6359,7 +6340,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7511,7 +7491,6 @@
 						<Y=36.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7580,7 +7559,6 @@
 						<Y=36.000000>
 						<Z=1.137145>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8953,7 +8931,6 @@
 						<Y=-3.141593>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9022,7 +8999,6 @@
 						<Y=43.490704>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9091,7 +9067,6 @@
 						<Y=41.470539>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9160,7 +9135,6 @@
 						<Y=39.500408>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9229,7 +9203,6 @@
 						<Y=35.520622>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9298,7 +9271,6 @@
 						<Y=43.490704>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9367,7 +9339,6 @@
 						<Y=39.500408>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9436,7 +9407,6 @@
 						<Y=37.514145>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9505,7 +9475,6 @@
 						<Y=35.520622>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9574,7 +9543,6 @@
 						<Y=33.527290>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9643,7 +9611,6 @@
 						<Y=29.536995>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9712,7 +9679,6 @@
 						<Y=25.557209>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9787,7 +9753,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12660,7 +12625,6 @@
 						<Y=-3.141592>
 						<Z=1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12807,7 +12771,6 @@
 						<Y=3.141593>
 						<Z=1.570799>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12881,7 +12844,6 @@
 						<Y=0.000001>
 						<Z=1.570795>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12954,7 +12916,6 @@
 						<Y=3.141593>
 						<Z=-1.570795>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13028,7 +12989,6 @@
 						<Y=3.141586>
 						<Z=0.000003>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13102,7 +13062,6 @@
 						<Y=-3.141593>
 						<Z=-1.570779>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13176,7 +13135,6 @@
 						<Y=-3.141593>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13250,7 +13208,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13391,7 +13348,6 @@
 						<Y=83.432152>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13459,7 +13415,6 @@
 						<Y=77.421257>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -17395,7 +17350,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileGear2.nms">
+			<Template="graphics/PropGear2.nms">
 		>
 		<Instance=
 			<MItem=
@@ -17433,7 +17388,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileGear2.nms">
+			<Template="graphics/PropGear2.nms">
 		>
 		<Instance=
 			<MItem=
@@ -17896,7 +17851,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileGear2.nms">
+			<Template="graphics/PropGear2.nms">
 		>
 		<Instance=
 			<MItem=
@@ -17934,7 +17889,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileGear0.nms">
+			<Template="graphics/PropGear0.nms">
 		>
 		<Instance=
 			<MItem=
@@ -17972,7 +17927,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileGear2.nms">
+			<Template="graphics/PropGear2.nms">
 		>
 		<Instance=
 			<MItem=
@@ -18200,7 +18155,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileGear2.nms">
+			<Template="graphics/PropGear2.nms">
 		>
 		<Instance=
 			<MItem=
@@ -18238,7 +18193,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileGear0.nms">
+			<Template="graphics/PropGear0.nms">
 		>
 		<Instance=
 			<MItem=
@@ -18276,7 +18231,7 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/MobileGear2.nms">
+			<Template="graphics/PropGear2.nms">
 		>
 		<Instance=
 			<MItem=
@@ -22307,6 +22262,135 @@
 			>
 			<Template="graphics/MobileDeadlySlime.nms">
 		>
+		<Instance=
+			<MItem=
+				<Id="MobileDeadlySlime">
+				<UId=381>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=262.847748>
+					<Y=71.710022>
+					<Z=0.000000>
+				>
+				<Rotation=
+					<X=-0.000000>
+					<Y=0.000000>
+					<Z=2.047271>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/MobileDeadlySlime.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="MobileDeadlySlime">
+				<UId=382>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=257.285553>
+					<Y=68.839165>
+					<Z=0.000000>
+				>
+				<Rotation=
+					<X=-0.000000>
+					<Y=0.000000>
+					<Z=2.047271>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/MobileDeadlySlime.nms">
+		>
+		<Instance=
+			<MItem=
+				<Id="MobileDeadlySlime">
+				<UId=383>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=268.346985>
+					<Y=74.548401>
+					<Z=0.000000>
+				>
+				<Rotation=
+					<X=-0.008401>
+					<Y=3.125306>
+					<Z=1.094409>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/MobileDeadlySlime.nms">
+		>
 	>
 	<Links=
 		<Link=
@@ -22378,27 +22462,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=0.998384>
+			<X=0.999721>
 			<Y=0.000000>
-			<Z=0.056821>
+			<Z=0.023623>
 			<W=0.000000>
 		>
 		<R1=
-			<X=-0.005606>
-			<Y=0.995121>
-			<Z=0.098504>
+			<X=-0.000796>
+			<Y=0.999433>
+			<Z=0.033673>
 			<W=0.000000>
 		>
 		<R2=
-			<X=-0.056544>
-			<Y=-0.098664>
-			<Z=0.993513>
+			<X=-0.023610>
+			<Y=-0.033683>
+			<Z=0.999154>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-0.560864>
-			<Y=5.105276>
-			<Z=-87.137550>
+			<X=264.162903>
+			<Y=72.997223>
+			<Z=-98.477829>
 			<W=1.000000>
 		>
 	>
@@ -22411,27 +22495,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=0.998384>
+					<X=0.999721>
 					<Y=0.000000>
-					<Z=0.056821>
+					<Z=0.023623>
 					<W=0.000000>
 				>
 				<R1=
-					<X=-0.005606>
-					<Y=0.995121>
-					<Z=0.098504>
+					<X=-0.000796>
+					<Y=0.999433>
+					<Z=0.033673>
 					<W=0.000000>
 				>
 				<R2=
-					<X=-0.056544>
-					<Y=-0.098664>
-					<Z=0.993513>
+					<X=-0.023610>
+					<Y=-0.033683>
+					<Z=0.999154>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-0.560864>
-					<Y=5.105276>
-					<Z=-87.137550>
+					<X=264.162903>
+					<Y=72.997223>
+					<Z=-98.477829>
 					<W=1.000000>
 				>
 			>
