@@ -786,7 +786,9 @@ class	LevelHandler	extends	SceneWithThreadHandler
 								"rat_sewer.ogg",
 								"strangers_on_the_train.ogg",
 								"town_in_ruins.ogg",
-								"youre_my_hero.ogg"
+								"youre_my_hero.ogg",
+								"sea_horizons.ogg",
+								"steel_horizons.ogg"
 								]
 		if ((typeof music_filename != "string") || (music_filename == ""))
 			music_filename = "audio/music/" + _rand_music[Irand(0,8)]

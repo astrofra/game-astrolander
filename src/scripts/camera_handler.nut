@@ -33,6 +33,7 @@ class	CameraHandler
 		camera = ItemCastToCamera(camera_item)
 		SceneSetCurrentCamera(scene, camera)
 		CameraSetFov(ItemCastToCamera(camera_item), DegreeToRadian(22.5))
+		CameraSetClipping(ItemCastToCamera(camera_item), Mtr(20.0), Mtr(1500.0))
 		target_vel = Vector(0,0,0)
 	}
 

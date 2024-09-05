@@ -970,12 +970,6 @@ f9?žiª‰£f9?žiª‰£f¢=}¤ijcËf/KiJ-Íf¢=}¤ijcËf9?žiª‰£fzÝiªÅ¤fzÝiª
 				<Texture="graphics/bumped_metal_color.jpg">
 				<UV=0>
 			>
-			<TextureStage=
-				<Index=1>
-				<Active>
-				<Texture="graphics//diffuse_scratched_metal.jpg">
-				<UV=0>
-			>
 		>
 		<Material=
 			<Id="lamp">
@@ -1064,6 +1058,16 @@ f9?žiª‰£f9?žiª‰£f¢=}¤ijcËf/KiJ-Íf¢=}¤ijcËf9?žiª‰£fzÝiªÅ¤fzÝiª
 							<Param=5>
 						>
 					>
+					<Entry=
+						<Type="Material Parameter">
+						<Pos=
+							<X=0.000000>
+							<Y=0.000000>
+						>
+						<Param=
+							<Param=6>
+						>
+					>
 				>
 				<Normal=
 					<Block=
@@ -1093,6 +1097,11 @@ f9?žiª‰£f9?žiª‰£f¢=}¤ijcËf/KiJ-Íf¢=}¤ijcËf9?žiª‰£fzÝiªÅ¤fzÝiª
 				<Opacity=
 					<Block=
 						<Index=5>
+					>
+				>
+				<Reflection=
+					<Block=
+						<Index=6>
 					>
 				>
 			>

@@ -95,8 +95,8 @@
 				<NormalMapTangent>
 				<DoubleSided>
 				<NoZWrite>
+				<AlphaTest>
 			>
-			<BlendOp="Alpha">
 			<ShaderMap=
 				<Pos=
 					<X=0.000000>

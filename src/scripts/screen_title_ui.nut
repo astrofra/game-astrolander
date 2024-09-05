@@ -364,10 +364,13 @@ class	TitleUI	extends	BaseUI
 	function	LoadMinimapTextureFromLevelIndex(_idx)
 	//------------------------------------------------
 	{
-		local	_fname = "ui/minimaps/level_" + _idx.tostring() + ".tga"
+		local	_fname = "ui/minimaps/level_" + _idx.tostring()
 
-		if (FileExists(_fname))
-			return EngineLoadTexture(g_engine, _fname)
+		if (FileExists(_fname + ".png"))
+			return EngineLoadTexture(g_engine, _fname + ".png")
+		else
+		if (FileExists(_fname + ".tga"))
+			return EngineLoadTexture(g_engine, _fname + ".tga")
 		else
 			return 0
 	}

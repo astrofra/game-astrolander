@@ -5,7 +5,7 @@ print("//	Globals.nut		//")
 
 	function	IsTouchPlatform()
 	{
-		if (g_platform == "Android")
+		if ((g_platform == "Android") || (g_platform == "iOS"))
 			return true
 		else
 			return false
@@ -25,7 +25,7 @@ print("//	Globals.nut		//")
 	g_clock_scale_easy		<-	0.8
 	g_clock_scale_hard		<-	1.35
 	g_bonus_duration		<-	Sec(10.0)
-	g_reversed_controls		<-	false
+	g_reversed_controls		<-	true
 	g_time_key_order		<-	["hour", "minute", "second", "ms"]
 
 	g_default_font_name		<-	"banksb20caps"
@@ -47,4 +47,5 @@ print("//	Globals.nut		//")
 	g_leaderboard_max_entry	<-	10
 
 	g_base_url				<-	"http://astlan.astrofra.com"
-	
+
+	g_player_name			<-	null

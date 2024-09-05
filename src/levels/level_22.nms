@@ -15,7 +15,7 @@
 				>
 				<Parm=
 					<Id="music_filename">
-					<Value="">
+					<Value="audio/music/steel_horizons.ogg">
 				>
 			>
 		>
@@ -34,7 +34,7 @@
 			>
 			<Parm=
 				<Id="music_filename">
-				<Value="">
+				<Value="audio/music/steel_horizons.ogg">
 			>
 		>
 	>
@@ -75,12 +75,6 @@
 					<RotationOrder="YXZ">
 					<Registry=
 						<PostProcess=
-							<Bloom=
-								<Strength=3.000000>
-								<Radius=20.000000>
-								<Threshold=0.650000>
-								<Exponent=12.000000>
-							>
 							<Noise=
 								<Strength=0.150000>
 								<Monochromatic=1.000000>
@@ -199,7 +193,6 @@
 						<Y=25.000000>
 						<Z=1.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -213,7 +206,7 @@
 		>
 		<MObject=
 			<MItem=
-				<Id="Background Hills 0">
+				<Id="Background Atmosphere Layer">
 				<UId=3>
 				<Active>
 				<Priority=0.500000>
@@ -235,14 +228,9 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=-89.797607>
-						<Y=-176.407974>
-						<Z=50.000000>
-					>
-					<Scale=
-						<X=5.000000>
-						<Y=5.000000>
-						<Z=1.000000>
+						<X=10.000000>
+						<Y=0.000000>
+						<Z=0.000000>
 					>
 					<Target=
 						<X=0.000000>
@@ -252,7 +240,7 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/background_hills_0.nmg">
+				<Geometry="graphics/background_atmosphere_layer.nmg">
 			>
 		>
 		<MObject=
@@ -279,51 +267,10 @@
 			<Object=
 				<Item=
 					<Position=
-						<X=10.000000>
-						<Y=0.000000>
-						<Z=0.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/background_atmosphere_layer.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="Background Atmosphere Layer">
-				<UId=5>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
 						<X=-10.000000>
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -333,278 +280,12 @@
 					<Registry>
 				>
 				<Geometry="graphics/background_atmosphere_layer.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="Background Hills 0">
-				<UId=6>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=358.911377>
-						<Y=-176.407974>
-						<Z=50.000000>
-					>
-					<Scale=
-						<X=5.000000>
-						<Y=5.000000>
-						<Z=1.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/background_hills_0.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="Background Hills 1">
-				<UId=7>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=130.024002>
-						<Y=-94.932602>
-						<Z=100.000000>
-					>
-					<Scale=
-						<X=5.000000>
-						<Y=5.000000>
-						<Z=1.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/background_hills_1.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="Background Hills 2">
-				<UId=8>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=347.045349>
-						<Y=-6.779552>
-						<Z=150.000000>
-					>
-					<Scale=
-						<X=5.000000>
-						<Y=5.000000>
-						<Z=1.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/background_hills_2.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="Background Hills 2">
-				<UId=9>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=-101.570450>
-						<Y=-6.779552>
-						<Z=150.000000>
-					>
-					<Scale=
-						<X=5.000000>
-						<Y=5.000000>
-						<Z=1.000000>
-					>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/background_hills_2.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="Background Hills 1">
-				<UId=10>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=578.855652>
-						<Y=-94.932602>
-						<Z=100.000000>
-					>
-					<Scale=
-						<X=5.000000>
-						<Y=5.000000>
-						<Z=1.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/background_hills_1.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="Background Hills 1">
-				<UId=11>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<Motions>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=-317.393616>
-						<Y=-94.932602>
-						<Z=100.000000>
-					>
-					<Scale=
-						<X=5.000000>
-						<Y=5.000000>
-						<Z=1.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/background_hills_1.nmg">
 			>
 		>
 		<MObject=
 			<MItem=
 				<Id="background_handler">
-				<UId=12>
+				<UId=5>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -643,7 +324,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x32">
-				<UId=13>
+				<UId=6>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -652,8 +333,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -716,7 +397,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=14>
+				<UId=7>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -725,8 +406,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -775,7 +456,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -790,7 +470,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=15>
+				<UId=8>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -799,8 +479,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -850,7 +530,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -865,7 +544,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=16>
+				<UId=9>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -874,8 +553,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -925,7 +604,6 @@
 						<Y=3.141593>
 						<Z=-0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -940,7 +618,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=17>
+				<UId=10>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -949,8 +627,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1000,7 +678,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1015,7 +692,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=18>
+				<UId=11>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1024,8 +701,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1074,7 +751,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1089,7 +765,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=19>
+				<UId=12>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1098,8 +774,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1148,7 +824,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1163,7 +838,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=20>
+				<UId=13>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1172,8 +847,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1223,7 +898,6 @@
 						<Y=0.000000>
 						<Z=-1.570797>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1238,7 +912,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=21>
+				<UId=14>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1247,8 +921,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1312,7 +986,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=22>
+				<UId=15>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1321,8 +995,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1386,7 +1060,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=23>
+				<UId=16>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1395,8 +1069,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1459,7 +1133,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=24>
+				<UId=17>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1468,8 +1142,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1532,7 +1206,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=25>
+				<UId=18>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1541,8 +1215,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1606,7 +1280,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=26>
+				<UId=19>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1615,8 +1289,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1665,7 +1339,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1680,7 +1353,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=27>
+				<UId=20>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1689,8 +1362,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1740,7 +1413,6 @@
 						<Y=3.141593>
 						<Z=-3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1755,7 +1427,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x4">
-				<UId=28>
+				<UId=21>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1764,8 +1436,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1814,7 +1486,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1829,7 +1500,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=29>
+				<UId=22>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1838,8 +1509,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1889,7 +1560,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1904,7 +1574,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=30>
+				<UId=23>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1913,8 +1583,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -1963,7 +1633,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -1978,7 +1647,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=31>
+				<UId=24>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -1987,8 +1656,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2037,7 +1706,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2052,7 +1720,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=32>
+				<UId=25>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2061,8 +1729,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2126,7 +1794,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=33>
+				<UId=26>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2135,8 +1803,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2200,7 +1868,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=34>
+				<UId=27>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2209,8 +1877,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2274,7 +1942,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=35>
+				<UId=28>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2283,8 +1951,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2347,7 +2015,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=36>
+				<UId=29>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2356,8 +2024,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2420,7 +2088,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=37>
+				<UId=30>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2429,8 +2097,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2480,7 +2148,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2495,7 +2162,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=38>
+				<UId=31>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2504,8 +2171,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2554,7 +2221,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2569,7 +2235,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=39>
+				<UId=32>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2578,8 +2244,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2628,7 +2294,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2643,7 +2308,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=40>
+				<UId=33>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2652,8 +2317,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2702,7 +2367,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2717,7 +2381,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=41>
+				<UId=34>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2726,8 +2390,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2776,7 +2440,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2791,7 +2454,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=42>
+				<UId=35>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2800,8 +2463,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2850,7 +2513,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2865,7 +2527,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=43>
+				<UId=36>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2874,8 +2536,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2924,7 +2586,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2939,7 +2600,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=44>
+				<UId=37>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -2948,8 +2609,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -2998,7 +2659,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3013,7 +2673,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=45>
+				<UId=38>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3022,8 +2682,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3072,7 +2732,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3087,7 +2746,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=46>
+				<UId=39>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3096,8 +2755,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3160,7 +2819,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=47>
+				<UId=40>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3169,8 +2828,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3219,7 +2878,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3234,7 +2892,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=48>
+				<UId=41>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3243,8 +2901,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3293,7 +2951,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3308,7 +2965,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=49>
+				<UId=42>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3317,8 +2974,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3367,7 +3024,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3382,7 +3038,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=50>
+				<UId=43>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3391,8 +3047,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3442,7 +3098,6 @@
 						<Y=3.141593>
 						<Z=-0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3457,7 +3112,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=51>
+				<UId=44>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3466,8 +3121,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3517,7 +3172,6 @@
 						<Y=3.141593>
 						<Z=-3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3532,7 +3186,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=52>
+				<UId=45>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3541,8 +3195,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3591,7 +3245,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3606,7 +3259,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=53>
+				<UId=46>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3615,8 +3268,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3679,7 +3332,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x32">
-				<UId=54>
+				<UId=47>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3688,8 +3341,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3738,7 +3391,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3753,7 +3405,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=55>
+				<UId=48>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3762,8 +3414,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3812,7 +3464,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3827,7 +3478,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=56>
+				<UId=49>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3836,8 +3487,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3900,7 +3551,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=57>
+				<UId=50>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3909,8 +3560,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -3960,7 +3611,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -3975,7 +3625,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=58>
+				<UId=51>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -3984,8 +3634,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4034,7 +3684,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4049,7 +3698,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=59>
+				<UId=52>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4058,8 +3707,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4108,7 +3757,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4123,7 +3771,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=60>
+				<UId=53>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4132,8 +3780,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4182,7 +3830,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4197,7 +3844,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=61>
+				<UId=54>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4206,8 +3853,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4256,7 +3903,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4271,7 +3917,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=62>
+				<UId=55>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4280,8 +3926,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4330,7 +3976,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4345,7 +3990,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=63>
+				<UId=56>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4354,8 +3999,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4418,7 +4063,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=64>
+				<UId=57>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4427,8 +4072,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4478,7 +4123,6 @@
 						<Y=3.141593>
 						<Z=-0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4493,7 +4137,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=65>
+				<UId=58>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4502,8 +4146,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4553,7 +4197,6 @@
 						<Y=3.141593>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4568,7 +4211,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=66>
+				<UId=59>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4577,8 +4220,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4641,7 +4284,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=67>
+				<UId=60>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4650,8 +4293,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4714,7 +4357,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=68>
+				<UId=61>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4723,8 +4366,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4773,7 +4416,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4788,7 +4430,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=69>
+				<UId=62>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4797,8 +4439,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4847,7 +4489,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4862,7 +4503,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=70>
+				<UId=63>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4871,8 +4512,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4921,7 +4562,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4936,7 +4576,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=71>
+				<UId=64>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -4945,8 +4585,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -4995,7 +4635,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5010,7 +4649,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=72>
+				<UId=65>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5019,8 +4658,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5069,7 +4708,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5084,7 +4722,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=73>
+				<UId=66>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5093,8 +4731,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5143,7 +4781,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5158,7 +4795,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=74>
+				<UId=67>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5167,8 +4804,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5217,7 +4854,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5232,7 +4868,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=75>
+				<UId=68>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5241,8 +4877,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5291,7 +4927,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5306,7 +4941,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=76>
+				<UId=69>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5315,8 +4950,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5365,7 +5000,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5380,7 +5014,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=77>
+				<UId=70>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5389,8 +5023,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5439,7 +5073,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5454,7 +5087,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=78>
+				<UId=71>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5463,8 +5096,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5527,7 +5160,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=79>
+				<UId=72>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5536,8 +5169,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5600,7 +5233,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=80>
+				<UId=73>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5609,8 +5242,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5673,7 +5306,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=81>
+				<UId=74>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5682,8 +5315,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5733,7 +5366,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5748,7 +5380,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=82>
+				<UId=75>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5757,8 +5389,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5808,7 +5440,6 @@
 						<Y=3.141593>
 						<Z=-0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5823,7 +5454,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=83>
+				<UId=76>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5832,8 +5463,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5882,7 +5513,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -5897,7 +5527,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=84>
+				<UId=77>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5906,8 +5536,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -5970,7 +5600,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=85>
+				<UId=78>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -5979,8 +5609,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6044,7 +5674,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=86>
+				<UId=79>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6053,8 +5683,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6103,7 +5733,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6118,7 +5747,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=87>
+				<UId=80>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6127,8 +5756,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6177,7 +5806,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6192,7 +5820,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=88>
+				<UId=81>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6201,8 +5829,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6251,7 +5879,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6266,7 +5893,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=89>
+				<UId=82>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6275,8 +5902,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6325,7 +5952,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6340,7 +5966,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=90>
+				<UId=83>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6349,8 +5975,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6413,7 +6039,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=91>
+				<UId=84>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6422,8 +6048,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6486,7 +6112,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=92>
+				<UId=85>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6495,8 +6121,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6559,7 +6185,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=93>
+				<UId=86>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6568,8 +6194,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6632,7 +6258,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=94>
+				<UId=87>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6641,8 +6267,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6705,7 +6331,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=95>
+				<UId=88>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6714,8 +6340,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6779,7 +6405,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=96>
+				<UId=89>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6788,8 +6414,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6848,7 +6474,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=97>
+				<UId=90>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6857,8 +6483,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6922,7 +6548,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=98>
+				<UId=91>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -6931,8 +6557,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -6996,7 +6622,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=99>
+				<UId=92>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7005,8 +6631,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7069,7 +6695,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=100>
+				<UId=93>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7078,8 +6704,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7142,7 +6768,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=101>
+				<UId=94>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7151,8 +6777,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7215,7 +6841,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=102>
+				<UId=95>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7224,8 +6850,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7288,7 +6914,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=103>
+				<UId=96>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7297,8 +6923,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7361,7 +6987,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=104>
+				<UId=97>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7370,8 +6996,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7434,7 +7060,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=105>
+				<UId=98>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7443,8 +7069,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7507,7 +7133,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=106>
+				<UId=99>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7516,8 +7142,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7580,7 +7206,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=107>
+				<UId=100>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7589,8 +7215,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7653,7 +7279,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=108>
+				<UId=101>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7662,8 +7288,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7727,7 +7353,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=109>
+				<UId=102>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7736,8 +7362,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7801,7 +7427,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=110>
+				<UId=103>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7810,8 +7436,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7875,7 +7501,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=111>
+				<UId=104>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7884,8 +7510,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -7949,7 +7575,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=112>
+				<UId=105>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -7958,8 +7584,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8022,7 +7648,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=113>
+				<UId=106>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8031,8 +7657,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8095,7 +7721,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=114>
+				<UId=107>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8104,8 +7730,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8168,7 +7794,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=115>
+				<UId=108>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8177,8 +7803,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8241,7 +7867,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=116>
+				<UId=109>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8250,8 +7876,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8314,7 +7940,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=117>
+				<UId=110>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8323,8 +7949,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8387,7 +8013,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=118>
+				<UId=111>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8396,8 +8022,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8446,7 +8072,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8461,7 +8086,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=119>
+				<UId=112>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8470,8 +8095,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8534,7 +8159,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=120>
+				<UId=113>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8543,8 +8168,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8593,7 +8218,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -8608,7 +8232,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=121>
+				<UId=114>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8617,8 +8241,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8682,7 +8306,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=122>
+				<UId=115>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8691,8 +8315,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8756,7 +8380,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=123>
+				<UId=116>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8765,8 +8389,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8829,7 +8453,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=124>
+				<UId=117>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8838,8 +8462,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8903,7 +8527,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=125>
+				<UId=118>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8912,8 +8536,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -8977,7 +8601,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=126>
+				<UId=119>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -8986,8 +8610,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9051,7 +8675,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x8">
-				<UId=127>
+				<UId=120>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9060,8 +8684,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9125,7 +8749,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=128>
+				<UId=121>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9134,8 +8758,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9199,7 +8823,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=129>
+				<UId=122>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9208,8 +8832,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9258,7 +8882,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9273,7 +8896,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=130>
+				<UId=123>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9282,8 +8905,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9333,7 +8956,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9348,7 +8970,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=131>
+				<UId=124>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9357,8 +8979,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9407,7 +9029,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9422,7 +9043,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=132>
+				<UId=125>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9431,8 +9052,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9482,7 +9103,6 @@
 						<Y=-3.141592>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9497,7 +9117,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=133>
+				<UId=126>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9506,8 +9126,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9556,7 +9176,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9571,7 +9190,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=134>
+				<UId=127>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9580,8 +9199,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9630,7 +9249,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9645,7 +9263,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=135>
+				<UId=128>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9654,8 +9272,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9705,7 +9323,6 @@
 						<Y=3.141593>
 						<Z=-0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9720,7 +9337,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=136>
+				<UId=129>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9729,8 +9346,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9780,7 +9397,6 @@
 						<Y=3.141593>
 						<Z=-0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9795,7 +9411,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=137>
+				<UId=130>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9804,8 +9420,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9850,7 +9466,6 @@
 						<Y=43.785145>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9865,7 +9480,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=138>
+				<UId=131>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9874,8 +9489,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9925,7 +9540,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -9940,7 +9554,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=139>
+				<UId=132>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -9949,8 +9563,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -9999,7 +9613,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10014,7 +9627,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=140>
+				<UId=133>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10023,8 +9636,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10073,7 +9686,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10088,7 +9700,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x32">
-				<UId=141>
+				<UId=134>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10097,8 +9709,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10147,7 +9759,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10162,7 +9773,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x16">
-				<UId=142>
+				<UId=135>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10171,8 +9782,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10221,7 +9832,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10236,7 +9846,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=143>
+				<UId=136>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10245,8 +9855,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10295,7 +9905,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10310,7 +9919,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=144>
+				<UId=137>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10319,8 +9928,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10369,7 +9978,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10384,7 +9992,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_16x32">
-				<UId=145>
+				<UId=138>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10393,8 +10001,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10443,7 +10051,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10458,7 +10065,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=146>
+				<UId=139>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10467,8 +10074,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10518,7 +10125,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10533,7 +10139,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=147>
+				<UId=140>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10542,8 +10148,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10592,7 +10198,6 @@
 						<Y=3.141593>
 						<Z=-0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10607,7 +10212,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=148>
+				<UId=141>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10616,8 +10221,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10666,7 +10271,6 @@
 						<Y=3.141593>
 						<Z=-0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10681,7 +10285,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=149>
+				<UId=142>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10690,8 +10294,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10740,7 +10344,6 @@
 						<Y=3.141593>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10755,7 +10358,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=150>
+				<UId=143>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10764,8 +10367,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10815,7 +10418,6 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10830,7 +10432,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=151>
+				<UId=144>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10839,8 +10441,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10890,7 +10492,6 @@
 						<Y=3.141593>
 						<Z=-0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10905,7 +10506,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=152>
+				<UId=145>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10914,8 +10515,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -10965,7 +10566,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -10980,7 +10580,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=153>
+				<UId=146>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -10989,8 +10589,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11040,7 +10640,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11055,7 +10654,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=154>
+				<UId=147>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11064,8 +10663,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11114,7 +10713,6 @@
 						<Y=3.141593>
 						<Z=-0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11129,7 +10727,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=155>
+				<UId=148>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11138,8 +10736,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11189,7 +10787,6 @@
 						<Y=3.141593>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11204,7 +10801,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=156>
+				<UId=149>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11213,8 +10810,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11264,7 +10861,6 @@
 						<Y=3.141593>
 						<Z=-0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11279,7 +10875,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=157>
+				<UId=150>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11288,8 +10884,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11339,7 +10935,6 @@
 						<Y=0.000000>
 						<Z=3.141575>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11354,7 +10949,7 @@
 		<MObject=
 			<MItem=
 				<Id="homebase">
-				<UId=158>
+				<UId=151>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -11412,7 +11007,6 @@
 						<Y=-3.141592>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11427,7 +11021,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=159>
+				<UId=152>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11436,8 +11030,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11486,7 +11080,6 @@
 						<Y=0.000000>
 						<Z=0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11501,7 +11094,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=160>
+				<UId=153>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11510,8 +11103,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11561,7 +11154,6 @@
 						<Y=0.000000>
 						<Z=0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11576,7 +11168,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=161>
+				<UId=154>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11585,8 +11177,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11635,7 +11227,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11650,7 +11241,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=162>
+				<UId=155>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11659,8 +11250,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11709,7 +11300,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11724,7 +11314,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=163>
+				<UId=156>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11733,8 +11323,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11783,7 +11373,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11798,7 +11387,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=164>
+				<UId=157>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11807,8 +11396,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11857,7 +11446,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11872,7 +11460,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=165>
+				<UId=158>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11881,8 +11469,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -11932,7 +11520,6 @@
 						<Y=3.141593>
 						<Z=-3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -11947,7 +11534,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=166>
+				<UId=159>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -11956,8 +11543,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12007,7 +11594,6 @@
 						<Y=3.141593>
 						<Z=-0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12022,7 +11608,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=167>
+				<UId=160>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12031,8 +11617,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12081,7 +11667,6 @@
 						<Y=0.000000>
 						<Z=0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12096,7 +11681,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=168>
+				<UId=161>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12105,8 +11690,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12156,7 +11741,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12171,7 +11755,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=169>
+				<UId=162>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12180,8 +11764,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12230,7 +11814,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12245,7 +11828,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=170>
+				<UId=163>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12254,8 +11837,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12304,7 +11887,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12319,7 +11901,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=171>
+				<UId=164>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12328,8 +11910,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12378,7 +11960,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12393,7 +11974,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=172>
+				<UId=165>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12402,8 +11983,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12452,7 +12033,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12467,7 +12047,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=173>
+				<UId=166>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12476,8 +12056,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12540,7 +12120,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=174>
+				<UId=167>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12549,8 +12129,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12599,7 +12179,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12614,7 +12193,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=175>
+				<UId=168>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12623,8 +12202,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12673,7 +12252,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12688,7 +12266,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=176>
+				<UId=169>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -12697,8 +12275,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12761,7 +12339,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=177>
+				<UId=170>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12769,8 +12347,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12819,7 +12397,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12834,7 +12411,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=178>
+				<UId=171>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12842,8 +12419,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12892,7 +12469,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12907,7 +12483,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=179>
+				<UId=172>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12915,8 +12491,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -12965,7 +12541,6 @@
 						<Y=0.000000>
 						<Z=3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -12980,7 +12555,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=180>
+				<UId=173>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -12988,8 +12563,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13038,7 +12613,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13053,7 +12627,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=181>
+				<UId=174>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13061,8 +12635,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13111,7 +12685,6 @@
 						<Y=3.141574>
 						<Z=-3.141592>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13126,7 +12699,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=182>
+				<UId=175>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13134,8 +12707,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13185,7 +12758,6 @@
 						<Y=-0.000002>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13200,7 +12772,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=183>
+				<UId=176>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13208,8 +12780,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13259,7 +12831,6 @@
 						<Y=-0.000020>
 						<Z=0.000000>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13274,7 +12845,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=184>
+				<UId=177>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13282,8 +12853,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13333,7 +12904,6 @@
 						<Y=-0.000002>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13348,7 +12918,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=185>
+				<UId=178>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13356,8 +12926,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13421,7 +12991,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=186>
+				<UId=179>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13429,8 +12999,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13494,7 +13064,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=187>
+				<UId=180>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13502,8 +13072,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13567,7 +13137,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=188>
+				<UId=181>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13576,8 +13146,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13641,7 +13211,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=189>
+				<UId=182>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13650,8 +13220,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13715,7 +13285,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=190>
+				<UId=183>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -13724,8 +13294,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13789,7 +13359,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_8x16">
-				<UId=191>
+				<UId=184>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13797,8 +13367,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13848,7 +13418,6 @@
 						<Y=3.141592>
 						<Z=-2.707006>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13863,7 +13432,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_2x8">
-				<UId=192>
+				<UId=185>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13871,8 +13440,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13921,7 +13490,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -13936,7 +13504,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=193>
+				<UId=186>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -13944,8 +13512,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -13994,7 +13562,6 @@
 						<Y=0.000000>
 						<Z=0.000017>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14009,7 +13576,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=194>
+				<UId=187>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -14018,8 +13585,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14082,7 +13649,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_2x2">
-				<UId=195>
+				<UId=188>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14090,8 +13657,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14140,7 +13707,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14155,7 +13721,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=196>
+				<UId=189>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14163,8 +13729,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14213,7 +13779,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14228,7 +13793,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=197>
+				<UId=190>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14236,8 +13801,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14286,7 +13851,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14301,7 +13865,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=198>
+				<UId=191>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14309,8 +13873,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14359,7 +13923,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14374,7 +13937,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=199>
+				<UId=192>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14382,8 +13945,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14432,7 +13995,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14447,7 +14009,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=200>
+				<UId=193>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14455,8 +14017,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14505,7 +14067,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14520,7 +14081,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=201>
+				<UId=194>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14528,8 +14089,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14578,7 +14139,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14593,7 +14153,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=202>
+				<UId=195>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14601,8 +14161,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14652,7 +14212,6 @@
 						<Y=0.000000>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14667,7 +14226,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=203>
+				<UId=196>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14675,8 +14234,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14725,7 +14284,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14740,7 +14298,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=204>
+				<UId=197>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14748,8 +14306,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14798,7 +14356,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14813,7 +14370,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=205>
+				<UId=198>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14821,8 +14378,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14871,7 +14428,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14886,7 +14442,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=206>
+				<UId=199>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -14895,8 +14451,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -14946,7 +14502,6 @@
 						<Y=3.141593>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -14961,7 +14516,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x4">
-				<UId=207>
+				<UId=200>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -14969,8 +14524,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15020,7 +14575,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15035,7 +14589,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_tr_4x8">
-				<UId=208>
+				<UId=201>
 				<Active>
 				<Static>
 				<Priority=0.500000>
@@ -15044,8 +14598,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15095,7 +14649,6 @@
 						<Y=-3.141592>
 						<Z=-1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15110,7 +14663,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=209>
+				<UId=202>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15118,8 +14671,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15168,7 +14721,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15183,7 +14735,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=210>
+				<UId=203>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15191,8 +14743,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15241,7 +14793,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15256,7 +14807,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=211>
+				<UId=204>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15264,8 +14815,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15314,7 +14865,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15329,7 +14879,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=212>
+				<UId=205>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15337,8 +14887,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15387,7 +14937,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15402,7 +14951,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=213>
+				<UId=206>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15410,8 +14959,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15460,7 +15009,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15475,7 +15023,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=214>
+				<UId=207>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15483,8 +15031,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15533,7 +15081,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15548,7 +15095,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=215>
+				<UId=208>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15556,8 +15103,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15606,7 +15153,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15621,7 +15167,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=216>
+				<UId=209>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15629,8 +15175,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15679,7 +15225,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15694,7 +15239,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=217>
+				<UId=210>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15702,8 +15247,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15752,7 +15297,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15767,7 +15311,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=218>
+				<UId=211>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15775,8 +15319,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15825,7 +15369,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15840,7 +15383,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_1x1">
-				<UId=219>
+				<UId=212>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15848,8 +15391,8 @@
 					<Motions>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -15898,7 +15441,6 @@
 						<Y=0.000000>
 						<Z=1.570796>
 					>
-					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -15910,10 +15452,93 @@
 				<Geometry="graphics/g_block_1x1.nmg">
 			>
 		>
+		<MObject=
+			<MItem=
+				<Id="background_Merged">
+				<UId=213>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Rotation=
+						<X=-0.087266>
+						<Y=0.000000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/background_3_merged.nmg">
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="background_Merged">
+				<UId=214>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-101.530083>
+						<Y=-81.131439>
+						<Z=-17.340452>
+					>
+					<Rotation=
+						<X=-0.087266>
+						<Y=0.000000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/background_3_merged.nmg">
+			>
+		>
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=220>
+				<UId=215>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -15969,7 +15594,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=221>
+				<UId=216>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16007,7 +15632,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=222>
+				<UId=217>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16045,7 +15670,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=223>
+				<UId=218>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16083,7 +15708,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=224>
+				<UId=219>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16121,7 +15746,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=225>
+				<UId=220>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16159,7 +15784,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=226>
+				<UId=221>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16197,7 +15822,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropReservoir">
-				<UId=227>
+				<UId=222>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16240,7 +15865,7 @@
 		<Instance=
 			<MItem=
 				<Id="FxGodRays">
-				<UId=228>
+				<UId=223>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16278,7 +15903,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=229>
+				<UId=224>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16321,7 +15946,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=230>
+				<UId=225>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16364,7 +15989,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=231>
+				<UId=226>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16407,7 +16032,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileLazerGun">
-				<UId=232>
+				<UId=227>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16450,7 +16075,7 @@
 		<Instance=
 			<MItem=
 				<Id="BonusFuel">
-				<UId=233>
+				<UId=228>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -16489,43 +16114,15 @@
 	<Links=
 		<Link=
 			<Item=2>
-			<Link=12>
+			<Link=5>
 		>
 		<Link=
 			<Item=3>
-			<Link=12>
+			<Link=2>
 		>
 		<Link=
 			<Item=4>
 			<Link=2>
-		>
-		<Link=
-			<Item=5>
-			<Link=2>
-		>
-		<Link=
-			<Item=6>
-			<Link=12>
-		>
-		<Link=
-			<Item=7>
-			<Link=12>
-		>
-		<Link=
-			<Item=8>
-			<Link=12>
-		>
-		<Link=
-			<Item=9>
-			<Link=12>
-		>
-		<Link=
-			<Item=10>
-			<Link=12>
-		>
-		<Link=
-			<Item=11>
-			<Link=12>
 		>
 	>
 	<Skins>
@@ -16554,30 +16151,29 @@
 	<Physics=
 		<Frequency=59.999996>
 	>
-	<CurrentCamera="game_camera">
 	<ViewMatrix=
 		<R0=
-			<X=1.000000>
-			<Y=0.000000>
-			<Z=0.000000>
+			<X=0.999948>
+			<Y=-0.000000>
+			<Z=-0.010175>
 			<W=0.000000>
 		>
 		<R1=
-			<X=0.000000>
-			<Y=1.000000>
-			<Z=0.000000>
+			<X=0.000956>
+			<Y=0.995580>
+			<Z=0.093912>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.000000>
-			<Y=0.000000>
-			<Z=1.000000>
+			<X=0.010130>
+			<Y=-0.093917>
+			<Z=0.995529>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-6.974000>
-			<Y=-119.839996>
-			<Z=-60.000000>
+			<X=-9.270486>
+			<Y=-94.363487>
+			<Z=-58.007076>
 			<W=1.000000>
 		>
 	>
@@ -16587,30 +16183,30 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="game_camera">
+			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=1.000000>
-					<Y=0.000000>
-					<Z=0.000000>
+					<X=0.999948>
+					<Y=-0.000000>
+					<Z=-0.010175>
 					<W=0.000000>
 				>
 				<R1=
-					<X=0.000000>
-					<Y=1.000000>
-					<Z=0.000000>
+					<X=0.000956>
+					<Y=0.995580>
+					<Z=0.093912>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.000000>
-					<Y=0.000000>
-					<Z=1.000000>
+					<X=0.010130>
+					<Y=-0.093917>
+					<Z=0.995529>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-6.974000>
-					<Y=-119.839996>
-					<Z=-60.000000>
+					<X=-9.270486>
+					<Y=-94.363487>
+					<Z=-58.007076>
 					<W=1.000000>
 				>
 			>

@@ -1,4 +1,4 @@
-<NML=1.0>
+<Version=1.0>
 <Material=
 	<Id="graphics/pod_glass_outside.nmm">
 	<Diffuse=
@@ -28,6 +28,7 @@
 	<RenderMask=
 		<Smoothing>
 		<NormalMapTangent>
+		<DoubleSided>
 	>
 	<BlendOp="Alpha">
 	<ShaderMap=

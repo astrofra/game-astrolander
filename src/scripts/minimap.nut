@@ -225,7 +225,7 @@ class	MiniMap
 		function	LoadCachedMapTexture()
 		//--------------------------------------
 		{
-			local	_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring() + ".tga"
+			local	_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring() + ".png" //".tga"
 
 			if (FileExists(_filename))
 			{
@@ -276,10 +276,10 @@ class	MiniMap
 		//--------------------------------------
 		{
 			local	_filename
-			_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring() + ".tga"
-			
-			if (!FileExists(_filename))
-				PictureSaveTGA(_picture, _filename)
+			_filename = "ui/minimaps/level_" + ProjectGetScriptInstance(g_project).player_data.current_level.tostring()
+
+			if (!FileExists(_filename + ".tga") && !FileExists(_filename + ".png"))
+				PictureSaveTGA(_picture, _filename + ".tga")
 		}
 
 		function	EvaluateLevelBoundingBox()

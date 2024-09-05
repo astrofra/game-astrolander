@@ -18,8 +18,8 @@
 					>
 				>
 				<PhysicItem=
-					<SelfMask=3>
-					<Mask=2>
+					<SelfMask=1>
+					<Mask=1>
 					<LinearDamping_v2=1.000000>
 					<AngularDamping_v2=1.000000>
 					<CharacterRadius=0.500000>
@@ -154,6 +154,7 @@
 						<Y=1.000000>
 						<Z=1.212435>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>

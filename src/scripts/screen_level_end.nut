@@ -12,14 +12,6 @@ function	ComputeScoreThreadWait(s)
 		suspend()
 }
 
-//--------------------------------
-function	ShowScoreScreen(scene)
-//--------------------------------
-{
-	ComputeScoreThreadWait(Sec(6.0))
-	SceneGetScriptInstance(scene).update_function = SceneGetScriptInstance(scene).GotoNextLevel
-}
-
 //------------------------------------------------
 class	LevelEnd	extends	SceneWithThreadHandler
 //------------------------------------------------
@@ -36,7 +28,9 @@ class	LevelEnd	extends	SceneWithThreadHandler
 	update_function			=	0
 
 	pending_request			=	-1
-	available_request	=	"none"
+	available_request		=	"none"
+
+	computed_score			=	0
 
 	constructor()
 	{
@@ -64,19 +58,75 @@ class	LevelEnd	extends	SceneWithThreadHandler
 	function	OnSetup(scene)
 	//------------------------
 	{
-		print("LevelEnd::OnSetup() game.player_data.current_level = " +game.player_data.current_level)
+		print("LevelEnd::OnSetup() game.player_data.current_level = " + game.player_data.current_level)
 
 		base.OnSetup(scene)
 
 		ui = SceneGetUI(scene)
 		UICommonSetup(ui)
 		level_end_ui = LevelEndUI(ui)
-		level_end_ui.DisplayDebrief(ComputeScoreFromLevelStats(scene))
-		level_end_ui.AddNextButton()
+		computed_score = ComputeScoreFromLevelStats(scene)
 		GlobalSaveGame()
-		
-//		update_function = GotoNextLevel
-//		level_end_ui.UpdateLevelName(GetLevelName(game.player_data.current_level))
+
+		local	_c_level = game.player_data.current_level + 1
+
+		if (_c_level == ((_c_level / 4).tointeger() * 4))
+		{
+			update_function = ShowStoryImage
+		}
+		else
+		{
+			update_function = ShowScoreBrief
+		}
+	}
+
+	//---------------------------------
+	function	ShowScoreBrief(scene)
+	//---------------------------------
+	{
+
+		if (level_end_ui.StoryImageIsGone())
+		{
+			level_end_ui.DisplayDebrief(computed_score)
+			level_end_ui.AddNextButton()
+			update_function = WaitShowingScoreBrief
+		}
+	}
+
+	//--------------------------------------
+	function	WaitShowingScoreBrief(scene)
+	//--------------------------------------
+	{
+	}
+
+	//------------------------------
+	function	EndScoreBrief(scene)
+	//------------------------------
+	{
+		update_function = GotoNextLevel
+	}
+
+	//-------------------------------
+	function	ShowStoryImage(scene)
+	//-------------------------------
+	{
+		level_end_ui.LoadStoryImage((game.player_data.current_level / 4).tointeger())
+		level_end_ui.AddNextStoryImageButton()
+		update_function = WaitShowingStoryImage
+	}
+
+	//--------------------------------------
+	function	WaitShowingStoryImage(scene)
+	//--------------------------------------
+	{
+	}
+
+	//------------------------------
+	function	EndStoryImage(scene)
+	//------------------------------
+	{
+		level_end_ui.HideStoryImage()
+		update_function = ShowScoreBrief
 	}
 
 	//-------------------------
@@ -84,7 +134,7 @@ class	LevelEnd	extends	SceneWithThreadHandler
 	//-------------------------
 	{
 		pending_request = SubmitTotalScore()
-		CreateThread(ShowScoreScreen)
+//		CreateThread(ShowScoreScreen)
 	}
 
 	//-------------------------------------------

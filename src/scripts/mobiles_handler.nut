@@ -231,7 +231,7 @@ class	MobileLazerGun
 		_start = ItemGetWorldPosition(beam_start)
 		_dir = (ItemGetWorldPosition(beam_dir) - _start).Normalize()
 
-		_hit = SceneCollisionRaytrace(scene, _start, _dir, 7, CollisionTraceAll, Mtr(50.0))
+		_hit = SceneCollisionRaytrace(scene, _start, _dir, 3, CollisionTraceAll, Mtr(50.0))
 
 		if (_hit.hit)
 		{
@@ -478,7 +478,9 @@ class	MobileElevator
 		}
 }
 
+//----------------------------------------
 class	MobileJawGate	extends	MobileBase
+//----------------------------------------
 {
 /*<
 	<Parameter =
@@ -545,8 +547,8 @@ class	MobileJawGate	extends	MobileBase
 		dir.Print("Gate Direction")
 		pos_closed = ItemGetPosition(item)
 
-		item_collision_mask = 4
-		item_self_mask = 5
+		item_collision_mask = 2
+		item_self_mask = 2
 	}
 
 	function	OnSetupDone(item)
@@ -623,6 +625,8 @@ class	MobileRotary	extends MobileBase
 	item_collision_mask		=	0
 	item_self_mask			=	0
 
+	low_dt_compensation		=	1.0
+
 	/*!
 		@short	OnUpdate
 		Called during the scene update, each frame.
@@ -667,9 +671,11 @@ class	MobileRotary	extends MobileBase
 		if (!is_physic)
 			return
 
+		low_dt_compensation = Clamp(1.0 / (60.0 * g_dt_frame), 0.0, 1.0)
+
 		local	_angular_vel = ItemGetAngularVelocity(item).z
 		local	_torque	= Vector(0,0,target_angular_vel - _angular_vel)
-		_torque = _torque.Scale(strength * ItemGetMass(item) * (1.0 - post_collision_brake))
+		_torque = _torque.Scale(low_dt_compensation * strength * ItemGetMass(item) * (1.0 - post_collision_brake))
 		ItemApplyTorque(item, _torque)
 	}
 
@@ -689,8 +695,8 @@ class	MobileRotary	extends MobileBase
 		base.OnSetup(item)
 
 		post_collision_brake	=	0.0
-		item_collision_mask = 4
-		item_self_mask = 5
+		item_collision_mask = 1
+		item_self_mask = 2
 
 		if (is_physic)
 			ItemSetPhysicMode(item, PhysicModeDynamic)

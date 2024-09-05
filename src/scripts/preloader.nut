@@ -11,34 +11,10 @@ class	Preload
 {
 	
 	object_list = [
-	"background_atmosphere_layer.nmg",
-	"background_hills.nmg",
 	"background_hills_0.nmg",
-	"background_hills_1.nmg",
-	"background_hills_2.nmg",
 	"black_box.nmg",
 	"blue_sparkle.nmg",
-	"g_block_16x16.nmg",
-	"g_block_16x32.nmg",
-	"g_block_1x1.nmg",
-	"g_block_1x4.nmg",
-	"g_block_1x8.nmg",
-	"g_block_2x2.nmg",
-	"g_block_2x4.nmg",
-	"g_block_32x32.nmg",
-	"g_block_4x4.nmg",
-	"g_block_4x8.nmg",
-	"g_block_8x16.nmg",
-	"g_block_8x32.nmg",
-	"g_block_8x8.nmg",
-	"g_block_deadzone_8.nmg",
-	"g_block_tr_2x8.nmg",
-	"g_block_tr_4x16.nmg",
-	"g_block_tr_4x4.nmg",
-	"g_block_tr_4x8.nmg",
-	"g_block_tr_8x16.nmg",
-	"g_block_tr_8x8.nmg",
-/*	"bonus_fast_clock.nmg",
+	"bonus_fast_clock.nmg",
 	"bonus_fuel.nmg",
 	"bonus_heal.nmg",
 	"bonus_shield.nmg",
@@ -48,7 +24,6 @@ class	Preload
 	"gear_0.nmg",
 	"gear_1.nmg",
 	"gear_2.nmg",
-	"god_ray.nmg",
 	"helper_range.nmg",
 	"item_taken_feedback.nmg",
 	"jawgate_bottom.nmg",
@@ -82,28 +57,20 @@ class	Preload
 	"PropGreeceColumn.nmg",
 	"PropGreeceColumnBroken1.nmg",
 	"PropGreeceColumnBroken2.nmg",
-//	"PropStatueCody.nmg",
 	"reservoir.nmg",
 	"rotary_gate_0.nmg",
 	"rotary_gate_slot.nmg",
-	"SeaPropHelix0.nmg",
-	"SeaPropHelix1.nmg",
-	"SeaPropHelix2.nmg",
-	"SeaPropShell0.nmg",
-	"SeaPropShell1.nmg",
-	"SeaPropShellPink0.nmg",
-	"SeaPropShellPink1.nmg",
-	"SeaPropShellPink2.nmg",
-	"SeaPropShellRed0.nmg",
 	"target.nmg",
 	"thrust_flame.nmg",
-	"tree_0_mobile.nmg"*/
+	"tree_0_mobile.nmg"
 	]
 
 	current_object		=	0
 	progress			=	0
 	ui					=	0
 	bar					=	0
+
+	toggle				=	false
 
 //object_list = []
 
@@ -139,6 +106,10 @@ class	Preload
 
 		print("Preload::OnUpdate() progress = " + progress)
 
+		toggle != toggle
+
+		if (toggle)
+			return
 
 		if (UIIsCommandListDone(ui))
 		{

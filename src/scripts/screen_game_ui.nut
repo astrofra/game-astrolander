@@ -384,14 +384,17 @@ class	InGameUI extends	BaseUI
 		return _touch_feedback
 	}
 
+
 	function	UpdateTouchFeedback(left_enabled, right_enabled, 
 									left_pos = Vector(0.3, 0.7, 0),
 									right_pos = Vector(1.0 - 0.3, 0.7, 0) )
 	{
+		local	screen_cursor_left = NormalizedToScreenSpace(left_pos.x, left_pos.y)
+		local	screen_cursor_right = NormalizedToScreenSpace(right_pos.x, right_pos.y)
 		WindowShow(touch_feedback.left, left_enabled)
 		WindowShow(touch_feedback.right, right_enabled)
-		WindowSetPosition(touch_feedback.left, left_pos.x * g_screen_width, left_pos.y * g_screen_height)
-		WindowSetPosition(touch_feedback.right, right_pos.x * g_screen_width, right_pos.y * g_screen_height)
+		WindowSetPosition(touch_feedback.left, screen_cursor_left.x, screen_cursor_left.y)
+		WindowSetPosition(touch_feedback.right,screen_cursor_right.x, screen_cursor_right.y)
 	}
 
 	//----------------------------------------

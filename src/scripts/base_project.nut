@@ -9,7 +9,7 @@ class	BaseProjectHandler
 	prev_scene_filename	=	""
 	black_screen_scene	=	0
 
-	first_scene_filename	=	"levels/preloader.nms"
+	first_scene_filename	=	"levels/screen_logo.nms"
 	
 	dispatch			=	0
 	
@@ -34,16 +34,39 @@ class	BaseProjectHandler
 
 		if (black_screen_scene != 0)
 		{
-			ProjectUnloadScene(project, black_screen_scene)
-			black_screen_scene = 0
+			if (!UIIsCommandListDone(SceneGetUI(ProjectSceneGetInstance(scene))))
+				UISetCommandList(SceneGetUI(ProjectSceneGetInstance(black_screen_scene)), "globalfade 0.1,1;")
+			else
+			{
+				ProjectUnloadScene(project, black_screen_scene)
+				black_screen_scene = 0
+			}
 		}
+
 	}
 	
 	function	LeaveCurrentScene(project, scene)
 	{
+		if (scene != 0)
+			if (!UIIsCommandListDone(SceneGetUI(ProjectSceneGetInstance(scene))))
+				return
+
+		black_screen_scene = ProjectInstantiateScene(project, "levels/screen_loader.nms")
+//		UISetCommandList(SceneGetUI(ProjectSceneGetInstance(black_screen_scene)), "nop 0.1;")
+		ProjectAddLayer(project, black_screen_scene, -1.0)
+
+		dispatch = LoadNextScene
+	}
+
+	function	LoadNextScene(project, scene)
+	{
+		if	(!UIIsCommandListDone(SceneGetUI(ProjectSceneGetInstance(black_screen_scene))))
+			return
+
 		if (scene == 0)
 		{
 			ProjectLoadScene(project, scene_filename)
+			UISetCommandList(SceneGetUI(ProjectSceneGetInstance(black_screen_scene)), "globalfade 0.25, 1;")
 			prev_scene_filename = scene_filename
 			dispatch = MainUpdate
 		}
@@ -51,8 +74,9 @@ class	BaseProjectHandler
 		{
 			if	(UIIsCommandListDone(SceneGetUI(ProjectSceneGetInstance(scene))))
 			{
-				ProjectUnloadScene(project, scene)		
+				ProjectUnloadScene(project, scene)
 				ProjectLoadScene(project, scene_filename)
+				UISetCommandList(SceneGetUI(ProjectSceneGetInstance(black_screen_scene)), "globalfade 0.25, 1;")
 				prev_scene_filename = scene_filename
 				dispatch = MainUpdate
 			}
@@ -63,17 +87,13 @@ class	BaseProjectHandler
 	{
 		if	(FileExists(scene_filename))
 		{
-			//	Create a black screen
-			black_screen_scene = ProjectInstantiateScene(project, "levels/black_screen.nms")
-			ProjectAddLayer(project, black_screen_scene, -1.0)
-
-			print("ProjectHandler::LeaveCurrentScene() Loading scene '" + scene_filename + "'.")
+			print("ProjectHandler::ProjectLoadScene() Loading scene '" + scene_filename + "'.")
 			scene = ProjectInstantiateScene(project, scene_filename)
-			ProjectAddLayer(project, scene, 0.5)
 			UISetCommandList(SceneGetUI(ProjectSceneGetInstance(scene)), "globalfade 0,1; nop 0.1; globalfade 0.25, 0;")
+			ProjectAddLayer(project, scene, 0.5)
 		}
 		else
-			error("ProjectHandler::LeaveCurrentScene() Cannot find scene '" + scene_filename + "'.")
+			error("ProjectHandler::ProjectLoadScene() Cannot find scene '" + scene_filename + "'.")
 
 		return	scene
 	}

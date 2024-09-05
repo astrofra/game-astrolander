@@ -26,7 +26,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 	max_speed			=	g_player_max_speed	//	Max. speed of the ship.
 	speed_min_damage	=	Mtrs(5.0)
 	speed_max_damage	=	Mtrs(15.0)
-	min_damage			=	10
+	min_damage			=	5
 	max_damage			=	20
 	shield_enabled		=	false
 
@@ -319,7 +319,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 		_pos = ItemGetWorldPosition(_thrust_item)
 		_dir = ItemGetMatrix(_thrust_item).GetRow(0).Normalize()
 
-		_hit = SceneCollisionRaytrace(scene, _pos, _dir, 2, CollisionTraceAll, Mtr(_feedback_distance * 1.1))
+		_hit = SceneCollisionRaytrace(scene, _pos, _dir, 1, CollisionTraceAll, Mtr(_feedback_distance * 1.1))
 
 		if ((_hit.hit) && (_hit.d < Mtr(_feedback_distance)))
 		{
@@ -370,14 +370,18 @@ class	LunarLander	extends	SceneWithThreadHandler
 		{
 			if (!shield_enabled)
 			{
-//				print("Col. ->")
-//				contact.n[0].Print("OnCollisionEx() n")
-//				current_velocity.Print("current_velocity")
-				local	k_damage = Max(-contact.n[0].Dot(current_velocity), 0.0)
-//				print("k_damage = " + k_damage)
+
+				//	Look for a proper normal vector
+				local	col_normal = Vector(0,0,0)
+				foreach(_n in contact.n)
+					if (col_normal.Len() < _n.Len())
+						col_normal = clone(_n)
+
+				local	k_damage = Abs(col_normal.Dot(current_velocity)) //Max(-col_normal.Dot(_cur_vel_n), 0.0)
+
 				local	with_item_name
 				with_item_name = ItemGetName(with_item)
-//				print("OnCollisionEx() : with_item_name = " + with_item_name)
+
 				switch (with_item_name)
 				{
 					case "DeadlySlimeItem":			//	DeadlySlime
@@ -504,7 +508,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 
 	function	LanderIsStopped()
 	{
-		if ((g_clock - low_speed_timer) > SecToTick(Sec(1.5)))
+		if ((g_clock - low_speed_timer) > SecToTick(Sec(0.5)))
 			return true
 		else
 			return false
@@ -620,7 +624,7 @@ class	LunarLander	extends	SceneWithThreadHandler
 		print("LunarLander::EnableShield()")
 		shield_enabled = true
 		ItemActivate(shield_item, true)
-		ItemSetCollisionMask(shield_col_item, 2)
+//		ItemSetCollisionMask(shield_col_item, 2)	//	FIXME
 	}
 
 	function	DisableShield()

@@ -156,6 +156,8 @@ class	EditableTextField
 			return
 
 		RefreshTextField()
+		if (IsTouchPlatform())
+			waitPlayerName()
 	}
 
 	//----------------------
@@ -231,6 +233,19 @@ class	EditableTextField
 		return	""
 	}
 
+	//--------------------------
+	function	waitPlayerName()
+	//--------------------------
+	{
+		if	(g_player_name == null)
+			return
+		print("baseUI::waitPlayerName() g_player_name = " + g_player_name)
+		text = g_player_name
+		label.label = text
+		label.refresh()
+		//OnTextFieldDefocus(null, null)
+	}
+
 	//-----------------------------------------
 	function	OnTextFieldFocus(event, table)
 	//-----------------------------------------
@@ -239,6 +254,11 @@ class	EditableTextField
 		is_dirty = true
 		FillBackground()
 		label.refresh()
+		if (IsTouchPlatform())
+		{
+			g_player_name = text
+			g_player_name = WizschoolRequestArcadeName(text)
+		}
 	}
 
 	//-------------------------------------------
@@ -548,6 +568,26 @@ class	BaseUI
 		WindowSetOpacity(cursor_sprite, cursor_opacity)	
 	}
 
+	//----------------------------------------
+	function	NormalizedToScreenSpace(_x,_y)
+	//----------------------------------------
+	{
+		//	Actual desktop cursor
+		local	dr = RendererGetViewport(g_render)
+
+		local	viewport_ar = dr.z / dr.w
+		local	reference_ar = g_screen_width / g_screen_height
+
+		local	kx = viewport_ar / reference_ar, ky = 1.0
+
+		_x = (_x - 0.5) * kx + 0.5
+		_y = (_y - 0.5) * ky + 0.5
+		_x *= g_screen_width
+		_y *= g_screen_height
+
+		return	({x = _x, y = _y})
+	}
+
 	//------------------------
 	function	UpdateCursor()
 	//------------------------
@@ -568,17 +608,8 @@ class	BaseUI
 		if (!IsTouchPlatform())
 		{
 			//	Actual desktop cursor
-			local	dr = RendererGetViewport(g_render)
-
-			local	viewport_ar = dr.z / dr.w
-			local	reference_ar = g_screen_width / g_screen_height
-
-			local	kx = viewport_ar / reference_ar, ky = 1.0
-
-			_x = (_x - 0.5) * kx + 0.5
-			_y = (_y - 0.5) * ky + 0.5
-
-			WindowSetPosition(cursor_sprite, _x * g_screen_width, _y * g_screen_height)
+			local	screen_cursor = NormalizedToScreenSpace(_x, _y)
+			WindowSetPosition(cursor_sprite, screen_cursor.x, screen_cursor.y)
 
 			if ((_dx > 0.0) || (_dx > 0.0))
 				fade_timeout = g_clock
