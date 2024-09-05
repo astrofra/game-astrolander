@@ -21,8 +21,8 @@ g_locale_en	<-	{
 	yes					=	"Yes"
 	no					=	"No"
 	leaderboard			=	"Leaders"
-	music_enabled		=	"Music"
-	sound_fx_enabled	=	"Sound Fx"
+	music_volume		=	"Music Volume"
+	sound_fx_volume		=	"Sfx Volume"
 	player_nickname		=	"Player's Nickname"
 	credits_button 		=	"Credits"
 

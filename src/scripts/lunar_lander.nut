@@ -162,8 +162,8 @@ class	LunarLander	extends	SceneWithThreadHandler
 		cross_fade_clean_dirty_ratio = Pow(sfx_clean_dirty_ratio, 0.25)
 		cross_fade_clean_dirty_ratio = RangeAdjustClamped(cross_fade_clean_dirty_ratio, 0.0, 0.5, 0.0, 1.0)
 
-		MixerChannelSetGain(g_mixer, channel_thrust_clean, cross_fade_clean_dirty_ratio * max_thrust_sfx_gain * sfx_thrust_volume)
-		MixerChannelSetGain(g_mixer, channel_thrust_dirty, (1.0 - cross_fade_clean_dirty_ratio) * max_thrust_sfx_gain * sfx_thrust_volume)
+		MixerChannelSetGain(g_mixer, channel_thrust_clean, cross_fade_clean_dirty_ratio * max_thrust_sfx_gain * sfx_thrust_volume * GlobalGetSfxVolume())
+		MixerChannelSetGain(g_mixer, channel_thrust_dirty, (1.0 - cross_fade_clean_dirty_ratio) * max_thrust_sfx_gain * sfx_thrust_volume * GlobalGetSfxVolume())
 
 		sfx_clean_dirty_ratio = Clamp(sfx_clean_dirty_ratio + 2.0 * g_dt_frame, 0.0, 1.0)
 		sfx_thrust_volume = Clamp(sfx_thrust_volume - 3.5 * g_dt_frame, 0.0, 1.0)
@@ -465,16 +465,16 @@ class	LunarLander	extends	SceneWithThreadHandler
 	{
 		//	Thrusters
 		channel_thrust_clean = MixerSoundStart(g_mixer, sfx_thrust_clean)
-		MixerChannelSetGain(g_mixer, channel_thrust_clean, sfx_thrust_volume)
+		MixerChannelSetGain(g_mixer, channel_thrust_clean, sfx_thrust_volume * GlobalGetSfxVolume())
 		MixerChannelSetLoopMode(g_mixer, channel_thrust_clean, LoopRepeat)
 
 		channel_thrust_dirty = MixerSoundStart(g_mixer, sfx_thrust_dirty)
-		MixerChannelSetGain(g_mixer, channel_thrust_dirty, sfx_thrust_volume)
+		MixerChannelSetGain(g_mixer, channel_thrust_dirty, sfx_thrust_volume * GlobalGetSfxVolume())
 		MixerChannelSetLoopMode(g_mixer, channel_thrust_dirty, LoopRepeat)
 
 		//	Collisions
 		channel_metal_col = MixerChannelLock(g_mixer)
-		MixerChannelSetGain(g_mixer, channel_metal_col, 0.25)
+		MixerChannelSetGain(g_mixer, channel_metal_col, 0.25 * GlobalGetSfxVolume())
 		MixerChannelSetLoopMode(g_mixer, channel_metal_col, LoopNone)
 	}
 

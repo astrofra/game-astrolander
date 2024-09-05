@@ -404,19 +404,6 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		EngineSetClockScale(g_engine, g_clock_scale)
 
 		SetAmbientColor(scene)
-
-		if	(IsTouchPlatform())
-		{
-			print("LevelHandler::OnSetup() Deleting lights, mobile platform.")
-			//ItemActivate(SceneFindItem(scene, "sun"), false)
-			//SceneDeleteLight(scene, ItemCastToLight(SceneFindItem(scene, "sun")))
-			SceneDeleteItem(scene, SceneFindItem(scene, "sun"))
-			//SceneDeleteAllLights(scene)			
-			SceneSetAmbientIntensity(scene, 2.0)
-			local	_amb_color = SceneGetAmbientColor(scene)
-			_amb_color = _amb_color.Lerp(0.75, Vector(0.5, 0.5, 0.5, 1.0))
-			SceneSetAmbientColor(scene, _amb_color)
-		}
 	}
 
 	//----------------------------
@@ -745,12 +732,14 @@ class	LevelHandler	extends	SceneWithThreadHandler
 	{
 		local	_chan
 		_chan = MixerSoundStart(g_mixer, sfx_got_item)
+		MixerChannelSetGain(g_mixer, _chan, GlobalGetSfxVolume())
 	}
 
 	function	PlaySfxGotItemSpecial()
 	{
 		local	_chan
 		_chan = MixerSoundStart(g_mixer, sfx_got_item_special)
+		MixerChannelSetGain(g_mixer, _chan, GlobalGetSfxVolume())
 	}
 
 	function	PlaySfxMissionComplete()
@@ -758,6 +747,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		local	_chan
 		StopLevelMusic()
 		_chan = MixerSoundStart(g_mixer, sfx_mission_complete)
+		MixerChannelSetGain(g_mixer, _chan, GlobalGetSfxVolume())
 	}
 
 	function	PlaySfxGameOver()
@@ -765,6 +755,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		local	_chan
 		StopLevelMusic()
 		_chan = MixerSoundStart(g_mixer, sfx_game_over)
+		MixerChannelSetGain(g_mixer, _chan, GlobalGetSfxVolume())
 	}
 
 	function	PlayLevelMusic()
@@ -786,6 +777,7 @@ class	LevelHandler	extends	SceneWithThreadHandler
 		{
 				music_channel = MixerStreamStart(g_mixer, music_filename)
 				MixerChannelSetLoopMode(g_mixer, music_channel, LoopRepeat)
+				MixerChannelSetGain(g_mixer, music_channel, 1.0 * GlobalGetMusicVolume())
 //				MixerChannelLock(g_mixer, music_channel)
 		}
 		else

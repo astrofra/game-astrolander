@@ -1,6 +1,8 @@
 //	Globals.nut
 print("//	Globals.nut		//")
 
+	force_android_render_settings	<-	false
+
 	function	IsTouchPlatform()
 	{
 		if (g_platform == "Android")
@@ -39,7 +41,7 @@ print("//	Globals.nut		//")
 	g_ui_color_green		<-	Vector(0, 180, 5, 255)
 
 	g_ambient_color_warm	<-	Vector(150, 105, 85, 255)
-	g_ambient_color_dawn	<-	Vector(235, 135, 45, 255)
+	g_ambient_color_dawn	<-	Vector(190,100,110, 255) //Vector(235, 135, 45, 255)
 	g_ambient_color_cold	<-	Vector(85, 130, 150, 255)
 
 	g_leaderboard_max_entry	<-	10

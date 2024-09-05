@@ -38,6 +38,8 @@ class	TitleUI	extends	BaseUI
 	back_from_option_button	=	0
 	nickname_textfield		=	0
 	credit_button			=	0
+	sfx_volume_button		=	0
+	music_volume_button		=	0
 
 	//	Level selection screen
 	back_from_level_button	=	0
@@ -104,7 +106,7 @@ class	TitleUI	extends	BaseUI
 	{
 		base.constructor(_ui)
 
-		//	Main Title
+		//	Main Title	------------------------------------------------------------
 		CreateOpaqueScreen(ui)
 
 		master_window_handler = UIAddWindow(ui, CreateNewUIID(), 0, 0, 16, 16)
@@ -169,37 +171,50 @@ class	TitleUI	extends	BaseUI
 
 		game_copyright = LabelWrapper(ui, g_locale.copyright, (g_screen_width * 0.5) - 400, 900, 30, 800, 64, Vector(117, 155, 168, 128), g_main_font_name, TextAlignCenter)
 
-		//	Options
+		//	Options	------------------------------------------------------------
 
 		option_right_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_right.png"), g_screen_width - 16 - 256, 700, 256, 128)
 		WindowSetParent(option_right_arrow, master_window_option)
-/*
-		level_easy_button = LabelWrapper(ui, g_locale.level_easy, (g_screen_width * 0.5) - 200 - 300, g_screen_height * 0.5, 40, 400, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
-		level_normal_button = LabelWrapper(ui, CreateSelectedOptionString(g_locale.level_normal), (g_screen_width * 0.5) - 200, g_screen_height * 0.5, 40, 400, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
-		level_hard_button = LabelWrapper(ui, g_locale.level_hard, (g_screen_width * 0.5) - 200 + 300, g_screen_height * 0.5, 40, 400, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
-*/
+
 		back_from_option_button = LabelWrapper(ui, g_locale.back_to_title, -10, 30, 65, 256, 80, Vector(255, 255, 255, 255), g_main_font_name, TextAlignCenter)
 		WindowSetParent(back_from_option_button[0], option_right_arrow)
 		WindowSetEventHandlerWithContext(option_right_arrow, EventCursorDown, this, TitleUI.ScrollToTitleScreen)
 		WindowSetEventHandlerWithContext(back_from_option_button[0], EventCursorDown, this, TitleUI.ScrollToTitleScreen)
-
-//		WidgetSetEventHandlerWithContext(level_easy_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelEasy)
-//		WidgetSetEventHandlerWithContext(level_normal_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelNormal)
-//		WidgetSetEventHandlerWithContext(level_hard_button[1], EventCursorDown, this, TitleUI.OnTitleUISelectLevelHard)
 				
-		local	_control_reverse_button = AddButtonRed(g_screen_width * 0.5, g_screen_height * 0.7, true)
+		local	_control_reverse_button = AddButtonRed(g_screen_width * 0.5, g_screen_height * 0.525, true)
 		control_reverse = LabelWrapper(ui, CreateStringControlReverse(), -170, 32, 30, 600, 64, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WindowSetEventHandlerWithContext(control_reverse[0], EventCursorDown, this, TitleUI.OnTitleUIReverseControls)
 		WindowSetEventHandlerWithContext(_control_reverse_button, EventCursorDown, this, TitleUI.OnTitleUIReverseControls)
 		WindowSetParent(control_reverse[0], _control_reverse_button)
 
-		local	_credit_button = AddButtonBlack(g_screen_width * 0.5, g_screen_height * 0.825, true)
+		local	_credit_button = AddButtonGenericBlack(g_screen_width * 0.5, g_screen_height * 0.825, true)
 		credit_button = LabelWrapper(ui, g_locale.credits_button, -30, 0, 40, 300, 90, g_ui_color_white, g_main_font_name, TextAlignCenter)
 		WindowSetEventHandlerWithContext(credit_button[0], EventCursorDown, this, TitleUI.OnTitleUIGotoCredits)
 		WindowSetEventHandlerWithContext(_credit_button, EventCursorDown, this, TitleUI.OnTitleUIGotoCredits)
 		WindowSetParent(credit_button[0], _credit_button)
 
-		//	Level Selector
+		local	enter_nickname_text = LabelWrapper(ui, g_locale.player_nickname, g_screen_width * 0.5 - 256, g_screen_height * 0.25 - 110, 48, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		WindowSetParent(enter_nickname_text[0], master_window_option)
+
+		nickname_textfield = EditableTextField(ui, 512, 80, g_screen_width * 0.5, g_screen_height * 0.25)
+		WindowSetParent(nickname_textfield.handler, master_window_option)
+
+		local	_sfx_volume = AddButtonGenericRed(g_screen_width * 0.375, g_screen_height * 0.4, true)
+		sfx_volume_button = LabelWrapper(ui, SfxVolumeCreateString(), -135, 10, 30, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		WindowSetParent(_sfx_volume, master_window_option)
+		WindowSetParent(sfx_volume_button[0], _sfx_volume)
+		WindowSetEventHandlerWithContext(_sfx_volume, EventCursorDown, this, TitleUI.OnTitleIncreaseSfxVolume)
+		WindowSetEventHandlerWithContext(sfx_volume_button[0], EventCursorDown, this, TitleUI.OnTitleIncreaseSfxVolume)
+
+		local	_music_volume = AddButtonGenericRed(g_screen_width * 0.625, g_screen_height * 0.4, true)
+		music_volume_button = LabelWrapper(ui, MusicVolumeCreateString(), -135, 10, 30, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
+		WindowSetParent(_music_volume, master_window_option)
+		WindowSetParent(music_volume_button[0], _music_volume)
+		WindowSetEventHandlerWithContext(_music_volume, EventCursorDown, this, TitleUI.OnTitleIncreaseMusicVolume)
+		WindowSetEventHandlerWithContext(music_volume_button[0], EventCursorDown, this, TitleUI.OnTitleIncreaseMusicVolume)
+
+		//	Level Selector	------------------------------------------------------------
+
 		current_selected_level = ProjectGetScriptInstance(g_project).player_data.current_selected_level
 		level_left_arrow = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_red_left.png"), 16, 700, 256, 128)
 		WindowSetParent(level_left_arrow, master_window_level)
@@ -265,19 +280,6 @@ class	TitleUI	extends	BaseUI
 //		WindowSetParent(level_hard_button[0], master_window_option)
 		WindowSetParent(_control_reverse_button, master_window_option)
 		WindowSetParent(_credit_button, master_window_option)
-
-		local	enter_nickname_text = LabelWrapper(ui, g_locale.player_nickname, g_screen_width * 0.5 - 256, g_screen_height * 0.25 - 110, 48, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
-		WindowSetParent(enter_nickname_text[0], master_window_option)
-
-		nickname_textfield = EditableTextField(ui, 512, 80, g_screen_width * 0.5, g_screen_height * 0.25)
-		WindowSetParent(nickname_textfield.handler, master_window_option)
-
-		local	soundfx_enabled = LabelWrapper(ui, g_locale.sound_fx_enabled, g_screen_width * 0.5 - 256, g_screen_height * 0.25 + 80, 48, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
-		WindowSetParent(soundfx_enabled[0], master_window_option)
-
-		local	music_enabled = LabelWrapper(ui, g_locale.music_enabled, g_screen_width * 0.5 - 256, g_screen_height * 0.25 + 80 + 80, 48, 512, 80, g_ui_color_white, g_main_font_name, TextAlignCenter)
-		WindowSetParent(music_enabled[0], master_window_option)
-
 
 		HandleLevelLock()
 		
@@ -567,24 +569,6 @@ class	TitleUI	extends	BaseUI
 		PlaySfxUINextPage()
 		SceneGetScriptInstance(g_scene).GotoCredits()
 	}
-	
-	//--------------------------------------
-	function	CreateStringControlReverse()
-	//--------------------------------------
-	{	return (g_locale.control_reverse + "\n" + (g_reversed_controls?g_locale.yes:g_locale.no))	}
-
-	//------------------------------------------------
-	function	OnTitleUIReverseControls(event, table)
-	//------------------------------------------------
-	{
-		g_reversed_controls = !g_reversed_controls
-//		TextSetText(control_reverse[1], CreateStringControlReverse())
-		control_reverse[1].label = CreateStringControlReverse()
-		control_reverse[1].refresh()
-		//GlobalSaveGame()
-		PlaySfxUISelect()
-		ButtonFeedback(table.window)
-	}
 
 	//--------------------------------------------
 	function	OnTitleUISelectLevel(event, table)
@@ -615,6 +599,7 @@ class	TitleUI	extends	BaseUI
 		PlaySfxUISelect()
 	}
 	
+	//-------------------------------
 	function	IsLevelLocked(_level)
 	{
 		local	game = ProjectGetScriptInstance(g_project)
@@ -658,53 +643,81 @@ class	TitleUI	extends	BaseUI
 			PlaySfxUIError()
 	}
 
+	//	Options --------------------------
+
+	//--------------------------------------
+	function	CreateStringControlReverse()
+	//--------------------------------------
+	{	return (g_locale.control_reverse + "\n" + (g_reversed_controls?g_locale.yes:g_locale.no))	}
+
+	//------------------------------------------------
+	function	OnTitleUIReverseControls(event, table)
+	//------------------------------------------------
+	{
+		g_reversed_controls = !g_reversed_controls
+//		TextSetText(control_reverse[1], CreateStringControlReverse())
+		control_reverse[1].label = CreateStringControlReverse()
+		control_reverse[1].refresh()
+		//GlobalSaveGame()
+		PlaySfxUISelect()
+		ButtonFeedback(table.window)
+	}
+
+	//-----------------------------------------
 	function	CreateSelectedOptionString(str)
+	//-----------------------------------------
 	{	return  ("[" + str + "]")	}
 
-	function	OnTitleUISelectLevelEasy(event, table)
+	//---------------------------------
+	function	SfxVolumeCreateString()
+	//---------------------------------
 	{
-		print("TitleUI::OnTitleUISelectLevelEasy()")
-		g_clock_scale = g_clock_scale_easy
-		print("TitleUI::g_clock_scale = " + g_clock_scale)
-
-//		TextSetText(level_easy_button[1],CreateSelectedOptionString(g_locale.level_easy))
-//		TextSetText(level_normal_button[1], g_locale.level_normal)
-//		TextSetText(level_hard_button[1], g_locale.level_hard)
-		PlaySfxUISelect()
-//		SceneGetScriptInstance(g_scene).StartGame()
+		return (g_locale.sound_fx_volume + "\n" + (GlobalGetSfxVolume() * 100.0).tointeger().tostring() + "%") 
 	}
 
-	function	OnTitleUISelectLevelNormal(event, table)
+	//-----------------------------------
+	function	MusicVolumeCreateString()
+	//-----------------------------------
 	{
-		print("TitleUI::OnTitleUISelectLevelNormal()")
-		g_clock_scale = 1.0
-		print("TitleUI::g_clock_scale = " + g_clock_scale)
-
-//		TextSetText(level_easy_button[1],g_locale.level_easy)
-//		TextSetText(level_normal_button[1], CreateSelectedOptionString(g_locale.level_normal))
-//		TextSetText(level_hard_button[1], g_locale.level_hard)
-		PlaySfxUISelect()
-//		SceneGetScriptInstance(g_scene).StartGame()
+		return (g_locale.music_volume + "\n" + (GlobalGetMusicVolume() * 100.0).tointeger().tostring() + "%") 
 	}
 
-	function	OnTitleUISelectLevelHard(event, table)
+	//------------------------------------------------
+	function	OnTitleIncreaseSfxVolume(event, table)
+	//------------------------------------------------
 	{
-		print("TitleUI::OnTitleUISelectLevelHard()")
-		g_clock_scale = g_clock_scale_hard
-		print("TitleUI::g_clock_scale = " + g_clock_scale)
+		ButtonFeedback(table.window)
 
-//		TextSetText(level_easy_button[1],g_locale.level_easy)
-//		TextSetText(level_normal_button[1], g_locale.level_normal)
-//		TextSetText(level_hard_button[1], CreateSelectedOptionString(g_locale.level_hard))
+		local	_vol = GlobalGetSfxVolume()
+		_vol += 0.1
+		if (_vol > 1.01)
+			_vol = 0.0
+
+		GlobalSetSfxVolume(_vol)
+		sfx_volume_button[1].label = SfxVolumeCreateString()
+		sfx_volume_button[1].refresh()
+
 		PlaySfxUISelect()
-//		SceneGetScriptInstance(g_scene).StartGame()
 	}
 
-	function	AddLogo()
+	//--------------------------------------------------
+	function	OnTitleIncreaseMusicVolume(event, table)
+	//--------------------------------------------------
 	{
-		local	logo = UIAddBitmapWindow(ui, -1, "ui/muteblast_logo.png", (g_screen_width * 0.5), 850, 512, 512)
-		WindowSetPivot(logo, 256, 256)
-		WindowSetScale(logo, 0.65, 0.65)
+		ButtonFeedback(table.window)
+
+		local	_vol = GlobalGetMusicVolume()
+		_vol += 0.1
+		if (_vol > 1.01)
+			_vol = 0.0
+
+		GlobalSetMusicVolume(_vol)
+		music_volume_button[1].label = MusicVolumeCreateString()
+		music_volume_button[1].refresh()
+
+		SceneGetScriptInstance(g_scene).TitleScreenSetMusicVolume()
+
+		PlaySfxUISelect()
 	}
 
 }

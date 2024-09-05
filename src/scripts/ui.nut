@@ -343,7 +343,9 @@ class	Label
 	}
 }
 
+//----------------------
 function	LabelWrapper(ui, name, x, y, size = 32, w = 200, h = 64, font_color = g_hud_font_color, font_name = "aerial", text_align = TextAlignLeft)
+//----------------------
 {
 
 	local	instance, center = false, vcenter = true
@@ -440,8 +442,20 @@ class	BaseUI
 
 		LoadSounds()
 	}
-	
-	function	AddButtonBlack(_x, _y, _center_pivot = false)
+
+	//------------------------	
+	function	AddButtonGenericRed(_x, _y, _center_pivot = false)
+	//------------------------	
+	{
+		local	_button = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_generic_red.png"), _x, _y, 240, 90)
+		if (_center_pivot)
+			WindowSetPivot(_button, 120, 45)
+		return _button
+	}
+
+	//------------------------	
+	function	AddButtonGenericBlack(_x, _y, _center_pivot = false)
+	//------------------------	
 	{
 		local	_button = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_generic_black.png"), _x, _y, 240, 90)
 		if (_center_pivot)
@@ -449,7 +463,9 @@ class	BaseUI
 		return _button
 	}
 
+	//------------------------	
 	function	AddButtonRed(_x, _y, _center_pivot = false)
+	//------------------------	
 	{
 		local	_button = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_validate_red.png"), _x, _y, 256, 128)
 		if (_center_pivot)
@@ -457,7 +473,9 @@ class	BaseUI
 		return _button
 	}
 
+	//------------------------	
 	function	AddButtonGreen(_x, _y, _center_pivot = false)
+	//------------------------	
 	{
 		local	_button = UIAddSprite(ui, -1, EngineLoadTexture(g_engine, "ui/title_navigation_validate_green.png"), _x, _y, 256, 128)
 		if (_center_pivot)
@@ -465,12 +483,16 @@ class	BaseUI
 		return _button
 	}
 
+	//------------------------	
 	function	ButtonFeedback(_window)
+	//------------------------	
 	{
 		WindowSetCommandList(_window, "toalpha 0.05, 0.35; toalpha 0.1, 1.0;")
 	}
 
+	//------------------------	
 	function	LoadSounds()
+	//------------------------	
 	{
 		sfx_select = EngineLoadSound(g_engine, "audio/sfx/gui_up_down.wav")
 		sfx_validate = EngineLoadSound(g_engine, "audio/sfx/gui_validate.wav")
@@ -481,22 +503,40 @@ class	BaseUI
 	}
 
 	function	PlaySfxUISelect()
-	{		local	_chan	= MixerSoundStart(g_mixer, sfx_select)	}
+	{		
+		local	_chan	= MixerSoundStart(g_mixer, sfx_select)
+		MixerChannelSetGain(g_mixer, _chan, 1.0 * GlobalGetSfxVolume())	
+	}
 
 	function	PlaySfxUIValidate()
-	{		local	_chan	= MixerSoundStart(g_mixer, sfx_validate)	}
+	{		
+		local	_chan	= MixerSoundStart(g_mixer, sfx_validate)	
+		MixerChannelSetGain(g_mixer, _chan, 1.0 * GlobalGetSfxVolume())
+	}
 	
 	function	PlaySfxUIError()
-	{		local	_chan	= MixerSoundStart(g_mixer, sfx_error)	}
+	{		
+		local	_chan	= MixerSoundStart(g_mixer, sfx_error)
+		MixerChannelSetGain(g_mixer, _chan, 1.0 * GlobalGetSfxVolume())
+	}
 
 	function	PlaySfxUINextPage()
-	{		local	_chan	= MixerSoundStart(g_mixer, sfx_page)	}
+	{		
+		local	_chan	= MixerSoundStart(g_mixer, sfx_page)
+		MixerChannelSetGain(g_mixer, _chan, 1.0 * GlobalGetSfxVolume())
+	}
 
 	function	PlaySfxUIPause()
-	{		local	_chan	= MixerSoundStart(g_mixer, sfx_pause)	}
+	{		
+		local	_chan	= MixerSoundStart(g_mixer, sfx_pause)
+		MixerChannelSetGain(g_mixer, _chan, 1.0 * GlobalGetSfxVolume())
+	}
 
 	function	PlaySfxUIResume()
-	{		local	_chan	= MixerSoundStart(g_mixer, sfx_resume)	}
+	{		
+		local	_chan	= MixerSoundStart(g_mixer, sfx_resume)
+		MixerChannelSetGain(g_mixer, _chan, 1.0 * GlobalGetSfxVolume())
+	}
 
 	function	FadeTimeout()
 	{

@@ -829,6 +829,7 @@
 						<Y=0.000000>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -912,6 +913,7 @@
 						<Y=5.000000>
 						<Z=1.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -2265,6 +2267,7 @@
 						<Y=-31.718863>
 						<Z=0.100000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4571,6 +4574,7 @@
 						<Y=10.785805>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -4638,6 +4642,7 @@
 						<Y=12.800128>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6397,6 +6402,7 @@
 						<Y=3.141592>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6470,6 +6476,7 @@
 						<Y=3.141592>
 						<Z=1.570796>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6537,6 +6544,7 @@
 						<Y=-22.000385>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6604,6 +6612,7 @@
 						<Y=-22.000385>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6671,6 +6680,7 @@
 						<Y=-22.000385>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6738,6 +6748,7 @@
 						<Y=-22.000385>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6805,6 +6816,7 @@
 						<Y=-20.097603>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6872,6 +6884,7 @@
 						<Y=-20.097603>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -6939,6 +6952,7 @@
 						<Y=-20.097603>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7006,6 +7020,7 @@
 						<Y=-20.097603>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7073,6 +7088,7 @@
 						<Y=-20.097603>
 						<Z=-0.000061>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7146,6 +7162,7 @@
 						<Y=3.141592>
 						<Z=0.000000>
 					>
+					<ItemFlag>
 					<Target=
 						<X=0.000000>
 						<Y=0.000000>
@@ -7306,7 +7323,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=149>
+				<UId=115>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7378,7 +7395,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=150>
+				<UId=116>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7445,7 +7462,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_8x16">
-				<UId=151>
+				<UId=117>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7517,7 +7534,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=152>
+				<UId=118>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7584,7 +7601,7 @@
 		<MObject=
 			<MItem=
 				<Id="g_block_4x8">
-				<UId=153>
+				<UId=119>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7651,7 +7668,7 @@
 		<MLight=
 			<MItem=
 				<Id="sun">
-				<UId=115>
+				<UId=120>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7707,7 +7724,7 @@
 		<Instance=
 			<MItem=
 				<Id="Lander">
-				<UId=116>
+				<UId=121>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7745,7 +7762,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=117>
+				<UId=122>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7783,7 +7800,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileJawgate">
-				<UId=119>
+				<UId=123>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7826,7 +7843,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=120>
+				<UId=124>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7864,7 +7881,7 @@
 		<Instance=
 			<MItem=
 				<Id="Artifact">
-				<UId=121>
+				<UId=125>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7902,7 +7919,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileJawgate">
-				<UId=122>
+				<UId=126>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7945,7 +7962,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=123>
+				<UId=127>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -7978,12 +7995,12 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/PropGear2.nms">
+			<Template="graphics/MobileGear2.nms">
 		>
 		<Instance=
 			<MItem=
 				<Id="PropGreeceColumn">
-				<UId=124>
+				<UId=128>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8021,7 +8038,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=125>
+				<UId=129>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8069,7 +8086,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=126>
+				<UId=130>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8107,7 +8124,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=127>
+				<UId=131>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8150,7 +8167,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush2">
-				<UId=128>
+				<UId=132>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8193,7 +8210,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=129>
+				<UId=133>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8231,7 +8248,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=130>
+				<UId=134>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8274,7 +8291,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=131>
+				<UId=135>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8312,7 +8329,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=132>
+				<UId=136>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8350,7 +8367,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=133>
+				<UId=137>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8388,7 +8405,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush2">
-				<UId=134>
+				<UId=138>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8426,7 +8443,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=135>
+				<UId=139>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8464,7 +8481,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceColumn">
-				<UId=136>
+				<UId=140>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8502,7 +8519,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceColumn">
-				<UId=137>
+				<UId=141>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8540,7 +8557,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileGear0">
-				<UId=138>
+				<UId=142>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8573,12 +8590,12 @@
 				<RotationOrder="YXZ">
 				<Registry>
 			>
-			<Template="graphics/PropGear2.nms">
+			<Template="graphics/MobileGear2.nms">
 		>
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush2">
-				<UId=139>
+				<UId=143>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8621,7 +8638,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=140>
+				<UId=144>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8659,7 +8676,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=141>
+				<UId=145>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8707,7 +8724,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGear0">
-				<UId=142>
+				<UId=146>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8729,7 +8746,7 @@
 				<Position=
 					<X=69.801071>
 					<Y=7.528627>
-					<Z=5.125347>
+					<Z=6.498459>
 				>
 				<Rotation=
 					<X=-0.000000>
@@ -8755,7 +8772,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=143>
+				<UId=147>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8793,7 +8810,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=144>
+				<UId=148>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8831,7 +8848,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=145>
+				<UId=149>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8874,7 +8891,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropGreeceBrokenColumn2">
-				<UId=146>
+				<UId=150>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8917,7 +8934,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=147>
+				<UId=151>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -8960,7 +8977,7 @@
 		<Instance=
 			<MItem=
 				<Id="MobileDeadlySlime">
-				<UId=148>
+				<UId=152>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9003,7 +9020,7 @@
 		<Instance=
 			<MItem=
 				<Id="PropTreeBush2">
-				<UId=154>
+				<UId=153>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
@@ -9043,6 +9060,54 @@
 			>
 			<Template="graphics/PropTreeBush2.nms">
 		>
+		<Instance=
+			<MItem=
+				<Id="PropGear0">
+				<UId=154>
+				<Active>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Item=
+				<Position=
+					<X=91.477776>
+					<Y=0.583565>
+					<Z=6.498459>
+				>
+				<Rotation=
+					<X=-0.000000>
+					<Y=0.000000>
+					<Z=3.141592>
+				>
+				<Scale=
+					<X=2.000000>
+					<Y=2.000000>
+					<Z=1.000000>
+				>
+				<ItemFlag>
+				<Target=
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
+				>
+				<RotationOrder="YXZ">
+				<Registry>
+			>
+			<Template="graphics/PropGear0.nms">
+		>
 	>
 	<Links=
 		<Link=
@@ -9063,46 +9128,47 @@
 			<Z=0.000000>
 		>
 		<AmbientColor=
-			<X=0.592157>
-			<Y=0.407843>
-			<Z=0.345098>
+			<X=0.513726>
+			<Y=0.435294>
+			<Z=0.411765>
 		>
 		<AmbientIntensity=1.000000>
 		<TargetExposure=0.250000>
-		<FogNear=0.000000>
-		<FogFar=0.000000>
+		<FogNear=100.000000>
+		<FogFar=250.000000>
 		<FogColor=
 			<X=0.337255>
-			<Y=0.407843>
-			<Z=0.494118>
+			<Y=0.858824>
+			<Z=1.000000>
 		>
 	>
 	<Physics=
 		<Frequency=59.999996>
 	>
+	<CurrentCamera="game_camera">
 	<ViewMatrix=
 		<R0=
-			<X=0.999795>
-			<Y=-0.000000>
-			<Z=0.020259>
+			<X=1.000000>
+			<Y=0.000000>
+			<Z=0.000000>
 			<W=0.000000>
 		>
 		<R1=
 			<X=0.000000>
 			<Y=1.000000>
-			<Z=-0.000006>
+			<Z=0.000000>
 			<W=0.000000>
 		>
 		<R2=
-			<X=-0.020259>
-			<Y=0.000006>
-			<Z=0.999795>
+			<X=0.000000>
+			<Y=0.000000>
+			<Z=1.000000>
 			<W=0.000000>
 		>
 		<R3=
-			<X=91.009834>
-			<Y=12.143285>
-			<Z=-78.001877>
+			<X=0.000000>
+			<Y=0.000000>
+			<Z=-60.000000>
 			<W=1.000000>
 		>
 	>
@@ -9112,30 +9178,30 @@
 		<Layout="Single">
 		<Viewport=
 			<Index=0>
-			<Camera="@Perspective">
+			<Camera="game_camera">
 			<Matrix=
 				<R0=
-					<X=0.999795>
-					<Y=-0.000000>
-					<Z=0.020259>
+					<X=1.000000>
+					<Y=0.000000>
+					<Z=0.000000>
 					<W=0.000000>
 				>
 				<R1=
 					<X=0.000000>
 					<Y=1.000000>
-					<Z=-0.000006>
+					<Z=0.000000>
 					<W=0.000000>
 				>
 				<R2=
-					<X=-0.020259>
-					<Y=0.000006>
-					<Z=0.999795>
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=1.000000>
 					<W=0.000000>
 				>
 				<R3=
-					<X=91.009834>
-					<Y=12.143285>
-					<Z=-78.001877>
+					<X=0.000000>
+					<Y=0.000000>
+					<Z=-60.000000>
 					<W=1.000000>
 				>
 			>

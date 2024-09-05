@@ -321,7 +321,7 @@ class	LeaderboardScreen
 	//---------------------
 	{
 		channel_music = MixerStreamStart(g_mixer, "audio/music/leaderboard.ogg")
-		MixerChannelSetGain(g_mixer, channel_music, sfx_gain)
+		MixerChannelSetGain(g_mixer, channel_music, sfx_gain * GlobalGetMusicVolume())
 		MixerChannelSetLoopMode(g_mixer, channel_music, LoopRepeat)
 	}
 
@@ -329,7 +329,7 @@ class	LeaderboardScreen
 	function	FadeInMusicVolume()
 	//---------------------
 	{
-		MixerChannelSetGain(g_mixer, channel_music, sfx_gain)
+		MixerChannelSetGain(g_mixer, channel_music, sfx_gain * GlobalGetMusicVolume())
 		sfx_gain += (g_dt_frame * 0.85)
 		sfx_gain = Clamp(sfx_gain,0.0,1.0)
 	}

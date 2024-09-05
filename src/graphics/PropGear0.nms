@@ -1,222 +1,15 @@
-<NML=1.0>
+<Version=1.0>
 <Scene=
 	<Items=
 		<MObject=
 			<MItem=
-				<Id="rotary_gate_slot">
+				<Id="rotary_gate_item">
 				<UId=0>
 				<Active>
-				<Helper>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="mobile_items">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ðYÒé+**ªiðYÒé>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=-0.000001>
-						<Y=0.000000>
-						<Z=1.080101>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=-3.141592>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.500000>
-						<Y=0.500000>
-						<Z=1.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/rotary_gate_slot.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="rotary_gate_item">
-				<UId=1>
-				<Active>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="mobile_items">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-********\[7[\[7[**ªi÷övg****\[7[\[7[**ªi÷öög****\[7[\[7[**ªiÄÃCh
-****\[7[\[7[**ªi÷övh****\[7[\[7[**ªi**ªh****\[7[\[7[**ªiÄÃÃh****
-\[7[\[7[**ªi]]Ýh****\[7[\[7[**ªi÷ööh****\[7[\[7[**ªih****\[7[
-\[7[**ªi***i****\[7[\[7[**ªi÷ö6i****\[7[\[7[**ªiÄÃCi****\[7[\[7[
-**ªiPi****\[7[\[7[**ªi]]]i****\[7[\[7[**ªi**ji****\[7[\[7[**ªi
-÷övi****\[7[\[7[**ªiÄÃƒi****\[7[\[7[**ªii****\[7[\[7[**ªi]]i
-****\[7[\[7[**ªi**ªi****\[7[\[7[**ªi>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
+					<Motions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -265,12 +58,12 @@
 		<MObject=
 			<MItem=
 				<Id="Gear 0">
-				<UId=2>
+				<UId=1>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -303,277 +96,19 @@
 					<RotationOrder="YXZ">
 					<Registry>
 				>
-				<Geometry="graphics/gear_0.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="rotary_gate_slot">
-				<UId=3>
-				<Active>
-				<Helper>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="mobile_items">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ðYÒé+**ªiðYÒé>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=0.593360>
-						<Y=0.015373>
-						<Z=1.365164>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=-3.141592>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=0.750000>
-						<Y=0.750000>
-						<Z=1.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/rotary_gate_slot.nmg">
-			>
-		>
-		<MObject=
-			<MItem=
-				<Id="rotary_gate_slot">
-				<UId=4>
-				<Active>
-				<Helper>
-				<Priority=0.500000>
-				<ScriptLogicFq=15.000000>
-				<MotionPlayer=
-					<NoMotions=
-						<NoMotion=
-							<Id="mobile_items">
-							<UseQuaternion=True>
-							<QChannel=
-								<BinaryKeys=
-									<Count=21>
-									<Data==426:420@
-****\[74**ªi***O\[·N÷övg\[74**ªi***O\[·N÷öög\[74**ªi***O\[·NÄÃCh
-\[74**ªi***O\[·N÷övh\[74**ªi***O\[·N**ªh\[74**ªi***O\[·NÄÃÃh\[74
-**ªi***O\[·N]]Ýh\[74**ªi***O\[·N÷ööh\[74**ªi***O\[·Nh\[74**ªi
-***O\[·N***i\[74**ªi***O\[·N÷ö6i\[74**ªi***O\[·NÄÃCi\[74**ªi***O
-\[·NPi\[74**ªi***O\[·N]]]i\[74**ªi***O\[·N**ji\[74**ªi***O\[·N
-÷övi\[74**ªi***O\[·NÄÃƒi\[74**ªi***O\[·Ni\[74**ªi***O\[·N]]i
-\[74**ªi***O\[·N**ªi\[74**ªi***O\[·N>
-								>
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+********+**ªi****>
-									>
-								>
-								<Id="PositionY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+****ðYÒé+**ªiðYÒé>
-									>
-								>
-								<Id="PositionZ">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleX">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleY">
-							>
-							<Channel=
-								<Curve=
-									<BinaryKnot=
-										<Count=2>
-										<Data==18:18@
-+******ªi+**ªi**ªi>
-									>
-								>
-								<Id="ScaleZ">
-							>
-						>
-					>
-				>
-				<PhysicItem=
-					<SelfMask=1>
-					<Mask=1>
-					<LinearDamping_v2=1.000000>
-					<AngularDamping_v2=1.000000>
-					<CharacterRadius=0.500000>
-					<CharacterHeight=1.750000>
-					<CharacterMaxStep=0.250000>
-					<Mode="None">
-				>
-			>
-			<Object=
-				<Item=
-					<Position=
-						<X=-0.041335>
-						<Y=-0.502453>
-						<Z=1.720473>
-					>
-					<Rotation=
-						<X=-0.000000>
-						<Y=-3.141592>
-						<Z=0.000000>
-					>
-					<Scale=
-						<X=1.250000>
-						<Y=1.250000>
-						<Z=1.000000>
-					>
-					<ItemFlag>
-					<Target=
-						<X=0.000000>
-						<Y=0.000000>
-						<Z=1.000000>
-					>
-					<RotationOrder="YXZ">
-					<Registry>
-				>
-				<Geometry="graphics/rotary_gate_slot.nmg">
+				<Geometry="graphics/gear_background_0.nmg">
 			>
 		>
 		<MLight=
 			<MItem=
 				<Id="New Light">
-				<UId=5>
+				<UId=2>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -612,8 +147,8 @@
 	>
 	<Links=
 		<Link=
-			<Item=2>
-			<Link=1>
+			<Item=1>
+			<Link=0>
 		>
 	>
 	<Skins>

@@ -8,6 +8,8 @@ class	BaseProjectHandler
 	scene_filename		=	""
 	prev_scene_filename	=	""
 	black_screen_scene	=	0
+
+	first_scene_filename	=	"levels/preloader.nms"
 	
 	dispatch			=	0
 	
@@ -79,7 +81,7 @@ class	BaseProjectHandler
 	function	OnSetup(project)
 	{
 		print("ProjectHandler::OnSetup()")
-		ProjectGotoScene("levels/preloader.nms")
+		ProjectGotoScene(first_scene_filename)
 	}
 	
 	constructor()

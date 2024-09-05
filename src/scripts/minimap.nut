@@ -249,7 +249,7 @@ class	MiniMap
 		{
 			local	map_ui_pos_x, map_ui_pos_y
 
-			if	(IsTouchPlatform())
+			if	(IsTouchPlatform() || force_android_render_settings)
 			{
 				//	Touch
 				LoadCachedMapTexture()

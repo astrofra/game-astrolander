@@ -9,6 +9,9 @@
 				<TriggerDetected>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
 				<ScriptedObject=
 					<ScriptUnit=
 						<Script="scripts/lunar_lander.nut">
@@ -267,6 +270,9 @@
 				<Helper>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
 				<PhysicItem=
 					<SelfMask=3>
 					<Mask=3>
@@ -337,7 +343,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -381,7 +387,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -424,6 +430,9 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -455,6 +464,9 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -491,6 +503,9 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -522,6 +537,9 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -554,7 +572,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -604,7 +622,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -654,7 +672,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -704,7 +722,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -770,7 +788,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -836,7 +854,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -875,7 +893,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<ScriptedObject=
 					<ScriptUnit=
@@ -920,7 +938,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=2>
@@ -982,7 +1000,7 @@
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1015,6 +1033,9 @@
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
+				>
 				<PhysicItem=
 					<SelfMask=1>
 					<Mask=1>
@@ -1039,16 +1060,67 @@
 				<Geometry="graphics/pod_body.nmg">
 			>
 		>
-		<MLight=
+		<MObject=
 			<MItem=
-				<Id="sun">
-				<UId=27>
+				<Id="hat">
+				<UId=18>
 				<Active>
 				<Helper>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=0.500000>
+					<CharacterHeight=1.750000>
+					<CharacterMaxStep=0.250000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.318983>
+						<Y=1.965761>
+						<Z=-0.000764>
+					>
+					<Rotation=
+						<X=-1.149449>
+						<Y=-1.634617>
+						<Z=-0.680384>
+					>
+					<Scale=
+						<X=0.500000>
+						<Y=0.500000>
+						<Z=0.396759>
+					>
+					<ItemFlag>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="graphics/fez_hat.nmg">
+			>
+		>
+		<MLight=
+			<MItem=
+				<Id="sun">
+				<UId=19>
+				<Active>
+				<Helper>
+				<Priority=0.500000>
+				<ScriptLogicFq=15.000000>
+				<MotionPlayer=
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1094,12 +1166,12 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_0">
-				<UId=28>
+				<UId=20>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1171,12 +1243,12 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_1">
-				<UId=29>
+				<UId=21>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1248,12 +1320,12 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_2">
-				<UId=30>
+				<UId=22>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1325,12 +1397,12 @@
 		<MConstraint=
 			<MItem=
 				<Id="shield_link_4">
-				<UId=31>
+				<UId=23>
 				<Active>
 				<Priority=0.500000>
 				<ScriptLogicFq=15.000000>
 				<MotionPlayer=
-					<NoMotions>
+					<Motions>
 				>
 				<PhysicItem=
 					<SelfMask=1>
@@ -1453,26 +1525,30 @@
 			<Item=17>
 			<Link=0>
 		>
+		<Link=
+			<Item=18>
+			<Link=0>
+		>
 	>
 	<Skins>
 	<Constraints=
 		<Constraint=
-			<Uid=28>
+			<Uid=20>
 			<UidA=0>
 			<UidB=15>
 		>
 		<Constraint=
-			<Uid=29>
+			<Uid=21>
 			<UidA=0>
 			<UidB=15>
 		>
 		<Constraint=
-			<Uid=30>
+			<Uid=22>
 			<UidA=0>
 			<UidB=15>
 		>
 		<Constraint=
-			<Uid=31>
+			<Uid=23>
 			<UidA=0>
 			<UidB=15>
 		>
@@ -1503,27 +1579,27 @@
 	>
 	<ViewMatrix=
 		<R0=
-			<X=-0.993670>
-			<Y=0.000000>
-			<Z=-0.112336>
+			<X=0.999999>
+			<Y=-0.000000>
+			<Z=0.001621>
 			<W=0.000000>
 		>
 		<R1=
-			<X=0.000631>
-			<Y=0.999984>
-			<Z=-0.005584>
+			<X=-0.000227>
+			<Y=0.990184>
+			<Z=0.139771>
 			<W=0.000000>
 		>
 		<R2=
-			<X=0.112334>
-			<Y=-0.005619>
-			<Z=-0.993655>
+			<X=-0.001605>
+			<Y=-0.139771>
+			<Z=0.990183>
 			<W=0.000000>
 		>
 		<R3=
-			<X=-2.478976>
-			<Y=-0.038421>
-			<Z=26.389057>
+			<X=-0.034632>
+			<Y=2.383478>
+			<Z=-16.853300>
 			<W=1.000000>
 		>
 	>
@@ -1536,27 +1612,27 @@
 			<Camera="@Perspective">
 			<Matrix=
 				<R0=
-					<X=-0.993670>
-					<Y=0.000000>
-					<Z=-0.112336>
+					<X=0.999999>
+					<Y=-0.000000>
+					<Z=0.001621>
 					<W=0.000000>
 				>
 				<R1=
-					<X=0.000631>
-					<Y=0.999984>
-					<Z=-0.005584>
+					<X=-0.000227>
+					<Y=0.990184>
+					<Z=0.139771>
 					<W=0.000000>
 				>
 				<R2=
-					<X=0.112334>
-					<Y=-0.005619>
-					<Z=-0.993655>
+					<X=-0.001605>
+					<Y=-0.139771>
+					<Z=0.990183>
 					<W=0.000000>
 				>
 				<R3=
-					<X=-2.478976>
-					<Y=-0.038421>
-					<Z=26.389057>
+					<X=-0.034632>
+					<Y=2.383478>
+					<Z=-16.853300>
 					<W=1.000000>
 				>
 			>

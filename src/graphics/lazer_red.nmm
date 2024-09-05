@@ -13,7 +13,7 @@
 		<Z=0.000000>
 	>
 	<Self=
-		<X=1.000000>
+		<X=0.525490>
 		<Y=0.000000>
 		<Z=0.000000>
 	>
@@ -35,7 +35,6 @@
 		<NormalMapTangent>
 		<NoZWrite>
 	>
-	<BlendOp="Alpha">
 	<ShaderMap=
 		<Pos=
 			<X=0.000000>

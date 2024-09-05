@@ -1,4 +1,4 @@
-<NML=1.0>
+<Version=1.0>
 <Geometry=
 	<Vertex=
 		<Count=25>
@@ -94,8 +94,8 @@
 				<Smoothing>
 				<NormalMapTangent>
 				<DoubleSided>
+				<AlphaTest>
 			>
-			<BlendOp="Alpha">
 			<ShaderMap=
 				<Pos=
 					<X=0.000000>

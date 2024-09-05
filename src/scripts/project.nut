@@ -13,6 +13,7 @@
 	Include("scripts/slideshow.nut")
 	Include("scripts/camera_handler.nut")
 	Include("scripts/feedback_emitter.nut")
+	Include("scripts/audio.nut")
 	Include("scripts/inventory.nut")
 	Include("scripts/thread_handler.nut")
 	Include("scripts/weather.nut")	
@@ -43,6 +44,8 @@ class	ProjectHandler	extends	BaseProjectHandler
 			current_selected_level	=	0
 			current_level			=	0
 			latest_run				=	0
+			sfx_volume				=	1.0
+			music_volume			=	1.0
 	}
 
 	function	ProjectStartGame()
@@ -95,6 +98,7 @@ class	ProjectHandler	extends	BaseProjectHandler
 	constructor()
 	{
 		LoadLocaleTable()
+//	first_scene_filename = "levels/screen_title.nms"
 		base.constructor()
 		save_game = SaveGame()
 	}
