@@ -1,5 +1,7 @@
 # Astrolander
 
+[![hero image](img/astlan-hero.png)](img/astlan-hires.png)
+
 > Astrolander (aka `Cosmic Lander`) is a 3D space navigation game inspired by classics such as [Lunar Lander](https://en.wikipedia.org/wiki/Lunar_Lander_(1979_video_game)), [Gravity Force](https://www.lemonamiga.com/games/details.php?id=1196), and Uchuusen. Developed using the GameStart3D engine by [Emmanuel Julien](https://github.com/ejulien/) and programmed in [Squirrel](https://github.com/albertodemichelis/squirrel), I crafted this game between 2011 and 2012 and documented the process extensively on the [TigSource.com](https://forums.tigsource.com/index.php?topic=20609.0) forums, a community hub for indie game developers.<br>
 Additional 2D graphics by [Camille Coq](https://camillecee.weebly.com/).
 
