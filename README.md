@@ -6,8 +6,7 @@
 
 > Astrolander (aka `Cosmic Lander`) is a 3D space navigation game inspired by classics such as [Lunar Lander](https://en.wikipedia.org/wiki/Lunar_Lander_(1979_video_game)), [Gravity Force](https://www.lemonamiga.com/games/details.php?id=1196), and Uchuusen by [Chris Nimmo](https://beadybox.itch.io/). Between 2011 and 2012 I crafted this game as a spare time project and documented the process extensively on the [TigSource.com](https://forums.tigsource.com/index.php?topic=20609.0) forums, a community hub for indie game developers. Additional 2D graphics by [Camille Coq](https://camillecee.weebly.com/).
 >
->Astrolander is implemented in [Squirrel](https://github.com/albertodemichelis/squirrel), the 3D rendering is done on [GameStart 3D](https://www.youtube.com/@GameStart3D/videos) engine by [Emmanuel Julien](https://github.com/ejulien/).<br>
->It takes advantage of the [GameStart 3D Squirrel API](https://astrofra.github.io/amiga-memories/)
+>Astrolander is implemented in [Squirrel](https://github.com/albertodemichelis/squirrel), the 3D rendering is done on [GameStart 3D](https://www.youtube.com/@GameStart3D/videos) engine by [Emmanuel Julien](https://github.com/ejulien/). It takes advantage of the [GameStart 3D Squirrel API](https://astrofra.github.io/amiga-memories/)
 
 ### Game Overview
 
