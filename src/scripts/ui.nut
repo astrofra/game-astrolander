@@ -778,9 +778,9 @@ class	BaseUI
 	//----------------------------------------
 	{
 		//	Actual desktop cursor
-		local	dr = RendererGetViewport(g_render)
+		local	viewport = GetViewportSizeCompat()
 
-		local	viewport_ar = dr.z / dr.w
+		local	viewport_ar = viewport.w / viewport.h
 		local	reference_ar = g_screen_width / g_screen_height
 
 		local	kx = viewport_ar / reference_ar, ky = 1.0
@@ -827,4 +827,3 @@ class	BaseUI
 	}
 
 }
-

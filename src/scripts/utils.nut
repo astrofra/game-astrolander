@@ -2,6 +2,54 @@
 
 guid_table <- []
 
+function	GetViewportSizeCompat()
+{
+	local	vw = g_screen_width.tofloat()
+	local	vh = g_screen_height.tofloat()
+	local	viewport = 0
+
+	try
+	{
+		viewport = RendererGetViewport(g_render)
+	}
+	catch(e)
+	{
+		return {w = vw, h = vh}
+	}
+
+	try
+	{
+		vw = viewport.z.tofloat()
+		vh = viewport.w.tofloat()
+	}
+	catch(e)
+	{
+		try
+		{
+			vw = (viewport.ex - viewport.sx).tofloat()
+			vh = (viewport.ey - viewport.sy).tofloat()
+		}
+		catch(e2)
+		{
+			try
+			{
+				vw = viewport.x.tofloat()
+				vh = viewport.y.tofloat()
+			}
+			catch(e3)
+			{
+			}
+		}
+	}
+
+	if (vw <= 0.0)
+		vw = g_screen_width.tofloat()
+	if (vh <= 0.0)
+		vh = g_screen_height.tofloat()
+
+	return {w = vw, h = vh}
+}
+
 //------------------
 class	LinearFilter
 //------------------
@@ -68,8 +116,8 @@ function	GetHashString()
 function	WriterWrapper(font, text, x, y, size, color = Vector(1, 1, 1, 1), align = WriterAlignLeft)
 //----------------------------------------------------------------------------------------------------
 {
-	local	viewport = RendererGetViewport(g_render)
-	local	vw = viewport.z, vh = viewport.w
+	local	viewport = GetViewportSizeCompat()
+	local	vw = viewport.w, vh = viewport.h
 	local	k_ar = vh / vw
 
 	local	sx = (x - (g_screen_width * 0.5)) / (g_screen_width * 0.5) * k_ar + 0.5

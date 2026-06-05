@@ -1,5 +1,11 @@
 g_engine	<-	0
 
+// Legacy tool-mode constants expected by the original Astrolander scripts.
+ToolEdit <- 0
+ToolPreview <- 1
+ToolProjectPreview <- 2
+NoTool <- 3
+
 function	RendererLoadWriterFont(renderer, base_path, path)
 {	return ResourceFactoryLoadRasterFont(g_factory, base_path, path)	}
 
@@ -79,7 +85,7 @@ function	EngineResetClock(engine)
 //-----------------------------------------------------------------------------
 function	EngineGetToolMode(engine)
 {
-	return 0;
+	return NoTool;
 }
 function	EnginePurgeResourceCache(engine)
 {	return ResourceFactoryPurge(g_factory)	}
@@ -129,6 +135,8 @@ function SceneEnableItemDeletionQueue(scene, enable) {}
 //-----------------------------------------------------------------------------
 function	EngineSetClockScale(engine, k)
 {
+	if (ObjectIsValid(g_scene))
+		SceneSetClockScale(g_scene, k)
 }
 //-----------------------------------------------------------------------------
 

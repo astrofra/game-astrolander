@@ -195,7 +195,6 @@ class	HowToControl	extends	SceneWithThreadHandler
 
 	function	CreateFocusLayer()
 	{
-		local	dr = RendererGetViewport(g_render)
 		local spr = CreateUISprite(focus_layer, "center_pivot", g_screen_width * 0.5, g_screen_height * 0.5)
 		SpriteSetScale(spr, 0, 0)
 		return spr
@@ -203,8 +202,8 @@ class	HowToControl	extends	SceneWithThreadHandler
 
 	function	UpdateFocusLayer()
 	{
-		local	dr = RendererGetViewport(g_render)
-		local	s = (dr.z > dr.w)?dr.z:dr.w
+		local	viewport = GetViewportSizeCompat()
+		local	s = (viewport.w > viewport.h)?viewport.w:viewport.h
 
 		SpriteSetScale(focus_layer, s / 256 * 2.5, s / 256 * 2.5)
 	}

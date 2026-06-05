@@ -45,7 +45,7 @@ float	EvaluateAmbientOcclusion(vec2 tcoord, vec2 uv, vec3 p, vec3 cnorm)
 	float rad = u_radius / p.z;
 
 	// SSAO Calculation
-	int iterations = 3;
+	int iterations = 4;
 	for	(int j = 0; j < iterations; ++j)
 	{
 		vec2 coord1 = reflect(vec[j], rand) * rad;
