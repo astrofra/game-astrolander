@@ -1,0 +1,150 @@
+[V] EGL new output window to handle: 263484.
+[V] OpenGL context version 4.6.
+[V] NPOT full support.
+[V] GS::GPU::Renderer::LoadCoreShaders
+[V] Creating shader '@core/shaders/gpu/single_texture_color.nsa'...
+[V] EGL shader linked successfully at id 3.
+[V] Creating shader '@core/shaders/gpu/single_texture.nsa'...
+[V] EGL shader linked successfully at id 6.
+[V] Creating shader '@core/shaders/gpu/single_color.nsa'...
+[V] EGL shader linked successfully at id 9.
+[V] Creating shader '@core/shaders/gpu/simple.nsa'...
+[V] EGL shader linked successfully at id 12.
+[V] Creating shader '@core/shaders/gpu/single_texture_cutoff.nsa'...
+[V] EGL shader linked successfully at id 15.
+[V] Creating shader '@core/shaders/gpu/single_texture_fx.nsa'...
+[V] EGL shader linked successfully at id 18.
+[V] Creating shader '@core/shaders/gpu/tone_mapping.nsa'...
+[V] EGL shader linked successfully at id 21.
+[V] Creating shader '@core/shaders/gpu/ambient.nsa'...
+[V] EGL shader linked successfully at id 24.
+[V] Creating shader '@core/shaders/gpu/deferred/spotlight.nsa'...
+[V] EGL shader linked successfully at id 27.
+[V] Creating shader '@core/shaders/gpu/deferred/spotlight_shadow.nsa'...
+[V] EGL shader linked successfully at id 30.
+[V] Creating shader '@core/shaders/gpu/deferred/pointlight.nsa'...
+[V] EGL shader linked successfully at id 33.
+[V] Creating shader '@core/shaders/gpu/deferred/pointlight_shadow.nsa'...
+[V] EGL shader linked successfully at id 36.
+[V] Creating shader '@core/shaders/gpu/deferred/linearlight.nsa'...
+[V] EGL shader linked successfully at id 39.
+[V] Creating shader '@core/shaders/gpu/deferred/linearlight_shadow.nsa'...
+[V] EGL shader linked successfully at id 42.
+[V] Creating shader '@core/shaders/gpu/deferred/ds_fog.nsa'...
+[V] EGL shader linked successfully at id 45.
+[V] Creating shader '@core/shaders/gpu/fx_blur.nsa'...
+[V] EGL shader linked successfully at id 48.
+[V] Creating shader '@core/shaders/gpu/noise.nsa'...
+[V] EGL shader linked successfully at id 51.
+[V] Creating shader '@core/shaders/gpu/sharpen.nsa'...
+[V] EGL shader linked successfully at id 54.
+[V] Creating shader '@core/shaders/gpu/hsl.nsa'...
+[V] EGL shader linked successfully at id 57.
+[V] Creating shader '@core/shaders/gpu/chromatic_dispersion.nsa'...
+[V] EGL shader linked successfully at id 60.
+[V] Creating shader '@core/shaders/gpu/ssaa.nsa'...
+[V] EGL shader linked successfully at id 63.
+[V] Creating shader '@core/shaders/gpu/ssao.nsa'...
+[V] EGL shader linked successfully at id 66.
+[V] Creating shader '@core/shaders/gpu/ssao_blur.nsa'...
+[V] EGL shader linked successfully at id 69.
+[V] Creating shader '@core/shaders/gpu/motion_blur.nsa'...
+[V] EGL shader linked successfully at id 72.
+[V] Creating shader '@core/shaders/gpu/radial_blur.nsa'...
+[V] EGL shader linked successfully at id 75.
+[V] Creating shader '@core/shaders/gpu/skybox.nsa'...
+[V] EGL shader linked successfully at id 78.
+Creating shadow maps (2048x2048).
+[V] New GL texture object id 1.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 2048, H: 2048
+SetRenderTechnique(): 854x480
+[V] New GL texture object id 2.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 854, H: 480
+[V] New GL texture object id 3.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 854, H: 480
+[V] New GL texture object id 4.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 854, H: 480
+[V] New GL texture object id 5.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 854, H: 480
+[V] New GL texture object id 6.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 854, H: 480
+[V] New GL texture object id 7.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 854, H: 480
+[V] New GL texture object id 8.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 854, H: 480
+[H] Setup terrain cache: 32 pages (3244800 bytes).
+[V] Entering DDS texture loader for '@core/noise.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for '@core/noise.tga'...
+Memory configuration: Little endian.
+[V] Invalid PVR header.
+[V] Creating texture '@core/noise.tga'.
+[V] EGL Delete texture 0x0, GL id 9.
+[V] New GL texture object id 9.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 128, H: 128
+[V] Entering DDS texture loader for '@core/fonts/profiler_base_00.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for '@core/fonts/profiler_base_00.tga'...
+[V] Invalid PVR header.
+[V] Creating texture '@core/fonts/profiler_base_00.tga'.
+[V] EGL Delete texture 0x0, GL id 10.
+[V] New GL texture object id 10.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Entering DDS texture loader for '@core/fonts/profiler_bold_00.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for '@core/fonts/profiler_bold_00.tga'...
+[V] Invalid PVR header.
+[V] Creating texture '@core/fonts/profiler_bold_00.tga'.
+[V] EGL Delete texture 0x0, GL id 11.
+[V] New GL texture object id 11.
+[H] OpenAL ready on device 'OpenAL Soft'.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[*] No space character in font '@core/fonts/fps.nml'.
+[V] Entering DDS texture loader for '@core/fonts/fps_00.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for '@core/fonts/fps_00.tga'...
+[V] Invalid PVR header.
+[V] Creating texture '@core/fonts/fps_00.tga'.
+[V] EGL Delete texture 0x0, GL id 12.
+[V] New GL texture object id 12.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Input system is installing windows hook.
+[H] Freetype2: Loading font '@core/default.ttf'.
+Created a new font alias from '@core/default.ttf' to 'default'.
+Session type: 1
+[S] //	Globals.nut		//
+[S] //	Global_callbacks.nut		//
+[S] ProjectHandler::constructor()
+[S] SaveGame::constructor()
+[S] ProjectHandler::OnSetup()
+[S] SaveGame::LoadPlayerData()
+[!] Squirrel Compiler Error: 'Script runtime exception:
+
+the index 'NoTool' does not exist
+
+Callstack:
+
+    - unknown() (line -1) in "NATIVE"
+    - GetSaveFilename() (line 73) in "scripts/save.nut"
+    - LoadPlayerData() (line 114) in "scripts/save.nut"
+    - GlobalLoadGame() (line 16) in "scripts/save.nut"
+    - OnSetup() (line 89) in "scripts/project.nut"
+'
+[H] Session running.
+[H] Closing session.
+[V] EGL Delete texture 256x256, GL id 10.
+[V] EGL Delete texture 256x256, GL id 11.
+[V] EGL Delete texture 256x256, GL id 12.
+[V] GS::GPU::Renderer::Free
+[V] EGL Delete texture 854x480, GL id 4.
+[V] EGL Delete texture 854x480, GL id 1.
+[V] EGL Delete texture 854x480, GL id 2.
+[V] EGL Delete texture 854x480, GL id 2.
+[V] EGL Delete texture 854x480, GL id 3.
+[V] EGL Delete texture 854x480, GL id 5.
+[V] EGL Delete texture 854x480, GL id 6.
+[V] EGL Delete texture 854x480, GL id 7.
+[V] EGL Delete texture 854x480, GL id 8.
+[V] EGL Delete texture 128x128, GL id 9.
+[V] EGL Delete texture 2048x2048, GL id 1.
+AlThread::Close()
